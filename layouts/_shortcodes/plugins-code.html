@@ -1,0 +1,7 @@
+{{ $plugins := .Site.Data.plugins }}
+<!-- plugins - {{ $plugins }}. -->
+<ul>
+{{ range $k, $v := $plugins }}
+	<li>{{ $k }},{{ $v.data.description }}</li>
+{{ end }}
+</ul>

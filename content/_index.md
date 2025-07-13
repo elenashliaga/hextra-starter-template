@@ -21,4 +21,4 @@ toc: false
 
 ## Модули
 
-{{< camera_info data="camera2" >}}
+{{< plugins-code >}}
