@@ -1,17 +1,20 @@
 ---
-title: My Site
+title: Энциклопедия Разработчика
 toc: false
 ---
 
-This is the landing page.
+Здесь вы можете найти всю необходимую информацию для разработки МЕТА.
 
-## Explore
+## Документация
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="about" title="О проекте" icon="user" >}}
+  {{< card link="docs" title="Документация" icon="book-open" >}}
 {{< /cards >}}
 
-## Documentation
+## Сервисы
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< cards >}}
+  {{< card link="meta-frontend" title="meta-frontend" icon="book-open" >}}
+  {{< card link="meta-ueapp" title="meta-ueapp" icon="book-open" >}}
+{{< /cards >}}

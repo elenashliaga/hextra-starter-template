@@ -1,6 +1,5 @@
 ---
-title: Документация
-next: installation
+title: meta-frontend
 ---
 
 This is a demo of the theme's documentation layout.

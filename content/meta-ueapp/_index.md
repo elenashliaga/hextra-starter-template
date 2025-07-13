@@ -1,6 +1,5 @@
 ---
-title: Документация
-next: installation
+title: meta-ueapp
 ---
 
 This is a demo of the theme's documentation layout.
