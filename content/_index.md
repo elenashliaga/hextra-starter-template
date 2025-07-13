@@ -18,3 +18,7 @@ toc: false
   {{< card link="meta-frontend" title="meta-frontend" icon="book-open" >}}
   {{< card link="meta-ueapp" title="meta-ueapp" icon="book-open" >}}
 {{< /cards >}}
+
+## Модули
+
+{{< camera_info data="camera2" >}}
