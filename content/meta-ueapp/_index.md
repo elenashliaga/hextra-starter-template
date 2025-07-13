@@ -18,4 +18,4 @@ func main() {
 
 ## Модули
 
-
+{{< plugins-code >}}
