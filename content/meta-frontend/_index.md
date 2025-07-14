@@ -1,5 +1,7 @@
 ---
 title: meta-frontend
+type: docs
+weight: 1
 ---
 
 This is a demo of the theme's documentation layout.
