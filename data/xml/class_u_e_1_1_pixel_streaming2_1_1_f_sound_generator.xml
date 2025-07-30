@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator" kind="class" language="C++" prot="public">
+    <compoundname>UE::PixelStreaming2::FSoundGenerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ISoundGenerator</basecompoundref>
+    <includes refid="_sound_generator_8h" local="no">SoundGenerator.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a161b942930fa610326d52d2d493bbda8" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSoundGeneratorInitParams</ref></type>
+        <definition>FSoundGeneratorInitParams UE::PixelStreaming2::FSoundGenerator::Params</definition>
+        <argsstring></argsstring>
+        <name>Params</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::Params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="44" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1abe6119a2ea17731802f52add83c559a5" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16_t</ref> &gt;</type>
+        <definition>TArray&lt;int16_t&gt; UE::PixelStreaming2::FSoundGenerator::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::Buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="45" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a77ae531c96095ef18ef82a4c21495b5f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FSoundGenerator::CriticalSection</definition>
+        <argsstring></argsstring>
+        <name>CriticalSection</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::CriticalSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="46" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a2e29afe24b29f475e0aa67267f8fe984" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; UE::PixelStreaming2::FSoundGenerator::bGeneratingAudio</definition>
+        <argsstring></argsstring>
+        <name>bGeneratingAudio</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::bGeneratingAudio</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="49" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1ac5c9a2ff15330a0f21e92c8fccbde0d0" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; UE::PixelStreaming2::FSoundGenerator::bShouldGenerateAudio</definition>
+        <argsstring></argsstring>
+        <name>bShouldGenerateAudio</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::bShouldGenerateAudio</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="50" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a219a9b33f5d482678b99140331a240e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2::FSoundGenerator::FSoundGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>FSoundGenerator</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::FSoundGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1add955d37a85d61a3b1a8d358b491f76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual UE::PixelStreaming2::FSoundGenerator::~FSoundGenerator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FSoundGenerator</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::~FSoundGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1abe8e0660bbfdddeb50d9c5ede07962c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FSoundGenerator::OnGenerateAudio</definition>
+        <argsstring>(float *OutAudio, int32 NumSamples) override</argsstring>
+        <name>OnGenerateAudio</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::OnGenerateAudio</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> *</type>
+          <declname>OutAudio</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>NumSamples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="22" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="48" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a5f53acf32340152b83921f7fe2094e36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FSoundGenerator::GetDesiredNumSamplesToRenderPerCallback</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDesiredNumSamplesToRenderPerCallback</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::GetDesiredNumSamplesToRenderPerCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="25" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a1c495daa640d105a22e62c097d9eb869" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2::FSoundGenerator::OnBeginGenerate</definition>
+        <argsstring>()</argsstring>
+        <name>OnBeginGenerate</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::OnBeginGenerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="28" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a47265fca6f768b991b30302d41725276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2::FSoundGenerator::OnEndGenerate</definition>
+        <argsstring>()</argsstring>
+        <name>OnEndGenerate</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::OnEndGenerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="31" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a4c27feec74de2cc5c7d9e007be55dcb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool UE::PixelStreaming2::FSoundGenerator::IsFinished</definition>
+        <argsstring>() const</argsstring>
+        <name>IsFinished</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::IsFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="34" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a1ddc3aef51e747acc6ded9b9a2551d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FSoundGenerator::AddAudio</definition>
+        <argsstring>(const int16_t *AudioData, int InSampleRate, size_t NChannels, size_t NFrames)</argsstring>
+        <name>AddAudio</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::AddAudio</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16_t</ref> *</type>
+          <declname>AudioData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSampleRate</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NChannels</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NFrames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="36" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="32" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1aeee40678c7b24365386c8cb870e418a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FSoundGenerator::GetSampleRate</definition>
+        <argsstring>()</argsstring>
+        <name>GetSampleRate</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::GetSampleRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="38" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a7c70f0a19c1ace134b0a995c0b721b64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FSoundGenerator::GetNumChannels</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumChannels</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::GetNumChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="39" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1ae068e11b6bd0d772d4f9e5bb537bd420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FSoundGenerator::EmptyBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>EmptyBuffers</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::EmptyBuffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="40" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a9b4218cf0b7d8eda53660cb17c1ec4c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FSoundGenerator::SetParameters</definition>
+        <argsstring>(const FSoundGeneratorInitParams &amp;InitParams)</argsstring>
+        <name>SetParameters</name>
+        <qualifiedname>UE::PixelStreaming2::FSoundGenerator::SetParameters</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSoundGeneratorInitParams</ref> &amp;</type>
+          <declname>InitParams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="41" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/SoundGenerator.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An <computeroutput>ISoundGenerator</computeroutput> implementation to pump some audio from EpicRtc into this synth component </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ISoundGenerator</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FSoundGenerator</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ISoundGenerator</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FSoundGenerator</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/SoundGenerator.h" bodystart="16" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a1ddc3aef51e747acc6ded9b9a2551d03" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>AddAudio</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a2e29afe24b29f475e0aa67267f8fe984" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>bGeneratingAudio</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1ac5c9a2ff15330a0f21e92c8fccbde0d0" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>bShouldGenerateAudio</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1abe6119a2ea17731802f52add83c559a5" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>Buffer</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a77ae531c96095ef18ef82a4c21495b5f" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>CriticalSection</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1ae068e11b6bd0d772d4f9e5bb537bd420" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>EmptyBuffers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a219a9b33f5d482678b99140331a240e1" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>FSoundGenerator</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a5f53acf32340152b83921f7fe2094e36" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>GetDesiredNumSamplesToRenderPerCallback</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a7c70f0a19c1ace134b0a995c0b721b64" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>GetNumChannels</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1aeee40678c7b24365386c8cb870e418a1" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>GetSampleRate</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a4c27feec74de2cc5c7d9e007be55dcb7" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>IsFinished</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a1c495daa640d105a22e62c097d9eb869" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>OnBeginGenerate</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a47265fca6f768b991b30302d41725276" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>OnEndGenerate</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1abe8e0660bbfdddeb50d9c5ede07962c7" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>OnGenerateAudio</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a161b942930fa610326d52d2d493bbda8" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>Params</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1a9b4218cf0b7d8eda53660cb17c1ec4c0" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>SetParameters</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator_1add955d37a85d61a3b1a8d358b491f76e" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FSoundGenerator</scope><name>~FSoundGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

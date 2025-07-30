@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_eigen_helper_8h" kind="file" language="C++">
+    <compoundname>EigenHelper.h</compoundname>
+    <includes local="yes">Containers/Array.h</includes>
+    <includes local="no">Eigen/Dense</includes>
+    <includes local="no">Eigen/SVD</includes>
+    <includedby refid="_abc_importer_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h</label>
+        <link refid="_eigen_helper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Containers/Array.h</label>
+      </node>
+      <node id="3">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="4">
+        <label>Eigen/SVD</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp</label>
+        <link refid="_abc_importer_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h</label>
+        <link refid="_eigen_helper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_eigen_helpers">EigenHelpers</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_eigen_helper_8h_1a56e1504926ca8dfaa658bed64aa32207" prot="public" static="no">
+        <name>EIGEN_MPL2_ONLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="9" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_eigen_helper_8h_1af9e8327896b5246f59277f858173d7fe" prot="public" static="no">
+        <name>USE_MEMCPY_FOR_EIGEN_CONVERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="26" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_eigen_helpers_1a45539f4eb3a2442d6f864d1338c48ec9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void EigenHelpers::SetNumEigenThreads</definition>
+        <argsstring>(const int32 InNumThreads)</argsstring>
+        <name>SetNumEigenThreads</name>
+        <qualifiedname>EigenHelpers::SetNumEigenThreads</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InNumThreads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the number of thread used by Eigen </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="31" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_eigen_helpers_1a892acf5dabb25fa1b0b7285bb46a018e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void EigenHelpers::ConvertArrayToEigenMatrix</definition>
+        <argsstring>(const TArray64&lt; float &gt; &amp;InArray, const int32 InRows, const int32 InColumns, Eigen::MatrixXf &amp;OutMatrix)</argsstring>
+        <name>ConvertArrayToEigenMatrix</name>
+        <qualifiedname>EigenHelpers::ConvertArrayToEigenMatrix</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>InArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InRows</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InColumns</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>OutMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts a float array into an Eigen Matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="41" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void EigenHelpers::ConvertEigenMatrixToArray</definition>
+        <argsstring>(const Eigen::MatrixXf &amp;InMatrix, TArray64&lt; float &gt; &amp;OutArray, uint32 &amp;OutColumns, uint32 &amp;OutRows)</argsstring>
+        <name>ConvertEigenMatrixToArray</name>
+        <qualifiedname>EigenHelpers::ConvertEigenMatrixToArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>InMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref> &amp;</type>
+          <declname>OutColumns</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref> &amp;</type>
+          <declname>OutRows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts an Eigen Matrix into a float array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="61" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="61" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_eigen_helpers_1a5b9f9f90c6ed9287270fc23aefe46e40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void EigenHelpers::PerformSVD</definition>
+        <argsstring>(const Eigen::MatrixXf &amp;InMatrix, Eigen::MatrixXf &amp;OutU, Eigen::MatrixXf &amp;OutV, Eigen::MatrixXf &amp;OutS)</argsstring>
+        <name>PerformSVD</name>
+        <qualifiedname>EigenHelpers::PerformSVD</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>InMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>OutU</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>OutV</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Eigen::MatrixXf</ref> &amp;</type>
+          <declname>OutS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs Singular value decomposition on the given matrix and returns respective the calculated U, V and S Matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="84" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_eigen_helpers_1ade7744badf516a7245761ae6e475754a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void EigenHelpers::PerformSVD</definition>
+        <argsstring>(const TArray64&lt; float &gt; &amp;InMatrix, const int32 InRows, const int32 InColumns, TArray64&lt; float &gt; &amp;OutU, TArray64&lt; float &gt; &amp;OutV, TArray64&lt; float &gt; &amp;OutS)</argsstring>
+        <name>PerformSVD</name>
+        <qualifiedname>EigenHelpers::PerformSVD</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>InMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InRows</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InColumns</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutU</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutV</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs Singular value decomposition on the given matrix and returns respective the calculated U, V and S Matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" line="93" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h" bodystart="93" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/Array.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Just<sp/>to<sp/>be<sp/>sure,<sp/>also<sp/>added<sp/>this<sp/>in<sp/>Eigen.Build.cs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EIGEN_MPL2_ONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_eigen_helper_8h_1a56e1504926ca8dfaa658bed64aa32207" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EIGEN_MPL2_ONLY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>USING_CODE_ANALYSIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>warning(disable:6294)<sp/></highlight><highlight class="comment">//<sp/>Ill-defined<sp/>for-loop:<sp/><sp/>initial<sp/>condition<sp/>does<sp/>not<sp/>satisfy<sp/>test.<sp/><sp/>Loop<sp/>body<sp/>not<sp/>executed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PRAGMA_DEFAULT_VISIBILITY_START</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">THIRD_PARTY_INCLUDES_START</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;Eigen/SVD&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">THIRD_PARTY_INCLUDES_END</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PRAGMA_DEFAULT_VISIBILITY_END</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>USING_CODE_ANALYSIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_eigen_helper_8h_1af9e8327896b5246f59277f858173d7fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_MEMCPY_FOR_EIGEN_CONVERSION<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespace_eigen_helpers" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_eigen_helpers" kindref="compound">EigenHelpers</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="namespace_eigen_helpers_1a45539f4eb3a2442d6f864d1338c48ec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_eigen_helpers_1a45539f4eb3a2442d6f864d1338c48ec9" kindref="member">SetNumEigenThreads</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InNumThreads</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CurrentNumThreads</ref><sp/>=<sp/>Eigen::nbThreads();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CurrentNumThreads</ref><sp/>!=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InNumThreads</ref>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::setNbThreads(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InNumThreads</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespace_eigen_helpers_1a892acf5dabb25fa1b0b7285bb46a018e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_eigen_helpers_1a892acf5dabb25fa1b0b7285bb46a018e" kindref="member">ConvertArrayToEigenMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InArray</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref>,<sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMatrix</ref>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMatrix</ref>.resize(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_MEMCPY_FOR_EIGEN_CONVERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMemory::Memcpy(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMatrix</ref>.data(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InArray</ref>.GetData(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref><sp/>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>matrix<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref><sp/>&lt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref>;<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnOffset</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>)<sp/>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref><sp/>&lt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>;<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>)<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InArray</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnOffset</ref><sp/>+<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>USE_MEMCPY_FOR_EIGEN_CONVERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" kindref="member">ConvertEigenMatrixToArray</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutArray</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutRows</ref><sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutColumns</ref><sp/>=<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>)<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>.cols();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutRows</ref><sp/>=<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>)<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>.rows();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TotalSize</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>.rows()<sp/>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>.cols();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutArray</ref>.Empty(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TotalSize</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutArray</ref>.AddZeroed(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TotalSize</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_MEMCPY_FOR_EIGEN_CONVERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMemory::Memcpy(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutArray</ref>.GetData(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>.data(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TotalSize</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref><sp/>&lt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutColumns</ref>;<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnOffset</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>)<sp/>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutRows</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref><sp/>&lt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutRows</ref>;<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutArray</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnOffset</ref><sp/>+<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>]<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RowIndex</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ColumnIndex</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>USE_MEMCPY_FOR_EIGEN_CONVERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="namespace_eigen_helpers_1a5b9f9f90c6ed9287270fc23aefe46e40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_eigen_helpers_1a5b9f9f90c6ed9287270fc23aefe46e40" kindref="member">PerformSVD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>,<sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutU</ref>,<sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutV</ref>,<sp/>Eigen::MatrixXf&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutS</ref>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::JacobiSVD&lt;Eigen::MatrixXf&gt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SVD</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>,<sp/>Eigen::ComputeThinU<sp/>|<sp/>Eigen::ComputeThinV);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutU</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SVD</ref>.matrixU();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutV</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SVD</ref>.matrixV().transpose();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutS</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SVD</ref>.singularValues();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="namespace_eigen_helpers_1ade7744badf516a7245761ae6e475754a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_eigen_helpers_1a5b9f9f90c6ed9287270fc23aefe46e40" kindref="member">PerformSVD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutU</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutV</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;float&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutS</ref>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::MatrixXf<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenMatrix</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_eigen_helpers_1a892acf5dabb25fa1b0b7285bb46a018e" kindref="member">ConvertArrayToEigenMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InMatrix</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InRows</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenMatrix</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::MatrixXf<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutU</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::MatrixXf<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutV</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::MatrixXf<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutS</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_eigen_helpers_1a5b9f9f90c6ed9287270fc23aefe46e40" kindref="member">PerformSVD</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenMatrix</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutU</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutV</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutS</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumRows</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" kindref="member">ConvertEigenMatrixToArray</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutU</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutU</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumRows</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" kindref="member">ConvertEigenMatrixToArray</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutV</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutV</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumRows</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_eigen_helpers_1a89d12fed46cbaf1bd2ccd86f025036d7" kindref="member">ConvertEigenMatrixToArray</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EigenOutS</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutS</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumColumns</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NumRows</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/EigenHelper.h"/>
+  </compounddef>
+</doxygen>

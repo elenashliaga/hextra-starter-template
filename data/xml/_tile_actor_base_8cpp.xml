@@ -1,0 +1,819 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_tile_actor_base_8cpp" kind="file" language="C++">
+    <compoundname>TileActorBase.cpp</compoundname>
+    <includes refid="_tile_actor_base_8h" local="yes">Layer/ModuleLayer/BaseClasses/TileActorBase.h</includes>
+    <includes local="no">compare</includes>
+    <includes refid="_frustrum_calculate_8h" local="yes">FrustrumCalculate.h</includes>
+    <includes refid="_geometry_utils_8h" local="yes">GeometryUtils.h</includes>
+    <includes refid="_meta_c_c_r_settings_8h" local="yes">MetaCCRSettings.h</includes>
+    <includes refid="_meta_logging_8h" local="yes">MetaLogging.h</includes>
+    <includes refid="_module_layer_updater_base_8h" local="yes">Layer/ModuleLayer/BaseClasses/ModuleLayerUpdaterBase.h</includes>
+    <includes refid="_road_actor_base_8h" local="yes">Layer/ModuleLayer/LinearModule/Road/RoadActorBase.h</includes>
+    <includes refid="_layers_creator_settings_8h" local="yes">Settings/LayersCreatorSettings.h</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>GeographicalContext.h</label>
+        <link refid="_geographical_context_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>GeographicalEllipsoid.h</label>
+        <link refid="_geographical_ellipsoid_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>GeographicalLocation.h</label>
+        <link refid="_geographical_location_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GeographicalMathLibrary.h</label>
+        <link refid="_geographical_math_library_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/BaseClasses/TileActorBase.cpp</label>
+        <link refid="_tile_actor_base_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Layer/BaseClasses/ModulesLayerObjectBase.h</label>
+        <link refid="_modules_layer_object_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Layer/ModuleLayer/BaseClasses/ModuleLayerUpdaterBase.h</label>
+        <link refid="_module_layer_updater_base_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Layer/ModuleLayer/BaseClasses/TileActorBase.h</label>
+        <link refid="_tile_actor_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Layer/ModuleLayer/BaseStructures/BaseStructsLayerCreator.h</label>
+        <link refid="_base_structs_layer_creator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Layer/ModuleLayer/LinearModule/Road/RoadActorBase.h</label>
+        <link refid="_road_actor_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>CurvedText/CurvedTextRenderComponent.h</label>
+        <link refid="_curved_text_render_component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>CurvedTextRenderSceneProxy.h</label>
+        <link refid="_curved_text_render_scene_proxy_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>LineSegment.h</label>
+        <link refid="_line_segment_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>SegmentedFigure.h</label>
+        <link refid="_segmented_figure_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Layer/ModuleLayer/LinearModule/Road/TextModule/RoadLabel.h</label>
+        <link refid="_road_label_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Layer/ModuleLayer/LinearModule/Road/TextModule/TextTileActor.h</label>
+        <link refid="_text_tile_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Layer/Types/TLayersLinkedList.h</label>
+        <link refid="_t_layers_linked_list_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>FrustrumCalculate.h</label>
+        <link refid="_frustrum_calculate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GeometryUtils.h</label>
+        <link refid="_geometry_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Library.h</label>
+        <link refid="_library_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>ParsedTiles.h</label>
+        <link refid="_parsed_tiles_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>ServerCommunicationsSettings.h</label>
+        <link refid="_server_communications_settings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>TilesLoader.h</label>
+        <link refid="_tiles_loader_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Settings/LayersCreatorSettings.h</label>
+        <link refid="_layers_creator_settings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>MetaCCRSettings.h</label>
+        <link refid="_meta_c_c_r_settings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>MetaLogging.h</label>
+        <link refid="_meta_logging_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>BaseStructsLayerCreator.generated.h</label>
+      </node>
+      <node id="63">
+        <label>Components/SplineComponent.h</label>
+      </node>
+      <node id="59">
+        <label>Components/TextRenderComponent.h</label>
+      </node>
+      <node id="41">
+        <label>Containers/DiscardableKeyValueCache.h</label>
+      </node>
+      <node id="47">
+        <label>Containers/List.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="66">
+        <label>CoreTypes.h</label>
+      </node>
+      <node id="60">
+        <label>CurvedTextRenderComponent.generated.h</label>
+      </node>
+      <node id="48">
+        <label>Delegates/Delegate.h</label>
+      </node>
+      <node id="42">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="54">
+        <label>DynamicMeshBuilder.h</label>
+      </node>
+      <node id="30">
+        <label>Engine/DeveloperSettings.h</label>
+      </node>
+      <node id="68">
+        <label>Engine/EngineTypes.h</label>
+      </node>
+      <node id="69">
+        <label>Engine/Font.h</label>
+      </node>
+      <node id="26">
+        <label>FrustrumCalculate.generated.h</label>
+      </node>
+      <node id="25">
+        <label>GeographicalContext.generated.h</label>
+      </node>
+      <node id="20">
+        <label>GeographicalEllipsoid.generated.h</label>
+      </node>
+      <node id="24">
+        <label>GeographicalLocation.generated.h</label>
+      </node>
+      <node id="22">
+        <label>GeographicalMathLibrary.generated.h</label>
+      </node>
+      <node id="28">
+        <label>GeometryUtils.generated.h</label>
+      </node>
+      <node id="38">
+        <label>Interfaces/IHttpRequest.h</label>
+      </node>
+      <node id="21">
+        <label>Kismet/BlueprintFunctionLibrary.h</label>
+      </node>
+      <node id="70">
+        <label>LayersCreatorSettings.generated.h</label>
+      </node>
+      <node id="7">
+        <label>Library.generated.h</label>
+      </node>
+      <node id="57">
+        <label>LineSegment.generated.h</label>
+      </node>
+      <node id="31">
+        <label>MetaCCRSettings.generated.h</label>
+      </node>
+      <node id="6">
+        <label>Misc/TVariant.h</label>
+      </node>
+      <node id="71">
+        <label>ModuleLayerUpdaterBase.generated.h</label>
+      </node>
+      <node id="33">
+        <label>Modules/ModuleManager.h</label>
+      </node>
+      <node id="50">
+        <label>ModulesLayerObjectBase.generated.h</label>
+      </node>
+      <node id="36">
+        <label>ParsedTiles.generated.h</label>
+      </node>
+      <node id="9">
+        <label>ProceduralMeshComponent.h</label>
+      </node>
+      <node id="10">
+        <label>RoadActorBase.generated.h</label>
+      </node>
+      <node id="62">
+        <label>RoadLabel.generated.h</label>
+      </node>
+      <node id="58">
+        <label>SegmentedFigure.generated.h</label>
+      </node>
+      <node id="45">
+        <label>Serialization/JsonSerializer.h</label>
+      </node>
+      <node id="43">
+        <label>Serialization/JsonTypes.h</label>
+      </node>
+      <node id="44">
+        <label>Serialization/JsonWriter.h</label>
+      </node>
+      <node id="40">
+        <label>ServerCommunicationsSettings.generated.h</label>
+      </node>
+      <node id="64">
+        <label>TextTileActor.generated.h</label>
+      </node>
+      <node id="13">
+        <label>TileActorBase.generated.h</label>
+      </node>
+      <node id="46">
+        <label>TilesLoader.generated.h</label>
+      </node>
+      <node id="17">
+        <label>UObject/Object.h</label>
+      </node>
+      <node id="5">
+        <label>UObject/ObjectMacros.h</label>
+      </node>
+      <node id="14">
+        <label>compare</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_tile_actor_base_8cpp_1a052cf605c801da50db6dfe27e45df4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>int OrientationThrowPoints</definition>
+        <argsstring>(const FVector &amp;P, const FVector &amp;Q, const FVector &amp;R)</argsstring>
+        <name>OrientationThrowPoints</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/BaseClasses/TileActorBase.cpp" line="222" column="5" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/BaseClasses/TileActorBase.cpp" bodystart="222" bodyend="233"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tile_actor_base_8h" kindref="compound">Layer/ModuleLayer/BaseClasses/TileActorBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;compare&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_frustrum_calculate_8h" kindref="compound">FrustrumCalculate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_geometry_utils_8h" kindref="compound">GeometryUtils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_meta_c_c_r_settings_8h" kindref="compound">MetaCCRSettings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_meta_logging_8h" kindref="compound">MetaLogging.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_module_layer_updater_base_8h" kindref="compound">Layer/ModuleLayer/BaseClasses/ModuleLayerUpdaterBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_road_actor_base_8h" kindref="compound">Layer/ModuleLayer/LinearModule/Road/RoadActorBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_layers_creator_settings_8h" kindref="compound">Settings/LayersCreatorSettings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="class_a_tile_actor_base_1a2079d9462ba81d4880e3b8cbae50dda9" kindref="member">ATileActorBase::ATileActorBase</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RootComponent</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CreateDefaultSubobject&lt;USceneComponent&gt;</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;GeneratedMesh&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bAllowTickBeforeBeginPlay</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tile_actor_base_1a146da8e3b0b3e26648cd59ec68b4c500" kindref="member">GameWorld</ref><sp/>=<sp/>GetWorld();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a5aea3d6cff463b9dca1b5049f4639851" kindref="member">ATileActorBase::SpawnActors</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//check(false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1af7c2f26513dd4774b575d17b8654118c" kindref="member">ATileActorBase::GenerateSmoothRoadAlongSpline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref>&gt;&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PathPoints</ref>,<sp/><ref refid="class_u_road_actor_base" kindref="compound">URoadActorBase</ref>*<sp/>ProceduralMesh,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TypeRoad</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ProceduralMesh<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8h_1a2faf26ecd1948b07e92daa83d398677e" kindref="member">META_LOG</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogModuleLayerUpdaterBase</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Warning</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;TileActorBase<sp/>must<sp/>be<sp/>not<sp/>null<sp/>to<sp/>create<sp/>road&apos;s&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AsyncTask</ref>(ENamedThreads::AnyBackgroundThreadNormalTask,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PathPoints</ref>,<sp/>ProceduralMesh,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TypeRoad</ref>]</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedVertices</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;int32&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedTriangles</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedNormals</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VertexOffset</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SinglePathPoints</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PathPoints</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SinglePathPoints</ref>.Num()<sp/>&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineVertices</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;int32&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineTriangles</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineNormals</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadWidth</ref><sp/>=<sp/><ref refid="class_u_frustrum_calculate_1ae38c840098dae721f0e3aa4c7e29685e" kindref="member">UFrustrumCalculate::CalculateRoadWidth</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TypeRoad</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_geometry_utils_1a342f14bdb754bb900aba0a137b30beec" kindref="member">UGeometryUtils::TriangulateLineContour</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SinglePathPoints</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetActorLocation</ref>(),</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadWidth</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineVertices</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineTriangles</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineNormals</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedVertices</ref>.Append(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineVertices</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Triangle</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineTriangles</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedTriangles</ref>.Add(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Triangle</ref><sp/>+<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VertexOffset</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedNormals</ref>.Append(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineNormals</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VertexOffset</ref><sp/>+=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LineVertices</ref>.Num();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AsyncTask</ref>(ENamedThreads::GameThread,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedVertices</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedTriangles</ref>,<sp/>ProceduralMesh,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedNormals</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TypeRoad</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PathPoints</ref>]</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ProceduralMesh-&gt;GetNumSections())</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;ClearAllMeshSections();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceDynamic</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DynMaterial</ref><sp/>=<sp/><ref refid="class_a_tile_actor_base_1a98515f122ec6af6ac4e7ceaab96d6a7f" kindref="member">ChooseMaterial</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TypeRoad</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;CreateMeshSection(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedVertices</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedTriangles</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CombinedNormals</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{},</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{},</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{},</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;SetMaterial(0,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DynMaterial</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;SetOverlayMaterial(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DynMaterial</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;SetRenderCustomDepth(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProceduralMesh-&gt;SetCustomDepthStencilValue(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetDefault&lt;UMetaCCRSettings&gt;</ref>()-&gt;StencilOfHiddingObjects);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_a_tile_actor_base_1a0ad429a708705514a2587753b1003a61" kindref="member">ATileActorBase::ChooseCustomDepth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>RoadType)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_a_tile_actor_base_1aaf7987eacd12fb248b273caafe3a5854" kindref="member">GetRoadTypeEnum</ref>(RoadType))</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Motorway:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Motorway_link:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Trunk:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Trunk_link:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>3;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Primary:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Primary_link:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>5;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceDynamic</ref>*<sp/><ref refid="class_a_tile_actor_base_1a98515f122ec6af6ac4e7ceaab96d6a7f" kindref="member">ATileActorBase::ChooseMaterial</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>RoadType)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IsInGameThread</ref>());</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_a_tile_actor_base_1aaf7987eacd12fb248b273caafe3a5854" kindref="member">GetRoadTypeEnum</ref>(RoadType))</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Motorway:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Motorway_link:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Trunk:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Trunk_link:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UMaterialInstanceDynamic::Create(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetMutableDefault&lt;ULayersCreatorSettings&gt;</ref>()-&gt;RoadOrangeMaterial.LoadSynchronous(),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Primary:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERoadType::Primary_link:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UMaterialInstanceDynamic::Create(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetMutableDefault&lt;ULayersCreatorSettings&gt;</ref>()-&gt;RoadYellowMaterial.LoadSynchronous(),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UMaterialInstanceDynamic::Create(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetMutableDefault&lt;ULayersCreatorSettings&gt;</ref>()-&gt;RoadWhiteMaterial.LoadSynchronous(),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><ref refid="_tile_actor_base_8h_1a1d9acf88a6907dedd3857da875a3071e" kindref="member">ERoadType</ref><sp/><ref refid="class_a_tile_actor_base_1aaf7987eacd12fb248b273caafe3a5854" kindref="member">ATileActorBase::GetRoadTypeEnum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>RoadType)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;motorway&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Motorway;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;motorway_link&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Motorway_link;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;trunk&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Trunk;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;trunk_link&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Trunk_link;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;primary&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Primary;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RoadType<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;primary_link&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Primary_link;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ERoadType::Other;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a5f860709d4e446b444f407074e211ba3" kindref="member">ATileActorBase::SetTileCord</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Cord</ref>)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tile_actor_base_1a65c95f751ef7c1f72300d7e92c59781a" kindref="member">TileCord</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Cord</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a3c44343ade220796cc4cd9a557d596c8" kindref="member">ATileActorBase::UpdateView</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InZoomLevel</ref>)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref><sp/><ref refid="class_a_tile_actor_base_1a7f5a5dd467d31e31d1423e3c09ed03dd" kindref="member">ATileActorBase::GetTileCord</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="175"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a65c95f751ef7c1f72300d7e92c59781a" kindref="member">TileCord</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1afae025133e391b32e1076c06d9137ba0" kindref="member">ATileActorBase::DeactivateTile</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a0bf18fcc4f43f6c2b19b1cfb0de52e6f" kindref="member">ATileActorBase::DrawTileBoundary</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadPoints</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Layer<sp/>:<sp/><ref refid="class_a_tile_actor_base_1af42339376b7de36a5dc402e0dd21b54f" kindref="member">TileLayer</ref>)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Geometries<sp/>:<sp/>Layer.Geometries)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Coordinate</ref><sp/>:<sp/>Geometries.Coordinates)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Coordinate</ref>)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadPoints</ref>.Add(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadPoints</ref>.Num()<sp/>&lt;<sp/>3)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BoundaryPoints</ref><sp/>=<sp/><ref refid="class_a_tile_actor_base_1a404727575c531a145a0e7a6788ea2f24" kindref="member">JarvisAlgorithm</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoadPoints</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FColor</ref><sp/>LineColor<sp/>=<sp/>FColor::Cyan;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LinePersistenceDuration</ref><sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>LineThickness<sp/>=<sp/>800.0f;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>&lt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BoundaryPoints</ref>.Num();<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DrawDebugLine</ref>(<ref refid="class_a_tile_actor_base_1a146da8e3b0b3e26648cd59ec68b4c500" kindref="member">GameWorld</ref>,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BoundaryPoints</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>],</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BoundaryPoints</ref>[(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>+<sp/>1)<sp/>%<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BoundaryPoints</ref>.Num()],</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LineColor,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LinePersistenceDuration</ref>,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LineThickness);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_tile_actor_base_8cpp_1a052cf605c801da50db6dfe27e45df4fa" kindref="member">OrientationThrowPoints</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">P</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Q</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">R</ref>)<sp/></highlight><highlight class="comment">//<sp/>TODO(mysar):<sp/>function<sp/>and<sp/>parameter<sp/>naming</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Value<sp/>=<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Q</ref>.Y<sp/>-<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">P</ref>.Y)<sp/>*<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">R</ref>.X<sp/>-<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Q</ref>.X)<sp/>-<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Q</ref>.X<sp/>-<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">P</ref>.X)<sp/>*<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">R</ref>.Y<sp/>-<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Q</ref>.Y);<sp/></highlight><highlight class="comment">//<sp/>TODO(mysar):<sp/>this<sp/>can<sp/>be<sp/>rewritten<sp/>as<sp/>a<sp/>dot<sp/>product<sp/>of<sp/>two<sp/>vectors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::partial_ordering<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Ordering</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Value &lt;=&gt;</ref><sp/>0.0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::is_eq(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Ordering</ref>))</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::is_gt(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Ordering</ref>)<sp/>?<sp/>1<sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="class_a_tile_actor_base_1a404727575c531a145a0e7a6788ea2f24" kindref="member">ATileActorBase::JarvisAlgorithm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref>&amp;<sp/>Points)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FVector&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ResultPoints</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LeftPointIdx</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref><sp/>Idx<sp/>=<sp/>1;<sp/>Idx<sp/>&lt;<sp/>Points.Num();<sp/>++Idx)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Points[Idx].<ref refid="_pixel_streaming2_input_enums_8h_1a6c81a22286403469a167e7ec24d22ba6a02129bb861061d1a052c592e2dc6b383" kindref="member">X</ref><sp/>&lt;<sp/>Points[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LeftPointIdx</ref>].<ref refid="_pixel_streaming2_input_enums_8h_1a6c81a22286403469a167e7ec24d22ba6a02129bb861061d1a052c592e2dc6b383" kindref="member">X</ref>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LeftPointIdx</ref><sp/>=<sp/>Idx;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LeftPointIdx</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO(mysar):<sp/>BufferPointIdx<sp/>can<sp/>be<sp/>replaced<sp/>by<sp/>a<sp/>constant<sp/>holding<sp/>ActualPointIdx<sp/>at<sp/>the<sp/>beginning<sp/>of<sp/>every<sp/>iteration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BufferPointIdx</ref><sp/>=<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref><sp/>+<sp/>1)<sp/>%<sp/>Points.Num();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ResultPoints</ref>.Add(Points[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref>]);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>&lt;<sp/>Points.Num();<sp/>++<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_tile_actor_base_8cpp_1a052cf605c801da50db6dfe27e45df4fa" kindref="member">OrientationThrowPoints</ref>(Points[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref>],<sp/>Points[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>],<sp/>Points[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BufferPointIdx</ref>])<sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BufferPointIdx</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BufferPointIdx</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActualPointIdx</ref><sp/>!=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LeftPointIdx</ref>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ResultPoints</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInterface</ref>*<sp/><ref refid="class_a_tile_actor_base_1a549e17b300c9f29381fa9103081872ad" kindref="member">ATileActorBase::GetRoadMaterial</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="271"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a68d3005188e3f6f7f96472f0710687b7" kindref="member">RoadMaterial</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FMapTileLayer&gt;</ref><sp/><ref refid="class_a_tile_actor_base_1afd12ffef09e152a78c01bbd7c918e5f5" kindref="member">ATileActorBase::GetTileLayer</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="276"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1af42339376b7de36a5dc402e0dd21b54f" kindref="member">TileLayer</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a41f918213f1017527517dd321e5eb8b4" kindref="member">ATileActorBase::SetRoadMaterial</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInterface</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Material)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tile_actor_base_1a68d3005188e3f6f7f96472f0710687b7" kindref="member">RoadMaterial</ref><sp/>=<sp/>Material;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1ae061a5d09e85345c3872dd6e7c67692e" kindref="member">ATileActorBase::SetTileLayer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FMapTileLayer&gt;</ref>&amp;<sp/>Layer)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tile_actor_base_1af42339376b7de36a5dc402e0dd21b54f" kindref="member">TileLayer</ref><sp/>=<sp/>Layer;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1acb1c081c40705212a75759110895e945" kindref="member">ATileActorBase::SetActiveTiles</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bActive)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SetActorHiddenInGame</ref>(!bActive);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1aaf30946b5406a8745c47dd58cd80f389" kindref="member">ATileActorBase::CacheTileSize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TileSize</ref>)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_a_tile_actor_base_1a44c434dba05a5c93908c7c15dc2390f8" kindref="member">UETileSize</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TileSize</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref>&amp;<sp/><ref refid="class_a_tile_actor_base_1aa0ade8bf3d532708f5fa61a77318c70d" kindref="member">ATileActorBase::GetTileUESize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="301"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_a_tile_actor_base_1a44c434dba05a5c93908c7c15dc2390f8" kindref="member">UETileSize</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/BaseClasses/TileActorBase.cpp"/>
+  </compounddef>
+</doxygen>

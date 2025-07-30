@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_limited_cache" kind="struct" language="C++" prot="public">
+    <compoundname>FLimitedCache</compoundname>
+    <includes refid="_library_8h" local="no">Library.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_limited_cache_1a1a7031f37a613b9a1df1e51001e5567f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>int FLimitedCache::MaxSize</definition>
+        <argsstring></argsstring>
+        <name>MaxSize</name>
+        <qualifiedname>FLimitedCache::MaxSize</qualifiedname>
+        <initializer>= 500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="258" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_limited_cache_1a4e26719502e0c8605a28381a1213b592" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_limited_cache_element" kindref="compound">FLimitedCacheElement</ref> &gt;</type>
+        <definition>TArray&lt;FLimitedCacheElement&gt; FLimitedCache::TimeSortedList</definition>
+        <argsstring></argsstring>
+        <name>TimeSortedList</name>
+        <qualifiedname>FLimitedCache::TimeSortedList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="260" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_limited_cache_1ac05eee5653ad25b322385f682364135a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref>, <ref refid="struct_f_limited_cache_element" kindref="compound">FLimitedCacheElement</ref> &gt;</type>
+        <definition>TMap&lt;FIntVector, FLimitedCacheElement&gt; FLimitedCache::ParsedTilesCache</definition>
+        <argsstring></argsstring>
+        <name>ParsedTilesCache</name>
+        <qualifiedname>FLimitedCache::ParsedTilesCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="262" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_limited_cache_1a6f8695e05254fb89392dd97f125b26df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FLimitedCache::InitMaxSize</definition>
+        <argsstring>(int Value)</argsstring>
+        <name>InitMaxSize</name>
+        <qualifiedname>FLimitedCache::InitMaxSize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует максимальный размер кэша. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод инициализирует максимальный размер кэша до указанного значения.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение максимального размера кэша, которое следует установить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="224" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Library.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_limited_cache_1a32579a7f3cd0ec11a72e37bd451e03e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FLimitedCache::Contains</definition>
+        <argsstring>(const FIntVector &amp;Key) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>FLimitedCache::Contains</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, содержит ли кэш элемент с указанным ключом. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод проверяет, содержит ли кэш элемент с указанным ключом.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для проверки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если кэш содержит элемент с указанным ключом, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="234" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Library.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_limited_cache_1a156997dbcac517600dae5ff2148778a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_limited_cache_element" kindref="compound">FLimitedCacheElement</ref> *</type>
+        <definition>FLimitedCacheElement * FLimitedCache::Get</definition>
+        <argsstring>(const FIntVector &amp;Key)</argsstring>
+        <name>Get</name>
+        <qualifiedname>FLimitedCache::Get</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает картографическую плитку из кэша на основе данного ключа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод извлекает картографическую плитку из кэша на основе данного ключа. Если плитка не найдена в кэше, возвращается nullptr .</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ картографической плитки, которую следует извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на картографическую плитку, если найдено, иначе nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="244" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Library.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_limited_cache_1ae071fc17b294e9a8d408e39ccc7f359c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FLimitedCache::Add</definition>
+        <argsstring>(const FIntVector &amp;TargetTileKey, const FMapTile &amp;Tile)</argsstring>
+        <name>Add</name>
+        <qualifiedname>FLimitedCache::Add</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &amp;</type>
+          <declname>TargetTileKey</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_map_tile" kindref="compound">FMapTile</ref> &amp;</type>
+          <declname>Tile</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет картографическую плитку в кэш с указанным ключом. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод добавляет картографическую плитку в кэш с указанным ключом. Картографическая плитка хранится в элементе кэша с ограниченной доступностью вместе со своей временной меткой. Ключ используется для индексации картографической плитки в кэше.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TargetTileKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ картографической плитки, которую следует добавить в кэш. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Картографическая плитка для добавления в кэш. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="255" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Library.cpp" bodystart="44" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" line="213" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/Library.h" bodystart="214" bodyend="263"/>
+    <listofallmembers>
+      <member refid="struct_f_limited_cache_1ae071fc17b294e9a8d408e39ccc7f359c" prot="public" virt="non-virtual"><scope>FLimitedCache</scope><name>Add</name></member>
+      <member refid="struct_f_limited_cache_1a32579a7f3cd0ec11a72e37bd451e03e0" prot="public" virt="non-virtual"><scope>FLimitedCache</scope><name>Contains</name></member>
+      <member refid="struct_f_limited_cache_1a156997dbcac517600dae5ff2148778a7" prot="public" virt="non-virtual"><scope>FLimitedCache</scope><name>Get</name></member>
+      <member refid="struct_f_limited_cache_1a6f8695e05254fb89392dd97f125b26df" prot="public" virt="non-virtual"><scope>FLimitedCache</scope><name>InitMaxSize</name></member>
+      <member refid="struct_f_limited_cache_1a1a7031f37a613b9a1df1e51001e5567f" prot="private" virt="non-virtual"><scope>FLimitedCache</scope><name>MaxSize</name></member>
+      <member refid="struct_f_limited_cache_1ac05eee5653ad25b322385f682364135a" prot="private" virt="non-virtual"><scope>FLimitedCache</scope><name>ParsedTilesCache</name></member>
+      <member refid="struct_f_limited_cache_1a4e26719502e0c8605a28381a1213b592" prot="private" virt="non-virtual"><scope>FLimitedCache</scope><name>TimeSortedList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

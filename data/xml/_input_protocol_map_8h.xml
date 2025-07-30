@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_input_protocol_map_8h" kind="file" language="C++">
+    <compoundname>InputProtocolMap.h</compoundname>
+    <includes local="yes">Containers/Map.h</includes>
+    <includes local="yes">Containers/Set.h</includes>
+    <includes local="yes">Misc/ScopeLock.h</includes>
+    <includes refid="_i_pixel_streaming2_input_message_8h" local="yes">IPixelStreaming2InputMessage.h</includes>
+    <includes refid="_i_pixel_streaming2_data_protocol_8h" local="yes">IPixelStreaming2DataProtocol.h</includes>
+    <includes refid="_pixel_streaming2_input_enums_8h" local="yes">PixelStreaming2InputEnums.h</includes>
+    <includedby refid="_default_data_protocol_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/DefaultDataProtocol.cpp</includedby>
+    <includedby refid="_input_protocol_map_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputProtocolMap.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Internal/InputProtocolMap.h</label>
+        <link refid="_input_protocol_map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>IPixelStreaming2DataProtocol.h</label>
+        <link refid="_i_pixel_streaming2_data_protocol_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IPixelStreaming2InputMessage.h</label>
+        <link refid="_i_pixel_streaming2_input_message_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PixelStreaming2InputEnums.h</label>
+        <link refid="_pixel_streaming2_input_enums_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Containers/Array.h</label>
+      </node>
+      <node id="2">
+        <label>Containers/Map.h</label>
+      </node>
+      <node id="3">
+        <label>Containers/Set.h</label>
+      </node>
+      <node id="7">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="11">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="9">
+        <label>HAL/Platform.h</label>
+      </node>
+      <node id="4">
+        <label>Misc/ScopeLock.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Internal/InputProtocolMap.h</label>
+        <link refid="_input_protocol_map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/DefaultDataProtocol.cpp</label>
+        <link refid="_default_data_protocol_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputProtocolMap.cpp</label>
+        <link refid="_input_protocol_map_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map" prot="public">UE::PixelStreaming2Input::FInputProtocolMap</innerclass>
+    <innernamespace refid="namespace_u_e">UE</innernamespace>
+    <innernamespace refid="namespace_u_e_1_1_pixel_streaming2_input">UE::PixelStreaming2Input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/Map.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/Set.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/ScopeLock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_pixel_streaming2_input_message_8h" kindref="compound">IPixelStreaming2InputMessage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_pixel_streaming2_data_protocol_8h" kindref="compound">IPixelStreaming2DataProtocol.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pixel_streaming2_input_enums_8h" kindref="compound">PixelStreaming2InputEnums.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_u_e_1_1_pixel_streaming2_input" kindref="compound">UE::PixelStreaming2Input</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PIXELSTREAMING2INPUT_API</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map" kindref="compound">FInputProtocolMap</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_data_protocol" kindref="compound">IPixelStreaming2DataProtocol</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a8c6a944e512a127e88e348c9fa9f736a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a8c6a944e512a127e88e348c9fa9f736a" kindref="member">FInputProtocolMap</ref>(<ref refid="_pixel_streaming2_input_enums_8h_1a8fcb867e3596210c4c631e4c34156d25" kindref="member">EPixelStreaming2MessageDirection</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InDirection</ref>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Direction(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InDirection</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Begin<sp/>IPixelStreaming2DataProtocol<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref><sp/><ref refid="_building_types_8h_1a1fe04f1c3c66de0209d8b8744958190eaec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref><sp/><ref refid="_building_types_8h_1a1fe04f1c3c66de0209d8b8744958190eaec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;EPixelStreaming2MessageTypes&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InStructure</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref><sp/>Find(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a0f8c1cd7c5b4bdc971f58433c39fd2c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnProtocolUpdated</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a0f8c1cd7c5b4bdc971f58433c39fd2c7" kindref="member">OnProtocolUpdated</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OnProtocolUpdatedDelegate;<sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FJsonObject&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ToJson()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>End<sp/>IPixelStreaming2DataProtocol<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AddInternal(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref><sp/>Id);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AddInternal(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref><sp/>Id,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;EPixelStreaming2MessageTypes&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InStructure</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_actor_spawner_subsystem_8h_1a18e241a4550192b097d7701b33f4ba50a1063e38cb53d94d386f21227fcd84717" kindref="member">Remove</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref><sp/>Find(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clear();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsEmpty()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Apply(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref>)&gt;&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Visitor</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref><sp/>AddMessageInternal(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref><sp/>Id,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;EPixelStreaming2MessageTypes&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InStructure</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1ab85aaa569d864b2933084eea9b8e3557" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet&lt;uint8&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1ab85aaa569d864b2933084eea9b8e3557" kindref="member">Ids</ref>;</highlight></codeline>
+<codeline lineno="48" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1aca0f2cffca5b818a5dfbbd28e9aa06df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap&lt;FString, TSharedPtr&lt;IPixelStreaming2InputMessage&gt;</ref>&gt;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1aca0f2cffca5b818a5dfbbd28e9aa06df" kindref="member">InnerMap</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1abc5629b0040ebc28978165562a165186" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnProtocolUpdated</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1abc5629b0040ebc28978165562a165186" kindref="member">OnProtocolUpdatedDelegate</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a078d76a5b5de71ab06b1756489c80b71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pixel_streaming2_input_enums_8h_1a8fcb867e3596210c4c631e4c34156d25" kindref="member">EPixelStreaming2MessageDirection</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a078d76a5b5de71ab06b1756489c80b71" kindref="member">Direction</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a4f4f4b61f07a0058556837d3a2442dcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserMessageId<sp/>=<sp/>200;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>UE::PixelStreaming2Input</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Internal/InputProtocolMap.h"/>
+  </compounddef>
+</doxygen>

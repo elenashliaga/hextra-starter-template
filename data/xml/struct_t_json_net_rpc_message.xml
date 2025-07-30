@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_t_json_net_rpc_message" kind="struct" language="C++" prot="public">
+    <compoundname>TJsonNetRpcMessage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FJsonNetRpcObject</basecompoundref>
+    <includes refid="_json_net_rpc_message_8h" local="no">JsonNetRpcMessage.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">M</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_t_json_net_rpc_message_1a839bfa6ceed1956712b75effb785157f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+        <definition>TSharedPtr&lt;IJsonNetRpcTransport&gt; TJsonNetRpcMessage&lt; M &gt;::MessageRecipient</definition>
+        <argsstring></argsstring>
+        <name>MessageRecipient</name>
+        <qualifiedname>TJsonNetRpcMessage::MessageRecipient</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="73" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1a5909cf0d0776c2ba96218121cb0a49d3" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>TJsonNetRpcMessage&lt; M &gt;::TJsonNetRpcMessage</definition>
+        <argsstring>(TSharedPtr&lt; IJsonNetRpcTransport &gt; Recipient=nullptr, FGuid Id=FGuid::NewGuid()) noexcept</argsstring>
+        <name>TJsonNetRpcMessage</name>
+        <qualifiedname>TJsonNetRpcMessage::TJsonNetRpcMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+          <declname>Recipient</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+          <declname>Id</declname>
+          <defval>FGuid::NewGuid()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор сообщения от получателя и идентификатора. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="29" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1a478e305caab51586f14605ce7c39da44" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+        <definition>TSharedPtr&lt; IJsonNetRpcTransport &gt; TJsonNetRpcMessage&lt; M &gt;::GetRecipient</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetRecipient</name>
+        <qualifiedname>TJsonNetRpcMessage::GetRecipient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает получателя сообщения. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="35" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1ae2b4acac17c26ebcc5c1a7e1b94880fd" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+        <definition>TSharedPtr&lt; const IJsonNetRpcTransport &gt; TJsonNetRpcMessage&lt; M &gt;::GetRecipient</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetRecipient</name>
+        <qualifiedname>TJsonNetRpcMessage::GetRecipient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает константного получателя сообщения. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="41" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1aac7af172fcf7351dd5bea2af76430e64" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TJsonNetRpcMessage&lt; M &gt;::SetRecipient</definition>
+        <argsstring>(TSharedRef&lt; IJsonNetRpcTransport &gt; Recipient) &amp;noexcept</argsstring>
+        <name>SetRecipient</name>
+        <qualifiedname>TJsonNetRpcMessage::SetRecipient</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+          <declname>Recipient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает получателя. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="46" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1a5618b98f7884c8294eb6a505e2872bd9" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TJsonNetRpcMessage&lt; M &gt;::UnsetRecipient</definition>
+        <argsstring>() &amp;noexcept</argsstring>
+        <name>UnsetRecipient</name>
+        <qualifiedname>TJsonNetRpcMessage::UnsetRecipient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сбрасывает получателя. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="51" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1aa0c159beb53ca5a51359859e6b31bd01" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">M</ref></type>
+        <definition>M TJsonNetRpcMessage&lt; M &gt;::To</definition>
+        <argsstring>(TSharedRef&lt; IJsonNetRpcTransport &gt; Recipient) noexcept</argsstring>
+        <name>To</name>
+        <qualifiedname>TJsonNetRpcMessage::To</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+          <declname>Recipient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает новое сообщение с заданным получателем.</para>
+<para><simplesect kind="note"><para>Предыдущее сообщение инвалидируется. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="59" column="11" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_message_1a341afd1cd8ecad5033b9ad313a55d76d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TJsonNetRpcMessage&lt; M &gt;::Send</definition>
+        <argsstring>()</argsstring>
+        <name>Send</name>
+        <qualifiedname>TJsonNetRpcMessage::Send</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отправляет сообщение получателю.</para>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> при успешной отправке, иначе - <computeroutput>false</computeroutput> </para>
+</simplesect>
+<simplesect kind="pre"><para>Получатель не является нулевым указателем </para>
+</simplesect>
+<simplesect kind="pre"><para>Низлежащий объект JSON-RPC валиден </para>
+</simplesect>
+<simplesect kind="pre"><para>Установлено валидное значение ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="70" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="43" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сообщение JSON-RPC.</para>
+<para>От объекта JSON-RPC отличается тем, что имеет возможность быть отправленным некоторому получателю.</para>
+<para>При отправке методом <computeroutput><ref refid="struct_t_json_net_rpc_message_1a341afd1cd8ecad5033b9ad313a55d76d" kindref="member">TJsonNetRpcMessage::Send</ref></computeroutput> переходит в использованное состояние, из которого сообщение нельзя отправить еще раз. Таким образом сообщение можно отправить ровно один раз.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип сообщения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FJsonNetRpcObject</label>
+      </node>
+      <node id="1">
+        <label>TJsonNetRpcMessage&lt; M &gt;</label>
+        <link refid="struct_t_json_net_rpc_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FJsonNetRpcObject</label>
+      </node>
+      <node id="1">
+        <label>TJsonNetRpcMessage&lt; M &gt;</label>
+        <link refid="struct_t_json_net_rpc_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.h" bodystart="22" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_t_json_net_rpc_message_1a478e305caab51586f14605ce7c39da44" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>GetRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1ae2b4acac17c26ebcc5c1a7e1b94880fd" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>GetRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a839bfa6ceed1956712b75effb785157f" prot="protected" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>MessageRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a341afd1cd8ecad5033b9ad313a55d76d" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>Send</name></member>
+      <member refid="struct_t_json_net_rpc_message_1aac7af172fcf7351dd5bea2af76430e64" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>SetRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a5909cf0d0776c2ba96218121cb0a49d3" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>TJsonNetRpcMessage</name></member>
+      <member refid="struct_t_json_net_rpc_message_1aa0c159beb53ca5a51359859e6b31bd01" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>To</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a5618b98f7884c8294eb6a505e2872bd9" prot="public" virt="non-virtual"><scope>TJsonNetRpcMessage</scope><name>UnsetRecipient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

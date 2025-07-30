@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_abc_transform_8h" kind="file" language="C++">
+    <compoundname>AbcTransform.h</compoundname>
+    <includes refid="_abc_object_8h" local="yes">AbcObject.h</includes>
+    <includedby refid="_abc_file_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcFile.cpp</includedby>
+    <includedby refid="_abc_transform_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcTransform.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>AbcObject.h</label>
+        <link refid="_abc_object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcTransform.h</label>
+        <link refid="_abc_transform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Alembic/Abc/IObject.h</label>
+      </node>
+      <node id="5">
+        <label>Alembic/AbcGeom/All.h</label>
+      </node>
+      <node id="3">
+        <label>Math/Matrix.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcFile.cpp</label>
+        <link refid="_abc_file_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcTransform.cpp</label>
+        <link refid="_abc_transform_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcTransform.h</label>
+        <link refid="_abc_transform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_f_abc_transform" prot="public">FAbcTransform</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_object_8h" kindref="compound">AbcObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_f_abc_transform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ALEMBICLIBRARY_API</ref><sp/><ref refid="class_f_abc_transform" kindref="compound">FAbcTransform</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_f_abc_transform" kindref="compound">FAbcTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Alembic::AbcGeom::IXform&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTransform</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFile</ref>,<sp/><ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InParent</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11" refid="class_f_abc_transform_1ac389dac1d403a216f49ae4c4debe2bfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_transform_1ac389dac1d403a216f49ae4c4debe2bfb" kindref="member">~FAbcTransform</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1a31f9f81ed54dde4a85c9859475d31bd7" kindref="member">ReadFirstFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1a472cceb292e5ab3a448312a3f44e1c35" kindref="member">SetFrameAndTime</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_abc_file_8h_1a15f9115e5b9abcc496ea4065f26df803" kindref="member">EFrameReadFlags</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFlags</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INDEX_NONE</ref>)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref><sp/><ref refid="class_i_abc_object_1a70bf5422f8178cf199796280a9547e6a" kindref="member">GetMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1a46efefd4fb0ebdd342882e34d2a4cc5b" kindref="member">HasConstantTransform</ref>()<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">final</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">virtual</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PurgeFrameData(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">final</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">public</ref>:</highlight></codeline>
+<codeline lineno="22" refid="class_f_abc_transform_1a5f287b4ffee3ffca5b3208a6aea44b06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bConstantIdentity;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">protected</ref>:</highlight></codeline>
+<codeline lineno="25" refid="class_f_abc_transform_1adf4f182babbcd693fda05f9618adeb9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="namespace_alembic" kindref="compound">Alembic</ref>::AbcGeom::<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IXform</ref><sp/>Transform;</highlight></codeline>
+<codeline lineno="27" refid="class_f_abc_transform_1a0c7c4ebee97310108b9ebd35ad9e0e11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="namespace_alembic" kindref="compound">Alembic</ref>::AbcGeom::<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IXformSchema</ref><sp/>Schema;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref><sp/>InitialValue;</highlight></codeline>
+<codeline lineno="32" refid="class_f_abc_transform_1afc4bc35dd78f2fa86fc33345ad01ff02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref><sp/>ResidentMatrices[<ref refid="_abc_object_8h_1a5b04eed4f5d3d57c73a29c3573663679" kindref="member">MaxNumberOfResidentSamples</ref>];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcTransform.h"/>
+  </compounddef>
+</doxygen>

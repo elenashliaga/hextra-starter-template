@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_server_base_8h" kind="file" language="C++">
+    <compoundname>ServerBase.h</compoundname>
+    <includes refid="_pixel_streaming2_servers_8h" local="yes">PixelStreaming2Servers.h</includes>
+    <includes local="yes">Tickable.h</includes>
+    <includedby refid="_server_base_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp</includedby>
+    <includedby refid="_signalling_server_8h" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/SignallingServer.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h</label>
+        <link refid="_server_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PixelStreaming2Servers.h</label>
+        <link refid="_pixel_streaming2_servers_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Containers/Map.h</label>
+      </node>
+      <node id="6">
+        <label>Engine/EngineBaseTypes.h</label>
+      </node>
+      <node id="4">
+        <label>GenericPlatform/GenericPlatformMisc.h</label>
+      </node>
+      <node id="7">
+        <label>HAL/ThreadSafeBool.h</label>
+      </node>
+      <node id="8">
+        <label>Misc/MonitoredProcess.h</label>
+      </node>
+      <node id="3">
+        <label>Templates/SharedPointer.h</label>
+      </node>
+      <node id="9">
+        <label>Tickable.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/PixelStreaming2Servers.cpp</label>
+        <link refid="_pixel_streaming2_servers_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp</label>
+        <link refid="_server_base_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h</label>
+        <link refid="_server_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/SignallingServer.cpp</label>
+        <link refid="_signalling_server_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/SignallingServer.h</label>
+        <link refid="_signalling_server_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base" prot="public">UE::PixelStreaming2Servers::FServerBase</innerclass>
+    <innernamespace refid="namespace_u_e">UE</innernamespace>
+    <innernamespace refid="namespace_u_e_1_1_pixel_streaming2_servers">UE::PixelStreaming2Servers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pixel_streaming2_servers_8h" kindref="compound">PixelStreaming2Servers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Tickable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_u_e_1_1_pixel_streaming2_servers" kindref="compound">UE::PixelStreaming2Servers</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Base<sp/>class<sp/>for<sp/>all<sp/>servers,<sp/>provides<sp/>functionality<sp/>for<sp/>servers<sp/>to<sp/>be<sp/>polled<sp/>for<sp/>readiness<sp/>while<sp/>they<sp/>start<sp/>up.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base" kindref="compound">FServerBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server" kindref="compound">IServer</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FTickableGameObject</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a7e78c92b821aa65e03b5d56eb8044ac7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a7e78c92b821aa65e03b5d56eb8044ac7" kindref="member">~FServerBase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Begin<sp/>IServer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8858b4cb9e72cab1dfe372e33a5d5e8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8858b4cb9e72cab1dfe372e33a5d5e8c" kindref="member">Stop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a753845c72f480b0bbb383c34612cd12f" kindref="member">HasLaunched</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1af113117c873bbe9d4dd14e88fcea03e4" kindref="member">Launch</ref>(<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4f581dacbfef44ed03e52e53b8ce20be" kindref="member">IsReady</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a596f4d84fe12a20eb2c5b782a6a27ba7" kindref="member">IsTimedOut</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4321d027d6deb406ee3e4c5dc9c785e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4321d027d6deb406ee3e4c5dc9c785e5" kindref="member">GetNumStreamers</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint16</ref>)&gt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OnNumStreamersReceived</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>End<sp/>IServer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Begin<sp/>FTickableGameObject<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a9040246635d5ed1f61bb1f657ab352f5" kindref="member">IsTickableWhenPaused</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a275977b6160d1bf1bc0b1419ef28ae8c" kindref="member">IsTickableInEditor</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8d4c844d394f285576fa44b1aedf3df1" kindref="member">Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1e2befbef2858c62ccbc8f6f3b0e4c73" kindref="member">IsAllowedToTick</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae2577ba6862bb36e63f5b825d773b074" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStatId</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae2577ba6862bb36e63f5b825d773b074" kindref="member">GetStatId</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RETURN_QUICK_DECLARE_CYCLE_STAT</ref>(PixelStreaming2Servers,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">STATGROUP_Tickables</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>End<sp/>FTickableGameObject<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1acd87fae56bd2a8a4cdf82e8769584658" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1acd87fae56bd2a8a4cdf82e8769584658" kindref="member">TestConnection</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a0c6c453a260eaa21aa27947de8a92e12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a0c6c453a260eaa21aa27947de8a92e12" kindref="member">LaunchImpl</ref>(<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap&lt;EEndpoint, FURL&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutEndpoints</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" kindref="member">bHasLaunched</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap&lt;EEndpoint, FURL&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" kindref="member">Endpoints</ref>;</highlight></codeline>
+<codeline lineno="54" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FThreadSafeBool</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" kindref="member">bIsReady</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" kindref="member">PollingStartedSeconds</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="56" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" kindref="member">LastReconnectionTimeSeconds</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="57" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" kindref="member">bAllowedToTick</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" kindref="member">bTimedOut</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59" refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" kindref="member">bPollUntilReady</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>UE::PixelStreaming2Servers</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_h_m_d" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2HMD</compoundname>
+    <derivedcompoundref refid="class_f_pixel_streaming2_h_m_d" prot="public" virt="non-virtual">FPixelStreaming2HMD</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_h_m_d_8h" local="no">IPixelStreaming2HMD.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_1aa9b4b269e06953bef95c933b3ae76ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2HMD::SetTransform</definition>
+        <argsstring>(FTransform Transform)=0</argsstring>
+        <name>SetTransform</name>
+        <qualifiedname>IPixelStreaming2HMD::SetTransform</qualifiedname>
+        <reimplementedby refid="class_f_pixel_streaming2_h_m_d_1a1c61c82a377c1a3d0626c6c6cf47d327">SetTransform</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+          <declname>Transform</declname>
+        </param>
+        <briefdescription>
+<para>Set the transform for the HMD. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transform for the HMD to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMD.h" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_1a2ecc85fb78998926919bc09a7656454d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2HMD::SetEyeViews</definition>
+        <argsstring>(FTransform Left, FMatrix LeftProj, FTransform Right, FMatrix RightProj, FTransform HMD)=0</argsstring>
+        <name>SetEyeViews</name>
+        <qualifiedname>IPixelStreaming2HMD::SetEyeViews</qualifiedname>
+        <reimplementedby refid="class_f_pixel_streaming2_h_m_d_1ab4babeabf913f3c08b30b7f27beeaac6">SetEyeViews</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+          <declname>Left</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref></type>
+          <declname>LeftProj</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+          <declname>Right</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref></type>
+          <declname>RightProj</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+          <declname>HMD</declname>
+        </param>
+        <briefdescription>
+<para>Set the eye views, including the eye positions and their respective projection matrices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transform of the left eye relative to the HMD transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LeftProj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Projection matrix of the left eye. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transform of the right eye relative to the HMD transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightProj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Projection matrix of the right eye. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HMD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transform for the HMD to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMD.h" line="29" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface class that allows for setting the transform data for a Head Mounted Display (HMD). The transform and projection matrix for each eye can be individually set. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FPixelStreaming2HMD</label>
+        <link refid="class_f_pixel_streaming2_h_m_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2HMD</label>
+        <link refid="class_i_pixel_streaming2_h_m_d"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMD.h" line="12" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMD.h" bodystart="13" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_h_m_d_1a2ecc85fb78998926919bc09a7656454d" prot="public" virt="pure-virtual"><scope>IPixelStreaming2HMD</scope><name>SetEyeViews</name></member>
+      <member refid="class_i_pixel_streaming2_h_m_d_1aa9b4b269e06953bef95c933b3ae76ae5" prot="public" virt="pure-virtual"><scope>IPixelStreaming2HMD</scope><name>SetTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

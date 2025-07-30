@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_architectural_menu_command" kind="class" language="C++" prot="public">
+    <compoundname>UArchitecturalMenuCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <derivedcompoundref refid="class_u_combine_menu_command" prot="public" virt="non-virtual">UCombineMenuCommand</derivedcompoundref>
+    <includes refid="_architectural_menu_command_8h" local="no">ArchitecturalMenuCommand.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_architectural_menu_command_1af2b2ab3b1fb485fbbd629781e18adccd" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt;</type>
+        <definition>TArray&lt;ABuildingCoreBase*&gt; UArchitecturalMenuCommand::SelectedBuildings</definition>
+        <argsstring></argsstring>
+        <name>SelectedBuildings</name>
+        <qualifiedname>UArchitecturalMenuCommand::SelectedBuildings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="20" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_architectural_menu_command_1abf181b943ef096dbf4672cbe815e310a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UArchitecturalMenuCommand::Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <qualifiedname>UArchitecturalMenuCommand::Execute</qualifiedname>
+        <reimplementedby refid="class_u_combine_menu_command_1ae554ce3458b537aa4606fbdaea7f3e1b">Execute</reimplementedby>
+        <briefdescription>
+<para>Выполняет команду меню. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается при нажатии элемента меню. Он отвечает за выполнение действий, связанных с командой меню. Если метод не реализован в производном классе, будет отображено сообщение в журнале, указывающее на то, что метод не реализован.</para>
+<para><simplesect kind="note"><para>Этот метод следует переопределить в производном классе, чтобы обеспечить желаемую функциональность для команды меню.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" kindref="member">MenuItemClicked()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="32" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_architectural_menu_command_1a7cb778b8ec799e98da37f309f5ff8e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UArchitecturalMenuCommand::GetCmdName</definition>
+        <argsstring>()</argsstring>
+        <name>GetCmdName</name>
+        <qualifiedname>UArchitecturalMenuCommand::GetCmdName</qualifiedname>
+        <reimplementedby refid="class_u_combine_menu_command_1ab920b5dfad77f999e3434b916b718da4">GetCmdName</reimplementedby>
+        <briefdescription>
+<para>Получить имя команды. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает FString, содержащий имя команды. Если метод не реализован в производном классе, он записывает сообщение, указывающее на то, что метод не реализован.</para>
+<para><simplesect kind="return"><para>FString, содержащий имя команды.</para>
+</simplesect>
+<simplesect kind="note"><para>Этот метод следует переопределить в производном классе, чтобы обеспечить желаемую функциональность для команды меню.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" kindref="member">MenuItemClicked()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="45" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_architectural_menu_command_1a97346519a277f11f9ea39af6737a182d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UArchitecturalMenuCommand::GetCmdDesc</definition>
+        <argsstring>()</argsstring>
+        <name>GetCmdDesc</name>
+        <qualifiedname>UArchitecturalMenuCommand::GetCmdDesc</qualifiedname>
+        <reimplementedby refid="class_u_combine_menu_command_1af476aa2d03acb2ed14e6b24deb3f8c8f">GetCmdDesc</reimplementedby>
+        <briefdescription>
+<para>Получить описание команды. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод должен быть переопределен в производном классе, чтобы обеспечить желаемую функциональность для команды меню. Если метод не реализован в производном классе, он запишет сообщение, указывающее на то, что метод не реализован.</para>
+<para><simplesect kind="return"><para>FString, содержащий описание команды.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" kindref="member">MenuItemClicked()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="57" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UArchitecturalMenuCommand::MenuItemClicked</definition>
+        <argsstring>()</argsstring>
+        <name>MenuItemClicked</name>
+        <qualifiedname>UArchitecturalMenuCommand::MenuItemClicked</qualifiedname>
+        <briefdescription>
+<para>Этот метод вызывается при нажатии пункта меню. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод зарезервирован для дополнительной настройки меню перед вызовом виртуального метода <ref refid="class_u_architectural_menu_command_1abf181b943ef096dbf4672cbe815e310a" kindref="member">Execute()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="class_u_architectural_menu_command_1abf181b943ef096dbf4672cbe815e310a" kindref="member">Execute()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="66" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_architectural_menu_command_1ab50236058318e5b55ea3df43aeb4da30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UArchitecturalMenuCommand::AddMenuExtension</definition>
+        <argsstring>(FMenuBuilder &amp;Builder)</argsstring>
+        <name>AddMenuExtension</name>
+        <qualifiedname>UArchitecturalMenuCommand::AddMenuExtension</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMenuBuilder</ref> &amp;</type>
+          <declname>Builder</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет расширение меню к данному объекту FMenuBuilder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод используется для добавления пункта меню в построителе меню. Он принимает объект-построитель в качестве параметра и добавляет пункт меню с именем и описанием, полученными из методов <ref refid="class_u_architectural_menu_command_1a7cb778b8ec799e98da37f309f5ff8e8a" kindref="member">GetCmdName()</ref> и <ref refid="class_u_architectural_menu_command_1a97346519a277f11f9ea39af6737a182d" kindref="member">GetCmdDesc()</ref> соответственно. Также устанавливается действие, которое выполняется при нажатии пункта меню, вызывая метод <ref refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" kindref="member">MenuItemClicked()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект FMenuBuilder, к которому должен быть добавлен пункт меню.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" kindref="member">MenuItemClicked()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="78" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="32" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_architectural_menu_command_1aa6bf3d3f1081c60360701720402f374a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UArchitecturalMenuCommand::SetCmdParams</definition>
+        <argsstring>(const TArray&lt; AActor * &gt; &amp;BuildingsParams)</argsstring>
+        <name>SetCmdParams</name>
+        <qualifiedname>UArchitecturalMenuCommand::SetCmdParams</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; AActor * &gt; &amp;</type>
+          <declname>BuildingsParams</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает параметры команды для <ref refid="class_u_architectural_menu_command" kindref="compound">UArchitecturalMenuCommand</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод используется для установки параметров команды для <ref refid="class_u_architectural_menu_command" kindref="compound">UArchitecturalMenuCommand</ref>. Он принимает массив указателей AActor в качестве параметра. Он итерирует по массиву и добавляет действительные объекты <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> в массив SelectedBuildings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingsParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив указателей AActor, содержащий здания, которые должны быть установлены в качестве параметров команды.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Этот метод вызывается внутри и не должен быть вызван пользователем напрямую. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="89" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/MenuSupport/ArchitecturalMenuCommand.cpp" bodystart="50" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UArchitecturalMenuCommand</label>
+        <link refid="class_u_architectural_menu_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UCombineMenuCommand</label>
+        <link refid="class_u_combine_menu_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UArchitecturalMenuCommand</label>
+        <link refid="class_u_architectural_menu_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/MenuSupport/ArchitecturalMenuCommand.h" bodystart="15" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_u_architectural_menu_command_1ab50236058318e5b55ea3df43aeb4da30" prot="public" virt="non-virtual"><scope>UArchitecturalMenuCommand</scope><name>AddMenuExtension</name></member>
+      <member refid="class_u_architectural_menu_command_1abf181b943ef096dbf4672cbe815e310a" prot="public" virt="virtual"><scope>UArchitecturalMenuCommand</scope><name>Execute</name></member>
+      <member refid="class_u_architectural_menu_command_1a97346519a277f11f9ea39af6737a182d" prot="public" virt="virtual"><scope>UArchitecturalMenuCommand</scope><name>GetCmdDesc</name></member>
+      <member refid="class_u_architectural_menu_command_1a7cb778b8ec799e98da37f309f5ff8e8a" prot="public" virt="virtual"><scope>UArchitecturalMenuCommand</scope><name>GetCmdName</name></member>
+      <member refid="class_u_architectural_menu_command_1a0ce31ba02d19087f2ec6c7243af3ebcd" prot="public" virt="non-virtual"><scope>UArchitecturalMenuCommand</scope><name>MenuItemClicked</name></member>
+      <member refid="class_u_architectural_menu_command_1af2b2ab3b1fb485fbbd629781e18adccd" prot="public" virt="non-virtual"><scope>UArchitecturalMenuCommand</scope><name>SelectedBuildings</name></member>
+      <member refid="class_u_architectural_menu_command_1aa6bf3d3f1081c60360701720402f374a" prot="public" virt="non-virtual"><scope>UArchitecturalMenuCommand</scope><name>SetCmdParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

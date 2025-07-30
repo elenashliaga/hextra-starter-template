@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_mass_signal_subsystem_8cpp" kind="file" language="C++">
+    <compoundname>MassSignalSubsystem.cpp</compoundname>
+    <includes refid="_mass_signal_subsystem_8h" local="yes">MassSignalSubsystem.h</includes>
+    <includes local="yes">MassExecutionContext.h</includes>
+    <includes local="yes">MassCommandBuffer.h</includes>
+    <includes refid="_mass_signal_types_8h" local="yes">MassSignalTypes.h</includes>
+    <includes local="yes">VisualLogger/VisualLogger.h</includes>
+    <includes local="yes">ProfilingDebugging/CsvProfiler.h</includes>
+    <includes local="yes">Engine/World.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp</label>
+        <link refid="_mass_signal_subsystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MassSignalSubsystem.h</label>
+        <link refid="_mass_signal_subsystem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>MassSignalTypes.h</label>
+        <link refid="_mass_signal_types_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="13">
+        <label>Engine/World.h</label>
+      </node>
+      <node id="10">
+        <label>Logging/LogMacros.h</label>
+      </node>
+      <node id="7">
+        <label>MassCommandBuffer.h</label>
+      </node>
+      <node id="3">
+        <label>MassEntityManager.h</label>
+      </node>
+      <node id="6">
+        <label>MassExecutionContext.h</label>
+      </node>
+      <node id="5">
+        <label>MassSignalSubsystem.generated.h</label>
+      </node>
+      <node id="4">
+        <label>MassSubsystemBase.h</label>
+      </node>
+      <node id="12">
+        <label>ProfilingDebugging/CsvProfiler.h</label>
+      </node>
+      <node id="11">
+        <label>VisualLogger/VisualLogger.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_mass_signal_subsystem_8cpp_1aceb4de58579b334858003185049e7ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CSV_DEFINE_CATEGORY</definition>
+        <argsstring>(MassSignalsCounters, true)</argsstring>
+        <name>CSV_DEFINE_CATEGORY</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MassSignalsCounters</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" line="11" column="1" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" declline="11" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_signal_subsystem_8h" kindref="compound">MassSignalSubsystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MassExecutionContext.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MassCommandBuffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_signal_types_8h" kindref="compound">MassSignalTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;VisualLogger/VisualLogger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ProfilingDebugging/CsvProfiler.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/World.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="_mass_signal_subsystem_8cpp_1aceb4de58579b334858003185049e7ba2" kindref="member">CSV_DEFINE_CATEGORY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MassSignalsCounters</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a6d65bfc61d6b0382b03d99bbc8ac1e85" kindref="member">UMassSignalSubsystem::Initialize</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref>&amp;<sp/>Collection)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::Initialize(Collection);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref><sp/>=<sp/>&amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetWorldRef</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(<ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;UMassSignalSubsystem<sp/>instances<sp/>are<sp/>expected<sp/>to<sp/>always<sp/>be<sp/>tied<sp/>to<sp/>a<sp/>valid<sp/>UWorld<sp/>instance&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1ac7702e708fc256360442eea113b31580" kindref="member">UMassSignalSubsystem::Deinitialize</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::Deinitialize();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a7d49ae731b385f86fd2859652a5c01a1" kindref="member">UMassSignalSubsystem::Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CA_ASSUME</ref>(<ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CurrentTime</ref><sp/>=<sp/><ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref>-&gt;GetTimeSeconds();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref><sp/>&lt;<sp/><ref refid="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" kindref="member">DelayedSignals</ref>.Num();)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FDelayedSignal&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref><sp/>=<sp/><ref refid="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" kindref="member">DelayedSignals</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.TargetTimestamp<sp/>&lt;=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CurrentTime</ref>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" kindref="member">SignalEntities</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeArrayView</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.Entities));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" kindref="member">DelayedSignals</ref>.RemoveAtSwap(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>,<sp/>EAllowShrinking::No);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">i</ref>++;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStatId</ref><sp/><ref refid="class_u_mass_signal_subsystem_1a41f29b3fc8cc4990bb9b61f7467a8241" kindref="member">UMassSignalSubsystem::GetStatId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RETURN_QUICK_DECLARE_CYCLE_STAT</ref>(<ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">STATGROUP_Tickables</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a908a8c76180e8b3d847c95b02a9b6a6d" kindref="member">UMassSignalSubsystem::SignalEntity</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref><sp/>Entity)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entity.IsSet(),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>a<sp/>valid<sp/>entity<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" kindref="member">SignalEntities</ref>(SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeArrayView</ref>(&amp;Entity,<sp/>1));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" kindref="member">UMassSignalSubsystem::SignalEntities</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView&lt;FMassEntityHandle&gt;</ref><sp/>Entities)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entities.Num()<sp/>&gt;<sp/>0,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>entities<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UE::MassSignal::FSignalDelegate&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SignalDelegate</ref><sp/>=<sp/><ref refid="class_u_mass_signal_subsystem_1a40ed78cd16265175d116c1b08f1406fb" kindref="member">GetSignalDelegateByName</ref>(SignalName);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SignalDelegate</ref>.Broadcast(SignalName,<sp/>Entities);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CSV_PROFILER_STATS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>FCsvProfiler::RecordCustomStat(*SignalName.ToString(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CSV_CATEGORY_INDEX</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MassSignalsCounters</ref>),<sp/>Entities.Num(),<sp/>ECsvCustomStatOp::Accumulate);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>==<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Raising<sp/>signal<sp/>[%s]<sp/>to<sp/>entity<sp/>[%s]&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>*Entities[0].DebugGetDescription());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>&gt;<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Raising<sp/>signal<sp/>[%s]<sp/>to<sp/>%d<sp/>entities&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>Entities.Num());</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a9642c9ef0082174ab154ef045ba500a6" kindref="member">UMassSignalSubsystem::DelaySignalEntity</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref><sp/>Entity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entity.IsSet(),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>a<sp/>valid<sp/>entity<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1a3ae531873436244155236b87a07471f8" kindref="member">DelaySignalEntities</ref>(SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeArrayView</ref>(&amp;Entity,<sp/>1),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a3ae531873436244155236b87a07471f8" kindref="member">UMassSignalSubsystem::DelaySignalEntities</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView&lt;FMassEntityHandle&gt;</ref><sp/>Entities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>FDelayedSignal&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref><sp/>=<sp/><ref refid="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" kindref="member">DelayedSignals</ref>.Emplace_GetRef();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.SignalName<sp/>=<sp/>SignalName;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.Entities<sp/>=<sp/>Entities;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check</ref>(<ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayedSignal</ref>.TargetTimestamp<sp/>=<sp/><ref refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" kindref="member">CachedWorld</ref>-&gt;GetTimeSeconds()<sp/>+<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>==<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Delay<sp/>signal<sp/>[%s]<sp/>to<sp/>entity<sp/>[%s]<sp/>in<sp/>%.2f&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>*Entities[0].DebugGetDescription(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>&gt;<sp/>1,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Delay<sp/>signal<sp/>[%s]<sp/>to<sp/>%d<sp/>entities<sp/>in<sp/>%.2f&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>Entities.Num(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a1f7c11f26cf00e6d88646cde91424df7" kindref="member">UMassSignalSubsystem::SignalEntityDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref><sp/>Entity)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entity.IsSet(),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>a<sp/>valid<sp/>entity<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1ab5839a5cc1bf996c239d6ffe6df20f15" kindref="member">SignalEntitiesDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeArrayView</ref>(&amp;Entity,<sp/>1));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1ab5839a5cc1bf996c239d6ffe6df20f15" kindref="member">UMassSignalSubsystem::SignalEntitiesDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView&lt;FMassEntityHandle&gt;</ref><sp/>Entities)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entities.Num()<sp/>&gt;<sp/>0,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>entities<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>.Defer().PushCommand&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassDeferredSetCommand</ref>&gt;([SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InEntities</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FMassEntityHandle&gt;</ref>(Entities)](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">System</ref>)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref>*<sp/>SignalSubsystem<sp/>=<sp/>UWorld::GetSubsystem&lt;UMassSignalSubsystem&gt;(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">System</ref>.GetWorld());</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SignalSubsystem-&gt;<ref refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" kindref="member">SignalEntities</ref>(SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InEntities</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>==<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Raising<sp/>deferred<sp/>signal<sp/>[%s]<sp/>to<sp/>entity<sp/>[%s]&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>*Entities[0].DebugGetDescription());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>&gt;<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Raising<sp/>deferred<sp/>signal<sp/>[%s]<sp/>to<sp/>%d<sp/>entities&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>Entities.Num());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a248989a6ed5df3e6757afa983f7b835c" kindref="member">UMassSignalSubsystem::DelaySignalEntityDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref><sp/>Entity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entity.IsSet(),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>a<sp/>valid<sp/>entity<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem_1a03a8a5cf5de7aa42da675d7c8072cf25" kindref="member">DelaySignalEntitiesDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeArrayView</ref>(&amp;Entity,<sp/>1),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a03a8a5cf5de7aa42da675d7c8072cf25" kindref="member">UMassSignalSubsystem::DelaySignalEntitiesDeferred</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView&lt;FMassEntityHandle&gt;</ref><sp/>Entities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(Entities.Num()<sp/>&gt;<sp/>0,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Expecting<sp/>entities<sp/>to<sp/>signal&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>.Defer().PushCommand&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassDeferredSetCommand</ref>&gt;([SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InEntities</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FMassEntityHandle&gt;</ref>(Entities),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">System</ref>)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref>*<sp/>SignalSubsystem<sp/>=<sp/>UWorld::GetSubsystem&lt;UMassSignalSubsystem&gt;(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">System</ref>.GetWorld());</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SignalSubsystem-&gt;<ref refid="class_u_mass_signal_subsystem_1a3ae531873436244155236b87a07471f8" kindref="member">DelaySignalEntities</ref>(SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InEntities</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>==<sp/>1,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Delay<sp/>deferred<sp/>signal<sp/>[%s]<sp/>to<sp/>entity<sp/>[%s]<sp/>in<sp/>%.2f&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>*Entities[0].DebugGetDescription(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_CVLOG</ref>(Entities.Num()<sp/>&gt;<sp/>1,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogMassSignals</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Delay<sp/>deferred<sp/>signal<sp/>[%s]<sp/>to<sp/>%d<sp/>entities<sp/>in<sp/>%.2f&quot;</highlight><highlight class="normal">),<sp/>*SignalName.ToString(),<sp/>Entities.Num(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DelayInSeconds</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp"/>
+  </compounddef>
+</doxygen>

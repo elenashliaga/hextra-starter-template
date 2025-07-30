@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_find_console_commands" kind="class" language="C++" prot="public">
+    <compoundname>UFindConsoleCommands</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_find_console_commands_8h" local="no">FindConsoleCommands.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_find_console_commands_1ae744fbe3d737a0a50b433d3363080b2d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UFindConsoleCommands::bCommandsRegistered</definition>
+        <argsstring></argsstring>
+        <name>bCommandsRegistered</name>
+        <qualifiedname>UFindConsoleCommands::bCommandsRegistered</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="56" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_find_console_commands_1a2f383088c5fd6a497ab778577cd5d7f3" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IConsoleCommand</ref> * &gt;</type>
+        <definition>TArray&lt;IConsoleCommand*&gt; UFindConsoleCommands::RegisteredCommands</definition>
+        <argsstring></argsstring>
+        <name>RegisteredCommands</name>
+        <qualifiedname>UFindConsoleCommands::RegisteredCommands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="58" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_find_console_commands_1ad82cfe8f8528fde4429caccf731326ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UFindConsoleCommands::FindInBuildings</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;CmdParams)</argsstring>
+        <name>FindInBuildings</name>
+        <qualifiedname>UFindConsoleCommands::FindInBuildings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>CmdParams</declname>
+        </param>
+        <briefdescription>
+<para>Найти здания в BuildingsDictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ищет здания в BuildingsDictionary на основе предоставленного текста для поиска.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CmdParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, содержащий параметры команды. Должен содержать только один элемент - &quot;строку поиска&quot;</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Параметр &quot;строка поиска&quot; используется для указания текста, который нужно искать в BuildingsDictionary.</para>
+</simplesect>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="30" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/Commands/FindConsoleCommands.cpp" bodystart="13" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_find_console_commands_1a5452baa489072192b266c32ea9ec54f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UFindConsoleCommands::RegisterConsoleCommands</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterConsoleCommands</name>
+        <qualifiedname>UFindConsoleCommands::RegisterConsoleCommands</qualifiedname>
+        <briefdescription>
+<para>Регистрация консольных команд </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод регистрирует консольные команды</para>
+<para><simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="39" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/Commands/FindConsoleCommands.cpp" bodystart="42" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_find_console_commands_1aafc130cd0ec9eb5b3536f90cf18b6bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UFindConsoleCommands::UnregisterConsoleCommands</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterConsoleCommands</name>
+        <qualifiedname>UFindConsoleCommands::UnregisterConsoleCommands</qualifiedname>
+        <briefdescription>
+<para>Отмена регистрации консольных команд </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод отменяет регистрацию любых ранее зарегистрированных консольных команд</para>
+<para><simplesect kind="note"><para>Этот метод вызывается внутри метода RegisterConsoleCommands, чтобы обеспечить чистую регистрацию консольных команд.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_find_console_commands_1a5452baa489072192b266c32ea9ec54f5" kindref="member">RegisterConsoleCommands()</ref></para>
+</simplesect>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/Commands/FindConsoleCommands.cpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UFindConsoleCommands</label>
+        <link refid="class_u_find_console_commands"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UFindConsoleCommands</label>
+        <link refid="class_u_find_console_commands"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" line="13" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/Commands/FindConsoleCommands.h" bodystart="14" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_u_find_console_commands_1ae744fbe3d737a0a50b433d3363080b2d" prot="private" virt="non-virtual"><scope>UFindConsoleCommands</scope><name>bCommandsRegistered</name></member>
+      <member refid="class_u_find_console_commands_1ad82cfe8f8528fde4429caccf731326ba" prot="public" virt="non-virtual"><scope>UFindConsoleCommands</scope><name>FindInBuildings</name></member>
+      <member refid="class_u_find_console_commands_1a5452baa489072192b266c32ea9ec54f5" prot="public" virt="non-virtual"><scope>UFindConsoleCommands</scope><name>RegisterConsoleCommands</name></member>
+      <member refid="class_u_find_console_commands_1a2f383088c5fd6a497ab778577cd5d7f3" prot="private" virt="non-virtual"><scope>UFindConsoleCommands</scope><name>RegisteredCommands</name></member>
+      <member refid="class_u_find_console_commands_1aafc130cd0ec9eb5b3536f90cf18b6bce" prot="public" virt="non-virtual"><scope>UFindConsoleCommands</scope><name>UnregisterConsoleCommands</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

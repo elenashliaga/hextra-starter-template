@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_t_c_p_server_8h" kind="file" language="C++">
+    <compoundname>TCPServer.h</compoundname>
+    <includes local="yes">Containers/UnrealString.h</includes>
+    <includes local="no">string</includes>
+    <includes local="yes">Containers/Queue.h</includes>
+    <includes local="yes">HAL/Runnable.h</includes>
+    <includedby refid="_browser_binding_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/Bridge/Private/UI/BrowserBinding.cpp</includedby>
+    <includedby refid="_megascans_live_link_module_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/MegascansLiveLinkModule.cpp</includedby>
+    <includedby refid="_t_c_p_server_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h</label>
+        <link refid="_t_c_p_server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Containers/Queue.h</label>
+      </node>
+      <node id="2">
+        <label>Containers/UnrealString.h</label>
+      </node>
+      <node id="5">
+        <label>HAL/Runnable.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/Bridge/Private/UI/BrowserBinding.cpp</label>
+        <link refid="_browser_binding_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/MegascansLiveLinkModule.cpp</label>
+        <link refid="_megascans_live_link_module_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp</label>
+        <link refid="_t_c_p_server_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h</label>
+        <link refid="_t_c_p_server_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_f_t_c_p_server" prot="public">FTCPServer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/UnrealString.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/Queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HAL/Runnable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRunnableThread</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIPv4Endpoint</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FScriptContainerElement</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_f_t_c_p_server" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MEGASCANSPLUGIN_API</ref><sp/><ref refid="class_f_t_c_p_server" kindref="compound">FTCPServer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FRunnable</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_f_t_c_p_server" kindref="compound">FTCPServer</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_f_t_c_p_server" kindref="compound">~FTCPServer</ref>();<sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Run()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_f_t_c_p_server_1a57aafc391579af8d72f69a9920dab6a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_t_c_p_server_1a57aafc391579af8d72f69a9920dab6a7" kindref="member">Stop</ref>()</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="25"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stopping<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="class_f_t_c_p_server_1a149dea3de2bcb6446b9820e3db9217c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_f_t_c_p_server_1a149dea3de2bcb6446b9820e3db9217c9" kindref="member">RecvMessage</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref><sp/>*<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Socket</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DataSize</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Message);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HandleListenerConnectionAccepted(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref><sp/>*<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ClientSocket</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIPv4Endpoint</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ClientEndpoint</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_f_t_c_p_server_1a37bd1ec5a9e952bd11f6328fa296b8d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref>*<sp/><ref refid="class_f_t_c_p_server_1a37bd1ec5a9e952bd11f6328fa296b8d6" kindref="member">ListenerSocket</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_f_t_c_p_server_1a88f9b899a9d8d5ff2d4c03663ee1e967" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>LocalHostIP<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;127.0.0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="class_f_t_c_p_server_1adeda058078c510cb855fe2711cbaf586" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>PortNum<sp/>=<sp/>13429;<sp/></highlight></codeline>
+<codeline lineno="36" refid="class_f_t_c_p_server_1a139f4f56e12e652431de8a302ef1ffc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_f_t_c_p_server_1a139f4f56e12e652431de8a302ef1ffc3" kindref="member">ConnectionTimeout</ref>;</highlight></codeline>
+<codeline lineno="37" refid="class_f_t_c_p_server_1aef18ca82a4d9337eb7fe7ca109cfb6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;class FSocket*&gt;</ref><sp/><ref refid="class_f_t_c_p_server_1aef18ca82a4d9337eb7fe7ca109cfb6e2" kindref="member">Clients</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_f_t_c_p_server_1a6f320e8fe6f8b2fd065a4fc9223baff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_t_c_p_server_1a6f320e8fe6f8b2fd065a4fc9223baff6" kindref="member">HandleIncomingSocket</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IncomingConnection</ref>);</highlight></codeline>
+<codeline lineno="40" refid="class_f_t_c_p_server_1a7610a2c40dc3cc46e93a71ed0f703d54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue&lt;FString&gt;</ref><sp/><ref refid="class_f_t_c_p_server_1a7610a2c40dc3cc46e93a71ed0f703d54" kindref="member">ImportQueue</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="class_f_t_c_p_server_1a81faa0281c24f954f77ab39b08292e57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue&lt;class FSocket*, EQueueMode::Mpsc&gt;</ref><sp/><ref refid="class_f_t_c_p_server_1a81faa0281c24f954f77ab39b08292e57" kindref="member">PendingClients</ref>;</highlight></codeline>
+<codeline lineno="44" refid="class_f_t_c_p_server_1a024e700883b9b2b93558122c4f944480" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_f_t_c_p_server_1a024e700883b9b2b93558122c4f944480" kindref="member">Stopping</ref>;</highlight></codeline>
+<codeline lineno="45" refid="class_f_t_c_p_server_1a1c3679fe274303ff52f2c90ea1920d50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRunnableThread</ref>*<sp/>ClientThread<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_f_t_c_p_server_1ac32890702543b4490fea9eb992024e9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTcpListener</ref><sp/>*Listener<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="class_f_t_c_p_server_1ab469b390d149650b5b0d49dab08911f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;int32&gt;</ref><sp/><ref refid="class_f_t_c_p_server_1ab469b390d149650b5b0d49dab08911f6" kindref="member">ConnectionTimer</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Async/AsyncWork.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Common/TcpListener.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Common/UdpSocketReceiver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/DateTime.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Sockets.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h"/>
+  </compounddef>
+</doxygen>

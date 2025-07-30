@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_audio_consumer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2AudioConsumer</compoundname>
+    <derivedcompoundref refid="class_u_pixel_streaming2_peer" prot="public" virt="non-virtual">UPixelStreaming2Peer</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_audio_consumer_8h" local="no">IPixelStreaming2AudioConsumer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_audio_consumer_1aa5ad952a235af66304ca84cbc7ecfe72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IPixelStreaming2AudioConsumer::~IPixelStreaming2AudioConsumer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IPixelStreaming2AudioConsumer</name>
+        <qualifiedname>IPixelStreaming2AudioConsumer::~IPixelStreaming2AudioConsumer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_audio_consumer_1a97fa6ec7f06254f49bd892626a3f2d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2AudioConsumer::ConsumeRawPCM</definition>
+        <argsstring>(const int16_t *AudioData, int InSampleRate, size_t NChannels, size_t NFrames)=0</argsstring>
+        <name>ConsumeRawPCM</name>
+        <qualifiedname>IPixelStreaming2AudioConsumer::ConsumeRawPCM</qualifiedname>
+        <reimplementedby refid="class_u_pixel_streaming2_peer_1a8771c4659cd23a5e8b0104e1b1b19f03">ConsumeRawPCM</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16_t</ref> *</type>
+          <declname>AudioData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSampleRate</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NChannels</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NFrames</declname>
+        </param>
+        <briefdescription>
+<para>Consume raw audio data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AudioData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the audio data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audio sample rate in samples per second. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NChannels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of audio channels. For example 2 for stero audio. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NFrames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Audio frames in a single channel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_audio_consumer_1ae89b487779a7b186d25546b13c253fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2AudioConsumer::OnConsumerAdded</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnConsumerAdded</name>
+        <qualifiedname>IPixelStreaming2AudioConsumer::OnConsumerAdded</qualifiedname>
+        <reimplementedby refid="class_u_pixel_streaming2_peer_1a37d78192ad6fae311b0c9c1c467e7509">OnConsumerAdded</reimplementedby>
+        <briefdescription>
+<para>Called when a audio consumer is added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_audio_consumer_1a6e32e06a4a60a28fbc36af5109cbacf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2AudioConsumer::OnConsumerRemoved</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnConsumerRemoved</name>
+        <qualifiedname>IPixelStreaming2AudioConsumer::OnConsumerRemoved</qualifiedname>
+        <reimplementedby refid="class_u_pixel_streaming2_peer_1affc29a0377a3fda19f7fb3dbefde3f7d">OnConsumerRemoved</reimplementedby>
+        <briefdescription>
+<para>Called when a audio consumer is removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" line="33" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An &quot;Audio Consumer&quot; is an object that is responsible for outputting the audio received from a peer. For example, by passing the audio into a <ref refid="namespace_u_e" kindref="compound">UE</ref> submix. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IPixelStreaming2AudioConsumer</label>
+        <link refid="class_i_pixel_streaming2_audio_consumer"/>
+      </node>
+      <node id="2">
+        <label>UPixelStreaming2Peer</label>
+        <link refid="class_u_pixel_streaming2_peer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" line="11" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2AudioConsumer.h" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_audio_consumer_1a97fa6ec7f06254f49bd892626a3f2d1c" prot="public" virt="pure-virtual"><scope>IPixelStreaming2AudioConsumer</scope><name>ConsumeRawPCM</name></member>
+      <member refid="class_i_pixel_streaming2_audio_consumer_1ae89b487779a7b186d25546b13c253fc6" prot="public" virt="pure-virtual"><scope>IPixelStreaming2AudioConsumer</scope><name>OnConsumerAdded</name></member>
+      <member refid="class_i_pixel_streaming2_audio_consumer_1a6e32e06a4a60a28fbc36af5109cbacf2" prot="public" virt="pure-virtual"><scope>IPixelStreaming2AudioConsumer</scope><name>OnConsumerRemoved</name></member>
+      <member refid="class_i_pixel_streaming2_audio_consumer_1aa5ad952a235af66304ca84cbc7ecfe72" prot="public" virt="virtual"><scope>IPixelStreaming2AudioConsumer</scope><name>~IPixelStreaming2AudioConsumer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

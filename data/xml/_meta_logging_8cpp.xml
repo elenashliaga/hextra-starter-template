@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_meta_logging_8cpp" kind="file" language="C++">
+    <compoundname>MetaLogging.cpp</compoundname>
+    <includes refid="_meta_logging_8h" local="yes">MetaLogging.h</includes>
+    <includes local="yes">SentrySubsystem.h</includes>
+    <includes local="yes">Engine/Engine.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp</label>
+        <link refid="_meta_logging_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MetaLogging.h</label>
+        <link refid="_meta_logging_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="6">
+        <label>Engine/Engine.h</label>
+      </node>
+      <node id="4">
+        <label>Modules/ModuleManager.h</label>
+      </node>
+      <node id="5">
+        <label>SentrySubsystem.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_meta_logging_1_1_detail_1_1_t_meta_log_sentry_level" prot="public">MetaLogging::Detail::TMetaLogSentryLevel</innerclass>
+    <innerclass refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled" prot="public">MetaLogging::Detail::TIsMetaSentryVerbosityEnabled</innerclass>
+    <innerclass refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled_3_01_verbosity_00_01typenab785bda953ac1d0ab5162c855cbdeab9" prot="public">MetaLogging::Detail::TIsMetaSentryVerbosityEnabled&lt; Verbosity, typename TMetaLogSentryLevel&lt; Verbosity &gt;::value_type &gt;</innerclass>
+    <innernamespace refid="namespace_meta_logging">MetaLogging</innernamespace>
+    <innernamespace refid="namespace_meta_logging_1_1_detail">MetaLogging::Detail</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" prot="public" static="no">
+        <name>META_LOG_ENABLE_VERBOSITY_LEVEL</name>
+        <param><defname>Verbosity</defname></param>
+        <param><defname>Level</defname></param>
+        <initializer>        <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">template</ref> &lt;&gt;                                          \
+        <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">struct</ref> TMetaLogSentryLevel&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ELogVerbosity::Verbosity</ref>&gt; \
+                : <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">std::integral_constant</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ESentryLevel</ref>, ESentryLevel::Level&gt; {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="10" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="define" id="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" prot="public" static="no">
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <param><defname>Verbosity</defname></param>
+        <initializer>        <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">template</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">METALOGGING_API</ref> NotifySentry&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ELogVerbosity::Verbosity</ref>&gt;(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp; Message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="70" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" bodystart="70" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a23367d406a149f3684b398d8250ab3df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_ENABLE_VERBOSITY_LEVEL</definition>
+        <argsstring>(Fatal, Fatal)</argsstring>
+        <name>META_LOG_ENABLE_VERBOSITY_LEVEL</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_ENABLE_VERBOSITY_LEVEL</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="15" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="15" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a92a51e59bf111f5feaa9443da1c8117e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_ENABLE_VERBOSITY_LEVEL</definition>
+        <argsstring>(Error, Error)</argsstring>
+        <name>META_LOG_ENABLE_VERBOSITY_LEVEL</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_ENABLE_VERBOSITY_LEVEL</qualifiedname>
+        <param>
+          <type>Error</type>
+        </param>
+        <param>
+          <type>Error</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="17" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="17" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a5a073ce1a13c8f58a3b21b6a24b534a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>ELogVerbosity::Type</type>
+            <declname>Verbosity</declname>
+            <defname>Verbosity</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void MetaLogging::Detail::NotifySentry</definition>
+        <argsstring>(const FString &amp;Message)</argsstring>
+        <name>NotifySentry</name>
+        <qualifiedname>MetaLogging::Detail::NotifySentry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="50" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" bodystart="50" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1aad937247a4110ec96791fc53520c90d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Fatal)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="73" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="73" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a362b6b5a3aae871b4f33ef53dac98799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Error)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type>Error</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="74" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="74" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a47a31e2c994375b8bc0e1e004be094fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Warning)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Warning</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="75" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="75" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1aa63ee5b47483504a8dbb24ba19f9bbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Display)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Display</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="76" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="76" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a41c32e52b048c3f40b5719b0e3ba3118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Log)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type>Log</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="77" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="77" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1ae3e4ce2decf838478f0a8e1093d172a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(Verbose)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Verbose</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="78" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="78" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_meta_logging_1_1_detail_1a7648e1592e65f040a3a37ff93b6b87ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</definition>
+        <argsstring>(VeryVerbose)</argsstring>
+        <name>META_LOG_EXTERN_NOTIFY_SENTRY</name>
+        <qualifiedname>MetaLogging::Detail::META_LOG_EXTERN_NOTIFY_SENTRY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VeryVerbose</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="79" column="9" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="79" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_meta_logging_8cpp_1a4c903f3ab4d69551a2174969da74d7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMPLEMENT_MODULE</definition>
+        <argsstring>(FMetaLoggingModule, MetaLogging)</argsstring>
+        <name>IMPLEMENT_MODULE</name>
+        <param>
+          <type><ref refid="class_f_meta_logging_module" kindref="compound">FMetaLoggingModule</ref></type>
+        </param>
+        <param>
+          <type>MetaLogging</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" line="84" column="1" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp" declline="84" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_meta_logging_8h" kindref="compound">MetaLogging.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SentrySubsystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/Engine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_meta_logging" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_meta_logging_1_1_detail" kindref="compound">MetaLogging::Detail</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;ELogVerbosity::Type&gt;</highlight></codeline>
+<codeline lineno="8" refid="struct_meta_logging_1_1_detail_1_1_t_meta_log_sentry_level" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_meta_logging_1_1_detail_1_1_t_meta_log_sentry_level" kindref="compound">TMetaLogSentryLevel</ref><sp/>{};</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>META_LOG_ENABLE_VERBOSITY_LEVEL(Verbosity,<sp/>Level)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>template<sp/>&lt;&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>TMetaLogSentryLevel&lt;ELogVerbosity::Verbosity&gt;<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>std::integral_constant&lt;ESentryLevel,<sp/>ESentryLevel::Level&gt;<sp/>{}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(Error,<sp/>Error);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>META_LOG_NOTIFY_WARNING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Warning</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Warning</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>META_LOG_NOTIFY_DISPLAY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Display</ref>,<sp/>Info);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>META_LOG_NOTIFY_LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(Log,<sp/>Debug);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>META_LOG_NOTIFY_VERBOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Verbose</ref>,<sp/>Debug);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>META_LOG_NOTIFY_VERYVERBOSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1af12aaa6b8e09fcb0c79de760d0aa6406" kindref="member">META_LOG_ENABLE_VERBOSITY_LEVEL</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VeryVerbose</ref>,<sp/>Debug);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>META_LOG_ENABLE_VERBOSITY_LEVEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;ELogVerbosity::Type,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>=<sp/>ESentryLevel&gt;</highlight></codeline>
+<codeline lineno="42" refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled" kindref="compound">TIsMetaSentryVerbosityEnabled</ref></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>std::false_type<sp/>{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;ELogVerbosity::Type<sp/>Verbosity&gt;</highlight></codeline>
+<codeline lineno="46" refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled_3_01_verbosity_00_01typenab785bda953ac1d0ab5162c855cbdeab9" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled" kindref="compound">TIsMetaSentryVerbosityEnabled</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Verbosity</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref><sp/><ref refid="struct_meta_logging_1_1_detail_1_1_t_meta_log_sentry_level" kindref="compound">TMetaLogSentryLevel</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Verbosity</ref>&gt;::<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">value_type</ref>&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>std::true_type<sp/>{};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;ELogVerbosity::Type<sp/>Verbosity&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_meta_logging_1_1_detail_1a5a073ce1a13c8f58a3b21b6a24b534a6" kindref="member">NotifySentry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Message)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(<ref refid="struct_meta_logging_1_1_detail_1_1_t_is_meta_sentry_verbosity_enabled" kindref="compound">TIsMetaSentryVerbosityEnabled&lt;Verbosity&gt;::value</ref>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ESentryLevel</ref><sp/>Level<sp/>=<sp/><ref refid="struct_meta_logging_1_1_detail_1_1_t_meta_log_sentry_level" kindref="compound">TMetaLogSentryLevel&lt;Verbosity&gt;::value</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IsValid(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GEngine</ref>))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">unlikely</ref>]]</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USentrySubsystem</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Sentry</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GEngine</ref>-&gt;GetEngineSubsystem&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USentrySubsystem</ref>&gt;();<sp/>IsValid(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Sentry</ref>))</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">likely</ref>]]</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Sentry</ref>-&gt;CaptureMessage(Message,<sp/>Level);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>META_LOG_EXTERN_NOTIFY_SENTRY(Verbosity)<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>template<sp/>void<sp/>METALOGGING_API<sp/>NotifySentry&lt;ELogVerbosity::Verbosity&gt;(const<sp/>FString&amp;<sp/>Message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Fatal</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(Error);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Warning</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Display</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(Log);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Verbose</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_meta_logging_8cpp_1aa43ba7a3545fb4af97a8b8360614cbde" kindref="member">META_LOG_EXTERN_NOTIFY_SENTRY</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VeryVerbose</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>META_LOG_EXTERN_NOTIFY_SENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="_meta_logging_8cpp_1a4c903f3ab4d69551a2174969da74d7a9" kindref="member">IMPLEMENT_MODULE</ref>(<ref refid="class_f_meta_logging_module" kindref="compound">FMetaLoggingModule</ref>,<sp/><ref refid="namespace_meta_logging" kindref="compound">MetaLogging</ref>);</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaLogging/Source/MetaLogging/Private/MetaLogging.cpp"/>
+  </compounddef>
+</doxygen>

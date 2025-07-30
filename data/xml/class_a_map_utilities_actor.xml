@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_map_utilities_actor" kind="class" language="C++" prot="public">
+    <compoundname>AMapUtilitiesActor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_map_utilities_actor_8h" local="no">MapUtilitiesActor.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_map_utilities_actor_1aa22343378dc216ac797ab3b51e9e487b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_t_layers_linked_list" kindref="compound">TLayersLinkedList</ref>&lt; <ref refid="class_a_map_utilities_actor" kindref="compound">AMapUtilitiesActor</ref> * &gt;</type>
+        <definition>TLayersLinkedList&lt;AMapUtilitiesActor*&gt; AMapUtilitiesActor::Pool</definition>
+        <argsstring></argsstring>
+        <name>Pool</name>
+        <qualifiedname>AMapUtilitiesActor::Pool</qualifiedname>
+        <initializer>{ 60 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="328" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" bodystart="328" bodyend="328"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_map_utilities_actor_1af10c043cf00a9e16d2e11922c26a9aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMapUtilitiesActor::AMapUtilitiesActor</definition>
+        <argsstring>()</argsstring>
+        <name>AMapUtilitiesActor</name>
+        <qualifiedname>AMapUtilitiesActor::AMapUtilitiesActor</qualifiedname>
+        <briefdescription>
+<para>Конструктор для класса <ref refid="class_a_map_utilities_actor" kindref="compound">AMapUtilitiesActor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот конструктор инициализирует объект <ref refid="class_a_map_utilities_actor" kindref="compound">AMapUtilitiesActor</ref>. Он настраивает PrimaryActorTick, чтобы метод <ref refid="class_a_map_utilities_actor_1ab247e238eebfd5e69a4e26e249b54ba4" kindref="member">Tick()</ref> вызывался на каждом кадре. Вы можете отключить это, если не нужно его для улучшения производительности.</para>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="250" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1ab247e238eebfd5e69a4e26e249b54ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>AMapUtilitiesActor::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="256" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1aa884a3c0129bc09ad2d6491584b35410" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::OnConstruction</definition>
+        <argsstring>(const FTransform &amp;Transform) override</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>AMapUtilitiesActor::OnConstruction</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="258" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a19ac2ff1f7f038599654d19f2747dac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::CreateLayerPool</definition>
+        <argsstring>()</argsstring>
+        <name>CreateLayerPool</name>
+        <qualifiedname>AMapUtilitiesActor::CreateLayerPool</qualifiedname>
+        <briefdescription>
+<para>Создает пул экземпляров <ref refid="class_a_map_utilities_actor" kindref="compound">AMapUtilitiesActor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает пул экземпляров <ref refid="class_a_map_utilities_actor" kindref="compound">AMapUtilitiesActor</ref> и добавляет их в пул, пока пул не будет заполнен. Если пул уже полон, удаляет первый элемент из пула, добавляет новый экземпляр в пул и вставляет удаленный элемент обратно в начало пула. Максимальный размер пула составляет 19999.</para>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="327" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="207" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a6f1ed111df076c56302db37e9bfdf187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString AMapUtilitiesActor::CreateBodyRequest</definition>
+        <argsstring>(const FString &amp;Guid, const FString &amp;UserId)</argsstring>
+        <name>CreateBodyRequest</name>
+        <qualifiedname>AMapUtilitiesActor::CreateBodyRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Guid</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="365" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="297" bodyend="309"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_map_utilities_actor_1ada18e67c2f6290d06853c50dcce6ba89" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>AMapUtilitiesActor::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="253" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a057f53d1f1279eada0e4cdcfa19f135b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_g_m__border" kindref="compound">FGM_border</ref></type>
+        <definition>FGM_border AMapUtilitiesActor::JsonToFGM</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>JsonToFGM</name>
+        <qualifiedname>AMapUtilitiesActor::JsonToFGM</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует строку JSON в объект <ref refid="struct_f_g_m__border" kindref="compound">FGM_border</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для преобразования. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованный объект <ref refid="struct_f_g_m__border" kindref="compound">FGM_border</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="267" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="43" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1ac728f05b28a8532bc2e5147c93b773cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref> &gt;</type>
+        <definition>TArray&lt; FSearchDocumentCoordinates &gt; AMapUtilitiesActor::ParseMultipolygonJSON</definition>
+        <argsstring>(const FString &amp;jsonStr, FAnswerFromSearch &amp;answer)</argsstring>
+        <name>ParseMultipolygonJSON</name>
+        <qualifiedname>AMapUtilitiesActor::ParseMultipolygonJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>jsonStr</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref> &amp;</type>
+          <declname>answer</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует строку JSON, представляющую собой многогранник, и извлекает координаты. Этот метод ожидает корректную строку JSON в формате GeoJSON, включающую ключ &quot;features&quot; с массивом свойств, каждое из которых включает ключ &quot;geometry&quot; с координатами для многогранника. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>answer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[выходные данные] Ответ от поиска. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref>, представляющий извлеченные из строки JSON координаты. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="279" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="80" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a1f9806e099c95a03a9f35dfeb46cf438" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt; FVector &gt; AMapUtilitiesActor::ParseBBCoordinatesToVectorArray</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>ParseBBCoordinatesToVectorArray</name>
+        <qualifiedname>AMapUtilitiesActor::ParseBBCoordinatesToVectorArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует данную строку координат JSON и преобразует их в массив FVector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод ожидает действующую строку JSON в формате GeoJSON, который включает в себя ключ &quot;coordinates&quot; с массивом координат полигона.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для анализа. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив FVector, представляющий проанализированные координаты. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="290" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="101" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a6e2e6bf9b921c8b2e895d0c5f3aed971" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt; FVector &gt; AMapUtilitiesActor::ParseGeomCoordinatesToVectorArray</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>ParseGeomCoordinatesToVectorArray</name>
+        <qualifiedname>AMapUtilitiesActor::ParseGeomCoordinatesToVectorArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует координаты геометрии в JSON формате и преобразует их в массив FVector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод использует строку JSON, содержащую координаты геометрии, и преобразует их в массив FVector. Строка JSON должна иметь поле с именем &quot;coordinates&quot;, которое содержит массив полигонов. Каждый полигон должен быть массивом линейных кольцевых объектов, и каждое линейное кольцевой объект должен быть массивом точек.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, содержащая координаты геометрии для анализа. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив FVector, представляющий проанализированные координаты геометрии. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="303" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="143" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a129968ed1f5df9fe2bf2bec173d3ffc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt; FVector &gt; AMapUtilitiesActor::GetOffsetPoints</definition>
+        <argsstring>(FVector BoxCenter, const TArray&lt; FVector &gt; &amp;Points, float OffsetFactorInCm)</argsstring>
+        <name>GetOffsetPoints</name>
+        <qualifiedname>AMapUtilitiesActor::GetOffsetPoints</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>BoxCenter</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Points</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>OffsetFactorInCm</declname>
+        </param>
+        <briefdescription>
+<para>Этот метод рассчитывает отклонение точек заданного набора точек на основе центра коробки и коэффициента смещения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BoxCenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Центральная точка коробки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек для смещения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OffsetFactorInCm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Коэффициент смещения в сантиметрах.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив отклоненных точек. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="314" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="190" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a9b374e2ecd1d10377cd6d41502fe9dee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::SendTextureToServer</definition>
+        <argsstring>(UTexture2D *Texture, const FString &amp;BuildingId, const FString &amp;URL)</argsstring>
+        <name>SendTextureToServer</name>
+        <qualifiedname>AMapUtilitiesActor::SendTextureToServer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref> *</type>
+          <declname>Texture</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>BuildingId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Отправляет текстуру на сервер. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает POST-запрос для отправки данной текстуры на сервер.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Текстура для отправки. Должен быть действительным объектом UTexture2D. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID здания, с которым связана текстура. Не должен быть пустым. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL серверного конечной точки, куда отправлять текстуру.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Параметры Texture и BuildingId обязательны и должны быть действительными. Если BuildingId пуст, выводится предупреждающее сообщение, и метод возвращает значение без отправки текстуры. Если Texture недействителен, выводится предупреждающее сообщение, и метод возвращает значение без отправки текстуры. </para>
+</simplesect>
+<simplesect kind="note"><para>Параметр URL обязателен и должен быть действительным URL серверной конечной точки. Если запрос на отправку текстуры успешен, выводится сообщение журнала. Если запрос не удался, выводится сообщение об ошибке. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="345" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="233" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_map_utilities_actor_1a5888133236892817110a5b98a00544a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMapUtilitiesActor::GuaranteeBuildingsGUID</definition>
+        <argsstring>(UObject *WorldContextObject=nullptr)</argsstring>
+        <name>GuaranteeBuildingsGUID</name>
+        <qualifiedname>AMapUtilitiesActor::GuaranteeBuildingsGUID</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>WorldContextObject</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Гарантирует, что у всех зданий есть GUID, вызывая GuaranteeExistsGuid для каждого здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает WorldContextObject в качестве ввода и гарантирует, что у каждого здания в мире есть GUID. Если WorldContextObject равен null, записывается сообщение об ошибке и метод завершается.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WorldContextObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на объект контекста мира. Он используется для получения всех актеров типа <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> в мире. Если он равен null, записывается сообщение об ошибке и метод завершается.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None.</para>
+</simplesect>
+<simplesect kind="see"><para>GuaranteeExistsGuid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="362" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/MapUtilitiesActor.cpp" bodystart="268" bodyend="295"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMapUtilitiesActor</label>
+        <link refid="class_a_map_utilities_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMapUtilitiesActor</label>
+        <link refid="class_a_map_utilities_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Pool</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TLayersLinkedList&lt; AMapUtilitiesActor * &gt;</label>
+        <link refid="class_t_layers_linked_list"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" line="237" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/MapUtilitiesActor.h" bodystart="238" bodyend="366"/>
+    <listofallmembers>
+      <member refid="class_a_map_utilities_actor_1af10c043cf00a9e16d2e11922c26a9aed" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>AMapUtilitiesActor</name></member>
+      <member refid="class_a_map_utilities_actor_1ada18e67c2f6290d06853c50dcce6ba89" prot="protected" virt="virtual"><scope>AMapUtilitiesActor</scope><name>BeginPlay</name></member>
+      <member refid="class_a_map_utilities_actor_1a6f1ed111df076c56302db37e9bfdf187" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>CreateBodyRequest</name></member>
+      <member refid="class_a_map_utilities_actor_1a19ac2ff1f7f038599654d19f2747dac7" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>CreateLayerPool</name></member>
+      <member refid="class_a_map_utilities_actor_1a129968ed1f5df9fe2bf2bec173d3ffc4" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>GetOffsetPoints</name></member>
+      <member refid="class_a_map_utilities_actor_1a5888133236892817110a5b98a00544a0" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>GuaranteeBuildingsGUID</name></member>
+      <member refid="class_a_map_utilities_actor_1a057f53d1f1279eada0e4cdcfa19f135b" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>JsonToFGM</name></member>
+      <member refid="class_a_map_utilities_actor_1aa884a3c0129bc09ad2d6491584b35410" prot="public" virt="virtual"><scope>AMapUtilitiesActor</scope><name>OnConstruction</name></member>
+      <member refid="class_a_map_utilities_actor_1a1f9806e099c95a03a9f35dfeb46cf438" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>ParseBBCoordinatesToVectorArray</name></member>
+      <member refid="class_a_map_utilities_actor_1a6e2e6bf9b921c8b2e895d0c5f3aed971" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>ParseGeomCoordinatesToVectorArray</name></member>
+      <member refid="class_a_map_utilities_actor_1ac728f05b28a8532bc2e5147c93b773cb" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>ParseMultipolygonJSON</name></member>
+      <member refid="class_a_map_utilities_actor_1aa22343378dc216ac797ab3b51e9e487b" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>Pool</name></member>
+      <member refid="class_a_map_utilities_actor_1a9b374e2ecd1d10377cd6d41502fe9dee" prot="public" virt="non-virtual"><scope>AMapUtilitiesActor</scope><name>SendTextureToServer</name></member>
+      <member refid="class_a_map_utilities_actor_1ab247e238eebfd5e69a4e26e249b54ba4" prot="public" virt="virtual"><scope>AMapUtilitiesActor</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

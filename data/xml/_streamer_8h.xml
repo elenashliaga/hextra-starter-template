@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_streamer_8h" kind="file" language="C++">
+    <compoundname>Streamer.h</compoundname>
+    <includes refid="_i_pixel_streaming2_streamer_8h" local="yes">IPixelStreaming2Streamer.h</includes>
+    <includes refid="_video_source_group_8h" local="yes">VideoSourceGroup.h</includes>
+    <includes refid="_thread_safe_map_8h" local="yes">ThreadSafeMap.h</includes>
+    <includes local="yes">Dom/JsonObject.h</includes>
+    <includes refid="_i_pixel_streaming2_input_handler_8h" local="yes">IPixelStreaming2InputHandler.h</includes>
+    <includes local="yes">Templates/SharedPointer.h</includes>
+    <includes refid="_player_context_8h" local="yes">PlayerContext.h</includes>
+    <includes refid="_freeze_frame_8h" local="yes">FreezeFrame.h</includes>
+    <includes refid="_streamer_reconnect_timer_8h" local="yes">StreamerReconnectTimer.h</includes>
+    <includes refid="_epic_rtc_manager_8h" local="yes">EpicRtcManager.h</includes>
+    <includes local="yes">epic_rtc/core/stats.h</includes>
+    <includedby refid="_pixel_streaming2_module_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/PixelStreaming2Module.cpp</includedby>
+    <includedby refid="_r_t_c_stats_collector_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/RTCStatsCollector.cpp</includedby>
+    <includedby refid="_stats_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp</includedby>
+    <includedby refid="_streamer_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.cpp</includedby>
+    <includedby refid="_test_utils_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Tests/TestUtils.cpp</includedby>
+    <incdepgraph>
+      <node id="41">
+        <label>AudioSink.h</label>
+        <link refid="_audio_sink_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>EpicRtcAudioTrackObserver.h</label>
+        <link refid="_epic_rtc_audio_track_observer_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>EpicRtcAudioTrackObserverFactory.h</label>
+        <link refid="_epic_rtc_audio_track_observer_factory_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>EpicRtcDataTrackObserver.h</label>
+        <link refid="_epic_rtc_data_track_observer_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>EpicRtcDataTrackObserverFactory.h</label>
+        <link refid="_epic_rtc_data_track_observer_factory_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>EpicRtcManager.h</label>
+        <link refid="_epic_rtc_manager_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>EpicRtcRoomObserver.h</label>
+        <link refid="_epic_rtc_room_observer_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>EpicRtcSessionObserver.h</label>
+        <link refid="_epic_rtc_session_observer_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>EpicRtcVideoCommon.h</label>
+        <link refid="_epic_rtc_video_common_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>EpicRtcVideoTrackObserverFactory.h</label>
+        <link refid="_epic_rtc_video_track_observer_factory_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>ThreadSafeMap.h</label>
+        <link refid="_thread_safe_map_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>VideoCapturer.h</label>
+        <link refid="_video_capturer_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>VideoProducer.h</label>
+        <link refid="_video_producer_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>VideoSink.h</label>
+        <link refid="_video_sink_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>DebugGraph.h</label>
+        <link refid="_debug_graph_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>EpicRtcAudioSink.h</label>
+        <link refid="_epic_rtc_audio_sink_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>EpicRtcAudioSource.h</label>
+        <link refid="_epic_rtc_audio_source_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>EpicRtcAudioTrack.h</label>
+        <link refid="_epic_rtc_audio_track_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>EpicRtcDataTrack.h</label>
+        <link refid="_epic_rtc_data_track_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>EpicRtcVideoSink.h</label>
+        <link refid="_epic_rtc_video_sink_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>EpicRtcVideoSource.h</label>
+        <link refid="_epic_rtc_video_source_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>EpicRtcVideoTrack.h</label>
+        <link refid="_epic_rtc_video_track_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>FreezeFrame.h</label>
+        <link refid="_freeze_frame_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Logging.h</label>
+        <link refid="_private_2_logging_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>PlayerContext.h</label>
+        <link refid="_player_context_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>RTCStatsCollector.h</label>
+        <link refid="_r_t_c_stats_collector_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Stats.h</label>
+        <link refid="_stats_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.h</label>
+        <link refid="_streamer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>StreamerReconnectTimer.h</label>
+        <link refid="_streamer_reconnect_timer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>UtilsCommon.h</label>
+        <link refid="_utils_common_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>VideoSourceGroup.h</label>
+        <link refid="_video_source_group_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IPixelStreaming2AudioSink.h</label>
+        <link refid="_i_pixel_streaming2_audio_sink_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>IPixelStreaming2Stats.h</label>
+        <link refid="_i_pixel_streaming2_stats_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPixelStreaming2Streamer.h</label>
+        <link refid="_i_pixel_streaming2_streamer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>IPixelStreaming2VideoProducer.h</label>
+        <link refid="_i_pixel_streaming2_video_producer_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>IPixelStreaming2VideoSink.h</label>
+        <link refid="_i_pixel_streaming2_video_sink_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>IPixelStreaming2DataProtocol.h</label>
+        <link refid="_i_pixel_streaming2_data_protocol_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IPixelStreaming2InputHandler.h</label>
+        <link refid="_i_pixel_streaming2_input_handler_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>IPixelStreaming2InputMessage.h</label>
+        <link refid="_i_pixel_streaming2_input_message_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PixelStreaming2InputEnums.h</label>
+        <link refid="_pixel_streaming2_input_enums_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Async/Async.h</label>
+      </node>
+      <node id="63">
+        <label>CanvasItem.h</label>
+      </node>
+      <node id="67">
+        <label>CanvasTypes.h</label>
+      </node>
+      <node id="65">
+        <label>ConsoleSettings.h</label>
+      </node>
+      <node id="15">
+        <label>Containers/Array.h</label>
+      </node>
+      <node id="36">
+        <label>Containers/ContainerAllocationPolicies.h</label>
+      </node>
+      <node id="87">
+        <label>Containers/ContainersFwd.h</label>
+      </node>
+      <node id="37">
+        <label>Containers/Map.h</label>
+      </node>
+      <node id="52">
+        <label>Containers/Set.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="19">
+        <label>CoreTypes.h</label>
+      </node>
+      <node id="29">
+        <label>Delegates/Delegate.h</label>
+      </node>
+      <node id="33">
+        <label>Delegates/DelegateCombinations.h</label>
+      </node>
+      <node id="17">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="88">
+        <label>Engine/Texture2D.h</label>
+      </node>
+      <node id="9">
+        <label>GenericPlatform/GenericPlatformMisc.h</label>
+      </node>
+      <node id="56">
+        <label>HAL/CriticalSection.h</label>
+      </node>
+      <node id="23">
+        <label>HAL/Event.h</label>
+      </node>
+      <node id="24">
+        <label>HAL/IConsoleManager.h</label>
+      </node>
+      <node id="16">
+        <label>HAL/Platform.h</label>
+      </node>
+      <node id="25">
+        <label>HAL/Runnable.h</label>
+      </node>
+      <node id="26">
+        <label>HAL/RunnableThread.h</label>
+      </node>
+      <node id="10">
+        <label>IInputDevice.h</label>
+      </node>
+      <node id="30">
+        <label>IPixelCaptureCapturerSource.h</label>
+      </node>
+      <node id="20">
+        <label>IPixelCaptureInputFrame.h</label>
+      </node>
+      <node id="48">
+        <label>Logging/LogMacros.h</label>
+      </node>
+      <node id="49">
+        <label>Logging/StructuredLog.h</label>
+      </node>
+      <node id="82">
+        <label>Misc/CommandLine.h</label>
+      </node>
+      <node id="68">
+        <label>Misc/Optional.h</label>
+      </node>
+      <node id="38">
+        <label>Misc/ScopeLock.h</label>
+      </node>
+      <node id="27">
+        <label>Misc/SingleThreadRunnable.h</label>
+      </node>
+      <node id="31">
+        <label>PixelCaptureCapturerMultiFormat.h</label>
+      </node>
+      <node id="69">
+        <label>PixelCaptureFrameMetadata.h</label>
+      </node>
+      <node id="57">
+        <label>RendererInterface.h</label>
+      </node>
+      <node id="11">
+        <label>Serialization/MemoryReader.h</label>
+      </node>
+      <node id="43">
+        <label>Templates/RefCounting.h</label>
+      </node>
+      <node id="6">
+        <label>Templates/SharedPointer.h</label>
+      </node>
+      <node id="62">
+        <label>Tickable.h</label>
+      </node>
+      <node id="71">
+        <label>UObject/NameTypes.h</label>
+      </node>
+      <node id="64">
+        <label>UnrealEngine.h</label>
+      </node>
+      <node id="83">
+        <label>Video/CodecUtils/CodecUtilsH264.h</label>
+      </node>
+      <node id="84">
+        <label>Video/CodecUtils/CodecUtilsVP9.h</label>
+      </node>
+      <node id="76">
+        <label>Video/DependencyDescriptor.h</label>
+      </node>
+      <node id="77">
+        <label>Video/GenericFrameInfo.h</label>
+      </node>
+      <node id="78">
+        <label>Video/VideoEncoder.h</label>
+      </node>
+      <node id="4">
+        <label>Widgets/SViewport.h</label>
+      </node>
+      <node id="5">
+        <label>Widgets/SWindow.h</label>
+      </node>
+      <node id="79">
+        <label>epic_rtc/containers/epic_rtc_array.h</label>
+      </node>
+      <node id="80">
+        <label>epic_rtc/containers/epic_rtc_string_view.h</label>
+      </node>
+      <node id="44">
+        <label>epic_rtc/core/audio/audio_track.h</label>
+      </node>
+      <node id="93">
+        <label>epic_rtc/core/audio/audio_track_observer.h</label>
+      </node>
+      <node id="103">
+        <label>epic_rtc/core/conference.h</label>
+      </node>
+      <node id="50">
+        <label>epic_rtc/core/data_track.h</label>
+      </node>
+      <node id="96">
+        <label>epic_rtc/core/data_track_observer.h</label>
+      </node>
+      <node id="85">
+        <label>epic_rtc/core/participant.h</label>
+      </node>
+      <node id="104">
+        <label>epic_rtc/core/room.h</label>
+      </node>
+      <node id="98">
+        <label>epic_rtc/core/room_observer.h</label>
+      </node>
+      <node id="105">
+        <label>epic_rtc/core/session.h</label>
+      </node>
+      <node id="100">
+        <label>epic_rtc/core/session_observer.h</label>
+      </node>
+      <node id="72">
+        <label>epic_rtc/core/stats.h</label>
+      </node>
+      <node id="34">
+        <label>epic_rtc/core/video/video_buffer.h</label>
+      </node>
+      <node id="81">
+        <label>epic_rtc/core/video/video_codec_info.h</label>
+      </node>
+      <node id="58">
+        <label>epic_rtc/core/video/video_frame.h</label>
+      </node>
+      <node id="54">
+        <label>epic_rtc/core/video/video_track.h</label>
+      </node>
+      <node id="102">
+        <label>epic_rtc/core/video/video_track_observer.h</label>
+      </node>
+      <node id="106">
+        <label>epic_rtc/plugins/signalling/websocket.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/PixelStreaming2Module.cpp</label>
+        <link refid="_pixel_streaming2_module_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/RTCStatsCollector.cpp</label>
+        <link refid="_r_t_c_stats_collector_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp</label>
+        <link refid="_stats_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.cpp</label>
+        <link refid="_streamer_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.h</label>
+        <link refid="_streamer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Tests/TestUtils.cpp</label>
+        <link refid="_test_utils_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer" prot="public">UE::PixelStreaming2::FStreamer</innerclass>
+    <innernamespace refid="namespace_u_e">UE</innernamespace>
+    <innernamespace refid="namespace_u_e_1_1_pixel_streaming2">UE::PixelStreaming2</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_u_e_1_1_pixel_streaming2_1a5818b363343d96a2178cf806c41137cb" prot="public" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString UE::PixelStreaming2::INVALID_PLAYER_ID</definition>
+        <argsstring></argsstring>
+        <name>INVALID_PLAYER_ID</name>
+        <qualifiedname>UE::PixelStreaming2::INVALID_PLAYER_ID</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>(TEXT(&quot;Invalid <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Player</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Id&quot;</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.h" line="22" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_pixel_streaming2_streamer_8h" kindref="compound">IPixelStreaming2Streamer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_video_source_group_8h" kindref="compound">VideoSourceGroup.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_thread_safe_map_8h" kindref="compound">ThreadSafeMap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Dom/JsonObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_pixel_streaming2_input_handler_8h" kindref="compound">IPixelStreaming2InputHandler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Templates/SharedPointer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_context_8h" kindref="compound">PlayerContext.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_freeze_frame_8h" kindref="compound">FreezeFrame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_streamer_reconnect_timer_8h" kindref="compound">StreamerReconnectTimer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_epic_rtc_manager_8h" kindref="compound">EpicRtcManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;epic_rtc/core/stats.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_i_pixel_streaming2_module" kindref="compound">IPixelStreaming2Module</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_u_e_1_1_pixel_streaming2" kindref="compound">UE::PixelStreaming2</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22" refid="namespace_u_e_1_1_pixel_streaming2_1a5818b363343d96a2178cf806c41137cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="namespace_u_e_1_1_pixel_streaming2_1a5818b363343d96a2178cf806c41137cb" kindref="member">INVALID_PLAYER_ID</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>Player<sp/>Id&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer" kindref="compound">FStreamer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TSharedFromThis&lt;FStreamer&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FStreamer&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a262b542c73fa737175bde4e5fbc9e6bd" kindref="member">Create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a892623a73af4859b69bdbfaee369b14f" kindref="member">StreamerId</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TRefCountPtr&lt;EpicRtcConferenceInterface&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Conference</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a9270c4c1a23e8edfaef0c7f1531a62db" kindref="member">~FStreamer</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aaae564681720db293f9a327c9d8cb0d4" kindref="member">SetStreamFPS</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFramesPerSecond</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1adcd51f715d2a558969dae34ff45d1d13" kindref="member">GetStreamFPS</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a8bf5cb8485bba72bbca47ba6a73e59d0" kindref="member">SetCoupleFramerate</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bCouple</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1af2328e2d45d00b876e901cce4bc8650a" kindref="member">SetVideoProducer</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2VideoProducer&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Input</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr&lt;IPixelStreaming2VideoProducer&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a75fb889efca53830d7104a967ece4114" kindref="member">GetVideoProducer</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1af80ae706965034a407dbe4e932633ab5" kindref="member">SetSignallingServerURL</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InSignallingServerURL</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a0093fc5fe408d743d66415676f4657f7" kindref="member">GetSignallingServerURL</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a777174e3c675c463abed1e3f386ccc04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a777174e3c675c463abed1e3f386ccc04" kindref="member">GetId</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a892623a73af4859b69bdbfaee369b14f" kindref="member">StreamerId</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="41" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab0a2b937363544ebc4c26726d876141c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab0a2b937363544ebc4c26726d876141c" kindref="member">IsSignallingConnected</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ae4676f54e576714a4e189fe684026447" kindref="member">bSignallingConnected</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ae847af4e28cd50933619ee321e5db6bf" kindref="member">StartStreaming</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a59edb9bd6fa96ab39976436c4b66a921" kindref="member">StopStreaming</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab41bc51ef6289fbcef43e69e58bb8200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab41bc51ef6289fbcef43e69e58bb8200" kindref="member">IsStreaming</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aeae1dc104fab17e378679302c027aa27" kindref="member">bStreamingStarted</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPreConnectionEvent</ref>&amp;<sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac1b2e82e65ebb0658aa5298fe6bd40a3" kindref="member">OnPreConnection</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStreamingStartedEvent</ref>&amp;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a492258f01b21ee0b7dfbc32bc357dcaa" kindref="member">OnStreamingStarted</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStreamingStoppedEvent</ref>&amp;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1adfa8caeb804d802e0e2cba01060e38cc" kindref="member">OnStreamingStopped</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a53cfbb1fc833ef1435e1a0352c2faa1c" kindref="member">ForceKeyFrame</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6b524386a76feaaac55b937de4702fa6" kindref="member">FreezeStream</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref>*<sp/>Texture)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac2feb23b462a7665134563f1fd9d3558" kindref="member">UnfreezeStream</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a34e91f02225f19691a34275f13c87066" kindref="member">SendAllPlayersMessage</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MessageType</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Descriptor</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6b64c79d3ca52cbe3497020c3e81d32e" kindref="member">SendPlayerMessage</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MessageType</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Descriptor</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a8a76ac77d23256763d1d8d1469e84ff0" kindref="member">SendFileData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64&lt;uint8&gt;</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ByteData</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MimeType</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>FileExtension)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a51fa384963c25d5083a00caf842564c2" kindref="member">KickPlayer</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FString&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a042eaa2461073f99b063b426eb898f7b" kindref="member">GetConnectedPlayers</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aea94715118baa9c6289a12f46dbb395d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr&lt;IPixelStreaming2InputHandler&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aea94715118baa9c6289a12f46dbb395d" kindref="member">GetInputHandler</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a94f1944ba2776ab934dee784a1b475eb" kindref="member">InputHandler</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_audio_sink" kindref="compound">IPixelStreaming2AudioSink</ref>*<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a385f763832ac4e990b01323f9c187dab" kindref="member">GetPeerAudioSink</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_audio_sink" kindref="compound">IPixelStreaming2AudioSink</ref>*<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1acdcac404b84f7b960885c64240e1e2fa" kindref="member">GetUnlistenedAudioSink</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_video_sink" kindref="compound">IPixelStreaming2VideoSink</ref>*<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a38eaf7f937077c3c5ca6946560d672d2" kindref="member">GetPeerVideoSink</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_i_pixel_streaming2_video_sink" kindref="compound">IPixelStreaming2VideoSink</ref>*<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a7b748d498374d6299ccfb480808b9bef" kindref="member">GetUnwatchedVideoSink</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a13f109697a09a55a040f02821d4e4c86" kindref="member">SetConfigOption</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OptionName</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a1b448b8c01806f42c859b4e39e5ba0eb" kindref="member">GetConfigOption</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OptionName</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutValue</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ad37d70f479d398eedf28816897257e42" kindref="member">PlayerRequestsBitrate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MinBitrate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MaxBitrate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a85919590756b1624cebf2484c9dd8e02" kindref="member">RefreshStreamBitrate</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac937a9a12b753887b8af2f3738ba2956" kindref="member">ForEachPlayer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>,<sp/><ref refid="struct_u_e_1_1_pixel_streaming2_1_1_f_player_context" kindref="compound">FPlayerContext</ref>)&gt;&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Func</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer" kindref="compound">FStreamer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a892623a73af4859b69bdbfaee369b14f" kindref="member">StreamerId</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TRefCountPtr&lt;EpicRtcConferenceInterface&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Conference</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>own<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a3fb97b9ab593ec386c102ac93d6fe776" kindref="member">OnProtocolUpdated</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a730c5bbbd8efc085ccd481805e591452" kindref="member">ConsumeStats</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>StatName,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>StatValue);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a68913984233046f30bc90eff4ac3dd3b" kindref="member">DeletePlayerSession</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a70b33887dd689e585417c6f9b5787fe7" kindref="member">DeleteAllPlayerSessions</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a3b06ac7ce0459682799c1f71ccf93476" kindref="member">OnDataChannelOpen</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a7178a9a5ec98e5451be6ae78dd2cfec2" kindref="member">OnDataChannelClosed</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a5c9e3428eeb67df098c15c3736f65860" kindref="member">SendInitialSettings</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a7298847a9930bbe8a1724516dc1b6edf" kindref="member">SendProtocol</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aa51536ec2296b71ab7a6e617c70bc538" kindref="member">SendPeerControllerMessages</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aa0738c287aed885c7cae5c39cccf1203" kindref="member">SendLatencyReport</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>PlayerId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a3c3df36325f1e53384b64ec43a6b3019" kindref="member">HandleRelayStatusMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8_t</ref>*<sp/>Data,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32_t</ref><sp/>Size,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a77a199b940ee2c9d007d71ab6f1657cf" kindref="member">FindPlayerByAudioTrack</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutPlayerId</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a67880b908a7255ac2a5546fccc8a8400" kindref="member">FindPlayerByVideoTrack</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutPlayerId</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a1847f745f4c4b826b679d1d261e5d3e8" kindref="member">FindPlayerByDataTrack</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutPlayerId</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a29f58bdcfcd97ee73c076f7c54f3e9f9" kindref="member">TriggerMouseLeave</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InStreamerId</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1acbb1dc1c567fd59c01b792398428c56d" kindref="member">RemoveSession</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bDisconnect</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ad35b72dfb76e04f876f8aa261639d63f" kindref="member">RemoveRoom</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a06512f518cb3062040564a6b9ba68abc" kindref="member">OnStatsReady</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>PlayerId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcConnectionStats</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ConnectionStats</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a892623a73af4859b69bdbfaee369b14f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a892623a73af4859b69bdbfaee369b14f" kindref="member">StreamerId</ref>;</highlight></codeline>
+<codeline lineno="102" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aca94d152f5c395b55ce05480beeb065d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aca94d152f5c395b55ce05480beeb065d" kindref="member">CurrentSignallingServerURL</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a94f1944ba2776ab934dee784a1b475eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;IPixelStreaming2InputHandler&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a94f1944ba2776ab934dee784a1b475eb" kindref="member">InputHandler</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ade360d191c120cfa181a9f8d050fcb22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;TThreadSafeMap&lt;FString, FPlayerContext&gt;</ref>&gt;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ade360d191c120cfa181a9f8d050fcb22" kindref="member">Players</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1abe0df196b2ac8616208aebc21b46cfa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1abe0df196b2ac8616208aebc21b46cfa7" kindref="member">InputControllingId</ref><sp/>=<sp/><ref refid="namespace_u_e_1_1_pixel_streaming2_1a5818b363343d96a2178cf806c41137cb" kindref="member">INVALID_PLAYER_ID</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ae4676f54e576714a4e189fe684026447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ae4676f54e576714a4e189fe684026447" kindref="member">bSignallingConnected</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aeae1dc104fab17e378679302c027aa27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aeae1dc104fab17e378679302c027aa27" kindref="member">bStreamingStarted</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a4506c65e2e0eff9b95b874e7547ba8de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPreConnectionEvent</ref><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a4506c65e2e0eff9b95b874e7547ba8de" kindref="member">StreamingPreConnectionEvent</ref>;</highlight></codeline>
+<codeline lineno="114" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab6f39602b0715952eec6cc856ace1713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStreamingStartedEvent</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab6f39602b0715952eec6cc856ace1713" kindref="member">StreamingStartedEvent</ref>;</highlight></codeline>
+<codeline lineno="115" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1abfd32b3bc6f504c9e5c620c7ac963a84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStreamingStoppedEvent</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1abfd32b3bc6f504c9e5c620c7ac963a84" kindref="member">StreamingStoppedEvent</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6591103926174511e7c78d4646892dff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FVideoCapturer&gt;</ref><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6591103926174511e7c78d4646892dff" kindref="member">VideoCapturer</ref>;</highlight></codeline>
+<codeline lineno="118" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a8c85fe73506cfea5a7dff7abc91b121b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FVideoSourceGroup&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a8c85fe73506cfea5a7dff7abc91b121b" kindref="member">VideoSourceGroup</ref>;</highlight></codeline>
+<codeline lineno="119" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a0b63d9c5c68e49b69fc37cce8ee10650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FFreezeFrame&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a0b63d9c5c68e49b69fc37cce8ee10650" kindref="member">FreezeFrame</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6a898b02480ba8b4ad8dd97edf57b503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6a898b02480ba8b4ad8dd97edf57b503" kindref="member">ConsumeStatsHandle</ref>;</highlight></codeline>
+<codeline lineno="122" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6f2d5f4f05ca032bb7c9dd010b4f1791" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a6f2d5f4f05ca032bb7c9dd010b4f1791" kindref="member">AllConnectionsClosedHandle</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a417c3d7c961b5ff0b5221d1305a594ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap&lt;FName, FString&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a417c3d7c961b5ff0b5221d1305a594ea" kindref="member">ConfigOptions</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aee62c6f6255deb7dcdeebb9fdc8940ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FStreamerReconnectTimer&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aee62c6f6255deb7dcdeebb9fdc8940ce" kindref="member">ReconnectTimer</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac37daee938a762f93342b6a482d0b178" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FEpicRtcManager&gt;</ref><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac37daee938a762f93342b6a482d0b178" kindref="member">EpicRtcManager</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Begin<sp/>FEpicRtcManager<sp/>Callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a71f22be9decd65358c2d18ce44e0d2ff" kindref="member">OnSessionStateUpdate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSessionState</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">StateUpdate</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a607e1fa9835af42dd48f4ee363330481" kindref="member">OnSessionErrorUpdate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcErrorCode</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ErrorUpdate</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aa238cae3da831173d5191f6bc0695b44" kindref="member">OnSessionRoomsAvailableUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcStringArrayInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RoomsList</ref>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aeaf013ec2518d05e8eca42b48787adbb" kindref="member">OnRoomStateUpdate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcRoomState</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">State</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a35aee2953ab13f3352ea9c124b3e8a23" kindref="member">OnRoomJoinedUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a94bf0f2a86ff0df10b83132f93c68920" kindref="member">OnRoomLeftUpdate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcStringView</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ParticipantId</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a40721e3b9898e96eb3c22246d3cb00d3" kindref="member">OnAudioTrackUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a66b78aa4f5139f02258d2b93c32c87cd" kindref="member">OnVideoTrackUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1acdbe34a32ddb80bff6c33f51babd52d9" kindref="member">OnDataTrackUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a95cfc36665328d09e73b2e13739b1707" kindref="member">OnLocalSdpUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSdpInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Sdp</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ac13c88009e44addfbe0d6deae51c7b69" kindref="member">OnRemoteSdpUpdate</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Participant</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSdpInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Sdp</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ae3cac502cc48c03baf8eca6143d45cb0" kindref="member">OnRoomErrorUpdate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcErrorCode</ref><sp/>Error);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ab226eade6e6b350e8cc46bcbebfaf545" kindref="member">OnAudioTrackMuted</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcBool</ref><sp/>bIsMuted);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a7fd64bbea09b91943a36e259bb85a322" kindref="member">OnAudioTrackFrame</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioFrame</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Frame</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a70019ffa2c7122abc9a59edcbfc0b7ff" kindref="member">OnAudioTrackRemoved</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a01e6da9422fbe7158548afad80ee2d83" kindref="member">OnAudioTrackState</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AudioTrack</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">State</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a4eb2ea1339410a224f9b875d882e4737" kindref="member">OnVideoTrackMuted</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcBool</ref><sp/>bIsMuted);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a105edfc8fad2e84ef8bb934fe08a09cb" kindref="member">OnVideoTrackFrame</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoFrame</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Frame</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a94c47b02a41f62023a1db88bf882c37c" kindref="member">OnVideoTrackRemoved</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1a0240c072dc1508eb3b9bee9e7d30b6b5" kindref="member">OnVideoTrackState</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VideoTrack</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">State</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1aca931e1ff1979697dd56047f295858b5" kindref="member">OnDataTrackRemoved</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1ade00275805ffda9fe65e8638e8caa2c7" kindref="member">OnDataTrackState</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">State</ref>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_streamer_1af0fdc38a509ec96188c56f4e10ba93b7" kindref="member">OnDataTrackMessage</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref>*<sp/>DataTrack);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>End<sp/>FEpicRtcManager<sp/>Callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>UE::PixelStreaming2</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Streamer.h"/>
+  </compounddef>
+</doxygen>

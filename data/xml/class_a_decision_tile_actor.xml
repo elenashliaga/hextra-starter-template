@@ -1,0 +1,1657 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_decision_tile_actor" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>ADecisionTileActor</compoundname>
+    <basecompoundref refid="class_a_point_actor_base" prot="public" virt="non-virtual">APointActorBase</basecompoundref>
+    <includes refid="_decision_tile_actor_8h" local="no">DecisionTileActor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a22625bec5ceee314700951f61e3968f4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_visual_polygon_info" kindref="compound">FVisualPolygonInfo</ref></type>
+        <definition>FVisualPolygonInfo ADecisionTileActor::VisualPolygonInfo</definition>
+        <argsstring></argsstring>
+        <name>VisualPolygonInfo</name>
+        <qualifiedname>ADecisionTileActor::VisualPolygonInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="123" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1ad063948cf21857d1a3d3dd021bf3e4b3" prot="private" static="no" mutable="no">
+        <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+        <definition>EDecisionType ADecisionTileActor::DecisionType</definition>
+        <argsstring></argsstring>
+        <name>DecisionType</name>
+        <qualifiedname>ADecisionTileActor::DecisionType</qualifiedname>
+        <briefdescription>
+<para>Тип принятого решения, используемый для определения типа геометрии создаваемого объекта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="128" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a67a249bb1b498b094f584600021f9413" prot="private" static="no" mutable="no">
+        <type><ref refid="_point_projector_library_8h_1aa32dff9866e8d92bad87089c420ce78c" kindref="member">EIconDataType</ref></type>
+        <definition>EIconDataType ADecisionTileActor::IconType</definition>
+        <argsstring></argsstring>
+        <name>IconType</name>
+        <qualifiedname>ADecisionTileActor::IconType</qualifiedname>
+        <initializer>= <ref refid="_point_projector_library_8h_1aa32dff9866e8d92bad87089c420ce78caec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">EIconDataType::Undefined</ref></initializer>
+        <briefdescription>
+<para>Тип иконки если принятые - точка </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="133" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a726d9fae7acfa9d5921580fe49831e8d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TVariant</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt;, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TVariant&lt;TArray&lt;uint8&gt;, FString&gt; ADecisionTileActor::IconData</definition>
+        <argsstring></argsstring>
+        <name>IconData</name>
+        <qualifiedname>ADecisionTileActor::IconData</qualifiedname>
+        <briefdescription>
+<para>Кэшированные данные для создания иконки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="138" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1af7673a06fec99d916c361d3a1eea9946" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        <definition>FGuid ADecisionTileActor::DecisionTileGuid</definition>
+        <argsstring></argsstring>
+        <name>DecisionTileGuid</name>
+        <qualifiedname>ADecisionTileActor::DecisionTileGuid</qualifiedname>
+        <briefdescription>
+<para>GUID для того, чтобы получить нужный CCR объект если принятое решение - полигон </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="145" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a12c99c32987afcc6ebaebd194a1db5c4" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_decisions_module_updater_8h_1a13464490f53936d5308b01590b8231e3" kindref="member">EDecisionTags</ref> &gt;</type>
+        <definition>TArray&lt;EDecisionTags&gt; ADecisionTileActor::ActiveTags</definition>
+        <argsstring></argsstring>
+        <name>ActiveTags</name>
+        <qualifiedname>ADecisionTileActor::ActiveTags</qualifiedname>
+        <briefdescription>
+<para>Массив тегов у данного принятого решения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="150" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a14e6aa0a64dc56f4b4be3fad2dd1735d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_decision_data" kindref="compound">FDecisionData</ref> &gt;</type>
+        <definition>TArray&lt;FDecisionData&gt; ADecisionTileActor::DecisionObjects</definition>
+        <argsstring></argsstring>
+        <name>DecisionObjects</name>
+        <qualifiedname>ADecisionTileActor::DecisionObjects</qualifiedname>
+        <briefdescription>
+<para>Информация о всех хранящихся в данном тайле объектов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="155" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1af6243c60f379ba0cd956f413e0d8c6ff" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMultiMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>, <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &gt;</type>
+        <definition>TMultiMap&lt;int64, FMvtGeometry&gt; ADecisionTileActor::GeometryCache</definition>
+        <argsstring></argsstring>
+        <name>GeometryCache</name>
+        <qualifiedname>ADecisionTileActor::GeometryCache</qualifiedname>
+        <briefdescription>
+<para>Кэшированная информация о геометрии пришедших объектах </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="160" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a63e39df5b1e4ad73718db2741ed9adbb" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 ADecisionTileActor::CurrentZoomLvl</definition>
+        <argsstring></argsstring>
+        <name>CurrentZoomLvl</name>
+        <qualifiedname>ADecisionTileActor::CurrentZoomLvl</qualifiedname>
+        <briefdescription>
+<para>Текущий зум данного тайла </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="165" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a1b0c629d1843c4338542bddaf833e72c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &gt;</type>
+        <definition>TArray&lt;FSegment&gt; ADecisionTileActor::TileBorders</definition>
+        <argsstring></argsstring>
+        <name>TileBorders</name>
+        <qualifiedname>ADecisionTileActor::TileBorders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="167" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a8e415d97c6a01ffb03d05dd1e5f817f8" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref></type>
+        <definition>const FVector2D ADecisionTileActor::DecisionBaseBounds</definition>
+        <argsstring></argsstring>
+        <name>DecisionBaseBounds</name>
+        <qualifiedname>ADecisionTileActor::DecisionBaseBounds</qualifiedname>
+        <initializer>= { 42.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 42.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="294" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1abe8366b0ae220805bbc6a8a4ac494c55" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>constexpr int32 ADecisionTileActor::DecisionIconZoomOverrideMin</definition>
+        <argsstring></argsstring>
+        <name>DecisionIconZoomOverrideMin</name>
+        <qualifiedname>ADecisionTileActor::DecisionIconZoomOverrideMin</qualifiedname>
+        <initializer>= 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="295" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1afa9fda041e5c27ae0ce07856efa9ff05" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>constexpr int32 ADecisionTileActor::DecisionIconZoomOverrideMax</definition>
+        <argsstring></argsstring>
+        <name>DecisionIconZoomOverrideMax</name>
+        <qualifiedname>ADecisionTileActor::DecisionIconZoomOverrideMax</qualifiedname>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="296" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a2345db414855bdbf64ab53daf1d9cf4e" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString ADecisionTileActor::DecisionIconGuidDelimiter</definition>
+        <argsstring></argsstring>
+        <name>DecisionIconGuidDelimiter</name>
+        <qualifiedname>ADecisionTileActor::DecisionIconGuidDelimiter</qualifiedname>
+        <initializer>= TEXT(&quot;_&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="297" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a6bad464d00ab3878f85abd8640f6043a" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float ADecisionTileActor::BasePhysicalLineRadius</definition>
+        <argsstring></argsstring>
+        <name>BasePhysicalLineRadius</name>
+        <qualifiedname>ADecisionTileActor::BasePhysicalLineRadius</qualifiedname>
+        <initializer>= 1000.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="298" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1ababfe9e7a872a879eb8683d5ab36d3fd" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float ADecisionTileActor::IconHigh</definition>
+        <argsstring></argsstring>
+        <name>IconHigh</name>
+        <qualifiedname>ADecisionTileActor::IconHigh</qualifiedname>
+        <initializer>= 4000.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="299" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1aba74e561ec077ea38c12467183c99cd1" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_u_meta_color_correct_regions_subsystem" kindref="compound">UMetaColorCorrectRegionsSubsystem</ref> *</type>
+        <definition>UMetaColorCorrectRegionsSubsystem* ADecisionTileActor::MetaCCRSubsystem</definition>
+        <argsstring></argsstring>
+        <name>MetaCCRSubsystem</name>
+        <qualifiedname>ADecisionTileActor::MetaCCRSubsystem</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="303" column="43" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a41317cd0dc96fc5beea6ee4ebb79c1a5" prot="public" static="no" mutable="no">
+        <type><ref refid="_library_8h_1ad791060802282e1ed86a8c5d01fe6d3f" kindref="member">EGeomType</ref></type>
+        <definition>EGeomType ADecisionTileActor::GeometryType</definition>
+        <argsstring></argsstring>
+        <name>GeometryType</name>
+        <qualifiedname>ADecisionTileActor::GeometryType</qualifiedname>
+        <briefdescription>
+<para>Тип геометрии по которой строится тайл </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="310" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a04dfabcf3dc6048efec00c3f4cd342dd" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_layers_creator_settings" kindref="compound">ULayersCreatorSettings</ref> *</type>
+        <definition>const ULayersCreatorSettings* ADecisionTileActor::LayersCreatorSettings</definition>
+        <argsstring></argsstring>
+        <name>LayersCreatorSettings</name>
+        <qualifiedname>ADecisionTileActor::LayersCreatorSettings</qualifiedname>
+        <briefdescription>
+<para>Указатель для конфига с настройками </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="316" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a50b6d941bbd18fb0abd75c2b341679d7" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UDataTable</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UDataTable&gt; ADecisionTileActor::IconsDataTable</definition>
+        <argsstring></argsstring>
+        <name>IconsDataTable</name>
+        <qualifiedname>ADecisionTileActor::IconsDataTable</qualifiedname>
+        <briefdescription>
+<para>Указатель на таблицу с настройками иконок </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="322" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a281bc87ba95f810a9b2fff0a2843e286" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_meta_data_layer_settings" kindref="compound">FMetaDataLayerSettings</ref></type>
+        <definition>FMetaDataLayerSettings ADecisionTileActor::MetaDataLayerSettings</definition>
+        <argsstring></argsstring>
+        <name>MetaDataLayerSettings</name>
+        <qualifiedname>ADecisionTileActor::MetaDataLayerSettings</qualifiedname>
+        <briefdescription>
+<para>Кэшированные настройки слоя </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="327" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1aece85332410bc8983879c30729f0cfe3" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 ADecisionTileActor::ExternalID</definition>
+        <argsstring></argsstring>
+        <name>ExternalID</name>
+        <qualifiedname>ADecisionTileActor::ExternalID</qualifiedname>
+        <briefdescription>
+<para>Айди слоя принятых решений </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="332" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_decision_tile_actor_1a37413b3975147dfa1e18c73f5b9e8131" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString ADecisionTileActor::UniqueTreeID</definition>
+        <argsstring></argsstring>
+        <name>UniqueTreeID</name>
+        <qualifiedname>ADecisionTileActor::UniqueTreeID</qualifiedname>
+        <briefdescription>
+<para>Айди слоя принятых решений в дереве фронтенда </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="337" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a7915b13a4a57560c9c496865fb3b0646" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_meta_color_correct_region_8h_1a2adc50bb410dff20d6dfa75a99598fa3" kindref="member">EMetaColorCorrectRegionsType</ref></type>
+        <definition>EMetaColorCorrectRegionsType ADecisionTileActor::ChangeCCRType</definition>
+        <argsstring>(EDecisionType RegionType)</argsstring>
+        <name>ChangeCCRType</name>
+        <qualifiedname>ADecisionTileActor::ChangeCCRType</qualifiedname>
+        <param>
+          <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+          <declname>RegionType</declname>
+        </param>
+        <briefdescription>
+<para>Функция для определения типа CCR Actor - типа отрисовки в шейдере </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RegionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Параметр на основе которого выбирается вариант отрисовки</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EMetaColorCorrectRegionsType - тип отрисовки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="176" column="45" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="375" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a2977dcb1c32d1686993e35e7e2e01c2b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ProcessPolygonInternalLines</definition>
+        <argsstring>(TArray&lt; TArray&lt; FVector &gt; &gt; InternalLines, TArray&lt; FPolygon &gt; &amp;Polygons)</argsstring>
+        <name>ProcessPolygonInternalLines</name>
+        <qualifiedname>ADecisionTileActor::ProcessPolygonInternalLines</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt;</type>
+          <declname>InternalLines</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &gt; &amp;</type>
+          <declname>Polygons</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает точки внутри полигонов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InternalLines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив для хранения внутренних линий полигонов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Polygons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор полигонов для обработки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="244" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="749" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1aad782130babea6bc37f30002282b7569" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ReadProperties</definition>
+        <argsstring>(FDecisionData &amp;DecisionData, const FMvtGeometry &amp;Geometry)</argsstring>
+        <name>ReadProperties</name>
+        <qualifiedname>ADecisionTileActor::ReadProperties</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_decision_data" kindref="compound">FDecisionData</ref> &amp;</type>
+          <declname>DecisionData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Материал, который хранится для текущего тайла и присваивается процедурному мешу </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор данных откуда пробуем получить данные в структуру </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DecisionData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура, которая передается по ссылке и заполняется из Geometry </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="253" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="238" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a3ae667866fa958be35fa6ea213fd32e2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::AddPointsToArray</definition>
+        <argsstring>(FPolygonCCRObjectInfo &amp;CCRActor, const TArray&lt; TArray&lt; FVector &gt; &gt; &amp;AllSurfaceArray, const TArray&lt; FCCRObjectProperties &gt; &amp;SurfacesProperiesArray, const FVector &amp;LocalAnchor)</argsstring>
+        <name>AddPointsToArray</name>
+        <qualifiedname>ADecisionTileActor::AddPointsToArray</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> &amp;</type>
+          <declname>CCRActor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>AllSurfaceArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_c_c_r_object_properties" kindref="compound">FCCRObjectProperties</ref> &gt; &amp;</type>
+          <declname>SurfacesProperiesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>LocalAnchor</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет <ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> Нужными для отрисовки данными </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CCRActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заполняемый обьект </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllSurfaceArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контура регионов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SurfacesProperiesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Свойства регионов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LocalAnchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Локальное смещение для точек <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="283" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="814" bodyend="931"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a96afa3ea87f8129cf29ac67f3ab5659b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::GenerateColorCorrectionRegion</definition>
+        <argsstring>(EDecisionType RegionType)</argsstring>
+        <name>GenerateColorCorrectionRegion</name>
+        <qualifiedname>ADecisionTileActor::GenerateColorCorrectionRegion</qualifiedname>
+        <param>
+          <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+          <declname>RegionType</declname>
+        </param>
+        <briefdescription>
+<para>Генерирует территорию принятых решений. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="182" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="388" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a8fb376c7c9aac0143baaaab578ab3285" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ParsePolygons</definition>
+        <argsstring>(const FMvtGeometry &amp;Geometry, TArray&lt; TArray&lt; FVector &gt; &gt; &amp;AllSurfaceArray)</argsstring>
+        <name>ParsePolygons</name>
+        <qualifiedname>ADecisionTileActor::ParsePolygons</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>AllSurfaceArray</declname>
+        </param>
+        <briefdescription>
+<para>Генерирует геометрии полигонов (подтип выделений) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Геометрия пришедшая в слое данных </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllSurfaceArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Буферный массив, для корректного определения принадлежности новых полигонов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="190" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="446" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a13f81e62707577bed269ca7208ba5ebc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ParseLines</definition>
+        <argsstring>(const FMvtGeometry &amp;Geometry)</argsstring>
+        <name>ParseLines</name>
+        <qualifiedname>ADecisionTileActor::ParseLines</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Генерирует геометрии линий (подтип выделений) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Геометрия пришедшая в слое данных </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="197" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="471" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a9ecb7d90574375b4ecd1ec94b075c7eb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::UpdateCcrObjectInfoWithLambda</definition>
+        <argsstring>(const TFunction&lt; void(FPolygonCCRObjectInfo &amp;)&gt; &amp;ModifyObjectInfo) const</argsstring>
+        <name>UpdateCcrObjectInfoWithLambda</name>
+        <qualifiedname>ADecisionTileActor::UpdateCcrObjectInfoWithLambda</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> &amp;)&gt; &amp;</type>
+          <declname>ModifyObjectInfo</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обновления информации для плигона принятых решений </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ModifyObjectInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Лямда, которая изменяет информацию, которую мы хотим обновить </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="205" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="491" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a06a8f1a213aac9555df3e7140218c16a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::GenerateObjects3D</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateObjects3D</name>
+        <qualifiedname>ADecisionTileActor::GenerateObjects3D</qualifiedname>
+        <briefdescription>
+<para>Генерирует 3д объекты принятых решений. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="211" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="509" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a2bc49eabb2d9865d8dc28de7df28ad86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::PreGenerateObjectsIcons</definition>
+        <argsstring>()</argsstring>
+        <name>PreGenerateObjectsIcons</name>
+        <qualifiedname>ADecisionTileActor::PreGenerateObjectsIcons</qualifiedname>
+        <briefdescription>
+<para>До запрашивает информацию необходимую для отрисовки иконок </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="217" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="583" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a733c6c57d57bbb2675e839ba12164cbc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ParseDecisionIcons</definition>
+        <argsstring>(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bSuccess)</argsstring>
+        <name>ParseDecisionIcons</name>
+        <qualifiedname>ADecisionTileActor::ParseDecisionIcons</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestPtr</ref></type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpResponsePtr</ref></type>
+          <declname>Response</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bSuccess</declname>
+        </param>
+        <briefdescription>
+<para>Парсит скачанную иконки и обрабатывает в UTexture2D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="223" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="613" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1ac0b8883256001a19ccf0b0492b830752" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::GenerateObjectsIcons</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateObjectsIcons</name>
+        <qualifiedname>ADecisionTileActor::GenerateObjectsIcons</qualifiedname>
+        <briefdescription>
+<para>Генерирует иконки для принятых решений. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="229" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="635" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1ad2e45f803fe931d1a5dba8b5a84f17f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::PreGenerateBase64Icon</definition>
+        <argsstring>()</argsstring>
+        <name>PreGenerateBase64Icon</name>
+        <qualifiedname>ADecisionTileActor::PreGenerateBase64Icon</qualifiedname>
+        <briefdescription>
+<para>Генерирует иконку из base64 разными путями, в зависимости от того, что внутри base64 лежит </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="235" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="716" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1ab7730d5e06eeaf835f7afa1e29e3506e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_decision_data" kindref="compound">FDecisionData</ref></type>
+        <definition>FDecisionData ADecisionTileActor::ParseAndCacheGeometry</definition>
+        <argsstring>(const FMvtGeometry &amp;Geometry, const TArray&lt; TArray&lt; FVector &gt; &gt; &amp;ContoursLines)</argsstring>
+        <name>ParseAndCacheGeometry</name>
+        <qualifiedname>ADecisionTileActor::ParseAndCacheGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>ContoursLines</declname>
+        </param>
+        <briefdescription>
+<para>Парсит и кэширует пришедшую информацию </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор данных откуда пробуем получить данные в структуру </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ContoursLines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек, который представляет все полигоны в геометрии </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="262" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="219" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1afbc829e6c58c01c27f0c357e71250dfe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::PresetCCR</definition>
+        <argsstring>(const ULayersCreatorSettings *const Settings, AAMetaCCRHybridActor *CCRActor, EMetaColorCorrectRegionsType CCRType)</argsstring>
+        <name>PresetCCR</name>
+        <qualifiedname>ADecisionTileActor::PresetCCR</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_layers_creator_settings" kindref="compound">ULayersCreatorSettings</ref> *<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref></type>
+          <declname>Settings</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_a_meta_c_c_r_hybrid_actor" kindref="compound">AAMetaCCRHybridActor</ref> *</type>
+          <declname>CCRActor</declname>
+        </param>
+        <param>
+          <type><ref refid="_meta_color_correct_region_8h_1a2adc50bb410dff20d6dfa75a99598fa3" kindref="member">EMetaColorCorrectRegionsType</ref></type>
+          <declname>CCRType</declname>
+        </param>
+        <briefdescription>
+<para>Пред-Настраивает получаемый по DecisionTileGuid обьект CCR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки с инициилизирующими данными </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CCRActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>обьект CCR для преднастройки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CCRType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип (Линия/Полигон) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="272" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="359" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1adaf8662799fbc9f590510c291773db94" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString ADecisionTileActor::CreateDecisionIconUrl</definition>
+        <argsstring>(EIconDataType &amp;IconDataType) const</argsstring>
+        <name>CreateDecisionIconUrl</name>
+        <qualifiedname>ADecisionTileActor::CreateDecisionIconUrl</qualifiedname>
+        <param>
+          <type><ref refid="_point_projector_library_8h_1aa32dff9866e8d92bad87089c420ce78c" kindref="member">EIconDataType</ref> &amp;</type>
+          <declname>IconDataType</declname>
+        </param>
+        <briefdescription>
+<para>Создает ссылку для дополнительного запроса на картинку для принятых </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="291" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="933" bodyend="1000"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_decision_tile_actor_1aec3269aa1ce6e8f80cb8c5ee83c365dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ReRasterizateIcons</definition>
+        <argsstring>(float DPI)</argsstring>
+        <name>ReRasterizateIcons</name>
+        <qualifiedname>ADecisionTileActor::ReRasterizateIcons</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DPI</declname>
+        </param>
+        <briefdescription>
+<para>Кэшированные данные для создания иконки </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="342" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1131" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a491b2498f0092c9a13c58771753cc181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::ActivateSelectionOnTerritory</definition>
+        <argsstring>(const TArray&lt; FDecisionActorInfo &gt; &amp;ClickedInfo)</argsstring>
+        <name>ActivateSelectionOnTerritory</name>
+        <qualifiedname>ADecisionTileActor::ActivateSelectionOnTerritory</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_decision_actor_info" kindref="compound">FDecisionActorInfo</ref> &gt; &amp;</type>
+          <declname>ClickedInfo</declname>
+        </param>
+        <briefdescription>
+<para>Выделяет все территории, с передаваемыми индексами </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ClickedInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>массив индексов территорий, на которые кликнули. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="350" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1165" bodyend="1193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a90d3ed1b7093afe30f8830a98bb3bd78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_decision_actor_info" kindref="compound">FDecisionActorInfo</ref> &gt;</type>
+        <definition>TArray&lt; FDecisionActorInfo &gt; ADecisionTileActor::GetDecisionActorInfo</definition>
+        <argsstring>(const FVector &amp;MouseClickLocation) const</argsstring>
+        <name>GetDecisionActorInfo</name>
+        <qualifiedname>ADecisionTileActor::GetDecisionActorInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>MouseClickLocation</declname>
+        </param>
+        <briefdescription>
+<para>Получение информации об обьекте, на который нажали </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MouseClickLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация о произведенном клике</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Заполненную информацию, либо пустую если клик произошел вне объекта </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="359" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1092" bodyend="1129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1af0322d5b1456815a3503c160214ec1bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_decision_actor_info" kindref="compound">FDecisionActorInfo</ref></type>
+        <definition>FDecisionActorInfo ADecisionTileActor::FillInfoByID</definition>
+        <argsstring>(int32 DecisionID) const</argsstring>
+        <name>FillInfoByID</name>
+        <qualifiedname>ADecisionTileActor::FillInfoByID</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>DecisionID</declname>
+        </param>
+        <briefdescription>
+<para>Чтение данных об объекте Decision по его айди </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DecisionID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Айди Decision объекта </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="366" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1195" bodyend="1214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a2c6813bed60f6b64167061459532bbd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::DeactivateTile</definition>
+        <argsstring>() override</argsstring>
+        <name>DeactivateTile</name>
+        <qualifiedname>ADecisionTileActor::DeactivateTile</qualifiedname>
+        <reimplements refid="class_a_point_actor_base_1acb94c71a6ce5434a61b9b6d362818160">DeactivateTile</reimplements>
+        <briefdescription>
+<para>Очистка объектов в тайле </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="372" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="272" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a3e6c27606bdec4f545c7c32a4b816a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetActiveTiles</definition>
+        <argsstring>(bool bActive) override</argsstring>
+        <name>SetActiveTiles</name>
+        <qualifiedname>ADecisionTileActor::SetActiveTiles</qualifiedname>
+        <reimplements refid="class_a_tile_actor_base_1acb1c081c40705212a75759110895e945">SetActiveTiles</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>bActive</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает активное состояние тайлов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bActive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Должны ли тайлы быть установлены как активные (true) или нет (false). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="379" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1216" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a436b2a29e0877071ee3f33ed68b3cda3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SpawnActors</definition>
+        <argsstring>() override</argsstring>
+        <name>SpawnActors</name>
+        <qualifiedname>ADecisionTileActor::SpawnActors</qualifiedname>
+        <reimplements refid="class_a_tile_actor_base_1a5aea3d6cff463b9dca1b5049f4639851">SpawnActors</reimplements>
+        <briefdescription>
+<para>Генерирует акторов на основе заданных параметров. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="385" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="285" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1ad730e4c76e3b74291a92fd044ab36419" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ADecisionTileActor::HasTag</definition>
+        <argsstring>(EDecisionTags Tag) const</argsstring>
+        <name>HasTag</name>
+        <qualifiedname>ADecisionTileActor::HasTag</qualifiedname>
+        <param>
+          <type><ref refid="_decisions_module_updater_8h_1a13464490f53936d5308b01590b8231e3" kindref="member">EDecisionTags</ref></type>
+          <declname>Tag</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет наличие конкретного тэга у данного обьекта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемый тэг </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="393" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1041" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a82436069efb5f7a5f1630ec52835627a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetDecisionType</definition>
+        <argsstring>(EDecisionType NewType)</argsstring>
+        <name>SetDecisionType</name>
+        <qualifiedname>ADecisionTileActor::SetDecisionType</qualifiedname>
+        <param>
+          <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+          <declname>NewType</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает данному тайлу тип обьектов из EDecisionType, которые он спавнит </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>назначаемый тип </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="402" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1046" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1af51536086568d101ac81d67501a63973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetTags</definition>
+        <argsstring>(const TArray&lt; EDecisionTags &gt; &amp;NewTags)</argsstring>
+        <name>SetTags</name>
+        <qualifiedname>ADecisionTileActor::SetTags</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_decisions_module_updater_8h_1a13464490f53936d5308b01590b8231e3" kindref="member">EDecisionTags</ref> &gt; &amp;</type>
+          <declname>NewTags</declname>
+        </param>
+        <briefdescription>
+<para>Назначение новых тегов для принятого решения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewTags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив тэгов в виде строк </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="410" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1051" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a67bf087bc65d8879daf88295843bd21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetExternalID</definition>
+        <argsstring>(int32 NewExternalID)</argsstring>
+        <name>SetExternalID</name>
+        <qualifiedname>ADecisionTileActor::SetExternalID</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>NewExternalID</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает NewExternalID данному тайлу </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewExternalID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый айди </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="418" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1056" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a36e1aa608a928f0abed2c90da707cf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetUniqueTreeID</definition>
+        <argsstring>(const FString &amp;NewID)</argsstring>
+        <name>SetUniqueTreeID</name>
+        <qualifiedname>ADecisionTileActor::SetUniqueTreeID</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>NewID</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает Айди из слоя в дереве слоев данному тайлу </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый айди </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="426" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1061" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a48896fc6eb1b7a12236594b3913a2276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetMaterial</definition>
+        <argsstring>(UMaterialInstanceDynamic *NewMaterial)</argsstring>
+        <name>SetMaterial</name>
+        <qualifiedname>ADecisionTileActor::SetMaterial</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceDynamic</ref> *</type>
+          <declname>NewMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Кэширует материал для текущего тайла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Кэшируемый материал </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="434" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1066" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a802e834b04c4d83ed93df54cdd815e49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetBorderMaterial</definition>
+        <argsstring>(UMaterialInstanceDynamic *NewMaterial)</argsstring>
+        <name>SetBorderMaterial</name>
+        <qualifiedname>ADecisionTileActor::SetBorderMaterial</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceDynamic</ref> *</type>
+          <declname>NewMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Кэширует материал необходимый для выделения <emphasis>границ</emphasis> тайла выделений </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Кэшируемый материал </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="442" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1072" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1ab515c94de8c083345586f7740a41a8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetLineParams</definition>
+        <argsstring>(const FMetaDataLayerMaxMinInterval &amp;VisibleScales, int LineType, float LineWidth, bool bIsDynamicOpacity, float LineDashLength=0)</argsstring>
+        <name>SetLineParams</name>
+        <qualifiedname>ADecisionTileActor::SetLineParams</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_max_min_interval" kindref="compound">FMetaDataLayerMaxMinInterval</ref> &amp;</type>
+          <declname>VisibleScales</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>LineType</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>LineWidth</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsDynamicOpacity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>LineDashLength</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Кэширует параметры обводки </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VisibleScales</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Границы внутри которых меняется Opacity обьекта, если bIsDynamicOpacity включен </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LineType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип отрисовываемой линии </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LineWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ширина линии </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bIsDynamicOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Динамическое изменение прозрачности в зависимости от текущей высоты юзера </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LineDashLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Длина штриха линии </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="454" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1078" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a5ae3b399da3387f295c5298c1d2cf308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceDynamic</ref> *</type>
+        <definition>UMaterialInstanceDynamic * ADecisionTileActor::GetMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaterial</name>
+        <qualifiedname>ADecisionTileActor::GetMaterial</qualifiedname>
+        <briefdescription>
+<para>Получает кэшированный материал текущего тайла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Кэшированный материал </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="462" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1021" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a0f71f19d2821343733176a35cb3d3b9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+        <definition>EDecisionType ADecisionTileActor::GetDecisionType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDecisionType</name>
+        <qualifiedname>ADecisionTileActor::GetDecisionType</qualifiedname>
+        <briefdescription>
+<para>Получает тип данного принятого решения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Тип принятого решения </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="470" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1035" bodyend="1038"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a9dfaf90dae7d6240908f866b9393bdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_decisions_module_updater_8h_1a13464490f53936d5308b01590b8231e3" kindref="member">EDecisionTags</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; EDecisionTags &gt; &amp; ADecisionTileActor::GetTags</definition>
+        <argsstring>()</argsstring>
+        <name>GetTags</name>
+        <qualifiedname>ADecisionTileActor::GetTags</qualifiedname>
+        <briefdescription>
+<para>Получения массива тегов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Массив активных тегов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="478" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="766" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a93f895a2a6a4cfb88b13c34e3d478c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::RedrawRegions</definition>
+        <argsstring>(EMetaColorCorrectRegionsType CCRType)</argsstring>
+        <name>RedrawRegions</name>
+        <qualifiedname>ADecisionTileActor::RedrawRegions</qualifiedname>
+        <param>
+          <type><ref refid="_meta_color_correct_region_8h_1a2adc50bb410dff20d6dfa75a99598fa3" kindref="member">EMetaColorCorrectRegionsType</ref></type>
+          <declname>CCRType</declname>
+        </param>
+        <briefdescription>
+<para>Перерисовка полигонов с учетом куллинга </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="484" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="771" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1aa62189bea9f1d79cea16ba54d3f5dddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ADecisionTileActor::SetZoomLevel</definition>
+        <argsstring>(int32 NewLvl)</argsstring>
+        <name>SetZoomLevel</name>
+        <qualifiedname>ADecisionTileActor::SetZoomLevel</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>NewLvl</declname>
+        </param>
+        <briefdescription>
+<para>Изменяет за кешированный ЗумЛвл если он изменился глобально </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="490" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1002" bodyend="1014"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_decision_tile_actor_1a8404c980ea7529b0f0eb8895cc928b13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double ADecisionTileActor::GetMinimalPolygonAreaToShow</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinimalPolygonAreaToShow</name>
+        <qualifiedname>ADecisionTileActor::GetMinimalPolygonAreaToShow</qualifiedname>
+        <briefdescription>
+<para>Получает минимальную площадь полигона, который можно отрисовать на данном ЗумЛвл </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="496" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.cpp" bodystart="1016" bodyend="1019"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ADecisionTileActor</label>
+        <link refid="class_a_decision_tile_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>APointActorBase</label>
+        <link refid="class_a_point_actor_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ATileActorBase</label>
+        <link refid="class_a_tile_actor_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ADecisionTileActor</label>
+        <link refid="class_a_decision_tile_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>VisualPolygonInfo</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>MetaCCRSubsystem</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>LayersCreatorSettings</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>MetaDataLayerSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>APointActorBase</label>
+        <link refid="class_a_point_actor_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ATileActorBase</label>
+        <link refid="class_a_tile_actor_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>MetaDataLayerSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FMetaDataLayerBorder</label>
+        <link refid="struct_f_meta_data_layer_border"/>
+      </node>
+      <node id="7">
+        <label>FMetaDataLayerDisplayObjectsOnMap</label>
+        <link refid="struct_f_meta_data_layer_display_objects_on_map"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Style</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Border</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FMetaDataLayerMaxMinInterval</label>
+        <link refid="struct_f_meta_data_layer_max_min_interval"/>
+      </node>
+      <node id="10">
+        <label>FMetaDataLayerScaleByDistance</label>
+        <link refid="struct_f_meta_data_layer_scale_by_distance"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FMetaDataLayerSettings</label>
+        <link refid="struct_f_meta_data_layer_settings"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ViewInTree</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>DisplayObjectsOnMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FMetaDataLayerStyle</label>
+        <link refid="struct_f_meta_data_layer_style"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>AllowedZoomLvlInterval</edgelabel>
+          <edgelabel>DistanceDisplayCondition</edgelabel>
+          <edgelabel>Scale</edgelabel>
+          <edgelabel>TranslucencyByDistance</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ScaleByDistance</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FMetaDataLayerViewInTree</label>
+        <link refid="struct_f_meta_data_layer_view_in_tree"/>
+      </node>
+      <node id="12">
+        <label>FVisualPolygonInfo</label>
+        <link refid="struct_f_visual_polygon_info"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>MetersScaleVisibility</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>UDeveloperSettings</label>
+      </node>
+      <node id="15">
+        <label>ULayersCreatorSettings</label>
+        <link refid="class_u_layers_creator_settings"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>UMetaColorCorrectRegionsSubsystem</label>
+        <link refid="class_u_meta_color_correct_regions_subsystem"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>UWorldSubsystem</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" line="118" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionTileActor.h" bodystart="119" bodyend="497"/>
+    <listofallmembers>
+      <member refid="class_a_decision_tile_actor_1a491b2498f0092c9a13c58771753cc181" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ActivateSelectionOnTerritory</name></member>
+      <member refid="class_a_decision_tile_actor_1a12c99c32987afcc6ebaebd194a1db5c4" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ActiveTags</name></member>
+      <member refid="class_a_point_actor_base_1a5552195fc7fd6b9647a7513bb92f5de9" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>AdditionalWeightDivider</name></member>
+      <member refid="class_a_decision_tile_actor_1a3ae667866fa958be35fa6ea213fd32e2" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>AddPointsToArray</name></member>
+      <member refid="class_a_point_actor_base_1ab76e3518bcb2ef214de4bcf49ae2cc55" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>AddressPitchAngleMultiplier</name></member>
+      <member refid="class_a_tile_actor_base_1a2079d9462ba81d4880e3b8cbae50dda9" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ATileActorBase</name></member>
+      <member refid="class_a_decision_tile_actor_1a6bad464d00ab3878f85abd8640f6043a" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>BasePhysicalLineRadius</name></member>
+      <member refid="class_a_tile_actor_base_1aaf30946b5406a8745c47dd58cd80f389" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>CacheTileSize</name></member>
+      <member refid="class_a_decision_tile_actor_1a7915b13a4a57560c9c496865fb3b0646" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ChangeCCRType</name></member>
+      <member refid="class_a_tile_actor_base_1a0ad429a708705514a2587753b1003a61" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ChooseCustomDepth</name></member>
+      <member refid="class_a_tile_actor_base_1a98515f122ec6af6ac4e7ceaab96d6a7f" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ChooseMaterial</name></member>
+      <member refid="class_a_decision_tile_actor_1adaf8662799fbc9f590510c291773db94" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>CreateDecisionIconUrl</name></member>
+      <member refid="class_a_decision_tile_actor_1a63e39df5b1e4ad73718db2741ed9adbb" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>CurrentZoomLvl</name></member>
+      <member refid="class_a_decision_tile_actor_1a2c6813bed60f6b64167061459532bbd3" prot="public" virt="virtual"><scope>ADecisionTileActor</scope><name>DeactivateTile</name></member>
+      <member refid="class_a_decision_tile_actor_1a8e415d97c6a01ffb03d05dd1e5f817f8" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionBaseBounds</name></member>
+      <member refid="class_a_decision_tile_actor_1a2345db414855bdbf64ab53daf1d9cf4e" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionIconGuidDelimiter</name></member>
+      <member refid="class_a_decision_tile_actor_1afa9fda041e5c27ae0ce07856efa9ff05" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionIconZoomOverrideMax</name></member>
+      <member refid="class_a_decision_tile_actor_1abe8366b0ae220805bbc6a8a4ac494c55" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionIconZoomOverrideMin</name></member>
+      <member refid="class_a_decision_tile_actor_1a14e6aa0a64dc56f4b4be3fad2dd1735d" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionObjects</name></member>
+      <member refid="class_a_decision_tile_actor_1af7673a06fec99d916c361d3a1eea9946" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionTileGuid</name></member>
+      <member refid="class_a_decision_tile_actor_1ad063948cf21857d1a3d3dd021bf3e4b3" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DecisionType</name></member>
+      <member refid="class_a_tile_actor_base_1a0bf18fcc4f43f6c2b19b1cfb0de52e6f" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>DrawTileBoundary</name></member>
+      <member refid="class_a_decision_tile_actor_1aece85332410bc8983879c30729f0cfe3" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ExternalID</name></member>
+      <member refid="class_a_decision_tile_actor_1af0322d5b1456815a3503c160214ec1bb" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>FillInfoByID</name></member>
+      <member refid="class_a_tile_actor_base_1a146da8e3b0b3e26648cd59ec68b4c500" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GameWorld</name></member>
+      <member refid="class_a_decision_tile_actor_1a96afa3ea87f8129cf29ac67f3ab5659b" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GenerateColorCorrectionRegion</name></member>
+      <member refid="class_a_decision_tile_actor_1a06a8f1a213aac9555df3e7140218c16a" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GenerateObjects3D</name></member>
+      <member refid="class_a_decision_tile_actor_1ac0b8883256001a19ccf0b0492b830752" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GenerateObjectsIcons</name></member>
+      <member refid="class_a_tile_actor_base_1af7c2f26513dd4774b575d17b8654118c" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GenerateSmoothRoadAlongSpline</name></member>
+      <member refid="class_a_decision_tile_actor_1af6243c60f379ba0cd956f413e0d8c6ff" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GeometryCache</name></member>
+      <member refid="class_a_decision_tile_actor_1a41317cd0dc96fc5beea6ee4ebb79c1a5" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GeometryType</name></member>
+      <member refid="class_a_decision_tile_actor_1a90d3ed1b7093afe30f8830a98bb3bd78" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetDecisionActorInfo</name></member>
+      <member refid="class_a_decision_tile_actor_1a0f71f19d2821343733176a35cb3d3b9a" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetDecisionType</name></member>
+      <member refid="class_a_decision_tile_actor_1a5ae3b399da3387f295c5298c1d2cf308" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetMaterial</name></member>
+      <member refid="class_a_decision_tile_actor_1a8404c980ea7529b0f0eb8895cc928b13" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetMinimalPolygonAreaToShow</name></member>
+      <member refid="class_a_tile_actor_base_1a549e17b300c9f29381fa9103081872ad" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetRoadMaterial</name></member>
+      <member refid="class_a_tile_actor_base_1aaf7987eacd12fb248b273caafe3a5854" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetRoadTypeEnum</name></member>
+      <member refid="class_a_decision_tile_actor_1a9dfaf90dae7d6240908f866b9393bdc1" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetTags</name></member>
+      <member refid="class_a_tile_actor_base_1a7f5a5dd467d31e31d1423e3c09ed03dd" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetTileCord</name></member>
+      <member refid="class_a_tile_actor_base_1afd12ffef09e152a78c01bbd7c918e5f5" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetTileLayer</name></member>
+      <member refid="class_a_tile_actor_base_1aa0ade8bf3d532708f5fa61a77318c70d" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>GetTileUESize</name></member>
+      <member refid="class_a_point_actor_base_1a95d96c8e212af41cf13343909bb238db" prot="public" virt="virtual"><scope>ADecisionTileActor</scope><name>GetTileZoomLevel</name></member>
+      <member refid="class_a_point_actor_base_1a037b6ded878a3d5c57b98b387edb90ba" prot="protected" virt="virtual"><scope>ADecisionTileActor</scope><name>GetUpdatedZoomLevel</name></member>
+      <member refid="class_a_decision_tile_actor_1ad730e4c76e3b74291a92fd044ab36419" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>HasTag</name></member>
+      <member refid="class_a_decision_tile_actor_1a726d9fae7acfa9d5921580fe49831e8d" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconData</name></member>
+      <member refid="class_a_decision_tile_actor_1ababfe9e7a872a879eb8683d5ab36d3fd" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconHigh</name></member>
+      <member refid="class_a_point_actor_base_1a374ac2c1404e3ee25efb69442ce5993c" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconInitializeMutex</name></member>
+      <member refid="class_a_point_actor_base_1a5ac9c8cc64d656ae51ea30724db3c1cf" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconProjectionFilter</name></member>
+      <member refid="class_a_decision_tile_actor_1a50b6d941bbd18fb0abd75c2b341679d7" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconsDataTable</name></member>
+      <member refid="class_a_point_actor_base_1acf06260225b3b22d00fc2bde1de6d56a" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconsPitchAngleMultiplier</name></member>
+      <member refid="class_a_decision_tile_actor_1a67a249bb1b498b094f584600021f9413" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>IconType</name></member>
+      <member refid="class_a_point_actor_base_1ababdfa6928e5758a9c3f3c627d2b9ac7" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>InitializeProjectionData</name></member>
+      <member refid="class_a_tile_actor_base_1a404727575c531a145a0e7a6788ea2f24" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>JarvisAlgorithm</name></member>
+      <member refid="class_a_decision_tile_actor_1a04dfabcf3dc6048efec00c3f4cd342dd" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>LayersCreatorSettings</name></member>
+      <member refid="class_a_decision_tile_actor_1aba74e561ec077ea38c12467183c99cd1" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>MetaCCRSubsystem</name></member>
+      <member refid="class_a_decision_tile_actor_1a281bc87ba95f810a9b2fff0a2843e286" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>MetaDataLayerSettings</name></member>
+      <member refid="class_a_decision_tile_actor_1ab7730d5e06eeaf835f7afa1e29e3506e" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ParseAndCacheGeometry</name></member>
+      <member refid="class_a_decision_tile_actor_1a733c6c57d57bbb2675e839ba12164cbc" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ParseDecisionIcons</name></member>
+      <member refid="class_a_decision_tile_actor_1a13f81e62707577bed269ca7208ba5ebc" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ParseLines</name></member>
+      <member refid="class_a_decision_tile_actor_1a8fb376c7c9aac0143baaaab578ab3285" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ParsePolygons</name></member>
+      <member refid="class_a_tile_actor_base_1abd5e58df65a3e2984922ab4edbec84e0" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>PlayerController</name></member>
+      <member refid="class_a_decision_tile_actor_1ad2e45f803fe931d1a5dba8b5a84f17f5" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>PreGenerateBase64Icon</name></member>
+      <member refid="class_a_decision_tile_actor_1a2bc49eabb2d9865d8dc28de7df28ad86" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>PreGenerateObjectsIcons</name></member>
+      <member refid="class_a_decision_tile_actor_1afbc829e6c58c01c27f0c357e71250dfe" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>PresetCCR</name></member>
+      <member refid="class_a_decision_tile_actor_1a2977dcb1c32d1686993e35e7e2e01c2b" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ProcessPolygonInternalLines</name></member>
+      <member refid="class_a_point_actor_base_1ab9cfda7713fcc39bfaed37ba2e860455" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>Projectors</name></member>
+      <member refid="class_a_decision_tile_actor_1aad782130babea6bc37f30002282b7569" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ReadProperties</name></member>
+      <member refid="class_a_decision_tile_actor_1a93f895a2a6a4cfb88b13c34e3d478c82" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>RedrawRegions</name></member>
+      <member refid="class_a_decision_tile_actor_1aec3269aa1ce6e8f80cb8c5ee83c365dc" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ReRasterizateIcons</name></member>
+      <member refid="class_a_tile_actor_base_1a68d3005188e3f6f7f96472f0710687b7" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>RoadMaterial</name></member>
+      <member refid="class_a_decision_tile_actor_1a3e6c27606bdec4f545c7c32a4b816a36" prot="public" virt="virtual"><scope>ADecisionTileActor</scope><name>SetActiveTiles</name></member>
+      <member refid="class_a_decision_tile_actor_1a802e834b04c4d83ed93df54cdd815e49" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetBorderMaterial</name></member>
+      <member refid="class_a_decision_tile_actor_1a82436069efb5f7a5f1630ec52835627a" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetDecisionType</name></member>
+      <member refid="class_a_decision_tile_actor_1a67bf087bc65d8879daf88295843bd21f" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetExternalID</name></member>
+      <member refid="class_a_decision_tile_actor_1ab515c94de8c083345586f7740a41a8b7" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetLineParams</name></member>
+      <member refid="class_a_decision_tile_actor_1a48896fc6eb1b7a12236594b3913a2276" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetMaterial</name></member>
+      <member refid="class_a_tile_actor_base_1a41f918213f1017527517dd321e5eb8b4" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetRoadMaterial</name></member>
+      <member refid="class_a_decision_tile_actor_1af51536086568d101ac81d67501a63973" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetTags</name></member>
+      <member refid="class_a_tile_actor_base_1a5f860709d4e446b444f407074e211ba3" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetTileCord</name></member>
+      <member refid="class_a_tile_actor_base_1ae061a5d09e85345c3872dd6e7c67692e" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetTileLayer</name></member>
+      <member refid="class_a_decision_tile_actor_1a36e1aa608a928f0abed2c90da707cf31" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetUniqueTreeID</name></member>
+      <member refid="class_a_decision_tile_actor_1aa62189bea9f1d79cea16ba54d3f5dddc" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>SetZoomLevel</name></member>
+      <member refid="class_a_decision_tile_actor_1a436b2a29e0877071ee3f33ed68b3cda3" prot="public" virt="virtual"><scope>ADecisionTileActor</scope><name>SpawnActors</name></member>
+      <member refid="class_a_decision_tile_actor_1a1b0c629d1843c4338542bddaf833e72c" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>TileBorders</name></member>
+      <member refid="class_a_tile_actor_base_1a65c95f751ef7c1f72300d7e92c59781a" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>TileCord</name></member>
+      <member refid="class_a_tile_actor_base_1af42339376b7de36a5dc402e0dd21b54f" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>TileLayer</name></member>
+      <member refid="class_a_tile_actor_base_1a44c434dba05a5c93908c7c15dc2390f8" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>UETileSize</name></member>
+      <member refid="class_a_decision_tile_actor_1a37413b3975147dfa1e18c73f5b9e8131" prot="public" virt="non-virtual"><scope>ADecisionTileActor</scope><name>UniqueTreeID</name></member>
+      <member refid="class_a_decision_tile_actor_1a9ecb7d90574375b4ecd1ec94b075c7eb" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>UpdateCcrObjectInfoWithLambda</name></member>
+      <member refid="class_a_point_actor_base_1a923cec719ac5586c8e7fd5a15f7d3b60" prot="public" virt="virtual"><scope>ADecisionTileActor</scope><name>UpdateView</name></member>
+      <member refid="class_a_decision_tile_actor_1a22625bec5ceee314700951f61e3968f4" prot="private" virt="non-virtual"><scope>ADecisionTileActor</scope><name>VisualPolygonInfo</name></member>
+      <member refid="class_a_point_actor_base_1a8ffdeb90e1fdaa92d8d6b5d71b0d2b6f" prot="protected" virt="non-virtual"><scope>ADecisionTileActor</scope><name>ZoomLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_h_m_d_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2HMDModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IHeadMountedDisplayModule</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_h_m_d_1_1_f_pixel_streaming2_h_m_d_module" prot="public" virt="non-virtual">UE::PixelStreaming2HMD::FPixelStreaming2HMDModule</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_h_m_d_module_8h" local="no">IPixelStreaming2HMDModule.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_module_1ae547d4c92354bb551447616fdced45ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_i_pixel_streaming2_h_m_d_module" kindref="compound">IPixelStreaming2HMDModule</ref> &amp;</type>
+        <definition>static IPixelStreaming2HMDModule &amp; IPixelStreaming2HMDModule::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>IPixelStreaming2HMDModule::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton-like access to this module&apos;s interface. Beware of calling this during the shutdown phase, though. Your module might have been unloaded already.</para>
+<para><simplesect kind="return"><para>Returns singleton instance, loading the module on demand if needed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="23" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_module_1a362f4217e85bfbf88e32c8d7bfe5781f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IPixelStreaming2HMDModule::IsAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsAvailable</name>
+        <qualifiedname>IPixelStreaming2HMDModule::IsAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks to see if this module is loaded. <simplesect kind="return"><para>True if the module is loaded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="32" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_module_1af6c7cd11d02d36f2bf9e3ed1d1e51047" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_i_pixel_streaming2_h_m_d" kindref="compound">IPixelStreaming2HMD</ref> *</type>
+        <definition>virtual IPixelStreaming2HMD * IPixelStreaming2HMDModule::GetPixelStreaming2HMD</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetPixelStreaming2HMD</name>
+        <qualifiedname>IPixelStreaming2HMDModule::GetPixelStreaming2HMD</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_h_m_d_1_1_f_pixel_streaming2_h_m_d_module_1af232fedb59a89fa8ab5777d199f2ab29">GetPixelStreaming2HMD</reimplementedby>
+        <briefdescription>
+<para>Get the Pixel Streaming HMD object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the Pixel Streaming HMD. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="38" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_module_1a0458d91d38ee25d121fe5103a72be6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_pixel_streaming2_h_m_d_enums_8h_1ae202dc41ca93d715438bdabdacd7b370" kindref="member">EPixelStreaming2XRSystem</ref></type>
+        <definition>virtual EPixelStreaming2XRSystem IPixelStreaming2HMDModule::GetActiveXRSystem</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetActiveXRSystem</name>
+        <qualifiedname>IPixelStreaming2HMDModule::GetActiveXRSystem</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_h_m_d_1_1_f_pixel_streaming2_h_m_d_module_1a93452b3f56c1af658fd9fc3ff0eebf3c">GetActiveXRSystem</reimplementedby>
+        <briefdescription>
+<para>Get the Active XR System. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The Active XR System. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="44" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_h_m_d_module_1a68d75dc2acdd873e555e1bbaafc28ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2HMDModule::SetActiveXRSystem</definition>
+        <argsstring>(EPixelStreaming2XRSystem System)=0</argsstring>
+        <name>SetActiveXRSystem</name>
+        <qualifiedname>IPixelStreaming2HMDModule::SetActiveXRSystem</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_h_m_d_1_1_f_pixel_streaming2_h_m_d_module_1abc2c5d806f29f91844fc6e342a61f5dd">SetActiveXRSystem</reimplementedby>
+        <param>
+          <type><ref refid="_pixel_streaming2_h_m_d_enums_8h_1ae202dc41ca93d715438bdabdacd7b370" kindref="member">EPixelStreaming2XRSystem</ref></type>
+          <declname>System</declname>
+        </param>
+        <briefdescription>
+<para>Set the Active XR System. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>System</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Active XR System to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="50" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The public interface provides functionality for interacting with Pixel Streaming and Head Mounted Display (HMD) systems. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IHeadMountedDisplayModule</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2HMDModule</label>
+        <link refid="class_i_pixel_streaming2_h_m_d_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UE::PixelStreaming2HMD::FPixelStreaming2HMDModule</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_h_m_d_1_1_f_pixel_streaming2_h_m_d_module"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IHeadMountedDisplayModule</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2HMDModule</label>
+        <link refid="class_i_pixel_streaming2_h_m_d_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2HMD/Public/IPixelStreaming2HMDModule.h" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_h_m_d_module_1ae547d4c92354bb551447616fdced45ea" prot="public" virt="non-virtual"><scope>IPixelStreaming2HMDModule</scope><name>Get</name></member>
+      <member refid="class_i_pixel_streaming2_h_m_d_module_1a0458d91d38ee25d121fe5103a72be6c9" prot="public" virt="pure-virtual"><scope>IPixelStreaming2HMDModule</scope><name>GetActiveXRSystem</name></member>
+      <member refid="class_i_pixel_streaming2_h_m_d_module_1af6c7cd11d02d36f2bf9e3ed1d1e51047" prot="public" virt="pure-virtual"><scope>IPixelStreaming2HMDModule</scope><name>GetPixelStreaming2HMD</name></member>
+      <member refid="class_i_pixel_streaming2_h_m_d_module_1a362f4217e85bfbf88e32c8d7bfe5781f" prot="public" virt="non-virtual"><scope>IPixelStreaming2HMDModule</scope><name>IsAvailable</name></member>
+      <member refid="class_i_pixel_streaming2_h_m_d_module_1a68d75dc2acdd873e555e1bbaafc28ae0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2HMDModule</scope><name>SetActiveXRSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

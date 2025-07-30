@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>UE::PixelStreaming2Servers::FServerBase</compoundname>
+    <basecompoundref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server" prot="public" virt="non-virtual">UE::PixelStreaming2Servers::IServer</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">FTickableGameObject</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server" prot="public" virt="non-virtual">UE::PixelStreaming2Servers::FSignallingServer</derivedcompoundref>
+    <includes refid="_server_base_8h" local="no">ServerBase.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref></type>
+        <definition>FLaunchArgs UE::PixelStreaming2Servers::FServerBase::LaunchArgs</definition>
+        <argsstring></argsstring>
+        <name>LaunchArgs</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::LaunchArgs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="51" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::bHasLaunched</definition>
+        <argsstring></argsstring>
+        <name>bHasLaunched</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::bHasLaunched</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="52" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EEndpoint</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FURL</ref> &gt;</type>
+        <definition>TMap&lt;EEndpoint, FURL&gt; UE::PixelStreaming2Servers::FServerBase::Endpoints</definition>
+        <argsstring></argsstring>
+        <name>Endpoints</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::Endpoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="53" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FThreadSafeBool</ref></type>
+        <definition>FThreadSafeBool UE::PixelStreaming2Servers::FServerBase::bIsReady</definition>
+        <argsstring></argsstring>
+        <name>bIsReady</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::bIsReady</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="54" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UE::PixelStreaming2Servers::FServerBase::PollingStartedSeconds</definition>
+        <argsstring></argsstring>
+        <name>PollingStartedSeconds</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::PollingStartedSeconds</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="55" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UE::PixelStreaming2Servers::FServerBase::LastReconnectionTimeSeconds</definition>
+        <argsstring></argsstring>
+        <name>LastReconnectionTimeSeconds</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::LastReconnectionTimeSeconds</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="56" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::bAllowedToTick</definition>
+        <argsstring></argsstring>
+        <name>bAllowedToTick</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::bAllowedToTick</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="57" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::bTimedOut</definition>
+        <argsstring></argsstring>
+        <name>bTimedOut</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::bTimedOut</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="58" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::bPollUntilReady</definition>
+        <argsstring></argsstring>
+        <name>bPollUntilReady</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::bPollUntilReady</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="59" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a7e78c92b821aa65e03b5d56eb8044ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual UE::PixelStreaming2Servers::FServerBase::~FServerBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FServerBase</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::~FServerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="16" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8858b4cb9e72cab1dfe372e33a5d5e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2Servers::FServerBase::Stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>Stop</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::Stop</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1ad48c76a9fc58ab4c8ae5c8497a2334eb">Stop</reimplements>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server_1ac9269d33ad5d7ad12c82e6b756d173fb">Stop</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Immediately stops the server. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a753845c72f480b0bbb383c34612cd12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::HasLaunched</definition>
+        <argsstring>() override</argsstring>
+        <name>HasLaunched</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::HasLaunched</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a99da7eaadc08c062c8ea4e554629082a">HasLaunched</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the server has been launched. Note: Launched does not necessarily mean it is connectible yet. Bind to OnReady for that. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="20" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1af113117c873bbe9d4dd14e88fcea03e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::Launch</definition>
+        <argsstring>(FLaunchArgs &amp;InLaunchArgs) override</argsstring>
+        <name>Launch</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::Launch</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a9c6cd13124ee48e19f664845750343f0">Launch</reimplements>
+        <param>
+          <type><ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref> &amp;</type>
+          <declname>InLaunchArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Launch the server in a child process using the supplied launch arguments. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LaunchArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The launch arguments to control how the server is launched, including what args to pass to the child process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the server was able to start launching, this can fail when launching child process servers where files must exist on disk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="21" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4f581dacbfef44ed03e52e53b8ce20be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::IsReady</definition>
+        <argsstring>() override</argsstring>
+        <name>IsReady</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::IsReady</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a8414b2107ab73534cda24a1ac6df8240">IsReady</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the server has been connected to and is ready for new connections. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="22" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a596f4d84fe12a20eb2c5b782a6a27ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::IsTimedOut</definition>
+        <argsstring>() override</argsstring>
+        <name>IsTimedOut</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::IsTimedOut</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a0bfc1c913642407c89bb1bce361249ac">IsTimedOut</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the server has timed out while trying to establish a connection. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="23" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4321d027d6deb406ee3e4c5dc9c785e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2Servers::FServerBase::GetNumStreamers</definition>
+        <argsstring>(TFunction&lt; void(uint16)&gt; OnNumStreamersReceived)=0</argsstring>
+        <name>GetNumStreamers</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::GetNumStreamers</qualifiedname>
+        <reimplements refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a3d03ff486f442311caddc259ccd5762b">GetNumStreamers</reimplements>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server_1abd657c297a61cf78805e51d15bf2969e">GetNumStreamers</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint16</ref>)&gt;</type>
+          <declname>OnNumStreamersReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asynchronously queries the numbers of streamers connected to the signalling server. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnNumStreamersReceived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback fired when the query for the number of streamers returns. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a9040246635d5ed1f61bb1f657ab352f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::IsTickableWhenPaused</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsTickableWhenPaused</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::IsTickableWhenPaused</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="28" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a275977b6160d1bf1bc0b1419ef28ae8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::IsTickableInEditor</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsTickableInEditor</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::IsTickableInEditor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="29" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8d4c844d394f285576fa44b1aedf3df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Servers::FServerBase::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="30" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="39" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1e2befbef2858c62ccbc8f6f3b0e4c73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Servers::FServerBase::IsAllowedToTick</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsAllowedToTick</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::IsAllowedToTick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="31" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae2577ba6862bb36e63f5b825d773b074" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStatId</ref></type>
+        <definition>TStatId UE::PixelStreaming2Servers::FServerBase::GetStatId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStatId</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::GetStatId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="32" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1acd87fae56bd2a8a4cdf82e8769584658" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool UE::PixelStreaming2Servers::FServerBase::TestConnection</definition>
+        <argsstring>()=0</argsstring>
+        <name>TestConnection</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::TestConnection</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server_1a96b683867e84b68e922de031395653d4">TestConnection</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implemented by derived types. Implementation specific but somehow the server has been tested to see if it ready for connections. <simplesect kind="return"><para>True if the server is able to be connected to. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a0c6c453a260eaa21aa27947de8a92e12" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool UE::PixelStreaming2Servers::FServerBase::LaunchImpl</definition>
+        <argsstring>(FLaunchArgs &amp;InLaunchArgs, TMap&lt; EEndpoint, FURL &gt; &amp;OutEndpoints)=0</argsstring>
+        <name>LaunchImpl</name>
+        <qualifiedname>UE::PixelStreaming2Servers::FServerBase::LaunchImpl</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server_1a9a6cfc35c40b88fb8c84dd9042ec71cb">LaunchImpl</reimplementedby>
+        <param>
+          <type><ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args" kindref="compound">FLaunchArgs</ref> &amp;</type>
+          <declname>InLaunchArgs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EEndpoint</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FURL</ref> &gt; &amp;</type>
+          <declname>OutEndpoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implemented by derived types. The actual implementation of how this specified server is launched. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LaunchArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The launch arguments to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutEndpoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output endpoints the user can expect to use with this server. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the server was able to launch. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="48" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>FTickableGameObject</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2Servers::FServerBase</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UE::PixelStreaming2Servers::FSignallingServer</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_signalling_server"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UE::PixelStreaming2Servers::IServer</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FTickableGameObject</label>
+      </node>
+      <node id="4">
+        <label>UE::PixelStreaming2Servers::FLaunchArgs</label>
+        <link refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args"/>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2Servers::FServerBase</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LaunchArgs</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UE::PixelStreaming2Servers::IServer</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" line="12" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.h" bodystart="13" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>bAllowedToTick</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>bHasLaunched</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>bIsReady</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>bPollUntilReady</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>bTimedOut</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1af22e4af5bb1ddbe2abd07bf64d8c4db3" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>DECLARE_MULTICAST_DELEGATE</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>Endpoints</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4321d027d6deb406ee3e4c5dc9c785e5" prot="public" virt="pure-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>GetNumStreamers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1a807f9b2a8f25369ce48597791375535f" prot="public" virt="pure-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>GetPathOnDisk</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae2577ba6862bb36e63f5b825d773b074" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>GetStatId</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a753845c72f480b0bbb383c34612cd12f" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>HasLaunched</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1e2befbef2858c62ccbc8f6f3b0e4c73" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>IsAllowedToTick</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4f581dacbfef44ed03e52e53b8ce20be" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>IsReady</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a275977b6160d1bf1bc0b1419ef28ae8c" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>IsTickableInEditor</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a9040246635d5ed1f61bb1f657ab352f5" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>IsTickableWhenPaused</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a596f4d84fe12a20eb2c5b782a6a27ba7" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>IsTimedOut</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>LastReconnectionTimeSeconds</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1af113117c873bbe9d4dd14e88fcea03e4" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>Launch</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>LaunchArgs</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a0c6c453a260eaa21aa27947de8a92e12" prot="protected" virt="pure-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>LaunchImpl</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1aa84bbaf9b736ee6405ec58b4a85f32c6" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>OnFailedToReady</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1ae599a205d4298d49e491b031fd126403" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>OnReady</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>PollingStartedSeconds</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8858b4cb9e72cab1dfe372e33a5d5e8c" prot="public" virt="pure-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>Stop</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1acd87fae56bd2a8a4cdf82e8769584658" prot="protected" virt="pure-virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>TestConnection</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8d4c844d394f285576fa44b1aedf3df1" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>Tick</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a7e78c92b821aa65e03b5d56eb8044ac7" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>~FServerBase</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1ac7ac016ba75ebe90a2e0e7d634f337de" prot="public" virt="virtual"><scope>UE::PixelStreaming2Servers::FServerBase</scope><name>~IServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

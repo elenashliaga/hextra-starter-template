@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink" kind="class" language="C++" prot="public">
+    <compoundname>UE::PixelStreaming2::FVideoSink</compoundname>
+    <basecompoundref refid="class_i_pixel_streaming2_video_sink" prot="public" virt="non-virtual">IPixelStreaming2VideoSink</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_1_1_f_epic_rtc_video_sink" prot="public" virt="non-virtual">UE::PixelStreaming2::FEpicRtcVideoSink</derivedcompoundref>
+    <includes refid="_video_sink_8h" local="no">VideoSink.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a87f2cbeaaf328242667b95f35017ee90" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FVideoSink::VideoConsumersCS</definition>
+        <argsstring></argsstring>
+        <name>VideoConsumersCS</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::VideoConsumersCS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="30" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1ae387b7f6710673738189accb3173c129" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="class_i_pixel_streaming2_video_consumer" kindref="compound">IPixelStreaming2VideoConsumer</ref> * &gt;</type>
+        <definition>TSet&lt;IPixelStreaming2VideoConsumer*&gt; UE::PixelStreaming2::FVideoSink::VideoConsumers</definition>
+        <argsstring></argsstring>
+        <name>VideoConsumers</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::VideoConsumers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="31" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a4293d9444d8d2e2bfee7c7b40266eb06" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2::FVideoSink::bIsMuted</definition>
+        <argsstring></argsstring>
+        <name>bIsMuted</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::bIsMuted</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="33" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a68e4569dc0784608a8d692acbea3ba76" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FVideoSink::RenderSyncContext</definition>
+        <argsstring></argsstring>
+        <name>RenderSyncContext</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::RenderSyncContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="35" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1aa3d6a7fb5dbd3de2e7873a99367706bd" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPooledRenderTargetDesc</ref></type>
+        <definition>FPooledRenderTargetDesc UE::PixelStreaming2::FVideoSink::RenderTargetDescriptor</definition>
+        <argsstring></argsstring>
+        <name>RenderTargetDescriptor</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::RenderTargetDescriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="36" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a892ef27ff754c4ff514371a381e11dbf" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TRefCountPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IPooledRenderTarget</ref> &gt;</type>
+        <definition>TRefCountPtr&lt;IPooledRenderTarget&gt; UE::PixelStreaming2::FVideoSink::RenderTarget</definition>
+        <argsstring></argsstring>
+        <name>RenderTarget</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::RenderTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="37" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a6fa6de8cf1d1fdb77bd9720e9870447f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8_t</ref> &gt;</type>
+        <definition>TArray&lt;uint8_t&gt; UE::PixelStreaming2::FVideoSink::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::Buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="38" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1aa892af6bb4f790ddc23be08bd38e474c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTextureRHIRef</ref></type>
+        <definition>FTextureRHIRef UE::PixelStreaming2::FVideoSink::SourceTexture</definition>
+        <argsstring></argsstring>
+        <name>SourceTexture</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::SourceTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="39" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a3c8a962ab54714dd5379b965c33cd438" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2::FVideoSink::~FVideoSink</definition>
+        <argsstring>()</argsstring>
+        <name>~FVideoSink</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::~FVideoSink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="18" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a8a7dd455f78a478b5d242f62ee18d2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FVideoSink::AddVideoConsumer</definition>
+        <argsstring>(IPixelStreaming2VideoConsumer *VideoConsumer) override</argsstring>
+        <name>AddVideoConsumer</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::AddVideoConsumer</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_video_sink_1aebc52a6bb349bd978ec8bc0e480ccdd7">AddVideoConsumer</reimplements>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_video_consumer" kindref="compound">IPixelStreaming2VideoConsumer</ref> *</type>
+          <declname>VideoConsumer</declname>
+        </param>
+        <briefdescription>
+<para>Add a video consumer to the sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VideoConsumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The video consumer to add to the sink. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="20" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1ac9997a42eba37ec9023cd0e5b6ac9000" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FVideoSink::RemoveVideoConsumer</definition>
+        <argsstring>(IPixelStreaming2VideoConsumer *VideoConsumer) override</argsstring>
+        <name>RemoveVideoConsumer</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::RemoveVideoConsumer</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_video_sink_1a572686143f3d06700606bfd7bf32440d">RemoveVideoConsumer</reimplements>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_video_consumer" kindref="compound">IPixelStreaming2VideoConsumer</ref> *</type>
+          <declname>VideoConsumer</declname>
+        </param>
+        <briefdescription>
+<para>Remove a video consumer to remove from the sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VideoConsumer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The video consumer to remove from the sink. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="21" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1af769827a8dcdd1af2d041bfe75ac24ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2::FVideoSink::HasVideoConsumers</definition>
+        <argsstring>()</argsstring>
+        <name>HasVideoConsumers</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::HasVideoConsumers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="23" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a1ea7c3ec45d8bdaa5870b616c550ff36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FVideoSink::OnVideoData</definition>
+        <argsstring>(const EpicRtcVideoFrame &amp;Frame)</argsstring>
+        <name>OnVideoData</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::OnVideoData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoFrame</ref> &amp;</type>
+          <declname>Frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="25" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="52" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a7a078c8f6c709ae31c935664222ba45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FVideoSink::SetMuted</definition>
+        <argsstring>(bool bIsMuted)</argsstring>
+        <name>SetMuted</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::SetMuted</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bIsMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="27" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1acef58b1610b8adcb512e8b7caf13186b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FVideoSink::CallConsumeFrame</definition>
+        <argsstring>(FTextureRHIRef Frame)</argsstring>
+        <name>CallConsumeFrame</name>
+        <qualifiedname>UE::PixelStreaming2::FVideoSink::CallConsumeFrame</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTextureRHIRef</ref></type>
+          <declname>Frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="42" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSink.cpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IPixelStreaming2VideoSink</label>
+        <link refid="class_i_pixel_streaming2_video_sink"/>
+      </node>
+      <node id="3">
+        <label>UE::PixelStreaming2::FEpicRtcVideoSink</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_epic_rtc_video_sink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FVideoSink</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IPixelStreaming2VideoSink</label>
+        <link refid="class_i_pixel_streaming2_video_sink"/>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FVideoSink</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Internal/VideoSink.h" bodystart="16" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a8a7dd455f78a478b5d242f62ee18d2b2" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>AddVideoConsumer</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a4293d9444d8d2e2bfee7c7b40266eb06" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>bIsMuted</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a6fa6de8cf1d1fdb77bd9720e9870447f" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>Buffer</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1acef58b1610b8adcb512e8b7caf13186b" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>CallConsumeFrame</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1af769827a8dcdd1af2d041bfe75ac24ac" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>HasVideoConsumers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a1ea7c3ec45d8bdaa5870b616c550ff36" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>OnVideoData</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1ac9997a42eba37ec9023cd0e5b6ac9000" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>RemoveVideoConsumer</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a68e4569dc0784608a8d692acbea3ba76" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>RenderSyncContext</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a892ef27ff754c4ff514371a381e11dbf" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>RenderTarget</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1aa3d6a7fb5dbd3de2e7873a99367706bd" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>RenderTargetDescriptor</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a7a078c8f6c709ae31c935664222ba45a" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>SetMuted</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1aa892af6bb4f790ddc23be08bd38e474c" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>SourceTexture</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1ae387b7f6710673738189accb3173c129" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>VideoConsumers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a87f2cbeaaf328242667b95f35017ee90" prot="protected" virt="non-virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>VideoConsumersCS</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink_1a3c8a962ab54714dd5379b965c33cd438" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>~FVideoSink</name></member>
+      <member refid="class_i_pixel_streaming2_video_sink_1a0b4772c2cffa521ce520b411a3a90d58" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FVideoSink</scope><name>~IPixelStreaming2VideoSink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

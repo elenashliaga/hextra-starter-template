@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_object" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <derivedcompoundref refid="class_u_geo_json_feature_collection" prot="public" virt="non-virtual">UGeoJsonFeatureCollection</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_geometry_collection" prot="public" virt="non-virtual">UGeoJsonGeometryCollection</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_line_string" prot="public" virt="non-virtual">UGeoJsonLineString</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_multi_line_string" prot="public" virt="non-virtual">UGeoJsonMultiLineString</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_multi_point" prot="public" virt="non-virtual">UGeoJsonMultiPoint</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_multi_polygon" prot="public" virt="non-virtual">UGeoJsonMultiPolygon</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_object_feature" prot="public" virt="non-virtual">UGeoJsonObjectFeature</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_point" prot="public" virt="non-virtual">UGeoJsonPoint</derivedcompoundref>
+    <derivedcompoundref refid="class_u_geo_json_polygon" prot="public" virt="non-virtual">UGeoJsonPolygon</derivedcompoundref>
+    <includes refid="_geo_json_object_8h" local="no">GeoJsonObject.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonObject::GetType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonObject::GetType</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_feature_collection_1adaf33b67055bb9825f42e2c2e181cd99">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1abc7702710a9cec1b849992c5e2e0a5b0">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_line_string_1ae8460ecb7c708ca036c161f8d61ad0cb">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_line_string_1a1e3306d023bb3b898a7fbd23bef22a32">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_point_1ad8231f65e2bd47948d45d10bd003bb2c">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_polygon_1a1df13152386166a6547d423b1f5bbc7d">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a1d8632dbbac1c40cc755bb5d080fb298">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_point_1a395fb9bff2e0a689f7c9fe7508767520">GetType</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_polygon_1ad2296f3abae95d4473f838ad5dc9af81">GetType</reimplementedby>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="37" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetPoint</definition>
+        <argsstring>(FJsonPoint &amp;Point) const</argsstring>
+        <name>TryGetPoint</name>
+        <qualifiedname>UGeoJsonObject::TryGetPoint</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1a79bcf0ad2aef8ff779d28ba706c0a46b">TryGetPoint</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a21b3672ff6c14fd0d8ced86cac345e2f">TryGetPoint</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_point_1a9c9eb20fc22978c03a3fe9eff5cf7e6f">TryGetPoint</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь точку из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается получить точку из объекта GeoJSON и сохраняет ее в заданной структуре <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура для хранения извлеченных координат точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если точка успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="48" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetLineString</definition>
+        <argsstring>(FJsonMultiPoint &amp;Line) const</argsstring>
+        <name>TryGetLineString</name>
+        <qualifiedname>UGeoJsonObject::TryGetLineString</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1ad1d74ec79c30c99fe79d588d4e30fff5">TryGetLineString</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_line_string_1a40487be61bce94071444503961eb678c">TryGetLineString</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a73d172905daefe89b2362e727a6dda7d">TryGetLineString</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>Line</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить представление линии объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия линии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если объект GeoJSON может быть преобразован в линию, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="57" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1abd9090f29be459182922972e71669a21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetPolygon</definition>
+        <argsstring>(FJsonPolygon &amp;Polygon) const</argsstring>
+        <name>TryGetPolygon</name>
+        <qualifiedname>UGeoJsonObject::TryGetPolygon</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1a95ad4a7b24f1e217ead279b6716b56d3">TryGetPolygon</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a0f1fbeaa123d11d465fc251c48e1d4ea">TryGetPolygon</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_polygon_1a65146a8973eddee4d544b7f0ec990830">TryGetPolygon</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить полигон из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается извлечь полигон из объекта GeoJSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия полигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если полигон успешно извлечен, в противном случае false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="68" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetMultiPoint</definition>
+        <argsstring>(FJsonMultiPoint &amp;MultiPoint) const</argsstring>
+        <name>TryGetMultiPoint</name>
+        <qualifiedname>UGeoJsonObject::TryGetMultiPoint</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1ac2be3857777f6600b6b7c8d11eb21b03">TryGetMultiPoint</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_point_1a8da9c3cc346c9c6ced6818703eb4c745">TryGetMultiPoint</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a178aa92f1ac0e540b4af28d5e5be8262">TryGetMultiPoint</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>MultiPoint</declname>
+        </param>
+        <briefdescription>
+<para>Этот метод пытается извлечь геометрию мультиточки из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если извлечение было успешным, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="77" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetMultiLineString</definition>
+        <argsstring>(FJsonPolygon &amp;MultiLine) const</argsstring>
+        <name>TryGetMultiLineString</name>
+        <qualifiedname>UGeoJsonObject::TryGetMultiLineString</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1aa0a6b86209ab7b190598dc154aba6ab1">TryGetMultiLineString</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_line_string_1a3d1221eecdb3e6f5baaa2cee344d3d5d">TryGetMultiLineString</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1aec1a4ccdc757069d87810b1bf33bfa6f">TryGetMultiLineString</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>MultiLine</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить представление мультилинии из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается получить представление MultiLineString объекта GeoJSON и присваивает его параметру.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Переменная <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> для сохранения результата. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если представление MultiLineString было успешно извлечено, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="88" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetMultiPolygon</definition>
+        <argsstring>(FJsonMultiPolygon &amp;MultiPolygon) const</argsstring>
+        <name>TryGetMultiPolygon</name>
+        <qualifiedname>UGeoJsonObject::TryGetMultiPolygon</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1a27371100ffcf24f2053089780584ba10">TryGetMultiPolygon</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_polygon_1a733adceee0edfc6be1408b2946a3e409">TryGetMultiPolygon</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1a03dfd635aa653fb4d1898bc646267771">TryGetMultiPolygon</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+          <declname>MultiPolygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить представление мультиполигона из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается получить представление мультиполигона объекта GeoJSON и присваивает его параметру.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на объект <ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> для сохранения результата. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если объект GeoJSON имеет представление мультиполигона, в противном случае, false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="99" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObject::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonObject::TryGetGeometry</qualifiedname>
+        <reimplementedby refid="class_u_geo_json_geometry_collection_1ae15b46a714c9a57dc14e983048b5d8b4">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_line_string_1a7a220f2282dae21cfe959ca1182fbf01">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_line_string_1a45c2d241c20c96aea68c0b14b44f58ee">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_point_1aca4daa1703c5080067e606912244624c">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_multi_polygon_1a78dcba1ea57935f0368f66245c650649">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_object_feature_1aa17af75dec2716feac0548937304a9f9">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_point_1a4d8b045b304df66ec164f20c20a2d99b">TryGetGeometry</reimplementedby>
+        <reimplementedby refid="class_u_geo_json_polygon_1a67ed5567efc187dab8c8a400f56c1eb0">TryGetGeometry</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается получить геометрию объекта GeoJSON и сохранить ее в предоставленном объекте <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>, в котором будет сохранена полученная геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если геометрия была успешно получена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="110" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObject.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Базовый класс, представляющий объект GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>UGeoJsonFeatureCollection</label>
+        <link refid="class_u_geo_json_feature_collection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UGeoJsonGeometryCollection</label>
+        <link refid="class_u_geo_json_geometry_collection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UGeoJsonLineString</label>
+        <link refid="class_u_geo_json_line_string"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UGeoJsonMultiLineString</label>
+        <link refid="class_u_geo_json_multi_line_string"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UGeoJsonMultiPoint</label>
+        <link refid="class_u_geo_json_multi_point"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UGeoJsonMultiPolygon</label>
+        <link refid="class_u_geo_json_multi_polygon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>UGeoJsonObjectFeature</label>
+        <link refid="class_u_geo_json_object_feature"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UGeoJsonPoint</label>
+        <link refid="class_u_geo_json_point"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UGeoJsonPolygon</label>
+        <link refid="class_u_geo_json_polygon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" line="24" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObject.h" bodystart="25" bodyend="111"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21" prot="public" virt="virtual"><scope>UGeoJsonObject</scope><name>TryGetPolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_geo_json_geometry_collection_8cpp" kind="file" language="C++">
+    <compoundname>GeoJsonGeometryCollection.cpp</compoundname>
+    <includes refid="_geo_json_geometry_collection_8h" local="yes">GeoJsonDataStructures/GeoJsonGeometryCollection.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp</label>
+        <link refid="_geo_json_geometry_collection_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GeoJsonDataStructures/GeoJsonGeometryCollection.h</label>
+        <link refid="_geo_json_geometry_collection_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GeoJsonObject.h</label>
+        <link refid="_geo_json_object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GeoJsonDataStructures/GeoJsonWrapperTypes.h</label>
+        <link refid="_geo_json_wrapper_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="8">
+        <label>GeoJsonGeometryCollection.generated.h</label>
+      </node>
+      <node id="7">
+        <label>GeoJsonObject.generated.h</label>
+      </node>
+      <node id="6">
+        <label>GeoJsonWrapperTypes.generated.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>META<sp/>all<sp/>rights<sp/>received<sp/>(c)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_geo_json_geometry_collection_8h" kindref="compound">GeoJsonDataStructures/GeoJsonGeometryCollection.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref><sp/><ref refid="class_u_geo_json_geometry_collection_1abc7702710a9cec1b849992c5e2e0a5b0" kindref="member">UGeoJsonGeometryCollection::GetType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="6"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36daa56fbded614f111bf2bc4741d0f5ad09" kindref="member">EGeoJsonType::GeometryCollection</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a79bcf0ad2aef8ff779d28ba706c0a46b" kindref="member">UGeoJsonGeometryCollection::TryGetPoint</ref>(<ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="11"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::Point&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1ad1d74ec79c30c99fe79d588d4e30fff5" kindref="member">UGeoJsonGeometryCollection::TryGetLineString</ref>(<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2e321465690359abbb020a3619b1c937" kindref="member">LineString</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="16"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::LineString&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2e321465690359abbb020a3619b1c937" kindref="member">LineString</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a95ad4a7b24f1e217ead279b6716b56d3" kindref="member">UGeoJsonGeometryCollection::TryGetPolygon</ref>(<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da4c0a11247d92f73fb84baa51e37a3263" kindref="member">Polygon</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="21"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::Polygon&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da4c0a11247d92f73fb84baa51e37a3263" kindref="member">Polygon</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1ac2be3857777f6600b6b7c8d11eb21b03" kindref="member">UGeoJsonGeometryCollection::TryGetMultiPoint</ref>(<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da3cd60571b78c0f0e0cd78c2f96127bc0" kindref="member">MultiPoint</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::MultiPoint&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da3cd60571b78c0f0e0cd78c2f96127bc0" kindref="member">MultiPoint</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1aa0a6b86209ab7b190598dc154aba6ab1" kindref="member">UGeoJsonGeometryCollection::TryGetMultiLineString</ref>(<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da6d0b0e1d146d35399060c10baabed5d6" kindref="member">MultiLineString</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::MultiLineString&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da6d0b0e1d146d35399060c10baabed5d6" kindref="member">MultiLineString</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a27371100ffcf24f2053089780584ba10" kindref="member">UGeoJsonGeometryCollection::TryGetMultiPolygon</ref>(<ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da5645dd61a1073a52cf2476fd28f04a3b" kindref="member">MultiPolygon</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TryGetTemplateGeometry&lt;EGeoJsonType::MultiPolygon&gt;</ref>(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da5645dd61a1073a52cf2476fd28f04a3b" kindref="member">MultiPolygon</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1ae15b46a714c9a57dc14e983048b5d8b4" kindref="member">UGeoJsonGeometryCollection::TryGetGeometry</ref>(<ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>&amp;<sp/>Geometry)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_u_geo_json_geometry_collection_1acbd26196569a5470bedd8e04b17c846b" kindref="member">IsEmpty</ref>())</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Geometry<sp/>=<sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>.Top();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1ace1536ce08783e99cd88ccd7e2228c13" kindref="member">UGeoJsonGeometryCollection::GetGeometry</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="51"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1ae63f704cead0ffd5f21068b80fef5c5a" kindref="member">UGeoJsonGeometryCollection::GetMultiPolygon</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref>&gt;();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1a914bbf27d863f7a0697333d009a6e9d6" kindref="member">UGeoJsonGeometryCollection::GetPolygon</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="61"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&gt;();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1ae757cdcff711ad22b79c8740dbabc69c" kindref="member">UGeoJsonGeometryCollection::GetMultiLineString</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&gt;();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1a356e79414ba006a283436f820d880cac" kindref="member">UGeoJsonGeometryCollection::GetLineString</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&gt;();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1added7d4af718847c94f575f69bdc6460" kindref="member">UGeoJsonGeometryCollection::GetMultiPoint</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&gt;();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>&amp;<sp/><ref refid="class_u_geo_json_geometry_collection_1a6bce99c771c2ad42930d53141f601c70" kindref="member">UGeoJsonGeometryCollection::GetPoint</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>[Idx].Geometry.Get&lt;<ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>&gt;();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1acbd26196569a5470bedd8e04b17c846b" kindref="member">UGeoJsonGeometryCollection::IsEmpty</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>.IsEmpty();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_u_geo_json_geometry_collection_1a9528c376326053c3860bba46631961a8" kindref="member">UGeoJsonGeometryCollection::Num</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="91"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref>.<ref refid="struct_f_json_geometry_collection_1a1d6b6ec4e201564255ec83d837cb8ee3" kindref="member">Geometries</ref>.Num();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a34b11802c5e8fafb840670572aeff381" kindref="member">UGeoJsonGeometryCollection::SetCollection</ref>(<ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref>&amp;&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NewCollection</ref>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MoveTemp</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NewCollection</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_geometry_collection_1a34b11802c5e8fafb840670572aeff381" kindref="member">UGeoJsonGeometryCollection::SetCollection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NewCollection</ref>)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" kindref="member">Geometries</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NewCollection</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp"/>
+  </compounddef>
+</doxygen>

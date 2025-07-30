@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_point" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonPoint</compoundname>
+    <basecompoundref refid="class_u_geo_json_object" prot="public" virt="non-virtual">UGeoJsonObject</basecompoundref>
+    <includes refid="_geo_json_point_8h" local="no">GeoJsonPoint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_geo_json_point_1aec0e3ecda5032a1d5cf8b5cfd45aec30" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref></type>
+        <definition>FJsonPoint UGeoJsonPoint::Coordinates</definition>
+        <argsstring></argsstring>
+        <name>Coordinates</name>
+        <qualifiedname>UGeoJsonPoint::Coordinates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="60" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_point_1a395fb9bff2e0a689f7c9fe7508767520" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonPoint::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonPoint::GetType</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9">GetType</reimplements>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="28" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonPoint.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_point_1a9c9eb20fc22978c03a3fe9eff5cf7e6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonPoint::TryGetPoint</definition>
+        <argsstring>(FJsonPoint &amp;Point) const override</argsstring>
+        <name>TryGetPoint</name>
+        <qualifiedname>UGeoJsonPoint::TryGetPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d">TryGetPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить представление точки объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура для хранения извлеченных координат точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если точка успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="36" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonPoint.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_point_1a4d8b045b304df66ec164f20c20a2d99b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonPoint::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const override</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonPoint::TryGetGeometry</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360">TryGetGeometry</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>, в котором будет сохранена полученная геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если геометрия была успешно получена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="44" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonPoint.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_point_1afd997e5b231d50d96f8f5f7d2c0b272b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonPoint::SetCoordinates</definition>
+        <argsstring>(FJsonPoint &amp;&amp;Point)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonPoint::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;&amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта GeoJsonPoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="51" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonPoint.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_point_1aa9c928b19a9d20307ddd3dcbbaa116b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonPoint::SetCoordinates</definition>
+        <argsstring>(const FJsonPoint &amp;Point)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonPoint::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта GeoJsonPoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="57" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonPoint.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий объект Point GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Объект Point представляет точку, представленную набором из двух или трех координат. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UGeoJsonPoint</label>
+        <link refid="class_u_geo_json_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>FJsonPoint</label>
+        <link refid="struct_f_json_point"/>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UGeoJsonPoint</label>
+        <link refid="class_u_geo_json_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Coordinates</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonPoint.h" bodystart="17" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_point_1aec0e3ecda5032a1d5cf8b5cfd45aec30" prot="private" virt="non-virtual"><scope>UGeoJsonPoint</scope><name>Coordinates</name></member>
+      <member refid="class_u_geo_json_point_1a395fb9bff2e0a689f7c9fe7508767520" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_point_1afd997e5b231d50d96f8f5f7d2c0b272b" prot="public" virt="non-virtual"><scope>UGeoJsonPoint</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_point_1aa9c928b19a9d20307ddd3dcbbaa116b0" prot="public" virt="non-virtual"><scope>UGeoJsonPoint</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_point_1a4d8b045b304df66ec164f20c20a2d99b" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_point_1a9c9eb20fc22978c03a3fe9eff5cf7e6f" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21" prot="public" virt="virtual"><scope>UGeoJsonPoint</scope><name>TryGetPolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

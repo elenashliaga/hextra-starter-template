@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_f_meta_probes_module" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>FMetaProbesModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IModuleInterface</basecompoundref>
+    <includes refid="_meta_probes_8h" local="no">MetaProbes.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_f_meta_probes_module_1a2d6ab82ee1e34b5567777c56bd3bd31c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ISocketSubsystem</ref> *</type>
+        <definition>ISocketSubsystem* FMetaProbesModule::SocketSubsystem</definition>
+        <argsstring></argsstring>
+        <name>SocketSubsystem</name>
+        <qualifiedname>FMetaProbesModule::SocketSubsystem</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Подсистема сокетов движка. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="19" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_meta_probes_module_1aa4a85662e6c68eabd1a8cd86e7565547" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_meta_probe_type_8h_1ab4220105137127c3cf9ab122233cead6" kindref="member">EMetaProbeType</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> &gt; &gt;</type>
+        <definition>TMap&lt;EMetaProbeType, TUniquePtr&lt;FSocket&gt; &gt; FMetaProbesModule::ProbeSockets</definition>
+        <argsstring></argsstring>
+        <name>ProbeSockets</name>
+        <qualifiedname>FMetaProbesModule::ProbeSockets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Таблица сокетов проб. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="24" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_f_meta_probes_module_1a9a50be8ae3a296d4fac19a458e70d819" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>constexpr uint32 FMetaProbesModule::ListenIp</definition>
+        <argsstring></argsstring>
+        <name>ListenIp</name>
+        <qualifiedname>FMetaProbesModule::ListenIp</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP для прослушки соединений. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="47" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_meta_probes_module_1aee803c4659ae32aee48f2a0abbf6b03e" prot="public" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_meta_probe_type_8h_1ab4220105137127c3cf9ab122233cead6" kindref="member">EMetaProbeType</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint16</ref> &gt;</type>
+        <definition>const TMap&lt;EMetaProbeType, uint16&gt; FMetaProbesModule::ProbePorts</definition>
+        <argsstring></argsstring>
+        <name>ProbePorts</name>
+        <qualifiedname>FMetaProbesModule::ProbePorts</qualifiedname>
+        <initializer>{ { <ref refid="_meta_probe_type_8h_1ab4220105137127c3cf9ab122233cead6a13e685964c2548aa748f7ea263bad4e5" kindref="member">EMetaProbeType::Startup</ref>, 8480 },
+                                                                     { <ref refid="_meta_probe_type_8h_1ab4220105137127c3cf9ab122233cead6acacca97bb7abbf614d9c8f5a7569f5ea" kindref="member">EMetaProbeType::Liveness</ref>, 8481 },
+                                                                     { <ref refid="_meta_probe_type_8h_1ab4220105137127c3cf9ab122233cead6a7236964cf567c0cdefc5aca8def85044" kindref="member">EMetaProbeType::Readiness</ref>, 8482 } }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Порты проб. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="52" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_meta_probes_module_1a324e8f1519df694d0770bbda6b05d934" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+        <definition>constexpr SIZE_T FMetaProbesModule::MaxConnectionsPerSocket</definition>
+        <argsstring></argsstring>
+        <name>MaxConnectionsPerSocket</name>
+        <qualifiedname>FMetaProbesModule::MaxConnectionsPerSocket</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Максимальное число соединений в очереди ожидания сокета. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="59" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_meta_probes_module_1ac4f350edff6c38dce3a384f07c26fb63" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float FMetaProbesModule::ConnectionPollInterval</definition>
+        <argsstring></argsstring>
+        <name>ConnectionPollInterval</name>
+        <qualifiedname>FMetaProbesModule::ConnectionPollInterval</qualifiedname>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Интервал проверки соединений в очереди ожидания сокета. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="64" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_f_meta_probes_module_1a7fdc7166287e96d2e0e298756950af05" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMetaProbesModule::HandlePendingConnections</definition>
+        <argsstring>(FSocket &amp;Socket) const</argsstring>
+        <name>HandlePendingConnections</name>
+        <qualifiedname>FMetaProbesModule::HandlePendingConnections</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> &amp;</type>
+          <declname>Socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отвечает на все соединения в очереди ожидания ненулевым числом байт.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сокет пробы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="31" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Private/MetaProbes.cpp" bodystart="98" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_meta_probes_module_1a77b55c93dfddf5136331c2c8e4021dff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMetaProbesModule::PollProbes</definition>
+        <argsstring>()</argsstring>
+        <name>PollProbes</name>
+        <qualifiedname>FMetaProbesModule::PollProbes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Осуществляет ожидание запросов к сокетам проб.</para>
+<para>При получении запроса (если проба &quot;готова&quot;) отправляет ответ. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="39" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Private/MetaProbes.cpp" bodystart="80" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_f_meta_probes_module_1a38934ac8c457b832f6b84612b3ef02e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMetaProbesModule::StartupModule</definition>
+        <argsstring>() override</argsstring>
+        <name>StartupModule</name>
+        <qualifiedname>FMetaProbesModule::StartupModule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="42" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Private/MetaProbes.cpp" bodystart="29" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Модуль, предоставляющий функциональность healthcheck-проб.</para>
+<para>Пробы реализуются при помощи TCP-сокетов и слушаются на разных портах. В качестве успешного ответа пробы клиентом должен приниматься любой набор байт ненулевой длины. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FMetaProbesModule</label>
+        <link refid="class_f_meta_probes_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FMetaProbesModule</label>
+        <link refid="class_f_meta_probes_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaProbes/Public/MetaProbes.h" bodystart="15" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_f_meta_probes_module_1ac4f350edff6c38dce3a384f07c26fb63" prot="public" virt="non-virtual"><scope>FMetaProbesModule</scope><name>ConnectionPollInterval</name></member>
+      <member refid="class_f_meta_probes_module_1a7fdc7166287e96d2e0e298756950af05" prot="private" virt="non-virtual"><scope>FMetaProbesModule</scope><name>HandlePendingConnections</name></member>
+      <member refid="class_f_meta_probes_module_1a9a50be8ae3a296d4fac19a458e70d819" prot="public" virt="non-virtual"><scope>FMetaProbesModule</scope><name>ListenIp</name></member>
+      <member refid="class_f_meta_probes_module_1a324e8f1519df694d0770bbda6b05d934" prot="public" virt="non-virtual"><scope>FMetaProbesModule</scope><name>MaxConnectionsPerSocket</name></member>
+      <member refid="class_f_meta_probes_module_1a77b55c93dfddf5136331c2c8e4021dff" prot="private" virt="non-virtual"><scope>FMetaProbesModule</scope><name>PollProbes</name></member>
+      <member refid="class_f_meta_probes_module_1aee803c4659ae32aee48f2a0abbf6b03e" prot="public" virt="non-virtual"><scope>FMetaProbesModule</scope><name>ProbePorts</name></member>
+      <member refid="class_f_meta_probes_module_1aa4a85662e6c68eabd1a8cd86e7565547" prot="private" virt="non-virtual"><scope>FMetaProbesModule</scope><name>ProbeSockets</name></member>
+      <member refid="class_f_meta_probes_module_1a2d6ab82ee1e34b5567777c56bd3bd31c" prot="private" virt="non-virtual"><scope>FMetaProbesModule</scope><name>SocketSubsystem</name></member>
+      <member refid="class_f_meta_probes_module_1a38934ac8c457b832f6b84612b3ef02e3" prot="public" virt="virtual"><scope>FMetaProbesModule</scope><name>StartupModule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

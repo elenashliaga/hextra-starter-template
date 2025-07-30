@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_signal_processor_base" kind="class" language="C++" prot="public">
+    <compoundname>UMassSignalProcessorBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassProcessor</basecompoundref>
+    <derivedcompoundref refid="class_u_mass_active_smart_object_signal_processor" prot="public" virt="non-virtual">UMassActiveSmartObjectSignalProcessor</derivedcompoundref>
+    <includes refid="_mass_signal_processor_base_8h" local="no">MassSignalProcessorBase.h</includes>
+    <innerclass refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range" prot="private">UMassSignalProcessorBase::FEntitySignalRange</innerclass>
+    <innerclass refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals" prot="private">UMassSignalProcessorBase::FFrameReceivedSignals</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1ad2d448af13db9dfed156499fd4fd6a17" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">virtual</ref> SignalEntities(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &amp;EntityManager, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>, <ref refid="struct_f_mass_signal_name_lookup" kindref="compound">FMassSignalNameLookup</ref> &amp;EntitySignals) <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PURE_VIRTUAL</ref>(<ref refid="class_u_mass_signal_processor_base" kindref="compound">UMassSignalProcessorBase</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalProcessorBase::OnSignalReceived</definition>
+        <argsstring>(FName SignalName, TConstArrayView&lt; FMassEntityHandle &gt; Entities)</argsstring>
+        <name>OnSignalReceived</name>
+        <qualifiedname>UMassSignalProcessorBase::OnSignalReceived</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual method that derived class needs to implement to act on a signal that is raised for that frame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EntitySubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the system to execute the lambdas on each entity chunk </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the execution context to be passed when executing the lambdas </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntitySignals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Look up to retrieve for each entities their raised signal via GetSignalsForEntity Callback that is being called when new signal is raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal being raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>are the targeted entities for this signal </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="45" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1acecc7e6600b82a57f42aaced8e3abb43" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityQuery</ref></type>
+        <definition>FMassEntityQuery UMassSignalProcessorBase::EntityQuery</definition>
+        <argsstring></argsstring>
+        <name>EntityQuery</name>
+        <qualifiedname>UMassSignalProcessorBase::EntityQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="67" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1a3e7f738bd49a3e80f0584ff54f52a6d4" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>constexpr int UMassSignalProcessorBase::BuffersCount</definition>
+        <argsstring></argsstring>
+        <name>BuffersCount</name>
+        <qualifiedname>UMassSignalProcessorBase::BuffersCount</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="89" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1a14348c4ad61acce3671234a6e4547840" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals" kindref="compound">FFrameReceivedSignals</ref>, <ref refid="class_u_mass_signal_processor_base_1a3e7f738bd49a3e80f0584ff54f52a6d4" kindref="member">BuffersCount</ref> &gt;</type>
+        <definition>TStaticArray&lt;FFrameReceivedSignals, BuffersCount&gt; UMassSignalProcessorBase::FrameReceivedSignals</definition>
+        <argsstring></argsstring>
+        <name>FrameReceivedSignals</name>
+        <qualifiedname>UMassSignalProcessorBase::FrameReceivedSignals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Double buffer frame received signal as we can receive new signals as we are processing them </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="92" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1a611655d8791efe2f6ae0d71c939ffea6" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UMassSignalProcessorBase::CurrentFrameBufferIndex</definition>
+        <argsstring></argsstring>
+        <name>CurrentFrameBufferIndex</name>
+        <qualifiedname>UMassSignalProcessorBase::CurrentFrameBufferIndex</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current frame buffer index of FrameReceivedSignals </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="95" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1aba7b7a42baa6400cd4b9676c135ec9ef" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_mass_signal_name_lookup" kindref="compound">FMassSignalNameLookup</ref></type>
+        <definition>FMassSignalNameLookup UMassSignalProcessorBase::SignalNameLookup</definition>
+        <argsstring></argsstring>
+        <name>SignalNameLookup</name>
+        <qualifiedname>UMassSignalProcessorBase::SignalNameLookup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lookup used to store and retrieve signals per entity, only used during processing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="98" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1a228512d2e58672d656994f4cdd466ee2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref> &gt;</type>
+        <definition>TArray&lt;FName&gt; UMassSignalProcessorBase::RegisteredSignals</definition>
+        <argsstring></argsstring>
+        <name>RegisteredSignals</name>
+        <qualifiedname>UMassSignalProcessorBase::RegisteredSignals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of all the registered signal names </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="101" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_processor_base_1a97933213c01f017c81fef8e8f1c3095a" prot="private" static="no" mutable="no">
+        <type>UE::FSpinLock</type>
+        <definition>UE::FSpinLock UMassSignalProcessorBase::ReceivedSignalLock</definition>
+        <argsstring></argsstring>
+        <name>ReceivedSignalLock</name>
+        <qualifiedname>UMassSignalProcessorBase::ReceivedSignalLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="103" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1a2b4d4862d77cba7f56e46bd145d263d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassSignalProcessorBase::UMassSignalProcessorBase</definition>
+        <argsstring>(const FObjectInitializer &amp;ObjectInitializer=FObjectInitializer::Get())</argsstring>
+        <name>UMassSignalProcessorBase</name>
+        <qualifiedname>UMassSignalProcessorBase::UMassSignalProcessorBase</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FObjectInitializer</ref> &amp;</type>
+          <declname>ObjectInitializer</declname>
+          <defval>FObjectInitializer::Get()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="24" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp" bodystart="11" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1ade421d27dffea08aa0ddcbcfc3ed2c32" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalProcessorBase::BeginDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginDestroy</name>
+        <qualifiedname>UMassSignalProcessorBase::BeginDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="27" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1ac0c1844395d291b738ee099e484c6383" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UMassSignalProcessorBase::ConfigureQueries</definition>
+        <argsstring>() override</argsstring>
+        <name>ConfigureQueries</name>
+        <qualifiedname>UMassSignalProcessorBase::ConfigureQueries</qualifiedname>
+        <reimplementedby refid="class_u_mass_active_smart_object_signal_processor_1a54d30e7bfc3a56f201ee8cf4a42bf2f0">ConfigureQueries</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure the owned FMassEntityQuery instances to express processor queries requirements </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="30" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1a1d81402441ecb6f6e235ac2dae76f132" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalProcessorBase::Execute</definition>
+        <argsstring>(FMassEntityManager &amp;EntityManager, FMassExecutionContext &amp;Context) override</argsstring>
+        <name>Execute</name>
+        <qualifiedname>UMassSignalProcessorBase::Execute</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &amp;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execution method for this processor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EntitySubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the system to execute the lambdas on each entity chunk </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the execution context to be passed when executing the lambdas </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="52" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp" bodystart="37" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1ada4eee7f992868e1a872e5172a146bc6" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool UMassSignalProcessorBase::ShouldAllowQueryBasedPruning</definition>
+        <argsstring>(const bool bRuntimeMode=true) const override</argsstring>
+        <name>ShouldAllowQueryBasedPruning</name>
+        <qualifiedname>UMassSignalProcessorBase::ShouldAllowQueryBasedPruning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bRuntimeMode</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>We don&apos;t want signaling processors to be pruned by default, since that can mess up signal processing just after processor&apos;s creation (might miss some signals initially). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="58" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_processor_base_1aca8505ae542dd241fa179fe898ee1365" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalProcessorBase::SubscribeToSignal</definition>
+        <argsstring>(UMassSignalSubsystem &amp;SignalSubsystem, const FName SignalName)</argsstring>
+        <name>SubscribeToSignal</name>
+        <qualifiedname>UMassSignalProcessorBase::SubscribeToSignal</qualifiedname>
+        <param>
+          <type><ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref> &amp;</type>
+          <declname>SignalSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To receive notification about a particular signal, you need to subscribe to it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal to receive notification about </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="65" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Processor for executing signals on each targeted entities The derived classes only need to implement the method SignalEntities to actually received the raised signals for the entities they subscribed to </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>UMassActiveSmartObjectSignalProcessor</label>
+        <link refid="class_u_mass_active_smart_object_signal_processor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassProcessor</label>
+      </node>
+      <node id="1">
+        <label>UMassSignalProcessorBase</label>
+        <link refid="class_u_mass_signal_processor_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FMassSignalNameLookup</label>
+        <link refid="struct_f_mass_signal_name_lookup"/>
+      </node>
+      <node id="2">
+        <label>UMassProcessor</label>
+      </node>
+      <node id="1">
+        <label>UMassSignalProcessorBase</label>
+        <link refid="class_u_mass_signal_processor_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>OnSignalReceived</edgelabel>
+          <edgelabel>SignalNameLookup</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h" bodystart="20" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_u_mass_signal_processor_base_1ade421d27dffea08aa0ddcbcfc3ed2c32" prot="protected" virt="virtual"><scope>UMassSignalProcessorBase</scope><name>BeginDestroy</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a3e7f738bd49a3e80f0584ff54f52a6d4" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>BuffersCount</name></member>
+      <member refid="class_u_mass_signal_processor_base_1ac0c1844395d291b738ee099e484c6383" prot="protected" virt="virtual"><scope>UMassSignalProcessorBase</scope><name>ConfigureQueries</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a611655d8791efe2f6ae0d71c939ffea6" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>CurrentFrameBufferIndex</name></member>
+      <member refid="class_u_mass_signal_processor_base_1acecc7e6600b82a57f42aaced8e3abb43" prot="protected" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>EntityQuery</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a1d81402441ecb6f6e235ac2dae76f132" prot="protected" virt="virtual"><scope>UMassSignalProcessorBase</scope><name>Execute</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a14348c4ad61acce3671234a6e4547840" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>FrameReceivedSignals</name></member>
+      <member refid="class_u_mass_signal_processor_base_1ad2d448af13db9dfed156499fd4fd6a17" prot="protected" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>OnSignalReceived</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a97933213c01f017c81fef8e8f1c3095a" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>ReceivedSignalLock</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a228512d2e58672d656994f4cdd466ee2" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>RegisteredSignals</name></member>
+      <member refid="class_u_mass_signal_processor_base_1ada4eee7f992868e1a872e5172a146bc6" prot="protected" virt="virtual"><scope>UMassSignalProcessorBase</scope><name>ShouldAllowQueryBasedPruning</name></member>
+      <member refid="class_u_mass_signal_processor_base_1aba7b7a42baa6400cd4b9676c135ec9ef" prot="private" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>SignalNameLookup</name></member>
+      <member refid="class_u_mass_signal_processor_base_1aca8505ae542dd241fa179fe898ee1365" prot="protected" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>SubscribeToSignal</name></member>
+      <member refid="class_u_mass_signal_processor_base_1a2b4d4862d77cba7f56e46bd145d263d4" prot="public" virt="non-virtual"><scope>UMassSignalProcessorBase</scope><name>UMassSignalProcessorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

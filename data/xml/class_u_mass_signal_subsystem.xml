@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_signal_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UMassSignalSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassTickableSubsystemBase</basecompoundref>
+    <includes refid="_mass_signal_subsystem_8h" local="no">MassSignalSubsystem.h</includes>
+    <innerclass refid="struct_u_mass_signal_subsystem_1_1_f_delayed_signal" prot="protected">UMassSignalSubsystem::FDelayedSignal</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_signal_subsystem_1ad068948144df8987a5293873d162dcb8" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>, UE::MassSignal::FSignalDelegate &gt;</type>
+        <definition>TMap&lt;FName, UE::MassSignal::FSignalDelegate&gt; UMassSignalSubsystem::NamedSignals</definition>
+        <argsstring></argsstring>
+        <name>NamedSignals</name>
+        <qualifiedname>UMassSignalSubsystem::NamedSignals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="106" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_u_mass_signal_subsystem_1_1_f_delayed_signal" kindref="compound">FDelayedSignal</ref> &gt;</type>
+        <definition>TArray&lt;FDelayedSignal&gt; UMassSignalSubsystem::DelayedSignals</definition>
+        <argsstring></argsstring>
+        <name>DelayedSignals</name>
+        <qualifiedname>UMassSignalSubsystem::DelayedSignals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="115" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UWorld&gt; UMassSignalSubsystem::CachedWorld</definition>
+        <argsstring></argsstring>
+        <name>CachedWorld</name>
+        <qualifiedname>UMassSignalSubsystem::CachedWorld</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="118" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a40ed78cd16265175d116c1b08f1406fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UE::MassSignal::FSignalDelegate &amp;</type>
+        <definition>UE::MassSignal::FSignalDelegate &amp; UMassSignalSubsystem::GetSignalDelegateByName</definition>
+        <argsstring>(FName SignalName)</argsstring>
+        <name>GetSignalDelegateByName</name>
+        <qualifiedname>UMassSignalSubsystem::GetSignalDelegateByName</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the delegate dispatcher from the signal name <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal to get the delegate dispatcher from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="28" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a908a8c76180e8b3d847c95b02a9b6a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::SignalEntity</definition>
+        <argsstring>(FName SignalName, const FMassEntityHandle Entity)</argsstring>
+        <name>SignalEntity</name>
+        <qualifiedname>UMassSignalSubsystem::SignalEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform a single entity of a signal being raised <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entity that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="38" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::SignalEntities</definition>
+        <argsstring>(FName SignalName, TConstArrayView&lt; FMassEntityHandle &gt; Entities)</argsstring>
+        <name>SignalEntities</name>
+        <qualifiedname>UMassSignalSubsystem::SignalEntities</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+          <declname>Entities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform multiple entities of a signal being raised <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of entities that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="45" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="57" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a9642c9ef0082174ab154ef045ba500a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::DelaySignalEntity</definition>
+        <argsstring>(FName SignalName, const FMassEntityHandle Entity, const float DelayInSeconds)</argsstring>
+        <name>DelaySignalEntity</name>
+        <qualifiedname>UMassSignalSubsystem::DelaySignalEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DelayInSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform a single entity of a signal being raised in a certain amount of seconds <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entity that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DelayInSeconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the amount of time before signaling the entity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="53" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a3ae531873436244155236b87a07471f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::DelaySignalEntities</definition>
+        <argsstring>(FName SignalName, TConstArrayView&lt; FMassEntityHandle &gt; Entities, const float DelayInSeconds)</argsstring>
+        <name>DelaySignalEntities</name>
+        <qualifiedname>UMassSignalSubsystem::DelaySignalEntities</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+          <declname>Entities</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DelayInSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform multiple entities of a signal being raised in a certain amount of seconds <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>being informed of the raised signal </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DelayInSeconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the amount of time before signaling the entities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="61" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="77" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a1f7c11f26cf00e6d88646cde91424df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::SignalEntityDeferred</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, FName SignalName, const FMassEntityHandle Entity)</argsstring>
+        <name>SignalEntityDeferred</name>
+        <qualifiedname>UMassSignalSubsystem::SignalEntityDeferred</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform single entity of a signal being raised asynchronously using the <ref refid="namespace_mass" kindref="compound">Mass</ref> Command Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the Entity System execution context to push the async command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entity that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="69" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1ab5839a5cc1bf996c239d6ffe6df20f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::SignalEntitiesDeferred</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, FName SignalName, TConstArrayView&lt; FMassEntityHandle &gt; Entities)</argsstring>
+        <name>SignalEntitiesDeferred</name>
+        <qualifiedname>UMassSignalSubsystem::SignalEntitiesDeferred</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+          <declname>Entities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform multiple entities of a signal being raised asynchronously using the <ref refid="namespace_mass" kindref="compound">Mass</ref> Command Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the Entity System execution context to push the async command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of entities that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="77" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a248989a6ed5df3e6757afa983f7b835c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::DelaySignalEntityDeferred</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, FName SignalName, const FMassEntityHandle Entity, const float DelayInSeconds)</argsstring>
+        <name>DelaySignalEntityDeferred</name>
+        <qualifiedname>UMassSignalSubsystem::DelaySignalEntityDeferred</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DelayInSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform single entity of a signal being raised asynchronously using the <ref refid="namespace_mass" kindref="compound">Mass</ref> Command Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the Entity System execution context to push the async command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entity that should be informed that signal &apos;SignalName&apos; was raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DelayInSeconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the amount of time before signaling the entities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="86" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a03a8a5cf5de7aa42da675d7c8072cf25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::DelaySignalEntitiesDeferred</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, FName SignalName, TConstArrayView&lt; FMassEntityHandle &gt; Entities, const float DelayInSeconds)</argsstring>
+        <name>DelaySignalEntitiesDeferred</name>
+        <qualifiedname>UMassSignalSubsystem::DelaySignalEntitiesDeferred</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+          <declname>Entities</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DelayInSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inform multiple entities of a signal being raised asynchronously using the <ref refid="namespace_mass" kindref="compound">Mass</ref> Command Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the Entity System execution context to push the async command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the name of the signal raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>being informed of that signal was raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DelayInSeconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the amount of time before signaling the entities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="95" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="115" bodyend="126"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a6d65bfc61d6b0382b03d99bbc8ac1e85" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMassSignalSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="99" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1ac7702e708fc256360442eea113b31580" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMassSignalSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="100" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a7d49ae731b385f86fd2859652a5c01a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassSignalSubsystem::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>UMassSignalSubsystem::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="103" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="26" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_signal_subsystem_1a41f29b3fc8cc4990bb9b61f7467a8241" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStatId</ref></type>
+        <definition>TStatId UMassSignalSubsystem::GetStatId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetStatId</name>
+        <qualifiedname>UMassSignalSubsystem::GetStatId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="104" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalSubsystem.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A subsystem for handling Signals in <ref refid="namespace_mass" kindref="compound">Mass</ref> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassSignalSubsystem</label>
+        <link refid="class_u_mass_signal_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassTickableSubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassSignalSubsystem</label>
+        <link refid="class_u_mass_signal_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassTickableSubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalSubsystem.h" bodystart="19" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_u_mass_signal_subsystem_1ae12025a863247a901af5ba7c3016e440" prot="protected" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>CachedWorld</name></member>
+      <member refid="class_u_mass_signal_subsystem_1ac7702e708fc256360442eea113b31580" prot="protected" virt="virtual"><scope>UMassSignalSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_mass_signal_subsystem_1ac3952f4cad3f1de576980d0913e8f097" prot="protected" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>DelayedSignals</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a3ae531873436244155236b87a07471f8" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>DelaySignalEntities</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a03a8a5cf5de7aa42da675d7c8072cf25" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>DelaySignalEntitiesDeferred</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a9642c9ef0082174ab154ef045ba500a6" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>DelaySignalEntity</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a248989a6ed5df3e6757afa983f7b835c" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>DelaySignalEntityDeferred</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a40ed78cd16265175d116c1b08f1406fb" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>GetSignalDelegateByName</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a41f29b3fc8cc4990bb9b61f7467a8241" prot="protected" virt="virtual"><scope>UMassSignalSubsystem</scope><name>GetStatId</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a6d65bfc61d6b0382b03d99bbc8ac1e85" prot="protected" virt="virtual"><scope>UMassSignalSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_mass_signal_subsystem_1ad068948144df8987a5293873d162dcb8" prot="protected" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>NamedSignals</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>SignalEntities</name></member>
+      <member refid="class_u_mass_signal_subsystem_1ab5839a5cc1bf996c239d6ffe6df20f15" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>SignalEntitiesDeferred</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a908a8c76180e8b3d847c95b02a9b6a6d" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>SignalEntity</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a1f7c11f26cf00e6d88646cde91424df7" prot="public" virt="non-virtual"><scope>UMassSignalSubsystem</scope><name>SignalEntityDeferred</name></member>
+      <member refid="class_u_mass_signal_subsystem_1a7d49ae731b385f86fd2859652a5c01a1" prot="protected" virt="virtual"><scope>UMassSignalSubsystem</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="namespace_u_e_1_1_mass_1_1_utils" kind="namespace" language="C++">
+    <compoundname>UE::Mass::Utils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_u_e_1_1_mass_1_1_utils_1a77f99bef152cc471620fbcdeab33498d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+        <definition>MASSCOMMON_API TArray&lt; FMassEntityHandle &gt; UE::Mass::Utils::EntityQueueToArray</definition>
+        <argsstring>(TQueue&lt; FMassEntityHandle, EQueueMode::Mpsc &gt; &amp;EntitiesQueue, const int32 EntitiesCount)</argsstring>
+        <name>EntityQueueToArray</name>
+        <qualifiedname>UE::Mass::Utils::EntityQueueToArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref>, EQueueMode::Mpsc &gt; &amp;</type>
+          <declname>EntitiesQueue</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>EntitiesCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a TArray of entities based on the given EntitiesQueue. Note that it&apos;s the caller&apos;s responsibility to ensure EntitiesCount &gt; 0, otherwise the function will fail a check (with explosive results). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" line="18" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" bodystart="18" bodyend="33" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Public/MassCommonUtils.h" declline="15" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_u_e_1_1_mass_1_1_utils_1a939864543a295083dbee1e7ae8afe428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>MASSCOMMON_API bool UE::Mass::Utils::IsDeterministic</definition>
+        <argsstring>()</argsstring>
+        <name>IsDeterministic</name>
+        <qualifiedname>UE::Mass::Utils::IsDeterministic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this is true, then the mass systems should strive to be as deterministic as possible, this will also enable the fixed random seed Currently maps to FApp::bUseFixedSeed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" line="37" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" bodystart="37" bodyend="40" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Public/MassCommonUtils.h" declline="23" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_u_e_1_1_mass_1_1_utils_1a69c119a52e2c5c564741367c1a376c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>MASSCOMMON_API int32 UE::Mass::Utils::OverrideRandomSeedForTesting</definition>
+        <argsstring>(int32 InSeed)</argsstring>
+        <name>OverrideRandomSeedForTesting</name>
+        <qualifiedname>UE::Mass::Utils::OverrideRandomSeedForTesting</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InSeed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If <ref refid="namespace_u_e_1_1_mass_1_1_utils_1a939864543a295083dbee1e7ae8afe428" kindref="member">IsDeterministic()</ref> returns true, then this function will return the value of ai.massrepresentation.OverrideRandomSeed in place of InSeed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" line="42" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" bodystart="42" bodyend="49" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Public/MassCommonUtils.h" declline="28" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_u_e_1_1_mass_1_1_utils_1a656f1726f1989c54f82990a495e97ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>MASSCOMMON_API int32 UE::Mass::Utils::GenerateRandomSeed</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateRandomSeed</name>
+        <qualifiedname>UE::Mass::Utils::GenerateRandomSeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If <ref refid="namespace_u_e_1_1_mass_1_1_utils_1a939864543a295083dbee1e7ae8afe428" kindref="member">IsDeterministic()</ref> returns true, then this function will return the value of ai.massrepresentation.OverrideRandomSeed in place of FMath::Rand() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" line="51" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" bodystart="51" bodyend="58" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Public/MassCommonUtils.h" declline="33" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassCommon/Private/MassCommonUtils.cpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

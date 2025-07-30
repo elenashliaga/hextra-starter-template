@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_object_feature" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonObjectFeature</compoundname>
+    <basecompoundref refid="class_u_geo_json_object" prot="public" virt="non-virtual">UGeoJsonObject</basecompoundref>
+    <includes refid="_geo_json_object_feature_8h" local="no">GeoJsonObjectFeature.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref></type>
+        <definition>FJsonObjectFeature UGeoJsonObjectFeature::Feature</definition>
+        <argsstring></argsstring>
+        <name>Feature</name>
+        <qualifiedname>UGeoJsonObjectFeature::Feature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="186" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a1d8632dbbac1c40cc755bb5d080fb298" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonObjectFeature::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetType</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9">GetType</reimplements>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="28" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1aae4f8e734df9a0cddc9a9fa48706fef1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetObjectFeature</definition>
+        <argsstring>(FJsonObjectFeature &amp;ObjectFeature) const</argsstring>
+        <name>TryGetObjectFeature</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetObjectFeature</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> &amp;</type>
+          <declname>ObjectFeature</declname>
+        </param>
+        <briefdescription>
+<para>Этот метод пытается получить ObjectFeature в виде соответствующей структуры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ObjectFeature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>, в котором будет храниться полученный ObjectFeature. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если удалось успешно получить ObjectFeature, в противном случае - false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="37" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a21b3672ff6c14fd0d8ced86cac345e2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetPoint</definition>
+        <argsstring>(FJsonPoint &amp;Point) const override</argsstring>
+        <name>TryGetPoint</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d">TryGetPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить точку из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> для заполнения координатами точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если тип геометрии элемента является точкой, и объект <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> успешно заполнен, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="45" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a73d172905daefe89b2362e727a6dda7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetLineString</definition>
+        <argsstring>(FJsonMultiPoint &amp;LineString) const override</argsstring>
+        <name>TryGetLineString</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetLineString</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98">TryGetLineString</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>LineString</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить линию из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LineString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>, который будет содержать извлеченную геометрию линии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если тип геометрии элемента является линией и объект <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> успешно заполнен, иначе возвращается false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="53" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a0f1fbeaa123d11d465fc251c48e1d4ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetPolygon</definition>
+        <argsstring>(FJsonPolygon &amp;Polygon) const override</argsstring>
+        <name>TryGetPolygon</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetPolygon</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21">TryGetPolygon</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить полигон из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> для сохранения геометрии полигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если тип геометрии элемента является полигоном и объект <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> был успешно извлечен, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="61" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a178aa92f1ac0e540b4af28d5e5be8262" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetMultiPoint</definition>
+        <argsstring>(FJsonMultiPoint &amp;MultiPoint) const override</argsstring>
+        <name>TryGetMultiPoint</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetMultiPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a">TryGetMultiPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>MultiPoint</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить мультиточку из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> для хранения геометрии мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если тип геометрии элемента является мультиточкой и объект <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> был успешно извлечен, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="69" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1aec1a4ccdc757069d87810b1bf33bfa6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetMultiLineString</definition>
+        <argsstring>(FJsonPolygon &amp;MultiLineString) const override</argsstring>
+        <name>TryGetMultiLineString</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetMultiLineString</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc">TryGetMultiLineString</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>MultiLineString</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию мультилинии из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiLineString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> для хранения геометрии мультилинии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если геометрия мультилинии была успешно получена, в противном случае false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="77" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a03dfd635aa653fb4d1898bc646267771" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetMultiPolygon</definition>
+        <argsstring>(FJsonMultiPolygon &amp;MultiPolygon) const override</argsstring>
+        <name>TryGetMultiPolygon</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetMultiPolygon</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd">TryGetMultiPolygon</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+          <declname>MultiPolygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию мультиполигона из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> для хранения геометрии мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если геометрия мультиполигона была успешно получена, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="85" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1aa17af75dec2716feac0548937304a9f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const override</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonObjectFeature::TryGetGeometry</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360">TryGetGeometry</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь геометрию из GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>, в который будет сохранена геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True если геометрия была успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="93" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1af0fc3d3bf0eaeb08266e4bb9d7b48dff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UGeoJsonObjectFeature::GetStringProperty</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetStringProperty</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetStringProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает строковое значение свойства, связанное с указанным ключом, из свойств GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ свойства, которое нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение свойства-строки, связанного с указанным ключом. Если ключ не найден, возвращается пустая строка. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="102" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1ac80a5a15924fb039da7ce0317c043a99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UGeoJsonObjectFeature::GetStringPropertyWithDefault</definition>
+        <argsstring>(const FString &amp;Key, const FString &amp;Default) const</argsstring>
+        <name>GetStringPropertyWithDefault</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetStringPropertyWithDefault</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Default</declname>
+        </param>
+        <briefdescription>
+<para>Ищет свойство с указанным ключом и возвращает его в виде строки или значение по умолчанию, если ключ не найден. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ искомого значения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение по умолчанию, возвращаемое при отсутствии значения с заданным ключом. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строка, соответствующая данному ключу или значение по умолчанию, если ключ не найден. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="112" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a3868bf77af2c3b220543ef27a18b1a13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::GetBoolProperty</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetBoolProperty</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetBoolProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает булевое значение свойства, связанное с указанным ключом, из свойств GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ свойства, которое нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Булевое значение, связанное с указанным ключом, если найдено, в противном случае false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="121" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a73d890fa66e9eeb66b94eb7b7343d0f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonObjectFeature::GetBoolPropertyWithDefault</definition>
+        <argsstring>(const FString &amp;Key, bool bDefault) const</argsstring>
+        <name>GetBoolPropertyWithDefault</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetBoolPropertyWithDefault</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDefault</declname>
+        </param>
+        <briefdescription>
+<para>Ищет свойство с указанным ключом и возвращает его в виде булевого флага или значение по умолчанию, если ключ не найден. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ искомого значения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bDefault</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение по умолчанию, возвращаемое при отсутствии значения с заданным ключом. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Булевый флаг, соответствующая данному ключу или значение по умолчанию, если ключ не найден. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="131" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a122791874000c81af75cce0deacbede2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double UGeoJsonObjectFeature::GetNumberProperty</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetNumberProperty</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetNumberProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает числовое значение свойства, связанное с указанным ключом, из свойств GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ свойства, которое нужно получить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение числового свойства, или DBL_MAX, если свойство не существует или не может быть преобразовано в число. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="140" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a0d18bb0804367415896bb6985ffb4dd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double UGeoJsonObjectFeature::GetNumberPropertyWithDefault</definition>
+        <argsstring>(const FString &amp;Key, double Default) const</argsstring>
+        <name>GetNumberPropertyWithDefault</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetNumberPropertyWithDefault</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+          <declname>Default</declname>
+        </param>
+        <briefdescription>
+<para>Ищет свойство с указанным ключом и возвращает его в виде числа с плавающей точкой или значение по умолчанию, если ключ не найден. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ искомого значения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение по умолчанию, возвращаемое при отсутствии значения с заданным ключом. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строка, соответствующая данному ключу или значение по умолчанию, если ключ не найден. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="150" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a7948e3dca49be702c30bc09470dd1fce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UGeoJsonObjectFeature::GetIntProperty</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetIntProperty</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetIntProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает целочисленное значение свойства, связанное с указанным ключом, из свойств GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ свойства, которое нужно получить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Целочисленное значение указанного свойства, или INT_MAX, если свойство не найдено или не может быть преобразовано в целое число. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="159" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a7db844fb955036d23dd5a000398b40b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UGeoJsonObjectFeature::GetIntPropertyWithDefault</definition>
+        <argsstring>(const FString &amp;Key, int32 Default) const</argsstring>
+        <name>GetIntPropertyWithDefault</name>
+        <qualifiedname>UGeoJsonObjectFeature::GetIntPropertyWithDefault</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Default</declname>
+        </param>
+        <briefdescription>
+<para>Ищет свойство с указанным ключом и возвращает его в виде целого числа или значение по умолчанию, если ключ не найден. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ искомого значения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение по умолчанию, возвращаемое при отсутствии значения с заданным ключом. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строка, соответствующая данному ключу или значение по умолчанию, если ключ не найден. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="169" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1ae189285be22bd72644c295aa76a9e65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonObjectFeature::SetFeature</definition>
+        <argsstring>(FJsonObjectFeature &amp;&amp;Element)</argsstring>
+        <name>SetFeature</name>
+        <qualifiedname>UGeoJsonObjectFeature::SetFeature</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> &amp;&amp;</type>
+          <declname>Element</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает значение для GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Экземпляр <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> для установки в качестве значения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="176" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_object_feature_1a757471b964df2b88585a1dfebfc87dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonObjectFeature::SetFeature</definition>
+        <argsstring>(const FJsonObjectFeature &amp;Element)</argsstring>
+        <name>SetFeature</name>
+        <qualifiedname>UGeoJsonObjectFeature::SetFeature</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> &amp;</type>
+          <declname>Element</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает значение для GeoJsonObjectFeature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Экземпляр <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> для установки в качестве значения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="183" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий объект ObjectFeature формата GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Объект ObjectFeature представляет объединение координат геометрии с набором различных свойств этой геометрии. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UGeoJsonObjectFeature</label>
+        <link refid="class_u_geo_json_object_feature"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>FJsonGeometry</label>
+        <link refid="struct_f_json_geometry"/>
+      </node>
+      <node id="4">
+        <label>FJsonObjectFeature</label>
+        <link refid="struct_f_json_object_feature"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Geometry</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UGeoJsonObjectFeature</label>
+        <link refid="class_u_geo_json_object_feature"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Feature</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonObjectFeature.h" bodystart="17" bodyend="187"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" prot="private" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>Feature</name></member>
+      <member refid="class_u_geo_json_object_feature_1a3868bf77af2c3b220543ef27a18b1a13" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetBoolProperty</name></member>
+      <member refid="class_u_geo_json_object_feature_1a73d890fa66e9eeb66b94eb7b7343d0f3" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetBoolPropertyWithDefault</name></member>
+      <member refid="class_u_geo_json_object_feature_1a7948e3dca49be702c30bc09470dd1fce" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetIntProperty</name></member>
+      <member refid="class_u_geo_json_object_feature_1a7db844fb955036d23dd5a000398b40b6" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetIntPropertyWithDefault</name></member>
+      <member refid="class_u_geo_json_object_feature_1a122791874000c81af75cce0deacbede2" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetNumberProperty</name></member>
+      <member refid="class_u_geo_json_object_feature_1a0d18bb0804367415896bb6985ffb4dd1" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetNumberPropertyWithDefault</name></member>
+      <member refid="class_u_geo_json_object_feature_1af0fc3d3bf0eaeb08266e4bb9d7b48dff" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetStringProperty</name></member>
+      <member refid="class_u_geo_json_object_feature_1ac80a5a15924fb039da7ce0317c043a99" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>GetStringPropertyWithDefault</name></member>
+      <member refid="class_u_geo_json_object_feature_1a1d8632dbbac1c40cc755bb5d080fb298" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_object_feature_1ae189285be22bd72644c295aa76a9e65e" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>SetFeature</name></member>
+      <member refid="class_u_geo_json_object_feature_1a757471b964df2b88585a1dfebfc87dee" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>SetFeature</name></member>
+      <member refid="class_u_geo_json_object_feature_1aa17af75dec2716feac0548937304a9f9" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_object_feature_1a73d172905daefe89b2362e727a6dda7d" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_object_feature_1aec1a4ccdc757069d87810b1bf33bfa6f" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_object_feature_1a178aa92f1ac0e540b4af28d5e5be8262" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_object_feature_1a03dfd635aa653fb4d1898bc646267771" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_object_feature_1aae4f8e734df9a0cddc9a9fa48706fef1" prot="public" virt="non-virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetObjectFeature</name></member>
+      <member refid="class_u_geo_json_object_feature_1a21b3672ff6c14fd0d8ced86cac345e2f" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_object_feature_1a0f1fbeaa123d11d465fc251c48e1d4ea" prot="public" virt="virtual"><scope>UGeoJsonObjectFeature</scope><name>TryGetPolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

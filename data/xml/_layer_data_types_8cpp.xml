@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_layer_data_types_8cpp" kind="file" language="C++">
+    <compoundname>LayerDataTypes.cpp</compoundname>
+    <includes refid="_layer_data_types_8h" local="yes">Types/LayerDataTypes.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Types/LayerDataTypes.cpp</label>
+        <link refid="_layer_data_types_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Library.h</label>
+        <link refid="_library_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types/LayerDataTypes.h</label>
+        <link refid="_layer_data_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector_tile.pb.h</label>
+        <link refid="vector__tile_8pb_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="22">
+        <label>Library.generated.h</label>
+      </node>
+      <node id="21">
+        <label>Misc/TVariant.h</label>
+      </node>
+      <node id="20">
+        <label>UObject/ObjectMacros.h</label>
+      </node>
+      <node id="9">
+        <label>google/protobuf/arena.h</label>
+      </node>
+      <node id="10">
+        <label>google/protobuf/arenastring.h</label>
+      </node>
+      <node id="16">
+        <label>google/protobuf/extension_set.h</label>
+      </node>
+      <node id="17">
+        <label>google/protobuf/generated_enum_util.h</label>
+      </node>
+      <node id="11">
+        <label>google/protobuf/generated_message_table_driven.h</label>
+      </node>
+      <node id="12">
+        <label>google/protobuf/generated_message_util.h</label>
+      </node>
+      <node id="8">
+        <label>google/protobuf/io/coded_stream.h</label>
+      </node>
+      <node id="14">
+        <label>google/protobuf/message_lite.h</label>
+      </node>
+      <node id="13">
+        <label>google/protobuf/metadata_lite.h</label>
+      </node>
+      <node id="6">
+        <label>google/protobuf/port_def.inc</label>
+      </node>
+      <node id="7">
+        <label>google/protobuf/port_undef.inc</label>
+      </node>
+      <node id="15">
+        <label>google/protobuf/repeated_field.h</label>
+      </node>
+      <node id="4">
+        <label>limits</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_layer_data_types_8cpp_1aeaacf4200a8b12a67e4a63a95a3df6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref></type>
+        <definition>FParsedProperty ValueToProp</definition>
+        <argsstring>(const vector_tile::Tile_Value &amp;Value)</argsstring>
+        <name>ValueToProp</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="classvector__tile_1_1_tile___value" kindref="compound">vector_tile::Tile_Value</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>Функция преобразует сырые данные из third-party библиотеки Protobuf в наш тип-обёртку для дальнейшей работы <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входное исходное значение в формате protobuf</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref> Значение, приведенное к соответствующим типам Unreal Engine <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Types/LayerDataTypes.cpp" line="5" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Types/LayerDataTypes.cpp" bodystart="5" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>META<sp/>all<sp/>rights<sp/>received<sp/>(c)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_layer_data_types_8h" kindref="compound">Types/LayerDataTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref><sp/><ref refid="_layer_data_types_8cpp_1aeaacf4200a8b12a67e4a63a95a3df6f1" kindref="member">ValueToProp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvector__tile_1_1_tile___value" kindref="compound">vector_tile::Tile_Value</ref>&amp;<sp/>Value)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1a4b72630ef12e1cbb76eadf578f7a70b1" kindref="member">has_string_value</ref>())</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.<ref refid="struct_f_parsed_property_1a9a97d32ea9cdbec9a18a5d49c1bb6e0e" kindref="member">Type</ref><sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95da27118326006d3829667a400ad23d5d98" kindref="member">EValueType::String</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Emplace&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&gt;(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTF8_TO_TCHAR</ref>(Value.<ref refid="classvector__tile_1_1_tile___value_1a95a45fe4561772bf4414a722a3552197" kindref="member">string_value</ref>().c_str()));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1a82cd8da08ddc467d9b5a8da295b0f0ea" kindref="member">has_float_value</ref>())</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95da22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">EValueType::Float</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1a1fed8a84bb30e43e2a776162c03460d7" kindref="member">float_value</ref>());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1aa18c5b7668b80d7a9730e66b0b68b490" kindref="member">has_double_value</ref>())</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95dad909d38d705ce75386dd86e611a82f5b" kindref="member">EValueType::Double</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1ae214f72e17e3d288567db7cf72206747" kindref="member">double_value</ref>());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1a23c49dae0008fe4f53321819e415532c" kindref="member">has_int_value</ref>())</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95da1686a6c336b71b36d77354cea19a8b52" kindref="member">EValueType::Int</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1a6731850777b67f1014afa06760a03658" kindref="member">int_value</ref>());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1a5118cece114505f8a4565b84af666699" kindref="member">has_uint_value</ref>())</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95da1686a6c336b71b36d77354cea19a8b52" kindref="member">EValueType::Int</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1ab1daef0044e75f41eff478e14e6c8630" kindref="member">uint_value</ref>());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1a75ed984151e86702992dd99242186ead" kindref="member">has_sint_value</ref>())</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95da1686a6c336b71b36d77354cea19a8b52" kindref="member">EValueType::Int</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref>&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1ad193b41a3e2a5dd856b5c81f4bbb69ac" kindref="member">sint_value</ref>());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Value.<ref refid="classvector__tile_1_1_tile___value_1acb7e24a12a11cfbd1c7514ce96bc0e20" kindref="member">has_bool_value</ref>())</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Type<sp/>=<sp/><ref refid="_library_8h_1a50d8d072423ef03c301ccf7d7fb5c95dac26f15e86e3de4c398a8273272aba034" kindref="member">EValueType::Bool</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>.Set&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(Value.<ref refid="classvector__tile_1_1_tile___value_1a4ea64d48723ad10ec84f4078926a62c5" kindref="member">bool_value</ref>());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Prop</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_data_object_1ab4cf4a1e1c25aa378d5cea27faab5986" kindref="member">FFeatureDataObject::GeometryUnitsSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="49"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_feature_data_object_1ab275f75166c981eb8e9f4fb59cf4d8e5" kindref="member">FFeatureDataObject::GetGeometryUnit</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="54"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">u</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="_library_8h_1ad791060802282e1ed86a8c5d01fe6d3f" kindref="member">EGeomType</ref><sp/><ref refid="struct_f_feature_data_object_1a5750bc0d5b2ceabb62db66bc93b07153" kindref="member">FFeatureDataObject::Type</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_library_8h_1ad791060802282e1ed86a8c5d01fe6d3fa88183b946cc5f0e8c96b2e66e1c74a7e" kindref="member">EGeomType::Unknown</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_feature_data_object_1a8b65db338b3c0a6bccc9358d9ecb4734" kindref="member">FFeatureDataObject::GetTag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">u</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_data_object_1ac5ab99781af0b48cee47d83249ee7dee" kindref="member">FFeatureDataObject::TagsSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="69"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a33f9113dc2ff475f3f5e9a290647e6bd" kindref="member">FFeatureVectorDO::Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvector__tile_1_1_tile___feature" kindref="compound">vector_tile::Tile_Feature</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FeatureIn</ref>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FeatureIn</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1ab3e47c38ec0816867c0398fed41ee7e2" kindref="member">FFeatureVectorDO::GeometryUnitsSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="79"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref>.<ref refid="classvector__tile_1_1_tile___feature_1ae52f48ede8ed29167d25210ef16f2a31" kindref="member">geometry_size</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_feature_vector_d_o_1afe5c48f19119cd6979e9214752bc341a" kindref="member">FFeatureVectorDO::GetGeometryUnit</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="84"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref>.<ref refid="classvector__tile_1_1_tile___feature_1a6e30ca22c33f2d11b3791fb986030346" kindref="member">geometry</ref>(Idx);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="_library_8h_1ad791060802282e1ed86a8c5d01fe6d3f" kindref="member">EGeomType</ref><sp/><ref refid="struct_f_feature_vector_d_o_1a59ae888ba6aad721cc1047e0d109abe4" kindref="member">FFeatureVectorDO::Type</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="_library_8h_1ad791060802282e1ed86a8c5d01fe6d3f" kindref="member">EGeomType</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref>.<ref refid="classvector__tile_1_1_tile___feature_1a82e851f2f56a8ac7e8f4024310f90c85" kindref="member">type</ref>());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a2696c93d3b30fab8c6fd5f0ade497383" kindref="member">FFeatureVectorDO::TagsSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="94"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref>.<ref refid="classvector__tile_1_1_tile___feature_1af22038b37307975843856399230e897c" kindref="member">tags_size</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_feature_vector_d_o_1a1354ab795a61014d2296039666dda059" kindref="member">FFeatureVectorDO::GetTag</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="99"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_feature_vector_d_o_1a13838aecb1d83cbd0a5a97ef0cd9f702" kindref="member">Feature</ref>.<ref refid="classvector__tile_1_1_tile___feature_1a31b8a7a6bb7211cfd95aba6af95e6576" kindref="member">tags</ref>(Idx);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_layer_data_object_1a591e7ae8b401084b6d0e731b5add9337" kindref="member">FLayerDataObject::Extent</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">u</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_layer_data_object_1abd04df833257e9811696292e2ca541db" kindref="member">FLayerDataObject::Version</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="109"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">u</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="struct_f_layer_data_object_1a72222b041f3d26ef5becabd2a8e5aeae" kindref="member">FLayerDataObject::Name</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="114"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_data_object_1a3fda4bcd9f8776d7d9601bd1c7987370" kindref="member">FLayerDataObject::FeaturesSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="119"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FFeatureDataObject&gt;</ref><sp/><ref refid="struct_f_layer_data_object_1ad9510316b8771e8081cf05a23ca81f9b" kindref="member">FLayerDataObject::GetFeature</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FFeatureDataObject&gt;</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_data_object_1a939b85c176d9bebfb6dc39441e503223" kindref="member">FLayerDataObject::KeysSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="129"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="struct_f_layer_data_object_1ad1b63eaf268f6f0511c3e42e5ac4fec8" kindref="member">FLayerDataObject::GetKey</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="134"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref><sp/><ref refid="struct_f_layer_data_object_1a1e4b2ce1fc863aa79f1221de0ebd4097" kindref="member">FLayerDataObject::GetProperty</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Tag</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="139"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref>{};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="struct_f_layer_vector_data_object_1a3e0236a4e0bf31f350a5a3d5a7d8ed9f" kindref="member">FLayerVectorDataObject::FLayerVectorDataObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classvector__tile_1_1_tile___layer" kindref="compound">vector_tile::Tile_Layer</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTileLayer</ref>)<sp/>:<sp/>Layer(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTileLayer</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a9148e54542c477d19ceea2bdee9f036b" kindref="member">FLayerVectorDataObject::Extent</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="146"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1a7661c240fd84976d16781fa7682b795b" kindref="member">extent</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a21e271e37c66f96c5232d3f3e4b1e589" kindref="member">FLayerVectorDataObject::Version</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="151"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1ab0b06829adce52dd55efcc07344e900f" kindref="member">version</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a2eee18194b41fa6e002fc7dcb48f178c" kindref="member">FLayerVectorDataObject::Name</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="156"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>(<ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1aba649d23a49f8a6057bca150cf84bfb8" kindref="member">name</ref>().c_str());</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a7f48d0c4d968cc100d3b5928b8e59765" kindref="member">FLayerVectorDataObject::FeaturesSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="161"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1ae11fdf9ea382d5373b37ab7150eaf61f" kindref="member">features_size</ref>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FFeatureDataObject&gt;</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a6ed25d6b1334e18d2d1b082068a28fa2" kindref="member">FLayerVectorDataObject::GetFeature</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="166"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef&lt;FFeatureVectorDO&gt;</ref><sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da21021ea0e52be8e9c599f4dff41e5be0" kindref="member">Feature</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MakeShared&lt;FFeatureVectorDO&gt;</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Idx<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>Idx<sp/>&lt;<sp/><ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1ae11fdf9ea382d5373b37ab7150eaf61f" kindref="member">features_size</ref>())</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da21021ea0e52be8e9c599f4dff41e5be0" kindref="member">Feature</ref>-&gt;Init(<ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1a5f708653415ae53fd87a0b3c31b6dd72" kindref="member">features</ref>(Idx));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da21021ea0e52be8e9c599f4dff41e5be0" kindref="member">Feature</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a6f13d138f17f21d416575a68c4bd1b2e" kindref="member">FLayerVectorDataObject::KeysSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="178"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1afb9d8d867f0bcbd8768107bddb959583" kindref="member">keys_size</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a9ea5273550ea41589bf40e4ac1f11bc4" kindref="member">FLayerVectorDataObject::GetKey</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="183"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>(<ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1a7882b3e8b790d5394340dc798efde2e0" kindref="member">keys</ref>(Idx).c_str());</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref><sp/><ref refid="struct_f_layer_vector_data_object_1a2c7ed3d992fc2dd944ffb5dea43f925c" kindref="member">FLayerVectorDataObject::GetProperty</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/>Idx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Tag</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="188"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_layer_data_types_8h_1ab0ffe8c79cda956dd0ac5bd220edac18" kindref="member">ValueToProp</ref>(<ref refid="struct_f_layer_vector_data_object_1a8b2110f5d62537c17df0f4dd783d1cd5" kindref="member">Layer</ref>.<ref refid="classvector__tile_1_1_tile___layer_1ae98a36ce45ea4b508f18fb967e29b096" kindref="member">values</ref>(Idx));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/Types/LayerDataTypes.cpp"/>
+  </compounddef>
+</doxygen>

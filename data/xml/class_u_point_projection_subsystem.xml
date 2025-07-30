@@ -1,0 +1,1819 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_point_projection_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UPointProjectionSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UWorldSubsystem</basecompoundref>
+    <includes refid="_point_projection_subsystem_8h" local="no">PointProjectionSubsystem.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a9505dd088b52d330e1cb128560a9cf90" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnDecisionsCardClosed</ref></type>
+        <definition>FOnDecisionsCardClosed UPointProjectionSubsystem::OnDecisionCardClosed</definition>
+        <argsstring></argsstring>
+        <name>OnDecisionCardClosed</name>
+        <qualifiedname>UPointProjectionSubsystem::OnDecisionCardClosed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="153" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a358c34e8108d50572f3d2e76595feee6" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>constexpr int32 UPointProjectionSubsystem::MaxFreezedFrames</definition>
+        <argsstring></argsstring>
+        <name>MaxFreezedFrames</name>
+        <qualifiedname>UPointProjectionSubsystem::MaxFreezedFrames</qualifiedname>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="362" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a7d2b5e0e52b762d95634462a4e567309" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>constexpr int32 UPointProjectionSubsystem::ProjectionProxyDataReserve</definition>
+        <argsstring></argsstring>
+        <name>ProjectionProxyDataReserve</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectionProxyDataReserve</qualifiedname>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="363" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a92a9b1dd5e53e5ea078901b70b5d3406" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::CameraMoveThreshold</definition>
+        <argsstring></argsstring>
+        <name>CameraMoveThreshold</name>
+        <qualifiedname>UPointProjectionSubsystem::CameraMoveThreshold</qualifiedname>
+        <initializer>= 350.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="364" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1abfd76d9c7d07ac6b37326cb428093d63" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::RightAngleInDegrees</definition>
+        <argsstring></argsstring>
+        <name>RightAngleInDegrees</name>
+        <qualifiedname>UPointProjectionSubsystem::RightAngleInDegrees</qualifiedname>
+        <initializer>= 90.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="365" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a9e1de4a043060c19fd7dde51a925ada0" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString UPointProjectionSubsystem::IconNameNull</definition>
+        <argsstring></argsstring>
+        <name>IconNameNull</name>
+        <qualifiedname>UPointProjectionSubsystem::IconNameNull</qualifiedname>
+        <initializer>= TEXT(&quot;null&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="366" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a6cb0485abab0241f24f507ae5ef5c9e6" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::ViewportOffset</definition>
+        <argsstring></argsstring>
+        <name>ViewportOffset</name>
+        <qualifiedname>UPointProjectionSubsystem::ViewportOffset</qualifiedname>
+        <initializer>= 512.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="367" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a95946d8f2ac4673213774550ba1c3fb1" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::IconPicAndTextGap</definition>
+        <argsstring></argsstring>
+        <name>IconPicAndTextGap</name>
+        <qualifiedname>UPointProjectionSubsystem::IconPicAndTextGap</qualifiedname>
+        <initializer>= 8.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="368" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1aaf94e4fd72ed4dd517b486231dccedf4" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::ClickAreaSize</definition>
+        <argsstring></argsstring>
+        <name>ClickAreaSize</name>
+        <qualifiedname>UPointProjectionSubsystem::ClickAreaSize</qualifiedname>
+        <initializer>= 12.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="369" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a422f47c4247a3839e97b216995f1e116" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::ClickAreaHalfSize</definition>
+        <argsstring></argsstring>
+        <name>ClickAreaHalfSize</name>
+        <qualifiedname>UPointProjectionSubsystem::ClickAreaHalfSize</qualifiedname>
+        <initializer>= <ref refid="class_u_point_projection_subsystem_1aaf94e4fd72ed4dd517b486231dccedf4" kindref="member">ClickAreaSize</ref> / 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="370" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1afa26d7a68345ae8382ac83a22c03876f" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float UPointProjectionSubsystem::RightLayoutWeightCorrection</definition>
+        <argsstring></argsstring>
+        <name>RightLayoutWeightCorrection</name>
+        <qualifiedname>UPointProjectionSubsystem::RightLayoutWeightCorrection</qualifiedname>
+        <initializer>= 0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="412" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a56199484d6add686ddd708c6cff10099" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; APlayerController &gt;</type>
+        <definition>TObjectPtr&lt;APlayerController&gt; UPointProjectionSubsystem::PlayerController</definition>
+        <argsstring></argsstring>
+        <name>PlayerController</name>
+        <qualifiedname>UPointProjectionSubsystem::PlayerController</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="373" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a83d15c864d8eefb2e446522e785c948b" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; AHUD &gt;</type>
+        <definition>TObjectPtr&lt;AHUD&gt; UPointProjectionSubsystem::HUDPtr</definition>
+        <argsstring></argsstring>
+        <name>HUDPtr</name>
+        <qualifiedname>UPointProjectionSubsystem::HUDPtr</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="376" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a0cb0653118fbd187d9c4ff5679449686" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_a_point_actor_base" kindref="compound">APointActorBase</ref> * &gt;</type>
+        <definition>TArray&lt;const APointActorBase*&gt; UPointProjectionSubsystem::ProjectionParentTiles</definition>
+        <argsstring></argsstring>
+        <name>ProjectionParentTiles</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectionParentTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="379" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1abb4e347a8f51ada6eb60450a769036e8" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; UModuleLayerUpdaterBase * &gt;</type>
+        <definition>TArray&lt;UModuleLayerUpdaterBase*&gt; UPointProjectionSubsystem::ObjectsUpdaters</definition>
+        <argsstring></argsstring>
+        <name>ObjectsUpdaters</name>
+        <qualifiedname>UPointProjectionSubsystem::ObjectsUpdaters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="382" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a0e0980be1d5ffcc34e0d657f5b47eede" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_layers_creator_settings" kindref="compound">ULayersCreatorSettings</ref> &gt;</type>
+        <definition>TObjectPtr&lt;const ULayersCreatorSettings&gt; UPointProjectionSubsystem::LayersCreatorSettings</definition>
+        <argsstring></argsstring>
+        <name>LayersCreatorSettings</name>
+        <qualifiedname>UPointProjectionSubsystem::LayersCreatorSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="385" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1ab34f293af1a2c6d42520cc91c9d78062" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UUserInterfaceSettings</ref> &gt;</type>
+        <definition>TObjectPtr&lt;const UUserInterfaceSettings&gt; UPointProjectionSubsystem::UserInterfaceSettings</definition>
+        <argsstring></argsstring>
+        <name>UserInterfaceSettings</name>
+        <qualifiedname>UPointProjectionSubsystem::UserInterfaceSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="388" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1afd619f78fbd2fbd324804ce29f3d5e1e" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_debug_settings" kindref="compound">UDebugSettings</ref> &gt;</type>
+        <definition>TObjectPtr&lt;const UDebugSettings&gt; UPointProjectionSubsystem::DebugSettings</definition>
+        <argsstring></argsstring>
+        <name>DebugSettings</name>
+        <qualifiedname>UPointProjectionSubsystem::DebugSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="391" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a85180d8a3a6e5682621b12011f33fda5" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt;</type>
+        <definition>TMap&lt;FGuid, FProxyIconDataToDraw&gt; UPointProjectionSubsystem::RenderedIcons</definition>
+        <argsstring></argsstring>
+        <name>RenderedIcons</name>
+        <qualifiedname>UPointProjectionSubsystem::RenderedIcons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="394" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a105c2ac1f351d9da8ea2b5bb0bab07fc" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt; &gt; &gt;</type>
+        <definition>TMap&lt;FGuid, TArray&lt;TPair&lt;SIZE_T, FProxyIconDataToDraw&gt; &gt; &gt; UPointProjectionSubsystem::ProjectorsInActiveTiles</definition>
+        <argsstring></argsstring>
+        <name>ProjectorsInActiveTiles</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectorsInActiveTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="397" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a5bd10c2fd256ce8cd2ae2068b9da5a0a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt;</type>
+        <definition>TArray&lt;FGuid&gt; UPointProjectionSubsystem::ProjectorsToHide</definition>
+        <argsstring></argsstring>
+        <name>ProjectorsToHide</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectorsToHide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="399" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a90aa49ecb76cc327ee4d939d55c93c93" prot="private" static="no" mutable="no">
+        <type><ref refid="class_t_quad_tree" kindref="compound">TQuadTree</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt;</type>
+        <definition>TQuadTree&lt;FIconQuadTreeNode*&gt; UPointProjectionSubsystem::DecisionsQuadTree</definition>
+        <argsstring></argsstring>
+        <name>DecisionsQuadTree</name>
+        <qualifiedname>UPointProjectionSubsystem::DecisionsQuadTree</qualifiedname>
+        <initializer>= <ref refid="class_t_quad_tree" kindref="compound">TQuadTree</ref>&lt;<ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref>*&gt;(<ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>&gt;(0, 0, 0, 0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="401" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a80808406b00bb28a6fd62cb2f890b024" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref></type>
+        <definition>FDelegateHandle UPointProjectionSubsystem::OnMapWithWorldLoadedHandle</definition>
+        <argsstring></argsstring>
+        <name>OnMapWithWorldLoadedHandle</name>
+        <qualifiedname>UPointProjectionSubsystem::OnMapWithWorldLoadedHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="403" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a2644cf8d0b2bf08db6d6dd89f3e01fcb" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref></type>
+        <definition>FDelegateHandle UPointProjectionSubsystem::OnHUDPostRenderHandle</definition>
+        <argsstring></argsstring>
+        <name>OnHUDPostRenderHandle</name>
+        <qualifiedname>UPointProjectionSubsystem::OnHUDPostRenderHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="404" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a59b83c107242eb4945e385e2f1dd136b" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_render_info" kindref="compound">FIconRenderInfo</ref> &gt; &gt;</type>
+        <definition>TSharedPtr&lt;TArray&lt;FIconRenderInfo&gt; &gt; UPointProjectionSubsystem::IconRenderSettingsIndexed</definition>
+        <argsstring></argsstring>
+        <name>IconRenderSettingsIndexed</name>
+        <qualifiedname>UPointProjectionSubsystem::IconRenderSettingsIndexed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="406" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1aa184a8291f9906253fc69ac7259591b2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icons_viewport_widget" kindref="compound">SIconsViewportWidget</ref> &gt;</type>
+        <definition>TSharedPtr&lt;SIconsViewportWidget&gt; UPointProjectionSubsystem::ProjectionsContainer</definition>
+        <argsstring></argsstring>
+        <name>ProjectionsContainer</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectionsContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="407" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a198b83bbd52c77d77aaa8c42e770438f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::bNearDistanceModeEnabled</definition>
+        <argsstring></argsstring>
+        <name>bNearDistanceModeEnabled</name>
+        <qualifiedname>UPointProjectionSubsystem::bNearDistanceModeEnabled</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="409" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a24c87f0c7aa806d8d2f7678f0e11670c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UPointProjectionSubsystem::ViewportFramesIncrement</definition>
+        <argsstring></argsstring>
+        <name>ViewportFramesIncrement</name>
+        <qualifiedname>UPointProjectionSubsystem::ViewportFramesIncrement</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="410" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1af0fa4e855924690199b00015a3382cdd" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector UPointProjectionSubsystem::LastCameraLocation</definition>
+        <argsstring></argsstring>
+        <name>LastCameraLocation</name>
+        <qualifiedname>UPointProjectionSubsystem::LastCameraLocation</qualifiedname>
+        <initializer>= FVector::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="411" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1ad5d00cd1345a340c551abf231d9c3e88" prot="private" static="no" mutable="no">
+        <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt;</type>
+        <definition>TQuadTreeBox&lt;float&gt; UPointProjectionSubsystem::ClickArea</definition>
+        <argsstring></argsstring>
+        <name>ClickArea</name>
+        <qualifiedname>UPointProjectionSubsystem::ClickArea</qualifiedname>
+        <initializer>= <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>&gt;(-<ref refid="class_u_point_projection_subsystem_1a6cb0485abab0241f24f507ae5ef5c9e6" kindref="member">ViewportOffset</ref>, -<ref refid="class_u_point_projection_subsystem_1a6cb0485abab0241f24f507ae5ef5c9e6" kindref="member">ViewportOffset</ref>, 20.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 20.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="414" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a99493c58868e79b0ba8f56f1db0b2c02" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt;</type>
+        <definition>TSet&lt;FGuid&gt; UPointProjectionSubsystem::CurrentSelectedProjectionGUIDs</definition>
+        <argsstring></argsstring>
+        <name>CurrentSelectedProjectionGUIDs</name>
+        <qualifiedname>UPointProjectionSubsystem::CurrentSelectedProjectionGUIDs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="416" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a78448619524bf4088e986fcabc5673df" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UPointProjectionSubsystem::ProjectsUpdateMutex</definition>
+        <argsstring></argsstring>
+        <name>ProjectsUpdateMutex</name>
+        <qualifiedname>UPointProjectionSubsystem::ProjectsUpdateMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="418" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1afd4627b118829b3ca26b77d35f4037ca" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_decision_clicked_icons_info" kindref="compound">FDecisionClickedIconsInfo</ref></type>
+        <definition>FDecisionClickedIconsInfo UPointProjectionSubsystem::IconsDecisionsInfo</definition>
+        <argsstring></argsstring>
+        <name>IconsDecisionsInfo</name>
+        <qualifiedname>UPointProjectionSubsystem::IconsDecisionsInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="419" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1ade42f431ef8a45769d8f5a3c6c2898ed" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_camera_options_fill_result" kindref="compound">FCameraOptionsFillResult</ref></type>
+        <definition>FCameraOptionsFillResult UPointProjectionSubsystem::CameraOptionsFillResult</definition>
+        <argsstring></argsstring>
+        <name>CameraOptionsFillResult</name>
+        <qualifiedname>UPointProjectionSubsystem::CameraOptionsFillResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="420" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_point_projection_subsystem_1a4dec9ab078d1678f08666a2ec356a80c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::bClickIsDirty</definition>
+        <argsstring></argsstring>
+        <name>bClickIsDirty</name>
+        <qualifiedname>UPointProjectionSubsystem::bClickIsDirty</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="422" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a1e00190265e301317a47a036841f8122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::ProcessClickArea</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessClickArea</name>
+        <qualifiedname>UPointProjectionSubsystem::ProcessClickArea</qualifiedname>
+        <briefdescription>
+<para>Функция отлавливает и обрабатывает клики по проекциям </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="60" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="662" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a7adc866cefbb9ccf1952b62fc0211eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UPointProjectionSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует сабсистему </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Системная переменная</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="69" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="51" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ac95b6232ab48ba90d90e7b57446a27aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UPointProjectionSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+<para>Освобождает ресурсы сабсистему </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="76" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1aa2f0d615a3a2f9258841d04270b01780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::SetTilesUpdater</definition>
+        <argsstring>(UModuleLayerUpdaterBase *ModuleUpdater, AModulesObserveBase *ModulesObserver, const UWorld *World)</argsstring>
+        <name>SetTilesUpdater</name>
+        <qualifiedname>UPointProjectionSubsystem::SetTilesUpdater</qualifiedname>
+        <param>
+          <type>UModuleLayerUpdaterBase *</type>
+          <declname>ModuleUpdater</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_modules_observe_base" kindref="compound">AModulesObserveBase</ref> *</type>
+          <declname>ModulesObserver</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает объект обновления тайлов для модулей. Создает связку с делегатом, сигнализируещем об обновлении тайлов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ModuleUpdater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр UModuleLayerUpdaterBase, который будет использоваться в качестве обновлятора тайлов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ModulesObserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр UModuleLayerUpdaterBase, который будет использоваться в качестве обновлятора тайлов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель игровой мир</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="88" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="220" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a97d0bab76d95b220eccada5b75ebf969" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::ReloadIcons</definition>
+        <argsstring>(const TArray&lt; FPointProjectionData &gt; &amp;TileProjectors) const</argsstring>
+        <name>ReloadIcons</name>
+        <qualifiedname>UPointProjectionSubsystem::ReloadIcons</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_point_projection_data" kindref="compound">FPointProjectionData</ref> &gt; &amp;</type>
+          <declname>TileProjectors</declname>
+        </param>
+        <briefdescription>
+<para>Перезагружает конкретные отрисованные иконки путем их удаления с виджета. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileProjectors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив иконок из тайла, который надо перезагрузить.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="97" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="121" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1aee11c4c9c64992899576b5be062e12af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_decision_clicked_icons_info" kindref="compound">FDecisionClickedIconsInfo</ref></type>
+        <definition>FDecisionClickedIconsInfo UPointProjectionSubsystem::ConsumeClickedIcons</definition>
+        <argsstring>()</argsstring>
+        <name>ConsumeClickedIcons</name>
+        <qualifiedname>UPointProjectionSubsystem::ConsumeClickedIcons</qualifiedname>
+        <briefdescription>
+<para>Забирает во владение все проколотые иконки, которые числятся в системе </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="104" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="135" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a4f518fe0f7839980e91db99ae018fc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::UnregisterUpdater</definition>
+        <argsstring>(UModuleLayerUpdaterBase *ModuleUpdater)</argsstring>
+        <name>UnregisterUpdater</name>
+        <qualifiedname>UPointProjectionSubsystem::UnregisterUpdater</qualifiedname>
+        <param>
+          <type>UModuleLayerUpdaterBase *</type>
+          <declname>ModuleUpdater</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет объект обновления тайлов из списка зарегистрированных </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ModuleUpdater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр UModuleLayerUpdaterBase, который планируется удалить</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="114" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="235" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a396f8c3ac1b750f6ee71cdbe61afef7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>UPointProjectionSubsystem::Clear</qualifiedname>
+        <briefdescription>
+<para>Освобождаем все биндинги к делегатам обновляторов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="122" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="242" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ab90c1f74cfc932dcc45fd2cfa32b1170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::ProcessTileProjections</definition>
+        <argsstring>(ATileActorBase *TileActor, bool bRegister)</argsstring>
+        <name>ProcessTileProjections</name>
+        <qualifiedname>UPointProjectionSubsystem::ProcessTileProjections</qualifiedname>
+        <param>
+          <type><ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> *</type>
+          <declname>TileActor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRegister</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает компоненты проекций внутри тайла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на тайл, который изменился </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bRegister</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Зарегистрировать преокцию в списке проекций или убрать из этого списка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="133" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="195" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ac164306c34a2f11f36c7f151513d4f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::TranslateClick</definition>
+        <argsstring>(const FVector2D &amp;ScreenLocation)</argsstring>
+        <name>TranslateClick</name>
+        <qualifiedname>UPointProjectionSubsystem::TranslateClick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &amp;</type>
+          <declname>ScreenLocation</declname>
+        </param>
+        <briefdescription>
+<para>Принимает и обрабатывает координату клика пользователя </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ScreenLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>координата клика</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="144" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="213" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1afc417e87a8b213e16644fe0626ac1271" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::IsNearDistanceModeEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsNearDistanceModeEnabled</name>
+        <qualifiedname>UPointProjectionSubsystem::IsNearDistanceModeEnabled</qualifiedname>
+        <briefdescription>
+<para>Находится ли пользователь в режиме автара. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True, если режим аватара активен. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="151" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1acc1998016f5d46e32e92bef7ee2a6729" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::IsNeedUpdateProjectionsSubsystem</definition>
+        <argsstring>(const FCameraOptionsFillResult &amp;CameraOptionsFill)</argsstring>
+        <name>IsNeedUpdateProjectionsSubsystem</name>
+        <qualifiedname>UPointProjectionSubsystem::IsNeedUpdateProjectionsSubsystem</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_camera_options_fill_result" kindref="compound">FCameraOptionsFillResult</ref> &amp;</type>
+          <declname>CameraOptionsFill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="157" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="142" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a661f70716b0e029a7fe8e87d5c3b2672" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::OnPostLoadMapWithWorld</definition>
+        <argsstring>(UWorld *World)</argsstring>
+        <name>OnPostLoadMapWithWorld</name>
+        <qualifiedname>UPointProjectionSubsystem::OnPostLoadMapWithWorld</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>Функция-коллбэк, срабатывающая при загрузке мира и вызывающая гарантированную инициализацию сабсистемы </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на игровой мир</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="166" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="154" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a31d6aeb672f949bc1fa9a5300a117c20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::InternalInit</definition>
+        <argsstring>(const UWorld *World)</argsstring>
+        <name>InternalInit</name>
+        <qualifiedname>UPointProjectionSubsystem::InternalInit</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует прослушивание события перерисовки экрана и добавляет виджет-контейнер для виджетов проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на игровой мир</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="176" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="164" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a615cd299809aa40f6b608f43563ac7a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::RegisterTile</definition>
+        <argsstring>(const APointActorBase *TileActor)</argsstring>
+        <name>RegisterTile</name>
+        <qualifiedname>UPointProjectionSubsystem::RegisterTile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_a_point_actor_base" kindref="compound">APointActorBase</ref> *</type>
+          <declname>TileActor</declname>
+        </param>
+        <briefdescription>
+<para>Регистрирует тайл с компонентами-проекторами в списке тайлов, проекторы которых потенциально могут быть отрисованы в ScreenSpace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тайл, который нужно зарегистрировать</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="187" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="271" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1af0d3b0334b7fc54f86dc8fe4b7befaa2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::UnregisterTile</definition>
+        <argsstring>(const APointActorBase *TileActor)</argsstring>
+        <name>UnregisterTile</name>
+        <qualifiedname>UPointProjectionSubsystem::UnregisterTile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_a_point_actor_base" kindref="compound">APointActorBase</ref> *</type>
+          <declname>TileActor</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет тайл с компонентами-проекторами из списка тайлов, которые желают отрисовываться в ScreenSpace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тайл, который нужно отрегистрировать </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="196" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="280" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1abcdd580f8e9a8d4f31ef0ff68c32606e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::OnHUDPostRender</definition>
+        <argsstring>(AHUD *HUD, UCanvas *Canvas)</argsstring>
+        <name>OnHUDPostRender</name>
+        <qualifiedname>UPointProjectionSubsystem::OnHUDPostRender</qualifiedname>
+        <param>
+          <type>AHUD *</type>
+          <declname>HUD</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>Canvas</declname>
+        </param>
+        <briefdescription>
+<para>Коллбэк, вызываемый каждый раз после отрисовки основного интерфейса игрока. Позвоялет нам отрисовывать поверх экрана проекции точек из мира игры </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HUD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>указатель на HUD, который вызывал событие OnPostRender </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Canvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Canvas, на котором рисуется информация и который проецирует координаты</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="207" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="289" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a6390dd8190c69a82ce7101aab930d603" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::OnCloseRangeCameraModeChanged</definition>
+        <argsstring>(bool bCloseRangeCameraMode)</argsstring>
+        <name>OnCloseRangeCameraModeChanged</name>
+        <qualifiedname>UPointProjectionSubsystem::OnCloseRangeCameraModeChanged</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bCloseRangeCameraMode</declname>
+        </param>
+        <briefdescription>
+<para>Коллбэк, вызываемый при изменении режима камеры на режим, который считается режимом ближней дистанции (от первого/третьего лица) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bCloseRangeCameraMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Включен ли режим &quot;ближней&quot; камеры</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="217" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="773" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a7ee2461e052d70279360ab0ee2c66757" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt;</type>
+        <definition>TMap&lt; FGuid, FProxyIconDataToDraw &gt; UPointProjectionSubsystem::FillDecisionIconsMap</definition>
+        <argsstring>(const TQuadTree&lt; FIconQuadTreeNode * &gt; &amp;QuadTree, const TQuadTreeBox&lt; float &gt; &amp;QuadTreeRootBox, TMap&lt; FGuid, FProxyIconDataToDraw &gt; ProjectionProxyDataPairs) const</argsstring>
+        <name>FillDecisionIconsMap</name>
+        <qualifiedname>UPointProjectionSubsystem::FillDecisionIconsMap</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree" kindref="compound">TQuadTree</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt; &amp;</type>
+          <declname>QuadTree</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>QuadTreeRootBox</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt;</type>
+          <declname>ProjectionProxyDataPairs</declname>
+        </param>
+        <briefdescription>
+<para>Функция проходит по всем иконкам и пробует без пересечений уместить их &quot;расширенные&quot; версии в сетку экрана </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>QuadTree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дерево квадрантов с границами иконок на экране </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>QuadTreeRootBox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Корневой элемент дерева квадрантов, по размерам равный экрану </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProjectionProxyDataPairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Соотношения проекций и рендер-данных проекций, проиндексированные по их id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="298" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="517" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1acdad862127098cdd10306530fc88f156" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::DecisionCardCloseHandled</definition>
+        <argsstring>()</argsstring>
+        <name>DecisionCardCloseHandled</name>
+        <qualifiedname>UPointProjectionSubsystem::DecisionCardCloseHandled</qualifiedname>
+        <briefdescription>
+<para>Ивент закрытия Карточки Принятого Решения и отключения <emphasis>выделения</emphasis> с объекта Принятого Решения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="343" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="656" bodyend="660"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1aa84c884fec91059d83c5acdb351ea5ce" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::IsCoordinatesInsideScreenView</definition>
+        <argsstring>(const FCameraOptions &amp;CameraOptions, const FProxyIconDataToDraw &amp;ProjectionData)</argsstring>
+        <name>IsCoordinatesInsideScreenView</name>
+        <qualifiedname>UPointProjectionSubsystem::IsCoordinatesInsideScreenView</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_camera_options" kindref="compound">FCameraOptions</ref> &amp;</type>
+          <declname>CameraOptions</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &amp;</type>
+          <declname>ProjectionData</declname>
+        </param>
+        <briefdescription>
+<para>Функция проверяет, находится ли спроецированная точка в плоскости экрана, видимая игроку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CameraOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Параметры камеры и её отношений к пространству уровня и экрану. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProjectionData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Исходные данные проекции </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProjectedOnScreenPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Спроецированные на плоскость экрана координаты проекции</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Находится ли проекция в пределах видимой плоскости экрана </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="229" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="544" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a3faf405f9a62f2786b6ab571c81a4010" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_camera_options_fill_result" kindref="compound">FCameraOptionsFillResult</ref></type>
+        <definition>FCameraOptionsFillResult UPointProjectionSubsystem::InitCameraOptions</definition>
+        <argsstring>(const AHUD *HUD, bool bIsNearDistanceModeEnabled, const ULayersCreatorSettings *InLayersCreatorSettings, const UUserInterfaceSettings *InUserInterfaceSettings)</argsstring>
+        <name>InitCameraOptions</name>
+        <qualifiedname>UPointProjectionSubsystem::InitCameraOptions</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AHUD *</type>
+          <declname>HUD</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsNearDistanceModeEnabled</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_layers_creator_settings" kindref="compound">ULayersCreatorSettings</ref> *</type>
+          <declname>InLayersCreatorSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UUserInterfaceSettings</ref> *</type>
+          <declname>InUserInterfaceSettings</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует объект, содержащий свойства камеры и их отношения к свойствам экрана и плоскостям уровня, нужные для обсчёта проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HUD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект интерфейса игрока </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bIsNearDistanceModeEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Включен ли режим ближней дистанции (режим аватара) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InLayersCreatorSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на настройки плагина LayersCreator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InUserInterfaceSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на настройки пользовательског интерфейса</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_f_camera_options_fill_result" kindref="compound">FCameraOptionsFillResult</ref> Ответ, содерджащий флаг об успешности инициализаци объекта свойств камеры и сам объект свойств камеры </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="242" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="716" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1add67536cf4cbc3855f58153471b71007" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPointProjectionSubsystem::CanNodeBeAdded</definition>
+        <argsstring>(const TQuadTree&lt; FIconQuadTreeNode * &gt; &amp;QuadTree, FIconQuadTreeNode *NodeToCheck, const auto &amp;DirtyMarkerMethod)</argsstring>
+        <name>CanNodeBeAdded</name>
+        <qualifiedname>UPointProjectionSubsystem::CanNodeBeAdded</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree" kindref="compound">TQuadTree</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt; &amp;</type>
+          <declname>QuadTree</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> *</type>
+          <declname>NodeToCheck</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">auto</ref> &amp;</type>
+          <declname>DirtyMarkerMethod</declname>
+        </param>
+        <briefdescription>
+<para>Проверяем, можно ли добавить элемент в дерево квадрантов без пересечений. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>QuadTree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дерево квадрантов, в котором проводится проверка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NodeToCheck</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект, который мы тестируем на попытку добавления </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DirtyMarkerMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Функция, проверяющая - помечать иконку как пересеченную или нет</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Можно ли добавить элемент в дерево квадрантов без пересечений или нет </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="256" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="599" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ac8efa9fd28076b0b6bf986272197c639" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::LayoutProxyAndTreeNode</definition>
+        <argsstring>(FProxyIconDataToDraw &amp;ProxyIconData, const EIconLayoutType &amp;LayoutType, FIconQuadTreeNode *const ProjectionTreeNode)</argsstring>
+        <name>LayoutProxyAndTreeNode</name>
+        <qualifiedname>UPointProjectionSubsystem::LayoutProxyAndTreeNode</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &amp;</type>
+          <declname>ProxyIconData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_point_projector_library_8h_1a0c5f839988cd28df54436fe9977306d3" kindref="member">EIconLayoutType</ref> &amp;</type>
+          <declname>LayoutType</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> *<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref></type>
+          <declname>ProjectionTreeNode</declname>
+        </param>
+        <briefdescription>
+<para>Пересобирает вёрстку иконки в зависимости от указанного типа и поправляет размеры элемента QuadTree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProxyIconData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на прокси-данные иконки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayoutType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип вёрстки иконки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Projection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные о проекции </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProjectionTreeNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Границы иконки для тестирования на пересечения внутри дерева квадрантов</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="268" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="565" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a9d9528dcd45f57d665760a1fbf549ed1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt;</type>
+        <definition>TMap&lt; FGuid, FProxyIconDataToDraw &gt; UPointProjectionSubsystem::TryToFitFullSizeIcons</definition>
+        <argsstring>(TQuadTree&lt; FIconQuadTreeNode * &gt; QuadTree, const TQuadTreeBox&lt; float &gt; QuadTreeRootBox, TMap&lt; FGuid, FProxyIconDataToDraw &gt; ProjectionProxyDataPairs, TArray&lt; FIconQuadTreeNode &gt; InProjectionNodes, const FCameraOptions &amp;CameraOptions, UCanvas *Canvas)</argsstring>
+        <name>TryToFitFullSizeIcons</name>
+        <qualifiedname>UPointProjectionSubsystem::TryToFitFullSizeIcons</qualifiedname>
+        <param>
+          <type><ref refid="class_t_quad_tree" kindref="compound">TQuadTree</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt;</type>
+          <declname>QuadTree</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt;</type>
+          <declname>QuadTreeRootBox</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt;</type>
+          <declname>ProjectionProxyDataPairs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &gt;</type>
+          <declname>InProjectionNodes</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_camera_options" kindref="compound">FCameraOptions</ref> &amp;</type>
+          <declname>CameraOptions</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>Canvas</declname>
+        </param>
+        <briefdescription>
+<para>Функция проходит по всем иконкам и пробует без пересечений уместить их &quot;расширенные&quot; версии в сетку экрана </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>QuadTree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дерево квадрантов с границами иконок на экране </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>QuadTreeRootBox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Корневой элемент дерева квадрантов, по размерам равный экрану </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProjectionProxyDataPairs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Соотношения проекций и рендер-данных проекций, проиндексированные по их id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InProjectionNodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив для хранения создаваемых элементов дерева квадрантов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CameraOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Параметры камеры и её отношений к пространству уровня и экрану </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Canvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на объект-холст экрана для отрисовки отладочной информации</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="282" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="418" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ab76138b8053415eed4b66a9515cda1b4" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::SetupProjectionViewConstraints</definition>
+        <argsstring>(FIconQuadTreeNode *ProjectionNode, FProxyIconDataToDraw &amp;ProxyIconData, bool bNearDistanceModeEnabled)</argsstring>
+        <name>SetupProjectionViewConstraints</name>
+        <qualifiedname>UPointProjectionSubsystem::SetupProjectionViewConstraints</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> *</type>
+          <declname>ProjectionNode</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &amp;</type>
+          <declname>ProxyIconData</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bNearDistanceModeEnabled</declname>
+        </param>
+        <briefdescription>
+<para>Функция отдельно настраивает параметры представления для разных проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>например разные BoundingBox для номеров домов и для иконок</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProjectionNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BoundingBox проекции </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProxyIconData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на прокси-данные иконки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bNearDistanceModeEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Включен ли режим ближней дистанции</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="313" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="631" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1ac12abccf2674f643760dc15d1d7b3167" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FReply</ref></type>
+        <definition>static FReply UPointProjectionSubsystem::OnProjectionContainerButtonDown</definition>
+        <argsstring>(const FGeometry &amp;MyGeometry, const FPointerEvent &amp;MouseEvent, TQuadTreeBox&lt; float &gt; *InClickArea)</argsstring>
+        <name>OnProjectionContainerButtonDown</name>
+        <qualifiedname>UPointProjectionSubsystem::OnProjectionContainerButtonDown</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGeometry</ref> &amp;</type>
+          <declname>MyGeometry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPointerEvent</ref> &amp;</type>
+          <declname>MouseEvent</declname>
+        </param>
+        <param>
+          <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; *</type>
+          <declname>InClickArea</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает нажатие по контейнеру проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Устанавливает область клика, при помощи которой будут вычисляться элементы под зоной клика</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MyGeometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на геометрию, на которой было зарегистрировано поднятие кнопки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MouseEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект события клика </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InClickArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Область клика</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FReply Объект типа ответной реакции на клик </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="327" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a493b2913c552fd6c31b3336611aeda62" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::ResetClickArea</definition>
+        <argsstring>(TQuadTreeBox&lt; float &gt; &amp;InClickArea)</argsstring>
+        <name>ResetClickArea</name>
+        <qualifiedname>UPointProjectionSubsystem::ResetClickArea</qualifiedname>
+        <param>
+          <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>InClickArea</declname>
+        </param>
+        <briefdescription>
+<para>Сбрасывает местоположение области клика и её время активности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InClickArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Границы области клика</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="336" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="650" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_point_projection_subsystem_1a6aa03503e202df6ff61f735998e7fd7d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPointProjectionSubsystem::DrawDebugInfo</definition>
+        <argsstring>(const FIconQuadTreeNode &amp;BelowNode, const FIconQuadTreeNode &amp;RightNode, const FIconQuadTreeNode *IconNode, const FCameraOptions &amp;CameraOptions, UCanvas *Canvas)</argsstring>
+        <name>DrawDebugInfo</name>
+        <qualifiedname>UPointProjectionSubsystem::DrawDebugInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>BelowNode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>RightNode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> *</type>
+          <declname>IconNode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_camera_options" kindref="compound">FCameraOptions</ref> &amp;</type>
+          <declname>CameraOptions</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>Canvas</declname>
+        </param>
+        <briefdescription>
+<para>Рисует тестовые границы и другую отладочную информацию о проекциях на экране. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BelowNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BoundingBox подписи иконки, расположенной снизу </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RightNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BoundingBox подписи иконки, расположенной справа </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IconNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BoundingBox пиктограммы иконки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CameraOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки камеры </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Canvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на объект-холст экрана для отрисовки отладочной информации</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="356" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.cpp" bodystart="778" bodyend="798"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UPointProjectionSubsystem</label>
+        <link refid="class_u_point_projection_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>FCameraOptions</label>
+        <link refid="struct_f_camera_options"/>
+      </node>
+      <node id="7">
+        <label>FCameraOptionsFillResult</label>
+        <link refid="struct_f_camera_options_fill_result"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>CameraOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FDecisionClickedIconsInfo</label>
+        <link refid="struct_f_decision_clicked_icons_info"/>
+      </node>
+      <node id="5">
+        <label>TNonNegative&lt; float &gt;</label>
+        <link refid="class_t_non_negative"/>
+      </node>
+      <node id="3">
+        <label>TQuadTree&lt; FIconQuadTreeNode * &gt;</label>
+        <link refid="class_t_quad_tree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TQuadTreeBox&lt; float &gt;</label>
+        <link refid="class_t_quad_tree_box"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Height</edgelabel>
+          <edgelabel>Width</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UPointProjectionSubsystem</label>
+        <link refid="class_u_point_projection_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DecisionsQuadTree</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClickArea</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>IconsDecisionsInfo</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>CameraOptionsFillResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" line="49" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointProjectionSubsystem.h" bodystart="50" bodyend="423"/>
+    <listofallmembers>
+      <member refid="class_u_point_projection_subsystem_1a4dec9ab078d1678f08666a2ec356a80c" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>bClickIsDirty</name></member>
+      <member refid="class_u_point_projection_subsystem_1a198b83bbd52c77d77aaa8c42e770438f" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>bNearDistanceModeEnabled</name></member>
+      <member refid="class_u_point_projection_subsystem_1a92a9b1dd5e53e5ea078901b70b5d3406" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>CameraMoveThreshold</name></member>
+      <member refid="class_u_point_projection_subsystem_1ade42f431ef8a45769d8f5a3c6c2898ed" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>CameraOptionsFillResult</name></member>
+      <member refid="class_u_point_projection_subsystem_1add67536cf4cbc3855f58153471b71007" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>CanNodeBeAdded</name></member>
+      <member refid="class_u_point_projection_subsystem_1a396f8c3ac1b750f6ee71cdbe61afef7a" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>Clear</name></member>
+      <member refid="class_u_point_projection_subsystem_1ad5d00cd1345a340c551abf231d9c3e88" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ClickArea</name></member>
+      <member refid="class_u_point_projection_subsystem_1a422f47c4247a3839e97b216995f1e116" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ClickAreaHalfSize</name></member>
+      <member refid="class_u_point_projection_subsystem_1aaf94e4fd72ed4dd517b486231dccedf4" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ClickAreaSize</name></member>
+      <member refid="class_u_point_projection_subsystem_1aee11c4c9c64992899576b5be062e12af" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ConsumeClickedIcons</name></member>
+      <member refid="class_u_point_projection_subsystem_1a99493c58868e79b0ba8f56f1db0b2c02" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>CurrentSelectedProjectionGUIDs</name></member>
+      <member refid="class_u_point_projection_subsystem_1afd619f78fbd2fbd324804ce29f3d5e1e" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>DebugSettings</name></member>
+      <member refid="class_u_point_projection_subsystem_1acdad862127098cdd10306530fc88f156" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>DecisionCardCloseHandled</name></member>
+      <member refid="class_u_point_projection_subsystem_1a90aa49ecb76cc327ee4d939d55c93c93" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>DecisionsQuadTree</name></member>
+      <member refid="class_u_point_projection_subsystem_1ac95b6232ab48ba90d90e7b57446a27aa" prot="public" virt="virtual"><scope>UPointProjectionSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_point_projection_subsystem_1a6aa03503e202df6ff61f735998e7fd7d" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>DrawDebugInfo</name></member>
+      <member refid="class_u_point_projection_subsystem_1a7ee2461e052d70279360ab0ee2c66757" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>FillDecisionIconsMap</name></member>
+      <member refid="class_u_point_projection_subsystem_1a83d15c864d8eefb2e446522e785c948b" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>HUDPtr</name></member>
+      <member refid="class_u_point_projection_subsystem_1a9e1de4a043060c19fd7dde51a925ada0" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IconNameNull</name></member>
+      <member refid="class_u_point_projection_subsystem_1a95946d8f2ac4673213774550ba1c3fb1" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IconPicAndTextGap</name></member>
+      <member refid="class_u_point_projection_subsystem_1a59b83c107242eb4945e385e2f1dd136b" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IconRenderSettingsIndexed</name></member>
+      <member refid="class_u_point_projection_subsystem_1afd4627b118829b3ca26b77d35f4037ca" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IconsDecisionsInfo</name></member>
+      <member refid="class_u_point_projection_subsystem_1a3faf405f9a62f2786b6ab571c81a4010" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>InitCameraOptions</name></member>
+      <member refid="class_u_point_projection_subsystem_1a7adc866cefbb9ccf1952b62fc0211eac" prot="public" virt="virtual"><scope>UPointProjectionSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_point_projection_subsystem_1a31d6aeb672f949bc1fa9a5300a117c20" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>InternalInit</name></member>
+      <member refid="class_u_point_projection_subsystem_1aa84c884fec91059d83c5acdb351ea5ce" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IsCoordinatesInsideScreenView</name></member>
+      <member refid="class_u_point_projection_subsystem_1afc417e87a8b213e16644fe0626ac1271" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IsNearDistanceModeEnabled</name></member>
+      <member refid="class_u_point_projection_subsystem_1acc1998016f5d46e32e92bef7ee2a6729" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>IsNeedUpdateProjectionsSubsystem</name></member>
+      <member refid="class_u_point_projection_subsystem_1af0fa4e855924690199b00015a3382cdd" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>LastCameraLocation</name></member>
+      <member refid="class_u_point_projection_subsystem_1a0e0980be1d5ffcc34e0d657f5b47eede" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>LayersCreatorSettings</name></member>
+      <member refid="class_u_point_projection_subsystem_1ac8efa9fd28076b0b6bf986272197c639" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>LayoutProxyAndTreeNode</name></member>
+      <member refid="class_u_point_projection_subsystem_1a358c34e8108d50572f3d2e76595feee6" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>MaxFreezedFrames</name></member>
+      <member refid="class_u_point_projection_subsystem_1abb4e347a8f51ada6eb60450a769036e8" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ObjectsUpdaters</name></member>
+      <member refid="class_u_point_projection_subsystem_1a6390dd8190c69a82ce7101aab930d603" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnCloseRangeCameraModeChanged</name></member>
+      <member refid="class_u_point_projection_subsystem_1a9505dd088b52d330e1cb128560a9cf90" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnDecisionCardClosed</name></member>
+      <member refid="class_u_point_projection_subsystem_1abcdd580f8e9a8d4f31ef0ff68c32606e" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnHUDPostRender</name></member>
+      <member refid="class_u_point_projection_subsystem_1a2644cf8d0b2bf08db6d6dd89f3e01fcb" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnHUDPostRenderHandle</name></member>
+      <member refid="class_u_point_projection_subsystem_1a80808406b00bb28a6fd62cb2f890b024" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnMapWithWorldLoadedHandle</name></member>
+      <member refid="class_u_point_projection_subsystem_1a661f70716b0e029a7fe8e87d5c3b2672" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnPostLoadMapWithWorld</name></member>
+      <member refid="class_u_point_projection_subsystem_1ac12abccf2674f643760dc15d1d7b3167" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>OnProjectionContainerButtonDown</name></member>
+      <member refid="class_u_point_projection_subsystem_1a56199484d6add686ddd708c6cff10099" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>PlayerController</name></member>
+      <member refid="class_u_point_projection_subsystem_1a1e00190265e301317a47a036841f8122" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProcessClickArea</name></member>
+      <member refid="class_u_point_projection_subsystem_1ab90c1f74cfc932dcc45fd2cfa32b1170" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProcessTileProjections</name></member>
+      <member refid="class_u_point_projection_subsystem_1a0cb0653118fbd187d9c4ff5679449686" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectionParentTiles</name></member>
+      <member refid="class_u_point_projection_subsystem_1a7d2b5e0e52b762d95634462a4e567309" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectionProxyDataReserve</name></member>
+      <member refid="class_u_point_projection_subsystem_1aa184a8291f9906253fc69ac7259591b2" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectionsContainer</name></member>
+      <member refid="class_u_point_projection_subsystem_1a105c2ac1f351d9da8ea2b5bb0bab07fc" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectorsInActiveTiles</name></member>
+      <member refid="class_u_point_projection_subsystem_1a5bd10c2fd256ce8cd2ae2068b9da5a0a" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectorsToHide</name></member>
+      <member refid="class_u_point_projection_subsystem_1a78448619524bf4088e986fcabc5673df" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ProjectsUpdateMutex</name></member>
+      <member refid="class_u_point_projection_subsystem_1a615cd299809aa40f6b608f43563ac7a8" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>RegisterTile</name></member>
+      <member refid="class_u_point_projection_subsystem_1a97d0bab76d95b220eccada5b75ebf969" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ReloadIcons</name></member>
+      <member refid="class_u_point_projection_subsystem_1a85180d8a3a6e5682621b12011f33fda5" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>RenderedIcons</name></member>
+      <member refid="class_u_point_projection_subsystem_1a493b2913c552fd6c31b3336611aeda62" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ResetClickArea</name></member>
+      <member refid="class_u_point_projection_subsystem_1abfd76d9c7d07ac6b37326cb428093d63" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>RightAngleInDegrees</name></member>
+      <member refid="class_u_point_projection_subsystem_1afa26d7a68345ae8382ac83a22c03876f" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>RightLayoutWeightCorrection</name></member>
+      <member refid="class_u_point_projection_subsystem_1aa2f0d615a3a2f9258841d04270b01780" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>SetTilesUpdater</name></member>
+      <member refid="class_u_point_projection_subsystem_1ab76138b8053415eed4b66a9515cda1b4" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>SetupProjectionViewConstraints</name></member>
+      <member refid="class_u_point_projection_subsystem_1ac164306c34a2f11f36c7f151513d4f91" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>TranslateClick</name></member>
+      <member refid="class_u_point_projection_subsystem_1a9d9528dcd45f57d665760a1fbf549ed1" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>TryToFitFullSizeIcons</name></member>
+      <member refid="class_u_point_projection_subsystem_1af0d3b0334b7fc54f86dc8fe4b7befaa2" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>UnregisterTile</name></member>
+      <member refid="class_u_point_projection_subsystem_1a4f518fe0f7839980e91db99ae018fc54" prot="public" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>UnregisterUpdater</name></member>
+      <member refid="class_u_point_projection_subsystem_1ab34f293af1a2c6d42520cc91c9d78062" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>UserInterfaceSettings</name></member>
+      <member refid="class_u_point_projection_subsystem_1a24c87f0c7aa806d8d2f7678f0e11670c" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ViewportFramesIncrement</name></member>
+      <member refid="class_u_point_projection_subsystem_1a6cb0485abab0241f24f507ae5ef5c9e6" prot="private" virt="non-virtual"><scope>UPointProjectionSubsystem</scope><name>ViewportOffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

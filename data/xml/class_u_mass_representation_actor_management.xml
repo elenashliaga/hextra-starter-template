@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_representation_actor_management" kind="class" language="C++" prot="public">
+    <compoundname>UMassRepresentationActorManagement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_mass_representation_actor_management_8h" local="no">MassRepresentationActorManagement.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1adc6a105aac0b4a9bfd64968cc4d052a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UMassRepresentationActorManagement::GetSpawnPriority</definition>
+        <argsstring>(const FMassRepresentationLODFragment &amp;Representation) const</argsstring>
+        <name>GetSpawnPriority</name>
+        <qualifiedname>UMassRepresentationActorManagement::GetSpawnPriority</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_representation_l_o_d_fragment" kindref="compound">FMassRepresentationLODFragment</ref> &amp;</type>
+          <declname>Representation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the spawn priority from the LOD <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Representation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the type of enabling to do on this actor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="31" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a58bc59ac82903714cb838d5c4bb7538e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>AActor *</type>
+        <definition>AActor * UMassRepresentationActorManagement::GetOrSpawnActor</definition>
+        <argsstring>(UMassRepresentationSubsystem &amp;RepresentationSubsystem, FMassEntityManager &amp;EntityManager, const FMassEntityHandle MassAgent, const FTransform &amp;Transform, const int16 TemplateActorIndex, FMassActorSpawnRequestHandle &amp;InOutSpawnRequestHandle, const float Priority) const</argsstring>
+        <name>GetOrSpawnActor</name>
+        <qualifiedname>UMassRepresentationActorManagement::GetOrSpawnActor</qualifiedname>
+        <param>
+          <type><ref refid="class_u_mass_representation_subsystem" kindref="compound">UMassRepresentationSubsystem</ref> &amp;</type>
+          <declname>RepresentationSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &amp;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>InOutSpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an actor of the template type and setup fragments values from it <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RepresentationSubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to use to get or spawn the actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntityManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>associated to the mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the fragment where we are going to store the actor pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the spatial information about where to spawn the actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the index of the type fetched with <ref refid="class_u_mass_representation_subsystem_1a4a4fb3f928d6437d9ab128cc311ae913" kindref="member">UMassRepresentationSubsystem::FindOrAddTemplateActor()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(in/out) In: previously requested spawn Out: newly requested spawn </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of this spawn request in comparison with the others, lower value means higher priority </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actor spawned </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="45" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a218707cea49976a191f367fe72be9f42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::SetActorEnabled</definition>
+        <argsstring>(const EMassActorEnabledType EnabledType, AActor &amp;Actor, const int32 EntityIdx, FMassCommandBuffer &amp;CommandBuffer) const</argsstring>
+        <name>SetActorEnabled</name>
+        <qualifiedname>UMassRepresentationActorManagement::SetActorEnabled</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1a1e0c707404dd66fee67d890bc2ce57cd" kindref="member">EMassActorEnabledType</ref></type>
+          <declname>EnabledType</declname>
+        </param>
+        <param>
+          <type>AActor &amp;</type>
+          <declname>Actor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>EntityIdx</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassCommandBuffer</ref> &amp;</type>
+          <declname>CommandBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable/disable a spawned actor for a mass entity <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EnabledType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the type of enabling to do on this actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the actual actor to perform enabling type on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntityIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the entity index currently processing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CommandBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to queue up anything that is thread sensitive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="56" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="28" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a83e2814ea61b7e4b4dbfc60bd617950c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::TeleportActor</definition>
+        <argsstring>(const FTransform &amp;Transform, AActor &amp;Actor, FMassCommandBuffer &amp;CommandBuffer) const</argsstring>
+        <name>TeleportActor</name>
+        <qualifiedname>UMassRepresentationActorManagement::TeleportActor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <param>
+          <type>AActor &amp;</type>
+          <declname>Actor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassCommandBuffer</ref> &amp;</type>
+          <declname>CommandBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Teleports the actor at the specified transform by preserving its velocity and without collision. The destination will be adjusted to fit an existing capsule. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the new actor&apos;s transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the actual actor to teleport </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CommandBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to queue up anything that is thread sensitive </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="65" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1ada6782c4bfeec47080360f6fbdcd6495" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::OnPreActorSpawn</definition>
+        <argsstring>(const FMassActorSpawnRequestHandle &amp;SpawnRequestHandle, FConstStructView SpawnRequest, TSharedRef&lt; FMassEntityManager &gt; EntityManager) const</argsstring>
+        <name>OnPreActorSpawn</name>
+        <qualifiedname>UMassRepresentationActorManagement::OnPreActorSpawn</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FConstStructView</ref></type>
+          <declname>SpawnRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &gt;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method that will be bound to a delegate called before the spawning of an actor to let the requester prepare it <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle of the spawn request that is about to spawn </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the actor that is about to spawn </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntityManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to use to retrieve the mass agent fragments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="74" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="56" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a491c7d1c904133a31fa9f5238dc10d6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_actor_spawner_subsystem_8h_1a18e241a4550192b097d7701b33f4ba50" kindref="member">EMassActorSpawnRequestAction</ref></type>
+        <definition>EMassActorSpawnRequestAction UMassRepresentationActorManagement::OnPostActorSpawn</definition>
+        <argsstring>(const FMassActorSpawnRequestHandle &amp;SpawnRequestHandle, FConstStructView SpawnRequest, TSharedRef&lt; FMassEntityManager &gt; EntityManager) const</argsstring>
+        <name>OnPostActorSpawn</name>
+        <qualifiedname>UMassRepresentationActorManagement::OnPostActorSpawn</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FConstStructView</ref></type>
+          <declname>SpawnRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &gt;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method that will be bound to a delegate used post-spawn to notify and let the requester configure the actor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the handle of the spawn request that was just spawned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the actor that just spawned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntityManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to use to retrieve the mass agent fragments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The action to take on the spawn request, either keep it there or remove it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="83" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="85" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1acdd6dd04f3de99a40fdd4006cb67f6e8" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>AActor *</type>
+        <definition>AActor * UMassRepresentationActorManagement::GetOrSpawnActor</definition>
+        <argsstring>(UMassRepresentationSubsystem &amp;RepresentationSubsystem, FMassEntityManager &amp;EntityManager, const FMassEntityHandle MassAgent, FMassActorFragment &amp;, const FTransform &amp;Transform, const int16 TemplateActorIndex, FMassActorSpawnRequestHandle &amp;InOutSpawnRequestHandle, const float Priority) const final</argsstring>
+        <name>GetOrSpawnActor</name>
+        <qualifiedname>UMassRepresentationActorManagement::GetOrSpawnActor</qualifiedname>
+        <param>
+          <type><ref refid="class_u_mass_representation_subsystem" kindref="compound">UMassRepresentationSubsystem</ref> &amp;</type>
+          <declname>RepresentationSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &amp;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_fragment" kindref="compound">FMassActorFragment</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>InOutSpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="110" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1acb74d6b8be288a442b721e503ce91244" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::OnPreActorSpawn</definition>
+        <argsstring>(const FMassActorSpawnRequestHandle &amp;SpawnRequestHandle, FConstStructView SpawnRequest, FMassEntityManager *EntityManager) const final</argsstring>
+        <name>OnPreActorSpawn</name>
+        <qualifiedname>UMassRepresentationActorManagement::OnPreActorSpawn</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FConstStructView</ref></type>
+          <declname>SpawnRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> *</type>
+          <declname>EntityManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="115" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="160" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a0f704708fcbbec20da0d77c1d21e922b" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="_mass_actor_spawner_subsystem_8h_1a18e241a4550192b097d7701b33f4ba50" kindref="member">EMassActorSpawnRequestAction</ref></type>
+        <definition>EMassActorSpawnRequestAction UMassRepresentationActorManagement::OnPostActorSpawn</definition>
+        <argsstring>(const FMassActorSpawnRequestHandle &amp;SpawnRequestHandle, FConstStructView SpawnRequest, FMassEntityManager *EntityManager) const final</argsstring>
+        <name>OnPostActorSpawn</name>
+        <qualifiedname>UMassRepresentationActorManagement::OnPostActorSpawn</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FConstStructView</ref></type>
+          <declname>SpawnRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> *</type>
+          <declname>EntityManager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="118" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="168" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1aa1c12ed62519f80337e742afaa15da90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::ReleaseAnyActorOrCancelAnySpawning</definition>
+        <argsstring>(FMassEntityManager &amp;EntityManager, const FMassEntityHandle MassAgent)</argsstring>
+        <name>ReleaseAnyActorOrCancelAnySpawning</name>
+        <qualifiedname>UMassRepresentationActorManagement::ReleaseAnyActorOrCancelAnySpawning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &amp;</type>
+          <declname>EntityManager</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static methods to Release an actor or cancel its spawning (calls ReleaseAnyActorOrCancelAnySpawning) WARNING: This method will destroy the associated actor in any and by the same fact might also move the entity into a new archetype. So any reference to fragment might become invalid. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EntityManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to use to retrieve the mass agent fragments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if actor was release or spawning request was canceled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="93" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_actor_management_1a12d4e67b06f30f20bd2977ef92ac973f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationActorManagement::ReleaseAnyActorOrCancelAnySpawning</definition>
+        <argsstring>(UMassRepresentationSubsystem &amp;RepresentationSubsystem, const FMassEntityHandle MassAgent, FMassActorFragment &amp;ActorInfo, FMassRepresentationFragment &amp;Representation, UMassActorSubsystem *ActorSubsystem=nullptr)</argsstring>
+        <name>ReleaseAnyActorOrCancelAnySpawning</name>
+        <qualifiedname>UMassRepresentationActorManagement::ReleaseAnyActorOrCancelAnySpawning</qualifiedname>
+        <param>
+          <type><ref refid="class_u_mass_representation_subsystem" kindref="compound">UMassRepresentationSubsystem</ref> &amp;</type>
+          <declname>RepresentationSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_fragment" kindref="compound">FMassActorFragment</ref> &amp;</type>
+          <declname>ActorInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_representation_fragment" kindref="compound">FMassRepresentationFragment</ref> &amp;</type>
+          <declname>Representation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_mass_actor_subsystem" kindref="compound">UMassActorSubsystem</ref> *</type>
+          <declname>ActorSubsystem</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>static Release an actor or cancel its spawning WARNING: This method will destroy the associated actor in any and by the same fact might also move the entity into a new archetype. So any reference to fragment might become invalid if you are not within the pipe execution <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RepresentationSubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to use to release any actors or cancel spawning requests </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the fragment where we are going to store the actor pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Representation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fragment containing the current and previous visual state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorSubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed over to <ref refid="struct_f_mass_actor_fragment_1ad0d469fee134445d097f8f052f34a7c7" kindref="member">FMassActorFragment::ResetAndUpdateHandleMap</ref>, used to avoid fetching the subsystem from UWorld every time. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="106" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationActorManagement.cpp" bodystart="122" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassRepresentationActorManagement</label>
+        <link refid="class_u_mass_representation_actor_management"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassRepresentationActorManagement</label>
+        <link refid="class_u_mass_representation_actor_management"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationActorManagement.h" bodystart="22" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_u_mass_representation_actor_management_1a58bc59ac82903714cb838d5c4bb7538e" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>GetOrSpawnActor</name></member>
+      <member refid="class_u_mass_representation_actor_management_1acdd6dd04f3de99a40fdd4006cb67f6e8" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>GetOrSpawnActor</name></member>
+      <member refid="class_u_mass_representation_actor_management_1adc6a105aac0b4a9bfd64968cc4d052a2" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>GetSpawnPriority</name></member>
+      <member refid="class_u_mass_representation_actor_management_1a491c7d1c904133a31fa9f5238dc10d6b" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>OnPostActorSpawn</name></member>
+      <member refid="class_u_mass_representation_actor_management_1a0f704708fcbbec20da0d77c1d21e922b" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>OnPostActorSpawn</name></member>
+      <member refid="class_u_mass_representation_actor_management_1ada6782c4bfeec47080360f6fbdcd6495" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>OnPreActorSpawn</name></member>
+      <member refid="class_u_mass_representation_actor_management_1acb74d6b8be288a442b721e503ce91244" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>OnPreActorSpawn</name></member>
+      <member refid="class_u_mass_representation_actor_management_1aa1c12ed62519f80337e742afaa15da90" prot="public" virt="non-virtual"><scope>UMassRepresentationActorManagement</scope><name>ReleaseAnyActorOrCancelAnySpawning</name></member>
+      <member refid="class_u_mass_representation_actor_management_1a12d4e67b06f30f20bd2977ef92ac973f" prot="public" virt="non-virtual"><scope>UMassRepresentationActorManagement</scope><name>ReleaseAnyActorOrCancelAnySpawning</name></member>
+      <member refid="class_u_mass_representation_actor_management_1a218707cea49976a191f367fe72be9f42" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>SetActorEnabled</name></member>
+      <member refid="class_u_mass_representation_actor_management_1a83e2814ea61b7e4b4dbfc60bd617950c" prot="public" virt="virtual"><scope>UMassRepresentationActorManagement</scope><name>TeleportActor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

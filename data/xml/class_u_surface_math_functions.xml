@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_surface_math_functions" kind="class" language="C++" prot="public">
+    <compoundname>USurfaceMathFunctions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_surface_math_functions_8h" local="no">SurfaceMathFunctions.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_surface_math_functions_1a349fe480d85873ede94a359d690cce60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsPointInPolygon</definition>
+        <argsstring>(const FVector &amp;Point, const TArray&lt; FVector &gt; &amp;Polygon)</argsstring>
+        <name>IsPointInPolygon</name>
+        <qualifiedname>USurfaceMathFunctions::IsPointInPolygon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <briefdescription>
+<para>Рассчитывает находится ли точка внутри полигона (игнорируя координату z) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>исследуемая точка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемый массив</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Находится ли точка внутри контура создаваемого массивом </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="123" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="146" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a628b671031a26659161d28ac769797f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector USurfaceMathFunctions::CalculateMassCenterOfArray</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Polygon)</argsstring>
+        <name>CalculateMassCenterOfArray</name>
+        <qualifiedname>USurfaceMathFunctions::CalculateMassCenterOfArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <briefdescription>
+<para>Рассчитывает точка <emphasis>центра</emphasis> массы точек </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемый массив</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Центр массы точек </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="132" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="171" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1af2d0bfde6493b2d5d0a5f422d9ed15f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsPointInCircumcircle</definition>
+        <argsstring>(const FVector &amp;A, const FVector &amp;B, const FVector &amp;C, const FVector &amp;P)</argsstring>
+        <name>IsPointInCircumcircle</name>
+        <qualifiedname>USurfaceMathFunctions::IsPointInCircumcircle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>Расчитывается находится ли точка в окружности описанной вокруг треугольника ABC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+<parametername>B</parametername>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точки задающие треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая точка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Находится ли точка внутри описанной окружности </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="142" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="182" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1add2ceb44e93f4a2ccb93e4a71394b9cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsPointInTriangle</definition>
+        <argsstring>(const FVector &amp;A, const FVector &amp;B, const FVector &amp;C, const FVector &amp;P)</argsstring>
+        <name>IsPointInTriangle</name>
+        <qualifiedname>USurfaceMathFunctions::IsPointInTriangle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+<para>Расчитывается находится ли точка в треугольнике ABC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+<parametername>B</parametername>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точки задающие треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая точка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Находится ли точка внутри треугольника </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="152" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a342209a04dce88300608706440de4247" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TOptional&lt; FVector &gt; USurfaceMathFunctions::DoLinesIntersect</definition>
+        <argsstring>(const FSegment &amp;LineA, const FSegment &amp;LineB)</argsstring>
+        <name>DoLinesIntersect</name>
+        <qualifiedname>USurfaceMathFunctions::DoLinesIntersect</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &amp;</type>
+          <declname>LineA</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &amp;</type>
+          <declname>LineB</declname>
+        </param>
+        <briefdescription>
+<para>Проверка на пересечение отрезков задаваемых 4мя точками, а также определение точки пересечения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LineA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точки задающие первый отрезок </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LineB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точки задающие второй отрезок </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IntersectionPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точка, в которую будет записана координата пересечения двух отрезков</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Пересекаются ли отрезки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="173" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="265" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a90950176236e68a84338a3b88611237a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector USurfaceMathFunctions::CalculateNormal</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;SectionVerticals)</argsstring>
+        <name>CalculateNormal</name>
+        <qualifiedname>USurfaceMathFunctions::CalculateNormal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>SectionVerticals</declname>
+        </param>
+        <briefdescription>
+<para>Высчитывает нормаль для треугольника </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SectionVerticals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек треугольника, для которого ищем нормали</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Нормаль треугольника </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="182" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="201" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a76fa52753c65b22ec79ad7912cf3770c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector USurfaceMathFunctions::CalculateNormal</definition>
+        <argsstring>(const FVector &amp;A, const FVector &amp;B, const FVector &amp;C)</argsstring>
+        <name>CalculateNormal</name>
+        <qualifiedname>USurfaceMathFunctions::CalculateNormal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Высчитывает нормали для треугольника </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+<parametername>B</parametername>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точки образующие треугольник, для которого ищем нормаль</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Нормаль треугольника </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="191" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="218" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1ade03d43f69ca563f5f75687c51e5f246" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsConvex</definition>
+        <argsstring>(const FVector &amp;A, const FVector &amp;B, const FVector &amp;C)</argsstring>
+        <name>IsConvex</name>
+        <qualifiedname>USurfaceMathFunctions::IsConvex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Высчитывает является ли треугольник, образованный тремя точками A, B и C, выпуклым </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+<parametername>B</parametername>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точки образующие треугольник</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Является ли треугольник выпуклым (имеет ли положительную площадь) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="200" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a7b2b937d674eed7db3b06578d3072fb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector USurfaceMathFunctions::CalculateCenterCircumcircle</definition>
+        <argsstring>(const FVector &amp;P1, const FVector &amp;P2, const FVector &amp;P3)</argsstring>
+        <name>CalculateCenterCircumcircle</name>
+        <qualifiedname>USurfaceMathFunctions::CalculateCenterCircumcircle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P1</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P2</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P3</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет центр описанной, вокруг треугольника, окружности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P1</parametername>
+<parametername>P2</parametername>
+<parametername>P3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точки образующие треугольник</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Центр описанной окружности </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="209" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="235" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1afd4db57dcda6bddcb9edabfade29673f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsPointInCircle</definition>
+        <argsstring>(const FVector &amp;Point, const FVector &amp;Center, float Radius)</argsstring>
+        <name>IsPointInCircle</name>
+        <qualifiedname>USurfaceMathFunctions::IsPointInCircle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Center</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Radius</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет принадлежит ли точка окружности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая точка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Центр окружности </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Радиус окружности</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Принадлежит ли точка окружности </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="220" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a22567763e7352d3250ee9dbc857ad0e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float USurfaceMathFunctions::TriangleArea</definition>
+        <argsstring>(const FVector &amp;P1, const FVector &amp;P2, const FVector &amp;P3)</argsstring>
+        <name>TriangleArea</name>
+        <qualifiedname>USurfaceMathFunctions::TriangleArea</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P1</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P2</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>P3</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет площадь треугольника </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P1</parametername>
+<parametername>P2</parametername>
+<parametername>P3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точки образующие треугольник</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Площадь треугольника </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="229" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1aef9828857c1bc49edc01e6d8994caf41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::TriangleContainPoint</definition>
+        <argsstring>(const FPolygonTriangle &amp;Triangle, const FVector &amp;Point)</argsstring>
+        <name>TriangleContainPoint</name>
+        <qualifiedname>USurfaceMathFunctions::TriangleContainPoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет находится ли точка внутри треугольника </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>треугольник содержащий точки A,B,C </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая точка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>находится ли точка внутри треугольника </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="239" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="119" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1a542ca6ba14f7f865d57693dd2a17528b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsPointOnLineSegment</definition>
+        <argsstring>(const FVector &amp;Point, const FSegment &amp;Line)</argsstring>
+        <name>IsPointOnLineSegment</name>
+        <qualifiedname>USurfaceMathFunctions::IsPointOnLineSegment</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &amp;</type>
+          <declname>Line</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет находится ли точка на отрезке </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>точки задающие отрезок </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемая точка</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>находится ли точка на отрезке </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="249" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_math_functions_1aebf5cb3ae8b12b3f5dc4c93c0ec7a2aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceMathFunctions::IsLineContainLineSegment</definition>
+        <argsstring>(const FSegment &amp;ContainingLine, const FSegment &amp;InnerLine)</argsstring>
+        <name>IsLineContainLineSegment</name>
+        <qualifiedname>USurfaceMathFunctions::IsLineContainLineSegment</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &amp;</type>
+          <declname>ContainingLine</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSegment</ref> &amp;</type>
+          <declname>InnerLine</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет надодится сегмент внутри отрезка </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ContainingLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>бОльшая линия </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InnerLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сегмент, предположительно содержащийся в линии</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Находится ли сегмент внутри отрезка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="259" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.cpp" bodystart="133" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USurfaceMathFunctions</label>
+        <link refid="class_u_surface_math_functions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USurfaceMathFunctions</label>
+        <link refid="class_u_surface_math_functions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" line="110" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceMathFunctions.h" bodystart="111" bodyend="261"/>
+    <listofallmembers>
+      <member refid="class_u_surface_math_functions_1a7b2b937d674eed7db3b06578d3072fb2" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>CalculateCenterCircumcircle</name></member>
+      <member refid="class_u_surface_math_functions_1a628b671031a26659161d28ac769797f6" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>CalculateMassCenterOfArray</name></member>
+      <member refid="class_u_surface_math_functions_1a90950176236e68a84338a3b88611237a" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>CalculateNormal</name></member>
+      <member refid="class_u_surface_math_functions_1a76fa52753c65b22ec79ad7912cf3770c" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>CalculateNormal</name></member>
+      <member refid="class_u_surface_math_functions_1a342209a04dce88300608706440de4247" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>DoLinesIntersect</name></member>
+      <member refid="class_u_surface_math_functions_1ade03d43f69ca563f5f75687c51e5f246" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsConvex</name></member>
+      <member refid="class_u_surface_math_functions_1aebf5cb3ae8b12b3f5dc4c93c0ec7a2aa" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsLineContainLineSegment</name></member>
+      <member refid="class_u_surface_math_functions_1afd4db57dcda6bddcb9edabfade29673f" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsPointInCircle</name></member>
+      <member refid="class_u_surface_math_functions_1af2d0bfde6493b2d5d0a5f422d9ed15f3" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsPointInCircumcircle</name></member>
+      <member refid="class_u_surface_math_functions_1a349fe480d85873ede94a359d690cce60" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsPointInPolygon</name></member>
+      <member refid="class_u_surface_math_functions_1add2ceb44e93f4a2ccb93e4a71394b9cd" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsPointInTriangle</name></member>
+      <member refid="class_u_surface_math_functions_1a542ca6ba14f7f865d57693dd2a17528b" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>IsPointOnLineSegment</name></member>
+      <member refid="class_u_surface_math_functions_1a22567763e7352d3250ee9dbc857ad0e4" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>TriangleArea</name></member>
+      <member refid="class_u_surface_math_functions_1aef9828857c1bc49edc01e6d8994caf41" prot="public" virt="non-virtual"><scope>USurfaceMathFunctions</scope><name>TriangleContainPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

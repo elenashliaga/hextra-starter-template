@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_svg_style" kind="struct" language="C++" prot="public">
+    <compoundname>FSvgStyle</compoundname>
+    <includes refid="_s_v_g_parser_8h" local="no">SVGParser.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_svg_style_1a0693ccd32b5f793e2e169f93285dd7f3" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TMap&lt;FString, FString&gt; FSvgStyle::StyleMap</definition>
+        <argsstring></argsstring>
+        <name>StyleMap</name>
+        <qualifiedname>FSvgStyle::StyleMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="11" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_svg_style_1a7ad69609b2427bc6d3f645129d2e49e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString FSvgStyle::CreateParamsString</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateParamsString</name>
+        <qualifiedname>FSvgStyle::CreateParamsString</qualifiedname>
+        <briefdescription>
+<para>Создает строчку, для вставки в xml. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Возвращает строку, которая содержит все стили их структуры по типу ключ = &quot;параметр&quot; (пробел) ключ = ... </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="19" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_svg_style_1a1f45bbb6579b8a753829ebe43a642f32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString FSvgStyle::ReplaceStringToSvgStyle</definition>
+        <argsstring>(const FString &amp;BaseText) const</argsstring>
+        <name>ReplaceStringToSvgStyle</name>
+        <qualifiedname>FSvgStyle::ReplaceStringToSvgStyle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>BaseText</declname>
+        </param>
+        <briefdescription>
+<para>Ищет слово &quot;class&quot; , чтобы подменить его на строчку включающие все хранящиеся стили в структуре </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BaseText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- базовый xml ожидающий <emphasis>коннекта</emphasis> с css стилем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленная строка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="29" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="15" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_svg_style_1a652b6d9210f9c7611d9d3d81d114485e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FSvgStyle::AddStyle</definition>
+        <argsstring>(const FString &amp;StyleName, const FString &amp;StyleValue)</argsstring>
+        <name>AddStyle</name>
+        <qualifiedname>FSvgStyle::AddStyle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StyleName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StyleValue</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет новый параметр-стиль по ключу </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StyleName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ имени </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StyleValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Параметр стиля </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="38" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="9" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" bodystart="10" bodyend="39"/>
+    <listofallmembers>
+      <member refid="struct_f_svg_style_1a652b6d9210f9c7611d9d3d81d114485e" prot="public" virt="non-virtual"><scope>FSvgStyle</scope><name>AddStyle</name></member>
+      <member refid="struct_f_svg_style_1a7ad69609b2427bc6d3f645129d2e49e7" prot="public" virt="non-virtual"><scope>FSvgStyle</scope><name>CreateParamsString</name></member>
+      <member refid="struct_f_svg_style_1a1f45bbb6579b8a753829ebe43a642f32" prot="public" virt="non-virtual"><scope>FSvgStyle</scope><name>ReplaceStringToSvgStyle</name></member>
+      <member refid="struct_f_svg_style_1a0693ccd32b5f793e2e169f93285dd7f3" prot="public" virt="non-virtual"><scope>FSvgStyle</scope><name>StyleMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_json_net_rpc_dispatch_table" kind="struct" language="C++" prot="public">
+    <compoundname>FJsonNetRpcDispatchTable</compoundname>
+    <includes refid="_json_net_rpc_dispatch_table_8h" local="no">JsonNetRpcDispatchTable.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_json_net_rpc_dispatch_table_1a6e098c4764a122320ee76b2afd573038" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_json_net_rpc_dispatch_table_8h_1acae888f6ede33ff50b439baf914b99db" kindref="member">FJsonNetRpcMethodHandler</ref> &gt;</type>
+        <definition>TMap&lt;FString, FJsonNetRpcMethodHandler&gt; FJsonNetRpcDispatchTable::Handlers</definition>
+        <argsstring></argsstring>
+        <name>Handlers</name>
+        <qualifiedname>FJsonNetRpcDispatchTable::Handlers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" line="83" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_json_net_rpc_dispatch_table_1a17108f723d3e37d5168631705785f4ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_json_net_rpc_dispatch_table_8h_1a9d5dcdaca3c8ad803b6948fdb3fea631" kindref="member">EJsonNetRpcDispatchErrorKind</ref></type>
+        <definition>EJsonNetRpcDispatchErrorKind FJsonNetRpcDispatchTable::Dispatch</definition>
+        <argsstring>(FJsonNetRpcRequest Req) const</argsstring>
+        <name>Dispatch</name>
+        <qualifiedname>FJsonNetRpcDispatchTable::Dispatch</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref></type>
+          <declname>Req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Диспетчеризует запрос.</para>
+<para>Если во время диспетчеризации была получена ошибка, отличная от <computeroutput><ref refid="_json_net_rpc_dispatch_table_8h_1a9d5dcdaca3c8ad803b6948fdb3fea631af42788cdaeb2766ed630b945e3740ef0" kindref="member">EJsonNetRpcDispatchErrorKind::UnspecifiedId</ref></computeroutput>, то отправляет соответствующую ошибку указанному в <computeroutput>Req</computeroutput> получателю.</para>
+<para>Отправку ошибок диспетчеризации можно выключить определением символа <computeroutput>JSONNETRPC_DISPATCH_SUPPRESS_ERRORS</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Запрос</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Тип ошибки, полученной при диспетчеризации.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EJsonNetRpcDispatchErrorType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" line="53" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Private/JsonNetRpcDispatchTable.cpp" bodystart="47" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_dispatch_table_1a80e2c36beccf13ff9f3bde4d640e3711" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcDispatchTable::Register</definition>
+        <argsstring>(FString Method, FJsonNetRpcMethodHandler Handler) &amp;</argsstring>
+        <name>Register</name>
+        <qualifiedname>FJsonNetRpcDispatchTable::Register</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Method</declname>
+        </param>
+        <param>
+          <type><ref refid="_json_net_rpc_dispatch_table_8h_1acae888f6ede33ff50b439baf914b99db" kindref="member">FJsonNetRpcMethodHandler</ref></type>
+          <declname>Handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Регистрирует обработчик метода.</para>
+<para>Если обработчик метода с таким названием уже существует, перезаписывает его.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название метода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Обработчик метода</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="_json_net_rpc_dispatch_table_8h_1acae888f6ede33ff50b439baf914b99db" kindref="member">FJsonNetRpcMethodHandler</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_f_json_net_rpc_dispatch_table_1ac7491214e41b66ee8706dd00b9baae74" kindref="member">FJsonNetRpcDispatchTable::Unregister</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" line="67" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Private/JsonNetRpcDispatchTable.cpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_dispatch_table_1ac7491214e41b66ee8706dd00b9baae74" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcDispatchTable::Unregister</definition>
+        <argsstring>(const FString &amp;Method) &amp;</argsstring>
+        <name>Unregister</name>
+        <qualifiedname>FJsonNetRpcDispatchTable::Unregister</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разрегистровывает обработчик метода.</para>
+<para>Удаляет обработчик метода с таким названием.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название метода</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Обработчик метода с таким названием зарегистрирован</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_f_json_net_rpc_dispatch_table_1a80e2c36beccf13ff9f3bde4d640e3711" kindref="member">FJsonNetRpcDispatchTable::Register</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" line="80" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Private/JsonNetRpcDispatchTable.cpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Таблица диспетчеризации методов. </para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" line="34" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcDispatchTable.h" bodystart="35" bodyend="84"/>
+    <listofallmembers>
+      <member refid="struct_f_json_net_rpc_dispatch_table_1a17108f723d3e37d5168631705785f4ce" prot="public" virt="non-virtual"><scope>FJsonNetRpcDispatchTable</scope><name>Dispatch</name></member>
+      <member refid="struct_f_json_net_rpc_dispatch_table_1a6e098c4764a122320ee76b2afd573038" prot="private" virt="non-virtual"><scope>FJsonNetRpcDispatchTable</scope><name>Handlers</name></member>
+      <member refid="struct_f_json_net_rpc_dispatch_table_1a80e2c36beccf13ff9f3bde4d640e3711" prot="public" virt="non-virtual"><scope>FJsonNetRpcDispatchTable</scope><name>Register</name></member>
+      <member refid="struct_f_json_net_rpc_dispatch_table_1ac7491214e41b66ee8706dd00b9baae74" prot="public" virt="non-virtual"><scope>FJsonNetRpcDispatchTable</scope><name>Unregister</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

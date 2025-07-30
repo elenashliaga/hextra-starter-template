@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_meta_files_utils" kind="struct" language="C++" prot="public">
+    <compoundname>FMetaFilesUtils</compoundname>
+    <includes refid="_meta_files_utils_8h" local="no">MetaFilesUtils.h</includes>
+    <innerclass refid="class_f_meta_files_utils_1_1_platform_file_functor" prot="public">FMetaFilesUtils::PlatformFileFunctor</innerclass>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_f_meta_files_utils_1aa42bcb22fa5c113a5c611a3dbf5f1357" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>static TOptional&lt; FString &gt; FMetaFilesUtils::ReadFileContent</definition>
+        <argsstring>(const FString &amp;Path)</argsstring>
+        <name>ReadFileContent</name>
+        <qualifiedname>FMetaFilesUtils::ReadFileContent</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Читает содержимое файла, расположенного по указанному пути</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный путь к файлу для чтения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Опциональная строка, содержащая содержимое файла, или пустой опциональ, если файл не удалось прочитать </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="31" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1aa13c9e690d05e2224503d36bbf9f4a80" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FMetaFilesUtils::ReplaceFileContents</definition>
+        <argsstring>(const FString &amp;FilePath, const FString &amp;NewContent)</argsstring>
+        <name>ReplaceFileContents</name>
+        <qualifiedname>FMetaFilesUtils::ReplaceFileContents</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FilePath</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>NewContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Заменяет содержимое файла, расположенного по указанному пути, предоставленным содержимым</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный путь к файлу для замены </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое содержимое, которое будет записано в файл </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если замена прошла успешно, в противном случае - false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="48" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="48" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1a7ad015a394056d678f3ae50e8912f1eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FMetaFilesUtils::CreateEmptyFile</definition>
+        <argsstring>(const FString &amp;FilePath)</argsstring>
+        <name>CreateEmptyFile</name>
+        <qualifiedname>FMetaFilesUtils::CreateEmptyFile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает пустой файл по указанному пути к файлу.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный путь к создаваемому файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если файл был успешно создан, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="67" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1a06072cc903d58a7bf455f025f3705cd3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TArray&lt; FString &gt; FMetaFilesUtils::FindFilesRecursive</definition>
+        <argsstring>(const TCHAR *StartDirectory, const TArray&lt; FString &gt; &amp;Filenames, bool bFiles, bool bDirectories, bool bClearFileNames=true)</argsstring>
+        <name>FindFilesRecursive</name>
+        <qualifiedname>FMetaFilesUtils::FindFilesRecursive</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TCHAR</ref> *</type>
+          <declname>StartDirectory</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>Filenames</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFiles</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDirectories</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bClearFileNames</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Рекурсивно извлекает файлы или директории из заданной стартовой директории и возвращает их в виде массива.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StartDirectory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Директория, с которой начинается рекурсивный поиск. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Filenames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив имен файлов, которые нужно найти. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Включать ли файлы в поиск. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bDirectories</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Включать ли директории в поиск. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bClearFileNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Следует ли очистить массив имен файлов перед добавлением новых. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив путей к файлам или директориям, соответствующих заданным критериям. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="82" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Private/MetaFilesUtils.cpp" bodystart="3" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1a4f0086b05a92d80f59f77933d38b352d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>static FString FMetaFilesUtils::ConvertRelativePathToGlobal</definition>
+        <argsstring>(const FString &amp;FilePath)</argsstring>
+        <name>ConvertRelativePathToGlobal</name>
+        <qualifiedname>FMetaFilesUtils::ConvertRelativePathToGlobal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конвертирует относительный путь к файлу в глобальный путь к файлу.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь к файлу </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Глобальный путь к файлу после конвертации </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="94" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="94" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1a8b07993ea4e9a748c6e610e11ae0a4b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FMetaFilesUtils::CheckFilePath</definition>
+        <argsstring>(const FString &amp;File, const TFunction&lt; void(const FString &amp;Msg)&gt; &amp;FnLogErrSection, const FString &amp;BadMsgPrefix=TEXT(&quot;Bad file path: &quot;))</argsstring>
+        <name>CheckFilePath</name>
+        <qualifiedname>FMetaFilesUtils::CheckFilePath</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>File</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Msg</ref>)&gt; &amp;</type>
+          <declname>FnLogErrSection</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>BadMsgPrefix</declname>
+          <defval>TEXT(&quot;Bad <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">file</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">path:</ref> &quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, действителен ли данному путь к файлу и существует ли он</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>File</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полный путь к проверяемому файлу </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FnLogErrSection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Функция, которую следует вызвать в случае ошибки, с параметром-строкой </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BadMsgPrefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Префикс для использования в сообщении об ошибке </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если путь к файлу действителен и существует, в противном случае - false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="113" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="113" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1adaf98cebec3335cb6b8ed56c5218ee63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> Functor</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_f_meta_files_utils_1_1_platform_file_functor" kindref="compound">PlatformFileFunctor</ref>&lt; Functor &gt;</type>
+        <definition>static PlatformFileFunctor&lt; Functor &gt; FMetaFilesUtils::MakeDirectoryVisitor</definition>
+        <argsstring>(Functor &amp;&amp;FunctorInstance)</argsstring>
+        <name>MakeDirectoryVisitor</name>
+        <qualifiedname>FMetaFilesUtils::MakeDirectoryVisitor</qualifiedname>
+        <param>
+          <type>Functor &amp;&amp;</type>
+          <declname>FunctorInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает посетителя, который может быть использован с методом <computeroutput>FindFiles</computeroutput>, позволяя обрабатывать файлы в указанной директории.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FunctorInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Экземпляр функтора или лямбда-функции, который будет вызываться для каждого посещенного файла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <computeroutput><ref refid="class_f_meta_files_utils_1_1_platform_file_functor" kindref="compound">PlatformFileFunctor</ref></computeroutput>, который можно использовать в качестве посетителя с методом <computeroutput>FindFiles</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="149" column="36" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1a96a3c1238fa9645655acfbab346f3548" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FMetaFilesUtils::FindFiles</definition>
+        <argsstring>(const FString &amp;FullPathOfDir, const TFunction&lt; void(const FString &amp;File)&gt; &amp;FoundFileProcessor, const FString &amp;FilterByExtension=&quot;&quot;, const bool bRecursive=true)</argsstring>
+        <name>FindFiles</name>
+        <qualifiedname>FMetaFilesUtils::FindFiles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FullPathOfDir</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;File)&gt; &amp;</type>
+          <declname>FoundFileProcessor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FilterByExtension</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bRecursive</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод рекурсивно ищет все файлы, возможно с заданным расширением Пример WalkDirectories(&quot;/Some/Path/&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FullPathOfDir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь, начиная с которого надо искать файлы <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FoundFileProcessor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ф-ия, которая вызывается с каждым найденным файлом </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FilterByExtension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Расширение по которому надо фильтровать с &quot;.&quot; вначале </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bRecursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True - если успешно совершён обход, False - если что-то пошло не так </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="163" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="163" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_files_utils_1ae95ba1fc76da319344d055126d41a4e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void FMetaFilesUtils::DownloadFile</definition>
+        <argsstring>(const FString &amp;Url, const FString &amp;SavePath)</argsstring>
+        <name>DownloadFile</name>
+        <qualifiedname>FMetaFilesUtils::DownloadFile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>SavePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="189" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="189" bodyend="227"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" line="20" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaFilesUtils.h" bodystart="21" bodyend="228"/>
+    <listofallmembers>
+      <member refid="struct_f_meta_files_utils_1a8b07993ea4e9a748c6e610e11ae0a4b2" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>CheckFilePath</name></member>
+      <member refid="struct_f_meta_files_utils_1a4f0086b05a92d80f59f77933d38b352d" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>ConvertRelativePathToGlobal</name></member>
+      <member refid="struct_f_meta_files_utils_1a7ad015a394056d678f3ae50e8912f1eb" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>CreateEmptyFile</name></member>
+      <member refid="struct_f_meta_files_utils_1ae95ba1fc76da319344d055126d41a4e8" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>DownloadFile</name></member>
+      <member refid="struct_f_meta_files_utils_1a96a3c1238fa9645655acfbab346f3548" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>FindFiles</name></member>
+      <member refid="struct_f_meta_files_utils_1a06072cc903d58a7bf455f025f3705cd3" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>FindFilesRecursive</name></member>
+      <member refid="struct_f_meta_files_utils_1adaf98cebec3335cb6b8ed56c5218ee63" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>MakeDirectoryVisitor</name></member>
+      <member refid="struct_f_meta_files_utils_1aa42bcb22fa5c113a5c611a3dbf5f1357" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>ReadFileContent</name></member>
+      <member refid="struct_f_meta_files_utils_1aa13c9e690d05e2224503d36bbf9f4a80" prot="public" virt="non-virtual"><scope>FMetaFilesUtils</scope><name>ReplaceFileContents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

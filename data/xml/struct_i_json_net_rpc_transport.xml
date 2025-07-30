@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_i_json_net_rpc_transport" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>IJsonNetRpcTransport</compoundname>
+    <derivedcompoundref refid="struct_f_json_net_rpc_round_tripper" prot="public" virt="non-virtual">FJsonNetRpcRoundTripper</derivedcompoundref>
+    <derivedcompoundref refid="struct_u_meta_pixel_streaming_input_1_1_f_meta_json_net_rpc_pixel_streaming_transport" prot="public" virt="non-virtual">UMetaPixelStreamingInput::FMetaJsonNetRpcPixelStreamingTransport</derivedcompoundref>
+    <includes refid="_json_net_rpc_transport_8h" local="no">JsonNetRpcTransport.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_i_json_net_rpc_transport_1aac2faee607c09e2a0dec84fbb7d0586f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IJsonNetRpcTransport::~IJsonNetRpcTransport</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IJsonNetRpcTransport</name>
+        <qualifiedname>IJsonNetRpcTransport::~IJsonNetRpcTransport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" line="19" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_i_json_net_rpc_transport_1a373660932d063362f55b3a8ba8f5d8e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IJsonNetRpcTransport::SendRpcObject</definition>
+        <argsstring>(FJsonNetRpcObject Object)=0</argsstring>
+        <name>SendRpcObject</name>
+        <qualifiedname>IJsonNetRpcTransport::SendRpcObject</qualifiedname>
+        <reimplementedby refid="struct_f_json_net_rpc_round_tripper_1a949ca19965ae21a00437cd850d1868b1">SendRpcObject</reimplementedby>
+        <reimplementedby refid="struct_u_meta_pixel_streaming_input_1_1_f_meta_json_net_rpc_pixel_streaming_transport_1a080e9ba22cc5a984b25a2d5df113f9a0">SendRpcObject</reimplementedby>
+        <param>
+          <type>FJsonNetRpcObject</type>
+          <declname>Object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отправляет данный RPC-объект. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" line="24" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_i_json_net_rpc_transport_1a00f46b9abdf2f485b12a3b93ffd4860a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APlayerState</ref> *</type>
+        <definition>virtual APlayerState * IJsonNetRpcTransport::GetTransportPlayerState</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTransportPlayerState</name>
+        <qualifiedname>IJsonNetRpcTransport::GetTransportPlayerState</qualifiedname>
+        <reimplementedby refid="struct_f_json_net_rpc_round_tripper_1ae30e848c8117abb1f34315bbfe0b9898">GetTransportPlayerState</reimplementedby>
+        <reimplementedby refid="struct_u_meta_pixel_streaming_input_1_1_f_meta_json_net_rpc_pixel_streaming_transport_1ade48c008995fbf7c8fe9cc9471c5f26b">GetTransportPlayerState</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает соответствующего данному транспорту состояние игрока.</para>
+<para><simplesect kind="note"><para>Данному транспорту может не быть сопоставлено состояние игрока. Соответственно, может быть возвращен нулевой указатель. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" line="33" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_i_json_net_rpc_transport_1a756de29a2bf70f5783b8e64afa058a56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APlayerState</ref> *</type>
+        <definition>const APlayerState * IJsonNetRpcTransport::GetTransportPlayerState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTransportPlayerState</name>
+        <qualifiedname>IJsonNetRpcTransport::GetTransportPlayerState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает соответствующего данному транспорту константное состояние игрока.</para>
+<para><simplesect kind="note"><para>Данному транспорту может не быть сопоставлено состояние игрока. Соответственно, может быть возвращен нулевой указатель. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" line="42" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Транспорт JSON-RPC.</para>
+<para>Данный транспорт используется для отправки сообщений из <computeroutput><ref refid="struct_t_json_net_rpc_message" kindref="compound">TJsonNetRpcMessage</ref></computeroutput>.</para>
+<para><simplesect kind="note"><para>В будущем может потребоваться возможность использовать данный транспорт как для отправки сообщений, так и для их получения; например, для моделирования многопользовательских приложений.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_t_json_net_rpc_message" kindref="compound">TJsonNetRpcMessage</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FJsonNetRpcRoundTripper</label>
+        <link refid="struct_f_json_net_rpc_round_tripper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IJsonNetRpcTransport</label>
+        <link refid="struct_i_json_net_rpc_transport"/>
+      </node>
+      <node id="3">
+        <label>UMetaPixelStreamingInput::FMetaJsonNetRpcPixelStreamingTransport</label>
+        <link refid="struct_u_meta_pixel_streaming_input_1_1_f_meta_json_net_rpc_pixel_streaming_transport"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" line="17" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcTransport.h" bodystart="18" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct_i_json_net_rpc_transport_1a00f46b9abdf2f485b12a3b93ffd4860a" prot="public" virt="pure-virtual"><scope>IJsonNetRpcTransport</scope><name>GetTransportPlayerState</name></member>
+      <member refid="struct_i_json_net_rpc_transport_1a756de29a2bf70f5783b8e64afa058a56" prot="public" virt="non-virtual"><scope>IJsonNetRpcTransport</scope><name>GetTransportPlayerState</name></member>
+      <member refid="struct_i_json_net_rpc_transport_1a373660932d063362f55b3a8ba8f5d8e0" prot="public" virt="pure-virtual"><scope>IJsonNetRpcTransport</scope><name>SendRpcObject</name></member>
+      <member refid="struct_i_json_net_rpc_transport_1aac2faee607c09e2a0dec84fbb7d0586f" prot="public" virt="virtual"><scope>IJsonNetRpcTransport</scope><name>~IJsonNetRpcTransport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

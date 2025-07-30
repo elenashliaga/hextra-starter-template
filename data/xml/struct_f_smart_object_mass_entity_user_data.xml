@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_smart_object_mass_entity_user_data" kind="struct" language="C++" prot="public">
+    <compoundname>FSmartObjectMassEntityUserData</compoundname>
+    <includes refid="_mass_smart_object_types_8h" local="no">MassSmartObjectTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_smart_object_mass_entity_user_data_1a86fe1ae2e97bb9dbbcc106d5817c162f" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+        <definition>FMassEntityHandle FSmartObjectMassEntityUserData::UserEntity</definition>
+        <argsstring></argsstring>
+        <name>UserEntity</name>
+        <qualifiedname>FSmartObjectMassEntityUserData::UserEntity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" line="66" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_smart_object_mass_entity_user_data_1a68a14b20cf22257b6e5a755da96b62a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FSmartObjectMassEntityUserData::FSmartObjectMassEntityUserData</definition>
+        <argsstring>()=default</argsstring>
+        <name>FSmartObjectMassEntityUserData</name>
+        <qualifiedname>FSmartObjectMassEntityUserData::FSmartObjectMassEntityUserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_smart_object_mass_entity_user_data_1a46b65ef06fb566fb3d182b8b00fc4cfd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FSmartObjectMassEntityUserData::FSmartObjectMassEntityUserData</definition>
+        <argsstring>(const FMassEntityHandle InEntityHandle)</argsstring>
+        <name>FSmartObjectMassEntityUserData</name>
+        <qualifiedname>FSmartObjectMassEntityUserData::FSmartObjectMassEntityUserData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>InEntityHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" line="63" column="10" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Struct that can be used to pass data to the find or filtering methods. Properties will be used as external data to fill values expected by the world condition schema specified by the smart object definition. e.g. FilterSlotsBySelectionConditions(SlotHandles, FConstStructView::Make(FSmartObjectMassEntityUserData(Entity)));</para>
+<para>It can be inherited from to provide additional data to another world condition schema inheriting from USmartObjectWorldConditionSchema. e.g. <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCLASS()</ref> class USmartObjectWorldConditionExtendedSchema : public USmartObjectWorldConditionSchema { ... <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USmartObjectWorldConditionExtendedSchema(const FObjectInitializer&amp; ObjectInitializer)</ref> : Super(ObjectInitializer) { OtherEntityRef = AddContextDataDesc(TEXT(&quot;OtherEntity&quot;), FMassEntityHandle::StaticStruct(), EWorldConditionContextDataType::Dynamic); }</para>
+<para>FWorldConditionContextDataRef OtherEntityRef; };</para>
+<para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USTRUCT()</ref> struct FSmartObjectMassEntityExtendedUserData : public <ref refid="struct_f_smart_object_mass_entity_user_data" kindref="compound">FSmartObjectMassEntityUserData</ref> { UPROPERTY() FMassEntityHandle OtherEntity; }</para>
+<para>The struct can also be used to be added to a Smart Object slot when it gets claimed. e.g. Claim(SlotHandle, FConstStructView::Make(FSmartObjectMassEntityUserData(Entity))); </para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" line="58" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectTypes.h" bodystart="59" bodyend="67"/>
+    <listofallmembers>
+      <member refid="struct_f_smart_object_mass_entity_user_data_1a68a14b20cf22257b6e5a755da96b62a5" prot="public" virt="non-virtual"><scope>FSmartObjectMassEntityUserData</scope><name>FSmartObjectMassEntityUserData</name></member>
+      <member refid="struct_f_smart_object_mass_entity_user_data_1a46b65ef06fb566fb3d182b8b00fc4cfd" prot="public" virt="non-virtual"><scope>FSmartObjectMassEntityUserData</scope><name>FSmartObjectMassEntityUserData</name></member>
+      <member refid="struct_f_smart_object_mass_entity_user_data_1a86fe1ae2e97bb9dbbcc106d5817c162f" prot="public" virt="non-virtual"><scope>FSmartObjectMassEntityUserData</scope><name>UserEntity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

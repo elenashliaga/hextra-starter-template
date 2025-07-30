@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_f_t_c_p_server" kind="class" language="C++" prot="public">
+    <compoundname>FTCPServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FRunnable</basecompoundref>
+    <includes refid="_t_c_p_server_8h" local="no">TCPServer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a37bd1ec5a9e952bd11f6328fa296b8d6" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> *</type>
+        <definition>FSocket* FTCPServer::ListenerSocket</definition>
+        <argsstring></argsstring>
+        <name>ListenerSocket</name>
+        <qualifiedname>FTCPServer::ListenerSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="33" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a88f9b899a9d8d5ff2d4c03663ee1e967" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString FTCPServer::LocalHostIP</definition>
+        <argsstring></argsstring>
+        <name>LocalHostIP</name>
+        <qualifiedname>FTCPServer::LocalHostIP</qualifiedname>
+        <initializer>= &quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="34" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1adeda058078c510cb855fe2711cbaf586" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 FTCPServer::PortNum</definition>
+        <argsstring></argsstring>
+        <name>PortNum</name>
+        <qualifiedname>FTCPServer::PortNum</qualifiedname>
+        <initializer>= 13429</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="35" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a139f4f56e12e652431de8a302ef1ffc3" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 FTCPServer::ConnectionTimeout</definition>
+        <argsstring></argsstring>
+        <name>ConnectionTimeout</name>
+        <qualifiedname>FTCPServer::ConnectionTimeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="36" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1aef18ca82a4d9337eb7fe7ca109cfb6e2" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> * &gt;</type>
+        <definition>TArray&lt;class FSocket*&gt; FTCPServer::Clients</definition>
+        <argsstring></argsstring>
+        <name>Clients</name>
+        <qualifiedname>FTCPServer::Clients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="37" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a7610a2c40dc3cc46e93a71ed0f703d54" prot="public" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TQueue&lt; FString &gt; FTCPServer::ImportQueue</definition>
+        <argsstring></argsstring>
+        <name>ImportQueue</name>
+        <qualifiedname>FTCPServer::ImportQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="40" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a81faa0281c24f954f77ab39b08292e57" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> *, EQueueMode::Mpsc &gt;</type>
+        <definition>TQueue&lt;class FSocket*, EQueueMode::Mpsc&gt; FTCPServer::PendingClients</definition>
+        <argsstring></argsstring>
+        <name>PendingClients</name>
+        <qualifiedname>FTCPServer::PendingClients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="43" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a024e700883b9b2b93558122c4f944480" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FTCPServer::Stopping</definition>
+        <argsstring></argsstring>
+        <name>Stopping</name>
+        <qualifiedname>FTCPServer::Stopping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="44" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1a1c3679fe274303ff52f2c90ea1920d50" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRunnableThread</ref> *</type>
+        <definition>FRunnableThread* FTCPServer::ClientThread</definition>
+        <argsstring></argsstring>
+        <name>ClientThread</name>
+        <qualifiedname>FTCPServer::ClientThread</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="45" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1ac32890702543b4490fea9eb992024e9b" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTcpListener</ref> *</type>
+        <definition>class FTcpListener* FTCPServer::Listener</definition>
+        <argsstring></argsstring>
+        <name>Listener</name>
+        <qualifiedname>FTCPServer::Listener</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="46" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_t_c_p_server_1ab469b390d149650b5b0d49dab08911f6" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TArray&lt;int32&gt; FTCPServer::ConnectionTimer</definition>
+        <argsstring></argsstring>
+        <name>ConnectionTimer</name>
+        <qualifiedname>FTCPServer::ConnectionTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="47" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_f_t_c_p_server_1a780aeade990d8e200aeb3df2c66207e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FTCPServer::FTCPServer</definition>
+        <argsstring>()</argsstring>
+        <name>FTCPServer</name>
+        <qualifiedname>FTCPServer::FTCPServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1abf6a1e152233b2faa2d8e1a6f3757b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FTCPServer::~FTCPServer</definition>
+        <argsstring>()</argsstring>
+        <name>~FTCPServer</name>
+        <qualifiedname>FTCPServer::~FTCPServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="20" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp" bodystart="49" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1ad4c9dd568e71de994784214de887f679" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FTCPServer::Init</definition>
+        <argsstring>() override</argsstring>
+        <name>Init</name>
+        <qualifiedname>FTCPServer::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="21" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1ab7455cece496cf3172f6e4dc62849a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 FTCPServer::Run</definition>
+        <argsstring>() override</argsstring>
+        <name>Run</name>
+        <qualifiedname>FTCPServer::Run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="22" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1a57aafc391579af8d72f69a9920dab6a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void FTCPServer::Stop</definition>
+        <argsstring>() override</argsstring>
+        <name>Stop</name>
+        <qualifiedname>FTCPServer::Stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="24" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1a149dea3de2bcb6446b9820e3db9217c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTCPServer::RecvMessage</definition>
+        <argsstring>(FSocket *Socket, uint32 DataSize, FString &amp;Message)</argsstring>
+        <name>RecvMessage</name>
+        <qualifiedname>FTCPServer::RecvMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> *</type>
+          <declname>Socket</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>DataSize</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="30" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1a791bc03e0f7aac6b0de151e0c65df26b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTCPServer::HandleListenerConnectionAccepted</definition>
+        <argsstring>(class FSocket *ClientSocket, const FIPv4Endpoint &amp;ClientEndpoint)</argsstring>
+        <name>HandleListenerConnectionAccepted</name>
+        <qualifiedname>FTCPServer::HandleListenerConnectionAccepted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> *</type>
+          <declname>ClientSocket</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIPv4Endpoint</ref> &amp;</type>
+          <declname>ClientEndpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="31" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/TCPServer.cpp" bodystart="98" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_t_c_p_server_1a6f320e8fe6f8b2fd065a4fc9223baff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FTCPServer::HandleIncomingSocket</definition>
+        <argsstring>(FSocket *IncomingConnection)</argsstring>
+        <name>HandleIncomingSocket</name>
+        <qualifiedname>FTCPServer::HandleIncomingSocket</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSocket</ref> *</type>
+          <declname>IncomingConnection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="39" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+      <node id="1">
+        <label>FTCPServer</label>
+        <link refid="class_f_t_c_p_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+      <node id="1">
+        <label>FTCPServer</label>
+        <link refid="class_f_t_c_p_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Public/TCPServer.h" bodystart="16" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_f_t_c_p_server_1aef18ca82a4d9337eb7fe7ca109cfb6e2" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>Clients</name></member>
+      <member refid="class_f_t_c_p_server_1a1c3679fe274303ff52f2c90ea1920d50" prot="private" virt="non-virtual"><scope>FTCPServer</scope><name>ClientThread</name></member>
+      <member refid="class_f_t_c_p_server_1a139f4f56e12e652431de8a302ef1ffc3" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>ConnectionTimeout</name></member>
+      <member refid="class_f_t_c_p_server_1ab469b390d149650b5b0d49dab08911f6" prot="private" virt="non-virtual"><scope>FTCPServer</scope><name>ConnectionTimer</name></member>
+      <member refid="class_f_t_c_p_server_1a780aeade990d8e200aeb3df2c66207e8" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>FTCPServer</name></member>
+      <member refid="class_f_t_c_p_server_1a6f320e8fe6f8b2fd065a4fc9223baff6" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>HandleIncomingSocket</name></member>
+      <member refid="class_f_t_c_p_server_1a791bc03e0f7aac6b0de151e0c65df26b" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>HandleListenerConnectionAccepted</name></member>
+      <member refid="class_f_t_c_p_server_1a7610a2c40dc3cc46e93a71ed0f703d54" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>ImportQueue</name></member>
+      <member refid="class_f_t_c_p_server_1ad4c9dd568e71de994784214de887f679" prot="public" virt="virtual"><scope>FTCPServer</scope><name>Init</name></member>
+      <member refid="class_f_t_c_p_server_1ac32890702543b4490fea9eb992024e9b" prot="private" virt="non-virtual"><scope>FTCPServer</scope><name>Listener</name></member>
+      <member refid="class_f_t_c_p_server_1a37bd1ec5a9e952bd11f6328fa296b8d6" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>ListenerSocket</name></member>
+      <member refid="class_f_t_c_p_server_1a88f9b899a9d8d5ff2d4c03663ee1e967" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>LocalHostIP</name></member>
+      <member refid="class_f_t_c_p_server_1a81faa0281c24f954f77ab39b08292e57" prot="private" virt="non-virtual"><scope>FTCPServer</scope><name>PendingClients</name></member>
+      <member refid="class_f_t_c_p_server_1adeda058078c510cb855fe2711cbaf586" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>PortNum</name></member>
+      <member refid="class_f_t_c_p_server_1a149dea3de2bcb6446b9820e3db9217c9" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>RecvMessage</name></member>
+      <member refid="class_f_t_c_p_server_1ab7455cece496cf3172f6e4dc62849a6c" prot="public" virt="virtual"><scope>FTCPServer</scope><name>Run</name></member>
+      <member refid="class_f_t_c_p_server_1a57aafc391579af8d72f69a9920dab6a7" prot="public" virt="virtual"><scope>FTCPServer</scope><name>Stop</name></member>
+      <member refid="class_f_t_c_p_server_1a024e700883b9b2b93558122c4f944480" prot="private" virt="non-virtual"><scope>FTCPServer</scope><name>Stopping</name></member>
+      <member refid="class_f_t_c_p_server_1abf6a1e152233b2faa2d8e1a6f3757b28" prot="public" virt="non-virtual"><scope>FTCPServer</scope><name>~FTCPServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

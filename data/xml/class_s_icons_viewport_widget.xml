@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_s_icons_viewport_widget" kind="class" language="C++" prot="public">
+    <compoundname>SIconsViewportWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SRetainerWidget</basecompoundref>
+    <includes refid="_icons_viewport_widget_8h" local="no">IconsViewportWidget.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a091b74330489aa8144a2daafa0f3d65c" prot="protected" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FThreadSafeBool</ref></type>
+        <definition>FThreadSafeBool SIconsViewportWidget::bLocked</definition>
+        <argsstring></argsstring>
+        <name>bLocked</name>
+        <qualifiedname>SIconsViewportWidget::bLocked</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="92" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1af2ded12c28922abd3abf39142fd4ae05" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SConstraintCanvas</ref> &gt;</type>
+        <definition>TSharedPtr&lt;SConstraintCanvas&gt; SIconsViewportWidget::IconsOverlay</definition>
+        <argsstring></argsstring>
+        <name>IconsOverlay</name>
+        <qualifiedname>SIconsViewportWidget::IconsOverlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="144" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a18920ee6a30f193bf3e085d29adc2810" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icon_s_widget" kindref="compound">SIconSWidget</ref> &gt; &gt;</type>
+        <definition>TSet&lt;TSharedPtr&lt;SIconSWidget&gt; &gt; SIconsViewportWidget::IconsContainers</definition>
+        <argsstring></argsstring>
+        <name>IconsContainers</name>
+        <qualifiedname>SIconsViewportWidget::IconsContainers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="145" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a92b7b4847043d194377b946252087bf0" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_render_info" kindref="compound">FIconRenderInfo</ref> &gt; &gt;</type>
+        <definition>TSharedPtr&lt;TArray&lt;FIconRenderInfo&gt; &gt; SIconsViewportWidget::IconRenderSettings</definition>
+        <argsstring></argsstring>
+        <name>IconRenderSettings</name>
+        <qualifiedname>SIconsViewportWidget::IconRenderSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="146" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a84735b3f8b64a77638458f6cb5fc10fc" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icon_s_widget" kindref="compound">SIconSWidget</ref> &gt; &gt;</type>
+        <definition>TQueue&lt;TSharedPtr&lt;SIconSWidget&gt; &gt; SIconsViewportWidget::FreeContainers</definition>
+        <argsstring></argsstring>
+        <name>FreeContainers</name>
+        <qualifiedname>SIconsViewportWidget::FreeContainers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="147" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a1f57dbc527f9be41b342c17b48950184" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection SIconsViewportWidget::IconsUpdateMutex</definition>
+        <argsstring></argsstring>
+        <name>IconsUpdateMutex</name>
+        <qualifiedname>SIconsViewportWidget::IconsUpdateMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="149" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a620e9538f2868f3d56f96171667cc46f" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        <definition>constexpr FGuid SIconsViewportWidget::EmptyGuid</definition>
+        <argsstring></argsstring>
+        <name>EmptyGuid</name>
+        <qualifiedname>SIconsViewportWidget::EmptyGuid</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="151" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1aabed82b084651da03bf38afa85caff55" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float SIconsViewportWidget::OpacityStep</definition>
+        <argsstring></argsstring>
+        <name>OpacityStep</name>
+        <qualifiedname>SIconsViewportWidget::OpacityStep</qualifiedname>
+        <initializer>= 0.06<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="152" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a6619b6f3b9262386616d488fda7e24f1" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>constexpr float SIconsViewportWidget::MinimalOpacity</definition>
+        <argsstring></argsstring>
+        <name>MinimalOpacity</name>
+        <qualifiedname>SIconsViewportWidget::MinimalOpacity</qualifiedname>
+        <initializer>= 0.2<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="153" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_icons_viewport_widget_1a7283627348fec0c251e151945448580d" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 SIconsViewportWidget::OneLayoutTimeout</definition>
+        <argsstring></argsstring>
+        <name>OneLayoutTimeout</name>
+        <qualifiedname>SIconsViewportWidget::OneLayoutTimeout</qualifiedname>
+        <initializer>= 35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="154" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a449939f7dca1f600c09701f4a68442cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SIconsViewportWidget::SLATE_BEGIN_ARGS</definition>
+        <argsstring>(SIconsViewportWidget)</argsstring>
+        <name>SLATE_BEGIN_ARGS</name>
+        <qualifiedname>SIconsViewportWidget::SLATE_BEGIN_ARGS</qualifiedname>
+        <param>
+          <type><ref refid="class_s_icons_viewport_widget" kindref="compound">SIconsViewportWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="29" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a74d6e124d8510bfab55842bdbf668213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void SIconsViewportWidget::Construct</definition>
+        <argsstring>(const FArguments &amp;InArgs)</argsstring>
+        <name>Construct</name>
+        <qualifiedname>SIconsViewportWidget::Construct</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FArguments</ref> &amp;</type>
+          <declname>InArgs</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор, базовые настройки виджета </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>набор параметров slate-виджета</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="6" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a76d29f4adf6849a2848deb4be25ad67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SIconsViewportWidget::~SIconsViewportWidget</definition>
+        <argsstring>() override</argsstring>
+        <name>~SIconsViewportWidget</name>
+        <qualifiedname>SIconsViewportWidget::~SIconsViewportWidget</qualifiedname>
+        <briefdescription>
+<para>Стандартный деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="60" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1ad041aa8f68a87472d1c3b2e42f8e0d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void SIconsViewportWidget::DrawProjections</definition>
+        <argsstring>(const TMap&lt; FGuid, FProxyIconDataToDraw &gt; &amp;ProxyDataMap, const TArray&lt; FGuid &gt; &amp;ProxyDataMapToHide, const FCameraOptions &amp;CameraOptions, bool bFreeze)</argsstring>
+        <name>DrawProjections</name>
+        <qualifiedname>SIconsViewportWidget::DrawProjections</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &gt; &amp;</type>
+          <declname>ProxyDataMap</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>ProxyDataMapToHide</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_camera_options" kindref="compound">FCameraOptions</ref> &amp;</type>
+          <declname>CameraOptions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFreeze</declname>
+        </param>
+        <briefdescription>
+<para>Отрисовывает массив проекций на экране пользователя </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProxyDataMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Таблица соответствий Guid -&gt; прокси-объект проекции для рендеринга </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProxyDataMapToHide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>обьекты, чьи Guid надо убрать </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFreeze</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нужно ли замораживать отрисовку на несколько кадров </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CameraOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки камеры пользователя и его экрана</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="72" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="42" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1ad29ea558e36b2ac33d0b7bd9de529939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void SIconsViewportWidget::ClearProjections</definition>
+        <argsstring>()</argsstring>
+        <name>ClearProjections</name>
+        <qualifiedname>SIconsViewportWidget::ClearProjections</qualifiedname>
+        <briefdescription>
+<para>Очищает весь массив проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="82" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="114" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a005e6cdcb19767de0dea690c592a2235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void SIconsViewportWidget::HideProjections</definition>
+        <argsstring>(const TArray&lt; FGuid &gt; &amp;ProxyDataMapToHide)</argsstring>
+        <name>HideProjections</name>
+        <qualifiedname>SIconsViewportWidget::HideProjections</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>ProxyDataMapToHide</declname>
+        </param>
+        <briefdescription>
+<para>Очищает весь массив проекций </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="89" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="129" bodyend="157"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1afba0b8e0c4a9b30d1a7eb8a791ed41f9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 SIconsViewportWidget::OnPaint</definition>
+        <argsstring>(const FPaintArgs &amp;Args, const FGeometry &amp;AllottedGeometry, const FSlateRect &amp;MyCullingRect, FSlateWindowElementList &amp;OutDrawElements, int32 LayerId, const FWidgetStyle &amp;InWidgetStyle, bool bParentEnabled) const override</argsstring>
+        <name>OnPaint</name>
+        <qualifiedname>SIconsViewportWidget::OnPaint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPaintArgs</ref> &amp;</type>
+          <declname>Args</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGeometry</ref> &amp;</type>
+          <declname>AllottedGeometry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSlateRect</ref> &amp;</type>
+          <declname>MyCullingRect</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSlateWindowElementList</ref> &amp;</type>
+          <declname>OutDrawElements</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>LayerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FWidgetStyle</ref> &amp;</type>
+          <declname>InWidgetStyle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bParentEnabled</declname>
+        </param>
+        <briefdescription>
+<para>Переопределение стандартной функции, в которой после отрисовки виджета отпускается блокировка его ресурсов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int32 Последний отрисованный слой </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="99" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="159" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a3262ef68c37f03cbd42f3bca00a7dcd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SIconsViewportWidget::HideWidget</definition>
+        <argsstring>(const TArray&lt; FGuid &gt; &amp;ProxyDataToHide, const TSharedPtr&lt; SIconSWidget &gt; &amp;IconPlaceholder)</argsstring>
+        <name>HideWidget</name>
+        <qualifiedname>SIconsViewportWidget::HideWidget</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>ProxyDataToHide</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icon_s_widget" kindref="compound">SIconSWidget</ref> &gt; &amp;</type>
+          <declname>IconPlaceholder</declname>
+        </param>
+        <briefdescription>
+<para>Скрывает виджет, если его GUID помечен к удалению </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ProxyDataToHide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>массив GUID помеченных к удалению </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IconPlaceholder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>виджет</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="116" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="174" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1aa2d6cb11f5be09643683b151d2c9843b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void SIconsViewportWidget::UpdateActiveWidget</definition>
+        <argsstring>(const TSharedPtr&lt; SIconSWidget &gt; &amp;IconPlaceholder, const FProxyIconDataToDraw &amp;Proxy, float MetaScale, int UntouchedLayoutFrames) const</argsstring>
+        <name>UpdateActiveWidget</name>
+        <qualifiedname>SIconsViewportWidget::UpdateActiveWidget</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icon_s_widget" kindref="compound">SIconSWidget</ref> &gt; &amp;</type>
+          <declname>IconPlaceholder</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref> &amp;</type>
+          <declname>Proxy</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>MetaScale</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>UntouchedLayoutFrames</declname>
+        </param>
+        <briefdescription>
+<para>Обновлеяет конкретный виджет, а именно его информацию </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IconPlaceholder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Виджет </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация к обновлению </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MetaScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>корректный DPI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UntouchedLayoutFrames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>время простоя виджета (на экране)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="128" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="193" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_icons_viewport_widget_1a7a904e569f0bd5fd2434c42ecfc6c9be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_icon_s_widget" kindref="compound">SIconSWidget</ref> &gt;</type>
+        <definition>TSharedPtr&lt; SIconSWidget &gt; SIconsViewportWidget::DrawNewWidget</definition>
+        <argsstring>(const FGuid &amp;Guid, const FProxyIconDataToDraw ProxyIconData, float MetaScale)</argsstring>
+        <name>DrawNewWidget</name>
+        <qualifiedname>SIconsViewportWidget::DrawNewWidget</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Guid</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_proxy_icon_data_to_draw" kindref="compound">FProxyIconDataToDraw</ref></type>
+          <declname>ProxyIconData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>MetaScale</declname>
+        </param>
+        <briefdescription>
+<para>Рисует новый виджет на экране (заполняет созданный ранее) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Guid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID нового виджета </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MetaScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>корректный DPI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ProxyIconData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация к созданию</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="142" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/IconsViewportWidget.cpp" bodystart="219" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SIconsViewportWidget</label>
+        <link refid="class_s_icons_viewport_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SRetainerWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SIconsViewportWidget</label>
+        <link refid="class_s_icons_viewport_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SRetainerWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" line="26" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/IconsViewportWidget.h" bodystart="27" bodyend="155"/>
+    <listofallmembers>
+      <member refid="class_s_icons_viewport_widget_1a091b74330489aa8144a2daafa0f3d65c" prot="protected" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>bLocked</name></member>
+      <member refid="class_s_icons_viewport_widget_1ad29ea558e36b2ac33d0b7bd9de529939" prot="public" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>ClearProjections</name></member>
+      <member refid="class_s_icons_viewport_widget_1a74d6e124d8510bfab55842bdbf668213" prot="public" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>Construct</name></member>
+      <member refid="class_s_icons_viewport_widget_1a7a904e569f0bd5fd2434c42ecfc6c9be" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>DrawNewWidget</name></member>
+      <member refid="class_s_icons_viewport_widget_1ad041aa8f68a87472d1c3b2e42f8e0d66" prot="public" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>DrawProjections</name></member>
+      <member refid="class_s_icons_viewport_widget_1a620e9538f2868f3d56f96171667cc46f" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>EmptyGuid</name></member>
+      <member refid="class_s_icons_viewport_widget_1a84735b3f8b64a77638458f6cb5fc10fc" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>FreeContainers</name></member>
+      <member refid="class_s_icons_viewport_widget_1a005e6cdcb19767de0dea690c592a2235" prot="public" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>HideProjections</name></member>
+      <member refid="class_s_icons_viewport_widget_1a3262ef68c37f03cbd42f3bca00a7dcd4" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>HideWidget</name></member>
+      <member refid="class_s_icons_viewport_widget_1a92b7b4847043d194377b946252087bf0" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>IconRenderSettings</name></member>
+      <member refid="class_s_icons_viewport_widget_1a18920ee6a30f193bf3e085d29adc2810" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>IconsContainers</name></member>
+      <member refid="class_s_icons_viewport_widget_1af2ded12c28922abd3abf39142fd4ae05" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>IconsOverlay</name></member>
+      <member refid="class_s_icons_viewport_widget_1a1f57dbc527f9be41b342c17b48950184" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>IconsUpdateMutex</name></member>
+      <member refid="class_s_icons_viewport_widget_1a6619b6f3b9262386616d488fda7e24f1" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>MinimalOpacity</name></member>
+      <member refid="class_s_icons_viewport_widget_1a7283627348fec0c251e151945448580d" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>OneLayoutTimeout</name></member>
+      <member refid="class_s_icons_viewport_widget_1afba0b8e0c4a9b30d1a7eb8a791ed41f9" prot="protected" virt="virtual"><scope>SIconsViewportWidget</scope><name>OnPaint</name></member>
+      <member refid="class_s_icons_viewport_widget_1aabed82b084651da03bf38afa85caff55" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>OpacityStep</name></member>
+      <member refid="class_s_icons_viewport_widget_1a449939f7dca1f600c09701f4a68442cf" prot="public" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>SLATE_BEGIN_ARGS</name></member>
+      <member refid="class_s_icons_viewport_widget_1aa2d6cb11f5be09643683b151d2c9843b" prot="private" virt="non-virtual"><scope>SIconsViewportWidget</scope><name>UpdateActiveWidget</name></member>
+      <member refid="class_s_icons_viewport_widget_1a76d29f4adf6849a2848deb4be25ad67a" prot="public" virt="virtual"><scope>SIconsViewportWidget</scope><name>~SIconsViewportWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

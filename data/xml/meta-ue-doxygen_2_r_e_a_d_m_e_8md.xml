@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="meta-ue-doxygen_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Запуск<sp/>проекта<sp/>Unreal<sp/>Engine</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**META<sp/>Core**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**1.<sp/>Загрузка<sp/>проекта<sp/>с<sp/>использованием<sp/>Git<sp/>LFS**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Проект<sp/>использует<sp/>Git<sp/>Large<sp/>File<sp/>Storage(LFS)для<sp/>управления<sp/>объемными<sp/>файлами.<sp/>Убедитесь,<sp/>что<sp/>у<sp/>вас<sp/>установлен<sp/>Git<sp/>LFS</highlight></codeline>
+<codeline><highlight class="normal">перед<sp/>клонированием<sp/>проекта.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Установка<sp/>Git<sp/>LFS](https://git-lfs.github.com/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Скачивание<sp/>репозитория:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Инициализируем<sp/>LFS</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Инициализируем<sp/>настройки<sp/>для<sp/>скачивания<sp/></highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>lfs.allowincompletepush<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>http.sslverify<sp/>false</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>--system<sp/>core.longpaths<sp/>true</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Скачиваем<sp/>проект</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://gitlab.hyperion.mos.ru/meta-msk/streamer2.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Переходим<sp/>в<sp/>скачанную<sp/>дирректорию</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>streamer2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Обновляем<sp/>LFS<sp/>файлы<sp/>проекта</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>fetch<sp/>--all</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>pull</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Настройка<sp/>Git<sp/>LFS<sp/>для<sp/>отслеживания<sp/>файлов:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>track<sp/>&quot;&lt;путь<sp/>к<sp/>файлу<sp/>или<sp/>расширение&gt;&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Создание<sp/>новой<sp/>ветки<sp/>в<sp/>Git**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**Убедитесь,<sp/>что<sp/>вы<sp/>находитесь<sp/>в<sp/>актуальной<sp/>ветке<sp/>(например,`develop`):**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>checkout<sp/>develop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>**Получите<sp/>последние<sp/>изменения<sp/>из<sp/>удаленного<sp/>репозитория<sp/>(это<sp/>может<sp/>быть<sp/>опущено,<sp/>если<sp/>вы<sp/>уверены,<sp/>что<sp/>актуальны):**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>pull<sp/>origin</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>lfs<sp/>pull<sp/>origin</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>**Создайте<sp/>новую<sp/>ветку:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>branch<sp/>название_новой_ветки</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">4.<sp/>**Переключитесь<sp/>на<sp/>новую<sp/>ветку:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>checkout<sp/>название_новой_ветки</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Или<sp/>можно<sp/>выполнить<sp/>эти<sp/>два<sp/>шага<sp/>в<sp/>одной<sp/>команде:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>git<sp/>checkout<sp/>-b<sp/>название_новой_ветки</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Отправка<sp/>изменений<sp/>с<sp/>использованием<sp/>LFS:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>add<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>commit<sp/>-m<sp/>&quot;Комментарий&quot;</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>push<sp/>origin</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Инициализация<sp/>и<sp/>обновления<sp/>сабмодулей**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>submodule<sp/>init</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>submodule<sp/>update<sp/>--recursive<sp/>--remote</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**3.<sp/>Доп<sp/>информация:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Минимальные<sp/>системные<sp/>требования:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>работы<sp/>с<sp/>проектом<sp/>нужны<sp/>такие<sp/>минимальные<sp/>системные<sp/>требования:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Windows<sp/>10<sp/>и<sp/>выше,<sp/>Linux<sp/>Ubuntu<sp/>18<sp/>64-bit</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Nvidia<sp/>GTX<sp/>2080</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>AMD<sp/>Ryzen<sp/>5<sp/>3600</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>RAM<sp/>-<sp/>от<sp/>32<sp/>gb</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>SSD<sp/>-<sp/>от<sp/>150<sp/>gb</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**4.<sp/>Подготовка<sp/>проекта<sp/>для<sp/>Widows/Linux**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**Для<sp/>Windows:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Софт:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>работы<sp/>в<sp/>проекте<sp/>необходимо<sp/>установить<sp/>определённый<sp/>набор<sp/>пакетов<sp/>разработчика:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>`Unreal<sp/>Engine<sp/>5.2.1`</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>[Visual<sp/>Studio<sp/>2022](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=Community&amp;channel=Release&amp;version=VS2022&amp;source=VSLandingPage&amp;cid=2030&amp;passive=false)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>с<sp/>установленными<sp/>пакетами<sp/>разработки<sp/>для**С++**,<sp/>**.NetCore**<sp/>и<sp/>тд.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![VisualStudioAddons.png](addons%2FImage%2FVisualStudioAddons.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Допускается<sp/>установка<sp/>аналога<sp/>Visual<sp/>Studio,<sp/>например`Rider`от<sp/>JetBrains.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Генерация<sp/>временных<sp/>файлов<sp/>проекта:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Зайти<sp/>в<sp/>папку<sp/>с<sp/>проектом.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Кликнуть<sp/>ПКМ<sp/>по`MetaMoscow.uproject`.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Выбрать`Generate<sp/>Visual<sp/>Studio<sp/>project<sp/>files`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Откройте<sp/>созданный<sp/>файл<sp/>проекта<sp/>в[Visual<sp/>Studio](https://visualstudio.microsoft.com/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Полезные<sp/>ссылки:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**Документация<sp/>по<sp/>установки<sp/>Unreal<sp/>Engine<sp/>на<sp/>Windows/Linux</highlight></codeline>
+<codeline><highlight class="normal">**](https://docs.unrealengine.com/5.3/en-US/installing-unreal-engine/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**Для<sp/>Linux:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Софт:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>[Необходима<sp/>установка<sp/>.Net](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>[Необходима<sp/>установка<sp/>mono](https://www.mono-project.com/download/stable/#download-lin)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">mono<sp/>**Ubuntu<sp/>20.04**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>ca-certificates<sp/>gnupg</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>gpg<sp/>--homedir<sp/>/tmp<sp/>--no-default-keyring<sp/>--keyring<sp/>/usr/share/keyrings/mono-official-archive-keyring.gpg<sp/>--keyserver<sp/>hkp://keyserver.ubuntu.com:80<sp/>--recv-keys<sp/>3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;deb<sp/>[signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg]<sp/>https://download.mono-project.com/repo/ubuntu<sp/>stable-focal<sp/>main&quot;<sp/>|<sp/>sudo<sp/>tee<sp/>/etc/apt/sources.list.d/mono-official-stable.list</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">mono<sp/>**Ubuntu<sp/>18.04**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>ca-certificates<sp/>gnupg</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>gpg<sp/>--homedir<sp/>/tmp<sp/>--no-default-keyring<sp/>--keyring<sp/>/usr/share/keyrings/mono-official-archive-keyring.gpg<sp/>--keyserver<sp/>hkp://keyserver.ubuntu.com:80<sp/>--recv-keys<sp/>3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;deb<sp/>[signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg]<sp/>https://download.mono-project.com/repo/ubuntu<sp/>stable-bionic<sp/>main&quot;<sp/>|<sp/>sudo<sp/>tee<sp/>/etc/apt/sources.list.d/mono-official-stable.list</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Генерируем<sp/>временные<sp/>файлы<sp/>проекта:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;путь<sp/>до<sp/>папки<sp/>с<sp/>движком&gt;/UE_5.2/Engine/Build/BatchFiles/Linux/GenerateProjectFiles.sh</highlight></codeline>
+<codeline><highlight class="normal">./GenerateProjectFiles.sh<sp/>-project=&quot;путь<sp/>до/MetaMoscow.uproject&quot;<sp/>-Game</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Это<sp/>создаст<sp/>исполняемый<sp/>файл<sp/>для<sp/>вашей<sp/>платформы.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Полезные<sp/>ссылки:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**Документация<sp/>по<sp/>установки<sp/>Unreal<sp/>Engine<sp/>на<sp/>Windows/Linux</highlight></codeline>
+<codeline><highlight class="normal">**](https://docs.unrealengine.com/5.3/en-US/installing-unreal-engine/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**Документация<sp/>по<sp/>запуску<sp/>проекта<sp/>для<sp/>Linux</highlight></codeline>
+<codeline><highlight class="normal">**](https://docs.unrealengine.com/5.2/en-US/linux-development-quickstart-for-unreal-engine/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**5.<sp/>Запуск<sp/>Unreal<sp/>Engine<sp/>проекта**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Windows:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**Запуск<sp/>приложения<sp/>Unreal<sp/>Engine<sp/>через<sp/>Visual<sp/>Studio**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**Откройте<sp/>Visual<sp/>Studio:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Запустите`Visual<sp/>Studio`(Visual<sp/>Studio<sp/>2019<sp/>и<sp/>новее).</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**Откройте<sp/>файл<sp/>проекта:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>В<sp/>Visual<sp/>Studio<sp/>выберите`File<sp/>-&gt;<sp/>Open<sp/>-&gt;<sp/>Project/Solution`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Перейдите<sp/>в<sp/>директорию<sp/>вашего<sp/>проекта<sp/>и<sp/>откройте<sp/>файл<sp/>проекта,<sp/>который<sp/>был<sp/>сгенерирован<sp/>Unreal</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Engine`MetaMoscow.sln`.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>**Настройте<sp/>конфигурацию<sp/>и<sp/>цель:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Выберите<sp/>конфигурацию<sp/>сборки`Development`и<sp/>цель`Editor`для<sp/>запуска<sp/>в<sp/>режиме<sp/>редактора.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>**Соберите<sp/>проект:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Выполните<sp/>сборку<sp/>проекта,<sp/>выбрав`Build<sp/>-&gt;<sp/>Build<sp/>Solution`из<sp/>меню.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>**Запустите<sp/>проект:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Выберите`Debug<sp/>-&gt;<sp/>Start<sp/>Debugging`или`Debug`-&gt;`Start<sp/>Without<sp/>Debugging`из<sp/>меню,<sp/>чтобы<sp/>запустить<sp/>проект<sp/>в<sp/>режиме</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>отладки<sp/>или<sp/>без<sp/>отладки<sp/>соответственно.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Либо<sp/>нажать<sp/>кнопку<sp/>`Local<sp/>Windows<sp/>Debugger`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![visualstudiopanel.png](addons%2FImage%2Fvisualstudiopanel.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">6.<sp/>**Отладка<sp/>(при<sp/>необходимости):**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Если<sp/>вы<sp/>запустили<sp/>проект<sp/>в<sp/>режиме<sp/>отладки,<sp/>вы<sp/>можете<sp/>использовать<sp/>функции<sp/>отладки`Visual<sp/>Studio`,<sp/>такие<sp/>как</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>установка<sp/>точек<sp/>останова,<sp/>шаг<sp/>за<sp/>шагом<sp/>выполнение<sp/>кода<sp/>и<sp/>т.д.</highlight></codeline>
+<codeline><highlight class="normal">7.<sp/>**Остановка<sp/>процесса:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>После<sp/>завершения<sp/>тестирования<sp/>или<sp/>отладки,<sp/>остановите<sp/>процесс,<sp/>выбрав`Debug`-&gt;`Stop<sp/>Debugging`из<sp/>меню.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Linux:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>платформы<sp/>Linux<sp/>рекомендуется<sp/>использование<sp/>IDE<sp/>Rider<sp/>от<sp/>JetBrains(Так<sp/>же<sp/>хорошо<sp/>подходит<sp/>для<sp/>Windows<sp/>использования)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**Откройте<sp/>проект<sp/>в<sp/>Rider:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Запустите<sp/>Rider<sp/>и<sp/>откройте<sp/>ваш<sp/>проект<sp/>Unreal<sp/>Engine<sp/>выбрав<sp/>сгенерированный<sp/>ранее<sp/>`.sln`<sp/>файл.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Убедитесь,<sp/>что<sp/>Rider<sp/>поддерживает<sp/>Unreal<sp/>Engine<sp/>и<sp/>установлены<sp/>все<sp/>необходимые<sp/>плагины,<sp/>такие<sp/>как<sp/>Rider<sp/>Link(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>устанавливать<sp/>в<sp/>движок,<sp/>а<sp/>не<sp/>в<sp/>проект)</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**Настройте<sp/>конфигурацию<sp/>проекта:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Убедитесь,<sp/>что<sp/>конфигурация<sp/>проекта<sp/>настроена<sp/>для<sp/>целей<sp/>Linux.<sp/>`**Linux<sp/>-<sp/>Development<sp/>-<sp/>Editor**`</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>**Соберите<sp/>проект:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>В<sp/>Rider<sp/>запустите<sp/>сборку<sp/>проекта<sp/>для<sp/>цели<sp/>Linux.<sp/>Нажав<sp/>на<sp/>зелёный<sp/>молоток<sp/>около<sp/>панели<sp/>выбора<sp/>конфигурации<sp/>сборки</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![riderpanel.png](addons%2FImage%2Friderpanel.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">4.<sp/>**Запустите<sp/>проект:**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Запустите<sp/>проект<sp/>из<sp/>Rider,<sp/>выбрав<sp/>созданную<sp/>конфигурацию<sp/>запуска.<sp/>Убедитесь,<sp/>что<sp/>проект<sp/>успешно<sp/>запускается<sp/>на</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>платформе<sp/>Linux.<sp/>Нажав<sp/>кнопку<sp/>`Run`<sp/>или<sp/>`Debug`<sp/>в<sp/>правой<sp/>части<sp/>верхней<sp/>панели.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>**6.<sp/>Тестирование<sp/>и<sp/>развертывание**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Теперь<sp/>проект<sp/>готов<sp/>к<sp/>работе.<sp/>Проверьте<sp/>функциональность<sp/>и<sp/>убедитесь,<sp/>что<sp/>все<sp/>работает<sp/>корректно.<sp/>При<sp/>необходимости</highlight></codeline>
+<codeline><highlight class="normal">внесите<sp/>изменения<sp/>в<sp/>код.</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

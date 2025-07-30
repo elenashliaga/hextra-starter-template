@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_decisions_module_updater" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UDecisionsModuleUpdater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UModuleLayerUpdaterBase</basecompoundref>
+    <includes refid="_decisions_module_updater_8h" local="no">DecisionsModuleUpdater.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_decisions_module_updater_1aa85c37911e6a4cc5d82db481b3d9d86b" prot="private" static="no" mutable="no">
+        <type><ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6" kindref="member">EDecisionType</ref></type>
+        <definition>EDecisionType UDecisionsModuleUpdater::TilesType</definition>
+        <argsstring></argsstring>
+        <name>TilesType</name>
+        <qualifiedname>UDecisionsModuleUpdater::TilesType</qualifiedname>
+        <initializer>= <ref refid="_decisions_module_updater_8h_1a46235a24866f17951830a6c19f58a8f6a9501b314c19b0a717abb6b06e77a5ac8" kindref="member">EDecisionType::UndefinedType</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="81" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_decisions_module_updater_1ae1db805806292345f58ccb8242d7dd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDecisionsModuleUpdater::SetLayerSettings</definition>
+        <argsstring>(const FMetaDataLayerStruct &amp;MetaDataLayerSettings) override</argsstring>
+        <name>SetLayerSettings</name>
+        <qualifiedname>UDecisionsModuleUpdater::SetLayerSettings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_struct" kindref="compound">FMetaDataLayerStruct</ref> &amp;</type>
+          <declname>MetaDataLayerSettings</declname>
+        </param>
+        <briefdescription>
+<para>Записывает настройки переданные при создании модуль-апдейтера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MetaDataLayerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки для преднастройки тайлового апдейтера.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="44" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.cpp" bodystart="194" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_decisions_module_updater_1a2fe1aca64545d521d75f25e8ec34b439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDecisionsModuleUpdater::ParseLayerMetaData</definition>
+        <argsstring>(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bSuccess)</argsstring>
+        <name>ParseLayerMetaData</name>
+        <qualifiedname>UDecisionsModuleUpdater::ParseLayerMetaData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestPtr</ref></type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpResponsePtr</ref></type>
+          <declname>Response</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bSuccess</declname>
+        </param>
+        <briefdescription>
+<para>Парсит скачанную иконки и обрабатывает в UTexture2D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="50" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.cpp" bodystart="216" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_decisions_module_updater_1a52d08064c6339a0e484823bd6a019f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDecisionsModuleUpdater::ReRasterizeIcons</definition>
+        <argsstring>(const float &amp;NewDPI)</argsstring>
+        <name>ReRasterizeIcons</name>
+        <qualifiedname>UDecisionsModuleUpdater::ReRasterizeIcons</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &amp;</type>
+          <declname>NewDPI</declname>
+        </param>
+        <briefdescription>
+<para>Пересоздает иконки для подконтрольных тайлов типа Icons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewDPI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройка текущего масштаба DPI для верной растеризации и создания SVG иконки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="58" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.cpp" bodystart="269" bodyend="279"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_decisions_module_updater_1ad91aa818d8bf57b818091c08039e5c91" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDecisionsModuleUpdater::SetSettingsToTile</definition>
+        <argsstring>(ATileActorBase *Tile) override</argsstring>
+        <name>SetSettingsToTile</name>
+        <qualifiedname>UDecisionsModuleUpdater::SetSettingsToTile</qualifiedname>
+        <param>
+          <type><ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> *</type>
+          <declname>Tile</declname>
+        </param>
+        <briefdescription>
+<para>Преднастройка тайла после его спавна </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Tile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тайл, для которого выполняется преднастройка </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="68" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.cpp" bodystart="282" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_decisions_module_updater_1a5b5edde437da4fc1641be793517e6fcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDecisionsModuleUpdater::CalculateAndDrawFrustum</definition>
+        <argsstring>() override</argsstring>
+        <name>CalculateAndDrawFrustum</name>
+        <qualifiedname>UDecisionsModuleUpdater::CalculateAndDrawFrustum</qualifiedname>
+        <briefdescription>
+<para>Вычисляет и рисует пирамиду обзора. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если уровень масштабирования меньше целевого уровня масштабирования, он деактивирует все активные тайлы. В противном случае он обновляет вид всех активных тайлов и вычисляет углы пирамиды и точки пересечения. Если есть 4 точки пересечения, он вычисляет точки долготы и широты и получает тайлы в пределах полигона.</para>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="79" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.cpp" bodystart="308" bodyend="368"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UDecisionsModuleUpdater</label>
+        <link refid="class_u_decisions_module_updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModuleLayerUpdaterBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UDecisionsModuleUpdater</label>
+        <link refid="class_u_decisions_module_updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModuleLayerUpdaterBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" line="34" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/DecisionsModuleUpdater.h" bodystart="35" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_u_decisions_module_updater_1a5b5edde437da4fc1641be793517e6fcf" prot="private" virt="virtual"><scope>UDecisionsModuleUpdater</scope><name>CalculateAndDrawFrustum</name></member>
+      <member refid="class_u_decisions_module_updater_1a2fe1aca64545d521d75f25e8ec34b439" prot="public" virt="non-virtual"><scope>UDecisionsModuleUpdater</scope><name>ParseLayerMetaData</name></member>
+      <member refid="class_u_decisions_module_updater_1a52d08064c6339a0e484823bd6a019f12" prot="public" virt="non-virtual"><scope>UDecisionsModuleUpdater</scope><name>ReRasterizeIcons</name></member>
+      <member refid="class_u_decisions_module_updater_1ae1db805806292345f58ccb8242d7dd90" prot="public" virt="virtual"><scope>UDecisionsModuleUpdater</scope><name>SetLayerSettings</name></member>
+      <member refid="class_u_decisions_module_updater_1ad91aa818d8bf57b818091c08039e5c91" prot="private" virt="virtual"><scope>UDecisionsModuleUpdater</scope><name>SetSettingsToTile</name></member>
+      <member refid="class_u_decisions_module_updater_1aa85c37911e6a4cc5d82db481b3d9d86b" prot="private" virt="non-virtual"><scope>UDecisionsModuleUpdater</scope><name>TilesType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

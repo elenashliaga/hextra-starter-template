@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device" kind="class" language="C++" prot="public">
+    <compoundname>UE::PixelStreaming2Input::FInputDevice</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IInputDevice</basecompoundref>
+    <includes refid="_input_device_8h" local="no">InputDevice.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1ada99e57fde42a9df58e3eb1e5b1ce39c" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device" kindref="compound">FInputDevice</ref> &gt;</type>
+        <definition>TSharedPtr&lt; UE::PixelStreaming2Input::FInputDevice &gt; UE::PixelStreaming2Input::FInputDevice::InputDevice</definition>
+        <argsstring></argsstring>
+        <name>InputDevice</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::InputDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A singleton pointer to the input device. We only want a single input device that has multiple input handlers. The reason for a single input device is that only one is created by the application, so make sure we always use that one </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="43" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a7ec6635f548de2cdf905392b7803a91c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_handler" kindref="compound">IPixelStreaming2InputHandler</ref> &gt; &gt;</type>
+        <definition>TArray&lt;TWeakPtr&lt;IPixelStreaming2InputHandler&gt; &gt; UE::PixelStreaming2Input::FInputDevice::InputHandlers</definition>
+        <argsstring></argsstring>
+        <name>InputHandlers</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::InputHandlers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of input handlers. Each input handler belongs to a single streamer</para>
+<para>NOTE: We store each input handler as a weakptr as we don&apos;t want to be the reason the handler doesn&apos;t get deleted. Each handler should be tied to a Streamer&apos;s lifecycle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="51" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a506cc7f213e8889caf7f1acbb628263d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt;</type>
+        <definition>TArray&lt;uint8&gt; UE::PixelStreaming2Input::FInputDevice::ConnectedControllers</definition>
+        <argsstring></argsstring>
+        <name>ConnectedControllers</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::ConnectedControllers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of connected controllers. As each device can have multiple controllers, we want to make sure that each controller of each device is unique As such, a simple incrementer approach is not applicable and we must instead keep track of all the connected controllers</para>
+<para>NOTE: We store each input handler as a weakptr as we don&apos;t want to be the reason the handler doesn&apos;t get deleted. Each handler should be tied to a Streamer&apos;s lifecycle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="60" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a205e8bb8948ba1289fd033ea6b0d8990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="17" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a75cebe166996b74c6110c72b15630682" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2Input::FInputDevice::SendControllerEvents</definition>
+        <argsstring>() override</argsstring>
+        <name>SendControllerEvents</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::SendControllerEvents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Poll for controller state and send events if needed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="19" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1af876cb86acc509cc5dc9a6f24f2fd1d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::SetMessageHandler</definition>
+        <argsstring>(const TSharedRef&lt; FGenericApplicationMessageHandler &gt; &amp;InTargetHandler) override</argsstring>
+        <name>SetMessageHandler</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::SetMessageHandler</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGenericApplicationMessageHandler</ref> &gt; &amp;</type>
+          <declname>InTargetHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set which MessageHandler will route input <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="22" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1ad930e00d36374fd648fc03a8b4ed5667" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2Input::FInputDevice::Exec</definition>
+        <argsstring>(UWorld *InWorld, const TCHAR *Cmd, FOutputDevice &amp;Ar) override</argsstring>
+        <name>Exec</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::Exec</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>InWorld</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TCHAR</ref> *</type>
+          <declname>Cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOutputDevice</ref> &amp;</type>
+          <declname>Ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exec handler to allow console commands to be passed through for debugging </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="25" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="58" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a050d8a137582db63dfa1a2776a37f4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::SetChannelValue</definition>
+        <argsstring>(int32 ControllerId, FForceFeedbackChannelType ChannelType, float Value) override</argsstring>
+        <name>SetChannelValue</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::SetChannelValue</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>ControllerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FForceFeedbackChannelType</ref></type>
+          <declname>ChannelType</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="26" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a698b78c751db1f69d1e02fabd159cf0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::SetChannelValues</definition>
+        <argsstring>(int32 ControllerId, const FForceFeedbackValues &amp;Values) override</argsstring>
+        <name>SetChannelValues</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::SetChannelValues</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>ControllerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FForceFeedbackValues</ref> &amp;</type>
+          <declname>Values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="27" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="82" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a44f8a0dc13b1ac5ec6b888841564519d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::AddInputHandler</definition>
+        <argsstring>(TSharedPtr&lt; IPixelStreaming2InputHandler &gt; InputHandler)</argsstring>
+        <name>AddInputHandler</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::AddInputHandler</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_handler" kindref="compound">IPixelStreaming2InputHandler</ref> &gt;</type>
+          <declname>InputHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="29" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a0c1d3ae1ce7f02d33d9d4af1bd4bcff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UE::PixelStreaming2Input::FInputDevice::OnControllerConnected</definition>
+        <argsstring>()</argsstring>
+        <name>OnControllerConnected</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::OnControllerConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="30" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="93" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a44c2c10dd8987931f7a854209597f2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2Input::FInputDevice::OnControllerDisconnected</definition>
+        <argsstring>(uint8 DeleteControllerId)</argsstring>
+        <name>OnControllerDisconnected</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::OnControllerDisconnected</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+          <declname>DeleteControllerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="31" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1aa3cdfc389a3237b9d62764644fa64020" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device" kindref="compound">FInputDevice</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FInputDevice &gt; UE::PixelStreaming2Input::FInputDevice::GetInputDevice</definition>
+        <argsstring>()</argsstring>
+        <name>GetInputDevice</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::GetInputDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="33" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="10" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a9ed1e7ec835b59c0768ce1d44cdb4ca5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2Input::FInputDevice::FInputDevice</definition>
+        <argsstring>()</argsstring>
+        <name>FInputDevice</name>
+        <qualifiedname>UE::PixelStreaming2Input::FInputDevice::FInputDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="36" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The input device used to interface the multiple streamers and the single input device created by the OS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputDevice</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2Input::FInputDevice</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputDevice</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2Input::FInputDevice</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Private/InputDevice.h" bodystart="15" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a44f8a0dc13b1ac5ec6b888841564519d" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>AddInputHandler</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a506cc7f213e8889caf7f1acbb628263d" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>ConnectedControllers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1ad930e00d36374fd648fc03a8b4ed5667" prot="public" virt="virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>Exec</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a9ed1e7ec835b59c0768ce1d44cdb4ca5" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>FInputDevice</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1aa3cdfc389a3237b9d62764644fa64020" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>GetInputDevice</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1ada99e57fde42a9df58e3eb1e5b1ce39c" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>InputDevice</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a7ec6635f548de2cdf905392b7803a91c" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>InputHandlers</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a0c1d3ae1ce7f02d33d9d4af1bd4bcff2" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>OnControllerConnected</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a44c2c10dd8987931f7a854209597f2e2" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>OnControllerDisconnected</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a75cebe166996b74c6110c72b15630682" prot="public" virt="virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>SendControllerEvents</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a050d8a137582db63dfa1a2776a37f4b2" prot="public" virt="virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>SetChannelValue</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a698b78c751db1f69d1e02fabd159cf0b" prot="public" virt="virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>SetChannelValues</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1af876cb86acc509cc5dc9a6f24f2fd1d7" prot="public" virt="virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>SetMessageHandler</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_device_1a205e8bb8948ba1289fd033ea6b0d8990" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2Input::FInputDevice</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

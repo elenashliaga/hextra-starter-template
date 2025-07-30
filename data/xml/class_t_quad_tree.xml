@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_t_quad_tree" kind="class" language="C++" prot="public">
+    <compoundname>TQuadTree</compoundname>
+    <includes refid="_quad_tree_8h" local="no">QuadTree.h</includes>
+    <innerclass refid="struct_t_quad_tree_1_1_f_tree_node" prot="private">TQuadTree::FTreeNode</innerclass>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref></type>
+      </param>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Equal</ref></type>
+        <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TEqualTo</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref>&gt;</defval>
+      </param>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref></type>
+        <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_t_quad_tree_1a28e14246e4f7b4928d823b3eaaf30319" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> std::size_t</type>
+        <definition>constexpr std::size_t TQuadTree&lt; T, Equal, Float &gt;::Threshold</definition>
+        <argsstring></argsstring>
+        <name>Threshold</name>
+        <qualifiedname>TQuadTree::Threshold</qualifiedname>
+        <initializer>= 4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="88" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_quad_tree_1a83977ccdb0190b609df468b92fbb53e8" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> std::size_t</type>
+        <definition>constexpr std::size_t TQuadTree&lt; T, Equal, Float &gt;::MaxDepth</definition>
+        <argsstring></argsstring>
+        <name>MaxDepth</name>
+        <qualifiedname>TQuadTree::MaxDepth</qualifiedname>
+        <initializer>= 1600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="89" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_t_quad_tree_1a47f6e045c1459c905ad8cb1a576a92cc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt;</type>
+        <definition>TQuadTreeBox&lt;Float&gt; TQuadTree&lt; T, Equal, Float &gt;::mBox</definition>
+        <argsstring></argsstring>
+        <name>mBox</name>
+        <qualifiedname>TQuadTree::mBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="97" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_quad_tree_1a8456c676523580fc2a406349b8a70cd2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt;</type>
+        <definition>TUniquePtr&lt;FTreeNode&gt; TQuadTree&lt; T, Equal, Float &gt;::mRoot</definition>
+        <argsstring></argsstring>
+        <name>mRoot</name>
+        <qualifiedname>TQuadTree::mRoot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="98" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_quad_tree_1a8eb9196809368e8a2e25b6e4cf908da3" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Equal</ref></type>
+        <definition>Equal TQuadTree&lt; T, Equal, Float &gt;::mEqual</definition>
+        <argsstring></argsstring>
+        <name>mEqual</name>
+        <qualifiedname>TQuadTree::mEqual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="99" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_quad_tree_1a45379168a5ea58769a109f9691cdd1e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TQuadTree&lt; T, Equal, Float &gt;::TQuadTree</definition>
+        <argsstring>(const TQuadTreeBox&lt; Float &gt; &amp;Box, const Equal &amp;EqualMethod=Equal())</argsstring>
+        <name>TQuadTree</name>
+        <qualifiedname>TQuadTree::TQuadTree</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Equal</ref> &amp;</type>
+          <declname>EqualMethod</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Equal</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="52" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1adb20bd1e07c1f7d577336b7063a838fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::Add</definition>
+        <argsstring>(const FIconQuadTreeNode &amp;Value)</argsstring>
+        <name>Add</name>
+        <qualifiedname>TQuadTree::Add</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="57" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a7dda653c43e2371d7704716caf0bfbba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::Remove</definition>
+        <argsstring>(const FIconQuadTreeNode &amp;Value)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>TQuadTree::Remove</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="62" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a0d72bd1bc323f12619ac7c4bff230f97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &gt;</type>
+        <definition>TArray&lt; FIconQuadTreeNode &gt; TQuadTree&lt; T, Equal, Float &gt;::Query</definition>
+        <argsstring>(const TQuadTreeBox&lt; Float &gt; &amp;Box) const</argsstring>
+        <name>Query</name>
+        <qualifiedname>TQuadTree::Query</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="67" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1ace674798008f9e5885c88b588d73224f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt;</type>
+        <definition>TArray&lt; FIconQuadTreeNode * &gt; TQuadTree&lt; T, Equal, Float &gt;::QueryLinks</definition>
+        <argsstring>(const TQuadTreeBox&lt; Float &gt; &amp;Box) const</argsstring>
+        <name>QueryLinks</name>
+        <qualifiedname>TQuadTree::QueryLinks</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="73" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a1b623bf29cedf2ae566e99a76d745337" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref>, <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &gt; &gt;</type>
+        <definition>TArray&lt; TPair&lt; FIconQuadTreeNode, FIconQuadTreeNode &gt; &gt; TQuadTree&lt; T, Equal, Float &gt;::FindAllIntersections</definition>
+        <argsstring>() const</argsstring>
+        <name>FindAllIntersections</name>
+        <qualifiedname>TQuadTree::FindAllIntersections</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="80" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_t_quad_tree_1aa620edc8e7da4cee8a4c7b561c6529f5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt;</type>
+        <definition>static TQuadTreeBox&lt; Float &gt; TQuadTree&lt; T, Equal, Float &gt;::GetBoxFromNode</definition>
+        <argsstring>(const FIconQuadTreeNode &amp;Value)</argsstring>
+        <name>GetBoxFromNode</name>
+        <qualifiedname>TQuadTree::GetBoxFromNode</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="101" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="101" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_t_quad_tree_1a4ace3914d3cae3a755d1529538ca76b3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TQuadTree&lt; T, Equal, Float &gt;::IsLeaf</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; Node) const</argsstring>
+        <name>IsLeaf</name>
+        <qualifiedname>TQuadTree::IsLeaf</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt;</type>
+          <declname>Node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="106" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1ad7d6b1974c9ea3186421a4ecb5d99848" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt;</type>
+        <definition>TQuadTreeBox&lt; Float &gt; TQuadTree&lt; T, Equal, Float &gt;::ComputeBox</definition>
+        <argsstring>(const TQuadTreeBox&lt; Float &gt; &amp;Box, ELeafOrientation LeafOrientation) const</argsstring>
+        <name>ComputeBox</name>
+        <qualifiedname>TQuadTree::ComputeBox</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <param>
+          <type><ref refid="_quad_tree_8h_1ade05efdd2f649e62723adf8cdd16b0be" kindref="member">ELeafOrientation</ref></type>
+          <declname>LeafOrientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="111" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="111" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1ac5624016e64a04f8ad4bb044bd04f661" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_quad_tree_8h_1ade05efdd2f649e62723adf8cdd16b0be" kindref="member">ELeafOrientation</ref></type>
+        <definition>ELeafOrientation TQuadTree&lt; T, Equal, Float &gt;::GetQuadrant</definition>
+        <argsstring>(const TQuadTreeBox&lt; Float &gt; &amp;NodeBox, const TQuadTreeBox&lt; Float &gt; &amp;ValueBox) const</argsstring>
+        <name>GetQuadrant</name>
+        <qualifiedname>TQuadTree::GetQuadrant</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>NodeBox</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>ValueBox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="131" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="131" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1adba8e140218d771b8554d203d313025e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::AddInternal</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; Node, std::size_t Depth, const TQuadTreeBox&lt; Float &gt; &amp;Box, const FIconQuadTreeNode &amp;Value)</argsstring>
+        <name>AddInternal</name>
+        <qualifiedname>TQuadTree::AddInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>Depth</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="163" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="163" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1af94b39ba0505846e1be6680200e4ba59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::Split</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node, const TQuadTreeBox&lt; Float &gt; &amp;Box)</argsstring>
+        <name>Split</name>
+        <qualifiedname>TQuadTree::Split</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="203" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="203" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a49c1c26f45db57c9d957126b04d91028" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TQuadTree&lt; T, Equal, Float &gt;::RemoveInternal</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node, const TQuadTreeBox&lt; Float &gt; &amp;Box, const T &amp;Value)</argsstring>
+        <name>RemoveInternal</name>
+        <qualifiedname>TQuadTree::RemoveInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="234" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="234" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1afc357b39aab75f9d1b71cadaff5cc106" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::RemoveValue</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node, const T &amp;Value)</argsstring>
+        <name>RemoveValue</name>
+        <qualifiedname>TQuadTree::RemoveValue</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="267" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="267" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a1993253b2483031d2fd5268a981a71dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TQuadTree&lt; T, Equal, Float &gt;::TryMerge</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node)</argsstring>
+        <name>TryMerge</name>
+        <qualifiedname>TQuadTree::TryMerge</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="283" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="283" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1ac6fea7cbae54889160eeb044ae8f0a24" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::QueryInternal</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; Node, const TQuadTreeBox&lt; Float &gt; &amp;Box, const TQuadTreeBox&lt; Float &gt; &amp;QueryBox, TArray&lt; FIconQuadTreeNode * &gt; &amp;Values) const</argsstring>
+        <name>QueryInternal</name>
+        <qualifiedname>TQuadTree::QueryInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>Box</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_t_quad_tree_box" kindref="compound">TQuadTreeBox</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448a22ae0e2b89e5e3d477f988cc36d3272b" kindref="member">Float</ref> &gt; &amp;</type>
+          <declname>QueryBox</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> * &gt; &amp;</type>
+          <declname>Values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="323" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="323" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1a634ad84ed9428d4d3dce285d905efc8b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::FindAllIntersectionsInternal</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node, TArray&lt; TPair&lt; FIconQuadTreeNode, FIconQuadTreeNode &gt; &gt; &amp;Intersections) const</argsstring>
+        <name>FindAllIntersectionsInternal</name>
+        <qualifiedname>TQuadTree::FindAllIntersectionsInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref>, <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &gt; &gt; &amp;</type>
+          <declname>Intersections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="354" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="354" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_quad_tree_1ac50eff35fc8fbb59ab4cb935b12f14e2" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TQuadTree&lt; T, Equal, Float &gt;::FindIntersectionsInDescendants</definition>
+        <argsstring>(TNonNullPtr&lt; FTreeNode &gt; &amp;Node, const T &amp;Value, TArray&lt; TPair&lt; FIconQuadTreeNode, FIconQuadTreeNode &gt; &gt; &amp;Intersections) const</argsstring>
+        <name>FindIntersectionsInDescendants</name>
+        <qualifiedname>TQuadTree::FindIntersectionsInDescendants</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="struct_t_quad_tree_1_1_f_tree_node" kindref="compound">FTreeNode</ref> &gt; &amp;</type>
+          <declname>Node</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref>, <ref refid="struct_f_icon_quad_tree_node" kindref="compound">FIconQuadTreeNode</ref> &gt; &gt; &amp;</type>
+          <declname>Intersections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="388" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="388" bodyend="410"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>TNonNegative&lt; float &gt;</label>
+        <link refid="class_t_non_negative"/>
+      </node>
+      <node id="1">
+        <label>TQuadTree&lt; T, Equal, Float &gt;</label>
+        <link refid="class_t_quad_tree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TQuadTreeBox&lt; float &gt;</label>
+        <link refid="class_t_quad_tree_box"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Height</edgelabel>
+          <edgelabel>Width</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" line="49" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/PointQuadTree/QuadTree.h" bodystart="50" bodyend="411"/>
+    <listofallmembers>
+      <member refid="class_t_quad_tree_1adb20bd1e07c1f7d577336b7063a838fc" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>Add</name></member>
+      <member refid="class_t_quad_tree_1adba8e140218d771b8554d203d313025e" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>AddInternal</name></member>
+      <member refid="class_t_quad_tree_1ad7d6b1974c9ea3186421a4ecb5d99848" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>ComputeBox</name></member>
+      <member refid="class_t_quad_tree_1a1b623bf29cedf2ae566e99a76d745337" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>FindAllIntersections</name></member>
+      <member refid="class_t_quad_tree_1a634ad84ed9428d4d3dce285d905efc8b" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>FindAllIntersectionsInternal</name></member>
+      <member refid="class_t_quad_tree_1ac50eff35fc8fbb59ab4cb935b12f14e2" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>FindIntersectionsInDescendants</name></member>
+      <member refid="class_t_quad_tree_1aa620edc8e7da4cee8a4c7b561c6529f5" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>GetBoxFromNode</name></member>
+      <member refid="class_t_quad_tree_1ac5624016e64a04f8ad4bb044bd04f661" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>GetQuadrant</name></member>
+      <member refid="class_t_quad_tree_1a4ace3914d3cae3a755d1529538ca76b3" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>IsLeaf</name></member>
+      <member refid="class_t_quad_tree_1a83977ccdb0190b609df468b92fbb53e8" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>MaxDepth</name></member>
+      <member refid="class_t_quad_tree_1a47f6e045c1459c905ad8cb1a576a92cc" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>mBox</name></member>
+      <member refid="class_t_quad_tree_1a8eb9196809368e8a2e25b6e4cf908da3" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>mEqual</name></member>
+      <member refid="class_t_quad_tree_1a8456c676523580fc2a406349b8a70cd2" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>mRoot</name></member>
+      <member refid="class_t_quad_tree_1a0d72bd1bc323f12619ac7c4bff230f97" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>Query</name></member>
+      <member refid="class_t_quad_tree_1ac6fea7cbae54889160eeb044ae8f0a24" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>QueryInternal</name></member>
+      <member refid="class_t_quad_tree_1ace674798008f9e5885c88b588d73224f" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>QueryLinks</name></member>
+      <member refid="class_t_quad_tree_1a7dda653c43e2371d7704716caf0bfbba" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>Remove</name></member>
+      <member refid="class_t_quad_tree_1a49c1c26f45db57c9d957126b04d91028" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>RemoveInternal</name></member>
+      <member refid="class_t_quad_tree_1afc357b39aab75f9d1b71cadaff5cc106" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>RemoveValue</name></member>
+      <member refid="class_t_quad_tree_1af94b39ba0505846e1be6680200e4ba59" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>Split</name></member>
+      <member refid="class_t_quad_tree_1a28e14246e4f7b4928d823b3eaaf30319" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>Threshold</name></member>
+      <member refid="class_t_quad_tree_1a45379168a5ea58769a109f9691cdd1e9" prot="public" virt="non-virtual"><scope>TQuadTree</scope><name>TQuadTree</name></member>
+      <member refid="class_t_quad_tree_1a1993253b2483031d2fd5268a981a71dc" prot="private" virt="non-virtual"><scope>TQuadTree</scope><name>TryMerge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

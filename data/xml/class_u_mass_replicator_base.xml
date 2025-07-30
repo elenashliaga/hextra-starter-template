@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_replicator_base" kind="class" language="C++" prot="public">
+    <compoundname>UMassReplicatorBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_mass_replication_processor_8h" local="no">MassReplicationProcessor.h</includes>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_u_mass_replicator_base_1afae7bcf8a821af017dd105b7402af59a" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AgentArrayItem</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CacheViewsCallback</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AddEntityCallback</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ModifyEntityCallback</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RemoveEntityCallback</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicatorBase::CalculateClientReplication</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, FMassReplicationContext &amp;ReplicationContext, CacheViewsCallback &amp;&amp;CacheViews, AddEntityCallback &amp;&amp;AddEntity, ModifyEntityCallback &amp;&amp;ModifyEntity, RemoveEntityCallback &amp;&amp;RemoveEntity)</argsstring>
+        <name>CalculateClientReplication</name>
+        <qualifiedname>UMassReplicatorBase::CalculateClientReplication</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_replication_context" kindref="compound">FMassReplicationContext</ref> &amp;</type>
+          <declname>ReplicationContext</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CacheViewsCallback</ref> &amp;&amp;</type>
+          <declname>CacheViews</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AddEntityCallback</ref> &amp;&amp;</type>
+          <declname>AddEntity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ModifyEntityCallback</ref> &amp;&amp;</type>
+          <declname>ModifyEntity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RemoveEntityCallback</ref> &amp;&amp;</type>
+          <declname>RemoveEntity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Must override to add specific entity query requirements for replication Usually we add replication processor handler requirements Must override to process the client replication This methods should call CalculateClientReplication with the appropriate callback implementation Implemented as straight template callbacks as when profiled this was faster than TFunctionRef. Its probably easier to pass Lamdas in to these but Functors can also be used as well as TFunctionRefs etc. Its also fairly straight forward to call member functions via some Lamda glue code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationProcessor.h" line="89" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationProcessor.h" bodystart="93" bodyend="157"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassReplicatorBase</label>
+        <link refid="class_u_mass_replicator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassReplicatorBase</label>
+        <link refid="class_u_mass_replicator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationProcessor.h" line="66" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationProcessor.h" bodystart="67" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_u_mass_replicator_base_1afae7bcf8a821af017dd105b7402af59a" prot="protected" virt="virtual"><scope>UMassReplicatorBase</scope><name>CalculateClientReplication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

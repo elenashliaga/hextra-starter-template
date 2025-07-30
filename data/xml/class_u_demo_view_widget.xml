@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_demo_view_widget" kind="class" language="C++" prot="public">
+    <compoundname>UDemoViewWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UUserWidget</basecompoundref>
+    <includes refid="_demo_view_widget_8h" local="no">DemoViewWidget.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_demo_view_widget_1ab505d04a3a1da68f122210f3ff9f710f" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref> &gt;</type>
+        <definition>TArray&lt;FDemoViewModeInfo&gt; UDemoViewWidget::DemoViewModeStructs</definition>
+        <argsstring></argsstring>
+        <name>DemoViewModeStructs</name>
+        <qualifiedname>UDemoViewWidget::DemoViewModeStructs</qualifiedname>
+        <briefdescription>
+<para>Структура для хранения информации о параметрах режима фото. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="72" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1a8a404bbb2c6dcdfb29808258a37f9416" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_demo_view_meta_camera_component" kindref="compound">UDemoViewMetaCameraComponent</ref> * &gt;</type>
+        <definition>TArray&lt;UDemoViewMetaCameraComponent*&gt; UDemoViewWidget::DemoViewComponents</definition>
+        <argsstring></argsstring>
+        <name>DemoViewComponents</name>
+        <qualifiedname>UDemoViewWidget::DemoViewComponents</qualifiedname>
+        <briefdescription>
+<para>Массив MetaCameraDemoViewComponents, связанный с DemoViewModeWidget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эти компоненты представляют разные виды камеры, которые можно использовать в режиме фото. Манипуляции с этими компонентами можно выполнять через класс DemoViewModeWidget. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="81" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1af40db50a6aa30dada639f9ac859b9203" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UDemoViewWidget::PawnLocationBeforeDemoViewMode</definition>
+        <argsstring></argsstring>
+        <name>PawnLocationBeforeDemoViewMode</name>
+        <qualifiedname>UDemoViewWidget::PawnLocationBeforeDemoViewMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Представляет текущую трансформацию пешки в режиме фото.</para>
+<para>Структура FTransform содержит информацию о положении, повороте и масштабе объекта в 3D-пространстве. В контексте этой переменной она представляет текущую трансформацию пешки, наблюдаемой в режиме фото.</para>
+<para>Свойства:<itemizedlist>
+<listitem><para>VisibleAnywhere: Эта переменная видна в любом месте кода.</para>
+</listitem></itemizedlist>
+</para>
+<para>Использование:<itemizedlist>
+<listitem><para>Переменная CurrentTransformPawn используется в классе UDemoViewModeWidget для хранения текущей трансформации пешки.</para>
+</listitem><listitem><para>Она устанавливается в файле <ref refid="_building_information_8cpp" kindref="compound">BuildingInformation.cpp</ref> при включении режима фото и при выходе из режима фото в файле DemoViewModeWidget.cpp. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="96" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1a0be68186051bbdf92c7d6fea6229d358" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_demo_view_meta_building" kindref="compound">ADemoViewMetaBuilding</ref> *</type>
+        <definition>ADemoViewMetaBuilding* UDemoViewWidget::MetaDemoViewModeBuilding</definition>
+        <argsstring></argsstring>
+        <name>MetaDemoViewModeBuilding</name>
+        <qualifiedname>UDemoViewWidget::MetaDemoViewModeBuilding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="108" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1acaccf90b2f11251f931fb87ea3c880a4" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> &gt;</type>
+        <definition>TObjectPtr&lt;AMetaPlayerController&gt; UDemoViewWidget::MetaPlayerController</definition>
+        <argsstring></argsstring>
+        <name>MetaPlayerController</name>
+        <qualifiedname>UDemoViewWidget::MetaPlayerController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="111" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_demo_view_widget_1a51f5963ecae702a07991545aa21e479b" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UDemoViewWidget::CurrentDemoViewComponentIndex</definition>
+        <argsstring></argsstring>
+        <name>CurrentDemoViewComponentIndex</name>
+        <qualifiedname>UDemoViewWidget::CurrentDemoViewComponentIndex</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Индекс текущего фотокомпонента в виджете фоторежима. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет индекс текущего фотокомпонента в виджете фоторежима. Это значение типа integer и первоначально установлено как 0. Значение может быть изменено для представления другого индекса фотокомпонента.</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DemoViewModeWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="124" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1ac04d6a934ef5ab8de65532c6b600989c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UButton</ref> *</type>
+        <definition>UButton* UDemoViewWidget::Button_Next</definition>
+        <argsstring></argsstring>
+        <name>Button_Next</name>
+        <qualifiedname>UDemoViewWidget::Button_Next</qualifiedname>
+        <briefdescription>
+<para>Переменная типа UButton* для следующей кнопки в DemoViewModeWidget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>EditAnywhere: Переменная может быть отредактирована в редакторе. BlueprintReadWrite: Переменная может быть прочитана и изменена в blueprints. meta = (BindWidget): Переменная привязана к виджету в редакторе. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="134" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1a3dd8de9d8c848002aab9dda63a35da6c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UButton</ref> *</type>
+        <definition>UButton* UDemoViewWidget::Button_Previous</definition>
+        <argsstring></argsstring>
+        <name>Button_Previous</name>
+        <qualifiedname>UDemoViewWidget::Button_Previous</qualifiedname>
+        <briefdescription>
+<para>Представляет предыдущую кнопку виджета в DemoViewModeWidget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная используется для привязки виджета предыдущей кнопки в классе DemoViewModeWidget. Кнопка позволяет пользователю перейти к предыдущему фото-компоненту.</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UDemoViewModeWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="145" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_demo_view_widget_1a39886c4f0e0fa5e6552b7612d5aa88bb" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UButton</ref> *</type>
+        <definition>UButton* UDemoViewWidget::Button_Exit</definition>
+        <argsstring></argsstring>
+        <name>Button_Exit</name>
+        <qualifiedname>UDemoViewWidget::Button_Exit</qualifiedname>
+        <briefdescription>
+<para>UButton* Button_Exit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Описание: Эта переменная-указатель на объект UButton для кнопки выхода в виджете режима фото.</para>
+<para>Свойства:<itemizedlist>
+<listitem><para>EditAnywhere: Переменную можно редактировать в редакторе Unreal.</para>
+</listitem><listitem><para>BlueprintReadWrite: К переменной можно получить доступ и изменить ее в Blueprints.</para>
+</listitem><listitem><para>meta = (BindWidget): Переменная привязана к виджету в чертеже режима фото. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="158" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_demo_view_widget_1a7714477fcec590a978b8bcee5a041c34" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::NativeConstruct</definition>
+        <argsstring>() override</argsstring>
+        <name>NativeConstruct</name>
+        <qualifiedname>UDemoViewWidget::NativeConstruct</qualifiedname>
+        <briefdescription>
+<para>Реализация метода NativeConstruct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается при конструировании UDemoViewModeWidget из Blueprints.</para>
+<para>Он связывает события OnClicked кнопок Button_Next, Button_Previous и Button_Exit с их соответствующими функциями. Затем он вызывает метод SetDemoViewStartPosition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="32" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="21" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1a414e2c0e75364069e819a43864c71fdc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+        <definition>AMetaPlayerController * UDemoViewWidget::GetMetaPlayerController</definition>
+        <argsstring>()</argsstring>
+        <name>GetMetaPlayerController</name>
+        <qualifiedname>UDemoViewWidget::GetMetaPlayerController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает MetaPlayerController, связанный с этим UDemoViewModeWidget.</para>
+<para><simplesect kind="return"><para>Объект MetaPlayerController, приведенный от владеющего игрока. Если не найден, возвращает nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="166" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1ada22a59127dfd8a90f0374856a828034" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_demo_view_meta_building" kindref="compound">ADemoViewMetaBuilding</ref> *</type>
+        <definition>ADemoViewMetaBuilding * UDemoViewWidget::GetMetaDemoViewModeBuilding</definition>
+        <argsstring>()</argsstring>
+        <name>GetMetaDemoViewModeBuilding</name>
+        <qualifiedname>UDemoViewWidget::GetMetaDemoViewModeBuilding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Извлекает экземпляр AMetaDemoViewModeBuilding, связанный с UDemoViewModeWidget.</para>
+<para><simplesect kind="return"><para>Экземпляр AMetaDemoViewModeBuilding, связанный с UDemoViewModeWidget, или nullptr, если не найден. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="173" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1a757413c406e7e19c6933278fe664e5d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::SetNewViewMode</definition>
+        <argsstring>(int32 Index)</argsstring>
+        <name>SetNewViewMode</name>
+        <qualifiedname>UDemoViewWidget::SetNewViewMode</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает новый режим просмотра для UDemoViewModeWidget. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс нового режима просмотра. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="179" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="90" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_demo_view_widget_1af3fb8bc59a6a23ca718570d54b98c6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::NextDemoViewComponent</definition>
+        <argsstring>()</argsstring>
+        <name>NextDemoViewComponent</name>
+        <qualifiedname>UDemoViewWidget::NextDemoViewComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Переход к следующему фото-компоненту в виджете режима фото. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="39" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="41" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1a11ae32337b72a44489e20c6a8732d3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::PreviousDemoViewComponent</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousDemoViewComponent</name>
+        <qualifiedname>UDemoViewWidget::PreviousDemoViewComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Уменьшает индекс текущего фото-компонента и устанавливает новый режим просмотра, если это возможно. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="44" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="55" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1ac6a4fd99902ec10a8b88c57fa0805de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::ExitDemoViewMode</definition>
+        <argsstring>(bool Teleport=true)</argsstring>
+        <name>ExitDemoViewMode</name>
+        <qualifiedname>UDemoViewWidget::ExitDemoViewMode</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>Teleport</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+<para>Выход из режима фото. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция вызывается при выходе из режима фото и выполняет необходимые действия для отключения режима фото и восстановления предыдущего состояния игры.</para>
+<para><simplesect kind="note"><para>Эта функция предполагает, что связанная DemoViewModeWidget действительна и используется действительным MetaPlayerController с действительным MetaHud. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="55" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="109" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1a338ea168261107c93f7eca8a583b203d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::ExitDemoViewModeWithTeleport</definition>
+        <argsstring>()</argsstring>
+        <name>ExitDemoViewModeWithTeleport</name>
+        <qualifiedname>UDemoViewWidget::ExitDemoViewModeWithTeleport</qualifiedname>
+        <briefdescription>
+<para>Exits the demo view mode with teleportation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to exit the demo view mode with teleportation functionality.</para>
+<para><simplesect kind="note"><para>The teleportation feature is enabled when calling this method.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_demo_view_widget_1ac6a4fd99902ec10a8b88c57fa0805de5" kindref="member">ExitDemoViewMode(bool)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="67" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_demo_view_widget_1a24e8a9b6172f40324f4cfadcf61813c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UDemoViewWidget::SetDemoViewStartPosition</definition>
+        <argsstring>()</argsstring>
+        <name>SetDemoViewStartPosition</name>
+        <qualifiedname>UDemoViewWidget::SetDemoViewStartPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Установка начального положения фото в виджете режима фото. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="104" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс пользовательского виджета для интерфейса режима фото. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UDemoViewWidget</label>
+        <link refid="class_u_demo_view_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>AActor</label>
+      </node>
+      <node id="4">
+        <label>ABuildingCore</label>
+        <link refid="class_a_building_core"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>SetupCesiumCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ExistingCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>MetaPlayerController</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>PositionsManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABuildingCoreBaseEx</label>
+        <link refid="class_a_building_core_base_ex"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ACesiumCartographicPolygon</label>
+      </node>
+      <node id="3">
+        <label>ADemoViewMetaBuilding</label>
+        <link refid="class_a_demo_view_meta_building"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AJrpsPlayerController</label>
+        <link refid="class_a_jrps_player_controller"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AMetaCesiumCartographicPolygon</label>
+        <link refid="class_a_meta_cesium_cartographic_polygon"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AMetaPlayerController</label>
+        <link refid="class_a_meta_player_controller"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>ControlMode</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>DemoViewMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>APlayerController</label>
+      </node>
+      <node id="16">
+        <label>FControlMode</label>
+        <link refid="struct_f_control_mode"/>
+      </node>
+      <node id="10">
+        <label>FSetupCesiumCartographicPolygon</label>
+        <link refid="struct_f_setup_cesium_cartographic_polygon"/>
+      </node>
+      <node id="9">
+        <label>UActorComponent</label>
+      </node>
+      <node id="1">
+        <label>UDemoViewWidget</label>
+        <link refid="class_u_demo_view_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>MetaDemoViewModeBuilding</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UPositionsManager</label>
+        <link refid="class_u_positions_manager"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/DemoViewMode/DemoViewWidget.h" bodystart="22" bodyend="182"/>
+    <listofallmembers>
+      <member refid="class_u_demo_view_widget_1a39886c4f0e0fa5e6552b7612d5aa88bb" prot="protected" virt="non-virtual"><scope>UDemoViewWidget</scope><name>Button_Exit</name></member>
+      <member refid="class_u_demo_view_widget_1ac04d6a934ef5ab8de65532c6b600989c" prot="protected" virt="non-virtual"><scope>UDemoViewWidget</scope><name>Button_Next</name></member>
+      <member refid="class_u_demo_view_widget_1a3dd8de9d8c848002aab9dda63a35da6c" prot="protected" virt="non-virtual"><scope>UDemoViewWidget</scope><name>Button_Previous</name></member>
+      <member refid="class_u_demo_view_widget_1a51f5963ecae702a07991545aa21e479b" prot="protected" virt="non-virtual"><scope>UDemoViewWidget</scope><name>CurrentDemoViewComponentIndex</name></member>
+      <member refid="class_u_demo_view_widget_1a8a404bbb2c6dcdfb29808258a37f9416" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>DemoViewComponents</name></member>
+      <member refid="class_u_demo_view_widget_1ab505d04a3a1da68f122210f3ff9f710f" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>DemoViewModeStructs</name></member>
+      <member refid="class_u_demo_view_widget_1ac6a4fd99902ec10a8b88c57fa0805de5" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>ExitDemoViewMode</name></member>
+      <member refid="class_u_demo_view_widget_1a338ea168261107c93f7eca8a583b203d" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>ExitDemoViewModeWithTeleport</name></member>
+      <member refid="class_u_demo_view_widget_1ada22a59127dfd8a90f0374856a828034" prot="private" virt="non-virtual"><scope>UDemoViewWidget</scope><name>GetMetaDemoViewModeBuilding</name></member>
+      <member refid="class_u_demo_view_widget_1a414e2c0e75364069e819a43864c71fdc" prot="private" virt="non-virtual"><scope>UDemoViewWidget</scope><name>GetMetaPlayerController</name></member>
+      <member refid="class_u_demo_view_widget_1a0be68186051bbdf92c7d6fea6229d358" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>MetaDemoViewModeBuilding</name></member>
+      <member refid="class_u_demo_view_widget_1acaccf90b2f11251f931fb87ea3c880a4" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>MetaPlayerController</name></member>
+      <member refid="class_u_demo_view_widget_1a7714477fcec590a978b8bcee5a041c34" prot="private" virt="virtual"><scope>UDemoViewWidget</scope><name>NativeConstruct</name></member>
+      <member refid="class_u_demo_view_widget_1af3fb8bc59a6a23ca718570d54b98c6b8" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>NextDemoViewComponent</name></member>
+      <member refid="class_u_demo_view_widget_1af40db50a6aa30dada639f9ac859b9203" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>PawnLocationBeforeDemoViewMode</name></member>
+      <member refid="class_u_demo_view_widget_1a11ae32337b72a44489e20c6a8732d3e6" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>PreviousDemoViewComponent</name></member>
+      <member refid="class_u_demo_view_widget_1a24e8a9b6172f40324f4cfadcf61813c9" prot="public" virt="non-virtual"><scope>UDemoViewWidget</scope><name>SetDemoViewStartPosition</name></member>
+      <member refid="class_u_demo_view_widget_1a757413c406e7e19c6933278fe664e5d0" prot="private" virt="non-virtual"><scope>UDemoViewWidget</scope><name>SetNewViewMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

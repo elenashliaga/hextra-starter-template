@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_video_producer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2VideoProducer</compoundname>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer" prot="public" virt="non-virtual">UE::PixelStreaming2::FVideoProducer</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_video_producer_8h" local="no">IPixelStreaming2VideoProducer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_video_producer_1a3b96745926b4d13c3fdc9a50f0aeecea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IPixelStreaming2VideoProducer::IPixelStreaming2VideoProducer</definition>
+        <argsstring>()=default</argsstring>
+        <name>IPixelStreaming2VideoProducer</name>
+        <qualifiedname>IPixelStreaming2VideoProducer::IPixelStreaming2VideoProducer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" line="21" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_video_producer_1a4365cab7bc0e92ee82d3b5051a2ee966" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IPixelStreaming2VideoProducer::~IPixelStreaming2VideoProducer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IPixelStreaming2VideoProducer</name>
+        <qualifiedname>IPixelStreaming2VideoProducer::~IPixelStreaming2VideoProducer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" line="22" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_video_producer_1a76344d17b22e95a68b8732f6ef87812f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2VideoProducer::PushFrame</definition>
+        <argsstring>(const IPixelCaptureInputFrame &amp;InputFrame)=0</argsstring>
+        <name>PushFrame</name>
+        <qualifiedname>IPixelStreaming2VideoProducer::PushFrame</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_1a97676d47f943d6843da1f1d53655be64">PushFrame</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IPixelCaptureInputFrame</ref> &amp;</type>
+          <declname>InputFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pushes a raw video frame into the Pixel Streaming system. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InputFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The raw input frame, which may be a GPU texture or a CPU texture based on the underlying type of frame pushed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_video_producer_1a4961d1340ab0155313ecb754dbd800cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>virtual FString IPixelStreaming2VideoProducer::ToString</definition>
+        <argsstring>()=0</argsstring>
+        <name>ToString</name>
+        <qualifiedname>IPixelStreaming2VideoProducer::ToString</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_1a5c3def23e90474c216c47e3e48e9c0d1">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_back_buffer_1a3eec9982903b5cd0227d14e95d30b4fe">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_media_capture_1a575e0a87d639df5dace73dfb49c8ce30">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_p_i_e_viewport_1ace496e37b5bd8299b95ffb8cd6f32bfb">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_render_target_1ad7a6faaf21910e1930fad6fd543a117e">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_video_producer_back_buffer_composited_1af73628ecfa44619e1b00fcf75cbe7eb6">ToString</reimplementedby>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_video_producer_viewport_1a1e8a82ce4d29aae1da74e50ecf967858">ToString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A human readable identifier used when displaying what the streamer is streaming in the toolbar <simplesect kind="return"><para>A string containing the display name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" line="34" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A &quot;Video Producer&quot; is an object that you use to push video frames into the Pixel Streaming system.</para>
+<para>Example usage:</para>
+<para>(1) Each new frame you want to push you call <computeroutput>MyVideoProducer-&gt;PushFrame(MyFrame)</computeroutput></para>
+<para>Note: Your frame is likely a <computeroutput>FPixelCaptureInputFrameRHI</computeroutput> if the frame is a GPU texture or a <computeroutput>FPixelCaptureInputFrameI420</computeroutput> or <computeroutput>FPixelCaptureInputFrameNV12</computeroutput> if your frame is from the CPU. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IPixelStreaming2VideoProducer</label>
+        <link refid="class_i_pixel_streaming2_video_producer"/>
+      </node>
+      <node id="3">
+        <label>UE::EditorPixelStreaming2::FVideoProducerBackBufferComposited</label>
+        <link refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_video_producer_back_buffer_composited"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UE::EditorPixelStreaming2::FVideoProducerViewport</label>
+        <link refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_video_producer_viewport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UE::PixelStreaming2::FVideoProducer</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UE::PixelStreaming2::FVideoProducerBackBuffer</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_back_buffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UE::PixelStreaming2::FVideoProducerMediaCapture</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_media_capture"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UE::PixelStreaming2::FVideoProducerPIEViewport</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_p_i_e_viewport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UE::PixelStreaming2::FVideoProducerRenderTarget</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_producer_render_target"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2VideoProducer.h" bodystart="19" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_video_producer_1a3b96745926b4d13c3fdc9a50f0aeecea" prot="public" virt="non-virtual"><scope>IPixelStreaming2VideoProducer</scope><name>IPixelStreaming2VideoProducer</name></member>
+      <member refid="class_i_pixel_streaming2_video_producer_1a76344d17b22e95a68b8732f6ef87812f" prot="public" virt="pure-virtual"><scope>IPixelStreaming2VideoProducer</scope><name>PushFrame</name></member>
+      <member refid="class_i_pixel_streaming2_video_producer_1a4961d1340ab0155313ecb754dbd800cc" prot="public" virt="pure-virtual"><scope>IPixelStreaming2VideoProducer</scope><name>ToString</name></member>
+      <member refid="class_i_pixel_streaming2_video_producer_1a4365cab7bc0e92ee82d3b5051a2ee966" prot="public" virt="virtual"><scope>IPixelStreaming2VideoProducer</scope><name>~IPixelStreaming2VideoProducer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

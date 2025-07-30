@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_json_rpc_library" kind="class" language="C++" prot="public">
+    <compoundname>UJsonRpcLibrary</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_json_rpc_library_8h" local="no">JsonRpcLibrary.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_json_rpc_library_1a2cea3be83a3b4af11eb453b1b73a7155" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057f" kindref="member">EJsonRpcErrorType</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2" kindref="member">EJsonRpcErrorCode</ref> &gt;</type>
+        <definition>const TMap&lt;EJsonRpcErrorType, EJsonRpcErrorCode&gt; UJsonRpcLibrary::ErrorCodeLookupTable</definition>
+        <argsstring></argsstring>
+        <name>ErrorCodeLookupTable</name>
+        <qualifiedname>UJsonRpcLibrary::ErrorCodeLookupTable</qualifiedname>
+        <initializer>= {
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">EJsonRpcErrorType::None</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">EJsonRpcErrorCode::None</ref> },
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fae41199faa7290c167f70f314c5e6c165" kindref="member">EJsonRpcErrorType::ParseError</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2ae41199faa7290c167f70f314c5e6c165" kindref="member">EJsonRpcErrorCode::ParseError</ref> },
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fad544eb3da2f68d24cf92a8519ed53a31" kindref="member">EJsonRpcErrorType::InvalidRequest</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2ad544eb3da2f68d24cf92a8519ed53a31" kindref="member">EJsonRpcErrorCode::InvalidRequest</ref> },
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fa011fb1f694f7b928964b898fc5d0ca5c" kindref="member">EJsonRpcErrorType::MethodNotFound</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2a011fb1f694f7b928964b898fc5d0ca5c" kindref="member">EJsonRpcErrorCode::MethodNotFound</ref> },
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fad4c4700b7580ce00c94ddf7b363de696" kindref="member">EJsonRpcErrorType::InvalidParams</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2ad4c4700b7580ce00c94ddf7b363de696" kindref="member">EJsonRpcErrorCode::InvalidParams</ref> },
+                { <ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057fa8462b58246e70e5c83e5b939a9332cb5" kindref="member">EJsonRpcErrorType::InternalError</ref>, <ref refid="_json_rpc_error_8h_1a6becc926444e3e0cac2415f82b668ec2a8462b58246e70e5c83e5b939a9332cb5" kindref="member">EJsonRpcErrorCode::InternalError</ref> },
+        }</initializer>
+        <briefdescription>
+<para>Эта таблица поиска сопоставляет типы ошибок JSON-RPC с кодами ошибок. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="44" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" bodystart="44" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_json_rpc_library_1afd0c52a02b4afa1a6cf431aa087240e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_rpc_object" kindref="compound">FJsonRpcObject</ref></type>
+        <definition>FJsonRpcObject UJsonRpcLibrary::MakeJsonRpcObject</definition>
+        <argsstring>(const FGuid &amp;Guid)</argsstring>
+        <name>MakeJsonRpcObject</name>
+        <qualifiedname>UJsonRpcLibrary::MakeJsonRpcObject</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Guid</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект JSON-RPC с указанным GUID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Guid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID, который устанавливается для объекта JSON-RPC.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный объект JSON-RPC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="62" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a5b14aaee7aba1a474cb8e2d0c36aeaba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_rpc_request" kindref="compound">FJsonRpcRequest</ref></type>
+        <definition>FJsonRpcRequest UJsonRpcLibrary::MakeJsonRpcRequest</definition>
+        <argsstring>(const FGuid &amp;Guid, const FString &amp;Method, const FJsonObjectWrapper &amp;Params)</argsstring>
+        <name>MakeJsonRpcRequest</name>
+        <qualifiedname>UJsonRpcLibrary::MakeJsonRpcRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Guid</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Method</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> FJsonObjectWrapper &amp;</type>
+          <declname>Params</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект запроса JSON-RPC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Guid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальный идентификатор запроса. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя метода JSON-RPC. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Параметры запроса JSON-RPC. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный объект запроса JSON-RPC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="73" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a83af71dcf2c02c302a08ba81d5afe0df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_rpc_response" kindref="compound">FJsonRpcResponse</ref></type>
+        <definition>FJsonRpcResponse UJsonRpcLibrary::MakeJsonRpcResponse</definition>
+        <argsstring>(const FGuid &amp;Guid, const FJsonObjectWrapper &amp;Result, const FJsonRpcError &amp;Error)</argsstring>
+        <name>MakeJsonRpcResponse</name>
+        <qualifiedname>UJsonRpcLibrary::MakeJsonRpcResponse</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Guid</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> FJsonObjectWrapper &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref> &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект ответа JSON-RPC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает объект ответа JSON-RPC с указанными параметрами.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Guid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальный идентификатор ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Результат запроса JSON-RPC. Должен быть типа FJsonObjectWrapper. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект ошибки JSON-RPC. Должен быть типа <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_f_json_rpc_response" kindref="compound">FJsonRpcResponse</ref> Созданный объект ответа JSON-RPC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="89" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a31cc052e5eef1599818ec2a1e3f6fc46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref></type>
+        <definition>FJsonRpcError UJsonRpcLibrary::MakeJsonRpcError</definition>
+        <argsstring>(EJsonRpcErrorType Type, const FString &amp;Message)</argsstring>
+        <name>MakeJsonRpcError</name>
+        <qualifiedname>UJsonRpcLibrary::MakeJsonRpcError</qualifiedname>
+        <param>
+          <type><ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057f" kindref="member">EJsonRpcErrorType</ref></type>
+          <declname>Type</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект ошибки JSON-RPC с указанным типом ошибки и сообщением. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает объект <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref> с указанным типом ошибки и сообщением.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип ошибки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сообщение об ошибке. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>, представляющий ошибку JSON-RPC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="103" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a25776f704bc72a5ebca4c567fd98c69e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        <definition>FGuid UJsonRpcLibrary::GetGuid</definition>
+        <argsstring>(const FJsonRpcObject &amp;Object)</argsstring>
+        <name>GetGuid</name>
+        <qualifiedname>UJsonRpcLibrary::GetGuid</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_object" kindref="compound">FJsonRpcObject</ref> &amp;</type>
+          <declname>Object</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает уникальный идентификатор (GUID), связанный с объектом JSON-RPC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON-RPC.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Уникальный идентификатор (GUID), связанный с объектом JSON-RPC. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="115" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a7669e6edb3b57161816f9c34c3497155" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJsonRpcLibrary::GetMethod</definition>
+        <argsstring>(const FJsonRpcRequest &amp;Request)</argsstring>
+        <name>GetMethod</name>
+        <qualifiedname>UJsonRpcLibrary::GetMethod</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_request" kindref="compound">FJsonRpcRequest</ref> &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Извлекает метод из данного запроса JSON-RPC.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект запроса JSON-RPC. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Метод запроса. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="125" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a615073a15cd513c6bb17ee7db8718e06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FJsonObjectWrapper</type>
+        <definition>FJsonObjectWrapper UJsonRpcLibrary::GetParams</definition>
+        <argsstring>(const FJsonRpcRequest &amp;Request)</argsstring>
+        <name>GetParams</name>
+        <qualifiedname>UJsonRpcLibrary::GetParams</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_request" kindref="compound">FJsonRpcRequest</ref> &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>       @brief Извлекает параметры JSON-RPC запроса.
+
+       Эта функция принимает объект запроса JSON-RPC и возвращает параметры
+       запроса в виде `FJsonObjectWrapper
+</verbatim> <computeroutput>. @iverbatim @param Request Объект запроса JSON-RPC. @return Параметры запроса в виде объекта</computeroutput>FJsonObjectWrapper`.  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="139" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a4706f3de0eb99be1f9c087a914c3ce1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FJsonObjectWrapper</type>
+        <definition>FJsonObjectWrapper UJsonRpcLibrary::GetResult</definition>
+        <argsstring>(const FJsonRpcResponse &amp;Response)</argsstring>
+        <name>GetResult</name>
+        <qualifiedname>UJsonRpcLibrary::GetResult</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_response" kindref="compound">FJsonRpcResponse</ref> &amp;</type>
+          <declname>Response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Извлекает объект результата из данного JsonRpcResponse.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JsonRpcResponse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект результата в виде JsonObjectWrapper. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="149" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a46c765cb092d8b29beabab2f47a78061" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref></type>
+        <definition>FJsonRpcError UJsonRpcLibrary::GetError</definition>
+        <argsstring>(const FJsonRpcResponse &amp;Response)</argsstring>
+        <name>GetError</name>
+        <qualifiedname>UJsonRpcLibrary::GetError</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_response" kindref="compound">FJsonRpcResponse</ref> &amp;</type>
+          <declname>Response</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает объект ошибки из JSON-RPC ответа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция извлекает объект ошибки из указанного JSON-RPC ответа.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON-RPC ответа.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект ошибки из JSON-RPC ответа. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="161" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1aed504ead8d9ccd03e1c23adb38369ad5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UJsonRpcLibrary::GetCode</definition>
+        <argsstring>(const FJsonRpcError &amp;Error)</argsstring>
+        <name>GetCode</name>
+        <qualifiedname>UJsonRpcLibrary::GetCode</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref> &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает код ошибки из данного объекта <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод извлекает код ошибки для объекта ошибки JSON-RPC.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>, из которого извлекается код ошибки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Код ошибки в виде целочисленного значения. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="173" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a662487d1f4e4dabb0f1d6cadba9677ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJsonRpcLibrary::GetMessage</definition>
+        <argsstring>(const FJsonRpcError &amp;Error)</argsstring>
+        <name>GetMessage</name>
+        <qualifiedname>UJsonRpcLibrary::GetMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref> &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает сообщение об ошибке из данного объекта <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает сообщение об ошибке, связанное с ошибкой JSON-RPC.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_rpc_error" kindref="compound">FJsonRpcError</ref>, из которого извлекается сообщение об ошибке.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Сообщение об ошибке в виде FString. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="185" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_json_rpc_library_1a8b79a2540334541b5fae5516d9984163" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UJsonRpcLibrary::GetErrorTypeCode</definition>
+        <argsstring>(EJsonRpcErrorType ErrorType)</argsstring>
+        <name>GetErrorTypeCode</name>
+        <qualifiedname>UJsonRpcLibrary::GetErrorTypeCode</qualifiedname>
+        <param>
+          <type><ref refid="_json_rpc_library_8h_1ae0ebc430bd087ff3dbc680b3d045057f" kindref="member">EJsonRpcErrorType</ref></type>
+          <declname>ErrorType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает код типа ошибки для указанного типа ошибки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип ошибки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Код типа ошибки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="195" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Private/JsonRpcLibrary.cpp" bodystart="74" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Создает новый объект JsonRpcObject с указанным идентификатором GUID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Guid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор GUID для JsonRpcObject. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный JsonRpcObject. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UJsonRpcLibrary</label>
+        <link refid="class_u_json_rpc_library"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UJsonRpcLibrary</label>
+        <link refid="class_u_json_rpc_library"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" line="36" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonRpc/Source/JsonRpc/Public/JsonRpcLibrary.h" bodystart="37" bodyend="198"/>
+    <listofallmembers>
+      <member refid="class_u_json_rpc_library_1a2cea3be83a3b4af11eb453b1b73a7155" prot="private" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>ErrorCodeLookupTable</name></member>
+      <member refid="class_u_json_rpc_library_1aed504ead8d9ccd03e1c23adb38369ad5" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetCode</name></member>
+      <member refid="class_u_json_rpc_library_1a46c765cb092d8b29beabab2f47a78061" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetError</name></member>
+      <member refid="class_u_json_rpc_library_1a8b79a2540334541b5fae5516d9984163" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetErrorTypeCode</name></member>
+      <member refid="class_u_json_rpc_library_1a25776f704bc72a5ebca4c567fd98c69e" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetGuid</name></member>
+      <member refid="class_u_json_rpc_library_1a662487d1f4e4dabb0f1d6cadba9677ce" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetMessage</name></member>
+      <member refid="class_u_json_rpc_library_1a7669e6edb3b57161816f9c34c3497155" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetMethod</name></member>
+      <member refid="class_u_json_rpc_library_1a615073a15cd513c6bb17ee7db8718e06" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetParams</name></member>
+      <member refid="class_u_json_rpc_library_1a4706f3de0eb99be1f9c087a914c3ce1c" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>GetResult</name></member>
+      <member refid="class_u_json_rpc_library_1a31cc052e5eef1599818ec2a1e3f6fc46" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>MakeJsonRpcError</name></member>
+      <member refid="class_u_json_rpc_library_1afd0c52a02b4afa1a6cf431aa087240e9" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>MakeJsonRpcObject</name></member>
+      <member refid="class_u_json_rpc_library_1a5b14aaee7aba1a474cb8e2d0c36aeaba" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>MakeJsonRpcRequest</name></member>
+      <member refid="class_u_json_rpc_library_1a83af71dcf2c02c302a08ba81d5afe0df" prot="public" virt="non-virtual"><scope>UJsonRpcLibrary</scope><name>MakeJsonRpcResponse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

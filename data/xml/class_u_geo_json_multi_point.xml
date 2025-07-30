@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_multi_point" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonMultiPoint</compoundname>
+    <basecompoundref refid="class_u_geo_json_object" prot="public" virt="non-virtual">UGeoJsonObject</basecompoundref>
+    <includes refid="_geo_json_multi_point_8h" local="no">GeoJsonMultiPoint.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_geo_json_multi_point_1aa3e6baf1f3d2e35e46e1a300b198fd91" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref></type>
+        <definition>FJsonMultiPoint UGeoJsonMultiPoint::Coordinates</definition>
+        <argsstring></argsstring>
+        <name>Coordinates</name>
+        <qualifiedname>UGeoJsonMultiPoint::Coordinates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="61" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_multi_point_1ad8231f65e2bd47948d45d10bd003bb2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonMultiPoint::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonMultiPoint::GetType</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9">GetType</reimplements>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="28" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPoint.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_point_1a8da9c3cc346c9c6ced6818703eb4c745" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonMultiPoint::TryGetMultiPoint</definition>
+        <argsstring>(FJsonMultiPoint &amp;MultiPoint) const override</argsstring>
+        <name>TryGetMultiPoint</name>
+        <qualifiedname>UGeoJsonMultiPoint::TryGetMultiPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a">TryGetMultiPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>MultiPoint</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь мультиточку из объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура для хранения извлеченных координат мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если мультиточки успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="36" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPoint.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_point_1aca4daa1703c5080067e606912244624c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonMultiPoint::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const override</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonMultiPoint::TryGetGeometry</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360">TryGetGeometry</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>, в котором будет сохранена полученная геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если геометрия была успешно получена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="44" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPoint.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_point_1a79a56c51644dabbd4047dd0c5bb4611d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonMultiPoint::SetCoordinates</definition>
+        <argsstring>(FJsonMultiPoint &amp;&amp;NewCoordinates)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonMultiPoint::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;&amp;</type>
+          <declname>NewCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта GeoJsonMultiPoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="51" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPoint.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_point_1ac33481cd3e9ee9f5af47ba726215722a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonMultiPoint::SetCoordinates</definition>
+        <argsstring>(const FJsonMultiPoint &amp;NewCoordinates)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonMultiPoint::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>NewCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта GeoJsonMultiPoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="58" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPoint.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий объект MultiPoint GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Объект MultiPoint представляет набор точек, каждая из которых представлена набором из двух или трех координат. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UGeoJsonMultiPoint</label>
+        <link refid="class_u_geo_json_multi_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>FJsonMultiPoint</label>
+        <link refid="struct_f_json_multi_point"/>
+      </node>
+      <node id="1">
+        <label>UGeoJsonMultiPoint</label>
+        <link refid="class_u_geo_json_multi_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Coordinates</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPoint.h" bodystart="17" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_multi_point_1aa3e6baf1f3d2e35e46e1a300b198fd91" prot="private" virt="non-virtual"><scope>UGeoJsonMultiPoint</scope><name>Coordinates</name></member>
+      <member refid="class_u_geo_json_multi_point_1ad8231f65e2bd47948d45d10bd003bb2c" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_multi_point_1a79a56c51644dabbd4047dd0c5bb4611d" prot="public" virt="non-virtual"><scope>UGeoJsonMultiPoint</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_multi_point_1ac33481cd3e9ee9f5af47ba726215722a" prot="public" virt="non-virtual"><scope>UGeoJsonMultiPoint</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_multi_point_1aca4daa1703c5080067e606912244624c" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_multi_point_1a8da9c3cc346c9c6ced6818703eb4c745" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21" prot="public" virt="virtual"><scope>UGeoJsonMultiPoint</scope><name>TryGetPolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

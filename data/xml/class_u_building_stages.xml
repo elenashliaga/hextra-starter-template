@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_building_stages" kind="class" language="C++" prot="public">
+    <compoundname>UBuildingStages</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UUserWidget</basecompoundref>
+    <includes refid="_building_stages_8h" local="no">BuildingStages.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_building_stages_1a721bb4d695f5c2473e77e4484c562d3d" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTextBlock</ref> *</type>
+        <definition>UTextBlock* UBuildingStages::MainTitle</definition>
+        <argsstring></argsstring>
+        <name>MainTitle</name>
+        <qualifiedname>UBuildingStages::MainTitle</qualifiedname>
+        <briefdescription>
+<para>Переменная UTextBlock, представляющая виджет основного заголовка в классе <ref refid="class_u_building_stages" kindref="compound">UBuildingStages</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная помечена как VisibleAnywhere, BlueprintReadwrite и meta = (BindWidget). Она используется для отображения основного заголовка виджета стадий строительства. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" line="33" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_building_stages_1ae5df293c7c716baeef8283575f652c45" prot="public" static="no" mutable="no">
+        <type><ref refid="class_u_left_window_widget" kindref="compound">ULeftWindowWidget</ref> *</type>
+        <definition>ULeftWindowWidget* UBuildingStages::LeftWindowWidgetRef</definition>
+        <argsstring></argsstring>
+        <name>LeftWindowWidgetRef</name>
+        <qualifiedname>UBuildingStages::LeftWindowWidgetRef</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+<para>Ссылка на виджет левого окна. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная - ссылка на виджет левого окна, который является элементом пользовательского интерфейса, используемым на стадиях строительства. Он имеет тип <computeroutput>ULeftWindowWidget*</computeroutput> и ему присвоено значение по умолчанию <computeroutput>nullptr</computeroutput>. Его можно редактировать в любом месте и читать из схемы. Он также выставлен на создании, что означает, что к нему можно получить доступ и манипулировать им извне при создании объекта.</para>
+<para><simplesect kind="see"><para><ref refid="class_u_left_window_widget" kindref="compound">ULeftWindowWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" line="46" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_building_stages_1a388920f97feeb5b370f3417e06c7015f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingStages::ConstructWidgetStage</definition>
+        <argsstring>(const TArray&lt; FBuildingStageInformation &gt; &amp;StageInfo)</argsstring>
+        <name>ConstructWidgetStage</name>
+        <qualifiedname>UBuildingStages::ConstructWidgetStage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_building_stage_information" kindref="compound">FBuildingStageInformation</ref> &gt; &amp;</type>
+          <declname>StageInfo</declname>
+        </param>
+        <briefdescription>
+<para>Конструирует виджет стадии. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод используется для конструирования виджета стадии с данным массивом <ref refid="struct_f_building_stage_information" kindref="compound">FBuildingStageInformation</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StageInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив <ref refid="struct_f_building_stage_information" kindref="compound">FBuildingStageInformation</ref>, который содержит информацию о стадиях.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" line="58" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UBuildingStages</label>
+        <link refid="class_u_building_stages"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AActor</label>
+      </node>
+      <node id="13">
+        <label>ABuildingCore</label>
+        <link refid="class_a_building_core"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>SetupCesiumCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>ExistingCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>MetaPlayerController</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>PositionsManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ABuildingCoreBaseEx</label>
+        <link refid="class_a_building_core_base_ex"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ACesiumCartographicPolygon</label>
+      </node>
+      <node id="23">
+        <label>ADemoViewMetaBuilding</label>
+        <link refid="class_a_demo_view_meta_building"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>AJrpsPlayerController</label>
+        <link refid="class_a_jrps_player_controller"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AMetaCesiumCartographicPolygon</label>
+        <link refid="class_a_meta_cesium_cartographic_polygon"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>AMetaPlayerController</label>
+        <link refid="class_a_meta_player_controller"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ControlMode</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>DemoViewMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>APlayerController</label>
+      </node>
+      <node id="11">
+        <label>ASearchWidgetAnchorPoint</label>
+        <link refid="class_a_search_widget_anchor_point"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PixelStreamingHandler</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>PixelStreamingClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>FControlMode</label>
+        <link refid="struct_f_control_mode"/>
+      </node>
+      <node id="15">
+        <label>FSetupCesiumCartographicPolygon</label>
+        <link refid="struct_f_setup_cesium_cartographic_polygon"/>
+      </node>
+      <node id="10">
+        <label>UActorComponent</label>
+      </node>
+      <node id="24">
+        <label>UBuildingInformation</label>
+        <link refid="class_u_building_information"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>MetaBuildingOwner</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>PlayerController</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UBuildingStages</label>
+        <link refid="class_u_building_stages"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LeftWindowWidgetRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>UDemoViewWidget</label>
+        <link refid="class_u_demo_view_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>MetaDemoViewModeBuilding</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ULeftWindowWidget</label>
+        <link refid="class_u_left_window_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>WB_SearchWidget</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>BuildingCore</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>WB_BuildingInformation</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ControlModeBeforeOpenWidget</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>BuildingStages</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UObject</label>
+      </node>
+      <node id="12">
+        <label>UPixelStreamingClient</label>
+        <link refid="class_u_pixel_streaming_client"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UPixelStreamingMethodHandler</label>
+        <link refid="class_u_pixel_streaming_method_handler"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>BuildingRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>UPositionsManager</label>
+        <link refid="class_u_positions_manager"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>USearchWidget</label>
+        <link refid="class_u_search_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PixelStreamingHandler</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>SearchWidgetAnchorPoint</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Buildings/BuildingStages.h" bodystart="22" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_u_building_stages_1a388920f97feeb5b370f3417e06c7015f" prot="public" virt="non-virtual"><scope>UBuildingStages</scope><name>ConstructWidgetStage</name></member>
+      <member refid="class_u_building_stages_1ae5df293c7c716baeef8283575f652c45" prot="public" virt="non-virtual"><scope>UBuildingStages</scope><name>LeftWindowWidgetRef</name></member>
+      <member refid="class_u_building_stages_1a721bb4d695f5c2473e77e4484c562d3d" prot="public" virt="non-virtual"><scope>UBuildingStages</scope><name>MainTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

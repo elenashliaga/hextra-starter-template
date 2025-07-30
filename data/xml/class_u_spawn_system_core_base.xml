@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_spawn_system_core_base" kind="class" language="C++" prot="public">
+    <compoundname>USpawnSystemCoreBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_spawn_system_core_base_8h" local="no">SpawnSystemCoreBase.h</includes>
+    <innerclass refid="struct_u_spawn_system_core_base_1_1_f_content_path_elements" prot="public">USpawnSystemCoreBase::FContentPathElements</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_u_spawn_system_core_base_1a14864589508061a4870ea0b2b32825b3" prot="public" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TArray&lt;FString&gt; USpawnSystemCoreBase::JsonExtsWildCard</definition>
+        <argsstring></argsstring>
+        <name>JsonExtsWildCard</name>
+        <qualifiedname>USpawnSystemCoreBase::JsonExtsWildCard</qualifiedname>
+        <initializer>= { TEXT(&quot;*.json&quot;), TEXT(&quot;*.geojson&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="33" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spawn_system_core_base_1af6ade62c3b30196e25a6018a37101133" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref> *</type>
+        <definition>USpawnSystemCoreBase* USpawnSystemCoreBase::Singleton</definition>
+        <argsstring></argsstring>
+        <name>Singleton</name>
+        <qualifiedname>USpawnSystemCoreBase::Singleton</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="72" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1ae25fa20218188b9a80c583621ad65fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>USpawnSystemCoreBase::USpawnSystemCoreBase</definition>
+        <argsstring>()</argsstring>
+        <name>USpawnSystemCoreBase</name>
+        <qualifiedname>USpawnSystemCoreBase::USpawnSystemCoreBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="31" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a2fd84e93598ed38d1d7ed824fbba4e50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_architectural_scene_ed_settings" kindref="compound">UArchitecturalSceneEdSettings</ref> *</type>
+        <definition>const UArchitecturalSceneEdSettings * USpawnSystemCoreBase::GetPluginSettings</definition>
+        <argsstring>()</argsstring>
+        <name>GetPluginSettings</name>
+        <qualifiedname>USpawnSystemCoreBase::GetPluginSettings</qualifiedname>
+        <briefdescription>
+<para>Получает настройки плагина из класса ArchitecturalSceneEdSettings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Указатель на const <ref refid="class_u_architectural_scene_ed_settings" kindref="compound">UArchitecturalSceneEdSettings</ref> объект, который содержит настройки плагина. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="45" column="52" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a2b077092ce2739aee2fe01edc4457848" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref> &gt;</type>
+        <definition>TSubclassOf&lt; USpawnSystemCoreBase &gt; USpawnSystemCoreBase::GetSpawnSystemClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpawnSystemClass</name>
+        <qualifiedname>USpawnSystemCoreBase::GetSpawnSystemClass</qualifiedname>
+        <briefdescription>
+<para>Получает класс системы размещения из настроек плагина. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Объект TSubclassOf&lt;USpawnSystemCoreBase&gt;, представляющий класс системы размещения. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="52" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a7624257c33def527eea7cf980a503d50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt;</type>
+        <definition>TSubclassOf&lt; UBuildingInfoWrapper &gt; USpawnSystemCoreBase::GetBuildingInfoContainerClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildingInfoContainerClass</name>
+        <qualifiedname>USpawnSystemCoreBase::GetBuildingInfoContainerClass</qualifiedname>
+        <briefdescription>
+<para>Получает класс BuildingInfoContainer, хранящегося в настройках плагина. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает класс BuildingInfoContainer, хранящийся в классе ArchitecturalSceneEdSettings. Если класс BuildingInfoContainer не установлен в настройках плагина, этот метод вернет nullptr. Класс BuildingInfoContainer используется для создания экземпляров BuildingInfoContainer.</para>
+<para><simplesect kind="return"><para>Указатель на объект TSubclassOf&lt;UBuildingInfoWrapper&gt;, представляющий класс BuildingInfoContainer. Если класс BuildingInfoContainer не установлен, возвращается nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="62" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1ae02d57d089b452212993b6fea90b3ed9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt;</type>
+        <definition>TObjectPtr&lt; UBuildingInfoWrapper &gt; USpawnSystemCoreBase::CreateBuildingInfoContainer</definition>
+        <argsstring>()</argsstring>
+        <name>CreateBuildingInfoContainer</name>
+        <qualifiedname>USpawnSystemCoreBase::CreateBuildingInfoContainer</qualifiedname>
+        <briefdescription>
+<para>Создает новый экземпляр класса <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает новый экземпляр класса <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> с использованием метода <ref refid="class_u_spawn_system_core_base_1a7624257c33def527eea7cf980a503d50" kindref="member">GetBuildingInfoContainerClass()</ref> и метода GetEditorWorld() из базового класса FSpawnSystemUtilities.</para>
+<para><simplesect kind="return"><para>Указатель на новосозданный объект <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="70" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a72978710e19c2e7fbc1cc81af1f75cb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref> *</type>
+        <definition>USpawnSystemCoreBase * USpawnSystemCoreBase::GetInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetInstance</name>
+        <qualifiedname>USpawnSystemCoreBase::GetInstance</qualifiedname>
+        <briefdescription>
+<para>Получает экземпляр класса <computeroutput><ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает указатель на экземпляр класса <computeroutput><ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref></computeroutput>. Если экземпляр не существует, он создает новый экземпляр с использованием функции <computeroutput>NewObject</computeroutput> и возвращает указатель на новосозданный экземпляр. Повторные вызовы этого метода вернут тот же экземпляр.</para>
+<para><simplesect kind="return"><para>Указатель на экземпляр класса <computeroutput><ref refid="class_u_spawn_system_core_base" kindref="compound">USpawnSystemCoreBase</ref></computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="81" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="278" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1ae27fc24334603cc890af9b07f062e57e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpawnSystemCoreBase::FindNewBuilding</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;SelectedFolders)</argsstring>
+        <name>FindNewBuilding</name>
+        <qualifiedname>USpawnSystemCoreBase::FindNewBuilding</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SelectedFolders</declname>
+        </param>
+        <briefdescription>
+<para>Находит и добавляет новые здания в сцену. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод находит новые здания на основе выбранных папок и добавляет их на сцену. Сначала он проверяет сборщик данных о зданиях с помощью метода CheckBuildingDataCollector() из базового класса <ref refid="class_f_spawn_system_utilities_base" kindref="compound">FSpawnSystemUtilitiesBase</ref>. Затем он готовится к респавну зданий, вызывая метод <ref refid="class_u_spawn_system_core_base_1a49d4968514f4177388d34451010a3ef4" kindref="member">PrepareRespawnBuildings()</ref> из базового класса <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref>, передавая сборщик данных о зданиях, выбранные папки, &quot;false&quot; для параметра replaceExistingBuildings и указатель на пустой массив объектов UObjectPtr&lt;UBuildingInfoWrapper&gt;. После подготовки новых зданий, он добавляет их на сцену, вызывая метод AddNewBuildingIntoSceneNew() из базового класса <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref>, передавая массив информации о зданиях.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SelectedFolders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих выбранные папки для поиска новых зданий. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="95" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="288" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a15d6abde70c932d9d4e1604cc16aa654" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpawnSystemCoreBase::ProcessFoldersWithBuildings</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;SelectedFolders, const TFunction&lt; bool(const FContentPathElements &amp;ContentElements)&gt; &amp;FnContentElementsProcessor, int32 &amp;OutBuildingProcessedCount, const TFunction&lt; bool(const FContentPathElements &amp;ContentElements)&gt; &amp;FnFilter=nullptr)</argsstring>
+        <name>ProcessFoldersWithBuildings</name>
+        <qualifiedname>USpawnSystemCoreBase::ProcessFoldersWithBuildings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SelectedFolders</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; bool(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_u_spawn_system_core_base_1_1_f_content_path_elements" kindref="compound">FContentPathElements</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ContentElements</ref>)&gt; &amp;</type>
+          <declname>FnContentElementsProcessor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &amp;</type>
+          <declname>OutBuildingProcessedCount</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; bool(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_u_spawn_system_core_base_1_1_f_content_path_elements" kindref="compound">FContentPathElements</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ContentElements</ref>)&gt; &amp;</type>
+          <declname>FnFilter</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Обрабатывает выбранные папки и строения на основе предоставленных функций. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SelectedFolders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив выбранных путей к папкам. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FnContentElementsProcessor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Функция для обработки элементов содержимого. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutBuildingProcessedCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на хранение количества обработанных зданий. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FnFilter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Функция для фильтрации элементов содержимого.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если обработка папок и зданий успешна, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="115" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="103" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1afe19064ecbcb596acfc91e8c125e68e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt;</type>
+        <definition>TObjectPtr&lt; UBuildingInfoWrapper &gt; USpawnSystemCoreBase::CreateInfoContainer</definition>
+        <argsstring>()</argsstring>
+        <name>CreateInfoContainer</name>
+        <qualifiedname>USpawnSystemCoreBase::CreateInfoContainer</qualifiedname>
+        <briefdescription>
+<para>Создает новый экземпляр <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>, используя класс, указанный в настройках плагина. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод создает новый экземпляр <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> с использованием класса, указанного в настройках плагина. Настройки плагина извлекаются из класса ArchitecturalSceneEdSettings.</para>
+<para><simplesect kind="return"><para>Указатель на новосозданный объект <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="130" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1abc78240668c57b79db58cfd2f1b53729" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpawnSystemCoreBase::SetNewCoordinates</definition>
+        <argsstring>(TObjectPtr&lt; UBuildingInfoWrapper &gt; Coord, UConverterActor *ConverterObj, UWorld *World)</argsstring>
+        <name>SetNewCoordinates</name>
+        <qualifiedname>USpawnSystemCoreBase::SetNewCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt;</type>
+          <declname>Coord</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_converter_actor" kindref="compound">UConverterActor</ref> *</type>
+          <declname>ConverterObj</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает новые координаты для контейнера информации о здании с использованием конвертера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>, который содержит координаты для обновления. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ConverterObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <ref refid="class_u_converter_actor" kindref="compound">UConverterActor</ref>, который будет использован для конвертации координат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="138" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="53" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a0a982770ac05efffc3d48a58fe41667e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpawnSystemCoreBase::IsWGS84Coordinates</definition>
+        <argsstring>(const FVector2D &amp;Coordinates)</argsstring>
+        <name>IsWGS84Coordinates</name>
+        <qualifiedname>USpawnSystemCoreBase::IsWGS84Coordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &amp;</type>
+          <declname>Coordinates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="140" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="77" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1ae8cb322fdc899d1c7a01832d096dead5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpawnSystemCoreBase::ProcessBuildingInfo</definition>
+        <argsstring>(UBuildingInformationStorageManagerBase *BuildingCollectorRef, const TObjectPtr&lt; UBuildingInfoWrapper &gt; &amp;DataInfoPtr, const FString &amp;PathToJSON, const FString &amp;UnrealPathToJSON, const FString &amp;UnrealDir, UConverterActor *ConverterObj, TArray&lt; TObjectPtr&lt; UBuildingInfoWrapper &gt; &gt; *Collector=nullptr)</argsstring>
+        <name>ProcessBuildingInfo</name>
+        <qualifiedname>USpawnSystemCoreBase::ProcessBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref> *</type>
+          <declname>BuildingCollectorRef</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt; &amp;</type>
+          <declname>DataInfoPtr</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PathToJSON</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>UnrealPathToJSON</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>UnrealDir</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_converter_actor" kindref="compound">UConverterActor</ref> *</type>
+          <declname>ConverterObj</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt; &gt; *</type>
+          <declname>Collector</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Обрабатывает информацию о здании и выполняет различные задачи, такие как добавление информации в коллектор, разбор JSON данных, установка текстур, установка новых координат, если есть добавляет информацию о классе в котором хранится освещение здание и добавление информации о здании в менеджер хранения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingCollectorRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект ABuildingInformationStorageManagerBase, представляющий менеджер хранения информации о здании. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DataInfoPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Константный указатель на объект <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>, содержащий данные об информации о здании. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PathToJSON</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Константная ссылка на объект FString, содержащий путь к файлу JSON. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UnrealPathToJSON</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Константная ссылка на объект FString, содержащую Unreal путь к файлу JSON. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UnrealDir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Константная ссылка на объект FString, содержащий каталог Unreal. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ConverterObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <ref refid="class_u_converter_actor" kindref="compound">UConverterActor</ref>, представляющий объект конвертера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Collector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект TArray&lt;TObjectPtr&lt;UBuildingInfoWrapper&gt;&gt;, представляющий коллектор, куда будет добавлена информация о здании.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если информация о здании обрабатывается успешно, False в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="155" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="186" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1a49d4968514f4177388d34451010a3ef4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpawnSystemCoreBase::PrepareRespawnBuildings</definition>
+        <argsstring>(UBuildingInformationStorageManagerBase *BuildingCollectorRef, const TArray&lt; FString &gt; &amp;SelectedFolders, bool bCleanBefore, TArray&lt; TObjectPtr&lt; UBuildingInfoWrapper &gt; &gt; *Collector=nullptr)</argsstring>
+        <name>PrepareRespawnBuildings</name>
+        <qualifiedname>USpawnSystemCoreBase::PrepareRespawnBuildings</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref> *</type>
+          <declname>BuildingCollectorRef</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SelectedFolders</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bCleanBefore</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt; &gt; *</type>
+          <declname>Collector</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+<para>Подготавливает здания для повторного спавна. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод подготавливает здания к повторному спавну, очищая коллекцию информации о зданиях и уничтожая актеры зданий, если это указано параметром <computeroutput>bCleanBefore</computeroutput>. Затем он обрабатывает выбранные папки и связанную с ними информацию о зданиях для добавления их в коллекцию информации о зданиях.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingCollectorRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <computeroutput>ABuildingInformationStorageManagerBase</computeroutput>, управляющий коллекцией информации о зданиях. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SelectedFolders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих выбранные папки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bCleanBefore</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Булево значение, указывающее, следует ли очистить коллекцию информации о зданиях и уничтожить актеры зданий перед обработкой выбранных папок. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Collector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <computeroutput>TArray&lt;TObjectPtr&lt;<ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref>&gt;&gt;</computeroutput>, который содержит контейнеры информации о зданиях для обработанных зданий. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>{bool} Возвращает false если произошла ошибка при выставлении здания иначе true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="176" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="231" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1aecd8003e5ffe486aca6b41e89c6b0c6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpawnSystemCoreBase::RespawnAllBuildings</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;SelectedFolders)</argsstring>
+        <name>RespawnAllBuildings</name>
+        <qualifiedname>USpawnSystemCoreBase::RespawnAllBuildings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SelectedFolders</declname>
+        </param>
+        <briefdescription>
+<para>Повторно спавнит все здания в выбранных папках. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод используется для повторного спавна всех зданий в выбранных папках. Он принимает массив строк с именем SelectedFolders в качестве параметра. Сначала метод проверяет, доступен ли экземпляр класса <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref> или его наследника. Если он недоступен, он выводит сообщение об ошибке и возвращает. Если экземпляр класса доступен, метод приступает к подготовке повторного спавна зданий. Это делается путем вызова метода PrepareRespawnBuildings, передачи BuildingCollectorRef, SelectedFolders и true в качестве аргументов. После подготовки к повторному спавну метод вызывает метод SpawnAllBuildingIntoScene экземпляра BuildingCollectorRef для спавна всех зданий в сцене.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SelectedFolders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих выбранные папки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="193" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="260" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spawn_system_core_base_1ab4a00ab40f3fba7878b17b1ebd051c79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpawnSystemCoreBase::CheckBuildingsCount</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;SelectedFolders, const int32 BuildingProcessedCount)</argsstring>
+        <name>CheckBuildingsCount</name>
+        <qualifiedname>USpawnSystemCoreBase::CheckBuildingsCount</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SelectedFolders</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>BuildingProcessedCount</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет количество обработанных зданий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SelectedFolders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих выбранные папки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingProcessedCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество обработанных зданий.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True если BuildingProcessedCount больше 0, указывая, что есть обработанные здания. False в противном случае, указывая, что в выбранных папках не найдено новых зданий. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="204" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Private/SpawnBuildingSystem/SpawnSystemCoreBase.cpp" bodystart="90" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>USpawnSystemCoreBase</label>
+        <link refid="class_u_spawn_system_core_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>USpawnSystemCoreBase</label>
+        <link refid="class_u_spawn_system_core_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Singleton</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" line="26" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalSceneEd/Public/SpawnBuildingSystem/SpawnSystemCoreBase.h" bodystart="27" bodyend="205"/>
+    <listofallmembers>
+      <member refid="class_u_spawn_system_core_base_1ab4a00ab40f3fba7878b17b1ebd051c79" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>CheckBuildingsCount</name></member>
+      <member refid="class_u_spawn_system_core_base_1ae02d57d089b452212993b6fea90b3ed9" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>CreateBuildingInfoContainer</name></member>
+      <member refid="class_u_spawn_system_core_base_1afe19064ecbcb596acfc91e8c125e68e6" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>CreateInfoContainer</name></member>
+      <member refid="class_u_spawn_system_core_base_1ae27fc24334603cc890af9b07f062e57e" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>FindNewBuilding</name></member>
+      <member refid="class_u_spawn_system_core_base_1a7624257c33def527eea7cf980a503d50" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>GetBuildingInfoContainerClass</name></member>
+      <member refid="class_u_spawn_system_core_base_1a72978710e19c2e7fbc1cc81af1f75cb3" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>GetInstance</name></member>
+      <member refid="class_u_spawn_system_core_base_1a2fd84e93598ed38d1d7ed824fbba4e50" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>GetPluginSettings</name></member>
+      <member refid="class_u_spawn_system_core_base_1a2b077092ce2739aee2fe01edc4457848" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>GetSpawnSystemClass</name></member>
+      <member refid="class_u_spawn_system_core_base_1a0a982770ac05efffc3d48a58fe41667e" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>IsWGS84Coordinates</name></member>
+      <member refid="class_u_spawn_system_core_base_1a14864589508061a4870ea0b2b32825b3" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>JsonExtsWildCard</name></member>
+      <member refid="class_u_spawn_system_core_base_1a49d4968514f4177388d34451010a3ef4" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>PrepareRespawnBuildings</name></member>
+      <member refid="class_u_spawn_system_core_base_1ae8cb322fdc899d1c7a01832d096dead5" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>ProcessBuildingInfo</name></member>
+      <member refid="class_u_spawn_system_core_base_1a15d6abde70c932d9d4e1604cc16aa654" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>ProcessFoldersWithBuildings</name></member>
+      <member refid="class_u_spawn_system_core_base_1aecd8003e5ffe486aca6b41e89c6b0c6e" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>RespawnAllBuildings</name></member>
+      <member refid="class_u_spawn_system_core_base_1abc78240668c57b79db58cfd2f1b53729" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>SetNewCoordinates</name></member>
+      <member refid="class_u_spawn_system_core_base_1af6ade62c3b30196e25a6018a37101133" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>Singleton</name></member>
+      <member refid="class_u_spawn_system_core_base_1ae25fa20218188b9a80c583621ad65fa2" prot="public" virt="non-virtual"><scope>USpawnSystemCoreBase</scope><name>USpawnSystemCoreBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

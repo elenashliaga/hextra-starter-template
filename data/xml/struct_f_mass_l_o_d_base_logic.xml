@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_l_o_d_base_logic" kind="struct" language="C++" prot="public">
+    <compoundname>FMassLODBaseLogic</compoundname>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_calculator" prot="public" virt="non-virtual">TMassLODCalculator&lt; FMassDistanceLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_calculator" prot="public" virt="non-virtual">TMassLODCalculator&lt; FReplicationLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_calculator" prot="public" virt="non-virtual">TMassLODCalculator&lt; FMassSimulationLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_calculator" prot="public" virt="non-virtual">TMassLODCalculator&lt; FMassRepresentationLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_collector" prot="public" virt="non-virtual">TMassLODCollector&lt; FReplicationLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_collector" prot="public" virt="non-virtual">TMassLODCollector&lt; FMassGenericCollectorLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_collector" prot="public" virt="non-virtual">TMassLODCollector&lt; FMassDistanceLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_tick_rate_controller" prot="public" virt="non-virtual">TMassLODTickRateController&lt; FMassSimulationVariableTickChunkFragment, FMassSimulationLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_calculator" prot="public" virt="non-virtual">TMassLODCalculator&lt; FLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_collector" prot="public" virt="non-virtual">TMassLODCollector&lt; FLODLogic &gt;</derivedcompoundref>
+    <derivedcompoundref refid="struct_t_mass_l_o_d_tick_rate_controller" prot="public" virt="non-virtual">TMassLODTickRateController&lt; TVariableTickChunkFragment, FLODLogic &gt;</derivedcompoundref>
+    <includes refid="_mass_l_o_d_logic_8h" local="no">MassLODLogic.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_f_mass_l_o_d_base_logic_1a02c1248177524991b733021ce2bb113e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_l_o_d_info" kindref="compound">FViewerLODInfo</ref> &gt;</type>
+        <definition>TArray&lt;FViewerLODInfo&gt; FMassLODBaseLogic::Viewers</definition>
+        <argsstring></argsstring>
+        <name>Viewers</name>
+        <qualifiedname>FMassLODBaseLogic::Viewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="190" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_mass_l_o_d_base_logic_1ad25196ebee5d94681c0c0c970d614864" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FMassLODBaseLogic::bBuildFrustumData</definition>
+        <argsstring></argsstring>
+        <name>bBuildFrustumData</name>
+        <qualifiedname>FMassLODBaseLogic::bBuildFrustumData</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setting to false will prevent costly <ref refid="struct_f_viewer_l_o_d_info_1a7ca2e8ca5283046ced2764e56799d824" kindref="member">FViewerLODInfo.Frustum</ref> creation. Makes sense only if that data is not required. Note that this property is not expected to be changed at runtime. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="197" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a8df658fedca8760cf3c096f349555b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::FMassLODBaseLogic</definition>
+        <argsstring>(bool bShouldBuildFrustumData)</argsstring>
+        <name>FMassLODBaseLogic</name>
+        <qualifiedname>FMassLODBaseLogic::FMassLODBaseLogic</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bShouldBuildFrustumData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="163" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a0e0a9afeb355caa12419e7eb2f4281e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassLODBaseLogic::CacheViewerInformation</definition>
+        <argsstring>(TConstArrayView&lt; FViewerInfo &gt; ViewerInfos)</argsstring>
+        <name>CacheViewerInformation</name>
+        <qualifiedname>FMassLODBaseLogic::CacheViewerInformation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt;</type>
+          <declname>ViewerInfos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="168" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODLogic.cpp" bodystart="7" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a0b1904e3e8378ac8b0147c6d39bc4e88" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, EMassLOD::Type, LODPerViewer)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05c" kindref="member">EMassLOD::Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LODPerViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Per viewer LOD information conditional fragment accessors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1aa6e6334597bdd36b6cfeac1b6ba18bb4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, EMassLOD::Type, PrevLODPerViewer)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05c" kindref="member">EMassLOD::Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PrevLODPerViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a9316b603656bc5dfd14c7fd9658e98e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</definition>
+        <argsstring>(Condition, float, LODSignificance)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        </param>
+        <param>
+          <type>LODSignificance</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LOD Significance conditional fragment accessors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a8f2eeb2a45e33d4c6ccf9646bc15d78a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</definition>
+        <argsstring>(Condition, float, ClosestDistanceToFrustum)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        </param>
+        <param>
+          <type>ClosestDistanceToFrustum</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Visibility conditional fragment accessors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a1391856e0ae48b7efc4164e5924dfb06" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</definition>
+        <argsstring>(Condition, EMassVisibility, Visibility)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8" kindref="member">EMassVisibility</ref></type>
+        </param>
+        <param>
+          <type>Visibility</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1aad4ca06ab7381e3fb813b942bc3c8411" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</definition>
+        <argsstring>(Condition, EMassVisibility, PrevVisibility)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8" kindref="member">EMassVisibility</ref></type>
+        </param>
+        <param>
+          <type>PrevVisibility</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1aca236157768518f95fa93ed10b2d4e25" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, float, DistanceToViewerSq)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        </param>
+        <param>
+          <type>DistanceToViewerSq</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Per viewer distance conditional fragment accessors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1a2115202d1aacd3930e591a9d2b294a0c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, float, DistanceToFrustum)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        </param>
+        <param>
+          <type>DistanceToFrustum</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Per viewer visibility conditional fragment accessors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1ad68663d7ce8aec09c378acb1cc6f4ae9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, EMassVisibility, VisibilityPerViewer)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8" kindref="member">EMassVisibility</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VisibilityPerViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_l_o_d_base_logic_1ae8e2eb4bb37637f5b0a5394defc80e63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</definition>
+        <argsstring>(Condition, EMassVisibility, PrevVisibilityPerViewer)</argsstring>
+        <name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name>
+        <qualifiedname>FMassLODBaseLogic::DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Condition</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8" kindref="member">EMassVisibility</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PrevVisibilityPerViewer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="188" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base struct for the LOD calculation helpers </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FMassLODBaseLogic</label>
+        <link refid="struct_f_mass_l_o_d_base_logic"/>
+      </node>
+      <node id="10">
+        <label>TMassLODCalculator&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TMassLODCalculator&lt; FMassDistanceLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TMassLODCalculator&lt; FMassRepresentationLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TMassLODCalculator&lt; FMassSimulationLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TMassLODCalculator&lt; FReplicationLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>TMassLODCollector&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TMassLODCollector&lt; FMassDistanceLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TMassLODCollector&lt; FMassGenericCollectorLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TMassLODCollector&lt; FReplicationLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TMassLODTickRateController&lt; TVariableTickChunkFragment, FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_tick_rate_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TMassLODTickRateController&lt; FMassSimulationVariableTickChunkFragment, FMassSimulationLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_tick_rate_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" line="161" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODLogic.h" bodystart="162" bodyend="198"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad25196ebee5d94681c0c0c970d614864" prot="private" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>bBuildFrustumData</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0e0a9afeb355caa12419e7eb2f4281e9" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>CacheViewerInformation</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a9316b603656bc5dfd14c7fd9658e98e8" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8f2eeb2a45e33d4c6ccf9646bc15d78a" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a1391856e0ae48b7efc4164e5924dfb06" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aad4ca06ab7381e3fb813b942bc3c8411" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0b1904e3e8378ac8b0147c6d39bc4e88" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aa6e6334597bdd36b6cfeac1b6ba18bb4" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aca236157768518f95fa93ed10b2d4e25" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a2115202d1aacd3930e591a9d2b294a0c" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad68663d7ce8aec09c378acb1cc6f4ae9" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ae8e2eb4bb37637f5b0a5394defc80e63" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8df658fedca8760cf3c096f349555b9d" prot="public" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>FMassLODBaseLogic</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a02c1248177524991b733021ce2bb113e" prot="protected" virt="non-virtual"><scope>FMassLODBaseLogic</scope><name>Viewers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

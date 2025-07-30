@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_mass_env_query_processor_base_8cpp" kind="file" language="C++">
+    <compoundname>MassEnvQueryProcessorBase.cpp</compoundname>
+    <includes refid="_mass_env_query_processor_base_8h" local="yes">Processors/MassEnvQueryProcessorBase.h</includes>
+    <includes refid="_mass_e_q_s_subsystem_8h" local="yes">MassEQSSubsystem.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/Processors/MassEnvQueryProcessorBase.cpp</label>
+        <link refid="_mass_env_query_processor_base_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MassEQSSubsystem.h</label>
+        <link refid="_mass_e_q_s_subsystem_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>MassEQSTypes.h</label>
+        <link refid="_mass_e_q_s_types_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Processors/MassEnvQueryProcessorBase.h</label>
+        <link refid="_mass_env_query_processor_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Containers/Queue.h</label>
+      </node>
+      <node id="7">
+        <label>EnvironmentQuery/EnvQueryNode.h</label>
+      </node>
+      <node id="9">
+        <label>IndexedHandle.h</label>
+      </node>
+      <node id="13">
+        <label>MassEQSSubsystem.generated.h</label>
+      </node>
+      <node id="11">
+        <label>MassEQSTypes.generated.h</label>
+      </node>
+      <node id="10">
+        <label>MassEntityTypes.h</label>
+      </node>
+      <node id="4">
+        <label>MassEnvQueryProcessorBase.generated.h</label>
+      </node>
+      <node id="3">
+        <label>MassProcessor.h</label>
+      </node>
+      <node id="12">
+        <label>MassSubsystemBase.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_env_query_processor_base_8h" kindref="compound">Processors/MassEnvQueryProcessorBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_e_q_s_subsystem_8h" kindref="compound">MassEQSSubsystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_env_query_processor_base_1ad1ca4f8115d30c2d4a69e278bfa99dcf" kindref="member">UMassEnvQueryProcessorBase::Initialize</ref>(UObject&amp;<sp/>Owner)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::Initialize(Owner);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_u_mass_env_query_processor_base_1a2e42fbcaef8415f9958f2a195b0a22d3" kindref="member">CorrespondingRequestClass</ref>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref>*<sp/>World<sp/>=<sp/>Owner.GetWorld();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check</ref>(World);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_e_q_s_subsystem" kindref="compound">UMassEQSSubsystem</ref>*<sp/>MassEQSSubsystem<sp/>=<sp/>World-&gt;GetSubsystem&lt;<ref refid="class_u_mass_e_q_s_subsystem" kindref="compound">UMassEQSSubsystem</ref>&gt;();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check</ref>(MassEQSSubsystem)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_mass_env_query_processor_base_1afa69aee057cf0d1f4fb08d1b594d58e0" kindref="member">CachedRequestQueryIndex</ref><sp/>=<sp/>MassEQSSubsystem-&gt;<ref refid="class_u_mass_e_q_s_subsystem_1aa541365813d5fbc25550fd0fb16024c6" kindref="member">GetRequestQueueIndex</ref>(<ref refid="class_u_mass_env_query_processor_base_1a2e42fbcaef8415f9958f2a195b0a22d3" kindref="member">CorrespondingRequestClass</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/Processors/MassEnvQueryProcessorBase.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2Module</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IModuleInterface</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module" prot="public" virt="non-virtual">UE::PixelStreaming2::FPixelStreaming2Module</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_module_8h" local="no">IPixelStreaming2Module.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1af266ba48aabe37d26c637b6d400ad614" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_i_pixel_streaming2_module" kindref="compound">IPixelStreaming2Module</ref> &amp;</type>
+        <definition>static IPixelStreaming2Module &amp; IPixelStreaming2Module::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>IPixelStreaming2Module::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton-like access to this module&apos;s interface. Beware calling this during the shutdown phase, though. Your module might have been unloaded already.</para>
+<para><simplesect kind="return"><para>Returns singleton instance, loading the module on demand if needed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="29" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a39922ea7861901b09231b3bb4b7517b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IPixelStreaming2Module::IsAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsAvailable</name>
+        <qualifiedname>IPixelStreaming2Module::IsAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks to see if this module is loaded.</para>
+<para><simplesect kind="return"><para>True if the module is loaded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="39" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1ad1135a105137fd674bdcfda8902e49fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IPixelStreaming2Module::DECLARE_EVENT_OneParam</definition>
+        <argsstring>(IPixelStreaming2Module, FReadyEvent, IPixelStreaming2Module &amp;)</argsstring>
+        <name>DECLARE_EVENT_OneParam</name>
+        <qualifiedname>IPixelStreaming2Module::DECLARE_EVENT_OneParam</qualifiedname>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_module" kindref="compound">IPixelStreaming2Module</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FReadyEvent</ref></type>
+        </param>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_module" kindref="compound">IPixelStreaming2Module</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event fired when internal streamer is initialized and the methods on this module are ready for use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a428dc98613747a1c505c7e0adf1c83bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FReadyEvent</ref> &amp;</type>
+        <definition>virtual FReadyEvent &amp; IPixelStreaming2Module::OnReady</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnReady</name>
+        <qualifiedname>IPixelStreaming2Module::OnReady</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a31872f8349d03779516866167ce86b03">OnReady</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A getter for the OnReady event. Intent is for users to call <ref refid="class_i_pixel_streaming2_module_1af266ba48aabe37d26c637b6d400ad614" kindref="member">IPixelStreaming2Module::Get()</ref>.<ref refid="class_i_pixel_streaming2_module_1a428dc98613747a1c505c7e0adf1c83bb" kindref="member">OnReady()</ref>.AddXXX. <simplesect kind="return"><para>The bindable OnReady event. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="53" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1aef5f2004ec1c9c7e63edf7bc56249554" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IPixelStreaming2Module::IsReady</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsReady</name>
+        <qualifiedname>IPixelStreaming2Module::IsReady</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1ab8f487a67761c8527afc1740232ad66c">IsReady</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is the PixelStreaming2 module actually ready to use? Is the streamer created. <simplesect kind="return"><para>True if Pixel Streaming module methods are ready for use. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a482e7dab606f9308cd4dc662a979e7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IPixelStreaming2Module::StartStreaming</definition>
+        <argsstring>()=0</argsstring>
+        <name>StartStreaming</name>
+        <qualifiedname>IPixelStreaming2Module::StartStreaming</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a75b08d35bc6d253f105ecbaf7eb461de">StartStreaming</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts streaming on all streamers. <simplesect kind="return"><para>False if the module was not able to start streaming. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="65" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a36ce004f3da101380ab047e7a26c36d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2Module::StopStreaming</definition>
+        <argsstring>()=0</argsstring>
+        <name>StopStreaming</name>
+        <qualifiedname>IPixelStreaming2Module::StopStreaming</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a8b3ddbe4c528b8e587793802a690ea89">StopStreaming</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stops all streamers from streaming. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a16e6d5acf0d61e2e821f8fff7545b724" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2Streamer &gt; IPixelStreaming2Module::CreateStreamer</definition>
+        <argsstring>(const FString &amp;StreamerId)=0</argsstring>
+        <name>CreateStreamer</name>
+        <qualifiedname>IPixelStreaming2Module::CreateStreamer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a2e5b4f17bcd910d4e166e5d30a311f8e">CreateStreamer</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StreamerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new streamer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StreamerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The ID of the Streamer to be created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SharedPtr to the streamer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="77" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1ab9ce77be733c004cdae6127d957484e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_video_producer" kindref="compound">IPixelStreaming2VideoProducer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2VideoProducer &gt; IPixelStreaming2Module::CreateVideoProducer</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateVideoProducer</name>
+        <qualifiedname>IPixelStreaming2Module::CreateVideoProducer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1ad231833d096a4ea6759ea7445b2cce2d">CreateVideoProducer</reimplementedby>
+        <briefdescription>
+<para>Creates a new video producer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An video producer interface for you to push video frames in to. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="83" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a0262cf82cbc9594bd3b27a5512ce8a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_audio_producer" kindref="compound">IPixelStreaming2AudioProducer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2AudioProducer &gt; IPixelStreaming2Module::CreateAudioProducer</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateAudioProducer</name>
+        <qualifiedname>IPixelStreaming2Module::CreateAudioProducer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a7bc1c081c0c8e75fcac490587a3c5080">CreateAudioProducer</reimplementedby>
+        <briefdescription>
+<para>Creates a new audio producer. Any audio you push in with <computeroutput>PushAudio</computeroutput> will be mixed with other audio sources before being streamed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Users are responsible for the lifetime of this object. </para>
+</simplesect>
+<simplesect kind="return"><para>An audio producer interface for you to push audio in to. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="90" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a7a306f7e52e035de5b55f0e5c6179809" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>virtual TArray&lt; FString &gt; IPixelStreaming2Module::GetStreamerIds</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetStreamerIds</name>
+        <qualifiedname>IPixelStreaming2Module::GetStreamerIds</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a606946fd7389684e302f3e068f2f2c85">GetStreamerIds</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a TArray containing the keys to the currently held streamers. <simplesect kind="return"><para>TArray containing the keys to the currently held streamers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="96" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1ae639ba2997a5b194e3c2f8b86a70373b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2Streamer &gt; IPixelStreaming2Module::FindStreamer</definition>
+        <argsstring>(const FString &amp;StreamerId)=0</argsstring>
+        <name>FindStreamer</name>
+        <qualifiedname>IPixelStreaming2Module::FindStreamer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a8b24c4aaab5a7dad60209d2951636097">FindStreamer</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StreamerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a streamer by an ID. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StreamerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The ID of the streamer to be found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the interface for a streamer. nullptr if the streamer isn&apos;t found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="103" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a75b4709f5158fed2bb3b028b9405cfea" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2Streamer &gt; IPixelStreaming2Module::DeleteStreamer</definition>
+        <argsstring>(const FString &amp;StreamerId)=0</argsstring>
+        <name>DeleteStreamer</name>
+        <qualifiedname>IPixelStreaming2Module::DeleteStreamer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a5c4f426ea3ca9c436c6fbda39057f436">DeleteStreamer</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StreamerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a streamer by an ID <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StreamerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The ID of the streamer to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The removed streamer. nullptr if the streamer wasn&apos;t found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="110" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1ace6263b7d269791c35da7cb6f0ad7ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2Module::DeleteStreamer</definition>
+        <argsstring>(TSharedPtr&lt; IPixelStreaming2Streamer &gt; ToBeDeleted)=0</argsstring>
+        <name>DeleteStreamer</name>
+        <qualifiedname>IPixelStreaming2Module::DeleteStreamer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1acacffb2098f74afdb48268ea8e6520e7">DeleteStreamer</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref> &gt;</type>
+          <declname>ToBeDeleted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a streamer by its pointer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ToBeDeleted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The streamer to remove from the internal management. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="116" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1ad1bfc3df967ae01a91784edc972a1bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>virtual FString IPixelStreaming2Module::GetDefaultStreamerID</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetDefaultStreamerID</name>
+        <qualifiedname>IPixelStreaming2Module::GetDefaultStreamerID</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a7edb35a0b6fd8ca68b4e25c786865651">GetDefaultStreamerID</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Default Streamer ID. <simplesect kind="return"><para>FString The default streamer ID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="122" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a40e070bc443588b2a3b42a3ae425b742" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>virtual FString IPixelStreaming2Module::GetDefaultSignallingURL</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetDefaultSignallingURL</name>
+        <qualifiedname>IPixelStreaming2Module::GetDefaultSignallingURL</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1a30fafadf8b767a1114200259852b21f4">GetDefaultSignallingURL</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Default Signaling URL (&quot;ws://127.0.0.1:8888&quot;). <simplesect kind="return"><para>FString The default signaling url (&quot;ws://127.0.0.1:8888&quot;). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="128" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_module_1a089f5af1be3b80e840a7fb55f00a5f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2Module::ForEachStreamer</definition>
+        <argsstring>(const TFunction&lt; void(TSharedPtr&lt; IPixelStreaming2Streamer &gt;)&gt; &amp;Func)=0</argsstring>
+        <name>ForEachStreamer</name>
+        <qualifiedname>IPixelStreaming2Module::ForEachStreamer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module_1acdbe45893528de4ad4e096c28b7e0c74">ForEachStreamer</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_streamer" kindref="compound">IPixelStreaming2Streamer</ref> &gt;)&gt; &amp;</type>
+          <declname>Func</declname>
+        </param>
+        <briefdescription>
+<para>A method for iterating through all of the streamers on the module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lambda to execute with each streamer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="135" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_i_pixel_streaming2_module" kindref="compound">IPixelStreaming2Module</ref> interface manages the core functionality of the Pixel Streaming system. This class provides access to streamers, video and audio producers, and handles starting and stopping the streaming process. It also allows interaction with the signalling server and manages the lifecycle of streamers within the Pixel Streaming system. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2Module</label>
+        <link refid="class_i_pixel_streaming2_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UE::PixelStreaming2::FPixelStreaming2Module</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_pixel_streaming2_module"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2Module</label>
+        <link refid="class_i_pixel_streaming2_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" line="20" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Module.h" bodystart="21" bodyend="136"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_module_1a0262cf82cbc9594bd3b27a5512ce8a0a" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>CreateAudioProducer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a16e6d5acf0d61e2e821f8fff7545b724" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>CreateStreamer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1ab9ce77be733c004cdae6127d957484e1" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>CreateVideoProducer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1ad1135a105137fd674bdcfda8902e49fa" prot="public" virt="non-virtual"><scope>IPixelStreaming2Module</scope><name>DECLARE_EVENT_OneParam</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a75b4709f5158fed2bb3b028b9405cfea" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>DeleteStreamer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1ace6263b7d269791c35da7cb6f0ad7ed6" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>DeleteStreamer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1ae639ba2997a5b194e3c2f8b86a70373b" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>FindStreamer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a089f5af1be3b80e840a7fb55f00a5f9b" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>ForEachStreamer</name></member>
+      <member refid="class_i_pixel_streaming2_module_1af266ba48aabe37d26c637b6d400ad614" prot="public" virt="non-virtual"><scope>IPixelStreaming2Module</scope><name>Get</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a40e070bc443588b2a3b42a3ae425b742" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>GetDefaultSignallingURL</name></member>
+      <member refid="class_i_pixel_streaming2_module_1ad1bfc3df967ae01a91784edc972a1bcf" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>GetDefaultStreamerID</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a7a306f7e52e035de5b55f0e5c6179809" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>GetStreamerIds</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a39922ea7861901b09231b3bb4b7517b9" prot="public" virt="non-virtual"><scope>IPixelStreaming2Module</scope><name>IsAvailable</name></member>
+      <member refid="class_i_pixel_streaming2_module_1aef5f2004ec1c9c7e63edf7bc56249554" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>IsReady</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a428dc98613747a1c505c7e0adf1c83bb" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>OnReady</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a482e7dab606f9308cd4dc662a979e7c4" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>StartStreaming</name></member>
+      <member refid="class_i_pixel_streaming2_module_1a36ce004f3da101380ab047e7a26c36d8" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Module</scope><name>StopStreaming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

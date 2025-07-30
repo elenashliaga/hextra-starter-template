@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_s_v_g_parser" kind="class" language="C++" prot="public">
+    <compoundname>USVGParser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_s_v_g_parser_8h" local="no">SVGParser.h</includes>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_s_v_g_parser_1abac214a0bc797a46c66c1ec6c2ee75cd" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_s_v_g_parser_8h_1ae76eef17f56f69baed8dce013a2876f1" kindref="member">FSvgStyles</ref></type>
+        <definition>FSvgStyles USVGParser::ParseStyleClasses</definition>
+        <argsstring>(const FString &amp;SVGStyles)</argsstring>
+        <name>ParseStyleClasses</name>
+        <qualifiedname>USVGParser::ParseStyleClasses</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>SVGStyles</declname>
+        </param>
+        <briefdescription>
+<para>Переводит все описанные стили в css в структуру </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SVGStyles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Базовый xml скачанной иконки в svg со стилями</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Структура с аккуратно распаршенными стилями из css </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="60" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="46" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_s_v_g_parser_1a2ebfb65f3a9ab02bfc2be9d7d44a7a0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString USVGParser::CssToSvgHardcoder</definition>
+        <argsstring>(const FString &amp;BaseSVGText)</argsstring>
+        <name>CssToSvgHardcoder</name>
+        <qualifiedname>USVGParser::CssToSvgHardcoder</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>BaseSVGText</declname>
+        </param>
+        <briefdescription>
+<para>Хардкодит css стили приходящие в svg xml напрямую в описание частей svg иконки (нужно для создании иконки) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BaseSVGText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Базовый xml скачанной иконки в svg</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FString возвращает переписанный xml иконки svg </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="72" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="112" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_v_g_parser_1a3e365d7a9702779ada658b6c37819d67" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref> *</type>
+        <definition>UTexture2D * USVGParser::CreateSVGTexture</definition>
+        <argsstring>(const FString &amp;InSVGString, const UObject *InOuter, FVector2D &amp;IconSize, float MetaScale)</argsstring>
+        <name>CreateSVGTexture</name>
+        <qualifiedname>USVGParser::CreateSVGTexture</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>InSVGString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> UObject *</type>
+          <declname>InOuter</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &amp;</type>
+          <declname>IconSize</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>MetaScale</declname>
+        </param>
+        <briefdescription>
+<para>Создает текстуру из svg файла в формате xml кода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InSVGString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Базовая строка xml пришедшая из URL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InOuter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IconSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- приходящий размер иконки записанный в xml</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UTexture2D* Созданная текстура </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="84" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/PointModule/SVGParser.cpp" bodystart="170" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USVGParser</label>
+        <link refid="class_u_s_v_g_parser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USVGParser</label>
+        <link refid="class_u_s_v_g_parser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" line="47" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/PointModule/SVGParser.h" bodystart="48" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_u_s_v_g_parser_1a3e365d7a9702779ada658b6c37819d67" prot="public" virt="non-virtual"><scope>USVGParser</scope><name>CreateSVGTexture</name></member>
+      <member refid="class_u_s_v_g_parser_1a2ebfb65f3a9ab02bfc2be9d7d44a7a0a" prot="public" virt="non-virtual"><scope>USVGParser</scope><name>CssToSvgHardcoder</name></member>
+      <member refid="class_u_s_v_g_parser_1abac214a0bc797a46c66c1ec6c2ee75cd" prot="private" virt="non-virtual"><scope>USVGParser</scope><name>ParseStyleClasses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

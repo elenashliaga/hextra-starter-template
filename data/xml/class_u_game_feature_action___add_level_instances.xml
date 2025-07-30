@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_game_feature_action___add_level_instances" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UGameFeatureAction_AddLevelInstances</compoundname>
+    <basecompoundref refid="class_u_game_feature_action___world_action_base" prot="public" virt="non-virtual">UGameFeatureAction_WorldActionBase</basecompoundref>
+    <includes refid="_game_feature_action___add_level_instances_8h" local="no">GameFeatureAction_AddLevelInstances.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_game_feature_action___add_level_instances_1a5aa87ae8c19541763c8dfd4c316b6cab" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_game_feature_level_instance_entry" kindref="compound">FGameFeatureLevelInstanceEntry</ref> &gt;</type>
+        <definition>TArray&lt;FGameFeatureLevelInstanceEntry&gt; UGameFeatureAction_AddLevelInstances::LevelInstanceList</definition>
+        <argsstring></argsstring>
+        <name>LevelInstanceList</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::LevelInstanceList</qualifiedname>
+        <briefdescription>
+<para>Список записей экземпляров уровней, которые будут добавлены при активации игрового функционала. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="105" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_game_feature_action___add_level_instances_1ab4d0be19a45fed718850063f49435523" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ULevelStreamingDynamic</ref> * &gt;</type>
+        <definition>TArray&lt;ULevelStreamingDynamic*&gt; UGameFeatureAction_AddLevelInstances::AddedLevels</definition>
+        <argsstring></argsstring>
+        <name>AddedLevels</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::AddedLevels</qualifiedname>
+        <briefdescription>
+<para>Список динамически добавленных экземпляров уровней. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется для отслеживания загруженных уровней и последующей их очистки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="171" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_game_feature_action___add_level_instances_1a0601de11bf9222605ea8abfbd467fec8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UGameFeatureAction_AddLevelInstances::bIsActivated</definition>
+        <argsstring></argsstring>
+        <name>bIsActivated</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::bIsActivated</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Флаг, указывающий на активность игрового функционала. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="176" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_game_feature_action___add_level_instances_1a62b3e87b530a6329f9b5939edf41d568" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UGameFeatureAction_AddLevelInstances::bLayerStateReentrantGuard</definition>
+        <argsstring></argsstring>
+        <name>bLayerStateReentrantGuard</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::bLayerStateReentrantGuard</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Защита от повторного входа для предотвращения рекурсивных изменений состояния слоёв. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="181" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1a750bb87fa66e1fec635279a1ff7bbeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::OnGameFeatureActivating</definition>
+        <argsstring>() override</argsstring>
+        <name>OnGameFeatureActivating</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::OnGameFeatureActivating</qualifiedname>
+        <reimplements refid="class_u_game_feature_action___world_action_base_1acb432359e745bb78ef4667c007b6e78c">OnGameFeatureActivating</reimplements>
+        <briefdescription>
+<para>Метод, вызываемый при активации игрового функционала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Настраивает необходимые делегаты мира и подготавливает экземпляры уровней для динамической загрузки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="78" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="32" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1a30e93a2049d8fb3bb3b9d242be01518e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::OnGameFeatureDeactivating</definition>
+        <argsstring>(FGameFeatureDeactivatingContext &amp;Context) override</argsstring>
+        <name>OnGameFeatureDeactivating</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::OnGameFeatureDeactivating</qualifiedname>
+        <reimplements refid="class_u_game_feature_action___world_action_base_1a24302994982ea449838b748ce89e5aaf">OnGameFeatureDeactivating</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGameFeatureDeactivatingContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <briefdescription>
+<para>Метод, вызываемый при деактивации игрового функционала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Осуществляет очистку динамически добавленных экземпляров уровней и удаляет все установленные делегаты.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контекст деактивации, содержащий дополнительную информацию. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="87" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="45" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1a9c3eabd032ca6a289a0f6b1d1da98504" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::AddToWorld</definition>
+        <argsstring>(const FWorldContext &amp;WorldContext) override</argsstring>
+        <name>AddToWorld</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::AddToWorld</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FWorldContext</ref> &amp;</type>
+          <declname>WorldContext</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет экземпляры уровней в игровой мир на основе предоставленного контекста мира. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Итеративно проходит по списку LevelInstanceList и загружает каждый динамический уровень.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WorldContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контекст мира, в который необходимо добавить уровни. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="115" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="76" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1a14766743892761138d4dbe69543d4e26" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::OnWorldCleanup</definition>
+        <argsstring>(UWorld *World, bool bSessionEnded, bool bCleanupResources)</argsstring>
+        <name>OnWorldCleanup</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::OnWorldCleanup</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bSessionEnded</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bCleanupResources</declname>
+        </param>
+        <briefdescription>
+<para>Обработчик очистки мира, вызываемый при завершении работы мира. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Осуществляет очистку динамически добавленных экземпляров уровней для данного мира.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на очищаемый мир. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bSessionEnded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий на завершение игровой сессии. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bCleanupResources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий на необходимость очистки ресурсов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="126" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="108" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1af0c23ebdbbb61d522e011e8eeb015c3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ULevelStreamingDynamic</ref> *</type>
+        <definition>ULevelStreamingDynamic * UGameFeatureAction_AddLevelInstances::LoadDynamicLevelForEntry</definition>
+        <argsstring>(const FGameFeatureLevelInstanceEntry &amp;Entry, UWorld *TargetWorld)</argsstring>
+        <name>LoadDynamicLevelForEntry</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::LoadDynamicLevelForEntry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_game_feature_level_instance_entry" kindref="compound">FGameFeatureLevelInstanceEntry</ref> &amp;</type>
+          <declname>Entry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>TargetWorld</declname>
+        </param>
+        <briefdescription>
+<para>Загружает динамический экземпляр уровня на основе заданной записи. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Использует &quot;soft&quot; ссылку из записи для загрузки уровня в указанный мир. В случае успешной загрузки, экземпляр добавляется в список AddedLevels.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Запись с параметрами загрузки уровня. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TargetWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Целевой мир для загрузки уровня. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на загруженный динамический уровень или nullptr при неудаче. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="138" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="120" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1a35a935185fa1a115a61d27fe8132b8db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::OnLevelLoaded</definition>
+        <argsstring>()</argsstring>
+        <name>OnLevelLoaded</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::OnLevelLoaded</qualifiedname>
+        <briefdescription>
+<para>Обработчик, вызываемый при завершении загрузки уровня. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет состояние загруженного уровня и устанавливает его видимость, если уровень загружен, но не отображается. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="146" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="142" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1ae35c20940f9ad4eda46f901a0b142109" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::DestroyAddedLevels</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyAddedLevels</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::DestroyAddedLevels</qualifiedname>
+        <briefdescription>
+<para>Удаляет все динамически добавленные экземпляры уровней. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет очистку делегатов и помечает уровни для последующей выгрузки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="153" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="155" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_game_feature_action___add_level_instances_1ac5a68a9ac64b9910fede524b729b72ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGameFeatureAction_AddLevelInstances::CleanUpAddedLevel</definition>
+        <argsstring>(ULevelStreamingDynamic *Level)</argsstring>
+        <name>CleanUpAddedLevel</name>
+        <qualifiedname>UGameFeatureAction_AddLevelInstances::CleanUpAddedLevel</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ULevelStreamingDynamic</ref> *</type>
+          <declname>Level</declname>
+        </param>
+        <briefdescription>
+<para>Очищает конкретный динамический экземпляр уровня. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет все установленные делегаты для данного уровня и помечает его для выгрузки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр уровня, который требуется очистить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="162" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/GameFeatures/GameFeatureAction_AddLevelInstances.cpp" bodystart="164" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Действие игрового функционала для динамического добавления экземпляров уровней. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс отвечает за активацию и деактивацию динамических экземпляров уровней. Он осуществляет загрузку уровней в игровой мир, а также последующую очистку и проверку корректности данных в редакторе. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>UGameFeatureAction</label>
+      </node>
+      <node id="1">
+        <label>UGameFeatureAction_AddLevelInstances</label>
+        <link refid="class_u_game_feature_action___add_level_instances"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGameFeatureAction_WorldActionBase</label>
+        <link refid="class_u_game_feature_action___world_action_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>UGameFeatureAction</label>
+      </node>
+      <node id="1">
+        <label>UGameFeatureAction_AddLevelInstances</label>
+        <link refid="class_u_game_feature_action___add_level_instances"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGameFeatureAction_WorldActionBase</label>
+        <link refid="class_u_game_feature_action___world_action_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" line="68" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/GameFeatures/GameFeatureAction_AddLevelInstances.h" bodystart="69" bodyend="182"/>
+    <listofallmembers>
+      <member refid="class_u_game_feature_action___add_level_instances_1ab4d0be19a45fed718850063f49435523" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>AddedLevels</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a9c3eabd032ca6a289a0f6b1d1da98504" prot="private" virt="virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>AddToWorld</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a0601de11bf9222605ea8abfbd467fec8" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>bIsActivated</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a62b3e87b530a6329f9b5939edf41d568" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>bLayerStateReentrantGuard</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1ac5a68a9ac64b9910fede524b729b72ba" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>CleanUpAddedLevel</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1ae35c20940f9ad4eda46f901a0b142109" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>DestroyAddedLevels</name></member>
+      <member refid="class_u_game_feature_action___world_action_base_1afb9cbc41b07e2bdd265252acff3c0708" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>GameInstanceStartHandle</name></member>
+      <member refid="class_u_game_feature_action___world_action_base_1ae43c55e608667712397c9eff0f4e2b44" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>HandleGameInstanceStart</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a5aa87ae8c19541763c8dfd4c316b6cab" prot="public" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>LevelInstanceList</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1af0c23ebdbbb61d522e011e8eeb015c3f" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>LoadDynamicLevelForEntry</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a750bb87fa66e1fec635279a1ff7bbeb5" prot="public" virt="virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>OnGameFeatureActivating</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a30e93a2049d8fb3bb3b9d242be01518e" prot="public" virt="virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>OnGameFeatureDeactivating</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a35a935185fa1a115a61d27fe8132b8db" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>OnLevelLoaded</name></member>
+      <member refid="class_u_game_feature_action___add_level_instances_1a14766743892761138d4dbe69543d4e26" prot="private" virt="non-virtual"><scope>UGameFeatureAction_AddLevelInstances</scope><name>OnWorldCleanup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

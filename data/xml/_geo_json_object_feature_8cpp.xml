@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_geo_json_object_feature_8cpp" kind="file" language="C++">
+    <compoundname>GeoJsonObjectFeature.cpp</compoundname>
+    <includes refid="_geo_json_object_feature_8h" local="yes">GeoJsonDataStructures/GeoJsonObjectFeature.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp</label>
+        <link refid="_geo_json_object_feature_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GeoJsonObject.h</label>
+        <link refid="_geo_json_object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GeoJsonDataStructures/GeoJsonObjectFeature.h</label>
+        <link refid="_geo_json_object_feature_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GeoJsonDataStructures/GeoJsonWrapperTypes.h</label>
+        <link refid="_geo_json_wrapper_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="7">
+        <label>GeoJsonObject.generated.h</label>
+      </node>
+      <node id="8">
+        <label>GeoJsonObjectFeature.generated.h</label>
+      </node>
+      <node id="6">
+        <label>GeoJsonWrapperTypes.generated.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>META<sp/>all<sp/>rights<sp/>received<sp/>(c)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_geo_json_object_feature_8h" kindref="compound">GeoJsonDataStructures/GeoJsonObjectFeature.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref><sp/><ref refid="class_u_geo_json_object_feature_1a1d8632dbbac1c40cc755bb5d080fb298" kindref="member">UGeoJsonObjectFeature::GetType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="6"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da21021ea0e52be8e9c599f4dff41e5be0" kindref="member">EGeoJsonType::Feature</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1aae4f8e734df9a0cddc9a9fa48706fef1" kindref="member">UGeoJsonObjectFeature::TryGetObjectFeature</ref>(<ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ObjectFeature</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="11"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ObjectFeature</ref><sp/>=<sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a21b3672ff6c14fd0d8ced86cac345e2f" kindref="member">UGeoJsonObjectFeature::TryGetPoint</ref>(<ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">EGeoJsonType::Point</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2a3cd5946cfd317eb99c3d32e35e2d4c" kindref="member">Point</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a73d172905daefe89b2362e727a6dda7d" kindref="member">UGeoJsonObjectFeature::TryGetLineString</ref>(<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2e321465690359abbb020a3619b1c937" kindref="member">LineString</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2e321465690359abbb020a3619b1c937" kindref="member">EGeoJsonType::LineString</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da2e321465690359abbb020a3619b1c937" kindref="member">LineString</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a0f1fbeaa123d11d465fc251c48e1d4ea" kindref="member">UGeoJsonObjectFeature::TryGetPolygon</ref>(<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da4c0a11247d92f73fb84baa51e37a3263" kindref="member">Polygon</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="27"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da4c0a11247d92f73fb84baa51e37a3263" kindref="member">EGeoJsonType::Polygon</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da4c0a11247d92f73fb84baa51e37a3263" kindref="member">Polygon</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a178aa92f1ac0e540b4af28d5e5be8262" kindref="member">UGeoJsonObjectFeature::TryGetMultiPoint</ref>(<ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da3cd60571b78c0f0e0cd78c2f96127bc0" kindref="member">MultiPoint</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="32"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da3cd60571b78c0f0e0cd78c2f96127bc0" kindref="member">EGeoJsonType::MultiPoint</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da3cd60571b78c0f0e0cd78c2f96127bc0" kindref="member">MultiPoint</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1aec1a4ccdc757069d87810b1bf33bfa6f" kindref="member">UGeoJsonObjectFeature::TryGetMultiLineString</ref>(<ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da6d0b0e1d146d35399060c10baabed5d6" kindref="member">MultiLineString</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="37"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da6d0b0e1d146d35399060c10baabed5d6" kindref="member">EGeoJsonType::MultiLineString</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da6d0b0e1d146d35399060c10baabed5d6" kindref="member">MultiLineString</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a03dfd635aa653fb4d1898bc646267771" kindref="member">UGeoJsonObjectFeature::TryGetMultiPolygon</ref>(<ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref>&amp;<sp/><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da5645dd61a1073a52cf2476fd28f04a3b" kindref="member">MultiPolygon</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a009a0e79aa534d96d2a2e563c663a080" kindref="member">TryGetTemplateGeometry</ref>&lt;<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da5645dd61a1073a52cf2476fd28f04a3b" kindref="member">EGeoJsonType::MultiPolygon</ref>&gt;(<ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36da5645dd61a1073a52cf2476fd28f04a3b" kindref="member">MultiPolygon</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1aa17af75dec2716feac0548937304a9f9" kindref="member">UGeoJsonObjectFeature::TryGetGeometry</ref>(<ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>&amp;<sp/>Geometry)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Geometry<sp/>=<sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1aaf7522f0c14dea0b53c62d3c44ad3197" kindref="member">Geometry</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_geo_json_object_feature_1af0fc3d3bf0eaeb08266e4bb9d7b48dff" kindref="member">UGeoJsonObjectFeature::GetStringProperty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1ac80a5a15924fb039da7ce0317c043a99" kindref="member">GetStringPropertyWithDefault</ref>(Key,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="class_u_geo_json_object_feature_1ac80a5a15924fb039da7ce0317c043a99" kindref="member">UGeoJsonObjectFeature::GetStringPropertyWithDefault</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a940cf3bb518a057a9fbe3a42b0340c75" kindref="member">GetPropertyWithDefault</ref>(Key,<sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a3868bf77af2c3b220543ef27a18b1a13" kindref="member">UGeoJsonObjectFeature::GetBoolProperty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a73d890fa66e9eeb66b94eb7b7343d0f3" kindref="member">GetBoolPropertyWithDefault</ref>(Key,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a73d890fa66e9eeb66b94eb7b7343d0f3" kindref="member">UGeoJsonObjectFeature::GetBoolPropertyWithDefault</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bDefault</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="68"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a940cf3bb518a057a9fbe3a42b0340c75" kindref="member">GetPropertyWithDefault</ref>(Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bDefault</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a122791874000c81af75cce0deacbede2" kindref="member">UGeoJsonObjectFeature::GetNumberProperty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="73"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a0d18bb0804367415896bb6985ffb4dd1" kindref="member">GetNumberPropertyWithDefault</ref>(Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DBL_MAX</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a0d18bb0804367415896bb6985ffb4dd1" kindref="member">UGeoJsonObjectFeature::GetNumberPropertyWithDefault</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="78"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a940cf3bb518a057a9fbe3a42b0340c75" kindref="member">GetPropertyWithDefault</ref>(Key,<sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_u_geo_json_object_feature_1a7948e3dca49be702c30bc09470dd1fce" kindref="member">UGeoJsonObjectFeature::GetIntProperty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="83"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a7db844fb955036d23dd5a000398b40b6" kindref="member">GetIntPropertyWithDefault</ref>(Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INT_MAX</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="class_u_geo_json_object_feature_1a7db844fb955036d23dd5a000398b40b6" kindref="member">UGeoJsonObjectFeature::GetIntPropertyWithDefault</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>Key,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="88"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref>.<ref refid="struct_f_json_object_feature_1a940cf3bb518a057a9fbe3a42b0340c75" kindref="member">GetPropertyWithDefault</ref>(Key,<sp/><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00da7a1920d61156abc05a60135aefe8bc67" kindref="member">Default</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1ae189285be22bd72644c295aa76a9e65e" kindref="member">UGeoJsonObjectFeature::SetFeature</ref>(<ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>&amp;&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Element</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MoveTemp</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Element</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_geo_json_object_feature_1ae189285be22bd72644c295aa76a9e65e" kindref="member">UGeoJsonObjectFeature::SetFeature</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Element</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_geo_json_object_feature_1a89f5ccfe1abe5725927149ecb99dbcec" kindref="member">Feature</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Element</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonObjectFeature.cpp"/>
+  </compounddef>
+</doxygen>

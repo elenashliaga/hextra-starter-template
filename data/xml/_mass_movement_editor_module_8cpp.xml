@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_mass_movement_editor_module_8cpp" kind="file" language="C++">
+    <compoundname>MassMovementEditorModule.cpp</compoundname>
+    <includes refid="_mass_movement_editor_module_8h" local="yes">MassMovementEditorModule.h</includes>
+    <includes local="yes">AssetToolsModule.h</includes>
+    <includes refid="_mass_movement_style_ref_details_8h" local="yes">MassMovementStyleRefDetails.h</includes>
+    <includes local="yes">Modules/ModuleManager.h</includes>
+    <includes local="yes">PropertyEditorModule.h</includes>
+    <includes local="yes">ToolMenus.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassMovementEditor/Private/MassMovementEditorModule.cpp</label>
+        <link refid="_mass_movement_editor_module_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MassMovementEditorModule.h</label>
+        <link refid="_mass_movement_editor_module_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>MassMovementStyleRefDetails.h</label>
+        <link refid="_mass_movement_style_ref_details_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AssetToolsModule.h</label>
+      </node>
+      <node id="5">
+        <label>AssetTypeCategories.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="11">
+        <label>IPropertyTypeCustomization.h</label>
+      </node>
+      <node id="4">
+        <label>Modules/ModuleManager.h</label>
+      </node>
+      <node id="12">
+        <label>PropertyEditorModule.h</label>
+      </node>
+      <node id="13">
+        <label>ToolMenus.h</label>
+      </node>
+      <node id="7">
+        <label>Toolkits/AssetEditorToolkit.h</label>
+      </node>
+      <node id="6">
+        <label>Toolkits/IToolkitHost.h</label>
+      </node>
+      <node id="10">
+        <label>UnrealClient.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_mass_movement_editor_module_8cpp_1a0de3ae51f3a629a8e5d113f1b9390da7" prot="public" static="no">
+        <name>LOCTEXT_NAMESPACE</name>
+        <initializer>&quot;MassMovementEditor&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassMovementEditor/Private/MassMovementEditorModule.cpp" line="10" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassMovementEditor/Private/MassMovementEditorModule.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_movement_editor_module_8h" kindref="compound">MassMovementEditorModule.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AssetToolsModule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_movement_style_ref_details_8h" kindref="compound">MassMovementStyleRefDetails.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Modules/ModuleManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;PropertyEditorModule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ToolMenus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCTEXT_NAMESPACE<sp/>&quot;MassMovementEditor&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="_meta_localization_8cpp_1aca0aecd1b168e487d6a8d015cb651cd3" kindref="member">IMPLEMENT_MODULE</ref>(<ref refid="class_f_mass_movement_editor_module" kindref="compound">FMassMovementEditorModule</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MassMovementEditor</ref>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_mass_movement_editor_module_1ad203775b0f738e0276ab5103cee93647" kindref="member">FMassMovementEditorModule::StartupModule</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>the<sp/>details<sp/>customizer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPropertyEditorModule</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PropertyModule</ref><sp/>=<sp/>FModuleManager::LoadModuleChecked&lt;FPropertyEditorModule&gt;(</highlight><highlight class="stringliteral">&quot;PropertyEditor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PropertyModule</ref>.RegisterCustomPropertyTypeLayout(TEXT(</highlight><highlight class="stringliteral">&quot;MassMovementStyleRef&quot;</highlight><highlight class="normal">),<sp/>FOnGetPropertyTypeCustomizationInstance::CreateStatic(&amp;<ref refid="class_f_mass_movement_style_ref_details_1a245f5f3705744e1ded3b3af67f770de0" kindref="member">FMassMovementStyleRefDetails::MakeInstance</ref>));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_mass_movement_editor_module_1a4bb03ad818e5e1ee1c7d725fb616aa2b" kindref="member">FMassMovementEditorModule::ShutdownModule</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>UToolMenus::UnRegisterStartupCallback(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>UToolMenus::UnregisterOwner(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FModuleManager::Get().<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IsModuleLoaded</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;PropertyEditor&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPropertyEditorModule</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PropertyModule</ref><sp/>=<sp/>FModuleManager::GetModuleChecked&lt;FPropertyEditorModule&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;PropertyEditor&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PropertyModule</ref>.UnregisterCustomPropertyTypeLayout(TEXT(</highlight><highlight class="stringliteral">&quot;MassMovementStyleRef&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LOCTEXT_NAMESPACE</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassMovementEditor/Private/MassMovementEditorModule.cpp"/>
+  </compounddef>
+</doxygen>

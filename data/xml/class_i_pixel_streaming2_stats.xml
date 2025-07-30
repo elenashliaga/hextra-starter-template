@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_stats" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2Stats</compoundname>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats" prot="public" virt="non-virtual">UE::PixelStreaming2::FStats</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_stats_8h" local="no">IPixelStreaming2Stats.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_stats_1a4af6644a73d5451ef42a45d038e66ecc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_i_pixel_streaming2_stats" kindref="compound">IPixelStreaming2Stats</ref> &amp;</type>
+        <definition>IPixelStreaming2Stats &amp; IPixelStreaming2Stats::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>IPixelStreaming2Stats::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton-like access to the Pixel Streaming stats public API. <simplesect kind="return"><para>Returns singleton instance of Pixel Streaming stats. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Stats.h" line="18" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_stats_1a66609ed9f3f32b274ca49ea45468de43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2Stats::GraphValue</definition>
+        <argsstring>(FName InName, float Value, int InSamples, float InMinRange, float InMaxRange, float InRefValue=0.0f)=0</argsstring>
+        <name>GraphValue</name>
+        <qualifiedname>IPixelStreaming2Stats::GraphValue</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a7ce80c5c416bd5edd97dd4593e8f8c7e">GraphValue</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>InName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSamples</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMinRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMaxRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InRefValue</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Graphs a value in a real-time plot that is visible when <computeroutput>stat PixelStreaming2Graphs</computeroutput> is used. If a graph of this name has not been graphed before this will also create the graph internally. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the stat to graph, this is used in the graph title and must be unique. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InSamples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of samples (along the x-axis) we wish to graph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InMinRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value we expect for this value we are graphing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InMaxRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value we expect for this value we are graphing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InRefValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference value that we draw in the graph as a horizontal line, this can be useful to see if we are within some threshold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Stats.h" line="29" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Add stats that Pixel Streaming can display on screen or be used internally. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IPixelStreaming2Stats</label>
+        <link refid="class_i_pixel_streaming2_stats"/>
+      </node>
+      <node id="2">
+        <label>UE::PixelStreaming2::FStats</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Stats.h" line="11" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Public/IPixelStreaming2Stats.h" bodystart="12" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_stats_1a4af6644a73d5451ef42a45d038e66ecc" prot="public" virt="non-virtual"><scope>IPixelStreaming2Stats</scope><name>Get</name></member>
+      <member refid="class_i_pixel_streaming2_stats_1a66609ed9f3f32b274ca49ea45468de43" prot="public" virt="pure-virtual"><scope>IPixelStreaming2Stats</scope><name>GraphValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

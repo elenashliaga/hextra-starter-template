@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_meta_layer" kind="struct" language="C++" prot="public">
+    <compoundname>FMetaLayer</compoundname>
+    <includes refid="_meta_layer_8h" local="no">MetaLayer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_meta_layer_1a7831317f9d76a8f379072ff3b4007b2b" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FText</ref></type>
+        <definition>FText FMetaLayer::DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <qualifiedname>FMetaLayer::DisplayName</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Дисплейное имя объекта. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет собой отображаемое имя объекта. Это строка символов, которая может быть изменена системой Blueprint.</para>
+<para><simplesect kind="note"><para>Эта переменная редактируется где угодно и доступна для чтения и записи в системе Blueprint. </para>
+</simplesect>
+<simplesect kind="note"><para>Эта переменная принадлежит категории &quot;MetaLayer&quot; (Гибридный слой). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="22" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_meta_layer_1aa55275eb5f4bb0f75e8746651893dbd4" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(bool)&gt;</type>
+        <definition>TFunction&lt;void(bool)&gt; FMetaLayer::OnToggle</definition>
+        <argsstring></argsstring>
+        <name>OnToggle</name>
+        <qualifiedname>FMetaLayer::OnToggle</qualifiedname>
+        <initializer>{ [](bool) {} }</initializer>
+        <briefdescription>
+<para>Указатель на функцию для события переключения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот указатель функции используется для обработки событий переключения.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое значение переключателя.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Пользователь должен предоставить функцию, которая принимает булев параметр и ничего не возвращает. Это функция вызывается при изменении переключателя. Начальное значение переключателя не указано. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="35" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_meta_layer_1ab205944573b4236edc015fdd403cd907" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FMetaLayer::bEnabledByDefault</definition>
+        <argsstring></argsstring>
+        <name>bEnabledByDefault</name>
+        <qualifiedname>FMetaLayer::bEnabledByDefault</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Переменная bEnabledByDefault показывает, должен ли слой быть включен при старте сессии и сбросе приложения в состояние &quot;по умолчанию&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Гибридный слой - это категория, которая содержит функции, связанные с включением или отключением гибридной функции в приложении. Переменная bEnabledByDefault может быть отредактирована в редакторе, доступна в синтезаторе символов, и она принадлежит категории Гибридного слоя. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="44" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_meta_layer_1aaa86bca1ef64f8a4b0dbc0a91f813920" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FMetaLayer::bEnabled</definition>
+        <argsstring></argsstring>
+        <name>bEnabled</name>
+        <qualifiedname>FMetaLayer::bEnabled</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Переменная bEnabled показывает, включен ли гибридный слой или нет. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Гибридный слой - это категория, которая содержит функции, связанные с включением или отключением гибридной функции в приложении. Переменная bEnabled может быть отредактирована в редакторе, доступна и изменяема в синтезаторе символов, и она принадлежит категории Гибридного слоя. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_meta_layer_1a8530fe125cd5b15a9fb4fff48d4de409" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FMetaLayer::bLocked</definition>
+        <argsstring></argsstring>
+        <name>bLocked</name>
+        <qualifiedname>FMetaLayer::bLocked</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Эта переменная указывает, заблокирован объект или нет. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если эта переменная установлена в true, это значит, что объект заблокирован. В противном случае, если она установлена в false, это значит, что объект не заблокирован.</para>
+<para>Эта переменная используется в категории &quot;Гибридный слой&quot; и может быть отредактирована в узлах blueprint.</para>
+<para><simplesect kind="see"><para>UPROPERTY() </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EditAnywhere</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintReadWrite</ref></para>
+</simplesect>
+<simplesect kind="since"><para>&lt;вставить дату&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="70" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_meta_layer_1a4d9304f8d8b65a6778a174bb6a5d5acb" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        <definition>FMetaLayer::Guid</definition>
+        <argsstring></argsstring>
+        <name>Guid</name>
+        <qualifiedname>FMetaLayer::Guid</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Уникальный идентификатор для категории Гибридного слоя. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная используется для хранения уникального идентификатора для категории Гибридного слоя. Создается новый объект Guid и назначается этой переменной. Доступ к нему можно получить через переменную <computeroutput>Guid</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="81" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_meta_layer_1af81e527a38fd9464ec5ef0bad581ebd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMetaLayer::FMetaLayer</definition>
+        <argsstring>()=default</argsstring>
+        <name>FMetaLayer</name>
+        <qualifiedname>FMetaLayer::FMetaLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="84" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_layer_1ad1aaa903d98fd8d1c05d824505279e18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FMetaLayer::FMetaLayer</definition>
+        <argsstring>(FText DisplayName, TFunction&lt; void(bool)&gt; OnToggle, bool bEnabledByDefault)</argsstring>
+        <name>FMetaLayer</name>
+        <qualifiedname>FMetaLayer::FMetaLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FText</ref></type>
+          <declname>DisplayName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(bool)&gt;</type>
+          <declname>OnToggle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bEnabledByDefault</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="86" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_layer_1a63ff8c6d201245279b5450a07ba2b2e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FMetaLayer::Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <qualifiedname>FMetaLayer::Enable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="92" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Layers/MetaLayer.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_layer_1a3816563ab6a14b1cf6291853b812c253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FMetaLayer::Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <qualifiedname>FMetaLayer::Disable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="93" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Layers/MetaLayer.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_meta_layer_1a75e04c0392b0cd2e53b5a00d2263b61a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FMetaLayer::Toggle</definition>
+        <argsstring>(bool bInEnabled)</argsstring>
+        <name>Toggle</name>
+        <qualifiedname>FMetaLayer::Toggle</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bInEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="94" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Layers/MetaLayer.cpp" bodystart="14" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" line="8" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Layers/MetaLayer.h" bodystart="9" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_f_meta_layer_1aaa86bca1ef64f8a4b0dbc0a91f813920" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>bEnabled</name></member>
+      <member refid="struct_f_meta_layer_1ab205944573b4236edc015fdd403cd907" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>bEnabledByDefault</name></member>
+      <member refid="struct_f_meta_layer_1a8530fe125cd5b15a9fb4fff48d4de409" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>bLocked</name></member>
+      <member refid="struct_f_meta_layer_1a3816563ab6a14b1cf6291853b812c253" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>Disable</name></member>
+      <member refid="struct_f_meta_layer_1a7831317f9d76a8f379072ff3b4007b2b" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>DisplayName</name></member>
+      <member refid="struct_f_meta_layer_1a63ff8c6d201245279b5450a07ba2b2e1" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>Enable</name></member>
+      <member refid="struct_f_meta_layer_1af81e527a38fd9464ec5ef0bad581ebd0" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>FMetaLayer</name></member>
+      <member refid="struct_f_meta_layer_1ad1aaa903d98fd8d1c05d824505279e18" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>FMetaLayer</name></member>
+      <member refid="struct_f_meta_layer_1a4d9304f8d8b65a6778a174bb6a5d5acb" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>Guid</name></member>
+      <member refid="struct_f_meta_layer_1aa55275eb5f4bb0f75e8746651893dbd4" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>OnToggle</name></member>
+      <member refid="struct_f_meta_layer_1a75e04c0392b0cd2e53b5a00d2263b61a" prot="public" virt="non-virtual"><scope>FMetaLayer</scope><name>Toggle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

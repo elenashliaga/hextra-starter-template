@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="namespace_curved_text" kind="namespace" language="C++">
+    <compoundname>CurvedText</compoundname>
+    <innerclass refid="class_curved_text_1_1_f_canvas_text_item" prot="public">CurvedText::FCanvasTextItem</innerclass>
+    <innerclass refid="struct_curved_text_1_1_f_text_along_curve_arguments" prot="public">CurvedText::FTextAlongCurveArguments</innerclass>
+    <innerclass refid="struct_curved_text_1_1_i_curve_data_provider" prot="public">CurvedText::ICurveDataProvider</innerclass>
+    <innerclass refid="struct_curved_text_1_1_i_font_data_provider" prot="public">CurvedText::IFontDataProvider</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_curved_text_1a276a1cea054242592b63764d1275911d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt; FVector &gt; CurvedText::SamplePolyline</definition>
+        <argsstring>(const USplineComponent *InSplineComponent, float InThresholdSq=4.f)</argsstring>
+        <name>SamplePolyline</name>
+        <qualifiedname>CurvedText::SamplePolyline</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USplineComponent</ref> *</type>
+          <declname>InSplineComponent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InThresholdSq</declname>
+          <defval>4.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Формирует полилинию на основе кривой из USplineComponent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InSplineComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USplineComponent для генерации полилинии. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InThresholdSq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Размер погрешности в квадрате.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив точек, образующий полилинию. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="121" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.cpp" bodystart="69" bodyend="79" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" declline="121" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_curved_text_1a801e6adc4bc49f48bb8730effefb90bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> bool</type>
+        <definition>bool CurvedText::SmoothPolyline</definition>
+        <argsstring>(TArrayView&lt; FVector2D &gt; InVertices, uint32 InSmoothIterations=1u, FVector2D::FReal InWeight=1.)</argsstring>
+        <name>SmoothPolyline</name>
+        <qualifiedname>CurvedText::SmoothPolyline</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &gt;</type>
+          <declname>InVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>InSmoothIterations</declname>
+          <defval>1<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">u</ref></defval>
+        </param>
+        <param>
+          <type>FVector2D::FReal</type>
+          <declname>InWeight</declname>
+          <defval>1.</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сглаживает полилинию с использованием алгоритма скользящего среднего окна.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек, образующий полилинию. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InSmoothIterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество итераций сглаживания. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InWeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вес среднего элемента.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Успешно ли завершилось сглаживание. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="132" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.cpp" bodystart="81" bodyend="99" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" declline="132" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_curved_text_1a8568c0bf99e883c4271790e1027ab695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &gt;</type>
+        <definition>TArray&lt; FVector2D &gt; CurvedText::ProjectPolyline</definition>
+        <argsstring>(const UCanvas *InCanvas, TConstArrayView&lt; FVector &gt; InVertices)</argsstring>
+        <name>ProjectPolyline</name>
+        <qualifiedname>CurvedText::ProjectPolyline</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+          <declname>InVertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проецирует массив точек на экран с использованием UCanvas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для непосредственной проекции точек. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек для проекции.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив спроецированных точек на экране. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="142" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.cpp" bodystart="101" bodyend="128" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" declline="142" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_curved_text_1a39176d1ea876db5d43d8c8e64a1e8f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void CurvedText::SampleTextAlongCurve</definition>
+        <argsstring>(const FTextAlongCurveArguments &amp;InArgs, TArray&lt; FCanvasTextItem &gt; &amp;InOutCanvasItems)</argsstring>
+        <name>SampleTextAlongCurve</name>
+        <qualifiedname>CurvedText::SampleTextAlongCurve</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_curved_text_1_1_f_text_along_curve_arguments" kindref="compound">FTextAlongCurveArguments</ref> &amp;</type>
+          <declname>InArgs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_curved_text_1_1_f_canvas_text_item" kindref="compound">FCanvasTextItem</ref> &gt; &amp;</type>
+          <declname>InOutCanvasItems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Формирует текст вдоль абстрактной кривой.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структурная обертка над различными аргументами для формирования текста. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InOutCanvasItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив элементов канваса, который может быть использован в дальнейшем. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="150" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.cpp" bodystart="147" bodyend="246" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" declline="150" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_curved_text_1aa1a6e13c241898f3e59e5c57164320f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void CurvedText::BatchDrawElements</definition>
+        <argsstring>(UCanvas *InCanvas, TArrayView&lt; FCanvasTextItem &gt; InCanvasItems, bool bFlushCanvas=false)</argsstring>
+        <name>BatchDrawElements</name>
+        <qualifiedname>CurvedText::BatchDrawElements</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="class_curved_text_1_1_f_canvas_text_item" kindref="compound">FCanvasTextItem</ref> &gt;</type>
+          <declname>InCanvasItems</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFlushCanvas</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Приоритизирует и передает элементы канваса на отрисовку.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas, отвечающий за отрисовку элементов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InCanvasItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив элементов для отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFlushCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нужно ли отправлять комманды на отрисовку немедленно. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="159" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.cpp" bodystart="248" bodyend="267" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" declline="159" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/CurvedText2D.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

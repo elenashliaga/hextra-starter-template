@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_visualization_component" kind="class" language="C++" prot="public">
+    <compoundname>UMassVisualizationComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UActorComponent</basecompoundref>
+    <includes refid="_mass_visualization_component_8h" local="no">MassVisualizationComponent.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1a9203a75f8c55253797ea79ebaa2d7029" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_instanced_static_mesh_info" kindref="compound">FMassInstancedStaticMeshInfo</ref> &gt;</type>
+        <definition>TArray&lt;FMassInstancedStaticMeshInfo&gt; UMassVisualizationComponent::InstancedStaticMeshInfos</definition>
+        <argsstring></argsstring>
+        <name>InstancedStaticMeshInfos</name>
+        <qualifiedname>UMassVisualizationComponent::InstancedStaticMeshInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The information of all the instanced static meshes. Make sure to use AddInstancedStaticMeshInfo to add elements to it </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="127" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1ab15229c6d29ae5d1c5a7269c5de3d75d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref> &gt;</type>
+        <definition>TArray&lt;FStaticMeshInstanceVisualizationDescHandle&gt; UMassVisualizationComponent::InstancedStaticMeshInfosFreeIndices</definition>
+        <argsstring></argsstring>
+        <name>InstancedStaticMeshInfosFreeIndices</name>
+        <qualifiedname>UMassVisualizationComponent::InstancedStaticMeshInfosFreeIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indices to InstancedStaticMeshInfos that have been released and can be reused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="131" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1a5199f87b1dfb22d924d93c7900d17b45" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref>, <ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref> &gt;</type>
+        <definition>TMap&lt;FISMCSharedDataKey, FStaticMeshInstanceVisualizationDescHandle&gt; UMassVisualizationComponent::ISMComponentMap</definition>
+        <argsstring></argsstring>
+        <name>ISMComponentMap</name>
+        <qualifiedname>UMassVisualizationComponent::ISMComponentMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping from ISMComponent (indicated by FISMCSharedDataKey) to corresponding VisualDescHandle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="134" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1a6e1c5eb4ea6303cc91539a82800ce6ba" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data_map" kindref="compound">FMassISMCSharedDataMap</ref></type>
+        <definition>FMassISMCSharedDataMap UMassVisualizationComponent::ISMCSharedData</definition>
+        <argsstring></argsstring>
+        <name>ISMCSharedData</name>
+        <qualifiedname>UMassVisualizationComponent::ISMCSharedData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="136" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1aec4ca845eaa42c2bf0602c0d47e90459" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref>, <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref> &gt;</type>
+        <definition>TMap&lt;uint32, FISMCSharedDataKey&gt; UMassVisualizationComponent::MeshDescToISMCMap</definition>
+        <argsstring></argsstring>
+        <name>MeshDescToISMCMap</name>
+        <qualifiedname>UMassVisualizationComponent::MeshDescToISMCMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping <ref refid="struct_f_mass_static_mesh_instance_visualization_mesh_desc" kindref="compound">FMassStaticMeshInstanceVisualizationMeshDesc</ref> hash to <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> entries for all <ref refid="struct_f_mass_static_mesh_instance_visualization_mesh_desc" kindref="compound">FMassStaticMeshInstanceVisualizationMeshDesc</ref> that didn&apos;t come with ISMC explicitly provided. Used only for initialization. Note that <ref refid="struct_f_mass_static_mesh_instance_visualization_mesh_desc" kindref="compound">FMassStaticMeshInstanceVisualizationMeshDesc</ref> that were added with ISMComponents provided directly (via AddVisualDescWithISMComponents call) will never make it to this map. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="144" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_visualization_component_1a9d19402acd06c3e2bfb1a6a9c292dab6" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref> &gt;</type>
+        <definition>TArray&lt;FStaticMeshInstanceVisualizationDescHandle&gt; UMassVisualizationComponent::InstancedSMComponentsRequiringConstructing</definition>
+        <argsstring></argsstring>
+        <name>InstancedSMComponentsRequiringConstructing</name>
+        <qualifiedname>UMassVisualizationComponent::InstancedSMComponentsRequiringConstructing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicies to InstancedStaticMeshInfos that need their SMComponent constructed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="147" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a6968eacbd52d88bcb9f61d006f3c13fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassVisualizationComponent::FindOrAddVisualDesc</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc)</argsstring>
+        <name>FindOrAddVisualDesc</name>
+        <qualifiedname>UMassVisualizationComponent::FindOrAddVisualDesc</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the visual type, will add a new one if does not exist <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the information for the visual that will be instantiated later via <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AddVisualInstance()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The index of the visual type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="31" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="65" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a4cac863e339b506312eb4fbce42de39c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassVisualizationComponent::AddVisualDescWithISMComponent</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc, UInstancedStaticMeshComponent &amp;ISMComponent)</argsstring>
+        <name>AddVisualDescWithISMComponent</name>
+        <qualifiedname>UMassVisualizationComponent::AddVisualDescWithISMComponent</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dedicated visual type described by host Desc and ties ISMComponent to it. <simplesect kind="note"><para>this is a helper function for a common &quot;single ISMComponent&quot; case. Calls AddVisualDescWithISMComponents under the hood. </para>
+</simplesect>
+<simplesect kind="return"><para>The index of the visual type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="38" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1ae8c1377a0cab0155758d0fc62d70b45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassVisualizationComponent::AddVisualDescWithISMComponents</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc, TArrayView&lt; TObjectPtr&lt; UInstancedStaticMeshComponent &gt; &gt; ISMComponents)</argsstring>
+        <name>AddVisualDescWithISMComponents</name>
+        <qualifiedname>UMassVisualizationComponent::AddVisualDescWithISMComponents</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &gt; &gt;</type>
+          <declname>ISMComponents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dedicated visual type described by host Desc and ties given ISMComponents to it. <simplesect kind="return"><para>The index of the visual type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="44" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="109" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1aef7ac16235075ce6b8dcdc0d09c772f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * UMassVisualizationComponent::GetISMCSharedDataForDescriptionIndex</definition>
+        <argsstring>(const int32 DescriptionIndex) const</argsstring>
+        <name>GetISMCSharedDataForDescriptionIndex</name>
+        <qualifiedname>UMassVisualizationComponent::GetISMCSharedDataForDescriptionIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>DescriptionIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetches <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> indicated by DescriptionIndex, or nullptr if it&apos;s not a valid index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="49" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a8f57152b77c243dae72a39eb2eddc254" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * UMassVisualizationComponent::GetISMCSharedDataForInstancedStaticMesh</definition>
+        <argsstring>(const UInstancedStaticMeshComponent *ISMC) const</argsstring>
+        <name>GetISMCSharedDataForInstancedStaticMesh</name>
+        <qualifiedname>UMassVisualizationComponent::GetISMCSharedDataForInstancedStaticMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> *</type>
+          <declname>ISMC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetches <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> indicated by an ISMC, or nullptr if the ISMC is not represented by any shared data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="54" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1ad4225f5b9ba3f2d7598907854954e624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::RemoveISMComponent</definition>
+        <argsstring>(UInstancedStaticMeshComponent &amp;ISMComponent)</argsstring>
+        <name>RemoveISMComponent</name>
+        <qualifiedname>UMassVisualizationComponent::RemoveISMComponent</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all the visualization data associated with the given ISM component. The function resolves the VisualizationIndex associated with the given ISMComponent and calls RemoveVisualDescByIndex which will remove data on all ISMComponents associated with the index. Note that this is safe to do only when there are no entities relying on this data. No entity data patching will take place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="63" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="736" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1aa457553e06df3c64c414e64f6431d16c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::RemoveVisualDescByIndex</definition>
+        <argsstring>(const int32 VisualizationIndex)</argsstring>
+        <name>RemoveVisualDescByIndex</name>
+        <qualifiedname>UMassVisualizationComponent::RemoveVisualDescByIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>VisualizationIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all data associated with a given VisualizationIndex. Note that this is safe to do only if there are no entities relying on this index. No entity data patching will take place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="70" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="747" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a8ba99776d30c36b291e989d89db83386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::RemoveVisualDesc</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDescHandle VisualizationHandle)</argsstring>
+        <name>RemoveVisualDesc</name>
+        <qualifiedname>UMassVisualizationComponent::RemoveVisualDesc</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+          <declname>VisualizationHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all data associated with a given VisualizationIndex. Note that this is safe to do only if there are no entities relying on this index. No entity data patching will take place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="76" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="166" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a254af8762bf4568234350c78acd68e37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_representation_types_8h_1a22f7f7ccc69798e32bcd110df19991a7" kindref="member">FMassInstancedStaticMeshInfoArrayView</ref></type>
+        <definition>FMassInstancedStaticMeshInfoArrayView UMassVisualizationComponent::GetMutableVisualInfos</definition>
+        <argsstring>()</argsstring>
+        <name>GetMutableVisualInfos</name>
+        <qualifiedname>UMassVisualizationComponent::GetMutableVisualInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the array of all visual instance informations </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="79" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1ab96b3dd36bfdfb8c5ffd46eec159acb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::ClearAllVisualInstances</definition>
+        <argsstring>()</argsstring>
+        <name>ClearAllVisualInstances</name>
+        <qualifiedname>UMassVisualizationComponent::ClearAllVisualInstances</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy all visual instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="86" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="342" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a7e2f20d597843a6fa9c7925c8724a198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::DirtyVisuals</definition>
+        <argsstring>()</argsstring>
+        <name>DirtyVisuals</name>
+        <qualifiedname>UMassVisualizationComponent::DirtyVisuals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dirty render state on all static mesh components </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="89" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="361" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1ad2b476ca56e7aef068888e7a826051ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::BeginVisualChanges</definition>
+        <argsstring>()</argsstring>
+        <name>BeginVisualChanges</name>
+        <qualifiedname>UMassVisualizationComponent::BeginVisualChanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal the beginning of the static mesh instance changes, used to prepare the batching update of the static mesh instance transforms </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="92" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="373" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a7103022e651d42079220a45724ccca71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::EndVisualChanges</definition>
+        <argsstring>()</argsstring>
+        <name>EndVisualChanges</name>
+        <qualifiedname>UMassVisualizationComponent::EndVisualChanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signal the end of the static mesh instance changes, used to batch apply the transforms on the static mesh instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="95" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="493" bodyend="640"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a4ce7adf4cbaad2de49a4267f99e10797" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::ProcessRemoves</definition>
+        <argsstring>(UInstancedStaticMeshComponent &amp;ISMComponent, FMassISMCSharedData &amp;SharedData, bool bUpdateNavigation=true)</argsstring>
+        <name>ProcessRemoves</name>
+        <qualifiedname>UMassVisualizationComponent::ProcessRemoves</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+          <declname>SharedData</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bUpdateNavigation</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process all removed IDs in <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> and apply to the ISM component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="101" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="464" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a3706ac1ed6f694f2567983ca489b8c41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::HandleChangesWithExternalIDTracking</definition>
+        <argsstring>(UInstancedStaticMeshComponent &amp;ISMComponent, FMassISMCSharedData &amp;SharedData)</argsstring>
+        <name>HandleChangesWithExternalIDTracking</name>
+        <qualifiedname>UMassVisualizationComponent::HandleChangesWithExternalIDTracking</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+          <declname>SharedData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies changes accumulated in SharedData while manually updating the Instance ID mapping. This approach is done in preparation to upcoming ISM changes to keep the mapping management more secure (by making mapping private and fully component-owned). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="107" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="385" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a752d68ea353339fd1435bed8d236e6d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::ConstructStaticMeshComponents</definition>
+        <argsstring>()</argsstring>
+        <name>ConstructStaticMeshComponents</name>
+        <qualifiedname>UMassVisualizationComponent::ConstructStaticMeshComponents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recreate all the static mesh components from the InstancedStaticMeshInfos </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="110" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="191" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a7f4ea88e102dcfd24b34ff06037f80bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::PostInitProperties</definition>
+        <argsstring>() override</argsstring>
+        <name>PostInitProperties</name>
+        <qualifiedname>UMassVisualizationComponent::PostInitProperties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overridden to make sure this component is only added to a MassVisualizer actor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="113" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a463969d9c722e281656ca3dce97c8404" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::BuildLODSignificanceForInfo</definition>
+        <argsstring>(FMassInstancedStaticMeshInfo &amp;Info, TConstArrayView&lt; UInstancedStaticMeshComponent * &gt; StaticMeshRefKeys)</argsstring>
+        <name>BuildLODSignificanceForInfo</name>
+        <qualifiedname>UMassVisualizationComponent::BuildLODSignificanceForInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_instanced_static_mesh_info" kindref="compound">FMassInstancedStaticMeshInfo</ref> &amp;</type>
+          <declname>Info</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> * &gt;</type>
+          <declname>StaticMeshRefKeys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates LODSignificance ranges for all the meshes indicated by Info <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ForcedStaticMeshRefKeys</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not empty will be used when adding individual <ref refid="struct_f_mass_static_mesh_instance_visualization_mesh_desc" kindref="compound">FMassStaticMeshInstanceVisualizationMeshDesc</ref> instances to LOD significance ranges. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="120" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="291" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a38b038080209c29ee816e43e413db37b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassVisualizationComponent::AddInstancedStaticMeshInfo</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc)</argsstring>
+        <name>AddInstancedStaticMeshInfo</name>
+        <qualifiedname>UMassVisualizationComponent::AddInstancedStaticMeshInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Either adds an element to InstancedStaticMeshInfos or reuses an existing entry based on InstancedStaticMeshInfosFreeIndices </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="123" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassVisualizationComponent.cpp" bodystart="48" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1a405db66cfc78b43375fc0aa22584e79c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassVisualizationComponent::UE_MT_DECLARE_RW_RECURSIVE_ACCESS_DETECTOR</definition>
+        <argsstring>(InstancedStaticMeshInfosDetector)</argsstring>
+        <name>UE_MT_DECLARE_RW_RECURSIVE_ACCESS_DETECTOR</name>
+        <qualifiedname>UMassVisualizationComponent::UE_MT_DECLARE_RW_RECURSIVE_ACCESS_DETECTOR</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InstancedStaticMeshInfosDetector</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1add4584343ea3144835e7420611c51ff7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::BuildLODSignificanceForInfo</definition>
+        <argsstring>(FMassInstancedStaticMeshInfo &amp;Info, const uint32 ForcedStaticMeshRefKey)</argsstring>
+        <name>BuildLODSignificanceForInfo</name>
+        <qualifiedname>UMassVisualizationComponent::BuildLODSignificanceForInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_instanced_static_mesh_info" kindref="compound">FMassInstancedStaticMeshInfo</ref> &amp;</type>
+          <declname>Info</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>ForcedStaticMeshRefKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="150" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_visualization_component_1ae9c3f3a8167fd970e28a7b6bd0131407" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassVisualizationComponent::BuildLODSignificanceForInfo</definition>
+        <argsstring>(FMassInstancedStaticMeshInfo &amp;Info)</argsstring>
+        <name>BuildLODSignificanceForInfo</name>
+        <qualifiedname>UMassVisualizationComponent::BuildLODSignificanceForInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_instanced_static_mesh_info" kindref="compound">FMassInstancedStaticMeshInfo</ref> &amp;</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="153" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This component handles all the static mesh instances for a MassRepresentationProcessor and is an actor component off a MassVisualizer actor. Meant to be created at runtime and owned by an MassVisualizer actor. Will ensure if placed on a different type of actor. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UActorComponent</label>
+      </node>
+      <node id="1">
+        <label>UMassVisualizationComponent</label>
+        <link refid="class_u_mass_visualization_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FMassISMCSharedDataMap</label>
+        <link refid="struct_f_mass_i_s_m_c_shared_data_map"/>
+      </node>
+      <node id="2">
+        <label>UActorComponent</label>
+      </node>
+      <node id="1">
+        <label>UMassVisualizationComponent</label>
+        <link refid="class_u_mass_visualization_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ISMCSharedData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassVisualizationComponent.h" bodystart="22" bodyend="154"/>
+    <listofallmembers>
+      <member refid="class_u_mass_visualization_component_1a38b038080209c29ee816e43e413db37b" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>AddInstancedStaticMeshInfo</name></member>
+      <member refid="class_u_mass_visualization_component_1a4cac863e339b506312eb4fbce42de39c" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>AddVisualDescWithISMComponent</name></member>
+      <member refid="class_u_mass_visualization_component_1ae8c1377a0cab0155758d0fc62d70b45a" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>AddVisualDescWithISMComponents</name></member>
+      <member refid="class_u_mass_visualization_component_1ad2b476ca56e7aef068888e7a826051ea" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>BeginVisualChanges</name></member>
+      <member refid="class_u_mass_visualization_component_1a463969d9c722e281656ca3dce97c8404" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>BuildLODSignificanceForInfo</name></member>
+      <member refid="class_u_mass_visualization_component_1add4584343ea3144835e7420611c51ff7" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>BuildLODSignificanceForInfo</name></member>
+      <member refid="class_u_mass_visualization_component_1ae9c3f3a8167fd970e28a7b6bd0131407" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>BuildLODSignificanceForInfo</name></member>
+      <member refid="class_u_mass_visualization_component_1ab96b3dd36bfdfb8c5ffd46eec159acb1" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>ClearAllVisualInstances</name></member>
+      <member refid="class_u_mass_visualization_component_1a752d68ea353339fd1435bed8d236e6d6" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>ConstructStaticMeshComponents</name></member>
+      <member refid="class_u_mass_visualization_component_1a7e2f20d597843a6fa9c7925c8724a198" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>DirtyVisuals</name></member>
+      <member refid="class_u_mass_visualization_component_1a7103022e651d42079220a45724ccca71" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>EndVisualChanges</name></member>
+      <member refid="class_u_mass_visualization_component_1a6968eacbd52d88bcb9f61d006f3c13fb" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>FindOrAddVisualDesc</name></member>
+      <member refid="class_u_mass_visualization_component_1aef7ac16235075ce6b8dcdc0d09c772f4" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>GetISMCSharedDataForDescriptionIndex</name></member>
+      <member refid="class_u_mass_visualization_component_1a8f57152b77c243dae72a39eb2eddc254" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>GetISMCSharedDataForInstancedStaticMesh</name></member>
+      <member refid="class_u_mass_visualization_component_1a254af8762bf4568234350c78acd68e37" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>GetMutableVisualInfos</name></member>
+      <member refid="class_u_mass_visualization_component_1a3706ac1ed6f694f2567983ca489b8c41" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>HandleChangesWithExternalIDTracking</name></member>
+      <member refid="class_u_mass_visualization_component_1a9d19402acd06c3e2bfb1a6a9c292dab6" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>InstancedSMComponentsRequiringConstructing</name></member>
+      <member refid="class_u_mass_visualization_component_1a9203a75f8c55253797ea79ebaa2d7029" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>InstancedStaticMeshInfos</name></member>
+      <member refid="class_u_mass_visualization_component_1ab15229c6d29ae5d1c5a7269c5de3d75d" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>InstancedStaticMeshInfosFreeIndices</name></member>
+      <member refid="class_u_mass_visualization_component_1a5199f87b1dfb22d924d93c7900d17b45" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>ISMComponentMap</name></member>
+      <member refid="class_u_mass_visualization_component_1a6e1c5eb4ea6303cc91539a82800ce6ba" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>ISMCSharedData</name></member>
+      <member refid="class_u_mass_visualization_component_1aec4ca845eaa42c2bf0602c0d47e90459" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>MeshDescToISMCMap</name></member>
+      <member refid="class_u_mass_visualization_component_1a7f4ea88e102dcfd24b34ff06037f80bb" prot="protected" virt="virtual"><scope>UMassVisualizationComponent</scope><name>PostInitProperties</name></member>
+      <member refid="class_u_mass_visualization_component_1a4ce7adf4cbaad2de49a4267f99e10797" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>ProcessRemoves</name></member>
+      <member refid="class_u_mass_visualization_component_1ad4225f5b9ba3f2d7598907854954e624" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>RemoveISMComponent</name></member>
+      <member refid="class_u_mass_visualization_component_1a8ba99776d30c36b291e989d89db83386" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>RemoveVisualDesc</name></member>
+      <member refid="class_u_mass_visualization_component_1aa457553e06df3c64c414e64f6431d16c" prot="public" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>RemoveVisualDescByIndex</name></member>
+      <member refid="class_u_mass_visualization_component_1a405db66cfc78b43375fc0aa22584e79c" prot="protected" virt="non-virtual"><scope>UMassVisualizationComponent</scope><name>UE_MT_DECLARE_RW_RECURSIVE_ACCESS_DETECTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

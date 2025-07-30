@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_t_mass_l_o_d_calculator" kind="struct" language="C++" prot="public">
+    <compoundname>TMassLODCalculator</compoundname>
+    <basecompoundref refid="struct_f_mass_l_o_d_base_logic" prot="public" virt="non-virtual">FMassLODBaseLogic</basecompoundref>
+    <includes refid="_mass_l_o_d_calculator_8h" local="no">MassLODCalculator.h</includes>
+    <innerclass refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" prot="protected">TMassLODCalculator::FMassLODRuntimeData</innerclass>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FLODLogic</ref></type>
+        <defval><ref refid="struct_f_l_o_d_default_logic" kindref="compound">FLODDefaultLogic</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a4019afa194f145a06ad9fe50380006b3" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;float, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::BaseLODDistance</definition>
+        <argsstring></argsstring>
+        <name>BaseLODDistance</name>
+        <qualifiedname>TMassLODCalculator::BaseLODDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LOD distances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="260" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1afdae8576c245907b5a3ed033085d060f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;float, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::VisibleLODDistance</definition>
+        <argsstring></argsstring>
+        <name>VisibleLODDistance</name>
+        <qualifiedname>TMassLODCalculator::VisibleLODDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="261" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1af3425ee6f9fa1be9480d63cfa3de7361" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;int32, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::LODMaxCount</definition>
+        <argsstring></argsstring>
+        <name>LODMaxCount</name>
+        <qualifiedname>TMassLODCalculator::LODMaxCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MaxCount total </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="264" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a6137e72ff6e71aaa5b14a6b36ef5fd9b" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;int32, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::LODMaxCountPerViewer</definition>
+        <argsstring></argsstring>
+        <name>LODMaxCountPerViewer</name>
+        <qualifiedname>TMassLODCalculator::LODMaxCountPerViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MaxCount total per viewers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="267" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a9820ab3497530cc257d119720659c02f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::BufferHysteresisOnDistanceRatio</definition>
+        <argsstring></argsstring>
+        <name>BufferHysteresisOnDistanceRatio</name>
+        <qualifiedname>TMassLODCalculator::BufferHysteresisOnDistanceRatio</qualifiedname>
+        <initializer>= 0.1<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ratio for Buffer Distance Hysteresis </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="270" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1ad57c2e0dcbe4b19642958b97d175d7bf" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::VisibleDistanceToFrustum</definition>
+        <argsstring></argsstring>
+        <name>VisibleDistanceToFrustum</name>
+        <qualifiedname>TMassLODCalculator::VisibleDistanceToFrustum</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How far away from frustum does this entities are considered visible </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="273" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a99936274f14f60366f8ea16767cdce9e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::VisibleDistanceToFrustumWithHysteresis</definition>
+        <argsstring></argsstring>
+        <name>VisibleDistanceToFrustumWithHysteresis</name>
+        <qualifiedname>TMassLODCalculator::VisibleDistanceToFrustumWithHysteresis</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Once visible how much further than distance to frustum does the entities need to be before being consider not visible </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="276" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1aa35935941214337d9c4e7a84c63ce649" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;float, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::BaseBucketSize</definition>
+        <argsstring></argsstring>
+        <name>BaseBucketSize</name>
+        <qualifiedname>TMassLODCalculator::BaseBucketSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The size of each subdivision per LOD (LOD Size/MaxBucketsPerLOD) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="279" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1ad9b39c57c38b4f4ebe1a38e2cc483451" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt;</type>
+        <definition>TStaticArray&lt;float, EMassLOD::Max&gt; TMassLODCalculator&lt; FLODLogic &gt;::VisibleBucketSize</definition>
+        <argsstring></argsstring>
+        <name>VisibleBucketSize</name>
+        <qualifiedname>TMassLODCalculator::VisibleBucketSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="280" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a284449c26e1d2d77f92ab5f114894c43" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::MaxLODDistance</definition>
+        <argsstring></argsstring>
+        <name>MaxLODDistance</name>
+        <qualifiedname>TMassLODCalculator::MaxLODDistance</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum LOD Distance <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="283" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1acba8b9ea8bf2f9f4b63ddb4dc134209f" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" kindref="compound">FMassLODRuntimeData</ref></type>
+        <definition>FMassLODRuntimeData TMassLODCalculator&lt; FLODLogic &gt;::RuntimeData</definition>
+        <argsstring></argsstring>
+        <name>RuntimeData</name>
+        <qualifiedname>TMassLODCalculator::RuntimeData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runtime data for LOD calculation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="286" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_mass_l_o_d_calculator_1a681f8804661f07889c8ca2ac450a9d6e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" kindref="compound">FMassLODRuntimeData</ref> &gt;</type>
+        <definition>TArray&lt;FMassLODRuntimeData&gt; TMassLODCalculator&lt; FLODLogic &gt;::RuntimeDataPerViewer</definition>
+        <argsstring></argsstring>
+        <name>RuntimeDataPerViewer</name>
+        <qualifiedname>TMassLODCalculator::RuntimeDataPerViewer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runtime data for each viewer specific LOD calculation, used only when bMaximizeCountPerViewer is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="289" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1ab585013594b5997a8e9830720ba6ce54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TMassLODCalculator&lt; FLODLogic &gt;::TMassLODCalculator</definition>
+        <argsstring>()</argsstring>
+        <name>TMassLODCalculator</name>
+        <qualifiedname>TMassLODCalculator::TMassLODCalculator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="17" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1aa31705774efb84132bbcbdae4bc71dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCalculator&lt; FLODLogic &gt;::Initialize</definition>
+        <argsstring>(const float InBaseLODDistance[EMassLOD::Max], const float InBufferHysteresisOnDistanceRatio, const int32 InLODMaxCount[EMassLOD::Max], const int32 InLODMaxCountPerViewer[EMassLOD::Max]=nullptr, const float InVisibleDistanceToFrustum=0.0f, const float InVisibleDistanceToFrustumHysteresis=0.0f, const float InVisibleLODDistance[EMassLOD::Max]=nullptr)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>TMassLODCalculator::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InBaseLODDistance</declname>
+          <array>[EMassLOD::Max]</array>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InBufferHysteresisOnDistanceRatio</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InLODMaxCount</declname>
+          <array>[EMassLOD::Max]</array>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InLODMaxCountPerViewer</declname>
+          <array>[EMassLOD::Max]</array>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InVisibleDistanceToFrustum</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InVisibleDistanceToFrustumHysteresis</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InVisibleLODDistance</declname>
+          <array>[EMassLOD::Max]</array>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the LOD calculator, needed to be called once at initialization time @Param InBaseLODDistance distances used to calculate LOD @Param InBufferHysteresisOnFOVRatio distance hysteresis used to calculate LOD @Param InLODMaxCount the maximum count for each LOD - Supports nullptr being passed in now and will put INT_MAX everywhere by default @Param InLODMaxCountPerViewer the maximum count for each LOD per viewer (Only when FLODLogic::bMaximizeCountPerViewer is enabled) @Param InVisibleDistanceToFrustum is the distance from the frustum to start considering this entity is visible (Only when FLODLogic::bDoVisibilityLogic is enabled) @Param InVisibleDistanceToFrustumHysteresis once visible, what extra distance the entity need to be before considered not visible anymore (Only when FLODLogic::bDoVisibilityLogic is enabled) @Param InVisibleLODDistance the maximum count for each LOD per viewer (Only when FLODLogic::bDoVisibilityLogic is enabled) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="31" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="293" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1ad14ab83eac56f746e1efd3a00f128154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCalculator&lt; FLODLogic &gt;::PrepareExecution</definition>
+        <argsstring>(TConstArrayView&lt; FViewerInfo &gt; Viewers)</argsstring>
+        <name>PrepareExecution</name>
+        <qualifiedname>TMassLODCalculator::PrepareExecution</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt;</type>
+          <declname>Viewers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepares execution for the current frame, needed to be called before every execution @Param Viewers is the array of all the known viewers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="43" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="363" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1ac942fe0ad6a033f10da9a92e6ee8f25a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLocalViewers</declname>
+            <defname>bCalculateLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>FORCEINLINE void TMassLODCalculator&lt; FLODLogic &gt;::CalculateLOD</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList, TArrayView&lt; TLODFragment &gt; LODList)</argsstring>
+        <name>CalculateLOD</name>
+        <qualifiedname>TMassLODCalculator::CalculateLOD</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref> &gt;</type>
+          <declname>LODList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate LOD, called for each entity chunks Use next method when FLODLogic::bStoreInfoPerViewer is enabled @Param Context of the chunk execution @Param ViewersInfoList is the source information fragment for LOD calculation @Param LODList is the fragment where calculation are stored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="56" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="56" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a9409fa48567a2b717b84843a094b3342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLocalViewers</declname>
+            <defname>bCalculateLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLODPerViewer</declname>
+            <defname>bCalculateLODPerViewer</defname>
+            <defval>FLODLogic::bCalculateLODPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibilityPerViewer</declname>
+            <defname>bCalculateVisibilityPerViewer</defname>
+            <defval>FLODLogic::bDoVisibilityLogic &amp;&amp; FLODLogic::bStoreInfoPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bMaximizeCountPerViewer</declname>
+            <defname>bMaximizeCountPerViewer</defname>
+            <defval>FLODLogic::bMaximizeCountPerViewer</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCalculator&lt; FLODLogic &gt;::CalculateLOD</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList, TArrayView&lt; TLODFragment &gt; LODList, TConstArrayView&lt; TPerViewerInfoFragment &gt; PerViewerInfoList)</argsstring>
+        <name>CalculateLOD</name>
+        <qualifiedname>TMassLODCalculator::CalculateLOD</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref> &gt;</type>
+          <declname>LODList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref> &gt;</type>
+          <declname>PerViewerInfoList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate LOD, called for each entity chunks Use this version when FLODLogic::bStoreInfoPerViewer is enabled It calculates a LOD per viewer and needs information per viewer via PerViewerInfoList fragments @Param Context of the chunk execution @Param ViewersInfoList is the source information fragment for LOD calculation @Param LODList is the fragment where calculation are stored @Param PerViewerInfoList is the Per viewer source information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="87" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="424" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a21971485e1d43b5730b60d82f6651bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibilityPerViewer</declname>
+            <defname>bCalculateVisibilityPerViewer</defname>
+            <defval>FLODLogic::bDoVisibilityLogic &amp;&amp; FLODLogic::bStoreInfoPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bMaximizeCountPerViewer</declname>
+            <defname>bMaximizeCountPerViewer</defname>
+            <defval>FLODLogic::bMaximizeCountPerViewer</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool TMassLODCalculator&lt; FLODLogic &gt;::AdjustDistancesFromCount</definition>
+        <argsstring>()</argsstring>
+        <name>AdjustDistancesFromCount</name>
+        <qualifiedname>TMassLODCalculator::AdjustDistancesFromCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjust LOD distances by clamping them to respect the maximum LOD count @Return true if any LOD distances clamping was done </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="99" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="641" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a5dd13fb9a3d384fe5240f65f5a1e5da6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLocalViewers</declname>
+            <defname>bCalculateLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>FORCEINLINE void TMassLODCalculator&lt; FLODLogic &gt;::AdjustLODFromCount</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList, TArrayView&lt; TLODFragment &gt; LODList)</argsstring>
+        <name>AdjustLODFromCount</name>
+        <qualifiedname>TMassLODCalculator::AdjustLODFromCount</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref> &gt;</type>
+          <declname>LODList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjust LOD from newly adjusted distances, only needed to be called when AdjustDistancesFromCount return true, called for each entity chunks Use next method when FLODLogic::bStoreInfoPerViewer is enabled @Param Context of the chunk execution @Param ViewersInfoList is the source information fragment for LOD calculation @Param LODList is the fragment where calculation are stored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="112" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="112" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a2f5e6f9c6ef954273a687a0f35525898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLocalViewers</declname>
+            <defname>bCalculateLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLODPerViewer</declname>
+            <defname>bCalculateLODPerViewer</defname>
+            <defval>FLODLogic::bCalculateLODPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibilityPerViewer</declname>
+            <defname>bCalculateVisibilityPerViewer</defname>
+            <defval>FLODLogic::bDoVisibilityLogic &amp;&amp; FLODLogic::bStoreInfoPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bMaximizeCountPerViewer</declname>
+            <defname>bMaximizeCountPerViewer</defname>
+            <defval>FLODLogic::bMaximizeCountPerViewer</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCalculator&lt; FLODLogic &gt;::AdjustLODFromCount</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList, TArrayView&lt; TLODFragment &gt; LODList, TConstArrayView&lt; TPerViewerInfoFragment &gt; PerViewerInfoList)</argsstring>
+        <name>AdjustLODFromCount</name>
+        <qualifiedname>TMassLODCalculator::AdjustLODFromCount</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref> &gt;</type>
+          <declname>LODList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref> &gt;</type>
+          <declname>PerViewerInfoList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjust LOD from newly adjusted distances, only needed to be called when AdjustDistancesFromCount return true, called for each entity chunks Use this version when FLODLogic::bStoreInfoPerViewer is enabled It calculates a LOD per viewer and needs information per viewer via PerViewerInfoList fragments @Param Context of the chunk execution @Param ViewersInfoList is the source information fragment for LOD calculation @Param LODList is the fragment where calculation are stored @Param PerViewerInfoList is the Per viewer source information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="144" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="668" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1afa75549c279955f23da7d853b9d08fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCalculator&lt; FLODLogic &gt;::ForceOffLOD</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TArrayView&lt; TLODFragment &gt; LODList)</argsstring>
+        <name>ForceOffLOD</name>
+        <qualifiedname>TMassLODCalculator::ForceOffLOD</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TLODFragment</ref> &gt;</type>
+          <declname>LODList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turn Off all LOD, called for each entity chunks @Param Context of the chunk execution @Param LODList is the fragment where calculation are stored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="155" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="759" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1ade0c131c5338949ac246ea5482888b44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::GetMaxLODDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxLODDistance</name>
+        <qualifiedname>TMassLODCalculator::GetMaxLODDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the maximum distance at which the LOD will be turn off </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="204" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="204" bodyend="204"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a23e5fb80d5eaa02a2c41b1dec6c5bfa0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateLODSignificance</declname>
+            <defname>bCalculateLODSignificance</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float TMassLODCalculator&lt; FLODLogic &gt;::AccumulateCountInRuntimeData</definition>
+        <argsstring>(const EMassLOD::Type LOD, const float ViewerDistanceSq, const bool bIsVisible, FMassLODRuntimeData &amp;Data) const</argsstring>
+        <name>AccumulateCountInRuntimeData</name>
+        <qualifiedname>TMassLODCalculator::AccumulateCountInRuntimeData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05c" kindref="member">EMassLOD::Type</ref></type>
+          <declname>LOD</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>ViewerDistanceSq</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bIsVisible</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" kindref="compound">FMassLODRuntimeData</ref> &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="249" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="386" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a940f94d0c0c92d7471408649e7461d78" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool TMassLODCalculator&lt; FLODLogic &gt;::AdjustDistancesFromCountForRuntimeData</definition>
+        <argsstring>(const TStaticArray&lt; int32, EMassLOD::Max &gt; &amp;MaxCount, FMassLODRuntimeData &amp;RuntimeData) const</argsstring>
+        <name>AdjustDistancesFromCountForRuntimeData</name>
+        <qualifiedname>TMassLODCalculator::AdjustDistancesFromCountForRuntimeData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>, <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05ca386403c1cdb9d81a7e7062ac7c696c43" kindref="member">EMassLOD::Max</ref> &gt; &amp;</type>
+          <declname>MaxCount</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" kindref="compound">FMassLODRuntimeData</ref> &amp;</type>
+          <declname>RuntimeData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="252" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="528" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1ae0560fa050d1659dddc9a83f189d53dd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>bCalculateVisibility</declname>
+            <defname>bCalculateVisibility</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05c" kindref="member">EMassLOD::Type</ref></type>
+        <definition>EMassLOD::Type TMassLODCalculator&lt; FLODLogic &gt;::ComputeLODFromSettings</definition>
+        <argsstring>(const EMassLOD::Type PrevLOD, const float DistanceToViewerSq, const bool bIsVisible, bool *bIsInAVisibleRange, const FMassLODRuntimeData &amp;Data) const</argsstring>
+        <name>ComputeLODFromSettings</name>
+        <qualifiedname>TMassLODCalculator::ComputeLODFromSettings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="namespace_e_mass_l_o_d_1a66bb3f43b313fc36db8b7d221668a05c" kindref="member">EMassLOD::Type</ref></type>
+          <declname>PrevLOD</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DistanceToViewerSq</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bIsVisible</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>bIsInAVisibleRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data" kindref="compound">FMassLODRuntimeData</ref> &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="255" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="864" bodyend="895"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_calculator_1a87dba064e83e6ed720f94691ba2b7e38" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TMassLODCalculator&lt; FLODLogic &gt;::CalculateVisibility</definition>
+        <argsstring>(const bool bWasVisible, const float DistanceToFrustum) const</argsstring>
+        <name>CalculateVisibility</name>
+        <qualifiedname>TMassLODCalculator::CalculateVisibility</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bWasVisible</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DistanceToFrustum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="257" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="357" bodyend="360"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper struct to calculate LOD for each agent and maximize count per LOD Requires TViewerInfoFragment fragment collected by the <ref refid="struct_t_mass_l_o_d_collector" kindref="compound">TMassLODCollector</ref>. Stores information in TLODFragment fragment. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FMassLODBaseLogic</label>
+        <link refid="struct_f_mass_l_o_d_base_logic"/>
+      </node>
+      <node id="1">
+        <label>TMassLODCalculator&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FMassLODBaseLogic</label>
+        <link refid="struct_f_mass_l_o_d_base_logic"/>
+      </node>
+      <node id="3">
+        <label>TMassLODCalculator&lt; FLODLogic &gt;::FMassLODRuntimeData</label>
+        <link refid="struct_t_mass_l_o_d_calculator_1_1_f_mass_l_o_d_runtime_data"/>
+      </node>
+      <node id="1">
+        <label>TMassLODCalculator&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_calculator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>RuntimeData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCalculator.h" bodystart="16" bodyend="290"/>
+    <listofallmembers>
+      <member refid="struct_t_mass_l_o_d_calculator_1a23e5fb80d5eaa02a2c41b1dec6c5bfa0" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>AccumulateCountInRuntimeData</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a21971485e1d43b5730b60d82f6651bca" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>AdjustDistancesFromCount</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a940f94d0c0c92d7471408649e7461d78" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>AdjustDistancesFromCountForRuntimeData</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a5dd13fb9a3d384fe5240f65f5a1e5da6" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>AdjustLODFromCount</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a2f5e6f9c6ef954273a687a0f35525898" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>AdjustLODFromCount</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1aa35935941214337d9c4e7a84c63ce649" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>BaseBucketSize</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a4019afa194f145a06ad9fe50380006b3" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>BaseLODDistance</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad25196ebee5d94681c0c0c970d614864" prot="private" virt="non-virtual"><scope>TMassLODCalculator</scope><name>bBuildFrustumData</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a9820ab3497530cc257d119720659c02f" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>BufferHysteresisOnDistanceRatio</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0e0a9afeb355caa12419e7eb2f4281e9" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>CacheViewerInformation</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ac942fe0ad6a033f10da9a92e6ee8f25a" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>CalculateLOD</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a9409fa48567a2b717b84843a094b3342" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>CalculateLOD</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a87dba064e83e6ed720f94691ba2b7e38" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>CalculateVisibility</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ae0560fa050d1659dddc9a83f189d53dd" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>ComputeLODFromSettings</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a9316b603656bc5dfd14c7fd9658e98e8" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8f2eeb2a45e33d4c6ccf9646bc15d78a" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a1391856e0ae48b7efc4164e5924dfb06" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aad4ca06ab7381e3fb813b942bc3c8411" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0b1904e3e8378ac8b0147c6d39bc4e88" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aa6e6334597bdd36b6cfeac1b6ba18bb4" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aca236157768518f95fa93ed10b2d4e25" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a2115202d1aacd3930e591a9d2b294a0c" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad68663d7ce8aec09c378acb1cc6f4ae9" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ae8e2eb4bb37637f5b0a5394defc80e63" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8df658fedca8760cf3c096f349555b9d" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>FMassLODBaseLogic</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1afa75549c279955f23da7d853b9d08fb6" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>ForceOffLOD</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ade0c131c5338949ac246ea5482888b44" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>GetMaxLODDistance</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1aa31705774efb84132bbcbdae4bc71dcc" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>Initialize</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1af3425ee6f9fa1be9480d63cfa3de7361" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>LODMaxCount</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a6137e72ff6e71aaa5b14a6b36ef5fd9b" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>LODMaxCountPerViewer</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a284449c26e1d2d77f92ab5f114894c43" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>MaxLODDistance</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ad14ab83eac56f746e1efd3a00f128154" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>PrepareExecution</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1acba8b9ea8bf2f9f4b63ddb4dc134209f" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>RuntimeData</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a681f8804661f07889c8ca2ac450a9d6e" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>RuntimeDataPerViewer</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ab585013594b5997a8e9830720ba6ce54" prot="public" virt="non-virtual"><scope>TMassLODCalculator</scope><name>TMassLODCalculator</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a02c1248177524991b733021ce2bb113e" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>Viewers</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ad9b39c57c38b4f4ebe1a38e2cc483451" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>VisibleBucketSize</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1ad57c2e0dcbe4b19642958b97d175d7bf" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>VisibleDistanceToFrustum</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1a99936274f14f60366f8ea16767cdce9e" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>VisibleDistanceToFrustumWithHysteresis</name></member>
+      <member refid="struct_t_mass_l_o_d_calculator_1afdae8576c245907b5a3ed033085d060f" prot="protected" virt="non-virtual"><scope>TMassLODCalculator</scope><name>VisibleLODDistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

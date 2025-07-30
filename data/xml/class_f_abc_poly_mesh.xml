@@ -1,0 +1,688 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_f_abc_poly_mesh" kind="class" language="C++" prot="public">
+    <compoundname>FAbcPolyMesh</compoundname>
+    <basecompoundref refid="class_i_abc_object" prot="public" virt="non-virtual">IAbcObject</basecompoundref>
+    <includes refid="_abc_poly_mesh_8h" local="no">AbcPolyMesh.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1ae71ddfdc0f73a5db872ff95c78069bc3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bConstantTopology</definition>
+        <argsstring></argsstring>
+        <name>bConstantTopology</name>
+        <qualifiedname>FAbcPolyMesh::bConstantTopology</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag whether or not this object has constant topology (used for eligibility for PCA compression) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="101" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1ab6feafdd1a3d1c1902e239dcb2ef2200" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bConstantTransformation</definition>
+        <argsstring></argsstring>
+        <name>bConstantTransformation</name>
+        <qualifiedname>FAbcPolyMesh::bConstantTransformation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag whether or not this object has a constant world matrix (used whether to incorporate into PCA compression) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="103" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1af4f5a3c133bcb557d99fb30ce586ee26" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bConstantVisibility</definition>
+        <argsstring></argsstring>
+        <name>bConstantVisibility</name>
+        <qualifiedname>FAbcPolyMesh::bConstantVisibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag whether or not this object has a constant visibility value across the entire animated range </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="105" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a591e933053688fd451dcbe2058dfa7f6" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FBoxSphereBounds</ref></type>
+        <definition>FBoxSphereBounds FAbcPolyMesh::SelfBounds</definition>
+        <argsstring></argsstring>
+        <name>SelfBounds</name>
+        <qualifiedname>FAbcPolyMesh::SelfBounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached self and child bounds for entire duration of the animation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="108" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a263d3c27856d6a4c25e1b199527e65fd" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FBoxSphereBounds</ref></type>
+        <definition>FBoxSphereBounds FAbcPolyMesh::ChildBounds</definition>
+        <argsstring></argsstring>
+        <name>ChildBounds</name>
+        <qualifiedname>FAbcPolyMesh::ChildBounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="109" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1ab78297a20eb7feec05a2bf058d26ca62" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TArray&lt;FString&gt; FAbcPolyMesh::FaceSetNames</definition>
+        <argsstring></argsstring>
+        <name>FaceSetNames</name>
+        <qualifiedname>FAbcPolyMesh::FaceSetNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of face set names found for this object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="112" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1ae95195b87b744be173534add3845a2d9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bShouldImport</definition>
+        <argsstring></argsstring>
+        <name>bShouldImport</name>
+        <qualifiedname>FAbcPolyMesh::bShouldImport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not this Mesh object should be imported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="115" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a2875c74615024740c03ba36406849677" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Alembic::AbcGeom::IPolyMesh</type>
+        <definition>const Alembic::AbcGeom::IPolyMesh FAbcPolyMesh::PolyMesh</definition>
+        <argsstring></argsstring>
+        <name>PolyMesh</name>
+        <qualifiedname>FAbcPolyMesh::PolyMesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_alembic" kindref="compound">Alembic</ref> representation of this object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="121" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a4aba41118e94d25825c337fb812c0b92" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Alembic::AbcGeom::IPolyMeshSchema</type>
+        <definition>const Alembic::AbcGeom::IPolyMeshSchema FAbcPolyMesh::Schema</definition>
+        <argsstring></argsstring>
+        <name>Schema</name>
+        <qualifiedname>FAbcPolyMesh::Schema</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Schema extracted from Poly Mesh object <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="123" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1ace2e6ca4366e44f2f8b3381860b0993a" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>FAbcMeshSample* FAbcPolyMesh::FirstSample</definition>
+        <argsstring></argsstring>
+        <name>FirstSample</name>
+        <qualifiedname>FAbcPolyMesh::FirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial mesh sample for this object in first frame with available data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="126" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a51d0068db512d369424454bf3fc880db" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>FAbcMeshSample* FAbcPolyMesh::TransformedFirstSample</definition>
+        <argsstring></argsstring>
+        <name>TransformedFirstSample</name>
+        <qualifiedname>FAbcPolyMesh::TransformedFirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial mesh sample for this object in first frame with available data, transformed by first available matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="128" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a57492e2ad06b17d7fa244cd76312fb72" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>FAbcMeshSample* FAbcPolyMesh::ResidentSamples[MaxNumberOfResidentSamples]</definition>
+        <argsstring>[MaxNumberOfResidentSamples]</argsstring>
+        <name>ResidentSamples</name>
+        <qualifiedname>FAbcPolyMesh::ResidentSamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resident set of Mesh Samples for this object, used for parallel reading of samples/frames </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="130" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1afb94b915385943e8472acf418141344d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::ResidentVisibilitySamples[MaxNumberOfResidentSamples]</definition>
+        <argsstring>[MaxNumberOfResidentSamples]</argsstring>
+        <name>ResidentVisibilitySamples</name>
+        <qualifiedname>FAbcPolyMesh::ResidentVisibilitySamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="131" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a685d5ea855772cd183d7a00217a1619a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00d" kindref="member">ESampleReadFlags</ref></type>
+        <definition>ESampleReadFlags FAbcPolyMesh::SampleReadFlags</definition>
+        <argsstring></argsstring>
+        <name>SampleReadFlags</name>
+        <qualifiedname>FAbcPolyMesh::SampleReadFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitmask read flag used for skipping constant vertex attributes while reading samples </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="133" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1aeb2481135ecf48d7df150557eef78054" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bReturnFirstSample</definition>
+        <argsstring></argsstring>
+        <name>bReturnFirstSample</name>
+        <qualifiedname>FAbcPolyMesh::bReturnFirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not to just return FirstSample </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="136" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a5fbb29539a365d05fc15b4526055126b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bReturnTransformedFirstSample</definition>
+        <argsstring></argsstring>
+        <name>bReturnTransformedFirstSample</name>
+        <qualifiedname>FAbcPolyMesh::bReturnTransformedFirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not to just return the transformed FirstSample </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="138" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_poly_mesh_1a83ae722af772fd7f0871d72fa1701048" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::bFirstFrameVisibility</definition>
+        <argsstring></argsstring>
+        <name>bFirstFrameVisibility</name>
+        <qualifiedname>FAbcPolyMesh::bFirstFrameVisibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not the mesh is visible in the first Frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="140" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1ab9bf003e3178947abb265f5802406b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAbcPolyMesh::FAbcPolyMesh</definition>
+        <argsstring>(const Alembic::AbcGeom::IPolyMesh &amp;InPolyMesh, const FAbcFile *InFile, IAbcObject *InParent=nullptr)</argsstring>
+        <name>FAbcPolyMesh</name>
+        <qualifiedname>FAbcPolyMesh::FAbcPolyMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Alembic::AbcGeom::IPolyMesh &amp;</type>
+          <declname>InPolyMesh</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref> *</type>
+          <declname>InFile</declname>
+        </param>
+        <param>
+          <type><ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref> *</type>
+          <declname>InParent</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Yuck, but retrieving face set is actually a file read operation as they are not cached on the schema (only function that is non-const)</para>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="78" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="16" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1afc680d92fb0320980516cf9928d82c0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FAbcPolyMesh::~FAbcPolyMesh</definition>
+        <argsstring>()</argsstring>
+        <name>~FAbcPolyMesh</name>
+        <qualifiedname>FAbcPolyMesh::~FAbcPolyMesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="79" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a573d71a1cae3713385e30a5fb95f37e8" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::ReadFirstFrame</definition>
+        <argsstring>(const float InTime, const int32 FrameIndex) final</argsstring>
+        <name>ReadFirstFrame</name>
+        <qualifiedname>FAbcPolyMesh::ReadFirstFrame</qualifiedname>
+        <reimplements refid="class_i_abc_object_1a31f9f81ed54dde4a85c9859475d31bd7">ReadFirstFrame</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InTime</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begin <ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref> overrides </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="82" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="45" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1ae77b17e1464ea7b3f987b36fdfebad9e" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcPolyMesh::SetFrameAndTime</definition>
+        <argsstring>(const float InTime, const int32 FrameIndex, const EFrameReadFlags InFlags, const int32 TargetIndex=INDEX_NONE) final</argsstring>
+        <name>SetFrameAndTime</name>
+        <qualifiedname>FAbcPolyMesh::SetFrameAndTime</qualifiedname>
+        <reimplements refid="class_i_abc_object_1a472cceb292e5ab3a448312a3f44e1c35">SetFrameAndTime</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InTime</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_abc_file_8h_1a15f9115e5b9abcc496ea4065f26df803" kindref="member">EFrameReadFlags</ref></type>
+          <declname>InFlags</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>TargetIndex</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INDEX_NONE</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="83" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="151" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a758dadab8727db73e4de498a7d8ba301" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref></type>
+        <definition>FMatrix FAbcPolyMesh::GetMatrix</definition>
+        <argsstring>(const int32 FrameIndex) const final</argsstring>
+        <name>GetMatrix</name>
+        <qualifiedname>FAbcPolyMesh::GetMatrix</qualifiedname>
+        <reimplements refid="class_i_abc_object_1a70bf5422f8178cf199796280a9547e6a">GetMatrix</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="84" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a2fd16439c9257d839660aeee0605a74e" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAbcPolyMesh::HasConstantTransform</definition>
+        <argsstring>() const final</argsstring>
+        <name>HasConstantTransform</name>
+        <qualifiedname>FAbcPolyMesh::HasConstantTransform</qualifiedname>
+        <reimplements refid="class_i_abc_object_1a46efefd4fb0ebdd342882e34d2a4cc5b">HasConstantTransform</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="85" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1acb868b8410da7d36042564e161a30b4d" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcPolyMesh::PurgeFrameData</definition>
+        <argsstring>(const int32 FrameIndex) final</argsstring>
+        <name>PurgeFrameData</name>
+        <qualifiedname>FAbcPolyMesh::PurgeFrameData</qualifiedname>
+        <reimplements refid="class_i_abc_object_1abce51101e12586808f5500aa00bc1f53">PurgeFrameData</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="86" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="251" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a5a81683651107e7b5ac87a7840ec4f62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>const FAbcMeshSample * FAbcPolyMesh::GetSample</definition>
+        <argsstring>(const int32 FrameIndex) const</argsstring>
+        <name>GetSample</name>
+        <qualifiedname>FAbcPolyMesh::GetSample</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End <ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref> overrides Returns sample for the given frame index (if it is part of the resident samples) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="90" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="261" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a848a885629ff730e2832a0abe837b843" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>const FAbcMeshSample * FAbcPolyMesh::GetFirstSample</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFirstSample</name>
+        <qualifiedname>FAbcPolyMesh::GetFirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the first sample available for this object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="92" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a684cf18f180d1d140bc168a72f696b2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+        <definition>const FAbcMeshSample * FAbcPolyMesh::GetTransformedFirstSample</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTransformedFirstSample</name>
+        <qualifiedname>FAbcPolyMesh::GetTransformedFirstSample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the first sample available for this object transformed by first available matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="94" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a9007e2dec7347dfa8506f110182feb7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_abc_import_utilities_8h_1a58e3f7bac699b865a419473a1901e00d" kindref="member">ESampleReadFlags</ref></type>
+        <definition>ESampleReadFlags FAbcPolyMesh::GetSampleReadFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSampleReadFlags</name>
+        <qualifiedname>FAbcPolyMesh::GetSampleReadFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value of the bitmask used for skipping constant vertex attributes while reading samples </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="96" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1afcfcc2cff572ac6020d3043c601e41de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+        <definition>const bool FAbcPolyMesh::GetVisibility</definition>
+        <argsstring>(const int32 FrameIndex) const</argsstring>
+        <name>GetVisibility</name>
+        <qualifiedname>FAbcPolyMesh::GetVisibility</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>FrameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the visibility value (true = visible, false = hidden) for the given frame index (if it is part of the resident samples) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="98" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="299" bodyend="316"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_f_abc_poly_mesh_1a8a9a82a2456ab0ad870ff069192aca11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcPolyMesh::CalculateNormalsForSample</definition>
+        <argsstring>(FAbcMeshSample *Sample)</argsstring>
+        <name>CalculateNormalsForSample</name>
+        <qualifiedname>FAbcPolyMesh::CalculateNormalsForSample</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>Sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate normals for sample according to available data and user settings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="118" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcPolyMesh.cpp" bodystart="99" bodyend="149"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FAbcPolyMesh</label>
+        <link refid="class_f_abc_poly_mesh"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAbcObject</label>
+        <link refid="class_i_abc_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>FAbcCompressionSettings</label>
+        <link refid="struct_f_abc_compression_settings"/>
+      </node>
+      <node id="12">
+        <label>FAbcConversionSettings</label>
+        <link refid="struct_f_abc_conversion_settings"/>
+      </node>
+      <node id="3">
+        <label>FAbcFile</label>
+        <link refid="class_f_abc_file"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ImportSettings</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>RootObject</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FAbcGeometryCacheSettings</label>
+        <link refid="struct_f_abc_geometry_cache_settings"/>
+      </node>
+      <node id="8">
+        <label>FAbcMaterialSettings</label>
+        <link refid="struct_f_abc_material_settings"/>
+      </node>
+      <node id="13">
+        <label>FAbcMeshSample</label>
+        <link refid="struct_f_abc_mesh_sample"/>
+      </node>
+      <node id="7">
+        <label>FAbcNormalGenerationSettings</label>
+        <link refid="struct_f_abc_normal_generation_settings"/>
+      </node>
+      <node id="1">
+        <label>FAbcPolyMesh</label>
+        <link refid="class_f_abc_poly_mesh"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>FirstSample</edgelabel>
+          <edgelabel>ResidentSamples</edgelabel>
+          <edgelabel>TransformedFirstSample</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FAbcSamplingSettings</label>
+        <link refid="struct_f_abc_sampling_settings"/>
+      </node>
+      <node id="10">
+        <label>FAbcStaticMeshSettings</label>
+        <link refid="struct_f_abc_static_mesh_settings"/>
+      </node>
+      <node id="2">
+        <label>IAbcObject</label>
+        <link refid="class_i_abc_object"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UAbcImportSettings</label>
+        <link refid="class_u_abc_import_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>SamplingSettings</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>NormalGenerationSettings</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>MaterialSettings</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CompressionSettings</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>StaticMeshSettings</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>GeometryCacheSettings</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ConversionSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" line="75" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcPolyMesh.h" bodystart="76" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_i_abc_object_1a12ff4f4b40e3e557b1b4ab410f317e80" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bConstant</name></member>
+      <member refid="class_f_abc_poly_mesh_1ae71ddfdc0f73a5db872ff95c78069bc3" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bConstantTopology</name></member>
+      <member refid="class_f_abc_poly_mesh_1ab6feafdd1a3d1c1902e239dcb2ef2200" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bConstantTransformation</name></member>
+      <member refid="class_f_abc_poly_mesh_1af4f5a3c133bcb557d99fb30ce586ee26" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bConstantVisibility</name></member>
+      <member refid="class_f_abc_poly_mesh_1a83ae722af772fd7f0871d72fa1701048" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bFirstFrameVisibility</name></member>
+      <member refid="class_f_abc_poly_mesh_1aeb2481135ecf48d7df150557eef78054" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bReturnFirstSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1a5fbb29539a365d05fc15b4526055126b" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bReturnTransformedFirstSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1ae95195b87b744be173534add3845a2d9" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>bShouldImport</name></member>
+      <member refid="class_f_abc_poly_mesh_1a8a9a82a2456ab0ad870ff069192aca11" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>CalculateNormalsForSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1a263d3c27856d6a4c25e1b199527e65fd" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>ChildBounds</name></member>
+      <member refid="class_f_abc_poly_mesh_1ab9bf003e3178947abb265f5802406b9e" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>FAbcPolyMesh</name></member>
+      <member refid="class_f_abc_poly_mesh_1ab78297a20eb7feec05a2bf058d26ca62" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>FaceSetNames</name></member>
+      <member refid="class_i_abc_object_1a561a261cceff10054aa08b8e7fce25f4" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>File</name></member>
+      <member refid="class_f_abc_poly_mesh_1ace2e6ca4366e44f2f8b3381860b0993a" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>FirstSample</name></member>
+      <member refid="class_i_abc_object_1a2d9061ed464146a63f88363be57f9656" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>FrameTimes</name></member>
+      <member refid="class_f_abc_poly_mesh_1a848a885629ff730e2832a0abe837b843" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetFirstSample</name></member>
+      <member refid="class_i_abc_object_1aabd2b813c9a90cb3e5f9d66a50c7bf56" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetFrameIndexForFirstData</name></member>
+      <member refid="class_f_abc_poly_mesh_1a758dadab8727db73e4de498a7d8ba301" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>GetMatrix</name></member>
+      <member refid="class_i_abc_object_1a8d4faa21f7366c1a86935010b9dad923" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetName</name></member>
+      <member refid="class_i_abc_object_1ae457a4dcea5b26d821d93383f3293aad" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetNumberOfSamples</name></member>
+      <member refid="class_f_abc_poly_mesh_1a5a81683651107e7b5ac87a7840ec4f62" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1a9007e2dec7347dfa8506f110182feb7d" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetSampleReadFlags</name></member>
+      <member refid="class_i_abc_object_1a07be69dd7d88c63f9411d51e8577bbdb" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetTimeForFirstData</name></member>
+      <member refid="class_i_abc_object_1a68ccb6011f293f809d32537db11f9233" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetTimeForFrameIndex</name></member>
+      <member refid="class_i_abc_object_1a2f1588c565ae96d9931182ec19ee1188" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetTimeForLastData</name></member>
+      <member refid="class_f_abc_poly_mesh_1a684cf18f180d1d140bc168a72f696b2e" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetTransformedFirstSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1afcfcc2cff572ac6020d3043c601e41de" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>GetVisibility</name></member>
+      <member refid="class_f_abc_poly_mesh_1a2fd16439c9257d839660aeee0605a74e" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>HasConstantTransform</name></member>
+      <member refid="class_i_abc_object_1a542d7f1e48579655f351918159da0797" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>IAbcObject</name></member>
+      <member refid="class_i_abc_object_1a6a9d205d8dfd1a22544c1cfc5a1cc08c" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>InUseSamples</name></member>
+      <member refid="class_i_abc_object_1af8ab12d2c3f98b41c17d81c340fea2b3" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>IsConstant</name></member>
+      <member refid="class_i_abc_object_1ab3e23ba1133bd2ed56af93a7c42bc2d2" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>MaxTime</name></member>
+      <member refid="class_i_abc_object_1ac977525c10582e8bd41b50fc1add161c" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>MinTime</name></member>
+      <member refid="class_i_abc_object_1afd4566cf05f789c98160b92303884b7a" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>Name</name></member>
+      <member refid="class_i_abc_object_1af62f67ccbcb0e608ee1301a47a96b9f3" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>NumSamples</name></member>
+      <member refid="class_i_abc_object_1a834563a79fe4f853712ec470be3fe37d" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>Object</name></member>
+      <member refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>Parent</name></member>
+      <member refid="class_f_abc_poly_mesh_1a2875c74615024740c03ba36406849677" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>PolyMesh</name></member>
+      <member refid="class_f_abc_poly_mesh_1acb868b8410da7d36042564e161a30b4d" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>PurgeFrameData</name></member>
+      <member refid="class_f_abc_poly_mesh_1a573d71a1cae3713385e30a5fb95f37e8" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>ReadFirstFrame</name></member>
+      <member refid="class_i_abc_object_1a5b1d7e746638ade94780eb77474adb4b" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>ResidentSampleIndices</name></member>
+      <member refid="class_f_abc_poly_mesh_1a57492e2ad06b17d7fa244cd76312fb72" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>ResidentSamples</name></member>
+      <member refid="class_f_abc_poly_mesh_1afb94b915385943e8472acf418141344d" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>ResidentVisibilitySamples</name></member>
+      <member refid="class_f_abc_poly_mesh_1a685d5ea855772cd183d7a00217a1619a" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>SampleReadFlags</name></member>
+      <member refid="class_f_abc_poly_mesh_1a4aba41118e94d25825c337fb812c0b92" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>Schema</name></member>
+      <member refid="class_f_abc_poly_mesh_1a591e933053688fd451dcbe2058dfa7f6" prot="public" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>SelfBounds</name></member>
+      <member refid="class_f_abc_poly_mesh_1ae77b17e1464ea7b3f987b36fdfebad9e" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>SetFrameAndTime</name></member>
+      <member refid="class_i_abc_object_1a447de1419b9633458fe07d41744f73e8" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>StartFrameIndex</name></member>
+      <member refid="class_f_abc_poly_mesh_1a51d0068db512d369424454bf3fc880db" prot="protected" virt="non-virtual"><scope>FAbcPolyMesh</scope><name>TransformedFirstSample</name></member>
+      <member refid="class_f_abc_poly_mesh_1afc680d92fb0320980516cf9928d82c0a" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>~FAbcPolyMesh</name></member>
+      <member refid="class_i_abc_object_1a1e84bc66348f28bdc061e85317490fcc" prot="public" virt="virtual"><scope>FAbcPolyMesh</scope><name>~IAbcObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

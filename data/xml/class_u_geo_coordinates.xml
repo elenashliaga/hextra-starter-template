@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_coordinates" kind="class" language="C++" prot="public">
+    <compoundname>UGeoCoordinates</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_geo_coordinates_8h" local="no">GeoCoordinates.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_geo_coordinates_1af26795ca5a126eb7a3d052af09db4c8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::ConvertLonLatHeightToUnrealCoord</definition>
+        <argsstring>(AActor *Actor, FVector LonLatHeight)</argsstring>
+        <name>ConvertLonLatHeightToUnrealCoord</name>
+        <qualifiedname>UGeoCoordinates::ConvertLonLatHeightToUnrealCoord</qualifiedname>
+        <param>
+          <type>AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>LonLatHeight</declname>
+        </param>
+        <briefdescription>
+<para>Статический метод преобразования долготы/широты/высоты в координаты <ref refid="namespace_u_e" kindref="compound">UE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на Actor, который находится на карте, обычно используется для этого </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LonLatHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Долгота, широта, высота объекта (37,739475 , 55,675034, 147,208771) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="30" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a9a4a6e436d233303d5c3bc599ba8e632" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ACesiumGeoreference</ref> *</type>
+        <definition>ACesiumGeoreference * UGeoCoordinates::CheckCesiumGeoreference</definition>
+        <argsstring>(const AActor *Actor)</argsstring>
+        <name>CheckCesiumGeoreference</name>
+        <qualifiedname>UGeoCoordinates::CheckCesiumGeoreference</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Статический метод, который ищет существующий CesiumGeoreference на карте, и если он не существует, создает его на карте </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на Actor, который находится на карте, обычно использует для этого </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="38" column="36" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="120" bodyend="140"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_geo_coordinates_1a1a2497a0edff57ea62768f0e5fba1fdc" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::MoveToECEF</definition>
+        <argsstring>(const glm::dvec3 &amp;newPosition, const AActor *Actor)</argsstring>
+        <name>MoveToECEF</name>
+        <qualifiedname>UGeoCoordinates::MoveToECEF</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> glm::dvec3 &amp;</type>
+          <declname>newPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Перемещает объект в координаты Земля-Центрированной Землефиксированной (ECEF) системы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает новую позицию, представленную 3D-вектором в системе координат ECEF, и объект Actor. Он создает новый объект FTransform, который представляет новую позицию Actor в системе координат ECEF.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая позиция Actor, представленная как вектор glm::dvec3 в координатах ECEF. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект Actor, который нужно переместить в новое положение.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект FTransform, представляющий новую позицию Actor в системе координат ECEF. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="53" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a2518452f6879efae368769dab981064a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::MoveToECEFCoordinates</definition>
+        <argsstring>(const FVector &amp;Coord, const AActor *Actor)</argsstring>
+        <name>MoveToECEFCoordinates</name>
+        <qualifiedname>UGeoCoordinates::MoveToECEFCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Coord</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Перемещает заданную координату к ECEF (Earth-Centered, Earth-Fixed - относительно земли, связанная с Землей) координатам относительно указанного актора. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает координату в формате FVector и преобразует ее в координаты ECEF. Координаты ECEF - это географическая система координат, которая центрируется на центре масс Земли и фиксируется относительно поверхности Земли. Координаты ECEF рассчитываются относительно положения указанного актора на карте.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Координата FVector, которая будет преобразована в координаты ECEF. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект AActor, представляющий точку отсчета на карте для расчета координат ECEF.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованная координата в координатах ECEF. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="68" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1ae027770d477f28acc4816e77db75451d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::_applyCartesianProperties</definition>
+        <argsstring>(FVector Coord, const AActor *Actor)</argsstring>
+        <name>_applyCartesianProperties</name>
+        <qualifiedname>UGeoCoordinates::_applyCartesianProperties</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>Coord</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Применяет декартовы свойства к координате, преобразуя ее с помощью матрицы преобразования заданного актера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод берет координату и применяет к ней декартовы свойства, преобразуя ее с помощью матрицы преобразования данного актера. Матрица преобразования актера извлекается из свойства _actorToECEF_Array переданного актера.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Координата, к которой применяются декартовы свойства. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на актера, свойство _actorToECEF_Array которого содержит матрицу преобразования, которая будет использоваться.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованная координата с примененными декартовыми свойствами. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="81" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a3ead5748ef635dab09dc93badfbf1506" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::_setGlobeTransform</definition>
+        <argsstring>(const glm::dmat4 &amp;newTransform, glm::dmat4 &amp;_actorToECEF, const AActor *Actor)</argsstring>
+        <name>_setGlobeTransform</name>
+        <qualifiedname>UGeoCoordinates::_setGlobeTransform</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> glm::dmat4 &amp;</type>
+          <declname>newTransform</declname>
+        </param>
+        <param>
+          <type>glm::dmat4 &amp;</type>
+          <declname>_actorToECEF</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает глобальное преобразование для актера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод применяет новое преобразование к актеру на глобусе. Он корректирует ориентацию актера, чтобы обеспечить его вертикальное положение в новой позиции на глобусе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newTransform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое преобразование, которое нужно применить к актеру. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_actorToECEF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на матрицу преобразования актера в земно-центрированных, землефиксированных (ECEF) координатах. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект актера.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленное преобразование актера после применения нового глобального преобразования. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="95" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a811a0fe94939c4f527e410bbeb48abc3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform UGeoCoordinates::_updateActorTransformFromGlobeTransform</definition>
+        <argsstring>(const glm::dmat4 &amp;_actorToECEF, const AActor *Actor)</argsstring>
+        <name>_updateActorTransformFromGlobeTransform</name>
+        <qualifiedname>UGeoCoordinates::_updateActorTransformFromGlobeTransform</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> glm::dmat4 &amp;</type>
+          <declname>_actorToECEF</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет преобразование актера на основе глобального преобразования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_actorToECEF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица преобразования от актера к Земля-Центрированным, Землефиксированным (ECEF) координатам </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Актер, преобразование которого будет обновлено </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленное преобразование актера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="102" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a17fa0649accfbceff328c900c2f1f1a6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::dvec4</type>
+        <definition>glm::dvec4 UGeoCoordinates::getWorldOrigin4D</definition>
+        <argsstring>(const AActor *Actor)</argsstring>
+        <name>getWorldOrigin4D</name>
+        <qualifiedname>UGeoCoordinates::getWorldOrigin4D</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает начало мировых координат в виде 4D вектора. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на актера, который предоставляет контекст мира. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>4D вектор, представляющий начало мировых координат. Если актер недействителен или если актер не появился на уровне, возвращается пустой 4D вектор. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="108" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="84" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1aef6cdb100a5fdbfaf756e99c1c4c817b" prot="private" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref></type>
+        <definition>FMatrix UGeoCoordinates::createMatrix</definition>
+        <argsstring>(const glm::dmat4 &amp;m) noexcept</argsstring>
+        <name>createMatrix</name>
+        <qualifiedname>UGeoCoordinates::createMatrix</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> glm::dmat4 &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект FMatrix из данной матрицы glm::dmat4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица glm::dmat4. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный объект FMatrix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="114" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1aaa5e44c6a296c00661f7d13a4ca25c6f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::dvec3</type>
+        <definition>glm::dvec3 UGeoCoordinates::TransformLongitudeLatitudeHeightToEcef</definition>
+        <argsstring>(const glm::dvec3 &amp;longitudeLatitudeHeight, const AActor *Actor)</argsstring>
+        <name>TransformLongitudeLatitudeHeightToEcef</name>
+        <qualifiedname>UGeoCoordinates::TransformLongitudeLatitudeHeightToEcef</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> glm::dvec3 &amp;</type>
+          <declname>longitudeLatitudeHeight</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует координаты долготы, широты и высоты в координаты Земля-Центрированные Земля-Фиксированные (ECEF). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод берет координаты долготы, широты и высоты и преобразует их в координаты ECEF.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>longitudeLatitudeHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Долгота, широта и высота объекта, представленные как glm::dvec3. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на объект Actor, который находится на карте. Обычно это используется для данной цели. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Координаты ECEF объекта в виде glm::dvec3. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="124" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_coordinates_1a2254747ba1c96c178300305b2a27311b" prot="private" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>glm::dvec3</type>
+        <definition>glm::dvec3 UGeoCoordinates::createVector3D</definition>
+        <argsstring>(const FVector &amp;v) noexcept</argsstring>
+        <name>createVector3D</name>
+        <qualifiedname>UGeoCoordinates::createVector3D</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Создает 3D вектор из данного объекта FVector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция берет объект FVector и создает объект glm::dvec3 с теми же координатами.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект FVector, из которого создается вектор.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Созданный объект glm::dvec3. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="134" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/UnrealUtils/GeoCoordinates.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UGeoCoordinates</label>
+        <link refid="class_u_geo_coordinates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UGeoCoordinates</label>
+        <link refid="class_u_geo_coordinates"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/UnrealUtils/GeoCoordinates.h" bodystart="19" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_u_geo_coordinates_1ae027770d477f28acc4816e77db75451d" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>_applyCartesianProperties</name></member>
+      <member refid="class_u_geo_coordinates_1a3ead5748ef635dab09dc93badfbf1506" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>_setGlobeTransform</name></member>
+      <member refid="class_u_geo_coordinates_1a811a0fe94939c4f527e410bbeb48abc3" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>_updateActorTransformFromGlobeTransform</name></member>
+      <member refid="class_u_geo_coordinates_1a9a4a6e436d233303d5c3bc599ba8e632" prot="public" virt="non-virtual"><scope>UGeoCoordinates</scope><name>CheckCesiumGeoreference</name></member>
+      <member refid="class_u_geo_coordinates_1af26795ca5a126eb7a3d052af09db4c8d" prot="public" virt="non-virtual"><scope>UGeoCoordinates</scope><name>ConvertLonLatHeightToUnrealCoord</name></member>
+      <member refid="class_u_geo_coordinates_1aef6cdb100a5fdbfaf756e99c1c4c817b" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>createMatrix</name></member>
+      <member refid="class_u_geo_coordinates_1a2254747ba1c96c178300305b2a27311b" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>createVector3D</name></member>
+      <member refid="class_u_geo_coordinates_1a17fa0649accfbceff328c900c2f1f1a6" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>getWorldOrigin4D</name></member>
+      <member refid="class_u_geo_coordinates_1a1a2497a0edff57ea62768f0e5fba1fdc" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>MoveToECEF</name></member>
+      <member refid="class_u_geo_coordinates_1a2518452f6879efae368769dab981064a" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>MoveToECEFCoordinates</name></member>
+      <member refid="class_u_geo_coordinates_1aaa5e44c6a296c00661f7d13a4ca25c6f" prot="private" virt="non-virtual"><scope>UGeoCoordinates</scope><name>TransformLongitudeLatitudeHeightToEcef</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

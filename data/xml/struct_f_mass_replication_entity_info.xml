@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_replication_entity_info" kind="struct" language="C++" prot="public">
+    <compoundname>FMassReplicationEntityInfo</compoundname>
+    <includes refid="_mass_replication_types_8h" local="no">MassReplicationTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_mass_replication_entity_info_1ac6db680dfded9ad7924a3ada8e79a6e9" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+        <definition>FMassEntityHandle FMassReplicationEntityInfo::Entity</definition>
+        <argsstring></argsstring>
+        <name>Entity</name>
+        <qualifiedname>FMassReplicationEntityInfo::Entity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this is not IsSet() then the entity has been removed from the client simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="171" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_replication_entity_info_1a978828ec357b2cc93d93059dc44686fc" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 FMassReplicationEntityInfo::ReplicationID</definition>
+        <argsstring></argsstring>
+        <name>ReplicationID</name>
+        <qualifiedname>FMassReplicationEntityInfo::ReplicationID</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INDEX_NONE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is stored between removes and adds, however this item in the <ref refid="class_u_mass_replication_subsystem_1a1f84dd4ee71ed7c0f4b3ab8e55934cba" kindref="member">UMassReplicationSubsystem::EntityInfoMap</ref> will eventually get cleaned up if Entity.IsSet() == false for a fairly substantial length of time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="174" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_replication_entity_info_1ad38bb4aac3aa1d36120a433e2313cdf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassReplicationEntityInfo::FMassReplicationEntityInfo</definition>
+        <argsstring>()=default</argsstring>
+        <name>FMassReplicationEntityInfo</name>
+        <qualifiedname>FMassReplicationEntityInfo::FMassReplicationEntityInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_replication_entity_info_1a9d55495f654a3939e40b80a58f4cc12b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FMassReplicationEntityInfo::FMassReplicationEntityInfo</definition>
+        <argsstring>(FMassEntityHandle InEntity, int32 InReplicationID)</argsstring>
+        <name>FMassReplicationEntityInfo</name>
+        <qualifiedname>FMassReplicationEntityInfo::FMassReplicationEntityInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>InEntity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InReplicationID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="165" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data that can be accessed from a <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref> on a client </para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="162" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="163" bodyend="175"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_replication_entity_info_1ac6db680dfded9ad7924a3ada8e79a6e9" prot="public" virt="non-virtual"><scope>FMassReplicationEntityInfo</scope><name>Entity</name></member>
+      <member refid="struct_f_mass_replication_entity_info_1ad38bb4aac3aa1d36120a433e2313cdf7" prot="public" virt="non-virtual"><scope>FMassReplicationEntityInfo</scope><name>FMassReplicationEntityInfo</name></member>
+      <member refid="struct_f_mass_replication_entity_info_1a9d55495f654a3939e40b80a58f4cc12b" prot="public" virt="non-virtual"><scope>FMassReplicationEntityInfo</scope><name>FMassReplicationEntityInfo</name></member>
+      <member refid="struct_f_mass_replication_entity_info_1a978828ec357b2cc93d93059dc44686fc" prot="public" virt="non-virtual"><scope>FMassReplicationEntityInfo</scope><name>ReplicationID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

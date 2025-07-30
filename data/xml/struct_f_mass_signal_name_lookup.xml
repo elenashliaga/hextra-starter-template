@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_signal_name_lookup" kind="struct" language="C++" prot="public">
+    <compoundname>FMassSignalNameLookup</compoundname>
+    <includes refid="_mass_signal_types_8h" local="no">MassSignalTypes.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_f_mass_signal_name_lookup_1acc7d85746b4953c69a23ee24d153d7af" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>constexpr int32 FMassSignalNameLookup::MaxSignalNames</definition>
+        <argsstring></argsstring>
+        <name>MaxSignalNames</name>
+        <qualifiedname>FMassSignalNameLookup::MaxSignalNames</qualifiedname>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Max number of names each entity can contain </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="20" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_f_mass_signal_name_lookup_1aaeb5c988c4b5d5de4928fb8f6369108a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref> &gt;</type>
+        <definition>TArray&lt;FName&gt; FMassSignalNameLookup::SignalNames</definition>
+        <argsstring></argsstring>
+        <name>SignalNames</name>
+        <qualifiedname>FMassSignalNameLookup::SignalNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of Signal names </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="47" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_signal_name_lookup_1a5ba307d2a834ba10824f4a782d5ea5fe" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref> &gt;</type>
+        <definition>TMap&lt;FMassEntityHandle, uint64&gt; FMassSignalNameLookup::EntitySignals</definition>
+        <argsstring></argsstring>
+        <name>EntitySignals</name>
+        <qualifiedname>FMassSignalNameLookup::EntitySignals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map from entity id to name bitmask </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="50" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_signal_name_lookup_1a03567cf13a97bcd5118dd72943ed3e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+        <definition>uint64 FMassSignalNameLookup::GetOrAddSignalName</definition>
+        <argsstring>(const FName SignalName)</argsstring>
+        <name>GetOrAddSignalName</name>
+        <qualifiedname>FMassSignalNameLookup::GetOrAddSignalName</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>SignalName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve if it is already registered or adds new signal to the lookup and return the bitflag for that Signal @SignalName is the name of the signal to retrieve or add to the lookup. <simplesect kind="return"><para>bitflag describing the name, or 0 if max names is reached. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="27" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalTypes.cpp" bodystart="6" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_signal_name_lookup_1af7fe8abda0c56452c5a281a4f6ed8e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassSignalNameLookup::AddSignalToEntity</definition>
+        <argsstring>(const FMassEntityHandle Entity, const uint64 SignalFlag)</argsstring>
+        <name>AddSignalToEntity</name>
+        <qualifiedname>FMassSignalNameLookup::AddSignalToEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+          <declname>SignalFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds specified Signal name bitflag to an entity <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the entity where the signal has been raised </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SignalFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the actual bitflag describing the signal </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="34" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalTypes.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_signal_name_lookup_1a09cf83c749a7439baf66e50708b573bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassSignalNameLookup::GetSignalsForEntity</definition>
+        <argsstring>(const FMassEntityHandle Entity, TArray&lt; FName &gt; &amp;OutSignals) const</argsstring>
+        <name>GetSignalsForEntity</name>
+        <qualifiedname>FMassSignalNameLookup::GetSignalsForEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref> &gt; &amp;</type>
+          <declname>OutSignals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve for a specific entity the raised signal this frame <simplesect kind="return"><para>Array of signal names raised for this entity </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="40" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalTypes.cpp" bodystart="26" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_signal_name_lookup_1adf61d54397bed09f8901b5a9f85b9b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassSignalNameLookup::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <qualifiedname>FMassSignalNameLookup::Reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empties the name lookup and entity signals </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="43" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalTypes.cpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MassSignalNameLookup stores list of Signal names for each entity. The names are stored per entity as a bitmask, you can allocate new name using <ref refid="struct_f_mass_signal_name_lookup_1a03567cf13a97bcd5118dd72943ed3e97" kindref="member">GetOrAddSignalName()</ref>. This limits the names to 64. </para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" line="17" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalTypes.h" bodystart="18" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_signal_name_lookup_1af7fe8abda0c56452c5a281a4f6ed8e4d" prot="public" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>AddSignalToEntity</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1a5ba307d2a834ba10824f4a782d5ea5fe" prot="protected" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>EntitySignals</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1a03567cf13a97bcd5118dd72943ed3e97" prot="public" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>GetOrAddSignalName</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1a09cf83c749a7439baf66e50708b573bc" prot="public" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>GetSignalsForEntity</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1acc7d85746b4953c69a23ee24d153d7af" prot="public" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>MaxSignalNames</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1adf61d54397bed09f8901b5a9f85b9b9a" prot="public" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>Reset</name></member>
+      <member refid="struct_f_mass_signal_name_lookup_1aaeb5c988c4b5d5de4928fb8f6369108a" prot="protected" virt="non-virtual"><scope>FMassSignalNameLookup</scope><name>SignalNames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

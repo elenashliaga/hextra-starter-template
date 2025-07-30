@@ -1,0 +1,796 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_search_widget" kind="class" language="C++" prot="public">
+    <compoundname>USearchWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UUserWidget</basecompoundref>
+    <includes refid="_search_widget_8h" local="no">SearchWidget.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_search_widget_1a69c2a234703b9468cc83bc94473c16fb" prot="public" static="no" mutable="no">
+        <type><ref refid="class_u_pixel_streaming_method_handler" kindref="compound">UPixelStreamingMethodHandler</ref> *</type>
+        <definition>UPixelStreamingMethodHandler* USearchWidget::PixelStreamingHandler</definition>
+        <argsstring></argsstring>
+        <name>PixelStreamingHandler</name>
+        <qualifiedname>USearchWidget::PixelStreamingHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="163" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_search_widget_1a12571ffb6b8362c1928cdb3139bba612" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UAsyncNodeHttpRequest</ref> *</type>
+        <definition>UAsyncNodeHttpRequest* USearchWidget::GetRequest</definition>
+        <argsstring></argsstring>
+        <name>GetRequest</name>
+        <qualifiedname>USearchWidget::GetRequest</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+<para>HTTP-запрос для функциональности поиска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет экземпляр UAsyncNodeHttpRequest, используемый для выполнения HTTP GET-запросов для функциональности поиска. Она используется для отправки запроса на службу поиска с указанным URL. Ответ на запрос можно обрабатывать, подписавшись на события Success и Fail экземпляра UAsyncNodeHttpRequest. Экземпляр можно активировать для запуска запроса и деактивировать для остановки текущего запроса.</para>
+<para><simplesect kind="see"><para><ref refid="class_u_search_widget_1a401d2be4fd0cf90d5a3284d5e2cd0863" kindref="member">USearchWidget::GetHTTPRequestFromSearchDit</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_search_widget_1a260ba457b795c296adbee26b798f52d5" kindref="member">USearchWidget::OnHttpGetSearchSucsess</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_search_widget_1ab660944ff3fc631680515a99b9cc3675" kindref="member">USearchWidget::OnHttpGetSearchFail</ref></para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UAsyncNodeHttpRequest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="181" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_search_widget_1afcac1fe8b0a4eea744422080ad053201" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString USearchWidget::SearchURL</definition>
+        <argsstring></argsstring>
+        <name>SearchURL</name>
+        <qualifiedname>USearchWidget::SearchURL</qualifiedname>
+        <initializer>= &quot;http://89.108.73.252:8555/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">v1</ref>/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">search</ref>/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">searchAny</ref>?<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">query</ref>=&quot;</initializer>
+        <briefdescription>
+<para>URL, используемый для поиска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Переменная SearchURL хранит URL, который будет использоваться для поиска в приложении. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="189" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_search_widget_1a45f91c36c0484e45b0f21569ae738078" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString USearchWidget::SearchURLYandex</definition>
+        <argsstring></argsstring>
+        <name>SearchURLYandex</name>
+        <qualifiedname>USearchWidget::SearchURLYandex</qualifiedname>
+        <initializer>= &quot;http://89.108.73.252:8555/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">v1</ref>/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">search</ref>/<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">geocoder</ref>?<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">source</ref>=<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">yandex</ref>&amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">query</ref>=&quot;</initializer>
+        <briefdescription>
+<para>Переменная URL для поиска в Yandex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет URL, используемый для поиска в Yandex. Это строковая переменная, которую можно получать и модифицировать. Значение по умолчанию - &quot;http://89.108.73.252:8555/v1/search/geocoder?source=yandex&amp;query=&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="198" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_search_widget_1aec8ed11e15669ff78bc520aa8af413f2" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_u_search_widget_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool USearchWidget::CanTeleport</definition>
+        <argsstring></argsstring>
+        <name>CanTeleport</name>
+        <qualifiedname>USearchWidget::CanTeleport</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="212" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_search_widget_1ac61dff5a4efe8d3cc5a6922605569896" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref> *</type>
+        <definition>ASearchWidgetAnchorPoint* USearchWidget::SearchWidgetAnchorPoint</definition>
+        <argsstring></argsstring>
+        <name>SearchWidgetAnchorPoint</name>
+        <qualifiedname>USearchWidget::SearchWidgetAnchorPoint</qualifiedname>
+        <briefdescription>
+<para>Класс <ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref> представляет якорную точку для виджета поиска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот класс используется для установки и получения якорной точки для виджета поиска. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="220" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_search_widget_1ab8f78c163fba6783a7243840e7da17cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::NativeConstruct</definition>
+        <argsstring>() override</argsstring>
+        <name>NativeConstruct</name>
+        <qualifiedname>USearchWidget::NativeConstruct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="24" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1ae535e116d26fdbf7b93ec190b15a09dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::ClearLists</definition>
+        <argsstring>()</argsstring>
+        <name>ClearLists</name>
+        <qualifiedname>USearchWidget::ClearLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Очищает выведенные результаты поиска на экран </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1a401d2be4fd0cf90d5a3284d5e2cd0863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::GetHTTPRequestFromSearchDit</definition>
+        <argsstring>(FString Query)</argsstring>
+        <name>GetHTTPRequestFromSearchDit</name>
+        <qualifiedname>USearchWidget::GetHTTPRequestFromSearchDit</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Query</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отправляет запрос по URL в сервис поиска и назначает делегаты успешной/провальной операции/ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поисковый запрос. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="38" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="19" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1a8df86a0b34c9d8e492984da7ae425e3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::SetCanTeleport</definition>
+        <argsstring>(const bool Can)</argsstring>
+        <name>SetCanTeleport</name>
+        <qualifiedname>USearchWidget::SetCanTeleport</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_search_widget_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>Can</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает значение флага CanTeleport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод используется для установки значения флага CanTeleport, который определяет, включена ли телепортация или нет.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Can</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Булевый флаг, указывающий, разрешена ли телепортация или нет. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="48" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1aca068148f64c342202324d12d1b1da02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_u_search_widget_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool USearchWidget::GetCanTeleport</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCanTeleport</name>
+        <qualifiedname>USearchWidget::GetCanTeleport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="51" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1a260ba457b795c296adbee26b798f52d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::OnHttpGetSearchSucsess</definition>
+        <argsstring>(const FString dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString requestID)</argsstring>
+        <name>OnHttpGetSearchSucsess</name>
+        <qualifiedname>USearchWidget::OnHttpGetSearchSucsess</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обёртывает функцию OnHttpGetSearchSuccessImplem для Blueprints. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемая строка с информацией. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемые данные в массиве строк. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемые заголовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус код запроса. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемая информация в массиве байтов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requestID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="63" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1ab660944ff3fc631680515a99b9cc3675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::OnHttpGetSearchFail</definition>
+        <argsstring>(const FString dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString requestID)</argsstring>
+        <name>OnHttpGetSearchFail</name>
+        <qualifiedname>USearchWidget::OnHttpGetSearchFail</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обёртывает функцию OnHttpGetSearchFailImplem для Blueprints <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемая строка с информацией. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемые данные в массиве строк. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемые заголовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус код запроса. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Возвращаемая информация в массиве байтов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>requestID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="79" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="53" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1a0dc7ba1521d70f80d8c8ed43dfc06827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::OnHttpGetSearchSuccessImplem</definition>
+        <argsstring>(const FString &amp;dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 &amp;statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString &amp;requestID)</argsstring>
+        <name>OnHttpGetSearchSuccessImplem</name>
+        <qualifiedname>USearchWidget::OnHttpGetSearchSuccessImplem</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &amp;</type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+<para>OnHttpGetSearchSuccessImplem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод - это событие, которое вызывается при успешном завершении HTTP-запроса поиска. Он предоставляет полученные данные, заголовок, код состояния, байтовые данные и идентификатор запроса вызывающей стороне.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полученные данные в виде строки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих полученные данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, представляющих заголовки HTTP-ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Код состояния HTTP-ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив беззнаковых целых чисел, представляющих полученные байтовые данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор запроса, связанный с HTTP-запросом. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="100" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1ac032f9010a7fac6c402ac376390f449e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::OnHttpGetSearchFailImplem</definition>
+        <argsstring>(const FString &amp;dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 &amp;statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString &amp;requestID)</argsstring>
+        <name>OnHttpGetSearchFailImplem</name>
+        <qualifiedname>USearchWidget::OnHttpGetSearchFailImplem</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &amp;</type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+<para>Вызывается, когда HTTP GET поиск не удается. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Это событие возникает, когда HTTP GET запрос на поиск данных не удался. Он предоставляет информацию о неудачном запросе, такую как строка данных, возвращенные данные, заголовок ответа, код состояния, исходные байтовые данные, и идентификатор запроса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строковое представление возвращенных данных. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив возвращенных строк данных. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк заголовка ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP код состояния ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Исходные байтовые данные ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID неудавшегося запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="122" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1aba2856ba83358b57f517bdef1795270d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref> *</type>
+        <definition>ASearchWidgetAnchorPoint * USearchWidget::GetSearchWidgetAnchorPoint</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSearchWidgetAnchorPoint</name>
+        <qualifiedname>USearchWidget::GetSearchWidgetAnchorPoint</qualifiedname>
+        <briefdescription>
+<para>Получить якорную точку виджета поиска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает объект <ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref>, который представляет собой якорную точку виджета поиска.</para>
+<para><simplesect kind="return"><para>Возвращает указатель на объект <ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref>, представляющий якорную точку виджета поиска. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="146" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1ac7ce7494c4ee7e7f4a34777c975992ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::SetSearchWidgetAnchorPoint</definition>
+        <argsstring>(ASearchWidgetAnchorPoint *SearchWidgetAnchorPointPtr)</argsstring>
+        <name>SetSearchWidgetAnchorPoint</name>
+        <qualifiedname>USearchWidget::SetSearchWidgetAnchorPoint</qualifiedname>
+        <param>
+          <type><ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref> *</type>
+          <declname>SearchWidgetAnchorPointPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает якорную точку для виджета поиска.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SearchWidgetAnchorPointPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="class_a_search_widget_anchor_point" kindref="compound">ASearchWidgetAnchorPoint</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="154" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_search_widget_1a59fd352ab5c3fc889701872a8e0ba2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USearchWidget::DestroySearchWidgetAnchorPoint</definition>
+        <argsstring>()</argsstring>
+        <name>DestroySearchWidgetAnchorPoint</name>
+        <qualifiedname>USearchWidget::DestroySearchWidgetAnchorPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет класс SearchWidgetAnchorPoint с карты </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="160" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="80" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_search_widget_1a63c0c28fcc8b17cf7c2560cd36c276d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform USearchWidget::ComputeCenter</definition>
+        <argsstring>(const TArray&lt; FTransform &gt; &amp;Transforms)</argsstring>
+        <name>ComputeCenter</name>
+        <qualifiedname>USearchWidget::ComputeCenter</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &gt; &amp;</type>
+          <declname>Transforms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вычисляет центрральную точку из входящего массива координат. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transforms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив координат из которых нужно вычислить центр. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возврает координаты центра. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="135" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Widgets/Search/SearchWidget.cpp" bodystart="63" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_search_widget_1af6a258d8f3ee5206d682d799316314b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <qualifiedname>USearchWidget::bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Флаг, указывающий, может ли объект телепортироваться.</para>
+<para>Если установлено значение true, объекту разрешено телепортироваться. Если установлено значение false, объекту не разрешено телепортироваться. Значение по умолчанию - true.</para>
+<para>@access public </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="207" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>USearchWidget</label>
+        <link refid="class_u_search_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AActor</label>
+      </node>
+      <node id="5">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>PositionsManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ASearchWidgetAnchorPoint</label>
+        <link refid="class_a_search_widget_anchor_point"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PixelStreamingHandler</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>PixelStreamingClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UActorComponent</label>
+      </node>
+      <node id="4">
+        <label>UObject</label>
+      </node>
+      <node id="10">
+        <label>UPixelStreamingClient</label>
+        <link refid="class_u_pixel_streaming_client"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UPixelStreamingMethodHandler</label>
+        <link refid="class_u_pixel_streaming_method_handler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>BuildingRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UPositionsManager</label>
+        <link refid="class_u_positions_manager"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>USearchWidget</label>
+        <link refid="class_u_search_widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PixelStreamingHandler</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>SearchWidgetAnchorPoint</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Widgets/Search/SearchWidget.h" bodystart="20" bodyend="222"/>
+    <listofallmembers>
+      <member refid="class_u_search_widget_1af6a258d8f3ee5206d682d799316314b1" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>bool</name></member>
+      <member refid="class_u_search_widget_1aec8ed11e15669ff78bc520aa8af413f2" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>CanTeleport</name></member>
+      <member refid="class_u_search_widget_1ae535e116d26fdbf7b93ec190b15a09dd" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>ClearLists</name></member>
+      <member refid="class_u_search_widget_1a63c0c28fcc8b17cf7c2560cd36c276d2" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>ComputeCenter</name></member>
+      <member refid="class_u_search_widget_1a59fd352ab5c3fc889701872a8e0ba2fc" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>DestroySearchWidgetAnchorPoint</name></member>
+      <member refid="class_u_search_widget_1aca068148f64c342202324d12d1b1da02" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>GetCanTeleport</name></member>
+      <member refid="class_u_search_widget_1a401d2be4fd0cf90d5a3284d5e2cd0863" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>GetHTTPRequestFromSearchDit</name></member>
+      <member refid="class_u_search_widget_1a12571ffb6b8362c1928cdb3139bba612" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>GetRequest</name></member>
+      <member refid="class_u_search_widget_1aba2856ba83358b57f517bdef1795270d" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>GetSearchWidgetAnchorPoint</name></member>
+      <member refid="class_u_search_widget_1ab8f78c163fba6783a7243840e7da17cc" prot="public" virt="virtual"><scope>USearchWidget</scope><name>NativeConstruct</name></member>
+      <member refid="class_u_search_widget_1ab660944ff3fc631680515a99b9cc3675" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>OnHttpGetSearchFail</name></member>
+      <member refid="class_u_search_widget_1ac032f9010a7fac6c402ac376390f449e" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>OnHttpGetSearchFailImplem</name></member>
+      <member refid="class_u_search_widget_1a0dc7ba1521d70f80d8c8ed43dfc06827" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>OnHttpGetSearchSuccessImplem</name></member>
+      <member refid="class_u_search_widget_1a260ba457b795c296adbee26b798f52d5" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>OnHttpGetSearchSucsess</name></member>
+      <member refid="class_u_search_widget_1a69c2a234703b9468cc83bc94473c16fb" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>PixelStreamingHandler</name></member>
+      <member refid="class_u_search_widget_1afcac1fe8b0a4eea744422080ad053201" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>SearchURL</name></member>
+      <member refid="class_u_search_widget_1a45f91c36c0484e45b0f21569ae738078" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>SearchURLYandex</name></member>
+      <member refid="class_u_search_widget_1ac61dff5a4efe8d3cc5a6922605569896" prot="protected" virt="non-virtual"><scope>USearchWidget</scope><name>SearchWidgetAnchorPoint</name></member>
+      <member refid="class_u_search_widget_1a8df86a0b34c9d8e492984da7ae425e3e" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>SetCanTeleport</name></member>
+      <member refid="class_u_search_widget_1ac7ce7494c4ee7e7f4a34777c975992ae" prot="public" virt="non-virtual"><scope>USearchWidget</scope><name>SetSearchWidgetAnchorPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

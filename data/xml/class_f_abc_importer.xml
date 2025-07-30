@@ -1,0 +1,1045 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_f_abc_importer" kind="class" language="C++" prot="public">
+    <compoundname>FAbcImporter</compoundname>
+    <includes refid="_abc_importer_8h" local="no">AbcImporter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_f_abc_importer_1a8ded4b05ed0d59888df2a37501bc9c6c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_u_abc_import_settings" kindref="compound">UAbcImportSettings</ref> *</type>
+        <definition>UAbcImportSettings* FAbcImporter::ImportSettings</definition>
+        <argsstring></argsstring>
+        <name>ImportSettings</name>
+        <qualifiedname>FAbcImporter::ImportSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached ptr for the import settings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="215" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_importer_1acff34e3951f686bcff578502b16cd0af" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_compressed_abc_data" kindref="compound">FCompressedAbcData</ref> &gt;</type>
+        <definition>TArray&lt;FCompressedAbcData&gt; FAbcImporter::CompressedMeshData</definition>
+        <argsstring></argsstring>
+        <name>CompressedMeshData</name>
+        <qualifiedname>FAbcImporter::CompressedMeshData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resulting compressed data from PCA compression </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="218" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_importer_1a2c39abbf22221a574c1869ccb85f1eb7" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt;</type>
+        <definition>TOptional&lt;TArray&lt;FVector&gt; &gt; FAbcImporter::SamplesOffsets</definition>
+        <argsstring></argsstring>
+        <name>SamplesOffsets</name>
+        <qualifiedname>FAbcImporter::SamplesOffsets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset for each sample, used as the root bone translation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="221" column="11" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_importer_1a6baf3d2a11219eb8c4be068f17d26217" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref> *</type>
+        <definition>class FAbcFile* FAbcImporter::AbcFile</definition>
+        <argsstring></argsstring>
+        <name>AbcFile</name>
+        <qualifiedname>FAbcImporter::AbcFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ABC file representation for currently opened filed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="224" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_f_abc_importer_1a7f86e221deea4bcb1b8d3f424d32f8ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAbcImporter::FAbcImporter</definition>
+        <argsstring>()</argsstring>
+        <name>FAbcImporter</name>
+        <qualifiedname>FAbcImporter::FAbcImporter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="86" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1ac01e01d04b757839ed557523336fe751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAbcImporter::~FAbcImporter</definition>
+        <argsstring>()</argsstring>
+        <name>~FAbcImporter</name>
+        <qualifiedname>FAbcImporter::~FAbcImporter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="87" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a8e017c74f201f0181249a5439d5a80df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_abc_importer_8h_1ae870d15b7f7065ec33afe18a22e4929f" kindref="member">EAbcImportError</ref></type>
+        <definition>const EAbcImportError FAbcImporter::OpenAbcFileForImport</definition>
+        <argsstring>(const FString InFilePath)</argsstring>
+        <name>OpenAbcFileForImport</name>
+        <qualifiedname>FAbcImporter::OpenAbcFileForImport</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>InFilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opens and caches basic data from the <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file to be used for populating the importer UI</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Path to the <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file to be opened </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- Possible error code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="95" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a000cc5fafa22314c62f2285fc1398675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_abc_importer_8h_1ae870d15b7f7065ec33afe18a22e4929f" kindref="member">EAbcImportError</ref></type>
+        <definition>const EAbcImportError FAbcImporter::ImportTrackData</definition>
+        <argsstring>(const int32 InNumThreads, UAbcImportSettings *ImportSettings)</argsstring>
+        <name>ImportTrackData</name>
+        <qualifiedname>FAbcImporter::ImportTrackData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InNumThreads</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_abc_import_settings" kindref="compound">UAbcImportSettings</ref> *</type>
+          <declname>ImportSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Imports the individual tracks from the <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNumThreads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Number of threads to use for importing </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- Possible error code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="103" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="132" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1adee68d8f2b2c99141d05217f10d656b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UStaticMesh</ref> * &gt;</type>
+        <definition>const TArray&lt; UStaticMesh * &gt; FAbcImporter::ImportAsStaticMesh</definition>
+        <argsstring>(UObject *InParent, EObjectFlags Flags)</argsstring>
+        <name>ImportAsStaticMesh</name>
+        <qualifiedname>FAbcImporter::ImportAsStaticMesh</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>InParent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref></type>
+          <declname>Flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Import <ref refid="namespace_alembic" kindref="compound">Alembic</ref> meshes as a StaticMeshInstance</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- ParentObject for the static mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Object flags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FStaticMesh* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="112" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="266" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a417c56cef96eab63a6882eb70586836a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UGeometryCache</ref> *</type>
+        <definition>UGeometryCache * FAbcImporter::ImportAsGeometryCache</definition>
+        <argsstring>(UObject *InParent, EObjectFlags Flags)</argsstring>
+        <name>ImportAsGeometryCache</name>
+        <qualifiedname>FAbcImporter::ImportAsGeometryCache</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>InParent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref></type>
+          <declname>Flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Import an <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file as a GeometryCache</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- ParentObject for the static mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Object flags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UGeometryCache* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="121" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="349" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a1d3188f87b6bf79eb19eab751d150d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; UObject * &gt;</type>
+        <definition>TArray&lt; UObject * &gt; FAbcImporter::ImportAsSkeletalMesh</definition>
+        <argsstring>(UObject *InParent, EObjectFlags Flags)</argsstring>
+        <name>ImportAsSkeletalMesh</name>
+        <qualifiedname>FAbcImporter::ImportAsSkeletalMesh</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>InParent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref></type>
+          <declname>Flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="123" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="588" bodyend="860"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a6397d7db3f2b54d88c8b83cf6980e36b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UStaticMesh</ref> * &gt;</type>
+        <definition>const TArray&lt; UStaticMesh * &gt; FAbcImporter::ReimportAsStaticMesh</definition>
+        <argsstring>(UStaticMesh *Mesh)</argsstring>
+        <name>ReimportAsStaticMesh</name>
+        <qualifiedname>FAbcImporter::ReimportAsStaticMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UStaticMesh</ref> *</type>
+          <declname>Mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reimport an <ref refid="namespace_alembic" kindref="compound">Alembic</ref> mesh</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Current StaticMesh instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FStaticMesh* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="131" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1648" bodyend="1654"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1ac08951776824872372175fa44244f8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UGeometryCache</ref> *</type>
+        <definition>UGeometryCache * FAbcImporter::ReimportAsGeometryCache</definition>
+        <argsstring>(UGeometryCache *GeometryCache)</argsstring>
+        <name>ReimportAsGeometryCache</name>
+        <qualifiedname>FAbcImporter::ReimportAsGeometryCache</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UGeometryCache</ref> *</type>
+          <declname>GeometryCache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reimport an <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file as a GeometryCache</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GeometryCache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Current GeometryCache instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UGeometryCache* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="139" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1656" bodyend="1660"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a69512b9113197264594ca0bf23dbf33d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; UObject * &gt;</type>
+        <definition>TArray&lt; UObject * &gt; FAbcImporter::ReimportAsSkeletalMesh</definition>
+        <argsstring>(USkeletalMesh *SkeletalMesh)</argsstring>
+        <name>ReimportAsSkeletalMesh</name>
+        <qualifiedname>FAbcImporter::ReimportAsSkeletalMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USkeletalMesh</ref> *</type>
+          <declname>SkeletalMesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reimport an <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file as a SkeletalMesh</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SkeletalMesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Current SkeletalMesh instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>USkeletalMesh* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="147" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1662" bodyend="1666"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a4b7ceb128be4ea2ff592c8c5352dad33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="class_f_abc_poly_mesh" kindref="compound">FAbcPolyMesh</ref> * &gt; &amp;</type>
+        <definition>const TArray&lt; FAbcPolyMesh * &gt; &amp; FAbcImporter::GetPolyMeshes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPolyMeshes</name>
+        <qualifiedname>FAbcImporter::GetPolyMeshes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the array of imported PolyMesh objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="150" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1668" bodyend="1671"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1ab34777fd72520f7661b591418c10e3a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>const uint32 FAbcImporter::GetStartFrameIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStartFrameIndex</name>
+        <qualifiedname>FAbcImporter::GetStartFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the lowest frame index containing data for the imported <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="153" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1673" bodyend="1676"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a40727c820af8860232c92ff01be623fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>const uint32 FAbcImporter::GetEndFrameIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEndFrameIndex</name>
+        <qualifiedname>FAbcImporter::GetEndFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the highest frame index containing data for the imported <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="156" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1678" bodyend="1681"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a346a77d99927b0c41dd066370f06a844" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>const uint32 FAbcImporter::GetNumMeshTracks</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumMeshTracks</name>
+        <qualifiedname>FAbcImporter::GetNumMeshTracks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of tracks found in the imported <ref refid="namespace_alembic" kindref="compound">Alembic</ref> file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="159" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1683" bodyend="1686"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a441c0ed21ace5f56baa19a8892909212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::UpdateAssetImportData</definition>
+        <argsstring>(UAbcAssetImportData *AssetImportData)</argsstring>
+        <name>UpdateAssetImportData</name>
+        <qualifiedname>FAbcImporter::UpdateAssetImportData</qualifiedname>
+        <param>
+          <type><ref refid="class_u_abc_asset_import_data" kindref="compound">UAbcAssetImportData</ref> *</type>
+          <declname>AssetImportData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="161" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="79" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a51aea0e9e9a757de71cf35e8a0bcd233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::RetrieveAssetImportData</definition>
+        <argsstring>(UAbcAssetImportData *ImportData)</argsstring>
+        <name>RetrieveAssetImportData</name>
+        <qualifiedname>FAbcImporter::RetrieveAssetImportData</qualifiedname>
+        <param>
+          <type><ref refid="class_u_abc_asset_import_data" kindref="compound">UAbcAssetImportData</ref> *</type>
+          <declname>ImportData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="162" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="99" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_f_abc_importer_1aacdbfa5decac243125cfb131f82bd8bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> *</type>
+        <definition>T * FAbcImporter::CreateObjectInstance</definition>
+        <argsstring>(UObject *&amp;InParent, const FString &amp;ObjectName, const EObjectFlags Flags, bool &amp;bObjectAlreadyExists)</argsstring>
+        <name>CreateObjectInstance</name>
+        <qualifiedname>FAbcImporter::CreateObjectInstance</qualifiedname>
+        <param>
+          <type>UObject *&amp;</type>
+          <declname>InParent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>ObjectName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref></type>
+          <declname>Flags</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>bObjectAlreadyExists</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an template object instance taking into account existing Instances and Objects (on reimporting)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- ParentObject for the geometry cache, this can be changed when parent is deleted/re-created </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ObjectName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Name to be used for the created object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Object creation flags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="171" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="142" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a78bf4cdcdcbcedba3f9c800f09e834d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UStaticMesh</ref> *</type>
+        <definition>UStaticMesh * FAbcImporter::CreateStaticMeshFromSample</definition>
+        <argsstring>(UObject *InParent, const FString &amp;Name, EObjectFlags Flags, const TArray&lt; FString &gt; &amp;UniqueFaceSetNames, const TArray&lt; int32 &gt; &amp;LookupMaterialSlot, const FAbcMeshSample *Sample)</argsstring>
+        <name>CreateStaticMeshFromSample</name>
+        <qualifiedname>FAbcImporter::CreateStaticMeshFromSample</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>InParent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref></type>
+          <declname>Flags</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>UniqueFaceSetNames</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>LookupMaterialSlot</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>Sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a Static mesh from the given mesh description</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- ParentObject for the static mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Name for the static mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Object flags </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NumMaterials</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Number of materials to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UniqueFaceSetNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The array of unique face set (material slot) names for merged mesh </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LookupMaterialSlot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Mapping from faceset index (in flattened list) to material slot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> from which the static mesh should be constructed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UStaticMesh* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="185" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="190" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a8c757e4aaaa3b0766d2e86ff41283fe5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::GenerateMeshDescriptionFromSample</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;UniqueFaceSetNames, const TArray&lt; int32 &gt; &amp;LookupMaterialSlot, const FAbcMeshSample *Sample, FMeshDescription *MeshDescription)</argsstring>
+        <name>GenerateMeshDescriptionFromSample</name>
+        <qualifiedname>FAbcImporter::GenerateMeshDescriptionFromSample</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>UniqueFaceSetNames</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>LookupMaterialSlot</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>Sample</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMeshDescription</ref> *</type>
+          <declname>MeshDescription</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates and populate a FMeshDescription instance from the given sample </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="188" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1688" bodyend="1783"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1ab92582d945f369800a2b203d600b9f05" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+        <definition>const bool FAbcImporter::CompressAnimationDataUsingPCA</definition>
+        <argsstring>(const FAbcCompressionSettings &amp;InCompressionSettings, const bool bRunComparison=false)</argsstring>
+        <name>CompressAnimationDataUsingPCA</name>
+        <qualifiedname>FAbcImporter::CompressAnimationDataUsingPCA</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_abc_compression_settings" kindref="compound">FAbcCompressionSettings</ref> &amp;</type>
+          <declname>InCompressionSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bRunComparison</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compresses the imported animation data, returns true if compression was successful and compressed data was populated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="191" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="911" bodyend="1556"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a49d59afb75360491416b3dfb1ba7f97d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>const int32 FAbcImporter::PerformSVDCompression</definition>
+        <argsstring>(const TArray64&lt; float &gt; &amp;OriginalMatrix, const TArray64&lt; float &gt; &amp;OriginalNormalsMatrix, const uint32 NumSamples, const float InPercentage, const int32 InFixedNumValue, TArray64&lt; float &gt; &amp;OutU, TArray64&lt; float &gt; &amp;OutNormalsU, TArray64&lt; float &gt; &amp;OutV)</argsstring>
+        <name>PerformSVDCompression</name>
+        <qualifiedname>FAbcImporter::PerformSVDCompression</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OriginalMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OriginalNormalsMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>NumSamples</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InPercentage</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InFixedNumValue</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutU</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutNormalsU</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutV</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs the actual SVD compression to retrieve the bases and weights used to set up the Skeletal mesh&apos;s morph targets </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="193" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1590" bodyend="1646"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a6a8ea2a67b6e0af8db5b02297ee18530" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::CompareCompressionResult</definition>
+        <argsstring>(const TArray64&lt; float &gt; &amp;OriginalMatrix, const uint32 NumSamples, const uint32 NumUsedSingularValues, const TArrayView64&lt; float &gt; &amp;OutU, const TArray64&lt; float &gt; &amp;OutV, const float Tolerance)</argsstring>
+        <name>CompareCompressionResult</name>
+        <qualifiedname>FAbcImporter::CompareCompressionResult</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OriginalMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>NumSamples</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>NumUsedSingularValues</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutU</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray64</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>OutV</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Tolerance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Functionality for comparing the matrices and calculating the difference from the original animation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="197" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1558" bodyend="1588"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1aa5f9ddb10d501ce8b8684c1717d8a71a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAbcImporter::BuildSkeletalMesh</definition>
+        <argsstring>(FSkeletalMeshLODModel &amp;LODModel, const FReferenceSkeleton &amp;RefSkeleton, FAbcMeshSample *Sample, int32 NumMaterialSlots, const TArray&lt; int32 &gt; LookupMaterialSlot, TArray&lt; int32 &gt; &amp;OutMorphTargetVertexRemapping, TArray&lt; int32 &gt; &amp;OutUsedVertexIndicesForMorphs)</argsstring>
+        <name>BuildSkeletalMesh</name>
+        <qualifiedname>FAbcImporter::BuildSkeletalMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSkeletalMeshLODModel</ref> &amp;</type>
+          <declname>LODModel</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FReferenceSkeleton</ref> &amp;</type>
+          <declname>RefSkeleton</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>Sample</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>NumMaterialSlots</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+          <declname>LookupMaterialSlot</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>OutMorphTargetVertexRemapping</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>OutUsedVertexIndicesForMorphs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a skeletal mesh from the PCA compressed data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="200" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1785" bodyend="1972"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a5691951f89c5484d86f4931d400c9b22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::GenerateMorphTargetVertices</definition>
+        <argsstring>(FAbcMeshSample *BaseSample, TArray&lt; FMorphTargetDelta &gt; &amp;MorphDeltas, FAbcMeshSample *AverageSample, uint32 WedgeOffset, const TArray&lt; int32 &gt; &amp;RemapIndices, const TArray&lt; int32 &gt; &amp;UsedVertexIndicesForMorphs, const uint32 VertexOffset, const uint32 IndexOffset)</argsstring>
+        <name>GenerateMorphTargetVertices</name>
+        <qualifiedname>FAbcImporter::GenerateMorphTargetVertices</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>BaseSample</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMorphTargetDelta</ref> &gt; &amp;</type>
+          <declname>MorphDeltas</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_abc_mesh_sample" kindref="compound">FAbcMeshSample</ref> *</type>
+          <declname>AverageSample</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>WedgeOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>RemapIndices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>UsedVertexIndicesForMorphs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>VertexOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>IndexOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate morph target vertices from the PCA compressed bases </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="205" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="1974" bodyend="1994"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a3c7bbe4f1fba77caddbd321239b56768" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::SetupMorphTargetCurves</definition>
+        <argsstring>(USkeleton *Skeleton, FName ConstCurveName, UAnimSequence *Sequence, const TArray&lt; float &gt; &amp;CurveValues, const TArray&lt; float &gt; &amp;TimeValues, IAnimationDataController &amp;Controller, bool bShouldTransact)</argsstring>
+        <name>SetupMorphTargetCurves</name>
+        <qualifiedname>FAbcImporter::SetupMorphTargetCurves</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USkeleton</ref> *</type>
+          <declname>Skeleton</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>ConstCurveName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UAnimSequence</ref> *</type>
+          <declname>Sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>CurveValues</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt; &amp;</type>
+          <declname>TimeValues</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IAnimationDataController</ref> &amp;</type>
+          <declname>Controller</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bShouldTransact</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up correct morph target weights from the PCA compressed data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="208" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="862" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_importer_1a93a35213ab98e471d0082a117d0a7d8c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImporter::SetMetaData</definition>
+        <argsstring>(const TArray&lt; UObject * &gt; &amp;Objects)</argsstring>
+        <name>SetMetaData</name>
+        <qualifiedname>FAbcImporter::SetMetaData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; UObject * &gt; &amp;</type>
+          <declname>Objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the <ref refid="namespace_alembic" kindref="compound">Alembic</ref> archive metadata on the given objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="211" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" bodystart="896" bodyend="909"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>FAbcCompressionSettings</label>
+        <link refid="struct_f_abc_compression_settings"/>
+      </node>
+      <node id="10">
+        <label>FAbcConversionSettings</label>
+        <link refid="struct_f_abc_conversion_settings"/>
+      </node>
+      <node id="11">
+        <label>FAbcFile</label>
+        <link refid="class_f_abc_file"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ImportSettings</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>RootObject</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FAbcGeometryCacheSettings</label>
+        <link refid="struct_f_abc_geometry_cache_settings"/>
+      </node>
+      <node id="1">
+        <label>FAbcImporter</label>
+        <link refid="class_f_abc_importer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ImportSettings</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>AbcFile</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FAbcMaterialSettings</label>
+        <link refid="struct_f_abc_material_settings"/>
+      </node>
+      <node id="5">
+        <label>FAbcNormalGenerationSettings</label>
+        <link refid="struct_f_abc_normal_generation_settings"/>
+      </node>
+      <node id="4">
+        <label>FAbcSamplingSettings</label>
+        <link refid="struct_f_abc_sampling_settings"/>
+      </node>
+      <node id="8">
+        <label>FAbcStaticMeshSettings</label>
+        <link refid="struct_f_abc_static_mesh_settings"/>
+      </node>
+      <node id="12">
+        <label>IAbcObject</label>
+        <link refid="class_i_abc_object"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Parent</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>File</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UAbcImportSettings</label>
+        <link refid="class_u_abc_import_settings"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SamplingSettings</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>NormalGenerationSettings</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>MaterialSettings</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>CompressionSettings</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>StaticMeshSettings</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>GeometryCacheSettings</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ConversionSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" line="83" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImporter.h" bodystart="84" bodyend="225"/>
+    <listofallmembers>
+      <member refid="class_f_abc_importer_1a6baf3d2a11219eb8c4be068f17d26217" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>AbcFile</name></member>
+      <member refid="class_f_abc_importer_1aa5f9ddb10d501ce8b8684c1717d8a71a" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>BuildSkeletalMesh</name></member>
+      <member refid="class_f_abc_importer_1a6a8ea2a67b6e0af8db5b02297ee18530" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>CompareCompressionResult</name></member>
+      <member refid="class_f_abc_importer_1ab92582d945f369800a2b203d600b9f05" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>CompressAnimationDataUsingPCA</name></member>
+      <member refid="class_f_abc_importer_1acff34e3951f686bcff578502b16cd0af" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>CompressedMeshData</name></member>
+      <member refid="class_f_abc_importer_1aacdbfa5decac243125cfb131f82bd8bb" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>CreateObjectInstance</name></member>
+      <member refid="class_f_abc_importer_1a78bf4cdcdcbcedba3f9c800f09e834d7" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>CreateStaticMeshFromSample</name></member>
+      <member refid="class_f_abc_importer_1a7f86e221deea4bcb1b8d3f424d32f8ec" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>FAbcImporter</name></member>
+      <member refid="class_f_abc_importer_1a8c757e4aaaa3b0766d2e86ff41283fe5" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>GenerateMeshDescriptionFromSample</name></member>
+      <member refid="class_f_abc_importer_1a5691951f89c5484d86f4931d400c9b22" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>GenerateMorphTargetVertices</name></member>
+      <member refid="class_f_abc_importer_1a40727c820af8860232c92ff01be623fc" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>GetEndFrameIndex</name></member>
+      <member refid="class_f_abc_importer_1a346a77d99927b0c41dd066370f06a844" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>GetNumMeshTracks</name></member>
+      <member refid="class_f_abc_importer_1a4b7ceb128be4ea2ff592c8c5352dad33" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>GetPolyMeshes</name></member>
+      <member refid="class_f_abc_importer_1ab34777fd72520f7661b591418c10e3a2" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>GetStartFrameIndex</name></member>
+      <member refid="class_f_abc_importer_1a417c56cef96eab63a6882eb70586836a" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ImportAsGeometryCache</name></member>
+      <member refid="class_f_abc_importer_1a1d3188f87b6bf79eb19eab751d150d0f" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ImportAsSkeletalMesh</name></member>
+      <member refid="class_f_abc_importer_1adee68d8f2b2c99141d05217f10d656b1" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ImportAsStaticMesh</name></member>
+      <member refid="class_f_abc_importer_1a8ded4b05ed0d59888df2a37501bc9c6c" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>ImportSettings</name></member>
+      <member refid="class_f_abc_importer_1a000cc5fafa22314c62f2285fc1398675" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ImportTrackData</name></member>
+      <member refid="class_f_abc_importer_1a8e017c74f201f0181249a5439d5a80df" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>OpenAbcFileForImport</name></member>
+      <member refid="class_f_abc_importer_1a49d59afb75360491416b3dfb1ba7f97d" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>PerformSVDCompression</name></member>
+      <member refid="class_f_abc_importer_1ac08951776824872372175fa44244f8b8" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ReimportAsGeometryCache</name></member>
+      <member refid="class_f_abc_importer_1a69512b9113197264594ca0bf23dbf33d" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ReimportAsSkeletalMesh</name></member>
+      <member refid="class_f_abc_importer_1a6397d7db3f2b54d88c8b83cf6980e36b" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>ReimportAsStaticMesh</name></member>
+      <member refid="class_f_abc_importer_1a51aea0e9e9a757de71cf35e8a0bcd233" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>RetrieveAssetImportData</name></member>
+      <member refid="class_f_abc_importer_1a2c39abbf22221a574c1869ccb85f1eb7" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>SamplesOffsets</name></member>
+      <member refid="class_f_abc_importer_1a93a35213ab98e471d0082a117d0a7d8c" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>SetMetaData</name></member>
+      <member refid="class_f_abc_importer_1a3c7bbe4f1fba77caddbd321239b56768" prot="private" virt="non-virtual"><scope>FAbcImporter</scope><name>SetupMorphTargetCurves</name></member>
+      <member refid="class_f_abc_importer_1a441c0ed21ace5f56baa19a8892909212" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>UpdateAssetImportData</name></member>
+      <member refid="class_f_abc_importer_1ac01e01d04b757839ed557523336fe751" prot="public" virt="non-virtual"><scope>FAbcImporter</scope><name>~FAbcImporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

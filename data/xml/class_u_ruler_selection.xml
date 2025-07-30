@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_ruler_selection" kind="class" language="C++" prot="public">
+    <compoundname>URulerSelection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UUserWidget</basecompoundref>
+    <includes refid="_ruler_selection_8h" local="no">RulerSelection.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_ruler_selection_1a558384dc94bf6e880472f4a9f4d9f392" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt;FVector&gt; URulerSelection::PolygonPoints</definition>
+        <argsstring></argsstring>
+        <name>PolygonPoints</name>
+        <qualifiedname>URulerSelection::PolygonPoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="64" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_ruler_selection_1a0bab13e1a9dda95d39988adbf2e3f48b" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FLinearColor</ref></type>
+        <definition>FLinearColor URulerSelection::PolygonColor</definition>
+        <argsstring></argsstring>
+        <name>PolygonColor</name>
+        <qualifiedname>URulerSelection::PolygonColor</qualifiedname>
+        <initializer>= FColor::FromHex(&quot;FFFFFFB3&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="67" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_ruler_selection_1abfd3f8a265937fb30da59f5a3bc3d067" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_s_polygon_widget" kindref="compound">SPolygonWidget</ref> &gt;</type>
+        <definition>TSharedPtr&lt;SPolygonWidget&gt; URulerSelection::PolygonWidget</definition>
+        <argsstring></argsstring>
+        <name>PolygonWidget</name>
+        <qualifiedname>URulerSelection::PolygonWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="70" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_ruler_selection_1a4203b98c62e3dfd5aa718eeb6153202a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::CreatePolygonSelection</definition>
+        <argsstring>(FLinearColor Color)</argsstring>
+        <name>CreatePolygonSelection</name>
+        <qualifiedname>URulerSelection::CreatePolygonSelection</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FLinearColor</ref></type>
+          <declname>Color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает виджет визуального выделения многоугольника с указанным цветом заливки.</para>
+<para>Эта функция инициализирует и добавляет пользовательский Slate виджет <computeroutput><ref refid="class_s_polygon_widget" kindref="compound">SPolygonWidget</ref></computeroutput> в область просмотра игры. Виджету назначается цвет заливки, переданный через параметр. Если виджет создан успешно, он добавляется в область просмотра с Z-порядком -200.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цвет заливки для виджета многоугольника. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="30" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="20" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_ruler_selection_1ae0ce7e99cabcf02de7734d880df748de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::PolygonSelectionUpdatePoints</definition>
+        <argsstring>(TArray&lt; FVector &gt; Points) const</argsstring>
+        <name>PolygonSelectionUpdatePoints</name>
+        <qualifiedname>URulerSelection::PolygonSelectionUpdatePoints</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+          <declname>Points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет выделение многоугольника с новым набором точек.</para>
+<para>Этот метод обновляет визуальный виджет выделения многоугольника, заменяя текущие точки, определяющие многоугольник, на новый массив точек. Ожидается, что точки задают вершины многоугольника в порядке по часовой или против часовой стрелки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CurrentPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый массив 2D точек, определяющих многоугольник. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="43" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_ruler_selection_1a6a2cffe35ab85bc90a905a3df82d4130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::SetPolygonVisibility</definition>
+        <argsstring>(bool bIsVisible)</argsstring>
+        <name>SetPolygonVisibility</name>
+        <qualifiedname>URulerSelection::SetPolygonVisibility</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bIsVisible</declname>
+        </param>
+        <briefdescription>
+<para>Выставляет флаг видимости полигона выделения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bIsVisible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг видимости полигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="50" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="6" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_ruler_selection_1ad0a2a431688a03ebc08a747ec477f5d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; FVector &gt; &amp; URulerSelection::GetPolygonPoints</definition>
+        <argsstring>()</argsstring>
+        <name>GetPolygonPoints</name>
+        <qualifiedname>URulerSelection::GetPolygonPoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="53" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_ruler_selection_1a33b868e791ae340d9206477b14382b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::SetPolygonPoints</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;NewPoints)</argsstring>
+        <name>SetPolygonPoints</name>
+        <qualifiedname>URulerSelection::SetPolygonPoints</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>NewPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="56" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_ruler_selection_1a29a4e10376f846492652b5c943317105" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::NativeConstruct</definition>
+        <argsstring>() override</argsstring>
+        <name>NativeConstruct</name>
+        <qualifiedname>URulerSelection::NativeConstruct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="59" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_ruler_selection_1ab8783b0f01068eb05450c347ac398d99" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URulerSelection::NativeDestruct</definition>
+        <argsstring>() override</argsstring>
+        <name>NativeDestruct</name>
+        <qualifiedname>URulerSelection::NativeDestruct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="61" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Private/RulerSelection.cpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>URulerSelection</label>
+        <link refid="class_u_ruler_selection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>URulerSelection</label>
+        <link refid="class_u_ruler_selection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaMeasurement/Source/MetaMeasurement/Public/RulerSelection.h" bodystart="15" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_u_ruler_selection_1a4203b98c62e3dfd5aa718eeb6153202a" prot="public" virt="non-virtual"><scope>URulerSelection</scope><name>CreatePolygonSelection</name></member>
+      <member refid="class_u_ruler_selection_1ad0a2a431688a03ebc08a747ec477f5d4" prot="public" virt="non-virtual"><scope>URulerSelection</scope><name>GetPolygonPoints</name></member>
+      <member refid="class_u_ruler_selection_1a29a4e10376f846492652b5c943317105" prot="protected" virt="virtual"><scope>URulerSelection</scope><name>NativeConstruct</name></member>
+      <member refid="class_u_ruler_selection_1ab8783b0f01068eb05450c347ac398d99" prot="protected" virt="virtual"><scope>URulerSelection</scope><name>NativeDestruct</name></member>
+      <member refid="class_u_ruler_selection_1a0bab13e1a9dda95d39988adbf2e3f48b" prot="protected" virt="non-virtual"><scope>URulerSelection</scope><name>PolygonColor</name></member>
+      <member refid="class_u_ruler_selection_1a558384dc94bf6e880472f4a9f4d9f392" prot="protected" virt="non-virtual"><scope>URulerSelection</scope><name>PolygonPoints</name></member>
+      <member refid="class_u_ruler_selection_1ae0ce7e99cabcf02de7734d880df748de" prot="public" virt="non-virtual"><scope>URulerSelection</scope><name>PolygonSelectionUpdatePoints</name></member>
+      <member refid="class_u_ruler_selection_1abfd3f8a265937fb30da59f5a3bc3d067" prot="private" virt="non-virtual"><scope>URulerSelection</scope><name>PolygonWidget</name></member>
+      <member refid="class_u_ruler_selection_1a33b868e791ae340d9206477b14382b4a" prot="public" virt="non-virtual"><scope>URulerSelection</scope><name>SetPolygonPoints</name></member>
+      <member refid="class_u_ruler_selection_1a6a2cffe35ab85bc90a905a3df82d4130" prot="public" virt="non-virtual"><scope>URulerSelection</scope><name>SetPolygonVisibility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

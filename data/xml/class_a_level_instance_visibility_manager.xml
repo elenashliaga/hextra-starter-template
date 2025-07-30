@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_level_instance_visibility_manager" kind="class" language="C++" prot="public">
+    <compoundname>ALevelInstanceVisibilityManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_level_instance_visibility_manager_8h" local="no">LevelInstanceVisibilityManager.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_a_level_instance_visibility_manager_1ad33863cf3a4e587fa62f2c93209fef67" prot="private" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; AActor * &gt;::TConstIterator</type>
+        <definition>using ALevelInstanceVisibilityManager::FActorConstIterator =  TSet&lt;AActor*&gt;::TConstIterator</definition>
+        <argsstring></argsstring>
+        <name>FActorConstIterator</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::FActorConstIterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="143" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1acb6a400813d0a089f4fe86e72de61aa4" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection ALevelInstanceVisibilityManager::ActorVisibilityMutex</definition>
+        <argsstring></argsstring>
+        <name>ActorVisibilityMutex</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ActorVisibilityMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="101" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1aeef08fbd511030f9dfefdea2406e1e88" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; AActor * &gt;</type>
+        <definition>TSet&lt;AActor*&gt; ALevelInstanceVisibilityManager::CachedActors</definition>
+        <argsstring></argsstring>
+        <name>CachedActors</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::CachedActors</qualifiedname>
+        <briefdescription>
+<para>Кэшированные актеры из LevelInstance, для управлении видимостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот массив содержит все актеры, которые будут обрабатываться системой видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="126" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1afc71128f80aa8b6f9c3ca2da40412123" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; AActor *, bool &gt;</type>
+        <definition>TMap&lt;AActor*, bool&gt; ALevelInstanceVisibilityManager::ActorVisibilityStates</definition>
+        <argsstring></argsstring>
+        <name>ActorVisibilityStates</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ActorVisibilityStates</qualifiedname>
+        <briefdescription>
+<para>Состояние видимости для каждого актера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Хранит текущие состояния видимости для всех актеров, позволяя отслеживать изменения. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="134" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1ab1400057af79734179d6d7bb57b1c84e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ALevelInstanceVisibilityManager::bCachedActorsModified</definition>
+        <argsstring></argsstring>
+        <name>bCachedActorsModified</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::bCachedActorsModified</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+<para>Флаг, указывающий, что CachedActors изменился. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если установлен, итератор будет сброшен. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="141" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1aca20395f15ce6553df64f78ded5910ce" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="class_a_level_instance_visibility_manager_1ad33863cf3a4e587fa62f2c93209fef67" kindref="member">FActorConstIterator</ref> &gt;</type>
+        <definition>TUniquePtr&lt;FActorConstIterator&gt; ALevelInstanceVisibilityManager::CachedActorsIterator</definition>
+        <argsstring></argsstring>
+        <name>CachedActorsIterator</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::CachedActorsIterator</qualifiedname>
+        <briefdescription>
+<para>Итератор для обхода CachedActors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Используется TUniquePtr, чтобы избежать проблем с неполными типами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="150" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1ae327b12470116f04b8af7bc5ccc265af" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 ALevelInstanceVisibilityManager::ActorsPerBatch</definition>
+        <argsstring></argsstring>
+        <name>ActorsPerBatch</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ActorsPerBatch</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>Количество актеров для обработки за один вызов таймера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет, сколько актеров будет обрабатываться за один батч, чтобы распределить нагрузку. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="158" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a35b8c6a9e2d484c81c498c3d2c9aacb9" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::VisibilityTimerInterval</definition>
+        <argsstring></argsstring>
+        <name>VisibilityTimerInterval</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::VisibilityTimerInterval</qualifiedname>
+        <initializer>= 0.02<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+<para>Интервал таймера в секундах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет, как часто будет вызываться обработка видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="166" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a5763478918b1be2e5d8edfb66a182bc1" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::LevelInstanceCheckTimerInterval</definition>
+        <argsstring></argsstring>
+        <name>LevelInstanceCheckTimerInterval</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::LevelInstanceCheckTimerInterval</qualifiedname>
+        <initializer>= 60.00f</initializer>
+        <briefdescription>
+<para>Интервал таймера в секундах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет, как часто будет вызываться проверка на повление новых левел инстансов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="174" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a13d17c4154fcc252b6d3f83e05773110" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+        <definition>FName ALevelInstanceVisibilityManager::ExclusionTag</definition>
+        <argsstring></argsstring>
+        <name>ExclusionTag</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ExclusionTag</qualifiedname>
+        <initializer>= &quot;NotForHide&quot;</initializer>
+        <briefdescription>
+<para>Тег который исключает из обработки LevelInstance которые не должны быть скрыты по дистанции. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="180" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1aa0d3d3b15a1ff632fde6785a0ab2b6a5" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle ALevelInstanceVisibilityManager::VisibilityTimerHandle</definition>
+        <argsstring></argsstring>
+        <name>VisibilityTimerHandle</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::VisibilityTimerHandle</qualifiedname>
+        <briefdescription>
+<para>Хендл таймера для управления вызовом обработки видимости. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Таймер, который запускает процесс асинхронной обработки видимости актеров. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="187" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a132ac21413e4aa22d320a7dd8228a34c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle ALevelInstanceVisibilityManager::LevelInstanceCheckTimerHandle</definition>
+        <argsstring></argsstring>
+        <name>LevelInstanceCheckTimerHandle</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::LevelInstanceCheckTimerHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Таймер, который запускает процесс проверки появления новых левел инстансов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="192" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1af03456c413a2f70bd4e28140707a75b6" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; AActor *, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &gt;</type>
+        <definition>TMap&lt;AActor*, float&gt; ALevelInstanceVisibilityManager::ActorSizeCache</definition>
+        <argsstring></argsstring>
+        <name>ActorSizeCache</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ActorSizeCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Храним размер актера. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="198" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a48656da05734bac4e6ffed4cdbbbe927" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::SmallSizeThreshold</definition>
+        <argsstring></argsstring>
+        <name>SmallSizeThreshold</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::SmallSizeThreshold</qualifiedname>
+        <initializer>= 500.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Пороговый размер для маленьких объектов (максимальный размер bounding box). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="202" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a31c9c9ed80d6d207a8c11352d116c3b1" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::MediumSizeThreshold</definition>
+        <argsstring></argsstring>
+        <name>MediumSizeThreshold</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::MediumSizeThreshold</qualifiedname>
+        <initializer>= 1800.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Пороговый размер для средних объектов (максимальный размер bounding box). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="206" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a26e5da2298386c05d81fe624931ac63d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::BigSizeThreshold</definition>
+        <argsstring></argsstring>
+        <name>BigSizeThreshold</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::BigSizeThreshold</qualifiedname>
+        <initializer>= 5000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Пороговый размер для больших объектов (максимальный размер bounding box). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="210" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1accad33bb2f394aa50f17eaf89fdc0f29" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::SmallObjectDistanceMultiplier</definition>
+        <argsstring></argsstring>
+        <name>SmallObjectDistanceMultiplier</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::SmallObjectDistanceMultiplier</qualifiedname>
+        <initializer>= 0.05<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Множитель расстояния видимости для маленьких объектов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="214" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a1d07a5deaec1b2be316de56ad9b842ad" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::MediumObjectDistanceMultiplier</definition>
+        <argsstring></argsstring>
+        <name>MediumObjectDistanceMultiplier</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::MediumObjectDistanceMultiplier</qualifiedname>
+        <initializer>= 0.35<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Множитель расстояния видимости для средних объектов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="218" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_level_instance_visibility_manager_1a82f4467498d89cfbe5f26fbe5c949d34" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float ALevelInstanceVisibilityManager::BigObjectDistanceMultiplier</definition>
+        <argsstring></argsstring>
+        <name>BigObjectDistanceMultiplier</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::BigObjectDistanceMultiplier</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Множитель расстояния видимости для больших объектов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="222" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a87eb903d2f052b3e5c06d854587b1df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ALevelInstanceVisibilityManager::ALevelInstanceVisibilityManager</definition>
+        <argsstring>()</argsstring>
+        <name>ALevelInstanceVisibilityManager</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ALevelInstanceVisibilityManager</qualifiedname>
+        <briefdescription>
+<para>Конструктор, устанавливающий значения по умолчанию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает начальные параметры. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="28" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a7f484bec1cbeedb1c6bec64ca2c6ba79" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::BeginPlay</qualifiedname>
+        <briefdescription>
+<para>Вызывается при запуске игры или при спавне. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод инициализирует кэш актеров и запускает таймер для обработки видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="36" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="18" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1af820896545801e6b0f4445811e712ab1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::EndPlay</definition>
+        <argsstring>(const EEndPlayReason::Type EndPlayReason) override</argsstring>
+        <name>EndPlay</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::EndPlay</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> EEndPlayReason::Type</type>
+          <declname>EndPlayReason</declname>
+        </param>
+        <briefdescription>
+<para>Вызывается при завершении игры или уничтожении объекта. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод очищает активные таймеры, связанные с обработкой видимости, чтобы предотвратить возможные краши и некорректное поведение при смене мира.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>EndPlayReason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Причина завершения работы объекта. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="45" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1ae0dbe9306f18596e82c0d1b54b464352" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::CacheActors</definition>
+        <argsstring>()</argsstring>
+        <name>CacheActors</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::CacheActors</qualifiedname>
+        <briefdescription>
+<para>Кэширует актеров для управления видимостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод собирает всех актеров из LevelInstance, исключая помеченные тегом ExclusionTag, и сохраняет их в кэш для дальнейшей обработки видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a7f0cc8d5a28eda82a5c8dc9932a6e49d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::CheckForNewLevelInstances</definition>
+        <argsstring>()</argsstring>
+        <name>CheckForNewLevelInstances</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::CheckForNewLevelInstances</qualifiedname>
+        <briefdescription>
+<para>Проверяет наличие новых LevelInstance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод выполняет поиск всех LevelInstance в мире и, если обнаруживает новые, которых еще нет в кэше, добавляет их внутренние актеры в CachedActors и обновляет их состояния видимости. Метод вызывается каждые CheckLevelInstancesTimerInterval секунд для динамического обновления списка объектов, участвующих в обработке видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="62" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="124" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a206c101114b9c43aeb384f7c5220c4d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::ProcessLevelInstance</definition>
+        <argsstring>(const ALevelInstance *const LevelInstance)</argsstring>
+        <name>ProcessLevelInstance</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ProcessLevelInstance</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ALevelInstance</ref> *<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref></type>
+          <declname>LevelInstance</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает переданный LevelInstance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если LevelInstance валиден и не имеет тега исключения, метод перебирает актеров из его уровня, добавляя их в кэш и обновляя состояния видимости.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LevelInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на обрабатываемый LevelInstance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="72" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="58" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1afb0aa65e50fa29653b27600629d2e36a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::ProcessLevelInstanceActors</definition>
+        <argsstring>(const TArray&lt; AActor * &gt; &amp;LevelInstanceActors)</argsstring>
+        <name>ProcessLevelInstanceActors</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ProcessLevelInstanceActors</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; AActor * &gt; &amp;</type>
+          <declname>LevelInstanceActors</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает массив акторов, представляющих LevelInstance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция перебирает переданный массив акторов и пытается привести каждый элемент к типу ALevelInstance. Если актор является валидным LevelInstance, вызывается ProcessLevelInstance для его обработки. Для обеспечения потокобезопасности используется блокировка с помощью ActorVisibilityMutex.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LevelInstanceActors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив акторов, потенциально содержащих объекты LevelInstance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="83" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a9d65956312522747ae00b72a2af8efae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::UpdateCachedActors</definition>
+        <argsstring>(const TSet&lt; ULevel * &gt; &amp;ValidLevels)</argsstring>
+        <name>UpdateCachedActors</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::UpdateCachedActors</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ULevel</ref> * &gt; &amp;</type>
+          <declname>ValidLevels</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет кэш акторов, удаляя объекты, чей уровень недействителен или отсутствует в заданном наборе ValidLevels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция проходит по CachedActors и удаляет:<itemizedlist>
+<listitem><para>акторы, которые больше не действительны,</para>
+</listitem><listitem><para>акторы без ассоциированного уровня,</para>
+</listitem><listitem><para>акторы, чей уровень не содержится в ValidLevels.</para>
+</listitem></itemizedlist>
+</para>
+<para>При этом соответствующие записи удаляются из ActorVisibilityStates. Для обеспечения потокобезопасности используется блокировка ActorVisibilityMutex.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ValidLevels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор валидных уровней для проверки акторов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="98" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="96" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1ab669b2379e94b750c7847d13344d6e33" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ALevelInstanceVisibilityManager::ProcessActorVisibility</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessActorVisibility</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::ProcessActorVisibility</qualifiedname>
+        <briefdescription>
+<para>Обработка видимости актеров. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод выполняет обновление состояния видимости актеров на основе их дистанции до камеры и текущих настроек видимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="109" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="170" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_level_instance_visibility_manager_1a923eeb700604b2008e946ffe0d415070" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ALevelInstanceVisibilityManager::GetCameraLocation</definition>
+        <argsstring>(FVector &amp;OutCameraLocation) const</argsstring>
+        <name>GetCameraLocation</name>
+        <qualifiedname>ALevelInstanceVisibilityManager::GetCameraLocation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>OutCameraLocation</declname>
+        </param>
+        <briefdescription>
+<para>Получает текущую позицию камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает позицию камеры, используемую для расчета дистанции до актеров. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OutCameraLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка для сохранения позиции камеры. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput>, если позиция камеры успешно получена, иначе <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="118" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MapUtilities/LevelInstanceVisibilityManager.cpp" bodystart="253" bodyend="263"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс для управления видимостью актеров внутри LevelInstance. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Этот класс управляет видимостью актеров, связанных с LevelInstance, на основе их дистанции от камеры. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ALevelInstanceVisibilityManager</label>
+        <link refid="class_a_level_instance_visibility_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ALevelInstanceVisibilityManager</label>
+        <link refid="class_a_level_instance_visibility_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MapUtilities/LevelInstanceVisibilityManager.h" bodystart="19" bodyend="223"/>
+    <listofallmembers>
+      <member refid="class_a_level_instance_visibility_manager_1af03456c413a2f70bd4e28140707a75b6" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ActorSizeCache</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1ae327b12470116f04b8af7bc5ccc265af" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ActorsPerBatch</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1acb6a400813d0a089f4fe86e72de61aa4" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ActorVisibilityMutex</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1afc71128f80aa8b6f9c3ca2da40412123" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ActorVisibilityStates</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a87eb903d2f052b3e5c06d854587b1df8" prot="public" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ALevelInstanceVisibilityManager</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1ab1400057af79734179d6d7bb57b1c84e" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>bCachedActorsModified</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a7f484bec1cbeedb1c6bec64ca2c6ba79" prot="protected" virt="virtual"><scope>ALevelInstanceVisibilityManager</scope><name>BeginPlay</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a82f4467498d89cfbe5f26fbe5c949d34" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>BigObjectDistanceMultiplier</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a26e5da2298386c05d81fe624931ac63d" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>BigSizeThreshold</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1ae0dbe9306f18596e82c0d1b54b464352" prot="protected" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>CacheActors</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1aeef08fbd511030f9dfefdea2406e1e88" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>CachedActors</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1aca20395f15ce6553df64f78ded5910ce" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>CachedActorsIterator</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a7f0cc8d5a28eda82a5c8dc9932a6e49d" prot="protected" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>CheckForNewLevelInstances</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1af820896545801e6b0f4445811e712ab1" prot="protected" virt="virtual"><scope>ALevelInstanceVisibilityManager</scope><name>EndPlay</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a13d17c4154fcc252b6d3f83e05773110" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ExclusionTag</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1ad33863cf3a4e587fa62f2c93209fef67" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>FActorConstIterator</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a923eeb700604b2008e946ffe0d415070" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>GetCameraLocation</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a132ac21413e4aa22d320a7dd8228a34c" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>LevelInstanceCheckTimerHandle</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a5763478918b1be2e5d8edfb66a182bc1" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>LevelInstanceCheckTimerInterval</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a1d07a5deaec1b2be316de56ad9b842ad" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>MediumObjectDistanceMultiplier</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a31c9c9ed80d6d207a8c11352d116c3b1" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>MediumSizeThreshold</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1ab669b2379e94b750c7847d13344d6e33" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ProcessActorVisibility</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a206c101114b9c43aeb384f7c5220c4d7" prot="protected" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ProcessLevelInstance</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1afb0aa65e50fa29653b27600629d2e36a" prot="protected" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>ProcessLevelInstanceActors</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1accad33bb2f394aa50f17eaf89fdc0f29" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>SmallObjectDistanceMultiplier</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a48656da05734bac4e6ffed4cdbbbe927" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>SmallSizeThreshold</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a9d65956312522747ae00b72a2af8efae" prot="protected" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>UpdateCachedActors</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1aa0d3d3b15a1ff632fde6785a0ab2b6a5" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>VisibilityTimerHandle</name></member>
+      <member refid="class_a_level_instance_visibility_manager_1a35b8c6a9e2d484c81c498c3d2c9aacb9" prot="private" virt="non-virtual"><scope>ALevelInstanceVisibilityManager</scope><name>VisibilityTimerInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Запуск проекта Unreal Engine</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__r_e_a_d_m_e"/> </para>
+<sect1 id="index_1autotoc_md1">
+<title>&lt;strong&gt;META Core&lt;/strong&gt;</title>
+<sect2 id="index_1autotoc_md2">
+<title>&lt;strong&gt;1. Загрузка проекта с использованием Git LFS&lt;/strong&gt;</title>
+<para>Проект использует Git Large File <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Storage(LFS)</ref>для управления объемными файлами. Убедитесь, что у вас установлен Git LFS перед клонированием проекта.</para>
+<para><ulink url="https://git-lfs.github.com/">Установка Git LFS</ulink></para>
+</sect2>
+<sect2 id="index_1autotoc_md3">
+<title>&lt;strong&gt;Скачивание репозитория:&lt;/strong&gt;</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Инициализируем<sp/>LFS</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Инициализируем<sp/>настройки<sp/>для<sp/>скачивания<sp/></highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>lfs.allowincompletepush<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>http.sslverify<sp/>false</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>config<sp/>--system<sp/>core.longpaths<sp/>true</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Скачиваем<sp/>проект</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://gitlab.hyperion.mos.ru/meta-msk/streamer2.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Переходим<sp/>в<sp/>скачанную<sp/>дирректорию</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>streamer2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Обновляем<sp/>LFS<sp/>файлы<sp/>проекта</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>fetch<sp/>--all</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>pull</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md4">
+<title>&lt;strong&gt;Настройка Git LFS для отслеживания файлов:&lt;/strong&gt;</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>lfs<sp/>track<sp/>&quot;&lt;путь<sp/>к<sp/>файлу<sp/>или<sp/>расширение&gt;&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md5">
+<title>&lt;strong&gt;Создание новой ветки в Git&lt;/strong&gt;</title>
+<para><orderedlist>
+<listitem><para><bold>Убедитесь, что вы находитесь в актуальной ветке (например,<computeroutput>develop</computeroutput>):</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>checkout<sp/>develop</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Получите последние изменения из удаленного репозитория (это может быть опущено, если вы уверены, что актуальны):</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>pull<sp/>origin</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>lfs<sp/>pull<sp/>origin</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Создайте новую ветку:</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>branch<sp/>название_новой_ветки</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Переключитесь на новую ветку:</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>checkout<sp/>название_новой_ветки</highlight></codeline>
+</programlisting></para>
+<para>Или можно выполнить эти два шага в одной команде:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>checkout<sp/>-b<sp/>название_новой_ветки</highlight></codeline>
+</programlisting></para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md6">
+<title>&lt;strong&gt;Отправка изменений с использованием LFS:&lt;/strong&gt;</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>add<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>commit<sp/>-m<sp/>&quot;Комментарий&quot;</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>push<sp/>origin</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md7">
+<title>&lt;strong&gt;Инициализация и обновления сабмодулей&lt;/strong&gt;</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>submodule<sp/>init</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>submodule<sp/>update<sp/>--recursive<sp/>--remote</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md8">
+<title>&lt;strong&gt;3. Доп информация:&lt;/strong&gt;</title>
+</sect2>
+<sect2 id="index_1autotoc_md9">
+<title>&lt;strong&gt;Минимальные системные требования:&lt;/strong&gt;</title>
+<para>Для работы с проектом нужны такие минимальные системные требования:</para>
+<para><orderedlist>
+<listitem><para>Windows 10 и выше, Linux Ubuntu 18 64-bit</para>
+</listitem><listitem><para>Nvidia GTX 2080</para>
+</listitem><listitem><para>AMD Ryzen 5 3600</para>
+</listitem><listitem><para>RAM - от 32 gb</para>
+</listitem><listitem><para>SSD - от 150 gb</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md10">
+<title>&lt;strong&gt;4. Подготовка проекта для Widows/Linux&lt;/strong&gt;</title>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md11">
+<title>&lt;strong&gt;Для Windows:&lt;/strong&gt;</title>
+<sect2 id="index_1autotoc_md12">
+<title>&lt;strong&gt;Софт:&lt;/strong&gt;</title>
+<para>Для работы в проекте необходимо установить определённый набор пакетов разработчика:</para>
+<para><orderedlist>
+<listitem><para><computeroutput>Unreal Engine 5.2.1</computeroutput></para>
+</listitem><listitem><para><ulink url="https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=Community&amp;channel=Release&amp;version=VS2022&amp;source=VSLandingPage&amp;cid=2030&amp;passive=false">Visual Studio 2022</ulink> с установленными пакетами разработки для**С++**, **.NetCore** и тд.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="addons%2FImage%2FVisualStudioAddons.png" alt="VisualStudioAddons.png" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para>Допускается установка аналога Visual Studio, например<computeroutput>Rider</computeroutput>от JetBrains.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md13">
+<title>&lt;strong&gt;Генерация временных файлов проекта:&lt;/strong&gt;</title>
+<para><orderedlist>
+<listitem><para>Зайти в папку с проектом.</para>
+</listitem><listitem><para>Кликнуть ПКМ по<computeroutput>MetaMoscow.uproject</computeroutput>.</para>
+</listitem><listitem><para>Выбрать<computeroutput>Generate Visual Studio project files</computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+<para>Откройте созданный файл проекта в<ulink url="https://visualstudio.microsoft.com/">Visual Studio</ulink>.</para>
+</sect2>
+<sect2 id="index_1autotoc_md14">
+<title>Полезные ссылки:</title>
+<para><ulink url="https://docs.unrealengine.com/5.3/en-US/installing-unreal-engine/">**Документация по установки Unreal Engine на Windows/Linux **</ulink></para>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md15">
+<title>&lt;strong&gt;Для Linux:&lt;/strong&gt;</title>
+<sect2 id="index_1autotoc_md16">
+<title>Софт:</title>
+<para><orderedlist>
+<listitem><para><ulink url="https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu">Необходима установка .Net</ulink></para>
+</listitem><listitem><para><ulink url="https://www.mono-project.com/download/stable/#download-lin">Необходима установка mono</ulink></para>
+</listitem></orderedlist>
+</para>
+<para>mono <bold>Ubuntu 20.04</bold>:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>ca-certificates<sp/>gnupg</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>gpg<sp/>--homedir<sp/>/tmp<sp/>--no-default-keyring<sp/>--keyring<sp/>/usr/share/keyrings/mono-official-archive-keyring.gpg<sp/>--keyserver<sp/>hkp://keyserver.ubuntu.com:80<sp/>--recv-keys<sp/>3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;deb<sp/>[signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg]<sp/>https://download.mono-project.com/repo/ubuntu<sp/>stable-focal<sp/>main&quot;<sp/>|<sp/>sudo<sp/>tee<sp/>/etc/apt/sources.list.d/mono-official-stable.list</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+</programlisting></para>
+<para>mono <bold>Ubuntu 18.04</bold>:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>ca-certificates<sp/>gnupg</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>gpg<sp/>--homedir<sp/>/tmp<sp/>--no-default-keyring<sp/>--keyring<sp/>/usr/share/keyrings/mono-official-archive-keyring.gpg<sp/>--keyserver<sp/>hkp://keyserver.ubuntu.com:80<sp/>--recv-keys<sp/>3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;deb<sp/>[signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg]<sp/>https://download.mono-project.com/repo/ubuntu<sp/>stable-bionic<sp/>main&quot;<sp/>|<sp/>sudo<sp/>tee<sp/>/etc/apt/sources.list.d/mono-official-stable.list</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>update</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md17">
+<title>&lt;strong&gt;Генерируем временные файлы проекта:&lt;/strong&gt;</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>&lt;путь<sp/>до<sp/>папки<sp/>с<sp/>движком&gt;/UE_5.2/Engine/Build/BatchFiles/Linux/GenerateProjectFiles.sh</highlight></codeline>
+<codeline><highlight class="normal">./GenerateProjectFiles.sh<sp/>-project=&quot;путь<sp/>до/MetaMoscow.uproject&quot;<sp/>-Game</highlight></codeline>
+</programlisting></para>
+<para>Это создаст исполняемый файл для вашей платформы.</para>
+</sect2>
+<sect2 id="index_1autotoc_md18">
+<title>Полезные ссылки:</title>
+<para><ulink url="https://docs.unrealengine.com/5.3/en-US/installing-unreal-engine/">**Документация по установки Unreal Engine на Windows/Linux **</ulink></para>
+<para><ulink url="https://docs.unrealengine.com/5.2/en-US/linux-development-quickstart-for-unreal-engine/">**Документация по запуску проекта для Linux **</ulink></para>
+</sect2>
+<sect2 id="index_1autotoc_md19">
+<title>&lt;strong&gt;5. Запуск Unreal Engine проекта&lt;/strong&gt;</title>
+</sect2>
+<sect2 id="index_1autotoc_md20">
+<title>Windows:</title>
+</sect2>
+<sect2 id="index_1autotoc_md21">
+<title>&lt;strong&gt;Запуск приложения Unreal Engine через Visual Studio&lt;/strong&gt;</title>
+<para><orderedlist>
+<listitem><para><bold>Откройте Visual Studio:</bold><itemizedlist>
+<listitem><para>Запустите<computeroutput>Visual Studio</computeroutput>(Visual Studio 2019 и новее).</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Откройте файл проекта:</bold><itemizedlist>
+<listitem><para>В Visual Studio выберите<computeroutput>File -&gt; Open -&gt; Project/Solution</computeroutput>.</para>
+</listitem><listitem><para>Перейдите в директорию вашего проекта и откройте файл проекта, который был сгенерирован Unreal Engine<computeroutput>MetaMoscow.sln</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Настройте конфигурацию и цель:</bold><itemizedlist>
+<listitem><para>Выберите конфигурацию сборки<computeroutput>Development</computeroutput>и цель<computeroutput>Editor</computeroutput>для запуска в режиме редактора.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Соберите проект:</bold><itemizedlist>
+<listitem><para>Выполните сборку проекта, выбрав<computeroutput>Build -&gt; Build Solution</computeroutput>из меню.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Запустите проект:</bold><itemizedlist>
+<listitem><para>Выберите<computeroutput>Debug -&gt; Start Debugging</computeroutput>или<computeroutput>Debug</computeroutput>-&gt;<computeroutput>Start Without Debugging</computeroutput>из меню, чтобы запустить проект в режиме отладки или без отладки соответственно.</para>
+</listitem><listitem><para>Либо нажать кнопку <computeroutput>Local Windows Debugger</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="addons%2FImage%2Fvisualstudiopanel.png" alt="visualstudiopanel.png" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para><bold>Отладка (при необходимости):</bold><itemizedlist>
+<listitem><para>Если вы запустили проект в режиме отладки, вы можете использовать функции отладки<computeroutput>Visual Studio</computeroutput>, такие как установка точек останова, шаг за шагом выполнение кода и т.д.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Остановка процесса:</bold><itemizedlist>
+<listitem><para>После завершения тестирования или отладки, остановите процесс, выбрав<computeroutput>Debug</computeroutput>-&gt;<computeroutput>Stop Debugging</computeroutput>из меню.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md22">
+<title>Linux:</title>
+<para>Для платформы Linux рекомендуется использование IDE Rider от JetBrains(Так же хорошо подходит для Windows использования)</para>
+<para><orderedlist>
+<listitem><para><bold>Откройте проект в Rider:</bold><itemizedlist>
+<listitem><para>Запустите Rider и откройте ваш проект Unreal Engine выбрав сгенерированный ранее <computeroutput>.sln</computeroutput> файл.</para>
+</listitem><listitem><para>Убедитесь, что Rider поддерживает Unreal Engine и установлены все необходимые плагины, такие как Rider Link( устанавливать в движок, а не в проект)</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Настройте конфигурацию проекта:</bold><itemizedlist>
+<listitem><para>Убедитесь, что конфигурация проекта настроена для целей Linux. <computeroutput>**Linux - Development - Editor**</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Соберите проект:</bold><itemizedlist>
+<listitem><para>В Rider запустите сборку проекта для цели Linux. Нажав на зелёный молоток около панели выбора конфигурации сборки</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="addons%2FImage%2Friderpanel.png" alt="riderpanel.png" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para><bold>Запустите проект:</bold><itemizedlist>
+<listitem><para>Запустите проект из Rider, выбрав созданную конфигурацию запуска. Убедитесь, что проект успешно запускается на платформе Linux. Нажав кнопку <computeroutput>Run</computeroutput> или <computeroutput>Debug</computeroutput> в правой части верхней панели.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<sect2 id="index_1autotoc_md23">
+<title>&lt;strong&gt;6. Тестирование и развертывание&lt;/strong&gt;</title>
+<para>Теперь проект готов к работе. Проверьте функциональность и убедитесь, что все работает корректно. При необходимости внесите изменения в код. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

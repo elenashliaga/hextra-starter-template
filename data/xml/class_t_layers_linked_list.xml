@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_t_layers_linked_list" kind="class" language="C++" prot="public">
+    <compoundname>TLayersLinkedList</compoundname>
+    <includes refid="_t_layers_linked_list_8h" local="no">TLayersLinkedList.h</includes>
+    <innerclass refid="struct_t_layers_linked_list_1_1_f_linked_node" prot="private">TLayersLinkedList::FLinkedNode</innerclass>
+    <innerclass refid="class_t_layers_linked_list_1_1_list_iterator" prot="public">TLayersLinkedList::ListIterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> Type</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_t_layers_linked_list_1afc6aa67d6f11976cf60f236e5e970145" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_t_layers_linked_list_1_1_f_linked_node" kindref="compound">FLinkedNode</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FLinkedNode&gt; TLayersLinkedList&lt; Type &gt;::HeadLink</definition>
+        <argsstring></argsstring>
+        <name>HeadLink</name>
+        <qualifiedname>TLayersLinkedList::HeadLink</qualifiedname>
+        <briefdescription>
+<para>Указатель на головной узел связного списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет начальную точку связного списка. Она типа &apos;FLinkedNode*&apos;, что является указателем на структуру &apos;<ref refid="struct_t_layers_linked_list_1_1_f_linked_node" kindref="compound">FLinkedNode</ref>&apos;. Головной узел содержит первый элемент связного списка.</para>
+<para>Пример использования:</para>
+<para>FLinkedNode* head = nullptr;</para>
+<para>// Добавляем узлы в связный список...</para>
+<para>head = new FLinkedNode(10);</para>
+<para><simplesect kind="see"><para><ref refid="struct_t_layers_linked_list_1_1_f_linked_node" kindref="compound">FLinkedNode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="160" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_layers_linked_list_1aeb8278e63f98427a387cb4e563d0b22f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_t_layers_linked_list_1_1_f_linked_node" kindref="compound">FLinkedNode</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FLinkedNode&gt; TLayersLinkedList&lt; Type &gt;::TailLink</definition>
+        <argsstring></argsstring>
+        <name>TailLink</name>
+        <qualifiedname>TLayersLinkedList::TailLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="168" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_layers_linked_list_1ab3bf442cfbc0974be80ecfa576c909fc" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+        <definition>SIZE_T TLayersLinkedList&lt; Type &gt;::MaxSize</definition>
+        <argsstring></argsstring>
+        <name>MaxSize</name>
+        <qualifiedname>TLayersLinkedList::MaxSize</qualifiedname>
+        <briefdescription>
+<para>Переменная MaxSizePool представляет максимальный размер пула. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Переменная MaxSize имеет тип SIZE_T и хранит максимальный размер пула. Она используется для определения максимального количества элементов, которые могут быть сохранены в пуле. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="175" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_layers_linked_list_1a1206a9fe620da06eaca30c5036beb87f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+        <definition>SIZE_T TLayersLinkedList&lt; Type &gt;::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <qualifiedname>TLayersLinkedList::Count</qualifiedname>
+        <briefdescription>
+<para>Переменная Count представляет собой значение счетчика. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Она используется в классе <ref refid="class_t_layers_linked_list" kindref="compound">TLayersLinkedList</ref> для отслеживания количества элементов, присутствующих в круговом пуле. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="182" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_layers_linked_list_1aeb17b93dc69323a7ca0a0e07ceb2c7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TLayersLinkedList&lt; Type &gt;::TLayersLinkedList</definition>
+        <argsstring>(SIZE_T InMaxSizePool)</argsstring>
+        <name>TLayersLinkedList</name>
+        <qualifiedname>TLayersLinkedList::TLayersLinkedList</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+          <declname>InMaxSizePool</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор TLayersCircularPool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот конструктор инициализирует объект <ref refid="class_t_layers_linked_list" kindref="compound">TLayersLinkedList</ref> с заданным максимальным размером пула.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InMaxSizePool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальный размер пула. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="28" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a8d88a50394cf0cc2f2d4bdc741720630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TLayersLinkedList&lt; Type &gt;::~TLayersLinkedList</definition>
+        <argsstring>()</argsstring>
+        <name>~TLayersLinkedList</name>
+        <qualifiedname>TLayersLinkedList::~TLayersLinkedList</qualifiedname>
+        <briefdescription>
+<para>Деструктор для класса TLayersCircularPool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Деструктор очищает <ref refid="class_t_layers_linked_list" kindref="compound">TLayersLinkedList</ref>, вызывая метод <ref refid="class_t_layers_linked_list_1a4884be1055902b7b50840af17144c43d" kindref="member">Empty()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="39" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a1e278c4b5a2634fbac1c4fb19bb80d3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_t_layers_linked_list_1_1_list_iterator" kindref="compound">ListIterator</ref></type>
+        <definition>ListIterator TLayersLinkedList&lt; Type &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>TLayersLinkedList::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="139" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a150cc8d69d370f434ee81495c26f73f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_t_layers_linked_list_1_1_list_iterator" kindref="compound">ListIterator</ref></type>
+        <definition>ListIterator TLayersLinkedList&lt; Type &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>TLayersLinkedList::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="140" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1aef4bf551ce7bc75672da22a1461f3790" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TLayersLinkedList&lt; Type &gt;::IsFull</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsFull</name>
+        <qualifiedname>TLayersLinkedList::IsFull</qualifiedname>
+        <briefdescription>
+<para>Проверьте, заполнен ли пул. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод проверяет, заполнен ли пул, сравнивая текущее количество элементов в пуле с максимальным размером пула.</para>
+<para><simplesect kind="return"><para>Верно, если пул заполнен, иначе ложь. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="195" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a19341145a44ba928b93ea70dcca16f53" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+        <definition>SIZE_T TLayersLinkedList&lt; Type &gt;::GetCount</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetCount</name>
+        <qualifiedname>TLayersLinkedList::GetCount</qualifiedname>
+        <briefdescription>
+<para>Получить количество элементов в списке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает количество элементов, в данный момент находящихся в списке.</para>
+<para><simplesect kind="return"><para>Количество элементов в списке. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="208" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a479960f5b78a0bf0b5218e945b6ba229" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TLayersLinkedList&lt; Type &gt;::IsEmpty</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>TLayersLinkedList::IsEmpty</qualifiedname>
+        <briefdescription>
+<para>Проверяет, пуст ли контейнер. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод проверяет, пуст ли контейнер, сравнивая значение Count с нулем.</para>
+<para><simplesect kind="return"><para>Верно, если контейнер пуст, иначе ложь.</para>
+</simplesect>
+<simplesect kind="note"><para>Метод отмечен как const, что указывает на то, что он не изменяет состояние объекта. Метод также помечен как noexcept, что означает, что он не выбрасывает исключений. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="224" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a85fb5e35a18602f93e10d4310df2813d" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+        <definition>SIZE_T TLayersLinkedList&lt; Type &gt;::GetMaxSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetMaxSize</name>
+        <qualifiedname>TLayersLinkedList::GetMaxSize</qualifiedname>
+        <briefdescription>
+<para>Получить максимальный размер пула. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Возвращает максимальный размер пула как 16-битное целое без знака. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="235" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1acc003b11df21a66b400a92d078459885" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::SetListMaxSize</definition>
+        <argsstring>(SIZE_T InMaxSizePool) noexcept</argsstring>
+        <name>SetListMaxSize</name>
+        <qualifiedname>TLayersLinkedList::SetListMaxSize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+          <declname>InMaxSizePool</declname>
+        </param>
+        <briefdescription>
+<para>Задает максимальный размер пула. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InMaxSizePool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый максимальный размер пула. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Этот метод не изменяет размер пула. Он только обновляет максимальный размер. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="245" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a0920163d01515e7aebcdee03e084c2ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+        <definition>const Type &amp; TLayersLinkedList&lt; Type &gt;::GetHead</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHead</name>
+        <qualifiedname>TLayersLinkedList::GetHead</qualifiedname>
+        <briefdescription>
+<para>Возвращает значение первого элемента в списке без его удаления. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если список пуст, этот метод вернет объект типа Type.</para>
+<para><simplesect kind="return"><para>Значение первого элемента в списке. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="258" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a3cffec02669fee10dbff3bec7ed0b806" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+        <definition>const Type &amp; TLayersLinkedList&lt; Type &gt;::GetTail</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTail</name>
+        <qualifiedname>TLayersLinkedList::GetTail</qualifiedname>
+        <briefdescription>
+<para>Возвращает объект хвоста связного списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает постоянную ссылку на объект, хранящийся в хвосте связного списка. Хвост доступен через указатель <ref refid="class_tail_link" kindref="compound">TailLink</ref>, являющейся переменной-членом связного списка. Возвращенная ссылка позволяет только чтение объекта хвоста.</para>
+<para><simplesect kind="return"><para>Постоянная ссылка на объект хвоста связного списка. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="273" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="273" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a84d76daaa84412645db884c18d8e5cb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type TLayersLinkedList&lt; Type &gt;::GetAtIndex</definition>
+        <argsstring>(SIZE_T Index)</argsstring>
+        <name>GetAtIndex</name>
+        <qualifiedname>TLayersLinkedList::GetAtIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>Получение объекта по индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает объект, находящийся на указанной позиции в пуле. Если указанный индекс находится вне диапазона существующих объектов, возвращается значение по умолчанию для типа Type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс объекта для извлечения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект типа Type на указанной позиции. В случае ошибки - значение по умолчанию для типа Type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="288" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="288" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1aed71e0544c2289b1089c4df58ec7fde5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TLayersLinkedList&lt; Type &gt;::Contains</definition>
+        <argsstring>(const Type &amp;InObject) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>TLayersLinkedList::Contains</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+          <declname>InObject</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, присутствует ли указанный объект в связном списке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод проходит по связному списку, начиная с головного узла, и сравнивает объект каждого узла с указанным объектом. Если совпадение найдено, он возвращает истину; в противном случае, он переходит к следующему узлу. Если достигнут конец связного списка без нахождения совпадения, он возвращает ложь.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект для поиска в связном списке. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Истина, если указанный объект найден в связном списке, иначе ложь. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="311" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="311" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a9178f094f2368e6f668dc4b700d6a881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::InsertHead</definition>
+        <argsstring>(const Type &amp;InObject)</argsstring>
+        <name>InsertHead</name>
+        <qualifiedname>TLayersLinkedList::InsertHead</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+          <declname>InObject</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет объект в пул. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект, который необходимо добавить.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Этот метод добавляет объект в пул, если он не полон. Если пул уже заполнен, метод возвращает управление, не внося никаких изменений. Объект добавляется в виде нового узла в связанный список пула. Если связанный список пуст, новый узел становится головой и хвостом списка. Если связанный список не пуст, новый узел добавляется в конец списка. Количество элементов в пуле увеличивается на 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="334" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="334" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1ad72c61979454163c89876dbdaa619395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::InsertTail</definition>
+        <argsstring>(const Type &amp;InObject)</argsstring>
+        <name>InsertTail</name>
+        <qualifiedname>TLayersLinkedList::InsertTail</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+          <declname>InObject</declname>
+        </param>
+        <briefdescription>
+<para>Вставляет новый узел с заданным объектом в конец связного списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вставляет новый узел, содержащий заданный объект, в конец связного списка. Если список полон, метод немедленно возвращает управление, не изменяя список.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект, который будет вставлен в конец списка. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_t_layers_linked_list_1aef4bf551ce7bc75672da22a1461f3790" kindref="member">IsFull()</ref></para>
+</simplesect>
+<simplesect kind="note"><para>Если список полон, метод возвращает управление без изменения списка. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="369" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="369" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a6ddd36ca758ef213e356327cba13e12b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::InsertAtIndex</definition>
+        <argsstring>(SIZE_T Index, const Type &amp;InObject)</argsstring>
+        <name>InsertAtIndex</name>
+        <qualifiedname>TLayersLinkedList::InsertAtIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+          <declname>Index</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> Type &amp;</type>
+          <declname>InObject</declname>
+        </param>
+        <briefdescription>
+<para>Вставляет объект по указанному индексу в связный список. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вставляет указанный объект по заданному индексу в связный список. Если индекс больше текущего количества элементов в списке, ничего не происходит. Если индекс равен 0, объект вставляется в начало списка. Если индекс равен текущему количеству, объект вставляется в конец списка.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс, по которому следует вставить объект. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вставляемый объект. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="402" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="402" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a001fa8c8229467174c15091a08774273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type TLayersLinkedList&lt; Type &gt;::TakeFirst</definition>
+        <argsstring>()</argsstring>
+        <name>TakeFirst</name>
+        <qualifiedname>TLayersLinkedList::TakeFirst</qualifiedname>
+        <briefdescription>
+<para>Извлекает объект из пула. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип объекта, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Извлечённый объект. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="439" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="439" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a45d9e6d628eb48039dc8aff5574440f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type TLayersLinkedList&lt; Type &gt;::TakeLast</definition>
+        <argsstring>()</argsstring>
+        <name>TakeLast</name>
+        <qualifiedname>TLayersLinkedList::TakeLast</qualifiedname>
+        <briefdescription>
+<para>Извлекает последний элемент из связного списка и возвращает его. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод удаляет и возвращает последний элемент из связного списка. Перед доступом к последнему элементу проверяется, не пуст ли связный список. Если в связанном списке только один элемент, то список опустошается, и возвращается элемент. Если в связном списке больше одного элемента, происходит итерация по элементам до достижения предпоследнего элемента. Последний элемент удаляется из связного списка и возвращается.</para>
+<para><simplesect kind="return"><para>Последний элемент связного списка. </para>
+</simplesect>
+<simplesect kind="pre"><para>Связный список не пуст. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="467" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="467" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a457ac68207a8a999085a38ecbd8b8a3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type</type>
+        <definition>Type TLayersLinkedList&lt; Type &gt;::TakeAtIndex</definition>
+        <argsstring>(SIZE_T Index)</argsstring>
+        <name>TakeAtIndex</name>
+        <qualifiedname>TLayersLinkedList::TakeAtIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SIZE_T</ref></type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>Получить элемент из связного списка по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод получает элемент из связного списка по указанному индексу и удаляет его из списка. Индексация начинается с нуля, первый элемент находится на позиции 0. Если индекс равняется текущему количеству элементов в списке, будет получен последний элемент. Если индекс недействителен (меньше 0 или больше или равно текущему количеству элементов), поведение не определено.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс элемента для извлечения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Извлеченный из списка элемент. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="502" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="502" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a4884be1055902b7b50840af17144c43d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::Empty</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Empty</name>
+        <qualifiedname>TLayersLinkedList::Empty</qualifiedname>
+        <briefdescription>
+<para>Очищает TLayersCircularPool, удаляя все связанные узлы и сбрасывая счетчики. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="530" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="530" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_layers_linked_list_1a93d5aa8443b2b9cb135bfb1541096f06" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TLayersLinkedList&lt; Type &gt;::Clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Clear</name>
+        <qualifiedname>TLayersLinkedList::Clear</qualifiedname>
+        <briefdescription>
+<para>Очищает TLayersCircularPool, удаляя все связанные узлы и сбрасывая счетчики. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="545" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="545" bodyend="548"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий круговой пул объектов типа Type с максимальным размером. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс <ref refid="class_t_layers_linked_list" kindref="compound">TLayersLinkedList</ref> предоставляет функциональность для добавления и извлечения объектов из пула, а также проверки, является ли пул полным или пустым. Он использует циклический связный список для эффективного управления объектами в пуле. </para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" line="16" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/Types/TLayersLinkedList.h" bodystart="17" bodyend="549"/>
+    <listofallmembers>
+      <member refid="class_t_layers_linked_list_1a1e278c4b5a2634fbac1c4fb19bb80d3e" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>begin</name></member>
+      <member refid="class_t_layers_linked_list_1a93d5aa8443b2b9cb135bfb1541096f06" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>Clear</name></member>
+      <member refid="class_t_layers_linked_list_1aed71e0544c2289b1089c4df58ec7fde5" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>Contains</name></member>
+      <member refid="class_t_layers_linked_list_1a1206a9fe620da06eaca30c5036beb87f" prot="private" virt="non-virtual"><scope>TLayersLinkedList</scope><name>Count</name></member>
+      <member refid="class_t_layers_linked_list_1a4884be1055902b7b50840af17144c43d" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>Empty</name></member>
+      <member refid="class_t_layers_linked_list_1a150cc8d69d370f434ee81495c26f73f5" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>end</name></member>
+      <member refid="class_t_layers_linked_list_1a84d76daaa84412645db884c18d8e5cb3" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>GetAtIndex</name></member>
+      <member refid="class_t_layers_linked_list_1a19341145a44ba928b93ea70dcca16f53" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>GetCount</name></member>
+      <member refid="class_t_layers_linked_list_1a0920163d01515e7aebcdee03e084c2ad" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>GetHead</name></member>
+      <member refid="class_t_layers_linked_list_1a85fb5e35a18602f93e10d4310df2813d" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>GetMaxSize</name></member>
+      <member refid="class_t_layers_linked_list_1a3cffec02669fee10dbff3bec7ed0b806" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>GetTail</name></member>
+      <member refid="class_t_layers_linked_list_1afc6aa67d6f11976cf60f236e5e970145" prot="private" virt="non-virtual"><scope>TLayersLinkedList</scope><name>HeadLink</name></member>
+      <member refid="class_t_layers_linked_list_1a6ddd36ca758ef213e356327cba13e12b" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>InsertAtIndex</name></member>
+      <member refid="class_t_layers_linked_list_1a9178f094f2368e6f668dc4b700d6a881" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>InsertHead</name></member>
+      <member refid="class_t_layers_linked_list_1ad72c61979454163c89876dbdaa619395" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>InsertTail</name></member>
+      <member refid="class_t_layers_linked_list_1a479960f5b78a0bf0b5218e945b6ba229" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>IsEmpty</name></member>
+      <member refid="class_t_layers_linked_list_1aef4bf551ce7bc75672da22a1461f3790" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>IsFull</name></member>
+      <member refid="class_t_layers_linked_list_1ab3bf442cfbc0974be80ecfa576c909fc" prot="private" virt="non-virtual"><scope>TLayersLinkedList</scope><name>MaxSize</name></member>
+      <member refid="class_t_layers_linked_list_1acc003b11df21a66b400a92d078459885" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>SetListMaxSize</name></member>
+      <member refid="class_t_layers_linked_list_1aeb8278e63f98427a387cb4e563d0b22f" prot="private" virt="non-virtual"><scope>TLayersLinkedList</scope><name>TailLink</name></member>
+      <member refid="class_t_layers_linked_list_1a457ac68207a8a999085a38ecbd8b8a3c" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>TakeAtIndex</name></member>
+      <member refid="class_t_layers_linked_list_1a001fa8c8229467174c15091a08774273" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>TakeFirst</name></member>
+      <member refid="class_t_layers_linked_list_1a45d9e6d628eb48039dc8aff5574440f5" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>TakeLast</name></member>
+      <member refid="class_t_layers_linked_list_1aeb17b93dc69323a7ca0a0e07ceb2c7fc" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>TLayersLinkedList</name></member>
+      <member refid="class_t_layers_linked_list_1a8d88a50394cf0cc2f2d4bdc741720630" prot="public" virt="non-virtual"><scope>TLayersLinkedList</scope><name>~TLayersLinkedList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

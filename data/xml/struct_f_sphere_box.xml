@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_sphere_box" kind="struct" language="C++" prot="public">
+    <compoundname>FSphereBox</compoundname>
+    <includes refid="_meta_math_utils_8h" local="no">MetaMathUtils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_sphere_box_1ac8c7938533bde1b1adcc610b31840df6" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector FSphereBox::Center</definition>
+        <argsstring></argsstring>
+        <name>Center</name>
+        <qualifiedname>FSphereBox::Center</qualifiedname>
+        <initializer>= FVector::ZeroVector</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="101" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_sphere_box_1a2c9bcb8e30ccf26564998977a296de5d" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double FSphereBox::Radius</definition>
+        <argsstring></argsstring>
+        <name>Radius</name>
+        <qualifiedname>FSphereBox::Radius</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="104" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_sphere_box_1a075a4c33d4c4789f62038e5800652d4c" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector FSphereBox::BoxExtent</definition>
+        <argsstring></argsstring>
+        <name>BoxExtent</name>
+        <qualifiedname>FSphereBox::BoxExtent</qualifiedname>
+        <initializer>= FVector::ZeroVector</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="107" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_sphere_box_1a5396bc7ddfd8cacc8f7b5c1be0be9f0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FBox</ref></type>
+        <definition>FBox FSphereBox::GetBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBox</name>
+        <qualifiedname>FSphereBox::GetBox</qualifiedname>
+        <briefdescription>
+<para>Получить коробку, представляющую сферу-коробку. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Коробка, эквивалентная сфере-коробке с учетом центра, радиуса и размера коробки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="114" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Private/MetaMathUtils.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_sphere_box_1a5b421809e9e5056f728ad0da2dbc00a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FSphereBox::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>FSphereBox::IsEmpty</qualifiedname>
+        <briefdescription>
+<para>Проверяет, является ли сфера пустой. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод проверяет пустоту сферической коробки, сравнивая радиус и размер коробки с нулевыми значениями.</para>
+<para><simplesect kind="return"><para>True, если сферическая коробка пуста (Radius == 0.0 и BoxExtent == нулевой вектор), иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="123" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Private/MetaMathUtils.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" line="96" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaBaseUtils/Source/MetaBaseUtils/Public/MetaMathUtils.h" bodystart="97" bodyend="124"/>
+    <listofallmembers>
+      <member refid="struct_f_sphere_box_1a075a4c33d4c4789f62038e5800652d4c" prot="public" virt="non-virtual"><scope>FSphereBox</scope><name>BoxExtent</name></member>
+      <member refid="struct_f_sphere_box_1ac8c7938533bde1b1adcc610b31840df6" prot="public" virt="non-virtual"><scope>FSphereBox</scope><name>Center</name></member>
+      <member refid="struct_f_sphere_box_1a5396bc7ddfd8cacc8f7b5c1be0be9f0a" prot="public" virt="non-virtual"><scope>FSphereBox</scope><name>GetBox</name></member>
+      <member refid="struct_f_sphere_box_1a5b421809e9e5056f728ad0da2dbc00a3" prot="public" virt="non-virtual"><scope>FSphereBox</scope><name>IsEmpty</name></member>
+      <member refid="struct_f_sphere_box_1a2c9bcb8e30ccf26564998977a296de5d" prot="public" virt="non-virtual"><scope>FSphereBox</scope><name>Radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

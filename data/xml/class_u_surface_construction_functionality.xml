@@ -1,0 +1,1119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_surface_construction_functionality" kind="class" language="C++" prot="public">
+    <compoundname>USurfaceConstructionFunctionality</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_surface_construction_functionality_8h" local="no">SurfaceConstructionFunctionality.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_u_surface_construction_functionality_1a6891bd27c1679d14a116d9684c45bf4a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>constexpr uint8 USurfaceConstructionFunctionality::MaxIterations</definition>
+        <argsstring></argsstring>
+        <name>MaxIterations</name>
+        <qualifiedname>USurfaceConstructionFunctionality::MaxIterations</qualifiedname>
+        <initializer>= 40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="249" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a6c5f7ecf4d0a2015d1bf6aba20d81d20" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::MethodEar</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Line, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles, TArray&lt; FVector &gt; &amp;CombinedNormals, const FVector &amp;AnchorPoint)</argsstring>
+        <name>MethodEar</name>
+        <qualifiedname>USurfaceConstructionFunctionality::MethodEar</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Line</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedNormals</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет Точки,Треугльники,UVs,нормали для дальнейшего построения по ним процедурной поверхности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контур здания по которому строится меш </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нормали для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора - владельца меша </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="37" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="387" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1af433c5f3760a011ce2ddda59ce7f1b3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::MethodEarWithHoles</definition>
+        <argsstring>(const FPolygon &amp;Polygon, const FVector &amp;AnchorPoint, const float High, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles, TArray&lt; FVector &gt; &amp;CombinedNormals)</argsstring>
+        <name>MethodEarWithHoles</name>
+        <qualifiedname>USurfaceConstructionFunctionality::MethodEarWithHoles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>High</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedNormals</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет Точки,Треугльники,UVs,нормали для дальнейшего построения по ним процедурной поверхности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стркутура хранящая внешний и внутренние контура полигона </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нормали для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора - владельца меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>High</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>высота координаты z на которой строится полигон (крыша) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="53" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="528" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a015f88641767de1373c1af0fddbdd1f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceConstructionFunctionality::IsEar</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Vertices, int32 Index)</argsstring>
+        <name>IsEar</name>
+        <qualifiedname>USurfaceConstructionFunctionality::IsEar</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Vertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет является ли <emphasis>ухом</emphasis> выбранный треугольник </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор точек проверяемого контура </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершина проверяемого треугольника, а также Index+-1 - остальные две вершины</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Является ли набор точек <emphasis>ухом</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="68" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="694" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a7b22a0b33c5777516f8fc9d608c9db2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TArray&lt; FVector &gt; USurfaceConstructionFunctionality::GetPointToMethodEarWithHoles</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Contour, const TArray&lt; FVector &gt; &amp;HoleToAdd, const TArray&lt; TArray&lt; FVector &gt; &gt; &amp;Holes, float High, TArray&lt; TPair&lt; FVector, FVector &gt; &gt; &amp;Bridges)</argsstring>
+        <name>GetPointToMethodEarWithHoles</name>
+        <qualifiedname>USurfaceConstructionFunctionality::GetPointToMethodEarWithHoles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Contour</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>HoleToAdd</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>Holes</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>High</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>Bridges</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет внутренние контура к внешнему для корректной обработки методом <emphasis>ушей</emphasis> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Contour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Текущий <emphasis>внешний</emphasis> контур </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HoleToAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор точек добавляемого <emphasis>внутреннего</emphasis> контура </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Holes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив всех внутренних контуров - необходимый для правильного соединения HoleToAdd и Contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>High</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота крыши, на которой строятся все контура </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Bridges</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Созданные <emphasis>мосты</emphasis> между внешним и внутренним контуром - необходимый для правильного соединения HoleToAdd и Contour</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленный <emphasis>внешний</emphasis> контур </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="81" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="461" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a51d1608148aa0c203c373c8c57674291" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::MethodDelone</definition>
+        <argsstring>(const FPolygon &amp;Polygon, const FVector &amp;AnchorPoint, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles, TArray&lt; FVector &gt; &amp;CombinedNormals)</argsstring>
+        <name>MethodDelone</name>
+        <qualifiedname>USurfaceConstructionFunctionality::MethodDelone</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedNormals</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет Точки,Треугльники,UVs,нормали для дальнейшего построения по ним процедурной поверхности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стркутура хранящая внешний и внутренние контура полигона </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора - владельца меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нормали для меша </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="97" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="44" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a1c3130a1e306be69b9cc13338f26691f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::ProcessFlipNotDeloneTriangles</definition>
+        <argsstring>(const FPolygon &amp;Polygon, const FPolygonTriangle &amp;Triangle, TArray&lt; FPolygonTriangle &gt; &amp;Triangles, bool &amp;bFlipped, auto &amp;FlipCheckMethod)</argsstring>
+        <name>ProcessFlipNotDeloneTriangles</name>
+        <qualifiedname>USurfaceConstructionFunctionality::ProcessFlipNotDeloneTriangles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &gt; &amp;</type>
+          <declname>Triangles</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>bFlipped</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">auto</ref> &amp;</type>
+          <declname>FlipCheckMethod</declname>
+        </param>
+        <briefdescription>
+<para>Проверка свойств Делоне для конкретного треугольника </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стркутура хранящая внешний и внутренние контура полигона </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемый треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив всех треугольников </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFlipped</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на флаг, указывающий на <emphasis>переворот</emphasis> ребра в треугольнике </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FlipCheckMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Метод проверки - случился <emphasis>переворот</emphasis> или нет </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="114" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="132" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a085c02993e8d11a09e0c164715bf9f88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref></type>
+        <definition>FPolygonTriangle USurfaceConstructionFunctionality::CreateSuperTriangle</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Line, const float &amp;High)</argsstring>
+        <name>CreateSuperTriangle</name>
+        <qualifiedname>USurfaceConstructionFunctionality::CreateSuperTriangle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Line</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref> &amp;</type>
+          <declname>High</declname>
+        </param>
+        <briefdescription>
+<para>Создает треугольник включающий все точки переданного контура </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контур, вокруг которог остроим треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>High</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота вершин треугольника </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="126" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="172" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a2dd5a1f2b22ecd18e38da3c6082e2d50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::AddTriangleToReturnArrays</definition>
+        <argsstring>(const FPolygonTriangle &amp;Triangle, const TArray&lt; TArray&lt; FVector &gt; &gt; &amp;Holes, const FVector &amp;AnchorPoint, const TArray&lt; FVector &gt; &amp;Contour, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles)</argsstring>
+        <name>AddTriangleToReturnArrays</name>
+        <qualifiedname>USurfaceConstructionFunctionality::AddTriangleToReturnArrays</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &gt; &amp;</type>
+          <declname>Holes</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Contour</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет Точки,Треугльники полученные с помощью метода Делоне </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив созданных треугольников </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Holes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив <emphasis>внутренних</emphasis> точек, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора - владельца меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Contour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек <emphasis>внешнего</emphasis> контура </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="138" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="196" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a64e5d8903009f5c036a5f5c07fc4ce69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::AddPoint</definition>
+        <argsstring>(const FVector &amp;Point, TArray&lt; FPolygonTriangle &gt; &amp;Triangles)</argsstring>
+        <name>AddPoint</name>
+        <qualifiedname>USurfaceConstructionFunctionality::AddPoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &gt; &amp;</type>
+          <declname>Triangles</declname>
+        </param>
+        <briefdescription>
+<para>Логика добавления новой точки в триангуляцию Делоне </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Добавляемая точка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив уже созданных треугольников </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="151" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="234" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a43ff72ab4fc3cee49cc14eeb7b612cbc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceConstructionFunctionality::IsDelaunay</definition>
+        <argsstring>(const FPolygonTriangle &amp;Triangle, const TArray&lt; FPolygonTriangle &gt; &amp;Triangles)</argsstring>
+        <name>IsDelaunay</name>
+        <qualifiedname>USurfaceConstructionFunctionality::IsDelaunay</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &gt; &amp;</type>
+          <declname>Triangles</declname>
+        </param>
+        <briefdescription>
+<para>Проверка выполняет ли данный треугольник условие Делоне </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Triangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>проверяемый треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив всех треугольников</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Выполняет ли треугольник условие Делоне </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="161" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="278" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a4a7c7b29c6ef7b32f20504e297cde101" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceConstructionFunctionality::EdgeFlip</definition>
+        <argsstring>(const FPolygonTriangle &amp;Triangle1, const FPolygonTriangle &amp;Triangle2, TArray&lt; FPolygonTriangle &gt; &amp;Triangles)</argsstring>
+        <name>EdgeFlip</name>
+        <qualifiedname>USurfaceConstructionFunctionality::EdgeFlip</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle1</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle2</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &gt; &amp;</type>
+          <declname>Triangles</declname>
+        </param>
+        <briefdescription>
+<para>Выполняет <emphasis>переворот</emphasis> ребра двух соседних треугольников если он возможен </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Triangle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемый треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Соседний проверяемый треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив всех треугольников</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Был ли сделан переворот </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="172" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="299" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a76d40aa56d4f4ec55e92abc81ec803aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceConstructionFunctionality::HasSharesEdge</definition>
+        <argsstring>(const FPolygonTriangle &amp;Triangle1, const FPolygonTriangle &amp;Triangle2)</argsstring>
+        <name>HasSharesEdge</name>
+        <qualifiedname>USurfaceConstructionFunctionality::HasSharesEdge</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle1</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon_triangle" kindref="compound">FPolygonTriangle</ref> &amp;</type>
+          <declname>Triangle2</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет имеют ли два треугольника общую сторону </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Triangle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемый треугольник </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Triangle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Соседний проверяемый треугольник</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Имеют ли два треугольника общую сторону </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="182" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="367" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a7f19a2bcf087fcda3a1e9e77705292a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::AccumulateExtrudedGeometryWithAnchor</definition>
+        <argsstring>(const FPolygon &amp;Polygons, const FVector &amp;AnchorPoint, const FDecisionData &amp;DecisionData, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles, TArray&lt; FVector &gt; &amp;CombinedNormals, TArray&lt; FVector2D &gt; &amp;CombinedUVs, int32 VertexOffset)</argsstring>
+        <name>AccumulateExtrudedGeometryWithAnchor</name>
+        <qualifiedname>USurfaceConstructionFunctionality::AccumulateExtrudedGeometryWithAnchor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &amp;</type>
+          <declname>Polygons</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_decision_data" kindref="compound">FDecisionData</ref> &amp;</type>
+          <declname>DecisionData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedNormals</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &gt; &amp;</type>
+          <declname>CombinedUVs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>VertexOffset</declname>
+        </param>
+        <briefdescription>
+<para>Заполняет Точки,Треугльники,UVs,нормали для дальнейшего построения по ним процедурной поверхности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контура здания(внешние и внутренние), по которому строится меш </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нормали для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedUVs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UVs для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VertexOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение номера вершины для корректного заполнения CombinedTriangles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора- владельца меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DecisionData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные о обьекте, который мы создаем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Динамически созданный экземпляр материала на основе типа дороги. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="199" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="788" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1ae0d8f4d52ddd075aa0b74859e4767589" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USurfaceConstructionFunctionality::AccumulateSurfaceWithHoles</definition>
+        <argsstring>(const FPolygon &amp;Polygons, TArray&lt; FVector &gt; &amp;CombinedVertices, TArray&lt; int32 &gt; &amp;CombinedTriangles, TArray&lt; FVector &gt; &amp;CombinedNormals, TArray&lt; FVector2D &gt; &amp;CombinedUVs, int32 VertexOffset, const FVector &amp;AnchorPoint, const FDecisionData &amp;DecisionData)</argsstring>
+        <name>AccumulateSurfaceWithHoles</name>
+        <qualifiedname>USurfaceConstructionFunctionality::AccumulateSurfaceWithHoles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_polygon" kindref="compound">FPolygon</ref> &amp;</type>
+          <declname>Polygons</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>CombinedTriangles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedNormals</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2D</ref> &gt; &amp;</type>
+          <declname>CombinedUVs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>VertexOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>AnchorPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_decision_data" kindref="compound">FDecisionData</ref> &amp;</type>
+          <declname>DecisionData</declname>
+        </param>
+        <briefdescription>
+<para>Создает поверхности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контура здания(внешние и внутренние), по которому строится крыша здания </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вершины для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedTriangles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Треугольники для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedNormals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нормали для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CombinedUVs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UVs для меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VertexOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение номера вершины для корректного заполнения CombinedTriangles </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AnchorPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Точка смешения актора- владельца меша </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DecisionData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные о обьекте, который мы создаем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Динамически созданный экземпляр материала на основе типа дороги. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="222" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="621" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1a8b1cb24cffcc195ceeaca4634e8157d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double USurfaceConstructionFunctionality::CalculateSignedArea</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;Points)</argsstring>
+        <name>CalculateSignedArea</name>
+        <qualifiedname>USurfaceConstructionFunctionality::CalculateSignedArea</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>Points</declname>
+        </param>
+        <briefdescription>
+<para>Находит площадь контура с учетом знака </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек проверяемого контура</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Вычисленная площадь </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="238" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="657" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_surface_construction_functionality_1ae50e28920b6bd6321a229f7b8f49f7b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USurfaceConstructionFunctionality::IsLineExternal</definition>
+        <argsstring>(const TArray&lt; FVector &gt; &amp;CombinedVertices)</argsstring>
+        <name>IsLineExternal</name>
+        <qualifiedname>USurfaceConstructionFunctionality::IsLineExternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt; &amp;</type>
+          <declname>CombinedVertices</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет является ли контур внешним </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CombinedVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек проверяемого контура</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Если true - внешний, если false - внутренний (влияет сторона обхода контура) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="247" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.cpp" bodystart="689" bodyend="692"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USurfaceConstructionFunctionality</label>
+        <link refid="class_u_surface_construction_functionality"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>USurfaceConstructionFunctionality</label>
+        <link refid="class_u_surface_construction_functionality"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/SurfaceModule/SurfaceConstructionFunctionality.h" bodystart="22" bodyend="250"/>
+    <listofallmembers>
+      <member refid="class_u_surface_construction_functionality_1a7f19a2bcf087fcda3a1e9e77705292a9" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>AccumulateExtrudedGeometryWithAnchor</name></member>
+      <member refid="class_u_surface_construction_functionality_1ae0d8f4d52ddd075aa0b74859e4767589" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>AccumulateSurfaceWithHoles</name></member>
+      <member refid="class_u_surface_construction_functionality_1a64e5d8903009f5c036a5f5c07fc4ce69" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>AddPoint</name></member>
+      <member refid="class_u_surface_construction_functionality_1a2dd5a1f2b22ecd18e38da3c6082e2d50" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>AddTriangleToReturnArrays</name></member>
+      <member refid="class_u_surface_construction_functionality_1a8b1cb24cffcc195ceeaca4634e8157d0" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>CalculateSignedArea</name></member>
+      <member refid="class_u_surface_construction_functionality_1a085c02993e8d11a09e0c164715bf9f88" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>CreateSuperTriangle</name></member>
+      <member refid="class_u_surface_construction_functionality_1a4a7c7b29c6ef7b32f20504e297cde101" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>EdgeFlip</name></member>
+      <member refid="class_u_surface_construction_functionality_1a7b22a0b33c5777516f8fc9d608c9db2b" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>GetPointToMethodEarWithHoles</name></member>
+      <member refid="class_u_surface_construction_functionality_1a76d40aa56d4f4ec55e92abc81ec803aa" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>HasSharesEdge</name></member>
+      <member refid="class_u_surface_construction_functionality_1a43ff72ab4fc3cee49cc14eeb7b612cbc" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>IsDelaunay</name></member>
+      <member refid="class_u_surface_construction_functionality_1a015f88641767de1373c1af0fddbdd1f7" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>IsEar</name></member>
+      <member refid="class_u_surface_construction_functionality_1ae50e28920b6bd6321a229f7b8f49f7b1" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>IsLineExternal</name></member>
+      <member refid="class_u_surface_construction_functionality_1a6891bd27c1679d14a116d9684c45bf4a" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>MaxIterations</name></member>
+      <member refid="class_u_surface_construction_functionality_1a51d1608148aa0c203c373c8c57674291" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>MethodDelone</name></member>
+      <member refid="class_u_surface_construction_functionality_1a6c5f7ecf4d0a2015d1bf6aba20d81d20" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>MethodEar</name></member>
+      <member refid="class_u_surface_construction_functionality_1af433c5f3760a011ce2ddda59ce7f1b3c" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>MethodEarWithHoles</name></member>
+      <member refid="class_u_surface_construction_functionality_1a1c3130a1e306be69b9cc13338f26691f" prot="public" virt="non-virtual"><scope>USurfaceConstructionFunctionality</scope><name>ProcessFlipNotDeloneTriangles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

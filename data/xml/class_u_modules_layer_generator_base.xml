@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_modules_layer_generator_base" kind="class" language="C++" prot="public">
+    <compoundname>UModulesLayerGeneratorBase</compoundname>
+    <basecompoundref refid="class_u_modules_layer_object_base" prot="public" virt="non-virtual">UModulesLayerObjectBase</basecompoundref>
+    <includes refid="_modules_layer_generator_base_8h" local="no">ModulesLayerGeneratorBase.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_modules_layer_generator_base_1a65fd9325c290d787c41b9993e5543204" prot="public" static="no" mutable="no">
+        <type><ref refid="class_u_module_layer_manager_base" kindref="compound">UModuleLayerManagerBase</ref> *</type>
+        <definition>UModuleLayerManagerBase* UModulesLayerGeneratorBase::ModuleLayerManagerBase</definition>
+        <argsstring></argsstring>
+        <name>ModuleLayerManagerBase</name>
+        <qualifiedname>UModulesLayerGeneratorBase::ModuleLayerManagerBase</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="22" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_modules_layer_generator_base_1ab6872f6de61d5301258fa7d4520bfaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UModulesLayerGeneratorBase::GenerateLayer</definition>
+        <argsstring>(const TArray&lt; TSubclassOf&lt; ATileActorBase &gt; &gt; &amp;ClassesModule, const FString &amp;ServiceUrl, const FGuid &amp;LayerID, const FMetaDataLayerStruct &amp;LayerSettings, const FString &amp;LayerUrl=&quot;&quot;)</argsstring>
+        <name>GenerateLayer</name>
+        <qualifiedname>UModulesLayerGeneratorBase::GenerateLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> &gt; &gt; &amp;</type>
+          <declname>ClassesModule</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>ServiceUrl</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_struct" kindref="compound">FMetaDataLayerStruct</ref> &amp;</type>
+          <declname>LayerSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>LayerUrl</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Генерирует слой модуля с указанным источником тайлов и массивом подклассов акторов тайлов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ClassesModule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив TSubclassOf&lt;ATileActorBase&gt;, представляющий подклассы акторов тайлов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ServiceUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Url сервиса гибрида </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор слоя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки, которые настраивают отображение тайлов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка, по которой гибрид будет опрашивать тайловый сервер</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="36" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/ModulesLayerGeneratorBase.cpp" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_modules_layer_generator_base_1ae2e61442a91a8fce76c46cd8eeb375e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UModulesLayerGeneratorBase::UpdateLayer</definition>
+        <argsstring>(const TArray&lt; TSubclassOf&lt; ATileActorBase &gt; &gt; &amp;ClassesModule, const FString &amp;ServiceUrl, const FGuid &amp;LayerID, const FMetaDataLayerStruct &amp;LayerSettings, const FString &amp;LayerUrl=&quot;&quot;) const</argsstring>
+        <name>UpdateLayer</name>
+        <qualifiedname>UModulesLayerGeneratorBase::UpdateLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> &gt; &gt; &amp;</type>
+          <declname>ClassesModule</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>ServiceUrl</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_struct" kindref="compound">FMetaDataLayerStruct</ref> &amp;</type>
+          <declname>LayerSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>LayerUrl</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Генерирует слой модуля с указанным источником тайлов и массивом подклассов акторов тайлов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ClassesModule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив TSubclassOf&lt;ATileActorBase&gt;, представляющий подклассы акторов тайлов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ServiceUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Url сервиса гибрида </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Url Идентификатор слоя </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки, которые настраивают отображение тайлов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка, по которой гибрид будет опрашивать тайловый сервер</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="54" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/ModulesLayerGeneratorBase.cpp" bodystart="23" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_modules_layer_generator_base_1a5e98d9b541bcceb7ce77fadbeabb2ad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UModulesLayerGeneratorBase::DestroyLayer</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyLayer</name>
+        <qualifiedname>UModulesLayerGeneratorBase::DestroyLayer</qualifiedname>
+        <briefdescription>
+<para>Уничтожает сгенерированный слой модуля путем его деактивации. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="66" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/ModulesLayerGeneratorBase.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_modules_layer_generator_base_1acb86f48eae8b59eae4b93342905002b5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UModulesLayerGeneratorBase::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>UModulesLayerGeneratorBase::BeginPlay</qualifiedname>
+        <reimplements refid="class_u_modules_layer_object_base_1a6b343020fc75875ed669e68e33fef619">BeginPlay</reimplements>
+        <briefdescription>
+<para>Вызывается при старте игры </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="74" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/ModulesLayerGeneratorBase.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UModulesLayerGeneratorBase</label>
+        <link refid="class_u_modules_layer_generator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModulesLayerObjectBase</label>
+        <link refid="class_u_modules_layer_object_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>AActor</label>
+      </node>
+      <node id="10">
+        <label>AModulesObserveBase</label>
+        <link refid="class_a_modules_observe_base"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FCommunicationMetadata</label>
+        <link refid="struct_f_communication_metadata"/>
+      </node>
+      <node id="6">
+        <label>FZoomLevel</label>
+        <link refid="struct_f_zoom_level"/>
+      </node>
+      <node id="8">
+        <label>UDeveloperSettings</label>
+      </node>
+      <node id="5">
+        <label>UModuleLayerControllerBase</label>
+        <link refid="class_u_module_layer_controller_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>BaseZoomLevelRange</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Settings</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>ModulesObserver</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UModuleLayerManagerBase</label>
+        <link refid="class_u_module_layer_manager_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ModuleLayerControllerBase</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UModulesLayerGeneratorBase</label>
+        <link refid="class_u_modules_layer_generator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ModuleLayerManagerBase</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModulesLayerObjectBase</label>
+        <link refid="class_u_modules_layer_object_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+      <node id="7">
+        <label>UServerCommunicationsSettings</label>
+        <link refid="class_u_server_communications_settings"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>BaseSettings</edgelabel>
+          <edgelabel>BuildingNumbersModuleMetadata</edgelabel>
+          <edgelabel>IconsModuleMetadata</edgelabel>
+          <edgelabel>NamesModuleMetadata</edgelabel>
+          <edgelabel>NamesModuleMetadataRumap</edgelabel>
+          <edgelabel>RoadsModuleMetadata</edgelabel>
+          <edgelabel>RoadsModuleMetadataRumap</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/ModulesLayerGeneratorBase.h" bodystart="17" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_u_modules_layer_generator_base_1acb86f48eae8b59eae4b93342905002b5" prot="protected" virt="virtual"><scope>UModulesLayerGeneratorBase</scope><name>BeginPlay</name></member>
+      <member refid="class_u_modules_layer_generator_base_1a5e98d9b541bcceb7ce77fadbeabb2ad0" prot="public" virt="non-virtual"><scope>UModulesLayerGeneratorBase</scope><name>DestroyLayer</name></member>
+      <member refid="class_u_modules_layer_generator_base_1ab6872f6de61d5301258fa7d4520bfaac" prot="public" virt="non-virtual"><scope>UModulesLayerGeneratorBase</scope><name>GenerateLayer</name></member>
+      <member refid="class_u_modules_layer_generator_base_1a65fd9325c290d787c41b9993e5543204" prot="public" virt="non-virtual"><scope>UModulesLayerGeneratorBase</scope><name>ModuleLayerManagerBase</name></member>
+      <member refid="class_u_modules_layer_object_base_1a4559afa453d9e1f543a841ae0fb5a3bb" prot="public" virt="virtual"><scope>UModulesLayerGeneratorBase</scope><name>PostInitProperties</name></member>
+      <member refid="class_u_modules_layer_generator_base_1ae2e61442a91a8fce76c46cd8eeb375e8" prot="public" virt="non-virtual"><scope>UModulesLayerGeneratorBase</scope><name>UpdateLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

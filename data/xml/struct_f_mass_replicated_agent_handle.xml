@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_replicated_agent_handle" kind="struct" language="C++" prot="public">
+    <compoundname>FMassReplicatedAgentHandle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FCompactIndexedHandleBase</basecompoundref>
+    <includes refid="_mass_replication_types_8h" local="no">MassReplicationTypes.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_replicated_agent_handle_1abfafd08f1649aa01681a83a004e13f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMassReplicatedAgentHandle::FMassReplicatedAgentHandle</definition>
+        <argsstring>()=default</argsstring>
+        <name>FMassReplicatedAgentHandle</name>
+        <qualifiedname>FMassReplicatedAgentHandle::FMassReplicatedAgentHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_replicated_agent_handle_1af10ec869ebe596c41c5aeefae6430742" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FMassReplicatedAgentHandle::FMassReplicatedAgentHandle</definition>
+        <argsstring>(int32 InIndex, uint32 InSerialNumber)</argsstring>
+        <name>FMassReplicatedAgentHandle</name>
+        <qualifiedname>FMassReplicatedAgentHandle::FMassReplicatedAgentHandle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>InSerialNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- passing INDEX_NONE will make this handle Invalid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="80" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Handle of each Agent per Client (bubble), these handles are not consistent between different client bubbles. Using the compact handle here will make the memory footprint smaller and help the ECS system be more cache friendly. TODO: in the long run we can probably use a non serial number handle here, I&apos;d like to stick with the serial number for now though </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FCompactIndexedHandleBase</label>
+      </node>
+      <node id="1">
+        <label>FMassReplicatedAgentHandle</label>
+        <link refid="struct_f_mass_replicated_agent_handle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FCompactIndexedHandleBase</label>
+      </node>
+      <node id="1">
+        <label>FMassReplicatedAgentHandle</label>
+        <link refid="struct_f_mass_replicated_agent_handle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" line="73" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationTypes.h" bodystart="74" bodyend="83"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_replicated_agent_handle_1abfafd08f1649aa01681a83a004e13f38" prot="public" virt="non-virtual"><scope>FMassReplicatedAgentHandle</scope><name>FMassReplicatedAgentHandle</name></member>
+      <member refid="struct_f_mass_replicated_agent_handle_1af10ec869ebe596c41c5aeefae6430742" prot="public" virt="non-virtual"><scope>FMassReplicatedAgentHandle</scope><name>FMassReplicatedAgentHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

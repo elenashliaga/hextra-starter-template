@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_e_q_s_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UMassEQSSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassSubsystemBase</basecompoundref>
+    <includes refid="_mass_e_q_s_subsystem_8h" local="no">MassEQSSubsystem.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_u_mass_e_q_s_subsystem_1ace2e5aabb408fbfd019c755a60e47da5" prot="private" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt; &gt;</type>
+        <definition>using UMassEQSSubsystem::FRequestQueue =  TQueue&lt;TUniquePtr&lt;FMassEQSRequestData&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>FRequestQueue</name>
+        <qualifiedname>UMassEQSSubsystem::FRequestQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queue holding UniquePtrs to the data required for each Request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="23" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1af794fa5819845e5ae767db3769df6554" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UEnvQueryNode</ref> &gt;, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TMap&lt;TSubclassOf&lt;UEnvQueryNode&gt;, int32&gt; UMassEQSSubsystem::RequestQueueLookup</definition>
+        <argsstring></argsstring>
+        <name>RequestQueueLookup</name>
+        <qualifiedname>UMassEQSSubsystem::RequestQueueLookup</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping from Class of requester, to index into RequestQueues. Each Class that extends UMassEQSGenerator or UMassEQSTest can be a requester, this will store a Queue for each of these types. <simplesect kind="see"><para>PostInitialize() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="60" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1aa32b1aa99c723cb121131ed5800202ea" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_mass_e_q_s_subsystem_1ace2e5aabb408fbfd019c755a60e47da5" kindref="member">FRequestQueue</ref> &gt;</type>
+        <definition>TArray&lt;FRequestQueue&gt; UMassEQSSubsystem::RequestQueues</definition>
+        <argsstring></argsstring>
+        <name>RequestQueues</name>
+        <qualifiedname>UMassEQSSubsystem::RequestQueues</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of Queues holding each Request. TQueue does not support copy/assignment, which TMap requires. This is the reason the TQueues are stored in a separate Array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="66" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1ac72e923d1668f8264ffbc7638b79cd8e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FMassEQSRequestHandle, TUniquePtr&lt;FMassEQSRequestData&gt; &gt; UMassEQSSubsystem::Results</definition>
+        <argsstring></argsstring>
+        <name>Results</name>
+        <qualifiedname>UMassEQSSubsystem::Results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Holds results for finished Query </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="74" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1ac1c71f73985881a77e8965a26b57ea14" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIndexedHandleManagerBase</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref> &gt;</type>
+        <definition>FIndexedHandleManagerBase&lt;FMassEQSRequestHandle, int32, uint32, true&gt; UMassEQSSubsystem::HandleManager</definition>
+        <argsstring></argsstring>
+        <name>HandleManager</name>
+        <qualifiedname>UMassEQSSubsystem::HandleManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="77" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1a81b7f68a710d142c2813a8b46eb3d48e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref> &gt;</type>
+        <definition>TArray&lt;FMassEQSRequestHandle&gt; UMassEQSSubsystem::CancelledRequests</definition>
+        <argsstring></argsstring>
+        <name>CancelledRequests</name>
+        <qualifiedname>UMassEQSSubsystem::CancelledRequests</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Holds all RequestHandles of requests who have been canceled, and not yet submitted. Once this request is submitted, we will ignore the results. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="83" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_e_q_s_subsystem_1afb16cb95f2924a2baa358e83cc819dca" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UMassEQSSubsystem::bIsInitialized</definition>
+        <argsstring></argsstring>
+        <name>bIsInitialized</name>
+        <qualifiedname>UMassEQSSubsystem::bIsInitialized</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to ignore request cancellation after subsystem is De-Initialized </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="86" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a0d47ef7f66920d94d80d1c15fb76d72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref></type>
+        <definition>FMassEQSRequestHandle UMassEQSSubsystem::PushRequest</definition>
+        <argsstring>(const FEnvQueryInstance &amp;QueryInstance, const int32 RequestQueueIndex, TUniquePtr&lt; FMassEQSRequestData &gt; &amp;&amp;Request)</argsstring>
+        <name>PushRequest</name>
+        <qualifiedname>UMassEQSSubsystem::PushRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FEnvQueryInstance</ref> &amp;</type>
+          <declname>QueryInstance</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>RequestQueueIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt; &amp;&amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push new Request into RequestQueue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="27" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="18" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1acb45a0f8d537d84e890e03196c7e002a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt;</type>
+        <definition>TUniquePtr&lt; FMassEQSRequestData &gt; UMassEQSSubsystem::PopRequest</definition>
+        <argsstring>(const int32 RequestQueueIndex)</argsstring>
+        <name>PopRequest</name>
+        <qualifiedname>UMassEQSSubsystem::PopRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>RequestQueueIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dequeue next Request off the RequestQueue, removing it from the queue, and transferring ownership of UniquePtr </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="30" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a425533e752dafa253e785c2e2b8d6c64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEQSSubsystem::SubmitResults</definition>
+        <argsstring>(FMassEQSRequestHandle RequestHandle, TUniquePtr&lt; FMassEQSRequestData &gt; &amp;&amp;Result)</argsstring>
+        <name>SubmitResults</name>
+        <qualifiedname>UMassEQSSubsystem::SubmitResults</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref></type>
+          <declname>RequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt; &amp;&amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send results from a finished/processed request to be stored in this subsystem </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="33" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="53" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1ae9495772511015f264427ba0fb596c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TUniquePtr</ref>&lt; <ref refid="struct_f_mass_e_q_s_request_data" kindref="compound">FMassEQSRequestData</ref> &gt;</type>
+        <definition>TUniquePtr&lt; FMassEQSRequestData &gt; UMassEQSSubsystem::TryAcquireResults</definition>
+        <argsstring>(FMassEQSRequestHandle RequestHandle)</argsstring>
+        <name>TryAcquireResults</name>
+        <qualifiedname>UMassEQSSubsystem::TryAcquireResults</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref></type>
+          <declname>RequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Try to Acquire the results from a request from the QueryInstance, if it is available. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="35" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="71" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1aa541365813d5fbc25550fd0fb16024c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UMassEQSSubsystem::GetRequestQueueIndex</definition>
+        <argsstring>(TSubclassOf&lt; UEnvQueryNode &gt; RequestClass)</argsstring>
+        <name>GetRequestQueueIndex</name>
+        <qualifiedname>UMassEQSSubsystem::GetRequestQueueIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UEnvQueryNode</ref> &gt;</type>
+          <declname>RequestClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the index into RequestQueues for the input class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="38" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="116" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a1ac06cd1a93471dd13bb6b2a237e58c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEQSSubsystem::CancelRequest</definition>
+        <argsstring>(FMassEQSRequestHandle RequestHandle)</argsstring>
+        <name>CancelRequest</name>
+        <qualifiedname>UMassEQSSubsystem::CancelRequest</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref></type>
+          <declname>RequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If Request in RequestQueue -&gt; Remove from Queue If Result in Results -&gt; Remove from Results Otherwise, Request is currently being processed -&gt; Log this ID as Cancelled, and ignore result when submitted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="45" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="130" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a7c9bb050f8dca1de83b8fc9aa0682fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEQSSubsystem::FinalizeRequest</definition>
+        <argsstring>(FMassEQSRequestHandle RequestHandle)</argsstring>
+        <name>FinalizeRequest</name>
+        <qualifiedname>UMassEQSSubsystem::FinalizeRequest</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_e_q_s_request_handle" kindref="compound">FMassEQSRequestHandle</ref></type>
+          <declname>RequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalization step for Handle Management </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="48" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a8ac3a731ae1f74ad9c0992dacfd281b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEQSSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMassEQSSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="50" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1ac629fe721a538e9108e4f70399ce4d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEQSSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMassEQSSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="51" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Private/MassEQSSubsystem.cpp" bodystart="102" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1af87d034e9004e604668ae59f619b00bd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassEQSSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</definition>
+        <argsstring>(RequestAccessDetector)</argsstring>
+        <name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name>
+        <qualifiedname>UMassEQSSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RequestAccessDetector</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The detector only guards the extension of RequestQueues array. Modifying specific elements is not guarded since those are a thread safe queues. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_e_q_s_subsystem_1a808913ecd900c12500e191f2c907fb84" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassEQSSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</definition>
+        <argsstring>(ResultAccessDetector)</argsstring>
+        <name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name>
+        <qualifiedname>UMassEQSSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ResultAccessDetector</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="75" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Subsystem for sending UMassEQSGenerator and UMassEQSTest requests to <ref refid="namespace_mass" kindref="compound">Mass</ref> Processors, and for returning the results back to EQS. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassEQSSubsystem</label>
+        <link refid="class_u_mass_e_q_s_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassEQSSubsystem</label>
+        <link refid="class_u_mass_e_q_s_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassEQS/Public/MassEQSSubsystem.h" bodystart="20" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_u_mass_e_q_s_subsystem_1afb16cb95f2924a2baa358e83cc819dca" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>bIsInitialized</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a81b7f68a710d142c2813a8b46eb3d48e" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>CancelledRequests</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a1ac06cd1a93471dd13bb6b2a237e58c6" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>CancelRequest</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1ac629fe721a538e9108e4f70399ce4d57" prot="public" virt="virtual"><scope>UMassEQSSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a7c9bb050f8dca1de83b8fc9aa0682fe5" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>FinalizeRequest</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1ace2e5aabb408fbfd019c755a60e47da5" prot="private" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>FRequestQueue</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1aa541365813d5fbc25550fd0fb16024c6" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>GetRequestQueueIndex</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1ac1c71f73985881a77e8965a26b57ea14" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>HandleManager</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a8ac3a731ae1f74ad9c0992dacfd281b1" prot="public" virt="virtual"><scope>UMassEQSSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1acb45a0f8d537d84e890e03196c7e002a" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>PopRequest</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a0d47ef7f66920d94d80d1c15fb76d72b" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>PushRequest</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1af794fa5819845e5ae767db3769df6554" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>RequestQueueLookup</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1aa32b1aa99c723cb121131ed5800202ea" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>RequestQueues</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1ac72e923d1668f8264ffbc7638b79cd8e" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>Results</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a425533e752dafa253e785c2e2b8d6c64" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>SubmitResults</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1ae9495772511015f264427ba0fb596c44" prot="public" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>TryAcquireResults</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1af87d034e9004e604668ae59f619b00bd" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name></member>
+      <member refid="class_u_mass_e_q_s_subsystem_1a808913ecd900c12500e191f2c907fb84" prot="protected" virt="non-virtual"><scope>UMassEQSSubsystem</scope><name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_data_protocol" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2DataProtocol</compoundname>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map" prot="public" virt="non-virtual">UE::PixelStreaming2Input::FInputProtocolMap</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_data_protocol_8h" local="no">IPixelStreaming2DataProtocol.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1aeee8d843d7bac63ca4fb3b7609fa25a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IPixelStreaming2DataProtocol::IPixelStreaming2DataProtocol</definition>
+        <argsstring>()=default</argsstring>
+        <name>IPixelStreaming2DataProtocol</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::IPixelStreaming2DataProtocol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1a090b51f022af236aa8900f8a43f249a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual IPixelStreaming2DataProtocol::~IPixelStreaming2DataProtocol</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IPixelStreaming2DataProtocol</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::~IPixelStreaming2DataProtocol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="17" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1a2d64fdec3b70207fcd07fe00b33d7200" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_message" kindref="compound">IPixelStreaming2InputMessage</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2InputMessage &gt; IPixelStreaming2DataProtocol::Add</definition>
+        <argsstring>(FString Key)=0</argsstring>
+        <name>Add</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::Add</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a6c2734a306c746cde508f0d2b91deca7">Add</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a custom message type, with no message body, to the protocol. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string identifier used to uniquely identify and query this message inside the protocol. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the new message was added to the protocol (fails if key is already present). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="24" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1add3b1da9c2c0840cc9804430ef144cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_message" kindref="compound">IPixelStreaming2InputMessage</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2InputMessage &gt; IPixelStreaming2DataProtocol::Add</definition>
+        <argsstring>(FString Key, TArray&lt; EPixelStreaming2MessageTypes &gt; InStructure)=0</argsstring>
+        <name>Add</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::Add</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a65add786cf6c7bc27d833d5871283d04">Add</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_pixel_streaming2_input_enums_8h_1a0c40ecf9eb2985ca3facaae958865448" kindref="member">EPixelStreaming2MessageTypes</ref> &gt;</type>
+          <declname>InStructure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a custom message type, with associated message structured, to the protocol. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string identifier used to uniquely identify and query this message inside the protocol. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the new message was added to the protocol (fails if key is already present). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="31" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1ad3eb9d652de92d5ed02aa1113a441f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_message" kindref="compound">IPixelStreaming2InputMessage</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2InputMessage &gt; IPixelStreaming2DataProtocol::Find</definition>
+        <argsstring>(FString Key)=0</argsstring>
+        <name>Find</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::Find</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a73e49c82648e2134d436cb8ccc2be0c8">Find</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Looks for the supplied message type in this protocol. This call should primarily be made from user code when the user has supplied a custom message type to the protocol. Note: If you are looking for a default message type consider using the Get() methods and passing one of the From/ToStreamer message enums to avoid typos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string representation of the message type we are looking for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The message type associated with the <computeroutput>FromStreamer</computeroutput> message type passed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="40" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1a3c97eacda56a9a83ac86cce33ec040e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; FJsonObject &gt; IPixelStreaming2DataProtocol::ToJson</definition>
+        <argsstring>()=0</argsstring>
+        <name>ToJson</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::ToJson</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a007fe61c91609236044de0643fc5f877">ToJson</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A JSON schema representing the data protocol. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="45" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1a12a53fe87f2b789eda9a20c169b03a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IPixelStreaming2DataProtocol::DECLARE_MULTICAST_DELEGATE</definition>
+        <argsstring>(FOnProtocolUpdated)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::DECLARE_MULTICAST_DELEGATE</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnProtocolUpdated</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_data_protocol_1a8b6544ecb5c4fd51bb24b79254931f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnProtocolUpdated</ref> &amp;</type>
+        <definition>virtual FOnProtocolUpdated &amp; IPixelStreaming2DataProtocol::OnProtocolUpdated</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnProtocolUpdated</name>
+        <qualifiedname>IPixelStreaming2DataProtocol::OnProtocolUpdated</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map_1a0f8c1cd7c5b4bdc971f58433c39fd2c7">OnProtocolUpdated</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called any time to protocol has a new data type added to it. Internally this will force Pixel Streaming to resend the entire data protocol. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="52" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface for a datachannel protocol. The user is not meant to extend this through polymorphism, but rather request the appropriate protocol from the InputHandler and extend it using <ref refid="_building_types_8h_1a1fe04f1c3c66de0209d8b8744958190eaec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add()</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IPixelStreaming2DataProtocol</label>
+        <link refid="class_i_pixel_streaming2_data_protocol"/>
+      </node>
+      <node id="2">
+        <label>UE::PixelStreaming2Input::FInputProtocolMap</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_input_protocol_map"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" line="13" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2DataProtocol.h" bodystart="14" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_data_protocol_1a2d64fdec3b70207fcd07fe00b33d7200" prot="public" virt="pure-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>Add</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1add3b1da9c2c0840cc9804430ef144cbd" prot="public" virt="pure-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>Add</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1a12a53fe87f2b789eda9a20c169b03a2b" prot="public" virt="non-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>DECLARE_MULTICAST_DELEGATE</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1ad3eb9d652de92d5ed02aa1113a441f4f" prot="public" virt="pure-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>Find</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1aeee8d843d7bac63ca4fb3b7609fa25a6" prot="public" virt="non-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>IPixelStreaming2DataProtocol</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1a8b6544ecb5c4fd51bb24b79254931f2b" prot="public" virt="pure-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>OnProtocolUpdated</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1a3c97eacda56a9a83ac86cce33ec040e0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2DataProtocol</scope><name>ToJson</name></member>
+      <member refid="class_i_pixel_streaming2_data_protocol_1a090b51f022af236aa8900f8a43f249a2" prot="public" virt="virtual"><scope>IPixelStreaming2DataProtocol</scope><name>~IPixelStreaming2DataProtocol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

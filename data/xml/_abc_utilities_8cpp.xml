@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_abc_utilities_8cpp" kind="file" language="C++">
+    <compoundname>AbcUtilities.cpp</compoundname>
+    <includes refid="_abc_utilities_8h" local="yes">AbcUtilities.h</includes>
+    <includes refid="_abc_file_8h" local="yes">AbcFile.h</includes>
+    <includes refid="_abc_import_settings_8h" local="yes">AbcImportSettings.h</includes>
+    <includes refid="_abc_import_utilities_8h" local="yes">AbcImportUtilities.h</includes>
+    <includes local="yes">GeometryCache.h</includes>
+    <includes local="yes">GeometryCacheMeshData.h</includes>
+    <includes local="yes">MaterialDomain.h</includes>
+    <includes local="yes">Materials/Material.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>AbcImportUtilities.h</label>
+        <link refid="_abc_import_utilities_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcUtilities.cpp</label>
+        <link refid="_abc_utilities_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbcFile.h</label>
+        <link refid="_abc_file_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AbcImportSettings.h</label>
+        <link refid="_abc_import_settings_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbcUtilities.h</label>
+        <link refid="_abc_utilities_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AbcImportSettings.generated.h</label>
+      </node>
+      <node id="15">
+        <label>Alembic/Abc/All.h</label>
+      </node>
+      <node id="7">
+        <label>Alembic/Abc/IArchive.h</label>
+      </node>
+      <node id="8">
+        <label>Alembic/Abc/IObject.h</label>
+      </node>
+      <node id="14">
+        <label>Alembic/AbcCoreAbstract/TimeSampling.h</label>
+      </node>
+      <node id="6">
+        <label>Alembic/AbcCoreFactory/IFactory.h</label>
+      </node>
+      <node id="16">
+        <label>Alembic/AbcGeom/All.h</label>
+      </node>
+      <node id="9">
+        <label>Alembic/AbcGeom/IPolyMesh.h</label>
+      </node>
+      <node id="17">
+        <label>GeometryCache.h</label>
+      </node>
+      <node id="18">
+        <label>GeometryCacheMeshData.h</label>
+      </node>
+      <node id="3">
+        <label>HAL/Platform.h</label>
+      </node>
+      <node id="19">
+        <label>MaterialDomain.h</label>
+      </node>
+      <node id="20">
+        <label>Materials/Material.h</label>
+      </node>
+      <node id="5">
+        <label>Math/BoxSphereBounds.h</label>
+      </node>
+      <node id="13">
+        <label>UObject/ObjectMacros.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_utilities_8h" kindref="compound">AbcUtilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_file_8h" kindref="compound">AbcFile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_import_settings_8h" kindref="compound">AbcImportSettings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_import_utilities_8h" kindref="compound">AbcImportUtilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GeometryCache.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GeometryCacheMeshData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MaterialDomain.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Materials/Material.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_utilities_1ae14f8d78f7a867c3b0dc3bcf67110052" kindref="member">FAbcUtilities::GetFrameMeshData</ref>(<ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref>&amp;<sp/>AbcFile,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGeometryCacheMeshData</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMeshData</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ConcurrencyIndex</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>AbcFile.<ref refid="class_f_abc_file_1ac5ff463a3ce40a16279293b78cf7195b" kindref="member">ReadFrame</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>,<sp/><ref refid="_abc_file_8h_1a15f9115e5b9abcc496ea4065f26df803a9998eb7bd92046dc5d55243f3b823177" kindref="member">EFrameReadFlags::ApplyMatrix</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ConcurrencyIndex</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_u_abc_import_settings" kindref="compound">UAbcImportSettings</ref>*<sp/>ImportSettings<sp/>=<sp/>AbcFile.<ref refid="class_f_abc_file_1a786d3ed2a2f26d0023ce8e04ac0ecc26" kindref="member">GetImportSettings</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkSlow</ref>(ImportSettings);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameTime</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGeometryCacheMeshData</ref><sp/>MeshData;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PreviousNumVertices</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bConstantTopology<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bUseVelocitiesAsMotionVectors</ref><sp/>=<sp/>ImportSettings-&gt;<ref refid="class_u_abc_import_settings_1a52fe835260e45bd6421582cc5ad637e8" kindref="member">GeometryCacheSettings</ref>.<ref refid="struct_f_abc_geometry_cache_settings_1ad0f3ae86dd5af5ed0fe16e80be632b90" kindref="member">MotionVectors</ref><sp/>==<sp/><ref refid="_abc_import_settings_8h_1a014587c45fb8ab580a4c3ac67cae5448ac24832fc55e326a934fc1ec77b3526ff" kindref="member">EAbcGeometryCacheMotionVectorsImport::ImportAbcVelocitiesAsMotionVectors</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bStoreImportedVertexNumbers<sp/>=<sp/>ImportSettings-&gt;<ref refid="class_u_abc_import_settings_1a52fe835260e45bd6421582cc5ad637e8" kindref="member">GeometryCacheSettings</ref>.<ref refid="struct_f_abc_geometry_cache_settings_1a94a1ed41706437629f1a4bbb4c9d76a2" kindref="member">bStoreImportedVertexNumbers</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_abc_importer_utilities_1a36f611400a59acd73d222cf4ed22070c" kindref="member">AbcImporterUtilities::MergePolyMeshesToMeshData</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>,<sp/>0,<sp/>AbcFile.<ref refid="class_f_abc_file_1ab0aba8c6201ac829c8d6b42caa870d91" kindref="member">GetSecondsPerFrame</ref>(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bUseVelocitiesAsMotionVectors</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AbcFile.<ref refid="class_f_abc_file_1ab30fe602005381d9a01095091feceeae" kindref="member">GetPolyMeshes</ref>(),<sp/>AbcFile.<ref refid="class_f_abc_file_1af2e9b66167fc5f63a7cbd882d0c18ec2" kindref="member">GetLookupMaterialSlot</ref>(),<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameTime</ref>,<sp/>MeshData,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PreviousNumVertices</ref>,<sp/>bConstantTopology,<sp/>bStoreImportedVertexNumbers);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OutMeshData</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MoveTemp</ref>(MeshData);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>AbcFile.<ref refid="class_f_abc_file_1a0b401aafbab76c7c4e66b48df964422c" kindref="member">CleanupFrameData</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ConcurrencyIndex</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_utilities_1a4e4ce34cb6f063d18789ab591a0c3ff5" kindref="member">FAbcUtilities::SetupGeometryCacheMaterials</ref>(<ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref>&amp;<sp/>AbcFile,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UGeometryCache</ref>*<sp/>GeometryCache,<sp/>UObject*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Package</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>GeometryCache-&gt;Materials.Reset();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EObjectFlags</ref><sp/>Flags<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RF_Public</ref><sp/>|<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RF_Standalone</ref><sp/>|<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">RF_Transactional</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterial</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DefaultMaterial</ref><sp/>=<sp/>UMaterial::GetDefaultMaterial(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MD_Surface</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FaceSetName</ref><sp/>:<sp/>AbcFile.GetUniqueFaceSetNames())</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInterface</ref>*<sp/>Material<sp/>=<sp/><ref refid="namespace_abc_importer_utilities_1a497d887e655b33871392939c96398bb7" kindref="member">AbcImporterUtilities::RetrieveMaterial</ref>(AbcFile,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FaceSetName</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Package</ref>,<sp/>Flags);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GeometryCache-&gt;Materials.Add((Material<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>?<sp/>Material<sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DefaultMaterial</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Material<sp/>!=<sp/>UMaterial::GetDefaultMaterial(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MD_Surface</ref>))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Material-&gt;PostEditChange();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcUtilities.cpp"/>
+  </compounddef>
+</doxygen>

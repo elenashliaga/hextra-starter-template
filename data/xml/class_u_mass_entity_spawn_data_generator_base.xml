@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_entity_spawn_data_generator_base" kind="class" language="C++" prot="public">
+    <compoundname>UMassEntitySpawnDataGeneratorBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <derivedcompoundref refid="class_u_mass_entity_e_q_s_spawn_points_generator" prot="public" virt="non-virtual">UMassEntityEQSSpawnPointsGenerator</derivedcompoundref>
+    <derivedcompoundref refid="class_u_mass_entity_zone_graph_spawn_points_generator" prot="public" virt="non-virtual">UMassEntityZoneGraphSpawnPointsGenerator</derivedcompoundref>
+    <includes refid="_mass_entity_spawn_data_generator_base_8h" local="no">MassEntitySpawnDataGeneratorBase.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_mass_entity_spawn_data_generator_base_1a472db8a3678eaffd1e899ab5b27fe98f" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref> Generate(UObject &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">QueryOwner</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_mass_spawned_entity_type" kindref="compound">FMassSpawnedEntityType</ref> &gt; EntityTypes, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> Count, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FFinishedGeneratingSpawnDataSignature</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FinishedGeneratingSpawnPointsDelegate</ref>) <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PURE_VIRTUAL</ref>(<ref refid="class_u_mass_entity_spawn_data_generator_base" kindref="compound">UMassEntitySpawnDataGeneratorBase</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassEntitySpawnDataGeneratorBase::BuildResultsFromEntityTypes</definition>
+        <argsstring>(const int32 SpawnCount, TConstArrayView&lt; FMassSpawnedEntityType &gt; EntityTypes, TArray&lt; FMassEntitySpawnDataGeneratorResult &gt; &amp;OutResults) const</argsstring>
+        <name>BuildResultsFromEntityTypes</name>
+        <qualifiedname>UMassEntitySpawnDataGeneratorBase::BuildResultsFromEntityTypes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate &quot;Count&quot; number of SpawnPoints and return as a list of position <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of point to generate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FinishedGeneratingSpawnPointsDelegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the callback to call once the generation is done Populates empty generator results from EntityTypes based on the provided proportions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many entities to distributed among the EntityTypes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntityTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types of entities to generate data for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutResults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generator result for each entity type that had &gt; 0 entities assigned to it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" line="68" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_entity_spawn_data_generator_base_1a41f0109663d679296d016d21a9f38684" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UMassEntitySpawnDataGeneratorBase::RandomSelectionSeed</definition>
+        <argsstring></argsstring>
+        <name>RandomSelectionSeed</name>
+        <qualifiedname>UMassEntitySpawnDataGeneratorBase::RandomSelectionSeed</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" line="74" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_entity_spawn_data_generator_base_1a0427ee2afc08fcf7e36d2f135f4e4630" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UMassEntitySpawnDataGeneratorBase::bUseCustomSeed</definition>
+        <argsstring></argsstring>
+        <name>bUseCustomSeed</name>
+        <qualifiedname>UMassEntitySpawnDataGeneratorBase::bUseCustomSeed</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" line="77" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_entity_spawn_data_generator_base_1adb9a3ef2f81e7154f7c9609210a75b58" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UMassEntitySpawnDataGeneratorBase::GetRandomSelectionSeed</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomSelectionSeed</name>
+        <qualifiedname>UMassEntitySpawnDataGeneratorBase::GetRandomSelectionSeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" line="71" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for <ref refid="namespace_mass" kindref="compound">Mass</ref> Entity Spawn Points Generator. A <ref refid="namespace_mass" kindref="compound">Mass</ref> Spawn Points Generator can be of several type (EQS, ZoneGraph, Volume, Area, etc.) The concept is to override the <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GenerateSpawnPoints()</ref> method and requesting a certain number of Spawn Point Locations to the method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>UMassEntityEQSSpawnPointsGenerator</label>
+        <link refid="class_u_mass_entity_e_q_s_spawn_points_generator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UMassEntitySpawnDataGeneratorBase</label>
+        <link refid="class_u_mass_entity_spawn_data_generator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UMassEntityZoneGraphSpawnPointsGenerator</label>
+        <link refid="class_u_mass_entity_zone_graph_spawn_points_generator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassEntitySpawnDataGeneratorBase</label>
+        <link refid="class_u_mass_entity_spawn_data_generator_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>BuildResultsFromEntityTypes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" line="51" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassEntitySpawnDataGeneratorBase.h" bodystart="52" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_u_mass_entity_spawn_data_generator_base_1a472db8a3678eaffd1e899ab5b27fe98f" prot="public" virt="non-virtual"><scope>UMassEntitySpawnDataGeneratorBase</scope><name>BuildResultsFromEntityTypes</name></member>
+      <member refid="class_u_mass_entity_spawn_data_generator_base_1a0427ee2afc08fcf7e36d2f135f4e4630" prot="protected" virt="non-virtual"><scope>UMassEntitySpawnDataGeneratorBase</scope><name>bUseCustomSeed</name></member>
+      <member refid="class_u_mass_entity_spawn_data_generator_base_1adb9a3ef2f81e7154f7c9609210a75b58" prot="protected" virt="non-virtual"><scope>UMassEntitySpawnDataGeneratorBase</scope><name>GetRandomSelectionSeed</name></member>
+      <member refid="class_u_mass_entity_spawn_data_generator_base_1a41f0109663d679296d016d21a9f38684" prot="protected" virt="non-virtual"><scope>UMassEntitySpawnDataGeneratorBase</scope><name>RandomSelectionSeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

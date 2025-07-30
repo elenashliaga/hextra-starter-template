@@ -1,0 +1,915 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_1_1_f_stats" kind="class" language="C++" prot="public">
+    <compoundname>UE::PixelStreaming2::FStats</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FTickableGameObject</basecompoundref>
+    <basecompoundref refid="class_i_pixel_streaming2_stats" prot="public" virt="non-virtual">IPixelStreaming2Stats</basecompoundref>
+    <includes refid="_stats_8h" local="no">Stats.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a9c90e338232e7fcd2aa8b3f21cde93d0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>constexpr double UE::PixelStreaming2::FStats::SmoothingPeriod</definition>
+        <argsstring></argsstring>
+        <name>SmoothingPeriod</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::SmoothingPeriod</qualifiedname>
+        <initializer>= 3.0 * 60.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="135" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a0a4af157675df97cb5fb710470766df0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>constexpr double UE::PixelStreaming2::FStats::SmoothingFactor</definition>
+        <argsstring></argsstring>
+        <name>SmoothingFactor</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::SmoothingFactor</qualifiedname>
+        <initializer>= 10.0 / 100.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="136" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ac518a92d430f86ca729032f26ade08da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref></type>
+        <definition>friend class IPixelStreaming2Stats</definition>
+        <argsstring></argsstring>
+        <name>IPixelStreaming2Stats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::IPixelStreaming2Stats</qualifiedname>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_stats" kindref="compound">IPixelStreaming2Stats</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="161" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ad3d25b61613faac9d09ff727dfbcfeae" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats" kindref="compound">FStats</ref> *</type>
+        <definition>FStats * UE::PixelStreaming2::FStats::Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::Instance</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="177" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a44ca07b461238b8b348e801ea4170682" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FStats::PeerStatsCS</definition>
+        <argsstring></argsstring>
+        <name>PeerStatsCS</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::PeerStatsCS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="179" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a0bb5c43a35b323b273ae29f822a84acb" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_peer_stats" kindref="compound">FPeerStats</ref> &gt;</type>
+        <definition>TMap&lt;FString, FPeerStats&gt; UE::PixelStreaming2::FStats::PeerStats</definition>
+        <argsstring></argsstring>
+        <name>PeerStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::PeerStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="180" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a68f61e71828fe71e343c20159a46a90f" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FStats::ApplicationStatsCS</definition>
+        <argsstring></argsstring>
+        <name>ApplicationStatsCS</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::ApplicationStatsCS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="182" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ae6a5695c064ad007365538cc8c14a90f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>, <ref refid="struct_u_e_1_1_pixel_streaming2_1_1_f_stored_stat" kindref="compound">FStoredStat</ref> &gt;</type>
+        <definition>TMap&lt;FName, FStoredStat&gt; UE::PixelStreaming2::FStats::ApplicationStats</definition>
+        <argsstring></argsstring>
+        <name>ApplicationStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::ApplicationStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="183" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a7925c0c422c5df06cf696f308fb4c1fc" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int64</ref></type>
+        <definition>int64 UE::PixelStreaming2::FStats::LastTimeSettingsPolledCycles</definition>
+        <argsstring></argsstring>
+        <name>LastTimeSettingsPolledCycles</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::LastTimeSettingsPolledCycles</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="185" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a00953742591375f085bd453c15cdd79e" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>, <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_debug_graph" kindref="compound">FDebugGraph</ref> &gt;</type>
+        <definition>TMap&lt;FName, FDebugGraph&gt; UE::PixelStreaming2::FStats::Graphs</definition>
+        <argsstring></argsstring>
+        <name>Graphs</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::Graphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="187" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a1fae6df85083aeec6fd388f623e92667" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCanvasTileItem</ref> &gt;</type>
+        <definition>TMap&lt;FName, FCanvasTileItem&gt; UE::PixelStreaming2::FStats::Tiles</definition>
+        <argsstring></argsstring>
+        <name>Tiles</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::Tiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="188" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3e463430e9c936eaed45f853d6089e85" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UE::PixelStreaming2::FStats::StatNotificationCS</definition>
+        <argsstring></argsstring>
+        <name>StatNotificationCS</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::StatNotificationCS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="190" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a427e065f0861480142a5a23eda7fe23f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool UE::PixelStreaming2::FStats::IsTickableInEditor</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsTickableInEditor</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::IsTickableInEditor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="133" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1aae37e769b2b8eaf76f7b2c7050f9dba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2::FStats::FStats</definition>
+        <argsstring>(const FStats &amp;)=delete</argsstring>
+        <name>FStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::FStats</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats" kindref="compound">FStats</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1abc7a12a1e163425bc2120477a14e8368" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2::FStats::QueryPeerStat</definition>
+        <argsstring>(const FString &amp;PlayerId, FName StatCategory, FName StatToQuery, double &amp;OutValue) const</argsstring>
+        <name>QueryPeerStat</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::QueryPeerStat</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StatCategory</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StatToQuery</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref> &amp;</type>
+          <declname>OutValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="140" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="82" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a51cc3ebff4e357dbf0a91e803de14ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::RemovePeerStats</definition>
+        <argsstring>(const FString &amp;PlayerId)</argsstring>
+        <name>RemovePeerStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::RemovePeerStats</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="141" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="116" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a120cec58eed82aae1c66684f15aec5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::RemoveAllPeerStats</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAllPeerStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::RemoveAllPeerStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="142" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="424" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a92cb25ce403cc3b451b1899abc314584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::StorePeerStat</definition>
+        <argsstring>(const FString &amp;PlayerId, FName StatCategory, FStatData Stat)</argsstring>
+        <name>StorePeerStat</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::StorePeerStat</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StatCategory</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_u_e_1_1_pixel_streaming2_1_1_f_stat_data" kindref="compound">FStatData</ref></type>
+          <declname>Stat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="143" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="51" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ae259a0eef065f9e7ec523af0b2f3b8ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::StoreApplicationStat</definition>
+        <argsstring>(FStatData PeerStat)</argsstring>
+        <name>StoreApplicationStat</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::StoreApplicationStat</qualifiedname>
+        <param>
+          <type><ref refid="struct_u_e_1_1_pixel_streaming2_1_1_f_stat_data" kindref="compound">FStatData</ref></type>
+          <declname>PeerStat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="144" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="155" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ad8558cb13ee675086eca27f7cc86b297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::Tick</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>Tick</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="145" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ab92a24a644868bdc36c5315d8ef99930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2::FStats::OnToggleStats</definition>
+        <argsstring>(UWorld *World, FCommonViewportClient *ViewportClient, const TCHAR *Stream)</argsstring>
+        <name>OnToggleStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::OnToggleStats</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCommonViewportClient</ref> *</type>
+          <declname>ViewportClient</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TCHAR</ref> *</type>
+          <declname>Stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="147" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a50b1c40973eb82d4467707a276335c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FStats::OnRenderStats</definition>
+        <argsstring>(UWorld *World, FViewport *Viewport, FCanvas *Canvas, int32 X, int32 Y, const FVector *ViewLocation, const FRotator *ViewRotation)</argsstring>
+        <name>OnRenderStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::OnRenderStats</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FViewport</ref> *</type>
+          <declname>Viewport</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCanvas</ref> *</type>
+          <declname>Canvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> *</type>
+          <declname>ViewLocation</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> *</type>
+          <declname>ViewRotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="148" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="255" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a75941aca673d8a5b6b7747c3151ad318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UE::PixelStreaming2::FStats::OnToggleGraphs</definition>
+        <argsstring>(UWorld *World, FCommonViewportClient *ViewportClient, const TCHAR *Stream)</argsstring>
+        <name>OnToggleGraphs</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::OnToggleGraphs</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCommonViewportClient</ref> *</type>
+          <declname>ViewportClient</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TCHAR</ref> *</type>
+          <declname>Stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="150" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1af5c80fd6fbe861432f566d752f71b941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UE::PixelStreaming2::FStats::OnRenderGraphs</definition>
+        <argsstring>(UWorld *World, FViewport *Viewport, FCanvas *Canvas, int32 X, int32 Y, const FVector *ViewLocation, const FRotator *ViewRotation)</argsstring>
+        <name>OnRenderGraphs</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::OnRenderGraphs</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FViewport</ref> *</type>
+          <declname>Viewport</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCanvas</ref> *</type>
+          <declname>Canvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> *</type>
+          <declname>ViewLocation</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> *</type>
+          <declname>ViewRotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="151" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="364" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a8709322a2abf19dc879045a73abd4d70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStatId</ref></type>
+        <definition>FORCEINLINE TStatId UE::PixelStreaming2::FStats::GetStatId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStatId</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::GetStatId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="153" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1abed8dcb748c142e6da6a875bcadf5bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double UE::PixelStreaming2::FStats::AddTimeStat</definition>
+        <argsstring>(uint64 Millis, const FString &amp;Label)</argsstring>
+        <name>AddTimeStat</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::AddTimeStat</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+          <declname>Millis</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="155" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="626" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a86afd95b4391b23a7430f6bf92413037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double UE::PixelStreaming2::FStats::AddTimeDeltaStat</definition>
+        <argsstring>(uint64 Millis1, uint64 Millis2, const FString &amp;Label)</argsstring>
+        <name>AddTimeDeltaStat</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::AddTimeDeltaStat</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+          <declname>Millis1</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+          <declname>Millis2</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="156" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="634" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1acfa72fbabc371ab25c2412d7618480b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::AddFrameTimingStats</definition>
+        <argsstring>(const FPixelCaptureFrameMetadata &amp;FrameMetadata)</argsstring>
+        <name>AddFrameTimingStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::AddFrameTimingStats</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPixelCaptureFrameMetadata</ref> &amp;</type>
+          <declname>FrameMetadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="157" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="644" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3289544e5272aa89e69085a51e176853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::AddCanvasTile</definition>
+        <argsstring>(FName Name, const FCanvasTileItem &amp;Tile)</argsstring>
+        <name>AddCanvasTile</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::AddCanvasTile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCanvasTileItem</ref> &amp;</type>
+          <declname>Tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="158" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="666" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a7ce80c5c416bd5edd97dd4593e8f8c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::GraphValue</definition>
+        <argsstring>(FName InName, float Value, int InSamples, float InMinRange, float InMaxRange, float InRefValue=0.0f) override</argsstring>
+        <name>GraphValue</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::GraphValue</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_stats_1a66609ed9f3f32b274ca49ea45468de43">GraphValue</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>InName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSamples</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMinRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMaxRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InRefValue</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Graphs a value in a real-time plot that is visible when <computeroutput>stat PixelStreaming2Graphs</computeroutput> is used. If a graph of this name has not been graphed before this will also create the graph internally. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the stat to graph, this is used in the graph title and must be unique. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InSamples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of samples (along the x-axis) we wish to graph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InMinRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value we expect for this value we are graphing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InMaxRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value we expect for this value we are graphing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InRefValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference value that we draw in the graph as a horizontal line, this can be useful to see if we are within some threshold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="162" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="597" bodyend="609"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a6a4ed6e3c703448dfff36a7ee3b4ae98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats" kindref="compound">FStats</ref> *</type>
+        <definition>FStats * UE::PixelStreaming2::FStats::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="137" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="35" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a55e453000ca99933565ab08bf81b2244" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2::FStats::FStats</definition>
+        <argsstring>()</argsstring>
+        <name>FStats</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::FStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="166" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a5f1f51572a180caa5dc5de55b548b4a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::RegisterEngineHooks</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterEngineHooks</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::RegisterEngineHooks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="168" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="430" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ac5860401bfe1f3b475c489bc08f162fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::UpdateConsoleAutoComplete</definition>
+        <argsstring>(TArray&lt; FAutoCompleteCommand &gt; &amp;AutoCompleteList)</argsstring>
+        <name>UpdateConsoleAutoComplete</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::UpdateConsoleAutoComplete</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FAutoCompleteCommand</ref> &gt; &amp;</type>
+          <declname>AutoCompleteList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="169" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="236" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1aad5f56ef429aa837aa72fef7b2e651f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::PollPixelStreaming2Settings</definition>
+        <argsstring>()</argsstring>
+        <name>PollPixelStreaming2Settings</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::PollPixelStreaming2Settings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="171" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="402" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a9a52e30e9553b1075b1f1b6635eab7f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::FireStatChanged</definition>
+        <argsstring>(const FString &amp;PlayerId, FName StatName, float StatValue)</argsstring>
+        <name>FireStatChanged</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::FireStatChanged</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StatName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>StatValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="172" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="223" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a09ee9426dac0c46d63a4d679e93b6659" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::GraphValue_GameThread</definition>
+        <argsstring>(FName InName, float Value, int InSamples, float InMinRange, float InMaxRange, float InRefValue)</argsstring>
+        <name>GraphValue_GameThread</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::GraphValue_GameThread</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>InName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSamples</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMinRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InMaxRange</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InRefValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="173" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="611" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3df3fc0b1315ef7cfd905e20261e01c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FStats::AddCanvasTile_GameThread</definition>
+        <argsstring>(FName Name, const FCanvasTileItem &amp;Tile)</argsstring>
+        <name>AddCanvasTile_GameThread</name>
+        <qualifiedname>UE::PixelStreaming2::FStats::AddCanvasTile_GameThread</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCanvasTileItem</ref> &amp;</type>
+          <declname>Tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="174" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.cpp" bodystart="680" bodyend="684"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FTickableGameObject</label>
+      </node>
+      <node id="3">
+        <label>IPixelStreaming2Stats</label>
+        <link refid="class_i_pixel_streaming2_stats"/>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FStats</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FTickableGameObject</label>
+      </node>
+      <node id="3">
+        <label>IPixelStreaming2Stats</label>
+        <link refid="class_i_pixel_streaming2_stats"/>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FStats</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" line="130" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Stats.h" bodystart="131" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3289544e5272aa89e69085a51e176853" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>AddCanvasTile</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3df3fc0b1315ef7cfd905e20261e01c9" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>AddCanvasTile_GameThread</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1acfa72fbabc371ab25c2412d7618480b3" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>AddFrameTimingStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a86afd95b4391b23a7430f6bf92413037" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>AddTimeDeltaStat</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1abed8dcb748c142e6da6a875bcadf5bd1" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>AddTimeStat</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ae6a5695c064ad007365538cc8c14a90f" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>ApplicationStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a68f61e71828fe71e343c20159a46a90f" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>ApplicationStatsCS</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a9a52e30e9553b1075b1f1b6635eab7f7" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>FireStatChanged</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1aae37e769b2b8eaf76f7b2c7050f9dba8" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>FStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a55e453000ca99933565ab08bf81b2244" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>FStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a6a4ed6e3c703448dfff36a7ee3b4ae98" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>Get</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a8709322a2abf19dc879045a73abd4d70" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>GetStatId</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a00953742591375f085bd453c15cdd79e" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>Graphs</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a7ce80c5c416bd5edd97dd4593e8f8c7e" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FStats</scope><name>GraphValue</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a09ee9426dac0c46d63a4d679e93b6659" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>GraphValue_GameThread</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ad3d25b61613faac9d09ff727dfbcfeae" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>Instance</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ac518a92d430f86ca729032f26ade08da" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>IPixelStreaming2Stats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a427e065f0861480142a5a23eda7fe23f" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FStats</scope><name>IsTickableInEditor</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a7925c0c422c5df06cf696f308fb4c1fc" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>LastTimeSettingsPolledCycles</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1af5c80fd6fbe861432f566d752f71b941" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>OnRenderGraphs</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a50b1c40973eb82d4467707a276335c68" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>OnRenderStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a75941aca673d8a5b6b7747c3151ad318" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>OnToggleGraphs</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ab92a24a644868bdc36c5315d8ef99930" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>OnToggleStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a0bb5c43a35b323b273ae29f822a84acb" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>PeerStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a44ca07b461238b8b348e801ea4170682" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>PeerStatsCS</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1aad5f56ef429aa837aa72fef7b2e651f2" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>PollPixelStreaming2Settings</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1abc7a12a1e163425bc2120477a14e8368" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>QueryPeerStat</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a5f1f51572a180caa5dc5de55b548b4a0" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>RegisterEngineHooks</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a120cec58eed82aae1c66684f15aec5c7" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>RemoveAllPeerStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a51cc3ebff4e357dbf0a91e803de14ec7" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>RemovePeerStats</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a0a4af157675df97cb5fb710470766df0" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>SmoothingFactor</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a9c90e338232e7fcd2aa8b3f21cde93d0" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>SmoothingPeriod</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a3e463430e9c936eaed45f853d6089e85" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>StatNotificationCS</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ae259a0eef065f9e7ec523af0b2f3b8ee" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>StoreApplicationStat</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a92cb25ce403cc3b451b1899abc314584" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>StorePeerStat</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ad8558cb13ee675086eca27f7cc86b297" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>Tick</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1a1fae6df85083aeec6fd388f623e92667" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>Tiles</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_stats_1ac5860401bfe1f3b475c489bc08f162fe" prot="private" virt="non-virtual"><scope>UE::PixelStreaming2::FStats</scope><name>UpdateConsoleAutoComplete</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

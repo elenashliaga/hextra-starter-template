@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_buildings_dictionary" kind="class" language="C++" prot="public">
+    <compoundname>ABuildingsDictionary</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <derivedcompoundref refid="class_a_find_system_controller" prot="public" virt="non-virtual">AFindSystemController</derivedcompoundref>
+    <includes refid="_buildings_dictionary_8h" local="no">BuildingsDictionary.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_buildings_dictionary_1acad7757f703d747aa813a578348ec457" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt;</type>
+        <definition>TArray&lt;ABuildingCoreBase*&gt; ABuildingsDictionary::CacheBuildingsCurrentMap</definition>
+        <argsstring></argsstring>
+        <name>CacheBuildingsCurrentMap</name>
+        <qualifiedname>ABuildingsDictionary::CacheBuildingsCurrentMap</qualifiedname>
+        <briefdescription>
+<para>Получает (или создаёт) экземпляр <ref refid="class_a_buildings_dictionary" kindref="compound">ABuildingsDictionary</ref>, привязанный к переданному BuildingManager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на менеджер хранения зданий. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на <ref refid="class_a_buildings_dictionary" kindref="compound">ABuildingsDictionary</ref>.</para>
+</simplesect>
+Получает менеджер зданий (BuildingInformationStorageManagerBase).</para>
+<para><simplesect kind="return"><para>Указатель на <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref>.</para>
+</simplesect>
+Консольные команды (из FindConsoleCommands).</para>
+<para>Новый контейнер для хранения всех зданий, в котором выполняется линейный поиск. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingsDictionary.h" line="67" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingsDictionary.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_buildings_dictionary_1ac047803a6823c582b04237ff5a040290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ABuildingsDictionary::ABuildingsDictionary</definition>
+        <argsstring>()</argsstring>
+        <name>ABuildingsDictionary</name>
+        <qualifiedname>ABuildingsDictionary::ABuildingsDictionary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingsDictionary.h" line="36" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingsDictionary.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс-словарь зданий (изначально строил хеш-дерево). Теперь адаптирован под упрощённый поиск, но при этом сохраняет тот же API (GenerateHashTree, FindBuilding, HashTreeBuilding), чтобы не ломать существующий код. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ABuildingsDictionary</label>
+        <link refid="class_a_buildings_dictionary"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AFindSystemController</label>
+        <link refid="class_a_find_system_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ABuildingsDictionary</label>
+        <link refid="class_a_buildings_dictionary"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingsDictionary.h" line="31" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingsDictionary.h" bodystart="32" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_a_buildings_dictionary_1ac047803a6823c582b04237ff5a040290" prot="public" virt="non-virtual"><scope>ABuildingsDictionary</scope><name>ABuildingsDictionary</name></member>
+      <member refid="class_a_buildings_dictionary_1acad7757f703d747aa813a578348ec457" prot="protected" virt="non-virtual"><scope>ABuildingsDictionary</scope><name>CacheBuildingsCurrentMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

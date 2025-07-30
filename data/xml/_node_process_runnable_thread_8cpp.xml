@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_node_process_runnable_thread_8cpp" kind="file" language="C++">
+    <compoundname>NodeProcessRunnableThread.cpp</compoundname>
+    <includes refid="_node_process_runnable_thread_8h" local="yes">NodeProcessRunnableThread.h</includes>
+    <includes local="yes">HAL/PlatformProcess.h</includes>
+    <includes local="yes">HAL/RunnableThread.h</includes>
+    <includes local="yes">Misc/Paths.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/Bridge/Private/NodeProcessRunnableThread.cpp</label>
+        <link refid="_node_process_runnable_thread_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NodeProcessRunnableThread.h</label>
+        <link refid="_node_process_runnable_thread_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>HAL/PlatformProcess.h</label>
+      </node>
+      <node id="3">
+        <label>HAL/Runnable.h</label>
+      </node>
+      <node id="5">
+        <label>HAL/RunnableThread.h</label>
+      </node>
+      <node id="6">
+        <label>Misc/Paths.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node_process_runnable_thread_8h" kindref="compound">NodeProcessRunnableThread.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HAL/PlatformProcess.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HAL/RunnableThread.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/Paths.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_node_process_runnable_thread_1a2858e7e16ba4973785a7be3a23afc9a7" kindref="member">NodeProcessRunnableThread::NodeProcessRunnableThread</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_node_process_runnable_thread_1a55e24b10a98e773162f8fca286cd4918" kindref="member">Thread</ref><sp/>=<sp/>FRunnableThread::Create(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Bridge<sp/>Background<sp/>Service<sp/>Thread&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="class_node_process_runnable_thread_1a310d6ce1a45335afbdb0b2421ed20978" kindref="member">NodeProcessRunnableThread::~NodeProcessRunnableThread</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_node_process_runnable_thread_1a55e24b10a98e773162f8fca286cd4918" kindref="member">Thread</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_process_runnable_thread_1a55e24b10a98e773162f8fca286cd4918" kindref="member">Thread</ref>-&gt;Kill(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_node_process_runnable_thread_1a55e24b10a98e773162f8fca286cd4918" kindref="member">Thread</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref><sp/><ref refid="class_node_process_runnable_thread_1a8e794076eba2b3760ad5cfe8a913ad5a" kindref="member">NodeProcessRunnableThread::Run</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>success</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>BridgePluginName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Bridge&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PluginPath</ref><sp/>=<sp/>FPaths::Combine(FPaths::EnginePluginsDir(),<sp/>BridgePluginName);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>PLATFORM_WINDOWS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MainFilePath</ref><sp/>=<sp/>FPaths::ConvertRelativePathToFull(FPaths::Combine(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PluginPath</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;ThirdParty&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Win&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;node-bifrost.exe&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>PLATFORM_MAC<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MainFilePath</ref><sp/>=<sp/>FPaths::ConvertRelativePathToFull(FPaths::Combine(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PluginPath</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;ThirdParty&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Mac&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;node-bifrost.app&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>PLATFORM_LINUX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MainFilePath</ref><sp/>=<sp/>FPaths::ConvertRelativePathToFull(FPaths::Combine(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PluginPath</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;ThirdParty&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Linux&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;node-bifrost&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>FPlatformProcess::ExecElevatedProcess(*<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MainFilePath</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NULL</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/Bridge/Private/NodeProcessRunnableThread.cpp"/>
+  </compounddef>
+</doxygen>

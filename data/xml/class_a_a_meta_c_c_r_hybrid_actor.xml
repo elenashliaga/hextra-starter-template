@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_a_meta_c_c_r_hybrid_actor" kind="class" language="C++" prot="public">
+    <compoundname>AAMetaCCRHybridActor</compoundname>
+    <basecompoundref refid="class_a_base_meta_c_c_r_actor" prot="public" virt="non-virtual">ABaseMetaCCRActor</basecompoundref>
+    <includes refid="_a_meta_c_c_r_hybrid_actor_8h" local="no">AMetaCCRHybridActor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_a_meta_c_c_r_hybrid_actor_1a0dd615438586fdd0a2d8c7130e5dfce7" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection AAMetaCCRHybridActor::HybridCCRMutex</definition>
+        <argsstring></argsstring>
+        <name>HybridCCRMutex</name>
+        <qualifiedname>AAMetaCCRHybridActor::HybridCCRMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="113" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_a_meta_c_c_r_hybrid_actor_1acd61c98209ef20786b6633c150d6f45d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> &gt;</type>
+        <definition>TMap&lt;FGuid, FPolygonCCRObjectInfo&gt; AAMetaCCRHybridActor::TilesInfo</definition>
+        <argsstring></argsstring>
+        <name>TilesInfo</name>
+        <qualifiedname>AAMetaCCRHybridActor::TilesInfo</qualifiedname>
+        <briefdescription>
+<para>Главный массив информации с ключами, которые хранят тайлы </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="118" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_a_meta_c_c_r_hybrid_actor_1a7e24eb7079a32e719e035442c16c8b24" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::bDirty</definition>
+        <argsstring></argsstring>
+        <name>bDirty</name>
+        <qualifiedname>AAMetaCCRHybridActor::bDirty</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="120" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_a_meta_c_c_r_hybrid_actor_1a7fc28fae5cd0de478c86e469e8c91d3c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::bNeedToDraw</definition>
+        <argsstring></argsstring>
+        <name>bNeedToDraw</name>
+        <qualifiedname>AAMetaCCRHybridActor::bNeedToDraw</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="121" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a2d690b444ea7794562babafcba1b2415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AAMetaCCRHybridActor::AAMetaCCRHybridActor</definition>
+        <argsstring>()</argsstring>
+        <name>AAMetaCCRHybridActor</name>
+        <qualifiedname>AAMetaCCRHybridActor::AAMetaCCRHybridActor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="20" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a9bd65dd15f184f7a68652df9308f7389" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AAMetaCCRHybridActor::ClearIndexSelectedPolygons</definition>
+        <argsstring>()</argsstring>
+        <name>ClearIndexSelectedPolygons</name>
+        <qualifiedname>AAMetaCCRHybridActor::ClearIndexSelectedPolygons</qualifiedname>
+        <briefdescription>
+<para>Очищает выделенные полигоны </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="26" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a7965d45361549dd7a8c9b3a137759c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AAMetaCCRHybridActor::SetDirty</definition>
+        <argsstring>(bool bIsNeedUpdate)</argsstring>
+        <name>SetDirty</name>
+        <qualifiedname>AAMetaCCRHybridActor::SetDirty</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bIsNeedUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Ставит обьекту статус необходимости перерисовки </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bIsNeedUpdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый статус </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="33" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a26c23195bfe6255a86fd94f4b075ef3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AAMetaCCRHybridActor::SetActiveStatus</definition>
+        <argsstring>(bool bIsNeedToDraw)</argsstring>
+        <name>SetActiveStatus</name>
+        <qualifiedname>AAMetaCCRHybridActor::SetActiveStatus</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bIsNeedToDraw</declname>
+        </param>
+        <briefdescription>
+<para>Ставит обьекту статус необходимости отрисовки в рендер треде </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bIsNeedToDraw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый статус </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="40" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1af6236a0e08b0874d78c8a9d13a2d03e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AAMetaCCRHybridActor::DeleteTileFromCCRObject</definition>
+        <argsstring>(const FGuid &amp;TileGuid)</argsstring>
+        <name>DeleteTileFromCCRObject</name>
+        <qualifiedname>AAMetaCCRHybridActor::DeleteTileFromCCRObject</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>TileGuid</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет информацию об обьекте по его ключу </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ тайла необходимого к удалению </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="47" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="93" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a3ffb263a309e2b1e8f86aeffaecc93e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::BuildGrid</definition>
+        <argsstring>(const FVector2f &amp;BoundsMin, const FVector2f &amp;BoundsMax, FCCRInfoToDraw &amp;FillInfo)</argsstring>
+        <name>BuildGrid</name>
+        <qualifiedname>AAMetaCCRHybridActor::BuildGrid</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2f</ref> &amp;</type>
+          <declname>BoundsMin</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector2f</ref> &amp;</type>
+          <declname>BoundsMax</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_c_c_r_info_to_draw" kindref="compound">FCCRInfoToDraw</ref> &amp;</type>
+          <declname>FillInfo</declname>
+        </param>
+        <briefdescription>
+<para>Строит и заполняет сетку (ускоряющая пространственная структура) и все смежные данные для отрисовки регионов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BoundsMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальные координаты границы сетки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BoundsMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальные координаты границы сетки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FillInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заполняемые данные для отрисовки</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true в случае успешного получения данных </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="59" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="131" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a61490fd7961562c3839bd2f8be386bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::UpdateCcrObjectInfo</definition>
+        <argsstring>(const FGuid &amp;TileGuid, FPolygonCCRObjectInfo ObjectInfo)</argsstring>
+        <name>UpdateCcrObjectInfo</name>
+        <qualifiedname>AAMetaCCRHybridActor::UpdateCcrObjectInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>TileGuid</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref></type>
+          <declname>ObjectInfo</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет информацию по ключу от тайла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для определения какой обьект обновить </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ObjectInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация, которая будет перезаписана по ключу</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True если такой ключ есть в массиве информации </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="69" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a3d685860cab31b7cc38ea93bdb811b2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::NeedsUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>NeedsUpdate</name>
+        <qualifiedname>AAMetaCCRHybridActor::NeedsUpdate</qualifiedname>
+        <briefdescription>
+<para>Проверяет необходимость обновить информациюб на рендер треде </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="75" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a5124aae18824a1146ca5b2b01485358f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::NeedsToBeDrawn</definition>
+        <argsstring>() const</argsstring>
+        <name>NeedsToBeDrawn</name>
+        <qualifiedname>AAMetaCCRHybridActor::NeedsToBeDrawn</qualifiedname>
+        <briefdescription>
+<para>Проверяет необходимость отрисовки на рендер треде </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="81" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1abe1e3a1429e337e5b7c01cb82cafe757" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AAMetaCCRHybridActor::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>AAMetaCCRHybridActor::IsEmpty</qualifiedname>
+        <briefdescription>
+<para>Проверяет есть ли какая-то информация в массиве данных </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="87" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1afe8726064bae9d72a5ae1f878b7c91fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref></type>
+        <definition>FPolygonCCRObjectInfo AAMetaCCRHybridActor::GetCcrObjectInfo</definition>
+        <argsstring>(const FGuid &amp;TileGuid)</argsstring>
+        <name>GetCcrObjectInfo</name>
+        <qualifiedname>AAMetaCCRHybridActor::GetCcrObjectInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>TileGuid</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает информацию по ключу хранящемуся в тайле </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TileGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для получение информации</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> Информация об обьекте CCR </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="96" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1af0f41686f2085db750b2dba80d0364a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref> &gt;</type>
+        <definition>TArray&lt; uint32 &gt; AAMetaCCRHybridActor::GetSelectionArray</definition>
+        <argsstring>()</argsstring>
+        <name>GetSelectionArray</name>
+        <qualifiedname>AAMetaCCRHybridActor::GetSelectionArray</qualifiedname>
+        <briefdescription>
+<para>Получает индексы выделенных полигонов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Массив выбранных полигонов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="103" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="221" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_a_meta_c_c_r_hybrid_actor_1a48f6233bfac5d6f86c15a4ebc59f1e56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref></type>
+        <definition>FPolygonCCRObjectInfo AAMetaCCRHybridActor::GetRandomInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomInfo</name>
+        <qualifiedname>AAMetaCCRHybridActor::GetRandomInfo</qualifiedname>
+        <briefdescription>
+<para>Получает первый хранимый обьект для - необходимо дебага сейчас и до написания <emphasis>Линий</emphasis> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_f_polygon_c_c_r_object_info" kindref="compound">FPolygonCCRObjectInfo</ref> - информация об обьекте </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="110" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Private/AMetaCCRHybridActor.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AAMetaCCRHybridActor</label>
+        <link refid="class_a_a_meta_c_c_r_hybrid_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AActor</label>
+      </node>
+      <node id="2">
+        <label>ABaseMetaCCRActor</label>
+        <link refid="class_a_base_meta_c_c_r_actor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AMetaColorCorrectRegion</label>
+        <link refid="class_a_meta_color_correct_region"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AMetaColorCorrectionRegion</label>
+        <link refid="class_a_meta_color_correction_region"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AAMetaCCRHybridActor</label>
+        <link refid="class_a_a_meta_c_c_r_hybrid_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AActor</label>
+      </node>
+      <node id="2">
+        <label>ABaseMetaCCRActor</label>
+        <link refid="class_a_base_meta_c_c_r_actor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AMetaColorCorrectRegion</label>
+        <link refid="class_a_meta_color_correct_region"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AMetaColorCorrectionRegion</label>
+        <link refid="class_a_meta_color_correction_region"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/MetaColorCorrectionRegions/Source/Public/AMetaCCRHybridActor.h" bodystart="16" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a2d690b444ea7794562babafcba1b2415" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>AAMetaCCRHybridActor</name></member>
+      <member refid="class_a_base_meta_c_c_r_actor_1aebbed1ceb8778839a20bf7219c6b46a5" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>AddPointsArray</name></member>
+      <member refid="class_a_meta_color_correct_region_1a4b3f9e3edeac8c474977debcf49dfa25" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>AffectedActors</name></member>
+      <member refid="class_a_base_meta_c_c_r_actor_1a8a09a63dde51027e4a63220aac748894" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>BaseDecisionTerritoryHigh</name></member>
+      <member refid="class_a_meta_color_correct_region_1a00d30d1a2940e5973f47d3e29b4ee582" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>BaseStencilToHideComponents</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a7e24eb7079a32e719e035442c16c8b24" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>bDirty</name></member>
+      <member refid="class_a_meta_color_correct_region_1a5b9eca2d0d024b693bf9a9796176100a" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>BeginDestroy</name></member>
+      <member refid="class_a_meta_color_correct_region_1ad8d8a6e8b96b0d050cbd002261d3e0b8" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>BeginPlay</name></member>
+      <member refid="class_a_meta_color_correct_region_1a43bc5918912d3c0a21529c831583541b" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>bEnablePerActorCC</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a7fc28fae5cd0de478c86e469e8c91d3c" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>bNeedToDraw</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a3ffb263a309e2b1e8f86aeffaecc93e2" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>BuildGrid</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a9bd65dd15f184f7a68652df9308f7389" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>ClearIndexSelectedPolygons</name></member>
+      <member refid="class_a_base_meta_c_c_r_actor_1abbbb182124fd8dfbd110006bded8f141" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>ClearSurfacePointsArray</name></member>
+      <member refid="class_a_meta_color_correct_region_1ab5b9a757c2d87ff038ed236db6f6e86d" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>ColorGradingSettings</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1af6236a0e08b0874d78c8a9d13a2d03e3" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>DeleteTileFromCCRObject</name></member>
+      <member refid="class_a_base_meta_c_c_r_actor_1a6f93f33a3dd9bc4c4f7422d187e25bba" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>DrawComponent</name></member>
+      <member refid="class_a_meta_color_correct_region_1a594647e9ecaeda426744f40a724bd867" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>DrawingRectangle</name></member>
+      <member refid="class_a_meta_color_correct_region_1ace7555c8639aee819a3d62e6fcf8943d" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>Enabled</name></member>
+      <member refid="class_a_meta_color_correct_region_1a9320944f250845bfdef7505394a2a02d" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>EndPlay</name></member>
+      <member refid="class_a_meta_color_correct_region_1a3a8a86ac96673f64305ed18612631f0c" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GetCCProxy_RenderThread</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1afe8726064bae9d72a5ae1f878b7c91fc" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GetCcrObjectInfo</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a48f6233bfac5d6f86c15a4ebc59f1e56" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GetRandomInfo</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1af0f41686f2085db750b2dba80d0364a9" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GetSelectionArray</name></member>
+      <member refid="class_a_meta_color_correct_region_1ac2f6d717d080841339f8e9b098e91732" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GridBoundsMin</name></member>
+      <member refid="class_a_meta_color_correct_region_1a796063fe56acf81a4da616c0736784e4" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GridBufferPooled</name></member>
+      <member refid="class_a_meta_color_correct_region_1a584af3fd1d3383e3945ea0af4c3e618f" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GridCellSize</name></member>
+      <member refid="class_a_meta_color_correct_region_1a3cee64a6af9f6f439bd034348d664b69" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>GridResolution</name></member>
+      <member refid="class_a_meta_color_correct_region_1a6ae6ce1466c5dc1441c8fa8e4ed0cc10" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>HandleAffectedActorsPropertyChange</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a0dd615438586fdd0a2d8c7130e5dfce7" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>HybridCCRMutex</name></member>
+      <member refid="class_a_meta_color_correct_region_1ab5c720656607dd9943cce4d1ccf05776" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>IdentityComponent</name></member>
+      <member refid="class_a_meta_color_correct_region_1a410209b3d98e0bfc26b59407d41e90c2" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>IndexBufferPooled</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1abe1e3a1429e337e5b7c01cb82cafe757" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>IsEmpty</name></member>
+      <member refid="class_a_meta_color_correct_region_1aafa5e6b46ddd78ace36a8309a510e2b3" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>LineWidth</name></member>
+      <member refid="class_a_base_meta_c_c_r_actor_1a60ff4ec13769e3e6dc2178aef14eea57" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>MaterialForMesh</name></member>
+      <member refid="class_a_meta_color_correct_region_1ab47aead49a937740703fc5216eb0f32f" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>MetaColorCorrectRegionsSubsystem</name></member>
+      <member refid="class_a_meta_color_correct_region_1a868a178f524589c081ed90f44b3c08ea" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>MetaColorCorrectRenderProxy</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a5124aae18824a1146ca5b2b01485358f" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>NeedsToBeDrawn</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a3d685860cab31b7cc38ea93bdb811b2b" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>NeedsUpdate</name></member>
+      <member refid="class_a_meta_color_correct_region_1a8c4ea3846104cf486019a0b03570f4ce" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>ObjectBufferPooled</name></member>
+      <member refid="class_a_meta_color_correct_region_1a7f6fa447449a06471ece95d206e40ed6" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>PerActorMetaColorCorrection</name></member>
+      <member refid="class_a_meta_color_correct_region_1a61a10f52445be404d25736b59ccf06bf" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>PerAffectedActorStencilData</name></member>
+      <member refid="class_a_meta_color_correct_region_1a0083db4a41ee70a766d31c0a6e7f5dfb" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>ReferenceBufferPooled</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a26c23195bfe6255a86fd94f4b075ef3d" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>SetActiveStatus</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a7965d45361549dd7a8c9b3a137759c16" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>SetDirty</name></member>
+      <member refid="class_a_meta_color_correct_region_1a656f0cf8cc5cc5f60037ffdc973a549d" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>ShouldTickIfViewportsOnly</name></member>
+      <member refid="class_a_meta_color_correct_region_1a0f9633201176c3e1054bdb770e7306ec" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>StateCopyCriticalSecion</name></member>
+      <member refid="class_a_meta_color_correct_region_1ad38fc47f09adc0c664a6c844dcb4189c" prot="public" virt="virtual"><scope>AAMetaCCRHybridActor</scope><name>TickActor</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1acd61c98209ef20786b6633c150d6f45d" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>TilesInfo</name></member>
+      <member refid="class_a_meta_color_correct_region_1ae0cc63ad35d77b11e7b13a3d8edaaf99" prot="private" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>TimeWaited</name></member>
+      <member refid="class_a_meta_color_correct_region_1aeaa747f0ba1d2908799d4d69ededbece" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>TransferState</name></member>
+      <member refid="class_a_meta_color_correct_region_1aaab4a011411ef4e594e388b29ae7752f" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>Type</name></member>
+      <member refid="class_a_a_meta_c_c_r_hybrid_actor_1a61490fd7961562c3839bd2f8be386bc9" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>UpdateCcrObjectInfo</name></member>
+      <member refid="class_a_meta_color_correct_region_1aa96c2a90e3c1412a6b48d7fc16709522" prot="public" virt="non-virtual"><scope>AAMetaCCRHybridActor</scope><name>VertexBufferPooled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

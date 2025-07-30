@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_road_manager" kind="class" language="C++" prot="public">
+    <compoundname>ARoadManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_road_manager_8h" local="no">RoadManager.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_road_manager_1aad861ff3c04cb8430ac8f5630e46a50c" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; APlayerCameraManager &gt;</type>
+        <definition>TObjectPtr&lt;APlayerCameraManager&gt; ARoadManager::CameraManager</definition>
+        <argsstring></argsstring>
+        <name>CameraManager</name>
+        <qualifiedname>ARoadManager::CameraManager</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+<para>Переменная CameraManager представляет собой указатель на экземпляр класса APlayerCameraManager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Класс APlayerCameraManager используется в Unreal Engine для управления операциями камеры игрока. Этот класс предоставляет функциональность для управления и изменения точки зрения игрока, включая положение камеры, вращение и область зрения.</para>
+<para>Эта переменная изначально установлена как nullptr, что означает, что она не указывает на какой-либо действительный объект. Перед использованием этой переменной вам следует присвоить ей действительный объект APlayerCameraManager.</para>
+<para><simplesect kind="see"><para>APlayerCameraManager </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="39" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a5d9085baa5a8fe55c504b4ae3af3eba4" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector ARoadManager::CameraLocation</definition>
+        <argsstring></argsstring>
+        <name>CameraLocation</name>
+        <qualifiedname>ARoadManager::CameraLocation</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>(0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>)</initializer>
+        <briefdescription>
+<para>Текущее местоположение камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная представляет собой текущее местоположение камеры в игровом мире. Оно хранится как объект FVector, состоящий из трех чисел с плавающей точкой, представляющих координаты X, Y и Z соответственно.</para>
+<para><simplesect kind="see"><para><ref refid="class_a_road_manager_1aad861ff3c04cb8430ac8f5630e46a50c" kindref="member">CameraManager</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="47" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a7fc5774412bf84dbc8426c12fed62d7b" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector ARoadManager::LastCameraLocation</definition>
+        <argsstring></argsstring>
+        <name>LastCameraLocation</name>
+        <qualifiedname>ARoadManager::LastCameraLocation</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>(0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>, 0.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Последнее известное местоположение камеры. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="51" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1aec66746b2277b47f1bcccf48797d73b8" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle ARoadManager::Timer</definition>
+        <argsstring></argsstring>
+        <name>Timer</name>
+        <qualifiedname>ARoadManager::Timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Дескриптор таймера, используемый в классе RoadManager. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="56" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a00f9945395cc17689742d2a4cd4e0ca1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_request_camera" kindref="compound">FRequestCamera</ref></type>
+        <definition>FRequestCamera ARoadManager::RequestCamera</definition>
+        <argsstring></argsstring>
+        <name>RequestCamera</name>
+        <qualifiedname>ARoadManager::RequestCamera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="62" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a910e19a5eb0ade452f6ed6d7d9fac676" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnChengeMod</ref></type>
+        <definition>FOnChengeMod ARoadManager::OnChengeMod</definition>
+        <argsstring></argsstring>
+        <name>OnChengeMod</name>
+        <qualifiedname>ARoadManager::OnChengeMod</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="67" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1adbf85311c9e27c337886db0bf9704abe" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+        <definition>AMetaPlayerController* ARoadManager::Controller</definition>
+        <argsstring></argsstring>
+        <name>Controller</name>
+        <qualifiedname>ARoadManager::Controller</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+<para>Указатель на MetaPlayerController. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="88" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a5b32580a8b0493d5e50e38ce390705bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ARoadManager::NeedTimerIsActive</definition>
+        <argsstring></argsstring>
+        <name>NeedTimerIsActive</name>
+        <qualifiedname>ARoadManager::NeedTimerIsActive</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+<para>Указывает, должен ли таймер быть активным или нет. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная определяет, должен ли таймер для отслеживания камеры быть активным или нет. Если установлено значение true, таймер будет активным, и камера будет отслеживаться. Если установлено значение false, отслеживание камеры будет приостановлено.</para>
+<para><simplesect kind="see"><para><ref refid="class_a_road_manager_1a08c010e60d2e3e2bef23203622abe1f0" kindref="member">ARoadManager::TrackingForCamera()</ref></para>
+</simplesect>
+@default true</para>
+<para><simplesect kind="note"><para>Переменная является свойством BlueprintReadWrite. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="114" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_road_manager_1a53c6e4bd65f7776f4619da21ed9832b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ARoadManager::NeedHideIcons</definition>
+        <argsstring></argsstring>
+        <name>NeedHideIcons</name>
+        <qualifiedname>ARoadManager::NeedHideIcons</qualifiedname>
+        <briefdescription>
+<para>Булева переменная, указывающая на необходимость скрытия иконок. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта переменная используется для определения, должны ли быть скрыты иконки. Если значение true, иконки будут скрыты. Если значение false, иконки будут показаны.</para>
+<para><simplesect kind="note"><para>Значение этой переменной устанавливается в функции <computeroutput>ChangeGameplayMode</computeroutput> в классе <computeroutput><ref refid="class_a_road_manager" kindref="compound">ARoadManager</ref></computeroutput>. </para>
+</simplesect>
+<simplesect kind="note"><para>Функция <computeroutput>TrackingForCamera</computeroutput> в классе <computeroutput><ref refid="class_a_road_manager" kindref="compound">ARoadManager</ref></computeroutput> проверяет значение этой переменной, чтобы определить, нужно ли скрывать иконки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="124" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_road_manager_1a5f3c52401aaff8db2b2db9040a782df2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ARoadManager::ARoadManager</definition>
+        <argsstring>()</argsstring>
+        <name>ARoadManager</name>
+        <qualifiedname>ARoadManager::ARoadManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="22" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Hybrid/RoadManager.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_road_manager_1a9f5a26c7d4005f2bdcd817f9437842d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ARoadManager::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>ARoadManager::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="25" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Hybrid/RoadManager.cpp" bodystart="15" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_road_manager_1a08c010e60d2e3e2bef23203622abe1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ARoadManager::TrackingForCamera</definition>
+        <argsstring>()</argsstring>
+        <name>TrackingForCamera</name>
+        <qualifiedname>ARoadManager::TrackingForCamera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Осуществляет отслеживание камеры для менеджера дорог. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="71" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Hybrid/RoadManager.cpp" bodystart="27" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_road_manager_1a34bc4bd7b132593103ddf185c75806ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ARoadManager::VisibleAllRoads</definition>
+        <argsstring>()</argsstring>
+        <name>VisibleAllRoads</name>
+        <qualifiedname>ARoadManager::VisibleAllRoads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Начинает отслеживание камеры и делает все дороги видимыми.</para>
+<para>Этот метод устанавливает таймер, который каждую секунду вызывает функцию <ref refid="class_a_road_manager_1a08c010e60d2e3e2bef23203622abe1f0" kindref="member">TrackingForCamera()</ref>. Местоположение камеры обновляется и сравнивается с последним известным местоположением камеры. Если камера переместилась, событие OnChengeMod запускается и режим игры изменяется путем вызова функции <ref refid="class_a_road_manager_1ac1544cc72981327d2f694f4f86d0e7dc" kindref="member">ChangeGameplayMode()</ref>. Флаг NeedHideIcons проверяется, чтобы определить, нужно ли скрывать иконки. Флаг NeedTimerIsActive контролирует, должен ли таймер быть активным. Если NeedHideIcons установлен в true и NeedTimerIsActive в true, все дороги становятся видимыми. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="83" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Hybrid/RoadManager.cpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_road_manager_1ac1544cc72981327d2f694f4f86d0e7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ARoadManager::ChangeGameplayMode</definition>
+        <argsstring>(EDirectControlMode AvatarState, bool IsCameraFade, bool NeedHide)</argsstring>
+        <name>ChangeGameplayMode</name>
+        <qualifiedname>ARoadManager::ChangeGameplayMode</qualifiedname>
+        <param>
+          <type><ref refid="_control_mode_8h_1ad3d036df4f90ea3e20acea98ff0ccd75" kindref="member">EDirectControlMode</ref></type>
+          <declname>AvatarState</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>IsCameraFade</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>NeedHide</declname>
+        </param>
+        <briefdescription>
+<para>Изменяет режим игры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается для изменения режима игры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AvatarState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Режим прямого управления, на который нужно переключиться. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IsCameraFade</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нужно ли затемнить камеру во время перехода. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NeedHide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Нужно ли скрывать иконки во время перехода. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="99" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Hybrid/RoadManager.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ARoadManager</label>
+        <link refid="class_a_road_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="11">
+        <label>ABuildingCore</label>
+        <link refid="class_a_building_core"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>SetupCesiumCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>ExistingCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>MetaPlayerController</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>PositionsManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ABuildingCoreBaseEx</label>
+        <link refid="class_a_building_core_base_ex"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ACesiumCartographicPolygon</label>
+      </node>
+      <node id="10">
+        <label>ADemoViewMetaBuilding</label>
+        <link refid="class_a_demo_view_meta_building"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AJrpsPlayerController</label>
+        <link refid="class_a_jrps_player_controller"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AMetaCesiumCartographicPolygon</label>
+        <link refid="class_a_meta_cesium_cartographic_polygon"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AMetaPlayerController</label>
+        <link refid="class_a_meta_player_controller"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ControlMode</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>DemoViewMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>APlayerController</label>
+      </node>
+      <node id="1">
+        <label>ARoadManager</label>
+        <link refid="class_a_road_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>RequestCamera</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Controller</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FControlMode</label>
+        <link refid="struct_f_control_mode"/>
+      </node>
+      <node id="3">
+        <label>FRequestCamera</label>
+        <link refid="struct_f_request_camera"/>
+      </node>
+      <node id="16">
+        <label>FSetupCesiumCartographicPolygon</label>
+        <link refid="struct_f_setup_cesium_cartographic_polygon"/>
+      </node>
+      <node id="15">
+        <label>UActorComponent</label>
+      </node>
+      <node id="8">
+        <label>UDemoViewWidget</label>
+        <link refid="class_u_demo_view_widget"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>MetaDemoViewModeBuilding</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>UPositionsManager</label>
+        <link refid="class_u_positions_manager"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" line="18" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Hybrid/RoadManager.h" bodystart="19" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_a_road_manager_1a5f3c52401aaff8db2b2db9040a782df2" prot="private" virt="non-virtual"><scope>ARoadManager</scope><name>ARoadManager</name></member>
+      <member refid="class_a_road_manager_1a9f5a26c7d4005f2bdcd817f9437842d7" prot="protected" virt="virtual"><scope>ARoadManager</scope><name>BeginPlay</name></member>
+      <member refid="class_a_road_manager_1a5d9085baa5a8fe55c504b4ae3af3eba4" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>CameraLocation</name></member>
+      <member refid="class_a_road_manager_1aad861ff3c04cb8430ac8f5630e46a50c" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>CameraManager</name></member>
+      <member refid="class_a_road_manager_1ac1544cc72981327d2f694f4f86d0e7dc" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>ChangeGameplayMode</name></member>
+      <member refid="class_a_road_manager_1adbf85311c9e27c337886db0bf9704abe" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>Controller</name></member>
+      <member refid="class_a_road_manager_1a7fc5774412bf84dbc8426c12fed62d7b" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>LastCameraLocation</name></member>
+      <member refid="class_a_road_manager_1a53c6e4bd65f7776f4619da21ed9832b5" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>NeedHideIcons</name></member>
+      <member refid="class_a_road_manager_1a5b32580a8b0493d5e50e38ce390705bd" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>NeedTimerIsActive</name></member>
+      <member refid="class_a_road_manager_1a910e19a5eb0ade452f6ed6d7d9fac676" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>OnChengeMod</name></member>
+      <member refid="class_a_road_manager_1a00f9945395cc17689742d2a4cd4e0ca1" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>RequestCamera</name></member>
+      <member refid="class_a_road_manager_1aec66746b2277b47f1bcccf48797d73b8" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>Timer</name></member>
+      <member refid="class_a_road_manager_1a08c010e60d2e3e2bef23203622abe1f0" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>TrackingForCamera</name></member>
+      <member refid="class_a_road_manager_1a34bc4bd7b132593103ddf185c75806ed" prot="public" virt="non-virtual"><scope>ARoadManager</scope><name>VisibleAllRoads</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1067 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_replication_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UMassReplicationSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassSubsystemBase</basecompoundref>
+    <includes refid="_mass_replication_subsystem_8h" local="no">MassReplicationSubsystem.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1b" prot="public" static="no" strong="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <name>EFindOrAddMassEntityInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::EFindOrAddMassEntityInfo</qualifiedname>
+        <enumvalue id="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1ba4c8a7b0f636cb2ab442515e7505d984a" prot="public">
+          <name>FoundOlderReplicationID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1ba59b49f31a6857ebe893d748dfc26c001" prot="public">
+          <name>FoundNewerReplicationID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1baf29ddbfb905eb2593fdcdfb243f9af85" prot="public">
+          <name>Added</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="102" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a68f1d1ab2b6462a21b534e5dfeda740b" prot="protected" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 UMassReplicationSubsystem::CurrentNetMassCounter</definition>
+        <argsstring></argsstring>
+        <name>CurrentNetMassCounter</name>
+        <qualifiedname>UMassReplicationSubsystem::CurrentNetMassCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="288" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a505dae0c2de4aa028641c670d4083ee2" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FMassEntityManager&gt; UMassReplicationSubsystem::EntityManager</definition>
+        <argsstring></argsstring>
+        <name>EntityManager</name>
+        <qualifiedname>UMassReplicationSubsystem::EntityManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="290" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a61f29f06b8487d29704e809f1b94e6f6" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_replication_types_8h_1a6e21cb58b1c0d35a7cc31249ddcd7068" kindref="member">FMassClientHandleManager</ref></type>
+        <definition>FMassClientHandleManager UMassReplicationSubsystem::ClientHandleManager</definition>
+        <argsstring></argsstring>
+        <name>ClientHandleManager</name>
+        <qualifiedname>UMassReplicationSubsystem::ClientHandleManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clients free list <ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref> manager, handles will to the indices of FMassClientReplicationData::ClientBubbles </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="293" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1af1a3b88108d62aaed2f83f59097c1dd5" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_client_bubble_info_data" kindref="compound">FMassClientBubbleInfoData</ref> &gt;</type>
+        <definition>TArray&lt;FMassClientBubbleInfoData&gt; UMassReplicationSubsystem::BubbleInfoArray</definition>
+        <argsstring></argsstring>
+        <name>BubbleInfoArray</name>
+        <qualifiedname>UMassReplicationSubsystem::BubbleInfoArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="296" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a135e88a29949445f887d8e4c7f79445a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_client_replication_info" kindref="compound">FMassClientReplicationInfo</ref> &gt;</type>
+        <definition>TArray&lt;FMassClientReplicationInfo&gt; UMassReplicationSubsystem::ClientsReplicationInfo</definition>
+        <argsstring></argsstring>
+        <name>ClientsReplicationInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::ClientsReplicationInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An Array of each Clients viewer handles (split screen players sharing the same client connections). This will include both the parent and child NetConnections per client. The array is organized so the array index is the same as the index of the client <ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="302" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a1f7200320583e09301bac7aa76cf4fd5" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_client_pair" kindref="compound">FViewerClientPair</ref> &gt;</type>
+        <definition>TArray&lt;FViewerClientPair&gt; UMassReplicationSubsystem::ViewerToClientHandleArray</definition>
+        <argsstring></argsstring>
+        <name>ViewerToClientHandleArray</name>
+        <qualifiedname>UMassReplicationSubsystem::ViewerToClientHandleArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A free list array of FViewerClientPairs. This is organized so the index is that of the <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> for fast lookup of the related <ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref>. This only contains viewers that are also clients (ie only parent NetConnections not child ones). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="307" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a5861fbfb32e62caa79ced9abac186507" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_client_pair" kindref="compound">FViewerClientPair</ref> &gt;</type>
+        <definition>TArray&lt;FViewerClientPair&gt; UMassReplicationSubsystem::ClientToViewerHandleArray</definition>
+        <argsstring></argsstring>
+        <name>ClientToViewerHandleArray</name>
+        <qualifiedname>UMassReplicationSubsystem::ClientToViewerHandleArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A free list array of FViewerClientPairs. This is organized so the index is that of the <ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref>. For fast lookup of the related <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref>. This only contains viewers that are also clients (ie only parent NetConnections not child ones). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="312" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1ad332d6f5fbfd9c2dd879496b269a9df9" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UWorld&gt; UMassReplicationSubsystem::World</definition>
+        <argsstring></argsstring>
+        <name>World</name>
+        <qualifiedname>UMassReplicationSubsystem::World</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="315" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a69adce551309eb32dd6aa727e8f5c864" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_mass_l_o_d_subsystem" kindref="compound">UMassLODSubsystem</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UMassLODSubsystem&gt; UMassReplicationSubsystem::MassLODSubsystem</definition>
+        <argsstring></argsstring>
+        <name>MassLODSubsystem</name>
+        <qualifiedname>UMassReplicationSubsystem::MassLODSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="318" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a1f84dd4ee71ed7c0f4b3ab8e55934cba" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref>, <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> &gt;</type>
+        <definition>TMap&lt;FMassNetworkID, FMassReplicationEntityInfo&gt; UMassReplicationSubsystem::EntityInfoMap</definition>
+        <argsstring></argsstring>
+        <name>EntityInfoMap</name>
+        <qualifiedname>UMassReplicationSubsystem::EntityInfoMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="321" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1ac910e789bbf2c96b9feda0799f4081f7" prot="protected" static="no" mutable="no">
+        <type>UE::MassReplication::FMassAgentDelegate</type>
+        <definition>UE::MassReplication::FMassAgentDelegate UMassReplicationSubsystem::OnMassAgentAdded</definition>
+        <argsstring></argsstring>
+        <name>OnMassAgentAdded</name>
+        <qualifiedname>UMassReplicationSubsystem::OnMassAgentAdded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Broadcast just after a mass agent is added to the client simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="325" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a7caeddf43b4bda9f1939413aba621b24" prot="protected" static="no" mutable="no">
+        <type>UE::MassReplication::FMassAgentDelegate</type>
+        <definition>UE::MassReplication::FMassAgentDelegate UMassReplicationSubsystem::OnRemovingMassAgent</definition>
+        <argsstring></argsstring>
+        <name>OnRemovingMassAgent</name>
+        <qualifiedname>UMassReplicationSubsystem::OnRemovingMassAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Broadcast just before a mass agent is removed from the client simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="328" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a87a952e7093255918a8676dcd815a30c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+        <definition>uint64 UMassReplicationSubsystem::LastSynchronizedFrame</definition>
+        <argsstring></argsstring>
+        <name>LastSynchronizedFrame</name>
+        <qualifiedname>UMassReplicationSubsystem::LastSynchronizedFrame</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to make sure the FMassEntityHandle_ClientReplications are synchronized immediately before they are needed <xrefsect id="todo_1_todo000003"><xreftitle>Необходимо сделать</xreftitle><xrefdescription><para>this comment is no longer accurate, needs fixing </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="335" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_replication_subsystem_1a9b4956c76d84a41e43b35673c0340fe5" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_replication_types_8h_1a807fc4fd60396d4ca0b7358e8d329b9d" kindref="member">FReplicationHashGrid2D</ref></type>
+        <definition>FReplicationHashGrid2D UMassReplicationSubsystem::ReplicationGrid</definition>
+        <argsstring></argsstring>
+        <name>ReplicationGrid</name>
+        <qualifiedname>UMassReplicationSubsystem::ReplicationGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="337" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ac0a638892282b42671dd2d4d7e27269f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassReplicationSubsystem::UMassReplicationSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>UMassReplicationSubsystem</name>
+        <qualifiedname>UMassReplicationSubsystem::UMassReplicationSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="100" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ab8d533fa47cd1e9590dd48baaf758242" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassReplicationSubsystem::IsBubbleClassHandleValid</definition>
+        <argsstring>(FMassBubbleInfoClassHandle Handle) const</argsstring>
+        <name>IsBubbleClassHandleValid</name>
+        <qualifiedname>UMassReplicationSubsystem::IsBubbleClassHandleValid</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="109" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a7307951d4c97a742f067f932a01f538a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+        <definition>FMassNetworkID UMassReplicationSubsystem::GetNetIDFromHandle</definition>
+        <argsstring>(const FMassEntityHandle Handle) const</argsstring>
+        <name>GetNetIDFromHandle</name>
+        <qualifiedname>UMassReplicationSubsystem::GetNetIDFromHandle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve network id from <ref refid="namespace_mass" kindref="compound">Mass</ref> handle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="115" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a5ab8d9121830f509595644142fc49711" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; FMassClientHandle &gt; &amp; UMassReplicationSubsystem::GetClientReplicationHandles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClientReplicationHandles</name>
+        <qualifiedname>UMassReplicationSubsystem::GetClientReplicationHandles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="119" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a8c832a6e17c5ff9a78e5c1b1bbe8f538" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassReplicationSubsystem::IsValidClientHandle</definition>
+        <argsstring>(FMassClientHandle ClientHandle) const</argsstring>
+        <name>IsValidClientHandle</name>
+        <qualifiedname>UMassReplicationSubsystem::IsValidClientHandle</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="121" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a36d94a08d80ba0adf8d73d09f27aed62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_mass_client_bubble_info_base" kindref="compound">AMassClientBubbleInfoBase</ref> *</type>
+        <definition>AMassClientBubbleInfoBase * UMassReplicationSubsystem::GetClientBubble</definition>
+        <argsstring>(FMassBubbleInfoClassHandle BubbleClassHandle, FMassClientHandle ClientHandle) const</argsstring>
+        <name>GetClientBubble</name>
+        <qualifiedname>UMassReplicationSubsystem::GetClientBubble</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+          <declname>BubbleClassHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client bubble safely </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="127" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="127" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a9e731e1ef766718c9feb3516cdc43044" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_mass_client_bubble_info_base" kindref="compound">AMassClientBubbleInfoBase</ref> *</type>
+        <definition>AMassClientBubbleInfoBase * UMassReplicationSubsystem::GetClientBubbleChecked</definition>
+        <argsstring>(FMassBubbleInfoClassHandle BubbleClassHandle, FMassClientHandle ClientHandle) const</argsstring>
+        <name>GetClientBubbleChecked</name>
+        <qualifiedname>UMassReplicationSubsystem::GetClientBubbleChecked</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+          <declname>BubbleClassHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the client bubble. Faster version using <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check()</ref>s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="140" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ac3d2061b2874767299fc6d73bd9b29ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TType</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TType</ref> *</type>
+        <definition>TType * UMassReplicationSubsystem::GetTypedClientBubble</definition>
+        <argsstring>(FMassBubbleInfoClassHandle BubbleClassHandle, FMassClientHandle ClientHandle) const</argsstring>
+        <name>GetTypedClientBubble</name>
+        <qualifiedname>UMassReplicationSubsystem::GetTypedClientBubble</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+          <declname>BubbleClassHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client bubble safely returning the template type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="152" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a82513ec243b6caf15abc0fbe21498604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TType</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TType</ref> *</type>
+        <definition>TType * UMassReplicationSubsystem::GetTypedClientBubbleChecked</definition>
+        <argsstring>(FMassBubbleInfoClassHandle BubbleClassHandle, FMassClientHandle ClientHandle) const</argsstring>
+        <name>GetTypedClientBubbleChecked</name>
+        <qualifiedname>UMassReplicationSubsystem::GetTypedClientBubbleChecked</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+          <declname>BubbleClassHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client bubble returning the template type. Faster version using <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check()</ref>s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="159" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="159" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a86bb90629e1ce9d337cfbf2e4c9b10c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_client_replication_info" kindref="compound">FMassClientReplicationInfo</ref> *</type>
+        <definition>const FMassClientReplicationInfo * UMassReplicationSubsystem::GetClientReplicationInfo</definition>
+        <argsstring>(FMassClientHandle Handle) const</argsstring>
+        <name>GetClientReplicationInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::GetClientReplicationInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client replication info safely </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="168" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a52b897ed9d9f00f8439a4d73ab888761" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_client_replication_info" kindref="compound">FMassClientReplicationInfo</ref> &amp;</type>
+        <definition>const FMassClientReplicationInfo &amp; UMassReplicationSubsystem::GetClientReplicationInfoChecked</definition>
+        <argsstring>(FMassClientHandle Handle) const</argsstring>
+        <name>GetClientReplicationInfoChecked</name>
+        <qualifiedname>UMassReplicationSubsystem::GetClientReplicationInfoChecked</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client replication info. Faster version using <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check()</ref>s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="174" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a12204ed0be989a791eb32e2fbdfc4ebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_client_replication_info" kindref="compound">FMassClientReplicationInfo</ref> *</type>
+        <definition>FMassClientReplicationInfo * UMassReplicationSubsystem::GetMutableClientReplicationInfo</definition>
+        <argsstring>(FMassClientHandle Handle)</argsstring>
+        <name>GetMutableClientReplicationInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::GetMutableClientReplicationInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client replication info. Faster version using <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check()</ref>s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="182" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a4505939c68f9af5f69a1d7b3b5b8e6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_client_replication_info" kindref="compound">FMassClientReplicationInfo</ref> &amp;</type>
+        <definition>FMassClientReplicationInfo &amp; UMassReplicationSubsystem::GetMutableClientReplicationInfoChecked</definition>
+        <argsstring>(FMassClientHandle Handle)</argsstring>
+        <name>GetMutableClientReplicationInfoChecked</name>
+        <qualifiedname>UMassReplicationSubsystem::GetMutableClientReplicationInfoChecked</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the client replication info. Faster version using <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">check()</ref>s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="188" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ad0cc7f4bcefaf2d80e0e241cbb56703f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::SynchronizeClientsAndViewers</definition>
+        <argsstring>()</argsstring>
+        <name>SynchronizeClientsAndViewers</name>
+        <qualifiedname>UMassReplicationSubsystem::SynchronizeClientsAndViewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="193" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="353" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a9cf0ad8fbc7168696d567d587f835e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+        <definition>FMassBubbleInfoClassHandle UMassReplicationSubsystem::RegisterBubbleInfoClass</definition>
+        <argsstring>(const TSubclassOf&lt; AMassClientBubbleInfoBase &gt; &amp;BubbleInfoClass)</argsstring>
+        <name>RegisterBubbleInfoClass</name>
+        <qualifiedname>UMassReplicationSubsystem::RegisterBubbleInfoClass</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_mass_client_bubble_info_base" kindref="compound">AMassClientBubbleInfoBase</ref> &gt; &amp;</type>
+          <declname>BubbleInfoClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers BubbleInfoClass with the system. These are created one per client as clients join. This function can be called multiple times with different BubbleInfoClass types (but not the same type), in that case each client will get multiple BubbleInfoClasses. This can be useful for replicating different Entity types in different bubbles, although its also possible to have multiple <ref refid="class_t_client_bubble_handler_base" kindref="compound">TClientBubbleHandlerBase</ref> derived class instances per BubbleInfoClass. This must not be called after AddClient or SynchronizeClientsAndViewers is called <simplesect kind="return"><para><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref> Handle to the BubbleInfoClass, this will be an invalid handle if its not been created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="202" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="392" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a63b21173a0f83b99626bb810e93c4986" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref></type>
+        <definition>FMassBubbleInfoClassHandle UMassReplicationSubsystem::GetBubbleInfoClassHandle</definition>
+        <argsstring>(const TSubclassOf&lt; AMassClientBubbleInfoBase &gt; &amp;BubbleInfoClass) const</argsstring>
+        <name>GetBubbleInfoClassHandle</name>
+        <qualifiedname>UMassReplicationSubsystem::GetBubbleInfoClassHandle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_mass_client_bubble_info_base" kindref="compound">AMassClientBubbleInfoBase</ref> &gt; &amp;</type>
+          <declname>BubbleInfoClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_f_mass_bubble_info_class_handle" kindref="compound">FMassBubbleInfoClassHandle</ref> Handle to the BubbleInfoClass, this will be an invalid handle if BubbleInfoClass can not be found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="205" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="418" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1aebc7dd4d1a0494af1847b2d0b1d5ba62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_replication_types_8h_1a807fc4fd60396d4ca0b7358e8d329b9d" kindref="member">FReplicationHashGrid2D</ref> &amp;</type>
+        <definition>const FReplicationHashGrid2D &amp; UMassReplicationSubsystem::GetGrid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGrid</name>
+        <qualifiedname>UMassReplicationSubsystem::GetGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="207" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1af20d8ced7c09576b2b9862db6472bb3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_replication_types_8h_1a807fc4fd60396d4ca0b7358e8d329b9d" kindref="member">FReplicationHashGrid2D</ref> &amp;</type>
+        <definition>FReplicationHashGrid2D &amp; UMassReplicationSubsystem::GetGridMutable</definition>
+        <argsstring>()</argsstring>
+        <name>GetGridMutable</name>
+        <qualifiedname>UMassReplicationSubsystem::GetGridMutable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="208" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a9c35831e5e202377e1cf14578a8dcb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::SetEntity</definition>
+        <argsstring>(const FMassNetworkID NetworkID, const FMassEntityHandle Entity)</argsstring>
+        <name>SetEntity</name>
+        <qualifiedname>UMassReplicationSubsystem::SetEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be called immediately after an Entity is added to the simulation and after FindAndUpdateOrAddMassEntityInfo has been called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="215" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ac7731640154231c2e5c61a3400623191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+        <definition>FMassEntityHandle UMassReplicationSubsystem::ResetEntityIfValid</definition>
+        <argsstring>(const FMassNetworkID NetworkID, int32 ReplicationID)</argsstring>
+        <name>ResetEntityIfValid</name>
+        <qualifiedname>UMassReplicationSubsystem::ResetEntityIfValid</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>ReplicationID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the item with NetworkID in the EntityInfoMap if its currently Set / Valid and its the most recent ReplicationID. In this case the FMassEntityHandle that was reset is returned. Otherwise FMassEntityHandle::IsSet() will be false on the returned FMassEntityHandle Must be called after SetEntity and just before the Entity is removed on the client. This sets the Entity member of the AddToEntityInfoMap item to FMassEntityHandle so it will be not IsSet() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="222" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a84a8acd336bf5995161bc0750f379691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::RemoveFromEntityInfoMap</definition>
+        <argsstring>(const FMassNetworkID NetworkID)</argsstring>
+        <name>RemoveFromEntityInfoMap</name>
+        <qualifiedname>UMassReplicationSubsystem::RemoveFromEntityInfoMap</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="224" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a56f6951110e47785c05d0186a0936785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1b" kindref="member">EFindOrAddMassEntityInfo</ref></type>
+        <definition>EFindOrAddMassEntityInfo UMassReplicationSubsystem::FindAndUpdateOrAddMassEntityInfo</definition>
+        <argsstring>(const FMassNetworkID NetworkID, int32 ReplicationID, const FMassReplicationEntityInfo *&amp;OutMassEntityInfo)</argsstring>
+        <name>FindAndUpdateOrAddMassEntityInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::FindAndUpdateOrAddMassEntityInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>ReplicationID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> *&amp;</type>
+          <declname>OutMassEntityInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds or adds an <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> to the EntityInfoMap for an Entity with NetWorkID. This will update the ReplicationID if an older one is found but it does not change the <ref refid="struct_f_mass_replication_entity_info_1ac6db680dfded9ad7924a3ada8e79a6e9" kindref="member">FMassReplicationEntityInfo::Entity</ref> member. Returns whether we added an entry in EntityInfoMap, or if the found item has an older or newer ReplicationID than that that is passed in. We shouldn&apos;t actually get an equal ReplicationID, but in this case we&apos;ll treat the existing EntityInfoMap entry as newer. <ref refid="class_u_mass_replication_subsystem_1a9c35831e5e202377e1cf14578a8dcb11" kindref="member">SetEntity()</ref> must be called soon after this if the entity handle is !IsSet() <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NetworkID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the entity we are looking up OutMassEntityInfo for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReplicationID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the ReplicationID of the FastArray item </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutMassEntityInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>retrieved or added <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EFindOrAddMassEntityInfo, result of the function call </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="235" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a4aa606c82e12c2358ad9065381295112" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> *</type>
+        <definition>const FMassReplicationEntityInfo * UMassReplicationSubsystem::FindMassEntityInfo</definition>
+        <argsstring>(const FMassNetworkID NetworkID) const</argsstring>
+        <name>FindMassEntityInfo</name>
+        <qualifiedname>UMassReplicationSubsystem::FindMassEntityInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds the <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> for the Entity with NetworkID. NetworkID must be valid and nullptr is returned if we can&apos;t find it. Note FMassReplicationEntityInfo::IsSet() may be false, in which case this Entity has been removed from the client simulation (but we are still storing the ReplicationID between Removes and Adds! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="241" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ad02a609786c5f29938c94734717b7afd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+        <definition>FMassEntityHandle UMassReplicationSubsystem::FindEntity</definition>
+        <argsstring>(const FMassNetworkID NetworkID) const</argsstring>
+        <name>FindEntity</name>
+        <qualifiedname>UMassReplicationSubsystem::FindEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="243" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a590ef2490dd1be52290f5678554f4a4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref>, <ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> &gt; &amp;</type>
+        <definition>const TMap&lt; FMassNetworkID, FMassReplicationEntityInfo &gt; &amp; UMassReplicationSubsystem::GetEntityInfoMap</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEntityInfoMap</name>
+        <qualifiedname>UMassReplicationSubsystem::GetEntityInfoMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="245" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a2055b926a54308692a289a52d13379d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UE::MassReplication::FMassAgentDelegate &amp;</type>
+        <definition>UE::MassReplication::FMassAgentDelegate &amp; UMassReplicationSubsystem::GetOnMassAgentAdded</definition>
+        <argsstring>()</argsstring>
+        <name>GetOnMassAgentAdded</name>
+        <qualifiedname>UMassReplicationSubsystem::GetOnMassAgentAdded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="247" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1aab00ace33d1cee3f2a64d19c0a4a6680" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UE::MassReplication::FMassAgentDelegate &amp;</type>
+        <definition>UE::MassReplication::FMassAgentDelegate &amp; UMassReplicationSubsystem::GetOnRemovingMassAgent</definition>
+        <argsstring>()</argsstring>
+        <name>GetOnRemovingMassAgent</name>
+        <qualifiedname>UMassReplicationSubsystem::GetOnRemovingMassAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="252" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="252" bodyend="255"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ae2a43d44b6bcbf4a7b0ab389056938e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+        <definition>static FMassNetworkID UMassReplicationSubsystem::GetNextAvailableMassNetID</definition>
+        <argsstring>()</argsstring>
+        <name>GetNextAvailableMassNetID</name>
+        <qualifiedname>UMassReplicationSubsystem::GetNextAvailableMassNetID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="117" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a95015c3a46cdf7b447a9c1b808c66c3b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMassReplicationSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="261" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="18" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a39d69e2927160971d36a61688ea565ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMassReplicationSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="262" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="31" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a38d02344d4d960ac41d16c1c9bcba908" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_replication_entity_info" kindref="compound">FMassReplicationEntityInfo</ref> *</type>
+        <definition>FMassReplicationEntityInfo * UMassReplicationSubsystem::FindMassEntityInfoMutable</definition>
+        <argsstring>(const FMassNetworkID NetworkID)</argsstring>
+        <name>FindMassEntityInfoMutable</name>
+        <qualifiedname>UMassReplicationSubsystem::FindMassEntityInfoMutable</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_network_i_d" kindref="compound">FMassNetworkID</ref></type>
+          <declname>NetworkID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="266" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1ad3db5370a60223cf33fb5f2f7492607d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::AddClient</definition>
+        <argsstring>(FMassViewerHandle ViewerHandle, APlayerController &amp;InController)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>UMassReplicationSubsystem::AddClient</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref></type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <param>
+          <type>APlayerController &amp;</type>
+          <declname>InController</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a Client and sets up all the data relevant to the bubble. Where there are multiple viewers for one NetConnection only the parent net connection should be added here <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ViewerHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to viewer to add as a client. This must be UMassLODSubsystem-&gt;IsValidViewer() </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>associated with the viewer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="274" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="586" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a8261d9f311532d391f617d318f42316b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::RemoveClient</definition>
+        <argsstring>(FMassClientHandle ClientHandle)</argsstring>
+        <name>RemoveClient</name>
+        <qualifiedname>UMassReplicationSubsystem::RemoveClient</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_client_handle" kindref="compound">FMassClientHandle</ref></type>
+          <declname>ClientHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a Client and removes up all the data relevant to the bubble <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ClientHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to client to remove. This must be ClientHandleManager.IsValidHandle() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="279" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="669" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a914dd153019494b60df6be5406e7ccae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassReplicationSubsystem::SynchronizeClients</definition>
+        <argsstring>(const TArray&lt; FViewerInfo &gt; &amp;Viewers)</argsstring>
+        <name>SynchronizeClients</name>
+        <qualifiedname>UMassReplicationSubsystem::SynchronizeClients</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt; &amp;</type>
+          <declname>Viewers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if we should shrink the number of handles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="282" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="121" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a2dc55cb00823ef16df4e5249f284c774" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::SynchronizeClientViewers</definition>
+        <argsstring>(const TArray&lt; FViewerInfo &gt; &amp;Viewers)</argsstring>
+        <name>SynchronizeClientViewers</name>
+        <qualifiedname>UMassReplicationSubsystem::SynchronizeClientViewers</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt; &amp;</type>
+          <declname>Viewers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="283" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="246" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_replication_subsystem_1a64f9f5025b7a24933007a4292ee2dbb5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassReplicationSubsystem::DebugCheckArraysAreInSync</definition>
+        <argsstring>()</argsstring>
+        <name>DebugCheckArraysAreInSync</name>
+        <qualifiedname>UMassReplicationSubsystem::DebugCheckArraysAreInSync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="285" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Private/MassReplicationSubsystem.cpp" bodystart="539" bodyend="584"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages the creation of NetworkIDs, ClientBubbles and ClientReplicationInfo. NetworkIDs are per replicated Agent Entity and are unique and replicated between server and clients. ClientBubbles relate to the player controller that owns the parent UNetConnection to a Client machine. ClientReplicationInfo relate to all the player controllers that have a parent or child UNetConnection to a single Client machine (split screen etc). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassReplicationSubsystem</label>
+        <link refid="class_u_mass_replication_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassReplicationSubsystem</label>
+        <link refid="class_u_mass_replication_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" line="94" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassReplication/Public/MassReplicationSubsystem.h" bodystart="95" bodyend="338"/>
+    <listofallmembers>
+      <member refid="class_u_mass_replication_subsystem_1ad3db5370a60223cf33fb5f2f7492607d" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>AddClient</name></member>
+      <member refid="class_u_mass_replication_subsystem_1af1a3b88108d62aaed2f83f59097c1dd5" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>BubbleInfoArray</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a61f29f06b8487d29704e809f1b94e6f6" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ClientHandleManager</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a135e88a29949445f887d8e4c7f79445a" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ClientsReplicationInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a5861fbfb32e62caa79ced9abac186507" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ClientToViewerHandleArray</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a68f1d1ab2b6462a21b534e5dfeda740b" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>CurrentNetMassCounter</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a64f9f5025b7a24933007a4292ee2dbb5" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>DebugCheckArraysAreInSync</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a39d69e2927160971d36a61688ea565ca" prot="protected" virt="virtual"><scope>UMassReplicationSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_mass_replication_subsystem_1aaaa2f550dcef73c6a20f4e656f391b1b" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>EFindOrAddMassEntityInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a1f84dd4ee71ed7c0f4b3ab8e55934cba" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>EntityInfoMap</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a505dae0c2de4aa028641c670d4083ee2" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>EntityManager</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a56f6951110e47785c05d0186a0936785" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>FindAndUpdateOrAddMassEntityInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ad02a609786c5f29938c94734717b7afd" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>FindEntity</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a4aa606c82e12c2358ad9065381295112" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>FindMassEntityInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a38d02344d4d960ac41d16c1c9bcba908" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>FindMassEntityInfoMutable</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a63b21173a0f83b99626bb810e93c4986" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetBubbleInfoClassHandle</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a36d94a08d80ba0adf8d73d09f27aed62" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetClientBubble</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a9e731e1ef766718c9feb3516cdc43044" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetClientBubbleChecked</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a5ab8d9121830f509595644142fc49711" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetClientReplicationHandles</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a86bb90629e1ce9d337cfbf2e4c9b10c2" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetClientReplicationInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a52b897ed9d9f00f8439a4d73ab888761" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetClientReplicationInfoChecked</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a590ef2490dd1be52290f5678554f4a4d" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetEntityInfoMap</name></member>
+      <member refid="class_u_mass_replication_subsystem_1aebc7dd4d1a0494af1847b2d0b1d5ba62" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetGrid</name></member>
+      <member refid="class_u_mass_replication_subsystem_1af20d8ced7c09576b2b9862db6472bb3a" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetGridMutable</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a12204ed0be989a791eb32e2fbdfc4ebf" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetMutableClientReplicationInfo</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a4505939c68f9af5f69a1d7b3b5b8e6dc" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetMutableClientReplicationInfoChecked</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a7307951d4c97a742f067f932a01f538a" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetNetIDFromHandle</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ae2a43d44b6bcbf4a7b0ab389056938e5" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetNextAvailableMassNetID</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a2055b926a54308692a289a52d13379d8" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetOnMassAgentAdded</name></member>
+      <member refid="class_u_mass_replication_subsystem_1aab00ace33d1cee3f2a64d19c0a4a6680" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetOnRemovingMassAgent</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ac3d2061b2874767299fc6d73bd9b29ab" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetTypedClientBubble</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a82513ec243b6caf15abc0fbe21498604" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>GetTypedClientBubbleChecked</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a95015c3a46cdf7b447a9c1b808c66c3b" prot="protected" virt="virtual"><scope>UMassReplicationSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ab8d533fa47cd1e9590dd48baaf758242" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>IsBubbleClassHandleValid</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a8c832a6e17c5ff9a78e5c1b1bbe8f538" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>IsValidClientHandle</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a87a952e7093255918a8676dcd815a30c" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>LastSynchronizedFrame</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a69adce551309eb32dd6aa727e8f5c864" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>MassLODSubsystem</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ac910e789bbf2c96b9feda0799f4081f7" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>OnMassAgentAdded</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a7caeddf43b4bda9f1939413aba621b24" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>OnRemovingMassAgent</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a9cf0ad8fbc7168696d567d587f835e2a" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>RegisterBubbleInfoClass</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a8261d9f311532d391f617d318f42316b" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>RemoveClient</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a84a8acd336bf5995161bc0750f379691" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>RemoveFromEntityInfoMap</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a9b4956c76d84a41e43b35673c0340fe5" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ReplicationGrid</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ac7731640154231c2e5c61a3400623191" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ResetEntityIfValid</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a9c35831e5e202377e1cf14578a8dcb11" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>SetEntity</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a914dd153019494b60df6be5406e7ccae" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>SynchronizeClients</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ad0cc7f4bcefaf2d80e0e241cbb56703f" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>SynchronizeClientsAndViewers</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a2dc55cb00823ef16df4e5249f284c774" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>SynchronizeClientViewers</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ac0a638892282b42671dd2d4d7e27269f" prot="public" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>UMassReplicationSubsystem</name></member>
+      <member refid="class_u_mass_replication_subsystem_1a1f7200320583e09301bac7aa76cf4fd5" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>ViewerToClientHandleArray</name></member>
+      <member refid="class_u_mass_replication_subsystem_1ad332d6f5fbfd9c2dd879496b269a9df9" prot="protected" virt="non-virtual"><scope>UMassReplicationSubsystem</scope><name>World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

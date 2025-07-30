@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_requests_gate_keeper" kind="class" language="C++" prot="public">
+    <compoundname>URequestsGateKeeper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="_requests_gate_keeper_8h" local="no">RequestsGateKeeper.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a0cbdfa3b24250e10cf94f74c0db291dd" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpManager</ref> *</type>
+        <definition>FHttpManager* URequestsGateKeeper::HttpManager</definition>
+        <argsstring></argsstring>
+        <name>HttpManager</name>
+        <qualifiedname>URequestsGateKeeper::HttpManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="74" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1adc6b17acb706140f79ebb7d61c9a17d6" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection URequestsGateKeeper::GateKeeperMutex</definition>
+        <argsstring></argsstring>
+        <name>GateKeeperMutex</name>
+        <qualifiedname>URequestsGateKeeper::GateKeeperMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="76" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1ae54452543ba994afed5f9609dd1ca9fd" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>int URequestsGateKeeper::PriorityRequestsCapacity</definition>
+        <argsstring></argsstring>
+        <name>PriorityRequestsCapacity</name>
+        <qualifiedname>URequestsGateKeeper::PriorityRequestsCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="78" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a3e1b6c0734b927c431e73985c3ea5a68" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>int URequestsGateKeeper::RequestQueryLimit</definition>
+        <argsstring></argsstring>
+        <name>RequestQueryLimit</name>
+        <qualifiedname>URequestsGateKeeper::RequestQueryLimit</qualifiedname>
+        <initializer>= 10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="79" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a46c1cde68a41807d412c880374579e2e" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpManagerRequestAddedDelegate</ref></type>
+        <definition>FHttpManagerRequestAddedDelegate URequestsGateKeeper::OnAddDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnAddDelegate</name>
+        <qualifiedname>URequestsGateKeeper::OnAddDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="81" column="42" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a734368b6c813b6402e8758b363c5afc3" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpManagerRequestCompletedDelegate</ref></type>
+        <definition>FHttpManagerRequestCompletedDelegate URequestsGateKeeper::OnCompleteDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnCompleteDelegate</name>
+        <qualifiedname>URequestsGateKeeper::OnCompleteDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="82" column="46" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a93f05c5419af0a04eadc800f4c54b4bc" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::RunningThreadedRequestLimit</definition>
+        <argsstring></argsstring>
+        <name>RunningThreadedRequestLimit</name>
+        <qualifiedname>URequestsGateKeeper::RunningThreadedRequestLimit</qualifiedname>
+        <initializer>= 20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="84" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a237a3a33de023425003af0e8e4f29495" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::ActiveHighPriorityRequests</definition>
+        <argsstring></argsstring>
+        <name>ActiveHighPriorityRequests</name>
+        <qualifiedname>URequestsGateKeeper::ActiveHighPriorityRequests</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="86" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a0ce5721f16684432dd19b9facf5293aa" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::WaitingRequestsCount</definition>
+        <argsstring></argsstring>
+        <name>WaitingRequestsCount</name>
+        <qualifiedname>URequestsGateKeeper::WaitingRequestsCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="87" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1afd5608154478b4f9dc885ad6aa61d92c" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::RunningRequestsCount</definition>
+        <argsstring></argsstring>
+        <name>RunningRequestsCount</name>
+        <qualifiedname>URequestsGateKeeper::RunningRequestsCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="88" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a7896e262e8a79401f660658ec6ced5a8" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::AllStartedRequestesCount</definition>
+        <argsstring></argsstring>
+        <name>AllStartedRequestesCount</name>
+        <qualifiedname>URequestsGateKeeper::AllStartedRequestesCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="90" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1abe846931de3d5555be1d0dd2b5e85d9f" prot="private" static="no" mutable="no">
+        <type>std::atomic_int32_t</type>
+        <definition>std::atomic_int32_t URequestsGateKeeper::AllCompletedRequestesCount</definition>
+        <argsstring></argsstring>
+        <name>AllCompletedRequestesCount</name>
+        <qualifiedname>URequestsGateKeeper::AllCompletedRequestesCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="91" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1ab9fe6ff9b64a0ec8c52e5273d8c74746" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IHttpRequest</ref> &gt;, EQueueMode::Mpsc &gt;</type>
+        <definition>TQueue&lt;TSharedPtr&lt;IHttpRequest&gt;, EQueueMode::Mpsc&gt; URequestsGateKeeper::WaitingRequests</definition>
+        <argsstring></argsstring>
+        <name>WaitingRequests</name>
+        <qualifiedname>URequestsGateKeeper::WaitingRequests</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Очередь низкоприоритетных запросов, ожидающих обработки <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="96" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_requests_gate_keeper_1a1e6232f720235fadf0d992f35b5ccd52" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IHttpRequest</ref> &gt; &gt;</type>
+        <definition>TArray&lt;TSharedPtr&lt;IHttpRequest&gt; &gt; URequestsGateKeeper::LowPriorityRequestsList</definition>
+        <argsstring></argsstring>
+        <name>LowPriorityRequestsList</name>
+        <qualifiedname>URequestsGateKeeper::LowPriorityRequestsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="97" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1ad4b5067e5b41786d32242eaa7a600b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::InitializeRequestGateKeeper</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeRequestGateKeeper</name>
+        <qualifiedname>URequestsGateKeeper::InitializeRequestGateKeeper</qualifiedname>
+        <briefdescription>
+<para>Инициализация локальных переменных, установка делегатов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="30" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="15" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1af2be82e187f62db68e94961e63119d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::CancelLowPriorityRequests</definition>
+        <argsstring>()</argsstring>
+        <name>CancelLowPriorityRequests</name>
+        <qualifiedname>URequestsGateKeeper::CancelLowPriorityRequests</qualifiedname>
+        <briefdescription>
+<para>Отменяет все запросы, ожидающие прохождения. Очищает счетчики низкоприоритетных запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="37" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a29ff7328aa00f6cd3a4de18f15e46bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::PassRequest</definition>
+        <argsstring>(const TSharedPtr&lt; IHttpRequest &gt; &amp;Request)</argsstring>
+        <name>PassRequest</name>
+        <qualifiedname>URequestsGateKeeper::PassRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IHttpRequest</ref> &gt; &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+<para>Получить запрос и поставить его в очередь ожидания, чтобы обработать его, когда это станет возможно </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ссылка на запрос, который будет ждать, пока пул запросов не освободится от приоритетных запросов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="45" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="118" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a4028bc8c941aeee08931dde81504b68f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::CancelSingleLowPriorityRequest</definition>
+        <argsstring>(TSharedPtr&lt; IHttpRequest &gt; &amp;Request)</argsstring>
+        <name>CancelSingleLowPriorityRequest</name>
+        <qualifiedname>URequestsGateKeeper::CancelSingleLowPriorityRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IHttpRequest</ref> &gt; &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+<para>Функция, форсированно удаляющая запрос из списка ожидающих низкоприоритетных запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ссылка на запрос, который нужно удалить </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="55" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a0e3d6393810722a60345a74b5d5cfca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+        <definition>int URequestsGateKeeper::GetRunningRequestsCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetRunningRequestsCount</name>
+        <qualifiedname>URequestsGateKeeper::GetRunningRequestsCount</qualifiedname>
+        <briefdescription>
+<para>Функция, возвращающая количество успешных http-запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Общее количество завершённых запросов </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="60" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a73ea1949284200d1f568b4fc33980df2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::OnRequestAddedToHttpManager</definition>
+        <argsstring>(const FHttpRequestRef &amp;Request)</argsstring>
+        <name>OnRequestAddedToHttpManager</name>
+        <qualifiedname>URequestsGateKeeper::OnRequestAddedToHttpManager</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestRef</ref> &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+<para>Коллбэк, срабатывающий при добавлении любого http-запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="103" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="79" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a032e7701ff0268fd5d7b5299e6cf4874" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::OnRequestCompletedAtHttpManager</definition>
+        <argsstring>(const FHttpRequestRef &amp;Request)</argsstring>
+        <name>OnRequestCompletedAtHttpManager</name>
+        <qualifiedname>URequestsGateKeeper::OnRequestCompletedAtHttpManager</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestRef</ref> &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+<para>Коллбэк, срабатывающий при завершении любого http-запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="109" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="96" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a2fcb08e482e724276d06dd3e2d4b52f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::TryToProcessWaitingRequests</definition>
+        <argsstring>()</argsstring>
+        <name>TryToProcessWaitingRequests</name>
+        <qualifiedname>URequestsGateKeeper::TryToProcessWaitingRequests</qualifiedname>
+        <briefdescription>
+<para>Обработать ожидающие запросов, которые могут быть пропущены в свободное место в пуле запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="115" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="134" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a4e984d7047323e510b70326b0c80605d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::OnConfigSectionsChanged</definition>
+        <argsstring>(const FString &amp;IniFilename, const TSet&lt; FString &gt; &amp;SectionNames)</argsstring>
+        <name>OnConfigSectionsChanged</name>
+        <qualifiedname>URequestsGateKeeper::OnConfigSectionsChanged</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>IniFilename</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>SectionNames</declname>
+        </param>
+        <briefdescription>
+<para>Коллбэк, срабатывающий при изменении конфигурационных файлов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="121" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="174" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1ae03942222b704ba63411a259d2761959" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void URequestsGateKeeper::UpdateConfigs</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateConfigs</name>
+        <qualifiedname>URequestsGateKeeper::UpdateConfigs</qualifiedname>
+        <briefdescription>
+<para>Обновить конфигурацию после изменения конфигурационных файлов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="127" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="191" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_requests_gate_keeper_1a5ea97799334641f72ae48e3b52b6afc9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>URequestsGateKeeper::~URequestsGateKeeper</definition>
+        <argsstring>() override</argsstring>
+        <name>~URequestsGateKeeper</name>
+        <qualifiedname>URequestsGateKeeper::~URequestsGateKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="129" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/RequestsGateKeeper.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, который останавливает http-запросы, ожидающие свободных мест в очереди запросов модуля http. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>URequestsGateKeeper</label>
+        <link refid="class_u_requests_gate_keeper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>URequestsGateKeeper</label>
+        <link refid="class_u_requests_gate_keeper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" line="20" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/RequestsGateKeeper.h" bodystart="21" bodyend="130"/>
+    <listofallmembers>
+      <member refid="class_u_requests_gate_keeper_1a237a3a33de023425003af0e8e4f29495" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>ActiveHighPriorityRequests</name></member>
+      <member refid="class_u_requests_gate_keeper_1abe846931de3d5555be1d0dd2b5e85d9f" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>AllCompletedRequestesCount</name></member>
+      <member refid="class_u_requests_gate_keeper_1a7896e262e8a79401f660658ec6ced5a8" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>AllStartedRequestesCount</name></member>
+      <member refid="class_u_requests_gate_keeper_1af2be82e187f62db68e94961e63119d2a" prot="public" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>CancelLowPriorityRequests</name></member>
+      <member refid="class_u_requests_gate_keeper_1a4028bc8c941aeee08931dde81504b68f" prot="public" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>CancelSingleLowPriorityRequest</name></member>
+      <member refid="class_u_requests_gate_keeper_1adc6b17acb706140f79ebb7d61c9a17d6" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>GateKeeperMutex</name></member>
+      <member refid="class_u_requests_gate_keeper_1a0e3d6393810722a60345a74b5d5cfca3" prot="public" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>GetRunningRequestsCount</name></member>
+      <member refid="class_u_requests_gate_keeper_1a0cbdfa3b24250e10cf94f74c0db291dd" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>HttpManager</name></member>
+      <member refid="class_u_requests_gate_keeper_1ad4b5067e5b41786d32242eaa7a600b6e" prot="public" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>InitializeRequestGateKeeper</name></member>
+      <member refid="class_u_requests_gate_keeper_1a1e6232f720235fadf0d992f35b5ccd52" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>LowPriorityRequestsList</name></member>
+      <member refid="class_u_requests_gate_keeper_1a46c1cde68a41807d412c880374579e2e" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>OnAddDelegate</name></member>
+      <member refid="class_u_requests_gate_keeper_1a734368b6c813b6402e8758b363c5afc3" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>OnCompleteDelegate</name></member>
+      <member refid="class_u_requests_gate_keeper_1a4e984d7047323e510b70326b0c80605d" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>OnConfigSectionsChanged</name></member>
+      <member refid="class_u_requests_gate_keeper_1a73ea1949284200d1f568b4fc33980df2" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>OnRequestAddedToHttpManager</name></member>
+      <member refid="class_u_requests_gate_keeper_1a032e7701ff0268fd5d7b5299e6cf4874" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>OnRequestCompletedAtHttpManager</name></member>
+      <member refid="class_u_requests_gate_keeper_1a29ff7328aa00f6cd3a4de18f15e46bbe" prot="public" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>PassRequest</name></member>
+      <member refid="class_u_requests_gate_keeper_1ae54452543ba994afed5f9609dd1ca9fd" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>PriorityRequestsCapacity</name></member>
+      <member refid="class_u_requests_gate_keeper_1a3e1b6c0734b927c431e73985c3ea5a68" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>RequestQueryLimit</name></member>
+      <member refid="class_u_requests_gate_keeper_1afd5608154478b4f9dc885ad6aa61d92c" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>RunningRequestsCount</name></member>
+      <member refid="class_u_requests_gate_keeper_1a93f05c5419af0a04eadc800f4c54b4bc" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>RunningThreadedRequestLimit</name></member>
+      <member refid="class_u_requests_gate_keeper_1a2fcb08e482e724276d06dd3e2d4b52f6" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>TryToProcessWaitingRequests</name></member>
+      <member refid="class_u_requests_gate_keeper_1ae03942222b704ba63411a259d2761959" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>UpdateConfigs</name></member>
+      <member refid="class_u_requests_gate_keeper_1ab9fe6ff9b64a0ec8c52e5273d8c74746" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>WaitingRequests</name></member>
+      <member refid="class_u_requests_gate_keeper_1a0ce5721f16684432dd19b9facf5293aa" prot="private" virt="non-virtual"><scope>URequestsGateKeeper</scope><name>WaitingRequestsCount</name></member>
+      <member refid="class_u_requests_gate_keeper_1a5ea97799334641f72ae48e3b52b6afc9" prot="private" virt="virtual"><scope>URequestsGateKeeper</scope><name>~URequestsGateKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

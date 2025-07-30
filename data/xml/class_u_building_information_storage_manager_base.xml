@@ -1,0 +1,1235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_building_information_storage_manager_base" kind="class" language="C++" prot="public">
+    <compoundname>UBuildingInformationStorageManagerBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UWorldSubsystem</basecompoundref>
+    <derivedcompoundref refid="class_u_building_subsystem_information_storage_manager" prot="public" virt="non-virtual">UBuildingSubsystemInformationStorageManager</derivedcompoundref>
+    <includes refid="_building_information_storage_manager_base_8h" local="no">BuildingInformationStorageManagerBase.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1a130abb83e72d913bca78a7bb0e3a09c4" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSpawnedBuilding</ref></type>
+        <definition>FSpawnedBuilding UBuildingInformationStorageManagerBase::OnSpawnedBuilding</definition>
+        <argsstring></argsstring>
+        <name>OnSpawnedBuilding</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::OnSpawnedBuilding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>События, вызываемые при успешном спауне здания. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="38" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1ab59c516b0e18937402f14ca750502934" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSpawnedAsDemo</ref></type>
+        <definition>FSpawnedAsDemo UBuildingInformationStorageManagerBase::OnSpawnedAsDemo</definition>
+        <argsstring></argsstring>
+        <name>OnSpawnedAsDemo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::OnSpawnedAsDemo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="39" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1aebc9136bc6ee9ad479518ee899173075" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">auto</ref></type>
+        <definition>constexpr auto UBuildingInformationStorageManagerBase::JsonKeyWithDemoInfo</definition>
+        <argsstring></argsstring>
+        <name>JsonKeyWithDemoInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::JsonKeyWithDemoInfo</qualifiedname>
+        <initializer>= TEXT(&quot;BuildingUnrealDemoViewModeInfo&quot;)</initializer>
+        <briefdescription>
+<para>Ключ в JSON, по которому смотрим, нужно ли демо-здание вместо обычного. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="59" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1a653e030bf0d3b6aa36eff922b7628df1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_u_building_info_collection" kindref="compound">UBuildingInfoCollection</ref> *</type>
+        <definition>UBuildingInfoCollection* UBuildingInformationStorageManagerBase::InfoCollection</definition>
+        <argsstring></argsstring>
+        <name>InfoCollection</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::InfoCollection</qualifiedname>
+        <briefdescription>
+<para>Указатель на коллекцию информации о зданиях (ранее был UPROPERTY в AActor). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="328" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1aef013c508ac6056f9bc40ce153f2afa8" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_find_console_commands" kindref="compound">UFindConsoleCommands</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UFindConsoleCommands&gt; UBuildingInformationStorageManagerBase::ConsoleCommands</definition>
+        <argsstring></argsstring>
+        <name>ConsoleCommands</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ConsoleCommands</qualifiedname>
+        <briefdescription>
+<para>Консольные команды (из FindConsoleCommands). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="346" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_building_information_storage_manager_base_1a1096eda9d5c4d36643b96f98bb239e3b" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt;</type>
+        <definition>TArray&lt;ABuildingCoreBase*&gt; UBuildingInformationStorageManagerBase::CacheBuildingsCurrentMap</definition>
+        <argsstring></argsstring>
+        <name>CacheBuildingsCurrentMap</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::CacheBuildingsCurrentMap</qualifiedname>
+        <briefdescription>
+<para>Новый контейнер для хранения всех зданий, в котором выполняется линейный поиск. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="353" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1aa8bc2210f9622bff6f62ebe741ae3b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UBuildingInformationStorageManagerBase::DECLARE_DELEGATE_TwoParams</definition>
+        <argsstring>(FSpawnedBuilding, FGuid, ABuildingCoreBase *)</argsstring>
+        <name>DECLARE_DELEGATE_TwoParams</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::DECLARE_DELEGATE_TwoParams</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSpawnedBuilding</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        </param>
+        <param>
+          <type><ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Делегаты, которые были в Actor-классе, сохранены для совместимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="34" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1af621ed9bbce48f118b4d2d4714aaa1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UBuildingInformationStorageManagerBase::DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FSpawnedAsDemo, ABuildingCoreBase *)</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::DECLARE_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSpawnedAsDemo</ref></type>
+        </param>
+        <param>
+          <type><ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="35" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a608e9e406d4d8aa07861f3f100d86363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UBuildingInformationStorageManagerBase::UBuildingInformationStorageManagerBase</definition>
+        <argsstring>()</argsstring>
+        <name>UBuildingInformationStorageManagerBase</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::UBuildingInformationStorageManagerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="42" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a3ad2e9fcb846102a8af832ea193fcfbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::Initialize</qualifiedname>
+        <reimplementedby refid="class_u_building_subsystem_information_storage_manager_1abf1c901489633ded04706f483339ffd7">Initialize</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+<para>Аналог BeginPlay для Subsystem — инициализация при запуске. Вызывается фреймворком сразу после создания/регистрации подсистемы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="48" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a8004567634c289cb1d13c505a1a2d7bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::Deinitialize</qualifiedname>
+        <briefdescription>
+<para>Аналог EndPlay/Destroy для Subsystem — деинициализация. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="53" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a37bf512cab67cdafa09f0982219b4470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_building_info_collection" kindref="compound">UBuildingInfoCollection</ref> *</type>
+        <definition>UBuildingInfoCollection * UBuildingInformationStorageManagerBase::GetInfoCollection</definition>
+        <argsstring>()</argsstring>
+        <name>GetInfoCollection</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetInfoCollection</qualifiedname>
+        <briefdescription>
+<para>Получает коллекцию информации о зданиях. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если коллекция ещё не создана, будет создана. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="77" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="38" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1adae9617fbdcd8b6b76621ec522a43b7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_building_info_collection" kindref="compound">UBuildingInfoCollection</ref> *</type>
+        <definition>const UBuildingInfoCollection * UBuildingInformationStorageManagerBase::GetInfoCollectionConst</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfoCollectionConst</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetInfoCollectionConst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="80" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a69653f26bd702c0edd244acca0537280" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_u_building_info_collection" kindref="compound">UBuildingInfoCollection</ref> &gt;</type>
+        <definition>TSubclassOf&lt; UBuildingInfoCollection &gt; UBuildingInformationStorageManagerBase::GetCollectionInfoClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetCollectionInfoClass</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetCollectionInfoClass</qualifiedname>
+        <briefdescription>
+<para>Возвращает тип класса Коллекции Информации о Зданиях. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="85" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1af228ad01918dad9a97611cc368b8ef04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> * &gt;</type>
+        <definition>TArray&lt; UBuildingInfoWrapper * &gt; UBuildingInformationStorageManagerBase::GetAllInfoWithIds</definition>
+        <argsstring>(const TArray&lt; FGuid &gt; &amp;Ids) const</argsstring>
+        <name>GetAllInfoWithIds</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetAllInfoWithIds</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>Ids</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает все оболочки информации о здании с указанными идентификаторами. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив GUIDов, представляющих идентификаторы извлекаемых оболочек. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="93" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ac193e5efccede945f835057f29e1f52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::ContainsKeyInBuildingCollection</definition>
+        <argsstring>(const FString &amp;Key)</argsstring>
+        <name>ContainsKeyInBuildingCollection</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ContainsKeyInBuildingCollection</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, существует ли данный ключ (строковый) в коллекции информации о зданиях. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="98" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a613b283e7d24249185e09636ef111ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::ContainsKeyInBuildingCollectionGuid</definition>
+        <argsstring>(const FGuid &amp;Key)</argsstring>
+        <name>ContainsKeyInBuildingCollectionGuid</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ContainsKeyInBuildingCollectionGuid</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, существует ли данный ключ (GUID) в коллекции информации о зданиях. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="104" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ac3e602a5f06ae035d34b2b123017450e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+        <definition>UBuildingInfoWrapper * UBuildingInformationStorageManagerBase::Find</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>Find</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::Find</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Находит экземпляр контейнера с информацией о зданиях по строковому ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="109" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ac076e17c4dc84cbf555a31930d99849f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+        <definition>UBuildingInfoWrapper * UBuildingInformationStorageManagerBase::Find</definition>
+        <argsstring>(const FGuid &amp;Key) const</argsstring>
+        <name>Find</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::Find</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Находит экземпляр контейнера с информацией о зданиях по GUID-ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="115" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1afceaeb08e177b845eb2dc7fba8cbcbc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::RemoveBuildingInfo</definition>
+        <argsstring>(const FString &amp;Key)</argsstring>
+        <name>RemoveBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::RemoveBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет информацию о здании из менеджера хранения (по строковому ключу). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="120" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a292c915be243f7df7d8629a3efa316a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::RemoveBuildingInfo</definition>
+        <argsstring>(const FGuid &amp;Key)</argsstring>
+        <name>RemoveBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::RemoveBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет информацию о здании из менеджера хранения (по GUID). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="126" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ab4e84517af652519cf58dd90133764dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::RemoveBuildingInfo</definition>
+        <argsstring>(const UBuildingInfoWrapper *Info)</argsstring>
+        <name>RemoveBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::RemoveBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет информацию о здании из менеджера хранения (по объекту). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="131" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a5602fae498572348e400da6193e04003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::AddBuildingInfo</definition>
+        <argsstring>(const FString &amp;Key)</argsstring>
+        <name>AddBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет информацию о здании (по строковому ключу). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="136" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1af255815908c00ffd4694865f75cebe8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::AddBuildingInfo</definition>
+        <argsstring>(const FString &amp;Key, UBuildingInfoWrapper *Info)</argsstring>
+        <name>AddBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет информацию о здании (по строковому ключу). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <computeroutput><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref></computeroutput>, содержащий данные. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="142" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="124" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1aea5bc35d6e0685f8e0e0aa3239dc2c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::AddBuildingInfo</definition>
+        <argsstring>(const FGuid &amp;Key, UBuildingInfoWrapper *Info)</argsstring>
+        <name>AddBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет информацию о здании (по GUID). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="148" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a7312dad6e67fc41096e5f5c5e9a7d1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::AddBuildingInfo</definition>
+        <argsstring>(UBuildingInfoWrapper *Info)</argsstring>
+        <name>AddBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет информацию о здании, используя GUID из самого Info. Возвращает true, если GUID валидный и объект добавлен. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="154" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="140" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a46c02719e2cd344b964e11bca50658f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+        <definition>UBuildingInfoWrapper * UBuildingInformationStorageManagerBase::GetBuildingInfo</definition>
+        <argsstring>(const FString &amp;Key)</argsstring>
+        <name>GetBuildingInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Получить (по строковому ключу) контейнер информации о здании. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="159" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1acc477ce8c0a3cf24769448a5500aac0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+        <definition>UBuildingInfoWrapper * UBuildingInformationStorageManagerBase::GetBuildingInfoConst</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetBuildingInfoConst</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingInfoConst</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>То же самое, но константная версия. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="164" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a785e77f79776e11591d9c43ec5239caf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+        <definition>UBuildingInfoWrapper * UBuildingInformationStorageManagerBase::GetBuildingInfoContainer</definition>
+        <argsstring>(const FString &amp;Key) const</argsstring>
+        <name>GetBuildingInfoContainer</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingInfoContainer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает контейнер информации о здании (по строковому ключу). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="170" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1add095bb3296c7414df57234f791e63c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::ClearBuildingInfoCollection</definition>
+        <argsstring>()</argsstring>
+        <name>ClearBuildingInfoCollection</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ClearBuildingInfoCollection</qualifiedname>
+        <briefdescription>
+<para>Очищает коллекцию информации о зданиях (не удаляя объекты насовсем). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="176" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="166" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ace4331161ae604eb5fed2495e2a43a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> *</type>
+        <definition>ABuildingCoreBase * UBuildingInformationStorageManagerBase::SpawnBuilding</definition>
+        <argsstring>(UBuildingInfoWrapper *DataInfoPtr, TSubclassOf&lt; ABuildingCoreBase &gt; BuildingClass)</argsstring>
+        <name>SpawnBuilding</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::SpawnBuilding</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>DataInfoPtr</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> &gt;</type>
+          <declname>BuildingClass</declname>
+        </param>
+        <briefdescription>
+<para>Спаунит здание на сцене по переданному <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> и классу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DataInfoPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация о здании </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Класс здания (Blueprint/C++), который нужно заспаунить </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на заспавненный <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> (или nullptr, если не получилось) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="185" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="175" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ad0c15c2bc03bc9d11725a57e892142ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::SpawnBuildingsByInfo</definition>
+        <argsstring>(const TArray&lt; UBuildingInfoWrapper * &gt; &amp;DataInfoArr)</argsstring>
+        <name>SpawnBuildingsByInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::SpawnBuildingsByInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> * &gt; &amp;</type>
+          <declname>DataInfoArr</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт несколько зданий на основе массива данных. Возвращает false при ошибках. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="190" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="217" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a0d4f40b6acfdab3f63a2df44ed5be2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::SpawnBuildingByInfo</definition>
+        <argsstring>(const TObjectPtr&lt; UBuildingInfoWrapper &gt; &amp;Info)</argsstring>
+        <name>SpawnBuildingByInfo</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::SpawnBuildingByInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt; &amp;</type>
+          <declname>Info</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт одно здание на основе объекта Info. Упрощённый вызов. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="195" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a02691f44d4360e7112e39d03ac2ae141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::AddNewBuildingIntoSceneNew</definition>
+        <argsstring>(const TArray&lt; TObjectPtr&lt; UBuildingInfoWrapper &gt; &gt; &amp;DataInfoArr)</argsstring>
+        <name>AddNewBuildingIntoSceneNew</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddNewBuildingIntoSceneNew</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> &gt; &gt; &amp;</type>
+          <declname>DataInfoArr</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет новые здания на сцену (возможно, ранее не существовавшие). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="200" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="263" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ab67b3a3fa191648b3835e78c17c57bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::AddBuildingsIntoScene</definition>
+        <argsstring>(const TArray&lt; UBuildingInfoWrapper * &gt; &amp;DataInfoArr, const FString &amp;DisplayLogMsg=TEXT(&quot;&quot;))</argsstring>
+        <name>AddBuildingsIntoScene</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::AddBuildingsIntoScene</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> * &gt; &amp;</type>
+          <declname>DataInfoArr</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>DisplayLogMsg</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+<para>Добавляет здания в сцену на основе предоставленной информации, затем обновляет хэш-дерево. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="205" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="274" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a4f1bdbcd47b963a060925fc3def37c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::SpawnAllBuildingIntoScene</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnAllBuildingIntoScene</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::SpawnAllBuildingIntoScene</qualifiedname>
+        <briefdescription>
+<para>Извлекает словарь зданий (BuildingsDictionary) из контекста. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Уст.</xreftitle><xrefdescription><para>Используйте ABuildingsDictionary::GetBuildingsDictionary(this). </para>
+</xrefdescription></xrefsect></para>
+<para>Создаёт все здания (которые есть в InfoCollection) на сцене. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="254" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="405" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1aa91695f8ec95d663a8adb4b72d8d7850" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::ResetBuildingInfoCollection</definition>
+        <argsstring>()</argsstring>
+        <name>ResetBuildingInfoCollection</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ResetBuildingInfoCollection</qualifiedname>
+        <briefdescription>
+<para>Сбрасывает (очищает) коллекцию зданий и пере-собирает её на основе зданий, уже существующих в мире. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="265" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="425" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ab2021652fda56ee43d255bffbe5bb22c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> * &gt;</type>
+        <definition>TArray&lt; UBuildingInfoWrapper * &gt; UBuildingInformationStorageManagerBase::GetBuildingsInfoByIds</definition>
+        <argsstring>(const TArray&lt; FGuid &gt; &amp;Ids) const</argsstring>
+        <name>GetBuildingsInfoByIds</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingsInfoByIds</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>Ids</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает массив Info-объектов для указанных GUID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="270" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="448" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1afb6885a01bfb437a8c6963a734b4a208" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt;</type>
+        <definition>TArray&lt; ABuildingCoreBase * &gt; UBuildingInformationStorageManagerBase::GetBuildingsByIds</definition>
+        <argsstring>(const TArray&lt; FGuid &gt; &amp;Ids) const</argsstring>
+        <name>GetBuildingsByIds</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingsByIds</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &gt; &amp;</type>
+          <declname>Ids</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает массив ABuildingCoreBase* на основе GUID. Если не найдено — возврат пуст. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="275" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="453" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1aeb9d4a464ab5306c3001db8bf43fcebd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt;</type>
+        <definition>TArray&lt; ABuildingCoreBase * &gt; UBuildingInformationStorageManagerBase::GetBuildingsByIds</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;Ids) const</argsstring>
+        <name>GetBuildingsByIds</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingsByIds</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>Ids</declname>
+        </param>
+        <briefdescription>
+<para>То же самое, но GUID передаются в виде массива строк. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="280" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a1617e5c54cc4b4e5fbf60823a8f96542" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::ShouldCreateSubsystem</definition>
+        <argsstring>(UObject *Outer) const override</argsstring>
+        <name>ShouldCreateSubsystem</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::ShouldCreateSubsystem</qualifiedname>
+        <reimplementedby refid="class_u_building_subsystem_information_storage_manager_1a70dd747a9689b3795986b31083ef4c34">ShouldCreateSubsystem</reimplementedby>
+        <param>
+          <type>UObject *</type>
+          <declname>Outer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="308" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="490" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a56e52938e324567063eda631e49534de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::SuperShouldCreateSubsystem</definition>
+        <argsstring>(UObject *Outer) const</argsstring>
+        <name>SuperShouldCreateSubsystem</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::SuperShouldCreateSubsystem</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>Outer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="310" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="495" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ac7c64fabee2cbed0f4784b9aeb496d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::GenerateHashTree</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateHashTree</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GenerateHashTree</qualifiedname>
+        <briefdescription>
+<para>Функция, которая по названию создаёт «хеш-дерево», но теперь фактически лишь собирает все здания во внутренний массив (AllBuildings) для упрощённого поиска. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Также очищает HashTreeBuilding, чтобы не ломать старое API. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="339" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="527" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a08689c65ed5811bdd4df6fe0cfd55807" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UBuildingInformationStorageManagerBase::FindBuilding</definition>
+        <argsstring>(FString FindString, TArray&lt; ABuildingCoreBase * &gt; &amp;Buildings)</argsstring>
+        <name>FindBuilding</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::FindBuilding</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>FindString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> * &gt; &amp;</type>
+          <declname>Buildings</declname>
+        </param>
+        <briefdescription>
+<para>Функция поиска здания по строке FindString. Выполняет упрощённый линейный поиск по имени/адресу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FindString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка поиска </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Buildings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив найденных зданий </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если хоть одно здание найдено, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="365" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="563" bodyend="599"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1acdae419fd4e113af363662a5eb7ad1c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref> *</type>
+        <definition>UBuildingInformationStorageManagerBase * UBuildingInformationStorageManagerBase::Get</definition>
+        <argsstring>(const UObject *WorldContextObject)</argsstring>
+        <name>Get</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::Get</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> UObject *</type>
+          <declname>WorldContextObject</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает (создаёт при необходимости) подсистему <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WorldContextObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Любой объект, из которого можно получить UGameInstance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на Subsystem, либо nullptr, если что-то не так. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="69" column="55" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a849ac2b2389d20bd0074b4d685ff042c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::GuaranteeExistsGuid</definition>
+        <argsstring>(const ABuildingCoreBase *Building)</argsstring>
+        <name>GuaranteeExistsGuid</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GuaranteeExistsGuid</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> *</type>
+          <declname>Building</declname>
+        </param>
+        <briefdescription>
+<para>Гарантирует, что у здания есть валидный GUID (парсит JSON и при необходимости дописывает). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="210" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="288" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a220bcc09f9b3446d8213fcb819f3ecd2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+        <definition>FGuid UBuildingInformationStorageManagerBase::GuaranteeExistsGuid</definition>
+        <argsstring>(UBuildingInfoWrapper *DataInfoPtr, const FMetaJsonWrapper &amp;Json, const FString &amp;JsonFileRealPath)</argsstring>
+        <name>GuaranteeExistsGuid</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GuaranteeExistsGuid</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>DataInfoPtr</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_json_wrapper" kindref="compound">FMetaJsonWrapper</ref> &amp;</type>
+          <declname>Json</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonFileRealPath</declname>
+        </param>
+        <briefdescription>
+<para>Версия GuaranteeExistsGuid, принимающая данные + JSON напрямую. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="215" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="305" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a00ac7c702d827ffac87e392c379afb6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> &gt;</type>
+        <definition>TSubclassOf&lt; ABuildingCoreBase &gt; UBuildingInformationStorageManagerBase::GetBuildingClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildingClass</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingClass</qualifiedname>
+        <briefdescription>
+<para>Получает класс здания из BuildingSettingsBase (Blueprint/C++ класс). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="224" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="382" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1afe5d8883eac3af39246a16f6d95d4d23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref> &gt;</type>
+        <definition>TSubclassOf&lt; UBuildingInformationStorageManagerBase &gt; UBuildingInformationStorageManagerBase::GetBuildingManagerClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildingManagerClass</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingManagerClass</qualifiedname>
+        <briefdescription>
+<para>Класс менеджера зданий из настроек (сам этот класс или наследники). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="229" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="388" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a3fe304e2c5eb84314fd3d610c5a452fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> &gt;</type>
+        <definition>TSubclassOf&lt; ABuildingCoreBase &gt; UBuildingInformationStorageManagerBase::GetDemoBuildingClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetDemoBuildingClass</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetDemoBuildingClass</qualifiedname>
+        <briefdescription>
+<para>Класс демо-здания, если нужна особая логика/вид. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="234" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="394" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a1ef6f1bcd19011c1154778cd4ee04e6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_building_settings_base" kindref="compound">UBuildingSettingsBase</ref> *</type>
+        <definition>const UBuildingSettingsBase * UBuildingInformationStorageManagerBase::GetBuildingSettings</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildingSettings</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingSettings</qualifiedname>
+        <briefdescription>
+<para>Получает настройки здания (BuildingSettingsBase). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="240" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a50e81f4caad8ff98564c375100fc08f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_u_building_info_collection" kindref="compound">UBuildingInfoCollection</ref> &gt;</type>
+        <definition>TSubclassOf&lt; UBuildingInfoCollection &gt; UBuildingInformationStorageManagerBase::GetBuildingInfoCollectionClass</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildingInfoCollectionClass</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingInfoCollectionClass</qualifiedname>
+        <briefdescription>
+<para>Возвращает класс BuildingInfoCollection (из BuildingSettingsBase). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="259" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="419" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1acbadfb40bdb50c0c4378b4b3ab0f75db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TBuildingManager</ref></type>
+            <defval><ref refid="class_u_building_information_storage_manager_base" kindref="compound">UBuildingInformationStorageManagerBase</ref></defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TBuildingManager</ref> *</type>
+        <definition>static TBuildingManager * UBuildingInformationStorageManagerBase::GetBuildingInformationStorageManagerBase</definition>
+        <argsstring>(const UObject *WorldContextObject)</argsstring>
+        <name>GetBuildingInformationStorageManagerBase</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetBuildingInformationStorageManagerBase</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> UObject *</type>
+          <declname>WorldContextObject</declname>
+        </param>
+        <briefdescription>
+<para>Шаблон из оригинала, теперь возвращает Subsystem, а не Actor. Если нужен сам класс-наследник, можно указать через &lt;TBuildingManager&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="287" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="287" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ac609040f82bb69a7918833c4812036b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UWorldSubsystem *</type>
+        <definition>UWorldSubsystem * UBuildingInformationStorageManagerBase::GetActualBuildingManagerSubsystem</definition>
+        <argsstring>(const UWorld *World)</argsstring>
+        <name>GetActualBuildingManagerSubsystem</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::GetActualBuildingManagerSubsystem</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="306" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="485" bodyend="488"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1a5df2436f9c084921fed7e014433379d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::OnWorldPostLoad</definition>
+        <argsstring>(UWorld *World)</argsstring>
+        <name>OnWorldPostLoad</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::OnWorldPostLoad</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>При старте (загрузке) мира может потребоваться восстановить информацию о зданиях. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="316" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="500" bodyend="500"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_building_information_storage_manager_base_1ae939f0b29357ee098023df88448f0ccd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingInformationStorageManagerBase::UpdateInfoInCollectionFromExistsBuildings</definition>
+        <argsstring>(UWorld *World)</argsstring>
+        <name>UpdateInfoInCollectionFromExistsBuildings</name>
+        <qualifiedname>UBuildingInformationStorageManagerBase::UpdateInfoInCollectionFromExistsBuildings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <briefdescription>
+<para>В оригинале было PostLoad + делегат OnPostWorldInitialization. Теперь аккуратно перенесено в OnWorldPostLoad. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="322" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingInformationStorageManagerBase.cpp" bodystart="502" bodyend="525"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Базовый класс (изначально был AActor), переведён на GameInstanceSubsystem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Хранит и управляет информацией о зданиях:<itemizedlist>
+<listitem><para>Позволяет получить/добавить/удалить данные</para>
+</listitem><listitem><para>Позволяет спаунить здания на сцене на основе информации</para>
+</listitem><listitem><para>Обновляет хэш-дерево словаря зданий</para>
+</listitem></itemizedlist>
+</para>
+<para>Вся логика работает на уровне Subsystem, т.е. доступна глобально (через GameInstance). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UBuildingInformationStorageManagerBase</label>
+        <link refid="class_u_building_information_storage_manager_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UBuildingSubsystemInformationStorageManager</label>
+        <link refid="class_u_building_subsystem_information_storage_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>UBuildingInfoCollection</label>
+        <link refid="class_u_building_info_collection"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UBuildingInformationStorageManagerBase</label>
+        <link refid="class_u_building_information_storage_manager_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>InfoCollection</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UObject</label>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" line="28" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingInformationStorageManagerBase.h" bodystart="29" bodyend="366"/>
+    <listofallmembers>
+      <member refid="class_u_building_information_storage_manager_base_1a5602fae498572348e400da6193e04003" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1af255815908c00ffd4694865f75cebe8d" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aea5bc35d6e0685f8e0e0aa3239dc2c50" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a7312dad6e67fc41096e5f5c5e9a7d1a7" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ab67b3a3fa191648b3835e78c17c57bc6" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddBuildingsIntoScene</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a02691f44d4360e7112e39d03ac2ae141" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>AddNewBuildingIntoSceneNew</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a1096eda9d5c4d36643b96f98bb239e3b" prot="protected" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>CacheBuildingsCurrentMap</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1add095bb3296c7414df57234f791e63c9" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ClearBuildingInfoCollection</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aef013c508ac6056f9bc40ce153f2afa8" prot="protected" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ConsoleCommands</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ac193e5efccede945f835057f29e1f52b" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ContainsKeyInBuildingCollection</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a613b283e7d24249185e09636ef111ce3" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ContainsKeyInBuildingCollectionGuid</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1af621ed9bbce48f118b4d2d4714aaa1ed" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>DECLARE_DELEGATE_OneParam</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aa8bc2210f9622bff6f62ebe741ae3b48" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>DECLARE_DELEGATE_TwoParams</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a8004567634c289cb1d13c505a1a2d7bb" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>Deinitialize</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ac3e602a5f06ae035d34b2b123017450e" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>Find</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ac076e17c4dc84cbf555a31930d99849f" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>Find</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a08689c65ed5811bdd4df6fe0cfd55807" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>FindBuilding</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ac7c64fabee2cbed0f4784b9aeb496d64" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GenerateHashTree</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1acdae419fd4e113af363662a5eb7ad1c0" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>Get</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ac609040f82bb69a7918833c4812036b1" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetActualBuildingManagerSubsystem</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1af228ad01918dad9a97611cc368b8ef04" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetAllInfoWithIds</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a00ac7c702d827ffac87e392c379afb6b" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingClass</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a46c02719e2cd344b964e11bca50658f1" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a50e81f4caad8ff98564c375100fc08f0" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingInfoCollectionClass</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1acc477ce8c0a3cf24769448a5500aac0c" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingInfoConst</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a785e77f79776e11591d9c43ec5239caf" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingInfoContainer</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1acbadfb40bdb50c0c4378b4b3ab0f75db" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingInformationStorageManagerBase</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1afe5d8883eac3af39246a16f6d95d4d23" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingManagerClass</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1afb6885a01bfb437a8c6963a734b4a208" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingsByIds</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aeb9d4a464ab5306c3001db8bf43fcebd" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingsByIds</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a1ef6f1bcd19011c1154778cd4ee04e6b" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingSettings</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ab2021652fda56ee43d255bffbe5bb22c" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetBuildingsInfoByIds</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a69653f26bd702c0edd244acca0537280" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetCollectionInfoClass</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a3fe304e2c5eb84314fd3d610c5a452fd" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetDemoBuildingClass</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a37bf512cab67cdafa09f0982219b4470" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetInfoCollection</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1adae9617fbdcd8b6b76621ec522a43b7a" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GetInfoCollectionConst</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a849ac2b2389d20bd0074b4d685ff042c" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GuaranteeExistsGuid</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a220bcc09f9b3446d8213fcb819f3ecd2" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>GuaranteeExistsGuid</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a653e030bf0d3b6aa36eff922b7628df1" prot="private" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>InfoCollection</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a3ad2e9fcb846102a8af832ea193fcfbf" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>Initialize</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aebc9136bc6ee9ad479518ee899173075" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>JsonKeyWithDemoInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ab59c516b0e18937402f14ca750502934" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>OnSpawnedAsDemo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a130abb83e72d913bca78a7bb0e3a09c4" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>OnSpawnedBuilding</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a5df2436f9c084921fed7e014433379d5" prot="protected" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>OnWorldPostLoad</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1afceaeb08e177b845eb2dc7fba8cbcbc8" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>RemoveBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a292c915be243f7df7d8629a3efa316a5" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>RemoveBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ab4e84517af652519cf58dd90133764dc" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>RemoveBuildingInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1aa91695f8ec95d663a8adb4b72d8d7850" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ResetBuildingInfoCollection</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a1617e5c54cc4b4e5fbf60823a8f96542" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>ShouldCreateSubsystem</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a4f1bdbcd47b963a060925fc3def37c1a" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>SpawnAllBuildingIntoScene</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ace4331161ae604eb5fed2495e2a43a4d" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>SpawnBuilding</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a0d4f40b6acfdab3f63a2df44ed5be2b2" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>SpawnBuildingByInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ad0c15c2bc03bc9d11725a57e892142ec" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>SpawnBuildingsByInfo</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a56e52938e324567063eda631e49534de" prot="public" virt="virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>SuperShouldCreateSubsystem</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1a608e9e406d4d8aa07861f3f100d86363" prot="public" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>UBuildingInformationStorageManagerBase</name></member>
+      <member refid="class_u_building_information_storage_manager_base_1ae939f0b29357ee098023df88448f0ccd" prot="private" virt="non-virtual"><scope>UBuildingInformationStorageManagerBase</scope><name>UpdateInfoInCollectionFromExistsBuildings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

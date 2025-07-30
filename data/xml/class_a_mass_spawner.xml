@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_mass_spawner" kind="class" language="C++" prot="public">
+    <compoundname>AMassSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_mass_spawner_8h" local="no">MassSpawner.h</includes>
+    <innerclass refid="struct_a_mass_spawner_1_1_f_spawned_entities" prot="protected">AMassSpawner::FSpawnedEntities</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_mass_spawner_1a03c416020bdab4636fc25888811aa8a8" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassSpawnerOnSpawningFinishedEvent</ref></type>
+        <definition>FMassSpawnerOnSpawningFinishedEvent AMassSpawner::OnSpawningFinishedEvent</definition>
+        <argsstring></argsstring>
+        <name>OnSpawningFinishedEvent</name>
+        <qualifiedname>AMassSpawner::OnSpawningFinishedEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called once DoSpawning completes and all entities have been spawned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="97" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1aa53c63ffa713c866564a2fa82902bc1c" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassSpawnerOnDespawningFinishedEvent</ref></type>
+        <definition>FMassSpawnerOnDespawningFinishedEvent AMassSpawner::OnDespawningFinishedEvent</definition>
+        <argsstring></argsstring>
+        <name>OnDespawningFinishedEvent</name>
+        <qualifiedname>AMassSpawner::OnDespawningFinishedEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called once DoDespawning completes and all mass agents spawned by this spawner have been despawned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="101" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_mass_spawner_1a232db9e787b41f992287f76d34ab8677" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMassSpawner::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <qualifiedname>AMassSpawner::Count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="120" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1aa648cad5222e3a78666e1b74c8751a87" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_spawned_entity_type" kindref="compound">FMassSpawnedEntityType</ref> &gt;</type>
+        <definition>TArray&lt;FMassSpawnedEntityType&gt; AMassSpawner::EntityTypes</definition>
+        <argsstring></argsstring>
+        <name>EntityTypes</name>
+        <qualifiedname>AMassSpawner::EntityTypes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of entity types to spawn. These define which entities to spawn. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="124" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1a6b37a89aeebf7cb90495f5667cadba9e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_spawn_data_generator" kindref="compound">FMassSpawnDataGenerator</ref> &gt;</type>
+        <definition>TArray&lt;FMassSpawnDataGenerator&gt; AMassSpawner::SpawnDataGenerators</definition>
+        <argsstring></argsstring>
+        <name>SpawnDataGenerators</name>
+        <qualifiedname>AMassSpawner::SpawnDataGenerators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of entity spawn generators. These define where to spawn entities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="128" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1af28610598b23bd62b883f0cd2c2b3525" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 AMassSpawner::bAutoSpawnOnBeginPlay</definition>
+        <argsstring></argsstring>
+        <name>bAutoSpawnOnBeginPlay</name>
+        <qualifiedname>AMassSpawner::bAutoSpawnOnBeginPlay</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="131" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1a88917fcf60adc1a9566925277538e9cd" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 AMassSpawner::bOverrideSchematics</definition>
+        <argsstring></argsstring>
+        <name>bOverrideSchematics</name>
+        <qualifiedname>AMassSpawner::bOverrideSchematics</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>By default TickSchematics will be appended to the simulation&apos;s schematics. If this property is set to true the TickSchematics will override the original simulation schematics </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="136" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1aeab77961a82f90f5af1ae78d305ea405" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; UMassProcessor &gt; &gt;</type>
+        <definition>TArray&lt;TObjectPtr&lt;UMassProcessor&gt; &gt; AMassSpawner::PostSpawnProcessors</definition>
+        <argsstring></argsstring>
+        <name>PostSpawnProcessors</name>
+        <qualifiedname>AMassSpawner::PostSpawnProcessors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="139" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1aaed02d1c462cc19f58a4e7cf04855471" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float AMassSpawner::SpawningCountScale</definition>
+        <argsstring></argsstring>
+        <name>SpawningCountScale</name>
+        <qualifiedname>AMassSpawner::SpawningCountScale</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale of the spawning count </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="143" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1af88af462661521586a02ddef05515600" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref></type>
+        <definition>FDelegateHandle AMassSpawner::SimulationStartedHandle</definition>
+        <argsstring></argsstring>
+        <name>SimulationStartedHandle</name>
+        <qualifiedname>AMassSpawner::SimulationStartedHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="145" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1acaa9056d2152524cb4cf013034f4c077" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FDelegateHandle</ref></type>
+        <definition>FDelegateHandle AMassSpawner::OnPostWorldInitDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>OnPostWorldInitDelegateHandle</name>
+        <qualifiedname>AMassSpawner::OnPostWorldInitDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="147" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1a4166f8e7e84ebdd6305cc312ff05b1b9" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_a_mass_spawner_1_1_f_spawned_entities" kindref="compound">FSpawnedEntities</ref> &gt;</type>
+        <definition>TArray&lt;FSpawnedEntities&gt; AMassSpawner::AllSpawnedEntities</definition>
+        <argsstring></argsstring>
+        <name>AllSpawnedEntities</name>
+        <qualifiedname>AMassSpawner::AllSpawnedEntities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="149" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1a3a70de56924378f4841d366d806bb34f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_entity_spawn_data_generator_result" kindref="compound">FMassEntitySpawnDataGeneratorResult</ref> &gt;</type>
+        <definition>TArray&lt;FMassEntitySpawnDataGeneratorResult&gt; AMassSpawner::AllGeneratedResults</definition>
+        <argsstring></argsstring>
+        <name>AllGeneratedResults</name>
+        <qualifiedname>AMassSpawner::AllGeneratedResults</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="151" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_mass_spawner_1a304460f4e5d95389e4a69f2a4c596534" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStreamableHandle</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FStreamableHandle&gt; AMassSpawner::StreamingHandle</definition>
+        <argsstring></argsstring>
+        <name>StreamingHandle</name>
+        <qualifiedname>AMassSpawner::StreamingHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="153" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_mass_spawner_1a66f8f5018dcfce2c6b152f704cb6df6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMassSpawner::AMassSpawner</definition>
+        <argsstring>()</argsstring>
+        <name>AMassSpawner</name>
+        <qualifiedname>AMassSpawner::AMassSpawner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="23" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="78" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1ae5459bf9357b45e679c15e63c66fec25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::DoSpawning</definition>
+        <argsstring>()</argsstring>
+        <name>DoSpawning</name>
+        <qualifiedname>AMassSpawner::DoSpawning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the spawning of all the agent types of this spawner </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="54" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="280" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a7b9beb82a77329498b5ed442098aa06d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::DoDespawning</definition>
+        <argsstring>()</argsstring>
+        <name>DoDespawning</name>
+        <qualifiedname>AMassSpawner::DoDespawning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Despawn all mass agent that was spawned by this spawner </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="60" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="509" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a27ba3b3e94569f4f5dd163918d75c505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::DoDespawning</definition>
+        <argsstring>(TConstArrayView&lt; FMassEntityHandle &gt; EntitiesToIgnore)</argsstring>
+        <name>DoDespawning</name>
+        <qualifiedname>AMassSpawner::DoDespawning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref> &gt;</type>
+          <declname>EntitiesToIgnore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Despawn all mass agent that was spawned by this spawner, except EntitiesToIgnore.</para>
+<para>Any EntitiesToIgnore previously spawned by this spawner will remain spawned and tracked by this spawner. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="67" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="532" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1aae6978cb25884a20521b86658660d1da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::ClearTemplates</definition>
+        <argsstring>()</argsstring>
+        <name>ClearTemplates</name>
+        <qualifiedname>AMassSpawner::ClearTemplates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="70" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="594" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a2975d1b26520369118e9e889a97f4f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::UnloadConfig</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadConfig</name>
+        <qualifiedname>AMassSpawner::UnloadConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="73" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="608" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a98efe8317cea613ffb9164ee423acd41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMassSpawner::DespawnEntity</definition>
+        <argsstring>(const FMassEntityHandle Entity)</argsstring>
+        <name>DespawnEntity</name>
+        <qualifiedname>AMassSpawner::DespawnEntity</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>Entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If given entity has been spawned by this MassSpawner instance then it will get destroyed and all the book keeping updated. Otherwise the call has no effect. <simplesect kind="return"><para>true if the entity got removed. False otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="80" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="562" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a1b31b79589d9dd51853b7fc2d38f9264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::ScaleSpawningCount</definition>
+        <argsstring>(float Scale)</argsstring>
+        <name>ScaleSpawningCount</name>
+        <qualifiedname>AMassSpawner::ScaleSpawningCount</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scales the spawning counts <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the number to multiply the all counts of each agent types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="87" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1ad3d3c2c707cc3349cce94a81c8ba0ae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMassSpawner::GetCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCount</name>
+        <qualifiedname>AMassSpawner::GetCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="90" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="584" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a2cd257728b261399dda1ececbdcd0861" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float AMassSpawner::GetSpawningCountScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpawningCountScale</name>
+        <qualifiedname>AMassSpawner::GetSpawningCountScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="93" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="589" bodyend="592"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_mass_spawner_1af18c986e57e08e060cb54d03c395c7c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>AMassSpawner::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="26" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="193" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a5b8ada2053755daf85d735c82e9e0466" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::EndPlay</definition>
+        <argsstring>(const EEndPlayReason::Type EndPlayReason) override</argsstring>
+        <name>EndPlay</name>
+        <qualifiedname>AMassSpawner::EndPlay</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> EEndPlayReason::Type</type>
+          <declname>EndPlayReason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="27" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="224" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a9e5a6e5f936fcb24c38e3ee40355e47d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::PostLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>PostLoad</name>
+        <qualifiedname>AMassSpawner::PostLoad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="28" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="123" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a4a8af68e9914b4ca546d885e2a7e76ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::PostRegisterAllComponents</definition>
+        <argsstring>() override</argsstring>
+        <name>PostRegisterAllComponents</name>
+        <qualifiedname>AMassSpawner::PostRegisterAllComponents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="29" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="138" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a6a7cbe7f557a1596517320de0c9bc58c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::BeginDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginDestroy</name>
+        <qualifiedname>AMassSpawner::BeginDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="30" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="179" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1abb9823f6f9f0df4c671f7d65d3f8a48f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::RegisterEntityTemplates</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterEntityTemplates</name>
+        <qualifiedname>AMassSpawner::RegisterEntityTemplates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="47" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="267" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a027ad246b2fb945ec04cc4279f00a8fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::OnPostWorldInit</definition>
+        <argsstring>(UWorld *World, const UWorld::InitializationValues)</argsstring>
+        <name>OnPostWorldInit</name>
+        <qualifiedname>AMassSpawner::OnPostWorldInit</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorld</ref> *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> UWorld::InitializationValues</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="104" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="166" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a72f7538ee3b8e83910ac3bcda5224a44" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::SpawnGeneratedEntities</definition>
+        <argsstring>(TConstArrayView&lt; FMassEntitySpawnDataGeneratorResult &gt; Results)</argsstring>
+        <name>SpawnGeneratedEntities</name>
+        <qualifiedname>AMassSpawner::SpawnGeneratedEntities</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_mass_entity_spawn_data_generator_result" kindref="compound">FMassEntitySpawnDataGeneratorResult</ref> &gt;</type>
+          <declname>Results</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="105" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="424" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a1f697fbe4cc6b3ac5efd66d6790bd069" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMassSpawner::OnSpawnDataGenerationFinished</definition>
+        <argsstring>(TConstArrayView&lt; FMassEntitySpawnDataGeneratorResult &gt; Results, FMassSpawnDataGenerator *FinishedGenerator)</argsstring>
+        <name>OnSpawnDataGenerationFinished</name>
+        <qualifiedname>AMassSpawner::OnSpawnDataGenerationFinished</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_mass_entity_spawn_data_generator_result" kindref="compound">FMassEntitySpawnDataGeneratorResult</ref> &gt;</type>
+          <declname>Results</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_spawn_data_generator" kindref="compound">FMassSpawnDataGenerator</ref> *</type>
+          <declname>FinishedGenerator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="106" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="367" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a79a962e5dee8876aeda328fb9ae95256" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMassSpawner::GetSpawnCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpawnCount</name>
+        <qualifiedname>AMassSpawner::GetSpawnCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="108" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="394" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_mass_spawner_1a19aaa6e2eafd64d4f5d482db4e6f51c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UMassProcessor *</type>
+        <definition>UMassProcessor * AMassSpawner::GetPostSpawnProcessor</definition>
+        <argsstring>(TSubclassOf&lt; UMassProcessor &gt; ProcessorClass)</argsstring>
+        <name>GetPostSpawnProcessor</name>
+        <qualifiedname>AMassSpawner::GetPostSpawnProcessor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; UMassProcessor &gt;</type>
+          <declname>ProcessorClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="109" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Private/MassSpawner.cpp" bodystart="400" bodyend="422"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A spawner you can put on a map and configure it to spawn different things </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMassSpawner</label>
+        <link refid="class_a_mass_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMassSpawner</label>
+        <link refid="class_a_mass_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSpawner/Public/MassSpawner.h" bodystart="20" bodyend="160"/>
+    <listofallmembers>
+      <member refid="class_a_mass_spawner_1a3a70de56924378f4841d366d806bb34f" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>AllGeneratedResults</name></member>
+      <member refid="class_a_mass_spawner_1a4166f8e7e84ebdd6305cc312ff05b1b9" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>AllSpawnedEntities</name></member>
+      <member refid="class_a_mass_spawner_1a66f8f5018dcfce2c6b152f704cb6df6e" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>AMassSpawner</name></member>
+      <member refid="class_a_mass_spawner_1af28610598b23bd62b883f0cd2c2b3525" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>bAutoSpawnOnBeginPlay</name></member>
+      <member refid="class_a_mass_spawner_1a6a7cbe7f557a1596517320de0c9bc58c" prot="protected" virt="virtual"><scope>AMassSpawner</scope><name>BeginDestroy</name></member>
+      <member refid="class_a_mass_spawner_1af18c986e57e08e060cb54d03c395c7c0" prot="protected" virt="virtual"><scope>AMassSpawner</scope><name>BeginPlay</name></member>
+      <member refid="class_a_mass_spawner_1a88917fcf60adc1a9566925277538e9cd" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>bOverrideSchematics</name></member>
+      <member refid="class_a_mass_spawner_1aae6978cb25884a20521b86658660d1da" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>ClearTemplates</name></member>
+      <member refid="class_a_mass_spawner_1a232db9e787b41f992287f76d34ab8677" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>Count</name></member>
+      <member refid="class_a_mass_spawner_1a98efe8317cea613ffb9164ee423acd41" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>DespawnEntity</name></member>
+      <member refid="class_a_mass_spawner_1a7b9beb82a77329498b5ed442098aa06d" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>DoDespawning</name></member>
+      <member refid="class_a_mass_spawner_1a27ba3b3e94569f4f5dd163918d75c505" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>DoDespawning</name></member>
+      <member refid="class_a_mass_spawner_1ae5459bf9357b45e679c15e63c66fec25" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>DoSpawning</name></member>
+      <member refid="class_a_mass_spawner_1a5b8ada2053755daf85d735c82e9e0466" prot="protected" virt="virtual"><scope>AMassSpawner</scope><name>EndPlay</name></member>
+      <member refid="class_a_mass_spawner_1aa648cad5222e3a78666e1b74c8751a87" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>EntityTypes</name></member>
+      <member refid="class_a_mass_spawner_1ad3d3c2c707cc3349cce94a81c8ba0ae7" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>GetCount</name></member>
+      <member refid="class_a_mass_spawner_1a19aaa6e2eafd64d4f5d482db4e6f51c9" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>GetPostSpawnProcessor</name></member>
+      <member refid="class_a_mass_spawner_1a79a962e5dee8876aeda328fb9ae95256" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>GetSpawnCount</name></member>
+      <member refid="class_a_mass_spawner_1a2cd257728b261399dda1ececbdcd0861" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>GetSpawningCountScale</name></member>
+      <member refid="class_a_mass_spawner_1aa53c63ffa713c866564a2fa82902bc1c" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>OnDespawningFinishedEvent</name></member>
+      <member refid="class_a_mass_spawner_1a027ad246b2fb945ec04cc4279f00a8fc" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>OnPostWorldInit</name></member>
+      <member refid="class_a_mass_spawner_1acaa9056d2152524cb4cf013034f4c077" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>OnPostWorldInitDelegateHandle</name></member>
+      <member refid="class_a_mass_spawner_1a1f697fbe4cc6b3ac5efd66d6790bd069" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>OnSpawnDataGenerationFinished</name></member>
+      <member refid="class_a_mass_spawner_1a03c416020bdab4636fc25888811aa8a8" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>OnSpawningFinishedEvent</name></member>
+      <member refid="class_a_mass_spawner_1a9e5a6e5f936fcb24c38e3ee40355e47d" prot="protected" virt="virtual"><scope>AMassSpawner</scope><name>PostLoad</name></member>
+      <member refid="class_a_mass_spawner_1a4a8af68e9914b4ca546d885e2a7e76ec" prot="protected" virt="virtual"><scope>AMassSpawner</scope><name>PostRegisterAllComponents</name></member>
+      <member refid="class_a_mass_spawner_1aeab77961a82f90f5af1ae78d305ea405" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>PostSpawnProcessors</name></member>
+      <member refid="class_a_mass_spawner_1abb9823f6f9f0df4c671f7d65d3f8a48f" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>RegisterEntityTemplates</name></member>
+      <member refid="class_a_mass_spawner_1a1b31b79589d9dd51853b7fc2d38f9264" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>ScaleSpawningCount</name></member>
+      <member refid="class_a_mass_spawner_1af88af462661521586a02ddef05515600" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>SimulationStartedHandle</name></member>
+      <member refid="class_a_mass_spawner_1a6b37a89aeebf7cb90495f5667cadba9e" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>SpawnDataGenerators</name></member>
+      <member refid="class_a_mass_spawner_1a72f7538ee3b8e83910ac3bcda5224a44" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>SpawnGeneratedEntities</name></member>
+      <member refid="class_a_mass_spawner_1aaed02d1c462cc19f58a4e7cf04855471" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>SpawningCountScale</name></member>
+      <member refid="class_a_mass_spawner_1a304460f4e5d95389e4a69f2a4c596534" prot="protected" virt="non-virtual"><scope>AMassSpawner</scope><name>StreamingHandle</name></member>
+      <member refid="class_a_mass_spawner_1a2975d1b26520369118e9e889a97f4f02" prot="public" virt="non-virtual"><scope>AMassSpawner</scope><name>UnloadConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,695 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_geometry_collection" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonGeometryCollection</compoundname>
+    <basecompoundref refid="class_u_geo_json_object" prot="public" virt="non-virtual">UGeoJsonObject</basecompoundref>
+    <includes refid="_geo_json_geometry_collection_8h" local="no">GeoJsonGeometryCollection.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref></type>
+        <definition>FJsonGeometryCollection UGeoJsonGeometryCollection::Geometries</definition>
+        <argsstring></argsstring>
+        <name>Geometries</name>
+        <qualifiedname>UGeoJsonGeometryCollection::Geometries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="180" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1abc7702710a9cec1b849992c5e2e0a5b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonGeometryCollection::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetType</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9">GetType</reimplements>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="28" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a79bcf0ad2aef8ff779d28ba706c0a46b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetPoint</definition>
+        <argsstring>(FJsonPoint &amp;Point) const override</argsstring>
+        <name>TryGetPoint</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d">TryGetPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь точку из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия точки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если точка найдена и успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="36" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ad1d74ec79c30c99fe79d588d4e30fff5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetLineString</definition>
+        <argsstring>(FJsonMultiPoint &amp;LineString) const override</argsstring>
+        <name>TryGetLineString</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetLineString</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98">TryGetLineString</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>LineString</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь линию из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LineString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия линии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если линия найдена и успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="44" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a95ad4a7b24f1e217ead279b6716b56d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetPolygon</definition>
+        <argsstring>(FJsonPolygon &amp;Polygon) const override</argsstring>
+        <name>TryGetPolygon</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetPolygon</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21">TryGetPolygon</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>Polygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь полигон из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Polygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия полигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если полигон найден и успешно извлечен, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="52" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ac2be3857777f6600b6b7c8d11eb21b03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetMultiPoint</definition>
+        <argsstring>(FJsonMultiPoint &amp;MultiPoint) const override</argsstring>
+        <name>TryGetMultiPoint</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetMultiPoint</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a">TryGetMultiPoint</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+          <declname>MultiPoint</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь мультиточку из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия мультиточки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если мультиточка найдена и успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="60" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1aa0a6b86209ab7b190598dc154aba6ab1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetMultiLineString</definition>
+        <argsstring>(FJsonPolygon &amp;MultiLineString) const override</argsstring>
+        <name>TryGetMultiLineString</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetMultiLineString</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc">TryGetMultiLineString</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+          <declname>MultiLineString</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь мультилинию из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiLineString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия мультилинии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если мультилиния найдена и успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="68" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a27371100ffcf24f2053089780584ba10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetMultiPolygon</definition>
+        <argsstring>(FJsonMultiPolygon &amp;MultiPolygon) const override</argsstring>
+        <name>TryGetMultiPolygon</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetMultiPolygon</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd">TryGetMultiPolygon</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+          <declname>MultiPolygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь мультиполигон из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если мультиполигон найден и успешно извлечен, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="76" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ae15b46a714c9a57dc14e983048b5d8b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const override</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetGeometry</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360">TryGetGeometry</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается извлечь геометрию из имеющейся коллекции геометрий. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если мультиполигон найден и успешно извлечен, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="84" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ace1536ce08783e99cd88ccd7e2228c13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+        <definition>const FJsonGeometry &amp; UGeoJsonGeometryCollection::GetGeometry</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetGeometry</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает геометрию по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс геометрии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на геометрию по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="93" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ae63f704cead0ffd5f21068b80fef5c5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+        <definition>const FJsonMultiPolygon &amp; UGeoJsonGeometryCollection::GetMultiPolygon</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetMultiPolygon</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetMultiPolygon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает мультиполигон по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс мультиполигона, который необходимо получить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на мультиполигон по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="102" column="33" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a914bbf27d863f7a0697333d009a6e9d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+        <definition>const FJsonPolygon &amp; UGeoJsonGeometryCollection::GetPolygon</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetPolygon</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetPolygon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает полигон по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс полигона, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на полигон по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="111" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1ae757cdcff711ad22b79c8740dbabc69c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref> &amp;</type>
+        <definition>const FJsonPolygon &amp; UGeoJsonGeometryCollection::GetMultiLineString</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetMultiLineString</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetMultiLineString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает мультилинию по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс мультилинии, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на мультилинию по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="120" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a356e79414ba006a283436f820d880cac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+        <definition>const FJsonMultiPoint &amp; UGeoJsonGeometryCollection::GetLineString</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetLineString</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetLineString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает линию по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс линии, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на линию по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="129" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1added7d4af718847c94f575f69bdc6460" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref> &amp;</type>
+        <definition>const FJsonMultiPoint &amp; UGeoJsonGeometryCollection::GetMultiPoint</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetMultiPoint</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetMultiPoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает мультиточку по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс мультиточки, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на мультиточку по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="138" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a6bce99c771c2ad42930d53141f601c70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+        <definition>const FJsonPoint &amp; UGeoJsonGeometryCollection::GetPoint</definition>
+        <argsstring>(int32 Idx) const</argsstring>
+        <name>GetPoint</name>
+        <qualifiedname>UGeoJsonGeometryCollection::GetPoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает точку по указанному индексу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс точки, который нужно извлечь. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Константная ссылка на точку по указанному индексу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="147" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1acbd26196569a5470bedd8e04b17c846b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>UGeoJsonGeometryCollection::IsEmpty</qualifiedname>
+        <briefdescription>
+<para>Проверяет, является ли коллекция геометрий пустой. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True, если коллекция геометрий пустая, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="155" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a9528c376326053c3860bba46631961a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UGeoJsonGeometryCollection::Num</definition>
+        <argsstring>() const</argsstring>
+        <name>Num</name>
+        <qualifiedname>UGeoJsonGeometryCollection::Num</qualifiedname>
+        <briefdescription>
+<para>Возвращает количество геометрий в GeometryCollection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество геометрий. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="163" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a34b11802c5e8fafb840670572aeff381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonGeometryCollection::SetCollection</definition>
+        <argsstring>(FJsonGeometryCollection &amp;&amp;NewCollection)</argsstring>
+        <name>SetCollection</name>
+        <qualifiedname>UGeoJsonGeometryCollection::SetCollection</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref> &amp;&amp;</type>
+          <declname>NewCollection</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает коллекцию геометрий для объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCollection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая коллекция геометрий, которую требуется установить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="170" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a8d23929b0c7eb0af26cfc75788ecda37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonGeometryCollection::SetCollection</definition>
+        <argsstring>(const FJsonGeometryCollection &amp;NewCollection)</argsstring>
+        <name>SetCollection</name>
+        <qualifiedname>UGeoJsonGeometryCollection::SetCollection</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref> &amp;</type>
+          <declname>NewCollection</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает коллекцию геометрий для объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCollection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая коллекция геометрий, которую требуется установить. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="177" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonGeometryCollection.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_geo_json_geometry_collection_1a5da7b089866b5397b2d2e4db4658a4c5" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+            <declname>FeatureGeometryType</declname>
+            <defname>FeatureGeometryType</defname>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TValueType</ref></type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool UGeoJsonGeometryCollection::TryGetTemplateGeometry</definition>
+        <argsstring>(TValueType &amp;Result) const</argsstring>
+        <name>TryGetTemplateGeometry</name>
+        <qualifiedname>UGeoJsonGeometryCollection::TryGetTemplateGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TValueType</ref> &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+<para>Шаблонная функция-геттер для геометрий различных типов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если шаблонная геометрия найдена и успешно извлечена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="189" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" bodystart="189" bodyend="200"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий объект GeometryCollection формата GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Объект GeometryCollection представляет набор нескольких геометрий различного типа. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UGeoJsonGeometryCollection</label>
+        <link refid="class_u_geo_json_geometry_collection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>FJsonGeometryCollection</label>
+        <link refid="struct_f_json_geometry_collection"/>
+      </node>
+      <node id="1">
+        <label>UGeoJsonGeometryCollection</label>
+        <link refid="class_u_geo_json_geometry_collection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Geometries</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonGeometryCollection.h" bodystart="17" bodyend="201"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_geometry_collection_1a6409832ce43f13112e33044aa6872ded" prot="private" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>Geometries</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ace1536ce08783e99cd88ccd7e2228c13" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetGeometry</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a356e79414ba006a283436f820d880cac" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetLineString</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ae757cdcff711ad22b79c8740dbabc69c" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetMultiLineString</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1added7d4af718847c94f575f69bdc6460" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetMultiPoint</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ae63f704cead0ffd5f21068b80fef5c5a" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a6bce99c771c2ad42930d53141f601c70" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetPoint</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a914bbf27d863f7a0697333d009a6e9d6" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetPolygon</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1abc7702710a9cec1b849992c5e2e0a5b0" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1acbd26196569a5470bedd8e04b17c846b" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>IsEmpty</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a9528c376326053c3860bba46631961a8" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>Num</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a34b11802c5e8fafb840670572aeff381" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>SetCollection</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a8d23929b0c7eb0af26cfc75788ecda37" prot="public" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>SetCollection</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ae15b46a714c9a57dc14e983048b5d8b4" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ad1d74ec79c30c99fe79d588d4e30fff5" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1aa0a6b86209ab7b190598dc154aba6ab1" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1ac2be3857777f6600b6b7c8d11eb21b03" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a27371100ffcf24f2053089780584ba10" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a79bcf0ad2aef8ff779d28ba706c0a46b" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a95ad4a7b24f1e217ead279b6716b56d3" prot="public" virt="virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetPolygon</name></member>
+      <member refid="class_u_geo_json_geometry_collection_1a5da7b089866b5397b2d2e4db4658a4c5" prot="private" virt="non-virtual"><scope>UGeoJsonGeometryCollection</scope><name>TryGetTemplateGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

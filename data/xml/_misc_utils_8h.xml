@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_misc_utils_8h" kind="file" language="C++">
+    <compoundname>MiscUtils.h</compoundname>
+    <includes refid="_m_s_asset_import_data_8h" local="yes">MSAssetImportData.h</includes>
+    <includedby refid="_progressive_import3_d_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/ProgressiveImport3D.cpp</includedby>
+    <includedby refid="_progressive_import_surfaces_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/ProgressiveImportSurfaces.cpp</includedby>
+    <includedby refid="_u_asset_normal_import_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/UAssetNormalImport.cpp</includedby>
+    <includedby refid="_assets_import_controller_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetsImportController.cpp</includedby>
+    <includedby refid="_blend_materials_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Tools/BlendMaterials.cpp</includedby>
+    <includedby refid="_material_utils_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MaterialUtils.cpp</includedby>
+    <includedby refid="_misc_utils_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>MSAssetImportData.h</label>
+        <link refid="_m_s_asset_import_data_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h</label>
+        <link refid="_misc_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MSAssetImportData.generated.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/ProgressiveImport3D.cpp</label>
+        <link refid="_progressive_import3_d_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/ProgressiveImportSurfaces.cpp</label>
+        <link refid="_progressive_import_surfaces_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetImporters/UAssetNormalImport.cpp</label>
+        <link refid="_u_asset_normal_import_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/AssetsImportController.cpp</label>
+        <link refid="_assets_import_controller_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Tools/BlendMaterials.cpp</label>
+        <link refid="_blend_materials_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MaterialUtils.cpp</label>
+        <link refid="_material_utils_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp</label>
+        <link refid="_misc_utils_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h</label>
+        <link refid="_misc_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_asset_utils">AssetUtils</innernamespace>
+    <innernamespace refid="namespace_json_utils">JsonUtils</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_misc_utils_8h_1a27e5f204046af27e1b8ebe70b236fb1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FJsonObject &gt; DeserializeJson</definition>
+        <argsstring>(const FString &amp;JsonStringData)</argsstring>
+        <name>DeserializeJson</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonStringData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="13" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="33" bodyend="40" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="13" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a9c8a9dcced723563999caab1114cddf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString GetPluginPath</definition>
+        <argsstring>()</argsstring>
+        <name>GetPluginPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="15" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="42" bodyend="49" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="15" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a58095e117a6b1491b305fbe0fb75398d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString GetSourceMSPresetsPath</definition>
+        <argsstring>()</argsstring>
+        <name>GetSourceMSPresetsPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="16" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="51" bodyend="55" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="16" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a44cc273b23572a9a4535039a6939dcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CopyMaterialPreset</definition>
+        <argsstring>(const FString &amp;MaterialName)</argsstring>
+        <name>CopyMaterialPreset</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>MaterialName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="18" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="62" bodyend="100" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a764f6211b7a0351164a2be353f312386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString GetMSPresetsName</definition>
+        <argsstring>()</argsstring>
+        <name>GetMSPresetsName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="19" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="57" bodyend="60" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="19" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1ab18b807d2152edf7f4e275cefe13709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void CopyMSPresets</definition>
+        <argsstring>()</argsstring>
+        <name>CopyMSPresets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="20" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="126" bodyend="154" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a3ef437c46259ab60af72583e03ce41c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CopyPresetTextures</definition>
+        <argsstring>()</argsstring>
+        <name>CopyPresetTextures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="21" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="102" bodyend="124" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1ab99464bbbbd13d6afb5a50ccc626c25a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void CopyUassetFiles</definition>
+        <argsstring>(TArray&lt; FString &gt; FilesToCopy, FString DestinationDirectory)</argsstring>
+        <name>CopyUassetFiles</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+          <declname>FilesToCopy</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>DestinationDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="22" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="316" bodyend="334" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_misc_utils_8h_1a3167cbdf4c6efff154d29f5f2ae70e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void CopyUassetFilesPlants</definition>
+        <argsstring>(TArray&lt; FString &gt; FilesToCopy, FString DestinationDirectory, const int8 &amp;AssetTier)</argsstring>
+        <name>CopyUassetFilesPlants</name>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+          <declname>FilesToCopy</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>DestinationDirectory</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int8</ref> &amp;</type>
+          <declname>AssetTier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="23" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="385" bodyend="419" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1a589434d35081189c47b0c43bdbcb14d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::FocusOnSelected</definition>
+        <argsstring>(const FString &amp;Path)</argsstring>
+        <name>FocusOnSelected</name>
+        <qualifiedname>AssetUtils::FocusOnSelected</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="28" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="156" bodyend="163" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1a9e6b87b6e3ba649c82b0c006dbac17d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::SavePackage</definition>
+        <argsstring>(UObject *SourceObject)</argsstring>
+        <name>SavePackage</name>
+        <qualifiedname>AssetUtils::SavePackage</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>SourceObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="29" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="165" bodyend="174" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1afeeb199be39172367381d5a984f98c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::DeleteDirectory</definition>
+        <argsstring>(FString TargetDirectory)</argsstring>
+        <name>DeleteDirectory</name>
+        <qualifiedname>AssetUtils::DeleteDirectory</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>TargetDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="30" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="176" bodyend="186" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1a115da37f0333cdcc19ce71fc6cedb23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AssetUtils::DeleteAsset</definition>
+        <argsstring>(const FString &amp;AssetPath)</argsstring>
+        <name>DeleteAsset</name>
+        <qualifiedname>AssetUtils::DeleteAsset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>AssetPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="31" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="188" bodyend="209" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1ae998c237a37141c9d6e01f17f877f4b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref></type>
+        <definition>FUAssetMeta AssetUtils::GetAssetMetaData</definition>
+        <argsstring>(const FString &amp;JsonPath)</argsstring>
+        <name>GetAssetMetaData</name>
+        <qualifiedname>AssetUtils::GetAssetMetaData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="32" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="211" bodyend="219" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="32" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1ab5790af842c283e41517f88db018acb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceConstant</ref> * &gt;</type>
+        <definition>TArray&lt; UMaterialInstanceConstant * &gt; AssetUtils::GetSelectedAssets</definition>
+        <argsstring>(const FTopLevelAssetPath &amp;AssetClass)</argsstring>
+        <name>GetSelectedAssets</name>
+        <qualifiedname>AssetUtils::GetSelectedAssets</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTopLevelAssetPath</ref> &amp;</type>
+          <declname>AssetClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="33" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="221" bodyend="245" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="33" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1a763aaeb0e24abf25fc4ea24cba24696a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::AddFoliageTypesToLevel</definition>
+        <argsstring>(TArray&lt; FString &gt; FoliageTypePaths)</argsstring>
+        <name>AddFoliageTypesToLevel</name>
+        <qualifiedname>AssetUtils::AddFoliageTypesToLevel</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+          <declname>FoliageTypePaths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="34" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="247" bodyend="260" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1afc94f232454881305b72f9deb350f520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::ManageImportSettings</definition>
+        <argsstring>(FUAssetMeta AssetMetaData)</argsstring>
+        <name>ManageImportSettings</name>
+        <qualifiedname>AssetUtils::ManageImportSettings</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref></type>
+          <declname>AssetMetaData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="37" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="262" bodyend="275" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1aec83232572088ae3dabd0d1571329853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::SyncFolder</definition>
+        <argsstring>(const FString &amp;TargetFolder)</argsstring>
+        <name>SyncFolder</name>
+        <qualifiedname>AssetUtils::SyncFolder</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>TargetFolder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="38" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="336" bodyend="344" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1ae26d94350c0a56f4d2205fedc3bc8ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::RegisterAsset</definition>
+        <argsstring>(const FString &amp;PackagePath)</argsstring>
+        <name>RegisterAsset</name>
+        <qualifiedname>AssetUtils::RegisterAsset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PackagePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="39" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="346" bodyend="351" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1aada18099025dfbe1287c01fbee389b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AssetUtils::ConvertToVT</definition>
+        <argsstring>(FUAssetMeta AssetMetaData)</argsstring>
+        <name>ConvertToVT</name>
+        <qualifiedname>AssetUtils::ConvertToVT</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref></type>
+          <declname>AssetMetaData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="41" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="353" bodyend="365" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_asset_utils_1a5149901961d2d7aab6506f93e1862592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AssetUtils::IsVTEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsVTEnabled</name>
+        <qualifiedname>AssetUtils::IsVTEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="42" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="367" bodyend="383" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_utils_1a1b4ff4c4d8528689913e9f5b01f483e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_m_s_asset_import_data_8h_1addf480ae8e7991e6bb174c4ae56199c3" kindref="member">EAssetImportType</ref></type>
+        <definition>EAssetImportType JsonUtils::GetImportType</definition>
+        <argsstring>(TSharedPtr&lt; FJsonObject &gt; ImportJsonObject)</argsstring>
+        <name>GetImportType</name>
+        <qualifiedname>JsonUtils::GetImportType</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+          <declname>ImportJsonObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="48" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="278" bodyend="290" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="48" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_utils_1a681fb29329c000c6ee6ea3d676b51010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void JsonUtils::ParseImportJson</definition>
+        <argsstring>(const FString &amp;InputImportData)</argsstring>
+        <name>ParseImportJson</name>
+        <qualifiedname>JsonUtils::ParseImportJson</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>InputImportData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="49" column="6" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_utils_1a1897e9e058f0431a32c089c54ccdcaf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_f_u_asset_data" kindref="compound">FUAssetData</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FUAssetData &gt; JsonUtils::ParseUassetJson</definition>
+        <argsstring>(TSharedPtr&lt; FJsonObject &gt; ImportJsonObject)</argsstring>
+        <name>ParseUassetJson</name>
+        <qualifiedname>JsonUtils::ParseUassetJson</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+          <declname>ImportJsonObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" line="50" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.cpp" bodystart="292" bodyend="314" declfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h" declline="50" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;<ref refid="_m_s_asset_import_data_8h" kindref="compound">MSAssetImportData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_s_asset_import_data_8h" kindref="compound">MSAssetImportData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInstanceConstant</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FJsonObject&gt;</ref><sp/><sp/><ref refid="_misc_utils_8h_1a27e5f204046af27e1b8ebe70b236fb1b" kindref="member">DeserializeJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">JsonStringData</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_misc_utils_8h_1a9c8a9dcced723563999caab1114cddf4" kindref="member">GetPluginPath</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_misc_utils_8h_1a58095e117a6b1491b305fbe0fb75398d" kindref="member">GetSourceMSPresetsPath</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_misc_utils_8h_1a44cc273b23572a9a4535039a6939dcaa" kindref="member">CopyMaterialPreset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MaterialName</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_misc_utils_8h_1a764f6211b7a0351164a2be353f312386" kindref="member">GetMSPresetsName</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_misc_utils_8h_1ab18b807d2152edf7f4e275cefe13709e" kindref="member">CopyMSPresets</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_misc_utils_8h_1a3ef437c46259ab60af72583e03ce41c7" kindref="member">CopyPresetTextures</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_misc_utils_8h_1ab99464bbbbd13d6afb5a50ccc626c25a" kindref="member">CopyUassetFiles</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FString&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FilesToCopy</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DestinationDirectory</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_misc_utils_8h_1a3167cbdf4c6efff154d29f5f2ae70e3e" kindref="member">CopyUassetFilesPlants</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FString&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FilesToCopy</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DestinationDirectory</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int8</ref><sp/>&amp;<sp/>AssetTier);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespace_asset_utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_asset_utils" kindref="compound">AssetUtils</ref><sp/>{<sp/><sp/></highlight><highlight class="comment">//template&lt;typename<sp/>T&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1a589434d35081189c47b0c43bdbcb14d3" kindref="member">FocusOnSelected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Path</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1a9e6b87b6e3ba649c82b0c006dbac17d5" kindref="member">SavePackage</ref>(UObject*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SourceObject</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1afeeb199be39172367381d5a984f98c72" kindref="member">DeleteDirectory</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetDirectory</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1a115da37f0333cdcc19ce71fc6cedb23d" kindref="member">DeleteAsset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>AssetPath);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref><sp/><ref refid="namespace_asset_utils_1ae998c237a37141c9d6e01f17f877f4b8" kindref="member">GetAssetMetaData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">JsonPath</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;UMaterialInstanceConstant*&gt;</ref><sp/><ref refid="namespace_asset_utils_1ab5790af842c283e41517f88db018acb1" kindref="member">GetSelectedAssets</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTopLevelAssetPath</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AssetClass</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1a763aaeb0e24abf25fc4ea24cba24696a" kindref="member">AddFoliageTypesToLevel</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FString&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FoliageTypePaths</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//To<sp/>manage<sp/>import<sp/>settings<sp/>like<sp/>Auto-Populate<sp/>Foliage<sp/>types<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1afc94f232454881305b72f9deb350f520" kindref="member">ManageImportSettings</ref>(<ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AssetMetaData</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1aec83232572088ae3dabd0d1571329853" kindref="member">SyncFolder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetFolder</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1ae26d94350c0a56f4d2205fedc3bc8ffd" kindref="member">RegisterAsset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/>PackagePath);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1aada18099025dfbe1287c01fbee389b58" kindref="member">ConvertToVT</ref>(<ref refid="struct_f_u_asset_meta" kindref="compound">FUAssetMeta</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AssetMetaData</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_asset_utils_1a5149901961d2d7aab6506f93e1862592" kindref="member">IsVTEnabled</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="namespace_json_utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_json_utils" kindref="compound">JsonUtils</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_s_asset_import_data_8h_1addf480ae8e7991e6bb174c4ae56199c3" kindref="member">EAssetImportType</ref><sp/><ref refid="namespace_json_utils_1a1b4ff4c4d8528689913e9f5b01f483e7" kindref="member">GetImportType</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FJsonObject&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ImportJsonObject</ref>);</highlight></codeline>
+<codeline lineno="49" refid="namespace_json_utils_1a681fb29329c000c6ee6ea3d676b51010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_json_utils_1a681fb29329c000c6ee6ea3d676b51010" kindref="member">ParseImportJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InputImportData</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FUAssetData&gt;</ref><sp/><ref refid="namespace_json_utils_1a1897e9e058f0431a32c089c54ccdcaf2" kindref="member">ParseUassetJson</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;FJsonObject&gt;</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ImportJsonObject</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/Bridge/Source/MegascansPlugin/Private/Utilities/MiscUtils.h"/>
+  </compounddef>
+</doxygen>

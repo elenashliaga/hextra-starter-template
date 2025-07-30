@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_representation_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UMassRepresentationSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassSubsystemBase</basecompoundref>
+    <includes refid="_mass_representation_subsystem_8h" local="no">MassRepresentationSubsystem.h</includes>
+    <innerclass refid="struct_u_mass_representation_subsystem_1_1_f_template_actor_data" prot="protected">UMassRepresentationSubsystem::FTemplateActorData</innerclass>
+    <innerclass refid="struct_u_mass_representation_subsystem_1_1_f_template_actor_equals_predicate" prot="protected">UMassRepresentationSubsystem::FTemplateActorEqualsPredicate</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a50d217e99b33e066af1931020e0464f3" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSparseArray</ref>&lt; <ref refid="struct_u_mass_representation_subsystem_1_1_f_template_actor_data" kindref="compound">FTemplateActorData</ref> &gt;</type>
+        <definition>TSparseArray&lt;FTemplateActorData&gt; UMassRepresentationSubsystem::TemplateActors</definition>
+        <argsstring></argsstring>
+        <name>TemplateActors</name>
+        <qualifiedname>UMassRepresentationSubsystem::TemplateActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The array of all the template actors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="199" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a983c248dda7edde755b6724a27be358a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_mass_visualization_component" kindref="compound">UMassVisualizationComponent</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UMassVisualizationComponent&gt; UMassRepresentationSubsystem::VisualizationComponent</definition>
+        <argsstring></argsstring>
+        <name>VisualizationComponent</name>
+        <qualifiedname>UMassRepresentationSubsystem::VisualizationComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The component that handles all the static mesh instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="204" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1adfd51478c3259e679ceb418053165f37" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_a_mass_visualizer" kindref="compound">AMassVisualizer</ref> &gt;</type>
+        <definition>TObjectPtr&lt;AMassVisualizer&gt; UMassRepresentationSubsystem::Visualizer</definition>
+        <argsstring></argsstring>
+        <name>Visualizer</name>
+        <qualifiedname>UMassRepresentationSubsystem::Visualizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actor owning the above visualization component </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="208" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1aef66a8493c33b2b6b77bf9903e8dfcf8" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_mass_actor_spawner_subsystem" kindref="compound">UMassActorSpawnerSubsystem</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UMassActorSpawnerSubsystem&gt; UMassRepresentationSubsystem::ActorSpawnerSubsystem</definition>
+        <argsstring></argsstring>
+        <name>ActorSpawnerSubsystem</name>
+        <qualifiedname>UMassRepresentationSubsystem::ActorSpawnerSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="211" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a5d39588fa38cd83d3993fa59e67b37bc" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FMassEntityManager&gt; UMassRepresentationSubsystem::EntityManager</definition>
+        <argsstring></argsstring>
+        <name>EntityManager</name>
+        <qualifiedname>UMassRepresentationSubsystem::EntityManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="213" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a272cb24e9dbab7525c1e4b9cdc4be71a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UWorldPartitionSubsystem</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UWorldPartitionSubsystem&gt; UMassRepresentationSubsystem::WorldPartitionSubsystem</definition>
+        <argsstring></argsstring>
+        <name>WorldPartitionSubsystem</name>
+        <qualifiedname>UMassRepresentationSubsystem::WorldPartitionSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="216" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a1e6aad17536462a99336e4aad691ebad" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UMassRepresentationSubsystem::RetryMovedDistanceSq</definition>
+        <argsstring></argsstring>
+        <name>RetryMovedDistanceSq</name>
+        <qualifiedname>UMassRepresentationSubsystem::RetryMovedDistanceSq</qualifiedname>
+        <initializer>= 1000000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The time to wait before retrying a to spawn actor that failed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="219" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a48e6f2452b7bcfcb275668eea46cd7db" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UMassRepresentationSubsystem::RetryTimeInterval</definition>
+        <argsstring></argsstring>
+        <name>RetryTimeInterval</name>
+        <qualifiedname>UMassRepresentationSubsystem::RetryTimeInterval</qualifiedname>
+        <initializer>= 10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance a failed spawned actor needs to move before we retry </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="222" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_representation_subsystem_1a82fd6797a9ff00d3fd35bab46fe93609" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TMap&lt;FMassEntityHandle, int32&gt; UMassRepresentationSubsystem::HandledMassAgents</definition>
+        <argsstring></argsstring>
+        <name>HandledMassAgents</name>
+        <qualifiedname>UMassRepresentationSubsystem::HandledMassAgents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Keeping track of all the mass agent this subsystem is responsible for spawning actors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="225" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1aa9ffd03caa05397406e7830fde9ddf6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassRepresentationSubsystem::FindOrAddStaticMeshDesc</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc)</argsstring>
+        <name>FindOrAddStaticMeshDesc</name>
+        <qualifiedname>UMassRepresentationSubsystem::FindOrAddStaticMeshDesc</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the index of the static mesh visual type, will add a new one if does not exist <linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the information for the static mesh that will be instantiated later via <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AddStaticMeshInstance()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The index of the static mesh type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="38" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a76d4bb1e01f648685298932482b016af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassRepresentationSubsystem::AddVisualDescWithISMComponent</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc, UInstancedStaticMeshComponent &amp;ISMComponent)</argsstring>
+        <name>AddVisualDescWithISMComponent</name>
+        <qualifiedname>UMassRepresentationSubsystem::AddVisualDescWithISMComponent</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dedicated visual type described by host Desc and ties ISMComponent to it. <simplesect kind="note"><para>this is a helper function for a common &quot;single ISMComponent&quot; case. Calls AddVisualDescWithISMComponents under the hood. </para>
+</simplesect>
+<simplesect kind="return"><para>The index of the visual type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="45" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1ad8ac45f645ca87c09bfb8221cbc65a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+        <definition>FStaticMeshInstanceVisualizationDescHandle UMassRepresentationSubsystem::AddVisualDescWithISMComponents</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDesc &amp;Desc, TArrayView&lt; TObjectPtr&lt; UInstancedStaticMeshComponent &gt; &gt; ISMComponents)</argsstring>
+        <name>AddVisualDescWithISMComponents</name>
+        <qualifiedname>UMassRepresentationSubsystem::AddVisualDescWithISMComponents</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc" kindref="compound">FStaticMeshInstanceVisualizationDesc</ref> &amp;</type>
+          <declname>Desc</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &gt; &gt;</type>
+          <declname>ISMComponents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dedicated visual type described by host Desc and ties given ISMComponents to it. <simplesect kind="return"><para>The index of the visual type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="51" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a0a56d9acdee2fc96e222c4458b65c826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * UMassRepresentationSubsystem::GetISMCSharedDataForDescriptionIndex</definition>
+        <argsstring>(const int32 DescriptionIndex) const</argsstring>
+        <name>GetISMCSharedDataForDescriptionIndex</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetISMCSharedDataForDescriptionIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>DescriptionIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetches <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> indicated by DescriptionIndex, or nullptr if it&apos;s not a valid index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="56" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a763a6ca248c2292f12e3017d7f4b0147" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * UMassRepresentationSubsystem::GetISMCSharedDataForInstancedStaticMesh</definition>
+        <argsstring>(const UInstancedStaticMeshComponent *ISMC) const</argsstring>
+        <name>GetISMCSharedDataForInstancedStaticMesh</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetISMCSharedDataForInstancedStaticMesh</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> *</type>
+          <declname>ISMC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fetches <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> indicated by an ISMC, or nullptr if the ISMC is not represented by any shared data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="61" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a6d3018984ddbe7eff41c4986710759d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::RemoveISMComponent</definition>
+        <argsstring>(UInstancedStaticMeshComponent &amp;ISMComponent)</argsstring>
+        <name>RemoveISMComponent</name>
+        <qualifiedname>UMassRepresentationSubsystem::RemoveISMComponent</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> &amp;</type>
+          <declname>ISMComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes the visualization data associated with the given ISM component. Note that this is safe to do only when there are no entities relying on this data. No entity data patching will take place. Note that the function will assert if there&apos;s more ISM components associated with given visualization. Also, in that case RemoveVisualDescByIndex will be called under the hood. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="70" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a54c23a77ca511963538251458b883a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::RemoveVisualDesc</definition>
+        <argsstring>(const FStaticMeshInstanceVisualizationDescHandle VisualizationHandle)</argsstring>
+        <name>RemoveVisualDesc</name>
+        <qualifiedname>UMassRepresentationSubsystem::RemoveVisualDesc</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_static_mesh_instance_visualization_desc_handle" kindref="compound">FStaticMeshInstanceVisualizationDescHandle</ref></type>
+          <declname>VisualizationHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all data associated with a given VisualizationIndex. Note that this is safe to do only if there are no entities relying on this index. No entity data patching will take place. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="76" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a1b451a44a628754e0aee094c65dff39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_representation_types_8h_1a22f7f7ccc69798e32bcd110df19991a7" kindref="member">FMassInstancedStaticMeshInfoArrayView</ref></type>
+        <definition>FMassInstancedStaticMeshInfoArrayView UMassRepresentationSubsystem::GetMutableInstancedStaticMeshInfos</definition>
+        <argsstring>()</argsstring>
+        <name>GetMutableInstancedStaticMeshInfos</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetMutableInstancedStaticMeshInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the array of all the static mesh instance component information </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="81" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a374c4b16d2fa0a45518c2b5e209b13c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::DirtyStaticMeshInstances</definition>
+        <argsstring>()</argsstring>
+        <name>DirtyStaticMeshInstances</name>
+        <qualifiedname>UMassRepresentationSubsystem::DirtyStaticMeshInstances</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mark render state of the static mesh instances dirty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="84" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a4a4fb3f928d6437d9ab128cc311ae913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+        <definition>int16 UMassRepresentationSubsystem::FindOrAddTemplateActor</definition>
+        <argsstring>(const TSubclassOf&lt; AActor &gt; &amp;ActorClass)</argsstring>
+        <name>FindOrAddTemplateActor</name>
+        <qualifiedname>UMassRepresentationSubsystem::FindOrAddTemplateActor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; AActor &gt; &amp;</type>
+          <declname>ActorClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store the template actor uniquely and return an index to it <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ActorClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a template actor class we will need to spawn for an agent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The index of the template actor type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="91" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="80" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1af5d843ff905ac4a9c9a80e7a4d75e535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AActor *</type>
+        <definition>AActor * UMassRepresentationSubsystem::GetOrSpawnActorFromTemplate</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, const FTransform &amp;Transform, const int16 TemplateActorIndex, FMassActorSpawnRequestHandle &amp;InOutSpawnRequestHandle, float Priority=MAX_FLT, FMassActorPreSpawnDelegate ActorPreSpawnDelegate=FMassActorPreSpawnDelegate(), FMassActorPostSpawnDelegate ActorPostSpawnDelegate=FMassActorPostSpawnDelegate())</argsstring>
+        <name>GetOrSpawnActorFromTemplate</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetOrSpawnActorFromTemplate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>InOutSpawnRequestHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>Priority</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MAX_FLT</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassActorPreSpawnDelegate</ref></type>
+          <declname>ActorPreSpawnDelegate</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassActorPreSpawnDelegate</ref>()</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassActorPostSpawnDelegate</ref></type>
+          <declname>ActorPostSpawnDelegate</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassActorPostSpawnDelegate</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get or spawn an actor from the TemplateActorIndex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where to create this actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the index of the type fetched with <ref refid="class_u_mass_representation_subsystem_1a4a4fb3f928d6437d9ab128cc311ae913" kindref="member">FindOrAddTemplateActor()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[IN/OUT] IN: previously requested spawn OUT: newly requested spawn </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of this spawn request in comparison with the others, lower value means higher priority (optional) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorPreSpawnDelegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an optional delegate called before the spawning of an actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorPostSpawnDelegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an optional delegate called once the actor is spawned </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spawned actor from the template actor type if ready </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="104" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="99" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1afd6d9824aeeddcc8e8d07f91674ddf20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::CancelSpawning</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, const int16 TemplateActorIndex, FMassActorSpawnRequestHandle &amp;SpawnRequestHandle)</argsstring>
+        <name>CancelSpawning</name>
+        <qualifiedname>UMassRepresentationSubsystem::CancelSpawning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel spawning request that is matching the TemplateActorIndex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the template type of the actor to release in case it was successfully spawned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[IN/OUT] previously requested spawn, gets invalidated as a result of this call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if spawning request was canceled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="114" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="288" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a957e6a8f8fa8b59a16a85806407f2dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::ReleaseTemplateActor</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, const int16 TemplateActorIndex, AActor *ActorToRelease, bool bImmediate)</argsstring>
+        <name>ReleaseTemplateActor</name>
+        <qualifiedname>UMassRepresentationSubsystem::ReleaseTemplateActor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>ActorToRelease</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bImmediate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an actor that is matching the TemplateActorIndex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the template type of the actor to release in case it was successfully spawned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorToRelease</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the actual actor to release if any </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bImmediate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>means it needs to be done immediately and not queue for later </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if actor was released </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="124" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="272" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a4d8bf65eeca6b2511d47e2019e4b2ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::ReleaseTemplateActorOrCancelSpawning</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, const int16 TemplateActorIndex, AActor *ActorToRelease, FMassActorSpawnRequestHandle &amp;SpawnRequestHandle)</argsstring>
+        <name>ReleaseTemplateActorOrCancelSpawning</name>
+        <qualifiedname>UMassRepresentationSubsystem::ReleaseTemplateActorOrCancelSpawning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>ActorToRelease</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an actor or cancel its spawning if it is matching the TemplateActorIndex <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the handle to the associated mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the template type of the actor to release in case it was successfully spawned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActorToRelease</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the actual actor to release if any </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnRequestHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[IN/OUT] previously requested spawn, gets invalidated as a result of this call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if actor was released or spawning request was canceled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="134" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="254" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a02043c029b993cb8ff9c0c8ce3d32254" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::DoesActorMatchTemplate</definition>
+        <argsstring>(const AActor &amp;Actor, const int16 TemplateActorIndex) const</argsstring>
+        <name>DoesActorMatchTemplate</name>
+        <qualifiedname>UMassRepresentationSubsystem::DoesActorMatchTemplate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor &amp;</type>
+          <declname>Actor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare if an actor matches the registered template actor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Actor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to compare its class against the template </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TemplateActorIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the template type of the actor to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if actor matches the template </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="143" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="358" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a1afd98c0aa73800503830a6df163ba34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; AActor &gt;</type>
+        <definition>TSubclassOf&lt; AActor &gt; UMassRepresentationSubsystem::GetTemplateActorClass</definition>
+        <argsstring>(const int16 TemplateActorIndex)</argsstring>
+        <name>GetTemplateActorClass</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetTemplateActorClass</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="145" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="181" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1af64dfd44ee1dd6db30281419df0b786f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::IsCollisionLoaded</definition>
+        <argsstring>(const FName TargetGrid, const FTransform &amp;Transform) const</argsstring>
+        <name>IsCollisionLoaded</name>
+        <qualifiedname>UMassRepresentationSubsystem::IsCollisionLoaded</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>TargetGrid</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="147" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="193" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a469b8b88c1663e49b1b60d656ec0a2e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::ReleaseTemplate</definition>
+        <argsstring>(const TSubclassOf&lt; AActor &gt; &amp;ActorClass)</argsstring>
+        <name>ReleaseTemplate</name>
+        <qualifiedname>UMassRepresentationSubsystem::ReleaseTemplate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; AActor &gt; &amp;</type>
+          <declname>ActorClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Responds to the <ref refid="struct_f_mass_entity_template" kindref="compound">FMassEntityTemplate</ref> getting destroyed, and releases reference to corresponding Actor in TemplateActors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="152" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="220" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1ade98d17dcd0684ace9a0bcf1b7f25532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::ReleaseAllResources</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseAllResources</name>
+        <qualifiedname>UMassRepresentationSubsystem::ReleaseAllResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release all references to static meshes and template actors Use with caution, all entities using this representation subsystem must be destroy otherwise they will point to invalid resources </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="157" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="240" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1ae74082077834ca98bb481ac07aac361b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_u_mass_actor_spawner_subsystem" kindref="compound">UMassActorSpawnerSubsystem</ref> *</type>
+        <definition>UMassActorSpawnerSubsystem * UMassRepresentationSubsystem::GetActorSpawnerSubsystem</definition>
+        <argsstring>() const</argsstring>
+        <name>GetActorSpawnerSubsystem</name>
+        <qualifiedname>UMassRepresentationSubsystem::GetActorSpawnerSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="159" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a955c8eb754a672dbe282137a774ca713" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMassRepresentationSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="163" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="371" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1aa37b18161922f08e359acc88512d1c53" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMassRepresentationSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="164" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="415" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1afc003218c9cefed8ddb659069919bd7d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::OnProcessingPhaseStarted</definition>
+        <argsstring>(const float DeltaSeconds, const EMassProcessingPhase Phase) const</argsstring>
+        <name>OnProcessingPhaseStarted</name>
+        <qualifiedname>UMassRepresentationSubsystem::OnProcessingPhaseStarted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaSeconds</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EMassProcessingPhase</ref></type>
+          <declname>Phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Needed for batching the update of static mesh transform </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="168" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="436" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a79c590d602e0d4ac94979464963182bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::OnMassAgentComponentEntityAssociated</definition>
+        <argsstring>(const UMassAgentComponent &amp;AgentComponent)</argsstring>
+        <name>OnMassAgentComponentEntityAssociated</name>
+        <qualifiedname>UMassRepresentationSubsystem::OnMassAgentComponentEntityAssociated</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMassAgentComponent</ref> &amp;</type>
+          <declname>AgentComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="170" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="453" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1adef13563a38f71ffa17a25c645a44d92" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::OnMassAgentComponentEntityDetaching</definition>
+        <argsstring>(const UMassAgentComponent &amp;AgentComponent)</argsstring>
+        <name>OnMassAgentComponentEntityDetaching</name>
+        <qualifiedname>UMassRepresentationSubsystem::OnMassAgentComponentEntityDetaching</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMassAgentComponent</ref> &amp;</type>
+          <declname>AgentComponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="171" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="469" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a4d822d587c8a90b60809448cb2334588" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::ReleaseTemplateActorInternal</definition>
+        <argsstring>(const int16 TemplateActorIndex, AActor *ActorToRelease, bool bImmediate)</argsstring>
+        <name>ReleaseTemplateActorInternal</name>
+        <qualifiedname>UMassRepresentationSubsystem::ReleaseTemplateActorInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>ActorToRelease</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bImmediate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="173" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="303" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1acd0b0c39230b17cc9d4d8ba361a87c16" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassRepresentationSubsystem::CancelSpawningInternal</definition>
+        <argsstring>(const int16 TemplateActorIndex, FMassActorSpawnRequestHandle &amp;SpawnRequestHandle)</argsstring>
+        <name>CancelSpawningInternal</name>
+        <qualifiedname>UMassRepresentationSubsystem::CancelSpawningInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16</ref></type>
+          <declname>TemplateActorIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_mass_actor_spawn_request_handle" kindref="compound">FMassActorSpawnRequestHandle</ref> &amp;</type>
+          <declname>SpawnRequestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="174" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="322" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1afc6fe55198d1affa971f2be5b25c3faf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassRepresentationSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</definition>
+        <argsstring>(TemplateActorsMTAccessDetector)</argsstring>
+        <name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name>
+        <qualifiedname>UMassRepresentationSubsystem::UE_MT_DECLARE_RW_ACCESS_DETECTOR</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TemplateActorsMTAccessDetector</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="200" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_u_mass_representation_subsystem_1a5b1aa4f5aaa3866a7980282f31d390f1" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassRepresentationSubsystem::AddReferencedObjects</definition>
+        <argsstring>(UObject *InThis, FReferenceCollector &amp;Collector)</argsstring>
+        <name>AddReferencedObjects</name>
+        <qualifiedname>UMassRepresentationSubsystem::AddReferencedObjects</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>InThis</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FReferenceCollector</ref> &amp;</type>
+          <declname>Collector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="176" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationSubsystem.cpp" bodystart="489" bodyend="498"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Subsystem responsible for all visual of mass agents, will handle actors spawning and static mesh instances </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassRepresentationSubsystem</label>
+        <link refid="class_u_mass_representation_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassRepresentationSubsystem</label>
+        <link refid="class_u_mass_representation_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" line="28" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationSubsystem.h" bodystart="29" bodyend="226"/>
+    <listofallmembers>
+      <member refid="class_u_mass_representation_subsystem_1aef66a8493c33b2b6b77bf9903e8dfcf8" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ActorSpawnerSubsystem</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a5b1aa4f5aaa3866a7980282f31d390f1" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>AddReferencedObjects</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a76d4bb1e01f648685298932482b016af" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>AddVisualDescWithISMComponent</name></member>
+      <member refid="class_u_mass_representation_subsystem_1ad8ac45f645ca87c09bfb8221cbc65a87" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>AddVisualDescWithISMComponents</name></member>
+      <member refid="class_u_mass_representation_subsystem_1afd6d9824aeeddcc8e8d07f91674ddf20" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>CancelSpawning</name></member>
+      <member refid="class_u_mass_representation_subsystem_1acd0b0c39230b17cc9d4d8ba361a87c16" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>CancelSpawningInternal</name></member>
+      <member refid="class_u_mass_representation_subsystem_1aa37b18161922f08e359acc88512d1c53" prot="protected" virt="virtual"><scope>UMassRepresentationSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a374c4b16d2fa0a45518c2b5e209b13c9" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>DirtyStaticMeshInstances</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a02043c029b993cb8ff9c0c8ce3d32254" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>DoesActorMatchTemplate</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a5d39588fa38cd83d3993fa59e67b37bc" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>EntityManager</name></member>
+      <member refid="class_u_mass_representation_subsystem_1aa9ffd03caa05397406e7830fde9ddf6e" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>FindOrAddStaticMeshDesc</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a4a4fb3f928d6437d9ab128cc311ae913" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>FindOrAddTemplateActor</name></member>
+      <member refid="class_u_mass_representation_subsystem_1ae74082077834ca98bb481ac07aac361b" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetActorSpawnerSubsystem</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a0a56d9acdee2fc96e222c4458b65c826" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetISMCSharedDataForDescriptionIndex</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a763a6ca248c2292f12e3017d7f4b0147" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetISMCSharedDataForInstancedStaticMesh</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a1b451a44a628754e0aee094c65dff39a" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetMutableInstancedStaticMeshInfos</name></member>
+      <member refid="class_u_mass_representation_subsystem_1af5d843ff905ac4a9c9a80e7a4d75e535" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetOrSpawnActorFromTemplate</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a1afd98c0aa73800503830a6df163ba34" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>GetTemplateActorClass</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a82fd6797a9ff00d3fd35bab46fe93609" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>HandledMassAgents</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a955c8eb754a672dbe282137a774ca713" prot="protected" virt="virtual"><scope>UMassRepresentationSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_mass_representation_subsystem_1af64dfd44ee1dd6db30281419df0b786f" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>IsCollisionLoaded</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a79c590d602e0d4ac94979464963182bb" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>OnMassAgentComponentEntityAssociated</name></member>
+      <member refid="class_u_mass_representation_subsystem_1adef13563a38f71ffa17a25c645a44d92" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>OnMassAgentComponentEntityDetaching</name></member>
+      <member refid="class_u_mass_representation_subsystem_1afc003218c9cefed8ddb659069919bd7d" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>OnProcessingPhaseStarted</name></member>
+      <member refid="class_u_mass_representation_subsystem_1ade98d17dcd0684ace9a0bcf1b7f25532" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ReleaseAllResources</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a469b8b88c1663e49b1b60d656ec0a2e4" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ReleaseTemplate</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a957e6a8f8fa8b59a16a85806407f2dd3" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ReleaseTemplateActor</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a4d822d587c8a90b60809448cb2334588" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ReleaseTemplateActorInternal</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a4d8bf65eeca6b2511d47e2019e4b2ade" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>ReleaseTemplateActorOrCancelSpawning</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a6d3018984ddbe7eff41c4986710759d5" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>RemoveISMComponent</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a54c23a77ca511963538251458b883a3c" prot="public" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>RemoveVisualDesc</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a1e6aad17536462a99336e4aad691ebad" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>RetryMovedDistanceSq</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a48e6f2452b7bcfcb275668eea46cd7db" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>RetryTimeInterval</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a50d217e99b33e066af1931020e0464f3" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>TemplateActors</name></member>
+      <member refid="class_u_mass_representation_subsystem_1afc6fe55198d1affa971f2be5b25c3faf" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>UE_MT_DECLARE_RW_ACCESS_DETECTOR</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a983c248dda7edde755b6724a27be358a" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>VisualizationComponent</name></member>
+      <member refid="class_u_mass_representation_subsystem_1adfd51478c3259e679ceb418053165f37" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>Visualizer</name></member>
+      <member refid="class_u_mass_representation_subsystem_1a272cb24e9dbab7525c1e4b9cdc4be71a" prot="protected" virt="non-virtual"><scope>UMassRepresentationSubsystem</scope><name>WorldPartitionSubsystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

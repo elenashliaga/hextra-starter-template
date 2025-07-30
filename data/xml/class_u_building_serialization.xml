@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_building_serialization" kind="class" language="C++" prot="public">
+    <compoundname>UBuildingSerialization</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_building_serialization_8h" local="no">BuildingSerialization.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_building_serialization_1a34e08fbcd95cb90eb777793349187775" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FJsonObject &gt; UBuildingSerialization::DeserializeJsonString</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>DeserializeJsonString</name>
+        <qualifiedname>UBuildingSerialization::DeserializeJsonString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует строку JSON в объект FJsonObject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и преобразует ее в объект FJsonObject. Если строка пуста или десериализация завершилась неудачно, возвращается nullptr.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для десериализации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованный объект FJsonObject в виде TSharedPtr. Возвращает nullptr в случае ошибки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="38" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a6e004694aafa5fddb30286d13882c1de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FJsonObject &gt; UBuildingSerialization::DeserializeJsonString</definition>
+        <argsstring>(FString &amp;&amp;JsonString)</argsstring>
+        <name>DeserializeJsonString</name>
+        <qualifiedname>UBuildingSerialization::DeserializeJsonString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;&amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="40" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a94311802eff79e01ab8eabbd233cef21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::JsonToBuildingUnrealMetaDataInfo</definition>
+        <argsstring>(const FString &amp;JsonString, FBuildingUnrealMetaDataInfo &amp;BuildingMetaDataInfo)</argsstring>
+        <name>JsonToBuildingUnrealMetaDataInfo</name>
+        <qualifiedname>UBuildingSerialization::JsonToBuildingUnrealMetaDataInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref> &amp;</type>
+          <declname>BuildingMetaDataInfo</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует строку JSON в объект BuildingUnrealMetaDataInfo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и преобразует ее в объект BuildingUnrealMetaDataInfo. Он заполняет поля объекта BuildingUnrealMetaDataInfo соответствующими значениями из строки JSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для преобразования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingMetaDataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект BuildingUnrealMetaDataInfo, который нужно заполнить преобразованными значениями. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="52" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1ac15b2f1e23393c1839c730c39f704942" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UBuildingSerialization::UpdateJsonBuildingCoordinateMSK77</definition>
+        <argsstring>(const FString &amp;BuildingJSONString, const FVector &amp;NewMsk77Coordinates)</argsstring>
+        <name>UpdateJsonBuildingCoordinateMSK77</name>
+        <qualifiedname>UBuildingSerialization::UpdateJsonBuildingCoordinateMSK77</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>BuildingJSONString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>NewMsk77Coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет координаты здания Msk77 и возвращает обновленную строку которой можно перезаписать geojson файл здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON, geojson здания. Он обновляет координаты здания geometry -&gt; coordinates и properties-&gt;h_abs соответствующими значениями.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingJSONString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка geojson здания для десериализации. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewMsk77Coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты, для обновления данных в JSON. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="63" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="31" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a4a454b864f34ff5c8d79e26c45fb693b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::JsonToBuildingUnrealMetaDataInfo</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;JsonObject, FBuildingUnrealMetaDataInfo &amp;BuildingMetaDataInfo)</argsstring>
+        <name>JsonToBuildingUnrealMetaDataInfo</name>
+        <qualifiedname>UBuildingSerialization::JsonToBuildingUnrealMetaDataInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref> &amp;</type>
+          <declname>BuildingMetaDataInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разбирает десериализованную структуру JSON и извлекает данные в предоставленный объект <ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Десериализованный JSON объект для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingMetaDataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref>, в который будут помещены извлеченные данные.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="73" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="181" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1ae781348f0dd84baf20e1dc452ca53eae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::JsonToStructBuildingDataInfo</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;JsonObject, UBuildingInfoWrapper *InfoContainer, bool bFromDataBase=false)</argsstring>
+        <name>JsonToStructBuildingDataInfo</name>
+        <qualifiedname>UBuildingSerialization::JsonToStructBuildingDataInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>InfoContainer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFromDataBase</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Перегруженная функция: разбирает десериализованную структуру JSON и извлекает данные в объект структуры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Десериализованный JSON объект для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InfoContainer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект структуры, в который будут помещены извлеченные данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFromDataBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий, идут ли данные JSON из базы данных. Значение по умолчанию - false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="82" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="112" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a3b21ff4b6f3c77917203bdf769bfe0bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::DataBaseStringToStructObjectData</definition>
+        <argsstring>(const FString &amp;JsonString, UBuildingInfoWrapper *BuildingDataInfo, const bool FromDataBase)</argsstring>
+        <name>DataBaseStringToStructObjectData</name>
+        <qualifiedname>UBuildingSerialization::DataBaseStringToStructObjectData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>BuildingDataInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>FromDataBase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разбирает строку JSON из базы данных и извлекает данные в объект структуры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingDataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект структуры, в который будут помещены извлеченные данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FromDataBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий, идут ли данные JSON из базы данных. Значение по умолчанию - false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="91" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="123" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a9130bf15ed9745e134cbc10f751d965b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UBuildingSerialization::UpdateBuildingUnrealMetaDataInfo</definition>
+        <argsstring>(const FBuildingUnrealMetaDataInfo &amp;BuildingUnrealMetaDataInfo, const FString &amp;JsonString)</argsstring>
+        <name>UpdateBuildingUnrealMetaDataInfo</name>
+        <qualifiedname>UBuildingSerialization::UpdateBuildingUnrealMetaDataInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref> &amp;</type>
+          <declname>BuildingUnrealMetaDataInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет или создает объект BuildingUnrealMetaDataInfo в строке JSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingUnrealMetaDataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_building_unreal_meta_data_info" kindref="compound">FBuildingUnrealMetaDataInfo</ref>, содержащий данные для обновления или создания. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, в которой нужно обновить или создать объект BuildingUnrealMetaDataInfo. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленная или созданная строка JSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="101" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="232" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1ad7e51b56f15820e8cf83b2fc21ac8e21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UBuildingSerialization::AddBuildingUnrealMetaDataInfo</definition>
+        <argsstring>(const FString &amp;CurrentString, const FString &amp;NewDataString)</argsstring>
+        <name>AddBuildingUnrealMetaDataInfo</name>
+        <qualifiedname>UBuildingSerialization::AddBuildingUnrealMetaDataInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>CurrentString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>NewDataString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Добавляет информацию об Unreal метаданных в данную строку JSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CurrentString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Текущая строка JSON, к которой нужно добавить информацию о метаданных. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewDataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая информация о метаданных, которая должна быть добавлена в строку JSON. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Обновленная строка JSON с добавленной информацией о метаданных. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="110" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="260" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a20688bd56ad106c1ed987141affcaab1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::UpdateObjectWidgetSettings</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;Object, const FShowWidgetSettings &amp;WidgetSettings)</argsstring>
+        <name>UpdateObjectWidgetSettings</name>
+        <qualifiedname>UBuildingSerialization::UpdateObjectWidgetSettings</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>Object</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_show_widget_settings" kindref="compound">FShowWidgetSettings</ref> &amp;</type>
+          <declname>WidgetSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет данный объект JSON указанными полями из предоставленного объекта структуры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON для обновления. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WidgetSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект структуры, содержащий поля для обновления объекта JSON. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="118" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="277" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1aeae2e0144ecfd8e104faf0010527059e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref></type>
+        <definition>FJsonObject UBuildingSerialization::BuildingDataInfoToJsonObject</definition>
+        <argsstring>(UBuildingInfoWrapper *BuildingInfo)</argsstring>
+        <name>BuildingDataInfoToJsonObject</name>
+        <qualifiedname>UBuildingSerialization::BuildingDataInfoToJsonObject</qualifiedname>
+        <param>
+          <type><ref refid="class_u_building_info_wrapper" kindref="compound">UBuildingInfoWrapper</ref> *</type>
+          <declname>BuildingInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Преобразует информацию о здании в объект JSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с информацией о здании. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованный объект JSON, представляющий информацию о здании. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="126" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="314" bodyend="346"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_building_serialization_1a4e8963041c6588723785c20a86ad03d9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::JsonToStructBuildingInfo</definition>
+        <argsstring>(const UGeoJsonFeatureCollection *FeatureCollection, FBuildingJSONInfo &amp;ObjectData, bool bFromDataBase)</argsstring>
+        <name>JsonToStructBuildingInfo</name>
+        <qualifiedname>UBuildingSerialization::JsonToStructBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_geo_json_feature_collection" kindref="compound">UGeoJsonFeatureCollection</ref> *</type>
+          <declname>FeatureCollection</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_building_j_s_o_n_info" kindref="compound">FBuildingJSONInfo</ref> &amp;</type>
+          <declname>ObjectData</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFromDataBase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разбирает GeoJSON FeatureCollection и извлекает данные в объект структуры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FeatureCollection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Десериализованная FeatureCollection GeoJSON для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ObjectData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект структуры, в который будут помещены извлеченные данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFromDataBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий, что данные поступают из базы данных. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="136" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="66" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a0ffac86862f8b0c3d7c56232e7b5c56f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::JsonToBuildingInfo</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;JsonObject, FCustomBuildingInformation &amp;BuildingInfo)</argsstring>
+        <name>JsonToBuildingInfo</name>
+        <qualifiedname>UBuildingSerialization::JsonToBuildingInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_custom_building_information" kindref="compound">FCustomBuildingInformation</ref> &amp;</type>
+          <declname>BuildingInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разбирает десериализованную структуру JSON и извлекает данные в предоставленный объект <ref refid="struct_f_custom_building_information" kindref="compound">FCustomBuildingInformation</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Десериализованный JSON объект для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BuildingInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_custom_building_information" kindref="compound">FCustomBuildingInformation</ref>, в который будут помещены извлеченные данные. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="144" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="142" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1aff3fb0b137d6a352d6155e9b022d8af2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FJsonValue &gt; UBuildingSerialization::CreateValueWithFlag</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonValue &gt; &amp;Value, bool bEnabled)</argsstring>
+        <name>CreateValueWithFlag</name>
+        <qualifiedname>UBuildingSerialization::CreateValueWithFlag</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bEnabled</declname>
+        </param>
+        <briefdescription>
+<para>Создает объект JSON value с флагом, указывающим на его активность. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает объект JSON value и булевый флаг и создает объект JSON с двумя полями: &quot;value&quot; и &quot;isEnabled&quot;. Поле &quot;value&quot; содержит предоставленный объект JSON value, в то время как поле &quot;isEnabled&quot; содержит булево значение JSON, представляющее предоставленный флаг.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON value, который нужно включить в созданный объект JSON. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Булевый флаг, указывающий на активность объекта JSON value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Общий указатель на созданный объект JSON value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="159" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="348" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a7d35beecf9e4feb5388b57bcfc189430" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UBuildingSerialization::ToValueWithFlag</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;Object, const FString &amp;FieldName, bool bEnabled)</argsstring>
+        <name>ToValueWithFlag</name>
+        <qualifiedname>UBuildingSerialization::ToValueWithFlag</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>Object</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FieldName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Преобразует значение JSON в новое значение JSON с добавленным флагом.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON, содержащий значение для преобразования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FieldName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя поля в объекте JSON для преобразования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение флага, которое нужно добавить к преобразованному значению JSON. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="168" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Private/Core/BuildingsBase/BuildingSerialization.cpp" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_building_serialization_1a97966a2abc9eb133ff79d213c0559e8f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> FValueType</type>
+          </param>
+        </templateparamlist>
+        <type>FValueType</type>
+        <definition>FValueType UBuildingSerialization::GetFieldWithDefault</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;JsonObject, const FString &amp;Key, const FValueType &amp;Default)</argsstring>
+        <name>GetFieldWithDefault</name>
+        <qualifiedname>UBuildingSerialization::GetFieldWithDefault</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> FValueType &amp;</type>
+          <declname>Default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Извлекает значение из объекта JSON и возвращает его при успехе или дефолтное значение при неудаче</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект JSON, из которого извлекаются данные </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя извлекаемого параметра </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дефолтное значение, возвращаемое при неудаче извлечения данных </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Извлеченные данные при успехе или значение Default при неудаче </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="179" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" bodystart="183" bodyend="192"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UBuildingSerialization</label>
+        <link refid="class_u_building_serialization"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UBuildingSerialization</label>
+        <link refid="class_u_building_serialization"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" line="23" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/ArchitecturalScenePlugin/Source/ArchitecturalScene/Public/Core/BuildingsBase/BuildingSerialization.h" bodystart="24" bodyend="180"/>
+    <listofallmembers>
+      <member refid="class_u_building_serialization_1ad7e51b56f15820e8cf83b2fc21ac8e21" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>AddBuildingUnrealMetaDataInfo</name></member>
+      <member refid="class_u_building_serialization_1aeae2e0144ecfd8e104faf0010527059e" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>BuildingDataInfoToJsonObject</name></member>
+      <member refid="class_u_building_serialization_1aff3fb0b137d6a352d6155e9b022d8af2" prot="private" virt="non-virtual"><scope>UBuildingSerialization</scope><name>CreateValueWithFlag</name></member>
+      <member refid="class_u_building_serialization_1a3b21ff4b6f3c77917203bdf769bfe0bb" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>DataBaseStringToStructObjectData</name></member>
+      <member refid="class_u_building_serialization_1a34e08fbcd95cb90eb777793349187775" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>DeserializeJsonString</name></member>
+      <member refid="class_u_building_serialization_1a6e004694aafa5fddb30286d13882c1de" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>DeserializeJsonString</name></member>
+      <member refid="class_u_building_serialization_1a97966a2abc9eb133ff79d213c0559e8f" prot="private" virt="non-virtual"><scope>UBuildingSerialization</scope><name>GetFieldWithDefault</name></member>
+      <member refid="class_u_building_serialization_1a0ffac86862f8b0c3d7c56232e7b5c56f" prot="private" virt="non-virtual"><scope>UBuildingSerialization</scope><name>JsonToBuildingInfo</name></member>
+      <member refid="class_u_building_serialization_1a94311802eff79e01ab8eabbd233cef21" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>JsonToBuildingUnrealMetaDataInfo</name></member>
+      <member refid="class_u_building_serialization_1a4a454b864f34ff5c8d79e26c45fb693b" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>JsonToBuildingUnrealMetaDataInfo</name></member>
+      <member refid="class_u_building_serialization_1ae781348f0dd84baf20e1dc452ca53eae" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>JsonToStructBuildingDataInfo</name></member>
+      <member refid="class_u_building_serialization_1a4e8963041c6588723785c20a86ad03d9" prot="private" virt="non-virtual"><scope>UBuildingSerialization</scope><name>JsonToStructBuildingInfo</name></member>
+      <member refid="class_u_building_serialization_1a7d35beecf9e4feb5388b57bcfc189430" prot="private" virt="non-virtual"><scope>UBuildingSerialization</scope><name>ToValueWithFlag</name></member>
+      <member refid="class_u_building_serialization_1a9130bf15ed9745e134cbc10f751d965b" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>UpdateBuildingUnrealMetaDataInfo</name></member>
+      <member refid="class_u_building_serialization_1ac15b2f1e23393c1839c730c39f704942" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>UpdateJsonBuildingCoordinateMSK77</name></member>
+      <member refid="class_u_building_serialization_1a20688bd56ad106c1ed987141affcaab1" prot="public" virt="non-virtual"><scope>UBuildingSerialization</scope><name>UpdateObjectWidgetSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_layers_controller_base" kind="class" language="C++" prot="public">
+    <compoundname>ULayersControllerBase</compoundname>
+    <basecompoundref refid="class_u_modules_layer_object_base" prot="public" virt="non-virtual">UModulesLayerObjectBase</basecompoundref>
+    <includes refid="_layers_controller_base_8h" local="no">LayersControllerBase.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_layers_controller_base_1a6fa0a765f98e71a4eb0dbee598156be1" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TScriptInterface</ref>&lt; <ref refid="class_i_layer_settings" kindref="compound">ILayerSettings</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FGuid, TScriptInterface&lt;ILayerSettings&gt; &gt; ULayersControllerBase::LayersContainer</definition>
+        <argsstring></argsstring>
+        <name>LayersContainer</name>
+        <qualifiedname>ULayersControllerBase::LayersContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="88" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_layers_controller_base_1a7aabe6364deb82ae1b424812d0ee43a4" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>, <ref refid="class_u_modules_layer_generator_base" kindref="compound">UModulesLayerGeneratorBase</ref> * &gt;</type>
+        <definition>TMap&lt;FGuid, UModulesLayerGeneratorBase*&gt; ULayersControllerBase::LayersGenerators</definition>
+        <argsstring></argsstring>
+        <name>LayersGenerators</name>
+        <qualifiedname>ULayersControllerBase::LayersGenerators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="91" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_layers_controller_base_1ab9a22762ada2557cd6d620dce8c18ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::AddLayer</definition>
+        <argsstring>(const FGuid &amp;LayerID, const FString &amp;ServiceUrl, const TArray&lt; TSubclassOf&lt; ATileActorBase &gt; &gt; &amp;ClassesModule, const FMetaDataLayerStruct &amp;LayerSettings, const FString &amp;LayerUrl=&quot;&quot;)</argsstring>
+        <name>AddLayer</name>
+        <qualifiedname>ULayersControllerBase::AddLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>ServiceUrl</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> &gt; &gt; &amp;</type>
+          <declname>ClassesModule</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_struct" kindref="compound">FMetaDataLayerStruct</ref> &amp;</type>
+          <declname>LayerSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>LayerUrl</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Добавляет слой в LayersController. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID слоя, который должен быть добавлен. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ServiceUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL сервиса гибрида </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ClassesModule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив подклассов актеров тайлов для классов модулей слоя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки, которые настраивают отображение тайлов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка, по которой гибрид будет опрашивать тайловый сервер</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="34" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="16" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_layers_controller_base_1ae705ade778df4ed64a94157189fd20c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::RemoveLayer</definition>
+        <argsstring>(const FGuid &amp;LayerID)</argsstring>
+        <name>RemoveLayer</name>
+        <qualifiedname>ULayersControllerBase::RemoveLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет слой из LayersController. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID слоя, который должен быть удален.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="48" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_layers_controller_base_1a471d14b8334e3b94528e97121f7c0bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::UpdateLayer</definition>
+        <argsstring>(const TArray&lt; TSubclassOf&lt; ATileActorBase &gt; &gt; &amp;NewTilesClasses, const FString &amp;ServiceUrl, const FGuid &amp;LayerID, const FMetaDataLayerStruct &amp;LayerSettings, const FString &amp;LayerUrl=&quot;&quot;)</argsstring>
+        <name>UpdateLayer</name>
+        <qualifiedname>ULayersControllerBase::UpdateLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_tile_actor_base" kindref="compound">ATileActorBase</ref> &gt; &gt; &amp;</type>
+          <declname>NewTilesClasses</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>ServiceUrl</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_meta_data_layer_struct" kindref="compound">FMetaDataLayerStruct</ref> &amp;</type>
+          <declname>LayerSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>LayerUrl</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Обновляет настройки для конкретного слоя в LayersController. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID слоя, который нужно обновить. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ServiceUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Url сервиса гибрида </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Настройки, которые настраивают отображение тайлов </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LayerUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка, по которой гибрид будет опрашивать тайловый сервер</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="61" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="51" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_layers_controller_base_1a903405b2e655e2beefac78d027210a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::ActivateLayer</definition>
+        <argsstring>(const FGuid &amp;LayerID)</argsstring>
+        <name>ActivateLayer</name>
+        <qualifiedname>ULayersControllerBase::ActivateLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+        </param>
+        <briefdescription>
+<para>Активирует слой в LayersController. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID слоя, который нужно активировать.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="75" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_layers_controller_base_1a79f26c6589ffee9d0a652df5ef2683d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::DeactivateLayer</definition>
+        <argsstring>(const FGuid &amp;LayerID=FGuid())</argsstring>
+        <name>DeactivateLayer</name>
+        <qualifiedname>ULayersControllerBase::DeactivateLayer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref> &amp;</type>
+          <declname>LayerID</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Деактивирует слой в LayersController. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LayerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID слоя, который нужно деактивировать.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="85" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="71" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_layers_controller_base_1ad219e6102080e9d03e553ecbb9904f7f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ULayersControllerBase::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>ULayersControllerBase::BeginPlay</qualifiedname>
+        <reimplements refid="class_u_modules_layer_object_base_1a6b343020fc75875ed669e68e33fef619">BeginPlay</reimplements>
+        <briefdescription>
+<para>Вызывается при старте игры </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="99" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/BaseClasses/LayersControllerBase.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ULayersControllerBase</label>
+        <link refid="class_u_layers_controller_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModulesLayerObjectBase</label>
+        <link refid="class_u_modules_layer_object_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ULayersControllerBase</label>
+        <link refid="class_u_layers_controller_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UModulesLayerObjectBase</label>
+        <link refid="class_u_modules_layer_object_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" line="17" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/BaseClasses/LayersControllerBase.h" bodystart="18" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_u_layers_controller_base_1a903405b2e655e2beefac78d027210a20" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>ActivateLayer</name></member>
+      <member refid="class_u_layers_controller_base_1ab9a22762ada2557cd6d620dce8c18ed1" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>AddLayer</name></member>
+      <member refid="class_u_layers_controller_base_1ad219e6102080e9d03e553ecbb9904f7f" prot="protected" virt="virtual"><scope>ULayersControllerBase</scope><name>BeginPlay</name></member>
+      <member refid="class_u_layers_controller_base_1a79f26c6589ffee9d0a652df5ef2683d6" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>DeactivateLayer</name></member>
+      <member refid="class_u_layers_controller_base_1a6fa0a765f98e71a4eb0dbee598156be1" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>LayersContainer</name></member>
+      <member refid="class_u_layers_controller_base_1a7aabe6364deb82ae1b424812d0ee43a4" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>LayersGenerators</name></member>
+      <member refid="class_u_modules_layer_object_base_1a4559afa453d9e1f543a841ae0fb5a3bb" prot="public" virt="virtual"><scope>ULayersControllerBase</scope><name>PostInitProperties</name></member>
+      <member refid="class_u_layers_controller_base_1ae705ade778df4ed64a94157189fd20c6" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>RemoveLayer</name></member>
+      <member refid="class_u_layers_controller_base_1a471d14b8334e3b94528e97121f7c0bb3" prot="public" virt="non-virtual"><scope>ULayersControllerBase</scope><name>UpdateLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

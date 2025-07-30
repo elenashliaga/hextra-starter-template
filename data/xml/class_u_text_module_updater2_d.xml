@@ -1,0 +1,1135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_text_module_updater2_d" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UTextModuleUpdater2D</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UModuleLayerUpdaterBase</basecompoundref>
+    <includes refid="_text_module_updater2_d_8h" local="no">TextModuleUpdater2D.h</includes>
+    <innerclass refid="struct_u_text_module_updater2_d_1_1_f_font_cache" prot="private">UTextModuleUpdater2D::FFontCache</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" prot="private" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTuple</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_tile_actor_base_8h_1a1d9acf88a6907dedd3857da875a3071e" kindref="member">ERoadType</ref>, <ref refid="_polyline_curve2_d_8h_1a052d0cd174f326758837d0cd71048226" kindref="member">FPolylineCurve2D</ref> &gt;</type>
+        <definition>using UTextModuleUpdater2D::FRoadGeometry2D =  TTuple&lt;FIntVector, int32, FString, ERoadType, FPolylineCurve2D&gt;</definition>
+        <argsstring></argsstring>
+        <name>FRoadGeometry2D</name>
+        <qualifiedname>UTextModuleUpdater2D::FRoadGeometry2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="53" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_u_text_module_updater2_d_1a323209edebcc58ff20457ef1e9cd94a2" prot="private" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TInlineAllocator</ref>&lt; 128 &gt; &gt;</type>
+        <definition>using UTextModuleUpdater2D::FRelevantTiles =  TArray&lt;FIntVector, TInlineAllocator&lt;128&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>FRelevantTiles</name>
+        <qualifiedname>UTextModuleUpdater2D::FRelevantTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="54" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_u_text_module_updater2_d_1ab8df1d95d189ab9bb2bfd3edda382d09" prot="private" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTuple</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> &gt;</type>
+        <definition>using UTextModuleUpdater2D::FCameraTransform =  TTuple&lt;FVector, FRotator&gt;</definition>
+        <argsstring></argsstring>
+        <name>FCameraTransform</name>
+        <qualifiedname>UTextModuleUpdater2D::FCameraTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="55" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a46fffb945437fa0b051520389ce71501" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UCanvas&gt; UTextModuleUpdater2D::CachedCanvas</definition>
+        <argsstring></argsstring>
+        <name>CachedCanvas</name>
+        <qualifiedname>UTextModuleUpdater2D::CachedCanvas</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached canvas fetched during the first draw update. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="246" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a07ffbfe3a84a7de616c2d2e92172c4f2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSlateFontInfo</ref></type>
+        <definition>FSlateFontInfo UTextModuleUpdater2D::CachedFontInfo</definition>
+        <argsstring></argsstring>
+        <name>CachedFontInfo</name>
+        <qualifiedname>UTextModuleUpdater2D::CachedFontInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached font info from the config. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="250" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a9c12e9289145cdf592c0f92c8733c25d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_curved_text_1_1_f_canvas_text_item" kindref="compound">CurvedText::FCanvasTextItem</ref> &gt;</type>
+        <definition>TArray&lt;CurvedText::FCanvasTextItem&gt; UTextModuleUpdater2D::CanvasItems</definition>
+        <argsstring></argsstring>
+        <name>CanvasItems</name>
+        <qualifiedname>UTextModuleUpdater2D::CanvasItems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached elements for drawing on UCanvas. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="253" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a2e8b228117fd10d674d0a621edd11ee7" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &gt;</type>
+        <definition>TArray&lt;FRoadGeometry2D&gt; UTextModuleUpdater2D::CachedGeometry</definition>
+        <argsstring></argsstring>
+        <name>CachedGeometry</name>
+        <qualifiedname>UTextModuleUpdater2D::CachedGeometry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached geometry data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="256" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1abf5733dede25acbf78012bd19409d85d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="struct_u_text_module_updater2_d_1_1_f_font_cache" kindref="compound">FFontCache</ref> &gt;</type>
+        <definition>TOptional&lt;FFontCache&gt; UTextModuleUpdater2D::FontCache</definition>
+        <argsstring></argsstring>
+        <name>FontCache</name>
+        <qualifiedname>UTextModuleUpdater2D::FontCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached font data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="259" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a067c96e0fb2ccb107462ec02795bddb7" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_parsed_tiles" kindref="compound">FParsedTiles</ref></type>
+        <definition>FParsedTiles UTextModuleUpdater2D::LoadedTiles</definition>
+        <argsstring></argsstring>
+        <name>LoadedTiles</name>
+        <qualifiedname>UTextModuleUpdater2D::LoadedTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw data received from <ref refid="class_u_tiles_loader" kindref="compound">UTilesLoader</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="262" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a21f290b9c86e5e3a18f22c6b775343f0" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="class_u_text_module_updater2_d_1ab8df1d95d189ab9bb2bfd3edda382d09" kindref="member">FCameraTransform</ref> &gt;</type>
+        <definition>TOptional&lt;FCameraTransform&gt; UTextModuleUpdater2D::CachedCameraTransform</definition>
+        <argsstring></argsstring>
+        <name>CachedCameraTransform</name>
+        <qualifiedname>UTextModuleUpdater2D::CachedCameraTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached camera transform for deducing whether the rebuild is required. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="265" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a3aff17cfac2d7b5574f42d047fae04eb" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UTextModuleUpdater2D::TileAngularRangeInRadians</definition>
+        <argsstring></argsstring>
+        <name>TileAngularRangeInRadians</name>
+        <qualifiedname>UTextModuleUpdater2D::TileAngularRangeInRadians</qualifiedname>
+        <initializer>= FMath::DegreesToRadians(75.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The angular range in radians relative to the tile normal to display the tile. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="268" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a9815e899145bb78643b5bc5c94abaaa2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UTextModuleUpdater2D::MaxAngularDeviation</definition>
+        <argsstring></argsstring>
+        <name>MaxAngularDeviation</name>
+        <qualifiedname>UTextModuleUpdater2D::MaxAngularDeviation</qualifiedname>
+        <initializer>= 30.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum angular deviation between symbols. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="271" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a919d24871e0a5b3db08f002ccde910e7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::bSubstituteTextToUpper</definition>
+        <argsstring></argsstring>
+        <name>bSubstituteTextToUpper</name>
+        <qualifiedname>UTextModuleUpdater2D::bSubstituteTextToUpper</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether to substitute the received text to upper case. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="274" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_text_module_updater2_d_1a33b8d4642677e9b2be82487f369a2019" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::bDebugDrawBoundingBoxes</definition>
+        <argsstring></argsstring>
+        <name>bDebugDrawBoundingBoxes</name>
+        <qualifiedname>UTextModuleUpdater2D::bDebugDrawBoundingBoxes</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether to visualize bounding boxes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="277" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a0db2e664d1122da53487cdce05f5cba0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UTextModuleUpdater2D::UTextModuleUpdater2D</definition>
+        <argsstring>()=default</argsstring>
+        <name>UTextModuleUpdater2D</name>
+        <qualifiedname>UTextModuleUpdater2D::UTextModuleUpdater2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1ad0bff6e34befa25b705b1ff673eadb3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ForceRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>ForceRefresh</name>
+        <qualifiedname>UTextModuleUpdater2D::ForceRefresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Запрашивает обновление для данных визуализации. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="32" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a3dd271de8322b29b0f78235821686570" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LAYERSCREATOR_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::InvalidateFontCache</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidateFontCache</name>
+        <qualifiedname>UTextModuleUpdater2D::InvalidateFontCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Инвалидирует кэш для текстовых данных. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="37" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a9f4d8940f4985a747add9fde621e3bf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::OnViewportResized</definition>
+        <argsstring>(FViewport *InViewport, uint32)</argsstring>
+        <name>OnViewportResized</name>
+        <qualifiedname>UTextModuleUpdater2D::OnViewportResized</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FViewport</ref> *</type>
+          <declname>InViewport</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Запрашивает обновление для данных визуализации после изменения размера окна. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="81" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a6f0038575f7dbfef9027346ffe14eb1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::RefreshSettings</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshSettings</name>
+        <qualifiedname>UTextModuleUpdater2D::RefreshSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет класс настроек на наличие обновлений и сбрасывает кэш при необходимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="86" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="65" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a7bd866171e4bff0fbba857a697726b3d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+        <definition>UCanvas * UTextModuleUpdater2D::GetCanvasChecked</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCanvasChecked</name>
+        <qualifiedname>UTextModuleUpdater2D::GetCanvasChecked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает UCanvas для дальнейшей отрисовки, проверяя его на валидность.</para>
+<para><simplesect kind="return"><para>Возвращает UCanvas для дальнейшей отрисовки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="93" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="97" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a530d143ab8705bb1691c4660d0cadf2d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FVector2D::FReal</type>
+        <definition>FVector2D::FReal UTextModuleUpdater2D::GetBoundingBoxExtent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBoundingBoxExtent</name>
+        <qualifiedname>UTextModuleUpdater2D::GetBoundingBoxExtent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает значение, требуемое для увеличения AABB с учетом активного шрифта.</para>
+<para><simplesect kind="return"><para>Размер увелечения AABB в пикселях. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="100" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a620511f15ad80105a29fb44ea20a8bec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::OnPostRender</definition>
+        <argsstring>(AHUD *, UCanvas *)</argsstring>
+        <name>OnPostRender</name>
+        <qualifiedname>UTextModuleUpdater2D::OnPostRender</qualifiedname>
+        <param>
+          <type>AHUD *</type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Основной цикл обновления рендера текста вдоль кривой. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="105" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="115" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1accf50472b8cb8b306de31bac04b422f4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::ShouldSkipUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>ShouldSkipUpdate</name>
+        <qualifiedname>UTextModuleUpdater2D::ShouldSkipUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Следует ли пропустить обновление в текущем кадре.</para>
+<para><simplesect kind="return"><para>True, если обновление следует пропустить. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="112" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="150" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a2d84fbd56740b11379eea2fc78756801" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_text_module_updater2_d_1a323209edebcc58ff20457ef1e9cd94a2" kindref="member">FRelevantTiles</ref></type>
+        <definition>UTextModuleUpdater2D::FRelevantTiles UTextModuleUpdater2D::ComputeRelevantTiles</definition>
+        <argsstring>(FVector InCameraLocation) const</argsstring>
+        <name>ComputeRelevantTiles</name>
+        <qualifiedname>UTextModuleUpdater2D::ComputeRelevantTiles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>InCameraLocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает релевантные тайлы с учетом положения камеры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCameraLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Положение камеры на текущем кадре.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Релевантые тайлы для дальнейшей обработки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="121" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="161" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a8fe5885e9c258df5bef711c0b8323625" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::ShouldProcessTile</definition>
+        <argsstring>(FVector InTileLocation, FVector InCameraLocation) const</argsstring>
+        <name>ShouldProcessTile</name>
+        <qualifiedname>UTextModuleUpdater2D::ShouldProcessTile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>InTileLocation</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+          <declname>InCameraLocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, является ли конкретный тайл релевантным на текущий фрейм.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InTileLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Мировое положение центра тайла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InCameraLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Мировое положение камеры на текущем кадре.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если тайл следует обработать, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="131" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="176" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1adc1d46f50f233049c7aa9c2f4e02c326" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ConditionallyRebuildCanvasData</definition>
+        <argsstring>(const UCanvas *InCanvas, TConstArrayView&lt; FIntVector &gt; InRelevantTiles, const FCameraTransform &amp;InCameraTransform)</argsstring>
+        <name>ConditionallyRebuildCanvasData</name>
+        <qualifiedname>UTextModuleUpdater2D::ConditionallyRebuildCanvasData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+          <declname>InRelevantTiles</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_text_module_updater2_d_1ab8df1d95d189ab9bb2bfd3edda382d09" kindref="member">FCameraTransform</ref> &amp;</type>
+          <declname>InCameraTransform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызывает генерацию данных для отрисовки в зависимости от условий.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для опеределения размера области отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InRelevantTiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список релевантных тайлов, требующих отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InCameraLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Положение камеры на текущем кадре. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="140" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="188" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a5ea7dcb3fbbd1cbe4b5a233349543291" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::RebuildCanvasData</definition>
+        <argsstring>(const UCanvas *InCanvas, TConstArrayView&lt; FIntVector &gt; InRelevantTiles)</argsstring>
+        <name>RebuildCanvasData</name>
+        <qualifiedname>UTextModuleUpdater2D::RebuildCanvasData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+          <declname>InRelevantTiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Генерирует и кэширует данные для отрисовки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для опеределения размера области отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InRelevantTiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Релевантные тайлы, для которых требуются новые данные. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="148" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="206" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a00f03c477cf8c46edd0586428f54f0ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ConditionallyGenerateFontCache</definition>
+        <argsstring>(TConstArrayView&lt; FIntVector &gt; InRelevantTiles)</argsstring>
+        <name>ConditionallyGenerateFontCache</name>
+        <qualifiedname>UTextModuleUpdater2D::ConditionallyGenerateFontCache</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+          <declname>InRelevantTiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет закешированные текстовые данные для списка тайлов.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InRelevantTiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список релевантных тайлов, требующих отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="155" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="234" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a4b146b8da1ccf5e6fba22a94cb43f10d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::AppendFontCache</definition>
+        <argsstring>(const FMvtGeometry &amp;InGeometry, TSharedRef&lt; FSlateFontMeasure &gt; InFontMeasure, FCharacterList &amp;InCharacterList, float InAdditionalFontScale)</argsstring>
+        <name>AppendFontCache</name>
+        <qualifiedname>UTextModuleUpdater2D::AppendFontCache</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mvt_geometry" kindref="compound">FMvtGeometry</ref> &amp;</type>
+          <declname>InGeometry</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSlateFontMeasure</ref> &gt;</type>
+          <declname>InFontMeasure</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCharacterList</ref> &amp;</type>
+          <declname>InCharacterList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>InAdditionalFontScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Добавляет геометрию в кэш.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InGeometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Геометрия формата mvt. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InFontMeasure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Класс, измеряющий размер текста. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InCharacterList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Класс, хранящий метаинформацию о символах. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InAdditionalFontScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дополнительный скейл шрифта.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Была ли геометрия успешно добавлена в кэш. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="167" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="297" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a4020a449b365cc97b34544e23ef60a2c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UTextModuleUpdater2D::GetParsedName</definition>
+        <argsstring>(const FParsedProperty &amp;InProperty) const</argsstring>
+        <name>GetParsedName</name>
+        <qualifiedname>UTextModuleUpdater2D::GetParsedName</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref> &amp;</type>
+          <declname>InProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает трансформированный текст из <ref refid="struct_f_parsed_property" kindref="compound">FParsedProperty</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InProperty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Свойство, которое хранит текст.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Трансформированный текст. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="179" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a7334d3d3a898abf5056dd519972fb2c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::GatherGeometryFromTiles</definition>
+        <argsstring>(const UCanvas *InCanvas, TConstArrayView&lt; FIntVector &gt; InRelevantTiles)</argsstring>
+        <name>GatherGeometryFromTiles</name>
+        <qualifiedname>UTextModuleUpdater2D::GatherGeometryFromTiles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+          <declname>InRelevantTiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает и кэширует геометрию для списка тайлов.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для опеределения размера области отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InRelevantTiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список релевантных тайлов, требующих отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="187" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="364" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a763037eb5a20de4d285e394936fd33f9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ProcessGeometry</definition>
+        <argsstring>(const UCanvas *InCanvas, const FMapTileLayer &amp;InTileData, FIntVector InTile, TFunctionRef&lt; void(TArrayView&lt; FRoadGeometry2D &gt;)&gt; InCollector) const</argsstring>
+        <name>ProcessGeometry</name>
+        <qualifiedname>UTextModuleUpdater2D::ProcessGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_map_tile_layer" kindref="compound">FMapTileLayer</ref> &amp;</type>
+          <declname>InTileData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref></type>
+          <declname>InTile</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunctionRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &gt;)&gt;</type>
+          <declname>InCollector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Собирает геометрию с конкретного тайла.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для опеределения размера области отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InTileData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные конкретного тайла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InTile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальный идентификатор тайла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InCollector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Предикат для сбора геометрии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="197" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="392" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a934ad65f5456cea8b4cc3e31abdf1d3e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ResolveCollisions</definition>
+        <argsstring>(TArray&lt; FRoadGeometry2D &gt; &amp;InGeometry, bool bIsGlobalPass=false) const</argsstring>
+        <name>ResolveCollisions</name>
+        <qualifiedname>UTextModuleUpdater2D::ResolveCollisions</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &gt; &amp;</type>
+          <declname>InGeometry</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsGlobalPass</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Разрешает все коллизии между геометрией с использованием приоритизации.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InGeometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список геометрии для разрешения коллизий. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bIsGlobalPass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Является ли проход глобальным с задействованием всех тайлов, или является локальным на уровне определенного тайла. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="208" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="471" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1ae4045ddf99439ff532bd7bafe8af87ee" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UTextModuleUpdater2D::RoadGeometryLess</definition>
+        <argsstring>(const FRoadGeometry2D &amp;Lhs, const FRoadGeometry2D &amp;Rhs, bool bIsGlobalPass) const</argsstring>
+        <name>RoadGeometryLess</name>
+        <qualifiedname>UTextModuleUpdater2D::RoadGeometryLess</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &amp;</type>
+          <declname>Lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &amp;</type>
+          <declname>Rhs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsGlobalPass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Предикат для приоритизации FRoadGeometry2D.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Первый аргумент предиката. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Второй аргумент предиката. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bIsGlobalPass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Осуществляется ли глобальный обход разрешения коллизий.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если первая аргумент логически меньше второго. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="219" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="504" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a1aceedeeb281aabf2c468d14669a4d57" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::ClipGeometry</definition>
+        <argsstring>(const UCanvas *InCanvas, TArray&lt; FRoadGeometry2D &gt; &amp;InOutGeometry) const</argsstring>
+        <name>ClipGeometry</name>
+        <qualifiedname>UTextModuleUpdater2D::ClipGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &gt; &amp;</type>
+          <declname>InOutGeometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отсекает геометрию за пределами области отрисовки UCanvas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для опеределения размера области отрисовки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InOutGeometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список геометрии для обработки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="227" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="546" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a0d9b6b613f3cf8b906a748d6b018587f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::GenerateCanvasItems</definition>
+        <argsstring>(TConstArrayView&lt; FRoadGeometry2D &gt; InGeometry)</argsstring>
+        <name>GenerateCanvasItems</name>
+        <qualifiedname>UTextModuleUpdater2D::GenerateCanvasItems</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" kindref="member">FRoadGeometry2D</ref> &gt;</type>
+          <declname>InGeometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Генерирует элементы для дальнейшей отрисовки с помощью UCanvas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InGeometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список геомеотрии для генерации элементов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="234" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="561" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a25c4dd7dbd13d672efc52365fc4a1f6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::BatchDrawElements</definition>
+        <argsstring>(UCanvas *InCanvas)</argsstring>
+        <name>BatchDrawElements</name>
+        <qualifiedname>UTextModuleUpdater2D::BatchDrawElements</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCanvas</ref> *</type>
+          <declname>InCanvas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Передает элементы канваса на отрисовку.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InCanvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UCanvas для отрисовки элементов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="241" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="601" bodyend="638"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a46dc852953661e3b76a3b55d119be795" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::PostInitProperties</definition>
+        <argsstring>() override</argsstring>
+        <name>PostInitProperties</name>
+        <qualifiedname>UTextModuleUpdater2D::PostInitProperties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="41" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a445d3c99a1a9754758e04d21b942e918" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::FinishDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>FinishDestroy</name>
+        <qualifiedname>UTextModuleUpdater2D::FinishDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="42" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a67492e5a73d194776cd8062ed246ae22" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTextModuleUpdater2D::CreateTiles</definition>
+        <argsstring>(FParsedTiles ParsedTiles) override</argsstring>
+        <name>CreateTiles</name>
+        <qualifiedname>UTextModuleUpdater2D::CreateTiles</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_parsed_tiles" kindref="compound">FParsedTiles</ref></type>
+          <declname>ParsedTiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="46" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="640" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1ad9c585734aff52afbda64f33104b59eb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UTextModuleUpdater2D::GetTilesDistanceCullingMultiplier</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTilesDistanceCullingMultiplier</name>
+        <qualifiedname>UTextModuleUpdater2D::GetTilesDistanceCullingMultiplier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="47" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="650" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_text_module_updater2_d_1a98e0c69e141bd86e3fd4f984af468e08" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UTextModuleUpdater2D::GetFrustumUpdateRate</definition>
+        <argsstring>() override</argsstring>
+        <name>GetFrustumUpdateRate</name>
+        <qualifiedname>UTextModuleUpdater2D::GetFrustumUpdateRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="48" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Private/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.cpp" bodystart="655" bodyend="658"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Менеджер для обработки и визуализации текста вдоль кривых с использованием UCanvas. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UModuleLayerUpdaterBase</label>
+      </node>
+      <node id="1">
+        <label>UTextModuleUpdater2D</label>
+        <link refid="class_u_text_module_updater2_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FParsedTiles</label>
+        <link refid="struct_f_parsed_tiles"/>
+      </node>
+      <node id="2">
+        <label>UModuleLayerUpdaterBase</label>
+      </node>
+      <node id="1">
+        <label>UTextModuleUpdater2D</label>
+        <link refid="class_u_text_module_updater2_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>LoadedTiles</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" line="23" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/LayersCreator/Public/Layer/ModuleLayer/LinearModule/Road/TextModule2D/TextModuleUpdater2D.h" bodystart="24" bodyend="278"/>
+    <listofallmembers>
+      <member refid="class_u_text_module_updater2_d_1a4b146b8da1ccf5e6fba22a94cb43f10d" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>AppendFontCache</name></member>
+      <member refid="class_u_text_module_updater2_d_1a25c4dd7dbd13d672efc52365fc4a1f6e" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>BatchDrawElements</name></member>
+      <member refid="class_u_text_module_updater2_d_1a33b8d4642677e9b2be82487f369a2019" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>bDebugDrawBoundingBoxes</name></member>
+      <member refid="class_u_text_module_updater2_d_1a919d24871e0a5b3db08f002ccde910e7" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>bSubstituteTextToUpper</name></member>
+      <member refid="class_u_text_module_updater2_d_1a21f290b9c86e5e3a18f22c6b775343f0" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>CachedCameraTransform</name></member>
+      <member refid="class_u_text_module_updater2_d_1a46fffb945437fa0b051520389ce71501" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>CachedCanvas</name></member>
+      <member refid="class_u_text_module_updater2_d_1a07ffbfe3a84a7de616c2d2e92172c4f2" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>CachedFontInfo</name></member>
+      <member refid="class_u_text_module_updater2_d_1a2e8b228117fd10d674d0a621edd11ee7" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>CachedGeometry</name></member>
+      <member refid="class_u_text_module_updater2_d_1a9c12e9289145cdf592c0f92c8733c25d" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>CanvasItems</name></member>
+      <member refid="class_u_text_module_updater2_d_1a1aceedeeb281aabf2c468d14669a4d57" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ClipGeometry</name></member>
+      <member refid="class_u_text_module_updater2_d_1a2d84fbd56740b11379eea2fc78756801" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ComputeRelevantTiles</name></member>
+      <member refid="class_u_text_module_updater2_d_1a00f03c477cf8c46edd0586428f54f0ee" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ConditionallyGenerateFontCache</name></member>
+      <member refid="class_u_text_module_updater2_d_1adc1d46f50f233049c7aa9c2f4e02c326" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ConditionallyRebuildCanvasData</name></member>
+      <member refid="class_u_text_module_updater2_d_1a67492e5a73d194776cd8062ed246ae22" prot="protected" virt="virtual"><scope>UTextModuleUpdater2D</scope><name>CreateTiles</name></member>
+      <member refid="class_u_text_module_updater2_d_1ab8df1d95d189ab9bb2bfd3edda382d09" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>FCameraTransform</name></member>
+      <member refid="class_u_text_module_updater2_d_1a445d3c99a1a9754758e04d21b942e918" prot="protected" virt="virtual"><scope>UTextModuleUpdater2D</scope><name>FinishDestroy</name></member>
+      <member refid="class_u_text_module_updater2_d_1abf5733dede25acbf78012bd19409d85d" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>FontCache</name></member>
+      <member refid="class_u_text_module_updater2_d_1ad0bff6e34befa25b705b1ff673eadb3e" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ForceRefresh</name></member>
+      <member refid="class_u_text_module_updater2_d_1a323209edebcc58ff20457ef1e9cd94a2" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>FRelevantTiles</name></member>
+      <member refid="class_u_text_module_updater2_d_1a05d64983d3947d056e06d4f686bd0d94" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>FRoadGeometry2D</name></member>
+      <member refid="class_u_text_module_updater2_d_1a7334d3d3a898abf5056dd519972fb2c4" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>GatherGeometryFromTiles</name></member>
+      <member refid="class_u_text_module_updater2_d_1a0d9b6b613f3cf8b906a748d6b018587f" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>GenerateCanvasItems</name></member>
+      <member refid="class_u_text_module_updater2_d_1a530d143ab8705bb1691c4660d0cadf2d" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>GetBoundingBoxExtent</name></member>
+      <member refid="class_u_text_module_updater2_d_1a7bd866171e4bff0fbba857a697726b3d" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>GetCanvasChecked</name></member>
+      <member refid="class_u_text_module_updater2_d_1a98e0c69e141bd86e3fd4f984af468e08" prot="protected" virt="virtual"><scope>UTextModuleUpdater2D</scope><name>GetFrustumUpdateRate</name></member>
+      <member refid="class_u_text_module_updater2_d_1a4020a449b365cc97b34544e23ef60a2c" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>GetParsedName</name></member>
+      <member refid="class_u_text_module_updater2_d_1ad9c585734aff52afbda64f33104b59eb" prot="protected" virt="virtual"><scope>UTextModuleUpdater2D</scope><name>GetTilesDistanceCullingMultiplier</name></member>
+      <member refid="class_u_text_module_updater2_d_1a3dd271de8322b29b0f78235821686570" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>InvalidateFontCache</name></member>
+      <member refid="class_u_text_module_updater2_d_1a067c96e0fb2ccb107462ec02795bddb7" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>LoadedTiles</name></member>
+      <member refid="class_u_text_module_updater2_d_1a9815e899145bb78643b5bc5c94abaaa2" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>MaxAngularDeviation</name></member>
+      <member refid="class_u_text_module_updater2_d_1a620511f15ad80105a29fb44ea20a8bec" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>OnPostRender</name></member>
+      <member refid="class_u_text_module_updater2_d_1a9f4d8940f4985a747add9fde621e3bf3" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>OnViewportResized</name></member>
+      <member refid="class_u_text_module_updater2_d_1a46dc852953661e3b76a3b55d119be795" prot="protected" virt="virtual"><scope>UTextModuleUpdater2D</scope><name>PostInitProperties</name></member>
+      <member refid="class_u_text_module_updater2_d_1a763037eb5a20de4d285e394936fd33f9" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ProcessGeometry</name></member>
+      <member refid="class_u_text_module_updater2_d_1a5ea7dcb3fbbd1cbe4b5a233349543291" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>RebuildCanvasData</name></member>
+      <member refid="class_u_text_module_updater2_d_1a6f0038575f7dbfef9027346ffe14eb1b" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>RefreshSettings</name></member>
+      <member refid="class_u_text_module_updater2_d_1a934ad65f5456cea8b4cc3e31abdf1d3e" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ResolveCollisions</name></member>
+      <member refid="class_u_text_module_updater2_d_1ae4045ddf99439ff532bd7bafe8af87ee" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>RoadGeometryLess</name></member>
+      <member refid="class_u_text_module_updater2_d_1a8fe5885e9c258df5bef711c0b8323625" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ShouldProcessTile</name></member>
+      <member refid="class_u_text_module_updater2_d_1accf50472b8cb8b306de31bac04b422f4" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>ShouldSkipUpdate</name></member>
+      <member refid="class_u_text_module_updater2_d_1a3aff17cfac2d7b5574f42d047fae04eb" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>TileAngularRangeInRadians</name></member>
+      <member refid="class_u_text_module_updater2_d_1a0db2e664d1122da53487cdce05f5cba0" prot="private" virt="non-virtual"><scope>UTextModuleUpdater2D</scope><name>UTextModuleUpdater2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

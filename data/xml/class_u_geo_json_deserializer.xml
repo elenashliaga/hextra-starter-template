@@ -1,0 +1,796 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_deserializer" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonDeserializer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <includes refid="_geo_json_deserializer_8h" local="no">GeoJsonDeserializer.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1aa3738ea6f3d39acb30367e373b65bb9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> *</type>
+        <definition>UGeoJsonObject * UGeoJsonDeserializer::DeserializePath</definition>
+        <argsstring>(const FString &amp;PathToJsonSource)</argsstring>
+        <name>DeserializePath</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializePath</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PathToJsonSource</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует файл формата GeoJSON в читаемые движком данные </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PathToJsonSource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь до .GEOJSON файла </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на <ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> - объект, содержащий десериализованные данные </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="26" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a3f6838772e358428f45420cfe0a6b774" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> *</type>
+        <definition>UGeoJsonObject * UGeoJsonDeserializer::DeserializeLoaded</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>DeserializeLoaded</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeLoaded</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует файл формата GeoJSON, загруженный во входную строку, в читаемые движком данные </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.GEOJSON файл, записанный в строку </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на <ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> - объект, содержащий десериализованные данные </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="35" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a810e64e1747aa436c6076c264d75b7f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TMap&lt; FString, FString &gt; UGeoJsonDeserializer::DeserializeJson</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>DeserializeJson</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeJson</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует строку JSON в хэш-таблицу ключ-значение </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для десериализации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованная хэш-таблица </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="44" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1ad71304a6a85bc4d4408d84efe443339f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonDeserializer::DeserializeGeometry</definition>
+        <argsstring>(const FJsonObjectWrapper &amp;ObjectInfo, const FString &amp;Field, FJsonGeometry &amp;Geometry)</argsstring>
+        <name>DeserializeGeometry</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> FJsonObjectWrapper &amp;</type>
+          <declname>ObjectInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Field</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует геометрию GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ObjectInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура FJsonObjectWrapper, содержащая информацию о геометрии </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наименование поля, которое требуется десериализовать </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, содержащий десериализованную геометрию </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Тип десериализованной геометрии при успехе или None при неудаче </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="55" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a6fa1a87cbb87ac44f69289cd34d8f050" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonDeserializer::DeserializePointGeometry</definition>
+        <argsstring>(const FJsonObjectWrapper &amp;ObjectInfo, const FString &amp;Field, FJsonPoint &amp;Point)</argsstring>
+        <name>DeserializePointGeometry</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializePointGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> FJsonObjectWrapper &amp;</type>
+          <declname>ObjectInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Field</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref> &amp;</type>
+          <declname>Point</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует геометрию точки GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ObjectInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура FJsonObjectWrapper, содержащая информацию о геометрии </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наименование поля, которое требуется десериализовать </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, содержащий десериализованную геометрию точки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True при успешной десериализации, false при неудаче </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="66" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="91" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a40cbc27f18fb4cf9d7439ea5933a843c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt;</type>
+        <definition>TSharedPtr&lt; FJsonObject &gt; UGeoJsonDeserializer::Deserialize</definition>
+        <argsstring>(const FString &amp;JsonString)</argsstring>
+        <name>Deserialize</name>
+        <qualifiedname>UGeoJsonDeserializer::Deserialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует строку JSON в объект класса FJsonObject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для десериализации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованный объект FJsonObject </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="74" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="102" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1abcea6d0b4e2b35f7e2aed0ac355c67f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> *</type>
+        <definition>UGeoJsonObject * UGeoJsonDeserializer::DeserializeObject</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;JsonObject)</argsstring>
+        <name>DeserializeObject</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeObject</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует объект класса FJsonObject в понятные движку данные </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект класса FJsonObject для десериализации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на <ref refid="class_u_geo_json_object" kindref="compound">UGeoJsonObject</ref> - объект, содержащий десериализованные данные </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="82" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="109" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a05f71617e10e8cc1d0cd85f84911cfb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref></type>
+        <definition>FJsonPoint UGeoJsonDeserializer::DeserializePoint</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Coordinates)</argsstring>
+        <name>DeserializePoint</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializePoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует массив координат, представляющий точку. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON-массив, содержащий координаты точки. Он должен содержать либо 2D, либо 3D координаты. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <ref refid="struct_f_json_point" kindref="compound">FJsonPoint</ref>, содержащий десериализованные координаты. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="90" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a6aafa5b2ac464c11afd0bfbc8f70bf6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref></type>
+        <definition>FJsonMultiPoint UGeoJsonDeserializer::DeserializeMultiPoint</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Coordinates)</argsstring>
+        <name>DeserializeMultiPoint</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeMultiPoint</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует массив координат, представляющий мультиточку или линию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON-массив, содержащий координаты мультиточки или линии </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованный объект <ref refid="struct_f_json_multi_point" kindref="compound">FJsonMultiPoint</ref>, содержащий координаты мультиточки или линии </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="98" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="170" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a534dabdba02c2c2d75a1545bf608b9e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref></type>
+        <definition>FJsonPolygon UGeoJsonDeserializer::DeserializePolygon</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Coordinates)</argsstring>
+        <name>DeserializePolygon</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializePolygon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует массив координат, представляющий полигон или мультилинию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON-массив, содержащий координаты полигона или мультилинии. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованные координаты полигона или мультилинии в виде объекта <ref refid="struct_f_json_polygon" kindref="compound">FJsonPolygon</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="106" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="180" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a6adc8a2f9107469eb6cdd2f1bc10ff1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref></type>
+        <definition>FJsonMultiPolygon UGeoJsonDeserializer::DeserializeMultiPolygon</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Coordinates)</argsstring>
+        <name>DeserializeMultiPolygon</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeMultiPolygon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует массив координат, представляющий мультиполигон </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON-массив, содержащий координаты мультиполигона </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Десериализованный MultiPolygon в виде структуры <ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="114" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="190" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1aaec260ed32186982d2bc39750d7f9d0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPair</ref>&lt; <ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref>, <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &gt;</type>
+        <definition>TPair&lt; EGeoJsonType, FJsonGeometry &gt; UGeoJsonDeserializer::DeserializeGeometry</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;Geometry)</argsstring>
+        <name>DeserializeGeometry</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeGeometry</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует объект геометрии GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект FJsonObject, содержащий тип и координаты геометрии </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Пара, содержащая тип геометрии и объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="122" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="200" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a490f4acee9d3024fd517dfa0544a8abb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref></type>
+        <definition>FJsonGeometryCollection UGeoJsonDeserializer::DeserializeGeometryCollection</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Geometries)</argsstring>
+        <name>DeserializeGeometryCollection</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeGeometryCollection</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Geometries</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует набор геометрий из JSON массива. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив TSharedPtr&lt;FJsonValue&gt;, содержащий геометрии для десериализации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Структура <ref refid="struct_f_json_geometry_collection" kindref="compound">FJsonGeometryCollection</ref>, содержащая десериализованную коллекцию геометрий. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="130" column="40" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="222" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1af882abbdb897bc1b0640088a58155e3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref></type>
+        <definition>FJsonObjectFeature UGeoJsonDeserializer::DeserializeFeature</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;Feature)</argsstring>
+        <name>DeserializeFeature</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeFeature</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>Feature</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует объект GeoJSON feature в структуру <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Feature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект GeoJSON feature, который нужно десериализовать. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Структура <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref>, содержащая десериализованные данные. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="138" column="35" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="234" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a9a65c4e0697831d5dcfb0b56035539a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_json_feature_collection" kindref="compound">FJsonFeatureCollection</ref></type>
+        <definition>FJsonFeatureCollection UGeoJsonDeserializer::DeserializeFeatureCollection</definition>
+        <argsstring>(const TSharedPtr&lt; FJsonObject &gt; &amp;FeatureCollection)</argsstring>
+        <name>DeserializeFeatureCollection</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeFeatureCollection</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>FeatureCollection</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует объект JSON в структуру FeatureCollection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FeatureCollection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект GeoJSON feature, который нужно десериализовать. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Структура <ref refid="struct_f_json_feature_collection" kindref="compound">FJsonFeatureCollection</ref>, содержащая десериализованные данные. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="146" column="39" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="256" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1af9d4becc15d566073d1c70b420d8bfae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TMap&lt; FString, FString &gt; UGeoJsonDeserializer::DeserializeProperties</definition>
+        <argsstring>(const TMap&lt; FString, TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Values)</argsstring>
+        <name>DeserializeProperties</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeProperties</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Десереализует все свойства JSON объекта в вид строковый ключ - строковое значение Ключ может быть простым (justKey) или многосоставным (mainProperty.subProperty, first.second.third) Если поле представлено массивом, разные элементы разделяются через индекс в массиве: (array.0.key, array.1.key, ...) Значение всегда представлено строкой: &quot;SomeString&quot;, &quot;42&quot;, &quot;3.14&quot;, &quot;true&quot;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер свойств из GeoJSON </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Контейнер TMap, содержащий десериализованные значения свойств </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="157" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="273" bodyend="281"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1ae5ae61cb7372a9aeaa7c10b8ce7a8191" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_json_object_feature" kindref="compound">FJsonObjectFeature</ref> &gt;</type>
+        <definition>TArray&lt; FJsonObjectFeature &gt; UGeoJsonDeserializer::DeserializeFeatures</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Features)</argsstring>
+        <name>DeserializeFeatures</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeFeatures</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Features</declname>
+        </param>
+        <briefdescription>
+<para>Десериализует массив JSON значений в структуру FeatureCollection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив значений JSON, представляющий FeatureCollection. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Структура FeatureCollection, содержащая десериализованные данные. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="166" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="283" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a63367dc01290e3a35f29349f0e947605" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonDeserializer::DeserializeProperty</definition>
+        <argsstring>(TMap&lt; FString, FString &gt; &amp;Container, const FString &amp;Key, const TSharedPtr&lt; FJsonValue &gt; &amp;Value)</argsstring>
+        <name>DeserializeProperty</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>Container</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Десериализует свойство и добавляет его в предоставленный контейнер.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер, в который нужно добавить десериализованное свойство. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ, который будет ассоциирован с десериализованным свойством в контейнере. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на FJsonValue, представляющий значение свойства, которое будет десериализовано. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="175" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="293" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1aa1e2e432f0684b38b67803bdc42c7b26" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonDeserializer::DeserializeArrayProperty</definition>
+        <argsstring>(TMap&lt; FString, FString &gt; &amp;Container, const FString &amp;PrevKey, const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;Array)</argsstring>
+        <name>DeserializeArrayProperty</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeArrayProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>Container</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PrevKey</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonValue</ref> &gt; &gt; &amp;</type>
+          <declname>Array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Десериализует свойство массива и добавляет его в указанный контейнер. Каждый элемент в массиве десериализуется с помощью метода DeserializeProperty.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер для хранения десериализованных свойств. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PrevKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ предыдущего свойства в контейнере. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив значений JSON для десериализации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="185" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="313" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_deserializer_1a662962ea423753add15e2f6814aeabd1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonDeserializer::DeserializeObjectProperty</definition>
+        <argsstring>(TMap&lt; FString, FString &gt; &amp;Container, const FString &amp;PrevKey, const TSharedPtr&lt; FJsonObject &gt; &amp;Object)</argsstring>
+        <name>DeserializeObjectProperty</name>
+        <qualifiedname>UGeoJsonDeserializer::DeserializeObjectProperty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>Container</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PrevKey</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FJsonObject</ref> &gt; &amp;</type>
+          <declname>Object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Десериализует свойство объекта из файла GeoJSON.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер Map, в котором будут храниться десериализованные свойства. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PrevKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ, который будет использоваться в качестве базы для десериализованых свойств. Новые ключи будут сформированы путем конкатенации PrevKey и текущего ключа свойства. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON объект, содержащий свойства для десериализации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="194" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDeserializer.cpp" bodystart="322" bodyend="329"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс для десериализации файлов формата GeoJSON </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UGeoJsonDeserializer</label>
+        <link refid="class_u_geo_json_deserializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UGeoJsonDeserializer</label>
+        <link refid="class_u_geo_json_deserializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" line="14" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDeserializer.h" bodystart="15" bodyend="195"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_deserializer_1a40cbc27f18fb4cf9d7439ea5933a843c" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>Deserialize</name></member>
+      <member refid="class_u_geo_json_deserializer_1aa1e2e432f0684b38b67803bdc42c7b26" prot="private" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeArrayProperty</name></member>
+      <member refid="class_u_geo_json_deserializer_1af882abbdb897bc1b0640088a58155e3a" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeFeature</name></member>
+      <member refid="class_u_geo_json_deserializer_1a9a65c4e0697831d5dcfb0b56035539a3" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeFeatureCollection</name></member>
+      <member refid="class_u_geo_json_deserializer_1ae5ae61cb7372a9aeaa7c10b8ce7a8191" prot="private" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeFeatures</name></member>
+      <member refid="class_u_geo_json_deserializer_1ad71304a6a85bc4d4408d84efe443339f" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeGeometry</name></member>
+      <member refid="class_u_geo_json_deserializer_1aaec260ed32186982d2bc39750d7f9d0b" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeGeometry</name></member>
+      <member refid="class_u_geo_json_deserializer_1a490f4acee9d3024fd517dfa0544a8abb" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeGeometryCollection</name></member>
+      <member refid="class_u_geo_json_deserializer_1a810e64e1747aa436c6076c264d75b7f2" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeJson</name></member>
+      <member refid="class_u_geo_json_deserializer_1a3f6838772e358428f45420cfe0a6b774" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeLoaded</name></member>
+      <member refid="class_u_geo_json_deserializer_1a6aafa5b2ac464c11afd0bfbc8f70bf6f" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeMultiPoint</name></member>
+      <member refid="class_u_geo_json_deserializer_1a6adc8a2f9107469eb6cdd2f1bc10ff1c" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeMultiPolygon</name></member>
+      <member refid="class_u_geo_json_deserializer_1abcea6d0b4e2b35f7e2aed0ac355c67f9" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeObject</name></member>
+      <member refid="class_u_geo_json_deserializer_1a662962ea423753add15e2f6814aeabd1" prot="private" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeObjectProperty</name></member>
+      <member refid="class_u_geo_json_deserializer_1aa3738ea6f3d39acb30367e373b65bb9a" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializePath</name></member>
+      <member refid="class_u_geo_json_deserializer_1a05f71617e10e8cc1d0cd85f84911cfb3" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializePoint</name></member>
+      <member refid="class_u_geo_json_deserializer_1a6fa1a87cbb87ac44f69289cd34d8f050" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializePointGeometry</name></member>
+      <member refid="class_u_geo_json_deserializer_1a534dabdba02c2c2d75a1545bf608b9e1" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializePolygon</name></member>
+      <member refid="class_u_geo_json_deserializer_1af9d4becc15d566073d1c70b420d8bfae" prot="public" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeProperties</name></member>
+      <member refid="class_u_geo_json_deserializer_1a63367dc01290e3a35f29349f0e947605" prot="private" virt="non-virtual"><scope>UGeoJsonDeserializer</scope><name>DeserializeProperty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

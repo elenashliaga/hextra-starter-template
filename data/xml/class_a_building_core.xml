@@ -1,0 +1,1142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_building_core" kind="class" language="C++" prot="public">
+    <compoundname>ABuildingCore</compoundname>
+    <basecompoundref refid="class_a_building_core_base_ex" prot="public" virt="non-virtual">ABuildingCoreBaseEx</basecompoundref>
+    <derivedcompoundref refid="class_a_demo_view_meta_building" prot="public" virt="non-virtual">ADemoViewMetaBuilding</derivedcompoundref>
+    <includes refid="_building_core_8h" local="no">BuildingCore.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_building_core_1a8acd37d6ad1a796d5a0d548f80c55f4b" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TSet&lt;FString&gt; ABuildingCore::TilesLabels</definition>
+        <argsstring></argsstring>
+        <name>TilesLabels</name>
+        <qualifiedname>ABuildingCore::TilesLabels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="43" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1ab579bef0a9ef833c3f8c3f3d9ca2514d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ABuildingCore::bCutRestorePolygons</definition>
+        <argsstring></argsstring>
+        <name>bCutRestorePolygons</name>
+        <qualifiedname>ABuildingCore::bCutRestorePolygons</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="46" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1a1a16e0382617a269ed10b0d44192f6d1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ABuildingCore::bResetSettingsOnCut</definition>
+        <argsstring></argsstring>
+        <name>bResetSettingsOnCut</name>
+        <qualifiedname>ABuildingCore::bResetSettingsOnCut</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="49" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1af15b484c886fe94cfcf45bdfd3893fa6" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle ABuildingCore::VisibilityCheckTimerHandle</definition>
+        <argsstring></argsstring>
+        <name>VisibilityCheckTimerHandle</name>
+        <qualifiedname>ABuildingCore::VisibilityCheckTimerHandle</qualifiedname>
+        <briefdescription>
+<para>Таймер для проверки видимости здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот таймер используется для периодической проверки условий видимости здания относительно камеры. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="105" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1ac71d9eb13d6e514d604805b6f071ea8d" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle ABuildingCore::ActivateStartBuildingTimer</definition>
+        <argsstring></argsstring>
+        <name>ActivateStartBuildingTimer</name>
+        <qualifiedname>ABuildingCore::ActivateStartBuildingTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="106" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1a8baa385fddaf7141d908148dd1bc2792" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_setup_cesium_cartographic_polygon" kindref="compound">FSetupCesiumCartographicPolygon</ref></type>
+        <definition>FSetupCesiumCartographicPolygon ABuildingCore::SetupCesiumCartographicPolygon</definition>
+        <argsstring></argsstring>
+        <name>SetupCesiumCartographicPolygon</name>
+        <qualifiedname>ABuildingCore::SetupCesiumCartographicPolygon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="164" column="41" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1ae7131f8a1fea20cb8c7c2df039cd6d6e" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_a_demo_view_meta_building" kindref="compound">ADemoViewMetaBuilding</ref> &gt;</type>
+        <definition>TObjectPtr&lt;ADemoViewMetaBuilding&gt; ABuildingCore::MetaDemoViewModeBuilding</definition>
+        <argsstring></argsstring>
+        <name>MetaDemoViewModeBuilding</name>
+        <qualifiedname>ABuildingCore::MetaDemoViewModeBuilding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="167" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1a5a13359942ef2dec937c07d0751f3dc2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_meta_cesium_cartographic_polygon" kindref="compound">AMetaCesiumCartographicPolygon</ref> *</type>
+        <definition>AMetaCesiumCartographicPolygon* ABuildingCore::ExistingCartographicPolygon</definition>
+        <argsstring></argsstring>
+        <name>ExistingCartographicPolygon</name>
+        <qualifiedname>ABuildingCore::ExistingCartographicPolygon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="170" column="40" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1ae34d75f4c5b0e843b71e4e4765f6b0ce" prot="public" static="no" mutable="no">
+        <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+        <definition>AMetaPlayerController* ABuildingCore::MetaPlayerController</definition>
+        <argsstring></argsstring>
+        <name>MetaPlayerController</name>
+        <qualifiedname>ABuildingCore::MetaPlayerController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="230" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_building_core_1abe1d20eac270c60ae00b910198894f4b" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref> *()&gt;</type>
+        <definition>TFunction&lt;FBuildingDataInfo*()&gt; ABuildingCore::DataInfoGetter</definition>
+        <argsstring></argsstring>
+        <name>DataInfoGetter</name>
+        <qualifiedname>ABuildingCore::DataInfoGetter</qualifiedname>
+        <initializer>= [<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">this</ref>]() { <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">return</ref> &amp;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BuildingDataInfo</ref>; }</initializer>
+        <briefdescription>
+<para>Функциональный объект, используемый для получения указателя на BuildingDataInfo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот объект TFunction используется для получения указателя на BuildingDataInfo класса <ref refid="class_building_core" kindref="compound">BuildingCore</ref>. Он инициализируется с помощью лямбда-функции, которая захватывает текущий экземпляр класса и возвращает указатель на переменную-член BuildingDataInfo. Возвращенный указатель можно использовать для доступа и изменения BuildingDataInfo.</para>
+<para>Пример использования: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">dataInfo</ref><sp/>=<sp/><ref refid="class_a_building_core_1abe1d20eac270c60ae00b910198894f4b" kindref="member">DataInfoGetter</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">dataInfo</ref>-&gt;SomeFunction();</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="return"><para>Указатель на BuildingDataInfo класса <ref refid="class_building_core" kindref="compound">BuildingCore</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="151" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1ac7207d29f5dc8ead4f7babd11c9f5d33" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref> *DataInfo)&gt;</type>
+        <definition>TFunction&lt;void(FBuildingDataInfo* DataInfo)&gt; ABuildingCore::DataInfoSetter</definition>
+        <argsstring></argsstring>
+        <name>DataInfoSetter</name>
+        <qualifiedname>ABuildingCore::DataInfoSetter</qualifiedname>
+        <initializer>= [<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">this</ref>](<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref>* DataInfo) { <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BuildingDataInfo</ref> = *DataInfo; }</initializer>
+        <briefdescription>
+<para>Функция установки для переменной DataInfo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция принимает ссылку на указатель типа <ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref> и устанавливает значение переменной DataInfo равным разыменованному значению указателя.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="160" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1a0ea4ae161ebc714cc725b6cc41ba3118" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ABuildingCore::IsFirstOpenApp</definition>
+        <argsstring></argsstring>
+        <name>IsFirstOpenApp</name>
+        <qualifiedname>ABuildingCore::IsFirstOpenApp</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="303" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1a1409c85cda19ef684fe35e2447dc882b" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 ABuildingCore::DataBaseCounter</definition>
+        <argsstring></argsstring>
+        <name>DataBaseCounter</name>
+        <qualifiedname>ABuildingCore::DataBaseCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="305" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_building_core_1af1e6aa8a2f9a442b1631bcfd5a4ae17d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> * &gt;</type>
+        <definition>TArray&lt;ABuildingCore*&gt; ABuildingCore::CombineMetaBuildings</definition>
+        <argsstring></argsstring>
+        <name>CombineMetaBuildings</name>
+        <qualifiedname>ABuildingCore::CombineMetaBuildings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="256" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_building_core_1af1c6da1a42442b647012f82843ebd469" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_tileset_polygons" kindref="compound">FTilesetPolygons</ref> &gt;</type>
+        <definition>TArray&lt;FTilesetPolygons&gt; ABuildingCore::TilesPolygons</definition>
+        <argsstring></argsstring>
+        <name>TilesPolygons</name>
+        <qualifiedname>ABuildingCore::TilesPolygons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="318" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_building_core_1a89844dfc9f417fd56585b9fc9be7656d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ABuildingCore::ABuildingCore</definition>
+        <argsstring>()</argsstring>
+        <name>ABuildingCore</name>
+        <qualifiedname>ABuildingCore::ABuildingCore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Реализация метода BeginPlay. Этот метод вызывается при создании актера или при начале игры. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="40" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a3227c233d501ccf77bf7445385a14d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>ABuildingCore::BeginPlay</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1add1686f1ebd68181e339505765ad3985">BeginPlay</reimplements>
+        <reimplementedby refid="class_a_demo_view_meta_building_1a79f316fc60d334b65a369cb3ea8e9c8d">BeginPlay</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="51" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ad71c489e95b62b3716c7d7a66482f58d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::OnConstruction</definition>
+        <argsstring>(const FTransform &amp;Transform) override</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>ABuildingCore::OnConstruction</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1aa2a4b7972645d5c214aa5802f76ff53a">OnConstruction</reimplements>
+        <reimplementedby refid="class_a_demo_view_meta_building_1a1924f4d7721c2a84bfa2ecadac17a4f4">OnConstruction</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="53" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ac890dab2ba34f434715c1aca4cfd056c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::PostInitProperties</definition>
+        <argsstring>() override</argsstring>
+        <name>PostInitProperties</name>
+        <qualifiedname>ABuildingCore::PostInitProperties</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1ad7df9a27d961cc6bcd920a47651af814">PostInitProperties</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="55" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a05ec65b9ee634db00f7e23ade1471959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void ABuildingCore::AddDemoViewComponent</definition>
+        <argsstring>()</argsstring>
+        <name>AddDemoViewComponent</name>
+        <qualifiedname>ABuildingCore::AddDemoViewComponent</qualifiedname>
+        <reimplementedby refid="class_a_demo_view_meta_building_1ad760ccf4dfaa43892740e7aa81ecc3b2">AddDemoViewComponent</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="57" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a0cc27249c616a0914b58ed71efef1618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void ABuildingCore::AddDemoViewComponent</definition>
+        <argsstring>(FDemoViewModeInfo *DemoViewModeInfo)</argsstring>
+        <name>AddDemoViewComponent</name>
+        <qualifiedname>ABuildingCore::AddDemoViewComponent</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref> *</type>
+          <declname>DemoViewModeInfo</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет компонент demo view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод добавляет компонент demo view, принимая указатель на объект <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref>. Это виртуальный метод, который может быть переопределен в производных классах.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DemoViewModeInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref>, представляющий информацию о режиме demo view. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="70" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ad845f6f89fd3cbe6d1d3f983c03fae4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void ABuildingCore::AddDemoViewComponent</definition>
+        <argsstring>(FDemoViewModeInfo DemoViewModeInfo)</argsstring>
+        <name>AddDemoViewComponent</name>
+        <qualifiedname>ABuildingCore::AddDemoViewComponent</qualifiedname>
+        <reimplementedby refid="class_a_demo_view_meta_building_1a79cdb6ad392161f0f1d6e1d5e1ea657b">AddDemoViewComponent</reimplementedby>
+        <param>
+          <type><ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref></type>
+          <declname>DemoViewModeInfo</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет компонент demo view к зданию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод добавляет компонент demo view к зданию. Компонент demo view представляет собой определенный режим demo view здания.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DemoViewModeInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация о режиме demo view. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="79" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a1ff51e5240a907ba0ef13754b0306b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::SetThisIntoUI</definition>
+        <argsstring>() override</argsstring>
+        <name>SetThisIntoUI</name>
+        <qualifiedname>ABuildingCore::SetThisIntoUI</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1a71168effd7691670a20085226eb420ae">SetThisIntoUI</reimplements>
+        <briefdescription>
+<para>Устанавливает текущий экземпляр <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> в пользовательский интерфейс. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод устанавливает текущий экземпляр <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> в пользовательский интерфейс. Он присваивает текущий экземпляр свойству MetaBuildingOwner виджета информации о здании в левом окне основного HUD. Это позволяет пользовательскому интерфейсу отображать информацию, связанную с текущим строением. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="88" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a9ddea83130509731f7003f81bb61c4f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ABuildingCore::UPROPERTY</definition>
+        <argsstring>(VisibleAnywhere, BlueprintReadWrite, Category=&quot;Meta|Deprecated&quot;, DisplayName=&quot;BuildingDataInfo (deprecated)&quot;, meta=(AllowPrivateAccess=true, DeprecatedProperty)) FBuildingDataInfo BuildingDataInfo</argsstring>
+        <name>UPROPERTY</name>
+        <qualifiedname>ABuildingCore::UPROPERTY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VisibleAnywhere</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintReadWrite</ref></type>
+        </param>
+        <param>
+          <type>Category</type>
+          <defval>&quot;Meta|<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Deprecated&quot;</ref></defval>
+        </param>
+        <param>
+          <type>DisplayName</type>
+          <defval>&quot;BuildingDataInfo (deprecated)&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">meta</ref></type>
+          <defval>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">AllowPrivateAccess</ref>=<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DeprecatedProperty</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="93" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ab8b73c00062dd8230f1a8e5798ad57aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::CheckVisibilityConditions</definition>
+        <argsstring>()</argsstring>
+        <name>CheckVisibilityConditions</name>
+        <qualifiedname>ABuildingCore::CheckVisibilityConditions</qualifiedname>
+        <briefdescription>
+<para>Проверяет условия видимости здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вычисляет расстояние и высоту камеры относительно здания и определяет, должно ли здание быть скрыто или отображено. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="113" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="341" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a2dad2640e198abb33f329455384bf303" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ABuildingCore::GetCameraLocation</definition>
+        <argsstring>(FVector &amp;OutCameraLocation) const</argsstring>
+        <name>GetCameraLocation</name>
+        <qualifiedname>ABuildingCore::GetCameraLocation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>OutCameraLocation</declname>
+        </param>
+        <briefdescription>
+<para>Получает местоположение камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод получает текущее местоположение камеры игрока.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OutCameraLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную, в которую будет записано местоположение камеры. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если местоположение камеры было успешно получено; иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="123" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="317" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a58925a77ec629a521dcd83a81d37a88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::SetStaticMeshComponentVisibility</definition>
+        <argsstring>(bool bVisible)</argsstring>
+        <name>SetStaticMeshComponentVisibility</name>
+        <qualifiedname>ABuildingCore::SetStaticMeshComponentVisibility</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bVisible</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает видимость статических меш-компонентов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод скрывает или отображает все статические меш-компоненты актора.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bVisible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг, указывающий желаемый статус видимости. Истина, чтобы сделать меш-компоненты видимыми, ложь, чтобы скрыть их. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="133" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="328" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ad9d1bef28e9985746245453a8db0a545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::BuildingHideWidgetEvent</definition>
+        <argsstring>()</argsstring>
+        <name>BuildingHideWidgetEvent</name>
+        <qualifiedname>ABuildingCore::BuildingHideWidgetEvent</qualifiedname>
+        <briefdescription>
+<para>Обрабатывает событие скрытия виджета. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается, когда виджет должен быть скрыт. Он сбрасывает модификатор режима управления контроллера игрока до его значения по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="178" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a9461886e75b024a056e3b4ed1949cde5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ABuildingCore::ShowLeftWindowWidget</definition>
+        <argsstring>(AMetaPlayerController *PlayerController)</argsstring>
+        <name>ShowLeftWindowWidget</name>
+        <qualifiedname>ABuildingCore::ShowLeftWindowWidget</qualifiedname>
+        <reimplementedby refid="class_a_demo_view_meta_building_1ad736d629ec72212c6d1649b19bc99a9f">ShowLeftWindowWidget</reimplementedby>
+        <param>
+          <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+          <declname>PlayerController</declname>
+        </param>
+        <briefdescription>
+<para>Показывает виджет левого окна для заданного контроллера игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод показывает виджет левого окна для предоставленного контроллера игрока. Он выполняет различные проверки и устанавливает необходимые свойства и состояния для корректного отображения виджета.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PlayerController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref>, для которого должен быть показан виджет левого окна. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если виджет левого окна был успешно показан, иначе False.</para>
+</simplesect>
+NOTE[linkfly] Перенесено в <ref refid="class_a_building_core_base" kindref="compound">ABuildingCoreBase</ref> void <ref refid="class_a_building_core_1ad71c489e95b62b3716c7d7a66482f58d" kindref="member">ABuildingCore::OnConstruction(const FTransform&amp; Transform)</ref> void <ref refid="class_a_building_core_base_1a5e1d7fc1e69dc3ffe4b200efa0fbf85e" kindref="member">ABuildingCore::SetStaticMeshComponentsAndMaterials(const TArray&lt;UStaticMesh*&gt;&amp; StaticMeshes, const TArray&lt;UTexture2D*&gt;&amp; Textures)</ref> void ABuildingCore::SetStaticMeshComponentsAndMaterials(const TArray&lt;UStaticMesh*&gt;&amp; StaticMeshes, const TArray&lt;UTexture2D*&gt;&amp; Textures, ABuildingCore* Buildings) void <ref refid="class_a_building_core_base_1af33e6f0989efd68a2da65bee027f29e8" kindref="member">ABuildingCore::SetDynamicMaterialForMesh(UStaticMeshComponent* Mesh, const TArray&lt;UTexture2D*&gt;&amp; Textures)</ref> bool <ref refid="class_a_building_core_base_1a8dd4a62b5b79cc018a2d312ee5369ca2" kindref="member">ABuildingCore::DoesAnyTextureHaveAlphaChannel(const TArray&lt;UTexture2D*&gt;&amp; Textures)</ref> void <ref refid="class_a_building_core_1a93fe227eb2ddfeed970f688c680702bf" kindref="member">ABuildingCore::Destroyed()</ref> void <ref refid="class_a_building_core_base_1ac9dc567c7c432eaddb28000fb2133efd" kindref="member">ABuildingCore::PropagateStaticMobilityToStaticMeshComponents()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="190" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="109" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a13c1cd899b27d65125a696810297c330" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::CombineBuildings</definition>
+        <argsstring>()</argsstring>
+        <name>CombineBuildings</name>
+        <qualifiedname>ABuildingCore::CombineBuildings</qualifiedname>
+        <reimplementedby refid="class_a_demo_view_meta_building_1a5afb964ff0f3fa2480e242fa1b575caa">CombineBuildings</reimplementedby>
+        <briefdescription>
+<para>Объединяет список зданий в одно здание. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод объединяет список зданий в одно здание. Сначала он проверяет, есть ли основное здание, с который следует объединить остальные здания. Если его нет, то процесс объединения пропускается. Если основное здание есть, он добавляет текущее здание в список зданий для объединения. Затем он рекурсивно вызывает метод CombineBuildings на основном здании, передавая обновленный список зданий.</para>
+<para>После процесса объединения он очищает список объединенных зданий, удаляя любые недопустимые или дублированные здания.</para>
+<para>Далее он устанавливает компоненты статического меша и материалы каждого здания в объединенном списке, чтобы они соответствовали статическим мешам и текстурам основного здания. Так же собирается информацию о всех приатаченных акторов к зданиям.</para>
+<para>Наконец, он уничтожает все отдельные здания в объединенном списке и очищает список. И аттачит к новому зданию все акторы которые были у предыдущих зданий. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="207" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="243" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ae8bb14f941216a5bd0ed4f7c8c1052c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::SanitizeBuildingsArray</definition>
+        <argsstring>(TArray&lt; ABuildingCore * &gt; &amp;BuildingsArray)</argsstring>
+        <name>SanitizeBuildingsArray</name>
+        <qualifiedname>ABuildingCore::SanitizeBuildingsArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> * &gt; &amp;</type>
+          <declname>BuildingsArray</declname>
+        </param>
+        <briefdescription>
+<para>Очистите массив зданий, удалив пустые значения и дубликаты. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BuildingsArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив указателей <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>, который нужно очистить. Этот массив будет изменен. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="215" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="289" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1ab213d48333a0dcb1e3f3236188b54dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+        <definition>AMetaPlayerController * ABuildingCore::GetMetaPlayerController</definition>
+        <argsstring>()</argsstring>
+        <name>GetMetaPlayerController</name>
+        <qualifiedname>ABuildingCore::GetMetaPlayerController</qualifiedname>
+        <briefdescription>
+<para>Получает экземпляр класса <ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref>, связанный с объектом <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает экземпляр класса <ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref>, связанный с объектом <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>. Если экземпляр существует, он вернет указатель на него. В противном случае он вернет nullptr.</para>
+<para><simplesect kind="return"><para>Указатель на экземпляр <ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref>, если он существует, иначе nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="225" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="308" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a5d11aed22efd60cf45b856d1d2457674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::ActivateBuildingsCulling</definition>
+        <argsstring>()</argsstring>
+        <name>ActivateBuildingsCulling</name>
+        <qualifiedname>ABuildingCore::ActivateBuildingsCulling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="227" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1af9a6227eba087f8ffa0a8e326f018b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::ConvertToDemoView</definition>
+        <argsstring>()</argsstring>
+        <name>ConvertToDemoView</name>
+        <qualifiedname>ABuildingCore::ConvertToDemoView</qualifiedname>
+        <briefdescription>
+<para>Преобразует объект <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> в режим демонстрационного просмотра. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод преобразует объект <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> в режим демонстрационного просмотра, выполнив следующие шаги:<orderedlist>
+<listitem><para>Проверяет, является ли мир действительным. Если нет, возвращает.</para>
+</listitem><listitem><para>Создает отложенного актора <ref refid="class_a_demo_view_meta_building" kindref="compound">ADemoViewMetaBuilding</ref> с использованием ADemoViewMetaBuilding::StaticClass(), трансформации актора, объекта <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> в качестве владельца, nullptr в качестве шаблона, ESpawnActorCollisionHandlingMethod::AlwaysSpawn в качестве метода обработки коллизий и ESpawnActorScaleMethod::OverrideRootScale в качестве метода масштабирования корня.</para>
+</listitem><listitem><para>Проверяет, действителен ли созданный объект MetaDemoViewBuilding. Если нет, возвращает.</para>
+</listitem><listitem><para>Устанавливает BuildingDataInfo созданного MetaDemoViewBuilding в BuildingDataInfo объекта <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>.</para>
+</listitem><listitem><para>Устанавливает BuildingPointer из BuildingDataInfo созданного MetaDemoViewBuilding к объекту <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>.</para>
+</listitem><listitem><para>Инициализирует PositionsManager созданного MetaDemoViewBuilding.</para>
+</listitem><listitem><para>Добавляет тег &quot;Hide&quot; к созданному MetaDemoViewBuilding.</para>
+</listitem><listitem><para>Задает компоненты статической сетки и материалы MetaDemoViewBuilding, используя StaticMeshes и Textures из BuildingDataInfo объекта <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>.</para>
+</listitem><listitem><para>Уничтожает объект <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref>.</para>
+</listitem><listitem><para>Если RefBuildingDataCollector не действителен, находит и назначает экземпляр ABuildingInformationStorageManagerBase для RefBuildingDataCollector используя UGameplayStatics::GetActor <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">OfClass()</ref>. Примечание: Объект RefBuildingDataCollector отвечает за сбор информации о зданиях.</para>
+</listitem><listitem><para>Добавляет ключ здания BuildingDataInfo объекта <ref refid="class_a_building_core" kindref="compound">ABuildingCore</ref> к RefBuildingDataCollector. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="252" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="165" bodyend="241"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_building_core_1a93fe227eb2ddfeed970f688c680702bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::Destroyed</definition>
+        <argsstring>() override</argsstring>
+        <name>Destroyed</name>
+        <qualifiedname>ABuildingCore::Destroyed</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1aa64ddd4742de4d7b4a0036030a4a4303">Destroyed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="259" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1acf8698cbf8f81c67d3a7355b584a2f1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::OnHttpGetSuccessMiniIcon</definition>
+        <argsstring>(const FString dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString requestID)</argsstring>
+        <name>OnHttpGetSuccessMiniIcon</name>
+        <qualifiedname>ABuildingCore::OnHttpGetSuccessMiniIcon</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+<para>Callback-функция, вызывается при успешном выполнении GET-запроса на изображение мини-иконки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается при успешном выполнении GET-запроса на изображение мини-иконки. Он принимает следующие параметры:</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные ответа в формате строки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные ответа в виде массива строк. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок ответа в виде массива строк. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус-код ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные ответа в виде массива байтов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уникальный идентификатор GET-запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="274" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="87" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a606cd0b4da734e95e795c5840a0fa7fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::OnHttpGetFailJSonString</definition>
+        <argsstring>(const FString dataString, const TArray&lt; FString &gt; &amp;data, const TArray&lt; FString &gt; &amp;header, const int32 statusCode, const TArray&lt; uint8 &gt; &amp;byteData, const FString requestID)</argsstring>
+        <name>OnHttpGetFailJSonString</name>
+        <qualifiedname>ABuildingCore::OnHttpGetFailJSonString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>dataString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt; &amp;</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt; &amp;</type>
+          <declname>byteData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>requestID</declname>
+        </param>
+        <briefdescription>
+<para>Callback-метод, вызываемый при неудаче HTTP GET-запроса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается при неудаче HTTP GET-запроса. Он регистрирует предупреждающее сообщение, указывающее на неудачу.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FString, содержащий тело ответа в виде строки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив FString, содержащий данные ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив FString, содержащий данные заголовка ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Int32, представляющий HTTP-код статуса неудачного запроса. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив uint8, содержащий тело ответа в виде байтов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requestID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FString, представляющий идентификатор неудачного запроса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="295" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_building_core_1a35f8b6c709379f95c2bc988da7287c7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void ABuildingCore::OnDestroyedVisualAction</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDestroyedVisualAction</name>
+        <qualifiedname>ABuildingCore::OnDestroyedVisualAction</qualifiedname>
+        <reimplements refid="class_a_building_core_base_1a207fe960d10c02b72ac8f4066fac374e">OnDestroyedVisualAction</reimplements>
+        <briefdescription>
+<para>Выполняет визуальное действие при уничтожении здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается при уничтожении здания и выполняет соответствующее визуальное действие. Сначала он вызывает метод <ref refid="class_a_building_core_1a35f8b6c709379f95c2bc988da7287c7f" kindref="member">OnDestroyedVisualAction()</ref> родительского класса, затем проверяет, является ли переменная SetupCesiumCartographicPolygon.NeedDestroySplineGeneralfActor равной истине. Если это так, он вызывает функцию <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">DeleteSpline()</ref> для удаления сплайна. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="314" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/BuildingCore.cpp" bodystart="79" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ABuildingCore</label>
+        <link refid="class_a_building_core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ABuildingCoreBaseEx</label>
+        <link refid="class_a_building_core_base_ex"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ADemoViewMetaBuilding</label>
+        <link refid="class_a_demo_view_meta_building"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ABuildingCore</label>
+        <link refid="class_a_building_core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>SetupCesiumCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ExistingCartographicPolygon</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>MetaPlayerController</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ABuildingCoreBase</label>
+        <link refid="class_a_building_core_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PositionsManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ABuildingCoreBaseEx</label>
+        <link refid="class_a_building_core_base_ex"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ACesiumCartographicPolygon</label>
+      </node>
+      <node id="16">
+        <label>ADemoViewMetaBuilding</label>
+        <link refid="class_a_demo_view_meta_building"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AJrpsPlayerController</label>
+        <link refid="class_a_jrps_player_controller"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AMetaCesiumCartographicPolygon</label>
+        <link refid="class_a_meta_cesium_cartographic_polygon"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AMetaPlayerController</label>
+        <link refid="class_a_meta_player_controller"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ControlMode</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>DemoViewMode</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>APlayerController</label>
+      </node>
+      <node id="13">
+        <label>FControlMode</label>
+        <link refid="struct_f_control_mode"/>
+      </node>
+      <node id="7">
+        <label>FSetupCesiumCartographicPolygon</label>
+        <link refid="struct_f_setup_cesium_cartographic_polygon"/>
+      </node>
+      <node id="6">
+        <label>UActorComponent</label>
+      </node>
+      <node id="14">
+        <label>UDemoViewWidget</label>
+        <link refid="class_u_demo_view_widget"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>MetaDemoViewModeBuilding</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UPositionsManager</label>
+        <link refid="class_u_positions_manager"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>UUserWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" line="29" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/BuildingCore.h" bodystart="30" bodyend="323"/>
+    <listofallmembers>
+      <member refid="class_a_building_core_1a89844dfc9f417fd56585b9fc9be7656d" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ABuildingCore</name></member>
+      <member refid="class_a_building_core_base_1a69581d8796dbf1cccfb049b38b57f52a" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ABuildingCoreBase</name></member>
+      <member refid="class_a_building_core_base_ex_1ad044267ff54a3c19babe2009265d2662" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ABuildingCoreBaseEx</name></member>
+      <member refid="class_a_building_core_1a5d11aed22efd60cf45b856d1d2457674" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ActivateBuildingsCulling</name></member>
+      <member refid="class_a_building_core_1ac71d9eb13d6e514d604805b6f071ea8d" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ActivateStartBuildingTimer</name></member>
+      <member refid="class_a_building_core_1a05ec65b9ee634db00f7e23ade1471959" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>AddDemoViewComponent</name></member>
+      <member refid="class_a_building_core_1a0cc27249c616a0914b58ed71efef1618" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>AddDemoViewComponent</name></member>
+      <member refid="class_a_building_core_1ad845f6f89fd3cbe6d1d3f983c03fae4e" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>AddDemoViewComponent</name></member>
+      <member refid="class_a_building_core_base_1adc0ab11020b8c55d52afc12cc326be9b" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>AddExistingCartographicPolygon</name></member>
+      <member refid="class_a_building_core_base_1a5cd6f15aa81269e192a4bd62cbf60ed3" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>AttachActor</name></member>
+      <member refid="class_a_building_core_base_1a902c9e8b22317211b1d0808229656792" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>BaseDynamicMaterial</name></member>
+      <member refid="class_a_building_core_1ab579bef0a9ef833c3f8c3f3d9ca2514d" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bCutRestorePolygons</name></member>
+      <member refid="class_a_building_core_base_1a62db347057436f0cd618547d2ae80d95" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>BeginDestroy</name></member>
+      <member refid="class_a_building_core_1a3227c233d501ccf77bf7445385a14d06" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>BeginPlay</name></member>
+      <member refid="class_a_building_core_base_1a3f3af75573e8db0dd7c8e6a2fc8ec0de" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bJsonUpdated</name></member>
+      <member refid="class_a_building_core_base_1ac83fc8e04f0d7bb5a6ef5cb3db4ded36" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bMediaFasadeBuilding</name></member>
+      <member refid="class_a_building_core_base_1a84a591bc0a149f444be1f8cb87110958" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>bNoCheckGuid</name></member>
+      <member refid="class_a_building_core_base_1a6c628be7b3ea54131caa55d6b75301fc" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>Bounds</name></member>
+      <member refid="class_a_building_core_1a1a16e0382617a269ed10b0d44192f6d1" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bResetSettingsOnCut</name></member>
+      <member refid="class_a_building_core_base_1a0c9357a8bf5dfde7ea2c3782cb9bbdea" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bShowBuildingInfo</name></member>
+      <member refid="class_a_building_core_1ad9d1bef28e9985746245453a8db0a545" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>BuildingHideWidgetEvent</name></member>
+      <member refid="class_a_building_core_base_1a0438c67018693b34a4dd47286c1a8b81" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>bUseOldApiBuildingOption</name></member>
+      <member refid="class_a_building_core_base_1a2f99d2ef85cfd7d2e2225fad94892368" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>ChangeColorNeedUpdateJSON</name></member>
+      <member refid="class_a_building_core_base_1a285628ccc5d12b4f48176adc40831bd2" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>CheckId</name></member>
+      <member refid="class_a_building_core_base_1ab82ef54f9050cd04f493d1c442c8b9c4" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>CheckPolygonsProcessor</name></member>
+      <member refid="class_a_building_core_1ab8b73c00062dd8230f1a8e5798ad57aa" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>CheckVisibilityConditions</name></member>
+      <member refid="class_a_building_core_1a13c1cd899b27d65125a696810297c330" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>CombineBuildings</name></member>
+      <member refid="class_a_building_core_1af1e6aa8a2f9a442b1631bcfd5a4ae17d" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>CombineMetaBuildings</name></member>
+      <member refid="class_a_building_core_base_1ab97ba704067ab70af51a4114ef4ff771" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>ComparingInformationInJSON</name></member>
+      <member refid="class_a_building_core_base_1aadf06530111089e08cdb147d78ec4694" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ContainerStaticMeshComponents</name></member>
+      <member refid="class_a_building_core_1af9a6227eba087f8ffa0a8e326f018b2f" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ConvertToDemoView</name></member>
+      <member refid="class_a_building_core_base_1afb8457a1e25344a48deb4530e095128f" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>CutPolygons</name></member>
+      <member refid="class_a_building_core_1a1409c85cda19ef684fe35e2447dc882b" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>DataBaseCounter</name></member>
+      <member refid="class_a_building_core_1abe1d20eac270c60ae00b910198894f4b" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>DataInfoGetter</name></member>
+      <member refid="class_a_building_core_1ac7207d29f5dc8ead4f7babd11c9f5d33" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>DataInfoSetter</name></member>
+      <member refid="class_a_building_core_base_1a281893dae406bbd8f8e238decc0be61e" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>DECLARE_DELEGATE</name></member>
+      <member refid="class_a_building_core_base_1a2e7e037a7eaa74e6b4b73e8e3faf66d2" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="class_a_building_core_base_1a1275ad9665cb946f4bb3a0e06a3c3053" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>DECLARE_MULTICAST_DELEGATE_ThreeParams</name></member>
+      <member refid="class_a_building_core_1a93fe227eb2ddfeed970f688c680702bf" prot="private" virt="virtual"><scope>ABuildingCore</scope><name>Destroyed</name></member>
+      <member refid="class_a_building_core_base_1a8dd4a62b5b79cc018a2d312ee5369ca2" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>DoesAnyTextureHaveAlphaChannel</name></member>
+      <member refid="class_a_building_core_1a5a13359942ef2dec937c07d0751f3dc2" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>ExistingCartographicPolygon</name></member>
+      <member refid="class_a_building_core_base_1a9f822a8ddd547db712f59c1d2515c528" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>GenerateNewJSONFromUnrealMetadata</name></member>
+      <member refid="class_a_building_core_base_1a7a7b0860b65aa01fc25aef624bd3ecc7" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>GetAbsolutePath</name></member>
+      <member refid="class_a_building_core_base_ex_1a3f4b6cb3655ac1319d088ebd6a751e1c" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>GetAttachedPolygons</name></member>
+      <member refid="class_a_building_core_base_1a61ee683f16dbf67f7b607883540e34df" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetBuildingInfoContainerClass</name></member>
+      <member refid="class_a_building_core_base_1a5a978b631b4e280be0c234be2a6be1ce" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetBuildingManagerClass</name></member>
+      <member refid="class_a_building_core_1a2dad2640e198abb33f329455384bf303" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetCameraLocation</name></member>
+      <member refid="class_a_building_core_base_1a705e9ed7bfcefbe0f66ecb27205d96f3" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetInfoStorageManager</name></member>
+      <member refid="class_a_building_core_1ab213d48333a0dcb1e3f3236188b54dd5" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetMetaPlayerController</name></member>
+      <member refid="class_a_building_core_base_1a86b5ca4785feb4d2b50a5dfe690b3400" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>GetPolygonsProcessClass</name></member>
+      <member refid="class_a_building_core_base_1a667b15a73a32a951dc96be207ad8535a" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetPositionsManagerClass</name></member>
+      <member refid="class_a_building_core_base_1a56783619dfdf3f17c3a7f621dc706194" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetTeleportArrowTransform</name></member>
+      <member refid="class_a_building_core_base_1aa31ad0d33b096bbb7a9802f19e243373" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetToggleNotifier</name></member>
+      <member refid="class_a_building_core_base_1aed8a853fc441eaf4b1038938a92a05a1" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>GetUpdatedStatusColor</name></member>
+      <member refid="class_a_building_core_base_1aed1be52f8a7104c17db9d1c5ef0c79de" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>Info</name></member>
+      <member refid="class_a_building_core_base_1a4d3b7e3e1259fd6ddb0479a8c5fbe1f9" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>InitializeInfo</name></member>
+      <member refid="class_a_building_core_base_1ae81d3b8ba63e7aea5c0ad8af51e0dce5" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>InitializeStaticMeshComponents</name></member>
+      <member refid="class_a_building_core_base_1a41b090cf998c933c7245df439f98fc27" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>InitPolygonsProcessor</name></member>
+      <member refid="class_a_building_core_base_1a7a3823deefffa0abf48cc7757383e43d" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>InitPositionSettings</name></member>
+      <member refid="class_a_building_core_1a0ea4ae161ebc714cc725b6cc41ba3118" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>IsFirstOpenApp</name></member>
+      <member refid="class_a_building_core_base_1a323f474d0bb2d94aba906da5ea2614b8" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>JsonContent</name></member>
+      <member refid="class_a_building_core_base_1afe5d9dc12af8a717ac22d351db321ba5" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>JsonUpdatedStatusColorMap</name></member>
+      <member refid="class_a_building_core_1ae7131f8a1fea20cb8c7c2df039cd6d6e" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>MetaDemoViewModeBuilding</name></member>
+      <member refid="class_a_building_core_1ae34d75f4c5b0e843b71e4e4765f6b0ce" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>MetaPlayerController</name></member>
+      <member refid="class_a_building_core_base_1afc618d409375936228b65e1670f071fd" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>NeedUpdateJSON</name></member>
+      <member refid="class_a_building_core_1ad71c489e95b62b3716c7d7a66482f58d" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>OnConstruction</name></member>
+      <member refid="class_a_building_core_1a35f8b6c709379f95c2bc988da7287c7f" prot="private" virt="virtual"><scope>ABuildingCore</scope><name>OnDestroyedVisualAction</name></member>
+      <member refid="class_a_building_core_1a606cd0b4da734e95e795c5840a0fa7fc" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>OnHttpGetFailJSonString</name></member>
+      <member refid="class_a_building_core_1acf8698cbf8f81c67d3a7355b584a2f1d" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>OnHttpGetSuccessMiniIcon</name></member>
+      <member refid="class_a_building_core_base_1a75204d8ab70741124cbd9ba55ccaa6fc" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>OnInfoSet</name></member>
+      <member refid="class_a_building_core_base_1a9ba41ae213d28363407d6b2df2bd26b7" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>PolygonsProcessor</name></member>
+      <member refid="class_a_building_core_base_1ac8c07cf16f1ee79ca3bd0ed635a04d2a" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>PositionsManager</name></member>
+      <member refid="class_a_building_core_1ac890dab2ba34f434715c1aca4cfd056c" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>PostInitProperties</name></member>
+      <member refid="class_a_building_core_base_1ac9dc567c7c432eaddb28000fb2133efd" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>PropagateStaticMobilityToStaticMeshComponents</name></member>
+      <member refid="class_a_building_core_base_1ab3231c150f2bf13d33d171a4e7d0ad35" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>ReadBuildingJSON</name></member>
+      <member refid="class_a_building_core_base_1a4bddee987cacc713d1c0746cbdbc2dda" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>RefBuildingDataCollector</name></member>
+      <member refid="class_a_building_core_base_1a6850415a0bc892df8cc98551077abe11" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>RegisterInInfoStorageManager</name></member>
+      <member refid="class_a_building_core_base_1a92bfaea50bfa3d34ba792d94e511b9af" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>RemoveCartographicPolygons</name></member>
+      <member refid="class_a_building_core_base_1af7ddd00a4b58250bb0e6452150055ae6" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>RestorePolygons</name></member>
+      <member refid="class_a_building_core_1ae8bb14f941216a5bd0ed4f7c8c1052c0" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SanitizeBuildingsArray</name></member>
+      <member refid="class_a_building_core_base_1ad92938ffd2868715ca6fde4942f8c88b" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SceneComponent</name></member>
+      <member refid="class_a_building_core_base_1a800a65984b6cf42b9629529f9c6283de" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>SetBuildingDataInfo</name></member>
+      <member refid="class_a_building_core_base_1a74a30edbebfc5d56b477572ca2477b46" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetCollisionResponseChannelForStaticMeshComponents</name></member>
+      <member refid="class_a_building_core_base_1a82d5c1cda540165111e94d2cf13c8f75" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>SetDefaultPositionFromUnrealMetadata</name></member>
+      <member refid="class_a_building_core_base_1af33e6f0989efd68a2da65bee027f29e8" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetDynamicMaterialForMesh</name></member>
+      <member refid="class_a_building_core_base_1a403237fbfd20fe1781c07bb5582320ad" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetDynamicMaterials</name></member>
+      <member refid="class_a_building_core_base_1abfdd4d1f97ab517443c242ec0b0bce71" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetMiniIcon</name></member>
+      <member refid="class_a_building_core_base_1ac2bb65d69ee2824ceebc6c623b3ab215" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SetNewUnrealMetaData</name></member>
+      <member refid="class_a_building_core_base_1a5e1d7fc1e69dc3ffe4b200efa0fbf85e" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetStaticMeshComponentsAndMaterials</name></member>
+      <member refid="class_a_building_core_base_1af631c960a2fb9ac997b2d18b22aa2bcb" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetStaticMeshComponentsAndMaterials</name></member>
+      <member refid="class_a_building_core_base_1ac488e21b5e95781484df20996d0c088d" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetStaticMeshComponentsAndMaterials</name></member>
+      <member refid="class_a_building_core_1a58925a77ec629a521dcd83a81d37a88e" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SetStaticMeshComponentVisibility</name></member>
+      <member refid="class_a_building_core_base_1a2d4977c5e5016901b71932cf16742b0b" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SetTeleportPoint</name></member>
+      <member refid="class_a_building_core_1a1ff51e5240a907ba0ef13754b0306b17" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>SetThisIntoUI</name></member>
+      <member refid="class_a_building_core_base_1a22eb4e65eb2974e9c4f95361c0af097f" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SetToggleNotifier</name></member>
+      <member refid="class_a_building_core_1a8baa385fddaf7141d908148dd1bc2792" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>SetupCesiumCartographicPolygon</name></member>
+      <member refid="class_a_building_core_1a9461886e75b024a056e3b4ed1949cde5" prot="public" virt="virtual"><scope>ABuildingCore</scope><name>ShowLeftWindowWidget</name></member>
+      <member refid="class_a_building_core_base_1a5295897d55756d4d403d9b737fe71f42" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>SpawnCartographicPolygon</name></member>
+      <member refid="class_a_building_core_base_1a5e2a733b120b7a7d22340db3433da007" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>SwitchActivePolygonsHandler</name></member>
+      <member refid="class_a_building_core_base_1a3dfafbcfa571ab74f948d5b72974248f" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>TeleportTransform</name></member>
+      <member refid="class_a_building_core_1a8acd37d6ad1a796d5a0d548f80c55f4b" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>TilesLabels</name></member>
+      <member refid="class_a_building_core_1af1c6da1a42442b647012f82843ebd469" prot="protected" virt="non-virtual"><scope>ABuildingCore</scope><name>TilesPolygons</name></member>
+      <member refid="class_a_building_core_base_1a61cfdd2f6cb2f2e3b90a681b6ec426b4" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>TimerRegistration</name></member>
+      <member refid="class_a_building_core_base_ex_1aa22919a325b4f5dbc11f9e56b297b9a8" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>ToggleActive</name></member>
+      <member refid="class_a_building_core_base_1a5fc01679285985d6ba7495d304e7bc73" prot="private" virt="non-virtual"><scope>ABuildingCore</scope><name>ToggleNotifier</name></member>
+      <member refid="class_a_building_core_1a9ddea83130509731f7003f81bb61c4f8" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>UPROPERTY</name></member>
+      <member refid="class_a_building_core_1af15b484c886fe94cfcf45bdfd3893fa6" prot="public" virt="non-virtual"><scope>ABuildingCore</scope><name>VisibilityCheckTimerHandle</name></member>
+      <member refid="class_a_building_core_base_1ac225fb80e01553d1ac8e9faac0c7f4b4" prot="protected" virt="virtual"><scope>ABuildingCore</scope><name>WriteUnrealMetadataToJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

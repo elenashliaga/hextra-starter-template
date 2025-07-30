@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_spatial_cache_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>USpatialCacheSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UGameInstanceSubsystem</basecompoundref>
+    <includes refid="_spatial_cache_subsystem_8h" local="no">SpatialCacheSubsystem.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1ab77eff9493e129abefbe74c9c021b10e" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool USpatialCacheSubsystem::bInitialDataParsed</definition>
+        <argsstring></argsstring>
+        <name>bInitialDataParsed</name>
+        <qualifiedname>USpatialCacheSubsystem::bInitialDataParsed</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="79" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1aa269f0802ecbbdb381c2e99c194384dd" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool USpatialCacheSubsystem::bInitialDataRequested</definition>
+        <argsstring></argsstring>
+        <name>bInitialDataRequested</name>
+        <qualifiedname>USpatialCacheSubsystem::bInitialDataRequested</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="80" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1aae2987b4411efff44c36ee6279a8d096" prot="public" static="no" mutable="no">
+        <type><ref refid="_spatial_cache_subsystem_8h_1af313bc062a775cb6023b89b19c68b30b" kindref="member">LoadingStatus</ref></type>
+        <definition>LoadingStatus USpatialCacheSubsystem::IconsLoadingStatus</definition>
+        <argsstring></argsstring>
+        <name>IconsLoadingStatus</name>
+        <qualifiedname>USpatialCacheSubsystem::IconsLoadingStatus</qualifiedname>
+        <initializer>= <ref refid="_spatial_cache_subsystem_8h_1af313bc062a775cb6023b89b19c68b30ba2b964c155c8b577ebe1a26ebabd27439" kindref="member">LoadingStatus::NotLoaded</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="82" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1a1728087c8913f1eb50b6ead3a609a0fa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_limited_cache" kindref="compound">FLimitedCache</ref></type>
+        <definition>FLimitedCache USpatialCacheSubsystem::ParsedTilesCache</definition>
+        <argsstring></argsstring>
+        <name>ParsedTilesCache</name>
+        <qualifiedname>USpatialCacheSubsystem::ParsedTilesCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="84" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1af26e390ee9473c38e4c2b37b830b770d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UDataTable</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UDataTable&gt; USpatialCacheSubsystem::IconsDataTable</definition>
+        <argsstring></argsstring>
+        <name>IconsDataTable</name>
+        <qualifiedname>USpatialCacheSubsystem::IconsDataTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="111" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1a7c688499cb31959396e4b33ea901dc6e" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection USpatialCacheSubsystem::UpdateMutex</definition>
+        <argsstring></argsstring>
+        <name>UpdateMutex</name>
+        <qualifiedname>USpatialCacheSubsystem::UpdateMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="112" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1aa4d91a552fce6acd4062845ac8d04ae2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TQueue</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TDelegate</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>()&gt; &gt;</type>
+        <definition>TQueue&lt;TDelegate&lt;void()&gt; &gt; USpatialCacheSubsystem::ReadyCallbacks</definition>
+        <argsstring></argsstring>
+        <name>ReadyCallbacks</name>
+        <qualifiedname>USpatialCacheSubsystem::ReadyCallbacks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="114" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_spatial_cache_subsystem_1a729207c895e764c370da34d4fd55ecce" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref>, <ref refid="_library_8h_1a0baeef3fba00cbcf420a209895e14968" kindref="member">FSpatialCacheMap</ref> &gt;</type>
+        <definition>TMap&lt;uint8, FSpatialCacheMap&gt; USpatialCacheSubsystem::TiledByZoomLevelsData</definition>
+        <argsstring></argsstring>
+        <name>TiledByZoomLevelsData</name>
+        <qualifiedname>USpatialCacheSubsystem::TiledByZoomLevelsData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="116" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1af0f05ed96ea7560751f6b99ea48dd894" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>USpatialCacheSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="32" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1ae753f19435f085a3544c3cb5da996b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USpatialCacheSubsystem::IsInitialDataParsed</definition>
+        <argsstring>()</argsstring>
+        <name>IsInitialDataParsed</name>
+        <qualifiedname>USpatialCacheSubsystem::IsInitialDataParsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="39" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1acfa0fdf19a11a389cca94a6e03406f78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::MarkAsInitialCacheCompleted</definition>
+        <argsstring>(bool bIsCached)</argsstring>
+        <name>MarkAsInitialCacheCompleted</name>
+        <qualifiedname>USpatialCacheSubsystem::MarkAsInitialCacheCompleted</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bIsCached</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="48" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1a1437ed5a3bc9d7f89b31972a65d207c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref>, <ref refid="_library_8h_1a0baeef3fba00cbcf420a209895e14968" kindref="member">FSpatialCacheMap</ref> &gt; &amp;</type>
+        <definition>TMap&lt; uint8, FSpatialCacheMap &gt; &amp; USpatialCacheSubsystem::GetTiledByZoomLevelsData</definition>
+        <argsstring>()</argsstring>
+        <name>GetTiledByZoomLevelsData</name>
+        <qualifiedname>USpatialCacheSubsystem::GetTiledByZoomLevelsData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="55" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1ada68f97cd4a02208120129cb5e3383a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::RegisterReadyCallback</definition>
+        <argsstring>(const TDelegate&lt; void()&gt; &amp;InCallback)</argsstring>
+        <name>RegisterReadyCallback</name>
+        <qualifiedname>USpatialCacheSubsystem::RegisterReadyCallback</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TDelegate</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>()&gt; &amp;</type>
+          <declname>InCallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="64" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1a02eafd5ccc3b0f33f63a0b73035960ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::PrecacheIconsData</definition>
+        <argsstring>(const FString &amp;PointsJsonSource, EIconsSourceParsingScheme SchemeId)</argsstring>
+        <name>PrecacheIconsData</name>
+        <qualifiedname>USpatialCacheSubsystem::PrecacheIconsData</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PointsJsonSource</declname>
+        </param>
+        <param>
+          <type><ref refid="_point_projection_types_8h_1a056b244a5a7b923ca1399f242c6a014c" kindref="member">EIconsSourceParsingScheme</ref></type>
+          <declname>SchemeId</declname>
+        </param>
+        <briefdescription>
+<para>Предварительно загружает данные об иконках из JSON строки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция парсит JSON данные, извлекает информацию об иконках, создает геометрические объекты и распределяет их по уровням зума и тайлам.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PointsJsonSource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка с JSON данными об иконках. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SchemeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип схемы парсинга</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="77" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="137" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1a57e0140d7d5457b7a0391331c6e0582f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::OnResponseJSONReceived</definition>
+        <argsstring>()</argsstring>
+        <name>OnResponseJSONReceived</name>
+        <qualifiedname>USpatialCacheSubsystem::OnResponseJSONReceived</qualifiedname>
+        <briefdescription>
+<para>Обработчик ответа на HTTP запрос для загрузки данных о тайле. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция обрабатывает успешный и неуспешный ответ, парсит данные (при необходимости) и вызывает соответствующие колбэки.</para>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="94" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="73" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_spatial_cache_subsystem_1a199fa1a8e9dd1feded91abd451873e8a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void USpatialCacheSubsystem::LoadJSONDataFromDisk</definition>
+        <argsstring>(TArray&lt; TTuple&lt; FString, EIconsSourceParsingScheme &gt; &gt; &amp;OutStrings, const EIconsSourceParsingScheme &amp;ParsingScheme, const FString &amp;FileName)</argsstring>
+        <name>LoadJSONDataFromDisk</name>
+        <qualifiedname>USpatialCacheSubsystem::LoadJSONDataFromDisk</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTuple</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_point_projection_types_8h_1a056b244a5a7b923ca1399f242c6a014c" kindref="member">EIconsSourceParsingScheme</ref> &gt; &gt; &amp;</type>
+          <declname>OutStrings</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_point_projection_types_8h_1a056b244a5a7b923ca1399f242c6a014c" kindref="member">EIconsSourceParsingScheme</ref> &amp;</type>
+          <declname>ParsingScheme</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+<para>Функция для загрузки JSON-данных из локального хранилища. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OutStrings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной массив, в который добавляются загруженные JSON-данные </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ParsingScheme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Схема парсинга, с которой эти данные будут затем обрабатываться </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла, который мы хотим загрузить из хранилища.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="106" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/SpatialCacheSubsystem.cpp" bodystart="126" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UGameInstanceSubsystem</label>
+      </node>
+      <node id="1">
+        <label>USpatialCacheSubsystem</label>
+        <link refid="class_u_spatial_cache_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FLimitedCache</label>
+        <link refid="struct_f_limited_cache"/>
+      </node>
+      <node id="2">
+        <label>UGameInstanceSubsystem</label>
+      </node>
+      <node id="1">
+        <label>USpatialCacheSubsystem</label>
+        <link refid="class_u_spatial_cache_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ParsedTilesCache</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" line="27" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/SpatialCacheSubsystem.h" bodystart="28" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_u_spatial_cache_subsystem_1ab77eff9493e129abefbe74c9c021b10e" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>bInitialDataParsed</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1aa269f0802ecbbdb381c2e99c194384dd" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>bInitialDataRequested</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a1437ed5a3bc9d7f89b31972a65d207c6" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>GetTiledByZoomLevelsData</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1af26e390ee9473c38e4c2b37b830b770d" prot="private" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>IconsDataTable</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1aae2987b4411efff44c36ee6279a8d096" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>IconsLoadingStatus</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1af0f05ed96ea7560751f6b99ea48dd894" prot="public" virt="virtual"><scope>USpatialCacheSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1ae753f19435f085a3544c3cb5da996b07" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>IsInitialDataParsed</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a199fa1a8e9dd1feded91abd451873e8a" prot="private" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>LoadJSONDataFromDisk</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1acfa0fdf19a11a389cca94a6e03406f78" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>MarkAsInitialCacheCompleted</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a57e0140d7d5457b7a0391331c6e0582f" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>OnResponseJSONReceived</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a1728087c8913f1eb50b6ead3a609a0fa" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>ParsedTilesCache</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a02eafd5ccc3b0f33f63a0b73035960ae" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>PrecacheIconsData</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1aa4d91a552fce6acd4062845ac8d04ae2" prot="private" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>ReadyCallbacks</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1ada68f97cd4a02208120129cb5e3383a9" prot="public" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>RegisterReadyCallback</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a729207c895e764c370da34d4fd55ecce" prot="private" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>TiledByZoomLevelsData</name></member>
+      <member refid="class_u_spatial_cache_subsystem_1a7c688499cb31959396e4b33ea901dc6e" prot="private" virt="non-virtual"><scope>USpatialCacheSubsystem</scope><name>UpdateMutex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

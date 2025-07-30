@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_t_mass_l_o_d_collector" kind="struct" language="C++" prot="public">
+    <compoundname>TMassLODCollector</compoundname>
+    <basecompoundref refid="struct_f_mass_l_o_d_base_logic" prot="public" virt="non-virtual">FMassLODBaseLogic</basecompoundref>
+    <includes refid="_mass_l_o_d_collector_8h" local="no">MassLODCollector.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FLODLogic</ref></type>
+        <defval><ref refid="struct_f_l_o_d_default_logic" kindref="compound">FLODDefaultLogic</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_t_mass_l_o_d_collector_1a3836adddaf515c970af34d6a0ae02b22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TMassLODCollector&lt; FLODLogic &gt;::TMassLODCollector</definition>
+        <argsstring>()</argsstring>
+        <name>TMassLODCollector</name>
+        <qualifiedname>TMassLODCollector::TMassLODCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_collector_1a401b162d10c30bb7f59776243b6abc58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCollector&lt; FLODLogic &gt;::PrepareExecution</definition>
+        <argsstring>(TConstArrayView&lt; FViewerInfo &gt; Viewers)</argsstring>
+        <name>PrepareExecution</name>
+        <qualifiedname>TMassLODCollector::PrepareExecution</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt;</type>
+          <declname>Viewers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prepares execution for the current frame, needed to be called before every execution @Param Viewers is the array of all the known viewers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" line="27" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_collector_1aea7d0f308514047f21a2f8704431ca7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTransformFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectLocalViewers</declname>
+            <defname>bCollectLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectDistanceToFrustum</declname>
+            <defname>bCollectDistanceToFrustum</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>FORCEINLINE void TMassLODCollector&lt; FLODLogic &gt;::CollectLODInfo</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TTransformFragment &gt; TransformList, TArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList)</argsstring>
+        <name>CollectLODInfo</name>
+        <qualifiedname>TMassLODCollector::CollectLODInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTransformFragment</ref> &gt;</type>
+          <declname>TransformList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Collects the information for LOD calculation, called for each entity chunks Use next method when FLODLogic::bStoreInfoPerViewer is enabled @Param Context of the chunk execution @Param TransformList is the fragment transforms of the entities @Param ViewersInfoList is the fragment where to store source information for LOD calculation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" line="40" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" bodystart="40" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_mass_l_o_d_collector_1a2049587841d5c4b84421d3ce46d4d4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTransformFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref></type>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectLocalViewers</declname>
+            <defname>bCollectLocalViewers</defname>
+            <defval>FLODLogic::bLocalViewersOnly</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectDistanceToFrustum</declname>
+            <defname>bCollectDistanceToFrustum</defname>
+            <defval>FLODLogic::bDoVisibilityLogic</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectDistancePerViewer</declname>
+            <defname>bCollectDistancePerViewer</defname>
+            <defval>FLODLogic::bStoreInfoPerViewer</defval>
+          </param>
+          <param>
+            <type>bool</type>
+            <declname>bCollectDistanceToFrustumPerViewer</declname>
+            <defname>bCollectDistanceToFrustumPerViewer</defname>
+            <defval>FLODLogic::bDoVisibilityLogic &amp;&amp; FLODLogic::bStoreInfoPerViewer</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void TMassLODCollector&lt; FLODLogic &gt;::CollectLODInfo</definition>
+        <argsstring>(FMassExecutionContext &amp;Context, TConstArrayView&lt; TTransformFragment &gt; TransformList, TArrayView&lt; TViewerInfoFragment &gt; ViewersInfoList, TArrayView&lt; TPerViewerInfoFragment &gt; PerViewerInfoList)</argsstring>
+        <name>CollectLODInfo</name>
+        <qualifiedname>TMassLODCollector::CollectLODInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref> &amp;</type>
+          <declname>Context</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TTransformFragment</ref> &gt;</type>
+          <declname>TransformList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TViewerInfoFragment</ref> &gt;</type>
+          <declname>ViewersInfoList</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArrayView</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPerViewerInfoFragment</ref> &gt;</type>
+          <declname>PerViewerInfoList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Collects the information for LOD calculation, called for each entity chunks Use this version when FLODLogic::bStoreInfoPerViewer is enabled It collects information per viewer into the PerViewerInfoList fragments @Param Context of the chunk execution @Param TransformList is the fragment transforms of the entities @Param ViewersInfoList is the fragment where to store source information for LOD calculation @Param PerViewerInfoList is the per viewer information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" line="70" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" bodystart="90" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper struct to collect needed information on each agent that will be needed later for LOD calculation Requires TTransformFragment fragment. Stores information in TViewerInfoFragment fragment. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FMassLODBaseLogic</label>
+        <link refid="struct_f_mass_l_o_d_base_logic"/>
+      </node>
+      <node id="1">
+        <label>TMassLODCollector&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FMassLODBaseLogic</label>
+        <link refid="struct_f_mass_l_o_d_base_logic"/>
+      </node>
+      <node id="1">
+        <label>TMassLODCollector&lt; FLODLogic &gt;</label>
+        <link refid="struct_t_mass_l_o_d_collector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" line="17" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODCollector.h" bodystart="18" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad25196ebee5d94681c0c0c970d614864" prot="private" virt="non-virtual"><scope>TMassLODCollector</scope><name>bBuildFrustumData</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0e0a9afeb355caa12419e7eb2f4281e9" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>CacheViewerInformation</name></member>
+      <member refid="struct_t_mass_l_o_d_collector_1aea7d0f308514047f21a2f8704431ca7c" prot="public" virt="non-virtual"><scope>TMassLODCollector</scope><name>CollectLODInfo</name></member>
+      <member refid="struct_t_mass_l_o_d_collector_1a2049587841d5c4b84421d3ce46d4d4bf" prot="public" virt="non-virtual"><scope>TMassLODCollector</scope><name>CollectLODInfo</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a9316b603656bc5dfd14c7fd9658e98e8" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8f2eeb2a45e33d4c6ccf9646bc15d78a" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a1391856e0ae48b7efc4164e5924dfb06" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aad4ca06ab7381e3fb813b942bc3c8411" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a0b1904e3e8378ac8b0147c6d39bc4e88" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aa6e6334597bdd36b6cfeac1b6ba18bb4" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1aca236157768518f95fa93ed10b2d4e25" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a2115202d1aacd3930e591a9d2b294a0c" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ad68663d7ce8aec09c378acb1cc6f4ae9" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1ae8e2eb4bb37637f5b0a5394defc80e63" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>DECLARE_CONDITIONAL_MEMBER_ARRAY_ACCESSORS</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a8df658fedca8760cf3c096f349555b9d" prot="public" virt="non-virtual"><scope>TMassLODCollector</scope><name>FMassLODBaseLogic</name></member>
+      <member refid="struct_t_mass_l_o_d_collector_1a401b162d10c30bb7f59776243b6abc58" prot="public" virt="non-virtual"><scope>TMassLODCollector</scope><name>PrepareExecution</name></member>
+      <member refid="struct_t_mass_l_o_d_collector_1a3836adddaf515c970af34d6a0ae02b22" prot="public" virt="non-virtual"><scope>TMassLODCollector</scope><name>TMassLODCollector</name></member>
+      <member refid="struct_f_mass_l_o_d_base_logic_1a02c1248177524991b733021ce2bb113e" prot="protected" virt="non-virtual"><scope>TMassLODCollector</scope><name>Viewers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

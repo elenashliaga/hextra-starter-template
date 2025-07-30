@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_yandex_json_conv" kind="struct" language="C++" prot="public">
+    <compoundname>FYandexJsonConv</compoundname>
+    <includes refid="_yandex_json_conv_8h" local="no">YandexJsonConv.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" prot="public" static="no">
+        <type><ref refid="struct_f_meta_json_utils_1a05559d7d6aef4ea8c05e0a76db5665fd" kindref="member">FMetaJsonUtils::json</ref></type>
+        <definition>using FYandexJsonConv::json =  FMetaJsonUtils::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>FYandexJsonConv::json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="31" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1a24e1952ac88307baf436a991a0afd09b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FYandexJsonConv::ParseYandexDataFromJSON</definition>
+        <argsstring>(const FString &amp;JSONString, FAddressData &amp;OutAddressData)</argsstring>
+        <name>ParseYandexDataFromJSON</name>
+        <qualifiedname>FYandexJsonConv::ParseYandexDataFromJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JSONString</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_address_data" kindref="compound">FAddressData</ref> &amp;</type>
+          <declname>OutAddressData</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует данные Yandex из строки JSON и сохраняет их в предоставленном объекте <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и анализирует ее для извлечения данных Yandex. Извлеченные данные затем сохраняются в предоставленном объекте <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JSONString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, содержащая данные Yandex. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutAddressData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>, который будет заполнен анализированными данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если анализ прошел успешно, в противном случае false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="44" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="44" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1aba3112ad39854f6891fc270e6735fd66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref></type>
+        <definition>static FSearchDocumentCoordinates FYandexJsonConv::ProcessCoordinatesJSON</definition>
+        <argsstring>(const FString &amp;jsonStr)</argsstring>
+        <name>ProcessCoordinatesJSON</name>
+        <qualifiedname>FYandexJsonConv::ProcessCoordinatesJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>jsonStr</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует данные о координатах из строки JSON и возвращает их в виде объекта <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и анализирует ее чтобы извлечь данные о координатах. Извлеченные данные сохраняются в объекте <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref>, который затем возвращается.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, содержащая данные о координатах.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Объект <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref>, содержащий анализированные данные о координатах. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="86" column="43" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="86" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1a4ecd11988b9e25d221f2886fcca42c2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_search_types_8h_1afe7db13a48215b9b6c2a02f091590913" kindref="member">ESearchDocumentCoordinatesTypes</ref></type>
+        <definition>static ESearchDocumentCoordinatesTypes FYandexJsonConv::GetEnumFromString</definition>
+        <argsstring>(const FString &amp;StringValue)</argsstring>
+        <name>GetEnumFromString</name>
+        <qualifiedname>FYandexJsonConv::GetEnumFromString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StringValue</declname>
+        </param>
+        <briefdescription>
+<para>Получает значение перечисления из предоставленной строки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строковое значение и возвращает соответствующее значение перечисления из перечисления <computeroutput>ESearchDocumentCoordinatesTypes</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StringValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строковое значение для получения из него перечисления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение <computeroutput>ESearchDocumentCoordinatesTypes</computeroutput>, соответствующее предоставленному строковому значению. Если совпадение не найдено, возвращает <computeroutput>ESearchDocumentCoordinatesTypes::Default</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="132" column="48" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="132" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1a255f3db64ff6313f2a52bdb307be9ecd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void FYandexJsonConv::ParsePointCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, FPointCoordinates &amp;outCoordinates)</argsstring>
+        <name>ParsePointCoordinates</name>
+        <qualifiedname>FYandexJsonConv::ParsePointCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует данные о координатах точки из массива JSON и сохраняет их в предоставленном объекте <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и анализирует его для извлечения данных о координатах точки. Извлеченные данные затем сохраняются в предоставленном объекте <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON, содержащий данные о координатах точки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>, который будет заполнен анализированными данными. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="157" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1a580951ab1534a56db4e823d7d8d3ef45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void FYandexJsonConv::ParseMultiPointCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, FPointCoordinates &amp;outCoordinates)</argsstring>
+        <name>ParseMultiPointCoordinates</name>
+        <qualifiedname>FYandexJsonConv::ParseMultiPointCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует данные о координатах из массива JSON и сохраняет их в предоставленном объекте <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и анализирует его для извлечения данных о координатах. Извлеченные данные затем сохраняются в предоставленном объекте <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON, содержащий данные о координатах. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>, который будет заполнен анализированными данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+@requirements Тип <computeroutput>json</computeroutput> должен быть определен, а структура <computeroutput><ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref></computeroutput> должна быть определена в отдельном заголовочном файле. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="176" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="176" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1a863f7149c3c0cedbc1c87f0eeb06d41b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void FYandexJsonConv::ParsePolygonCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, TArray&lt; FPolygonCoordinates &gt; &amp;outCoordinates)</argsstring>
+        <name>ParsePolygonCoordinates</name>
+        <qualifiedname>FYandexJsonConv::ParsePolygonCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_coordinates" kindref="compound">FPolygonCoordinates</ref> &gt; &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует координаты полигона из массива JSON и сохраняет их в предоставленном объекте TArray&lt;FPolygonCoordinates&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и анализирует его для извлечения координат полигона. Извлеченные координаты затем сохраняются в предоставленном объекте TArray&lt;FPolygonCoordinates&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON, содержащий координаты полигона. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект TArray&lt;FPolygonCoordinates&gt;, который будет заполнен анализированными координатами. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="196" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="196" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1aeed3133c884f65a1c33c087412137a0f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>static void FYandexJsonConv::ParseMultiPolygonCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, TArray&lt; FMultiPolygonCoordinates &gt; &amp;outCoordinates)</argsstring>
+        <name>ParseMultiPolygonCoordinates</name>
+        <qualifiedname>FYandexJsonConv::ParseMultiPolygonCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_multi_polygon_coordinates" kindref="compound">FMultiPolygonCoordinates</ref> &gt; &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует координаты мультиполигона из массива JSON и сохраняет их в предоставленном объекте TArray&lt;FMultiPolygonCoordinates&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и анализирует его для извлечения координат мультиполигона. Извлеченные координаты затем сохраняются в предоставленном объекте TArray&lt;FMultiPolygonCoordinates&gt;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON, содержащий координаты мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект TArray&lt;FMultiPolygonCoordinates&gt;, который будет заполнен анализированными координатами. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="224" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="224" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_yandex_json_conv_1ad7b63be80a3ac28b644c18515a0c4a5a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FYandexJsonConv::ParseAnswerFromSearchJSON</definition>
+        <argsstring>(const FString &amp;jsonStr, FAnswerFromSearch &amp;answer)</argsstring>
+        <name>ParseAnswerFromSearchJSON</name>
+        <qualifiedname>FYandexJsonConv::ParseAnswerFromSearchJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>jsonStr</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref> &amp;</type>
+          <declname>answer</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует ответ из строки JSON поиска и сохраняет его в предоставленном объекте <ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и анализирует ее для извлечения ответа от поиска. Извлеченные данные затем сохраняются в предоставленном объекте <ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, содержащая данные ответа поиска. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>answer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref>, который будет заполнен анализированными данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если анализ прошел успешно, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="258" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="258" bodyend="311"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" line="27" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/YandexJsonConv.h" bodystart="28" bodyend="312"/>
+    <listofallmembers>
+      <member refid="struct_f_yandex_json_conv_1a4ecd11988b9e25d221f2886fcca42c2e" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>GetEnumFromString</name></member>
+      <member refid="struct_f_yandex_json_conv_1a6c78f14289a952f9bed32dfae2b2ed5f" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>json</name></member>
+      <member refid="struct_f_yandex_json_conv_1ad7b63be80a3ac28b644c18515a0c4a5a" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParseAnswerFromSearchJSON</name></member>
+      <member refid="struct_f_yandex_json_conv_1a580951ab1534a56db4e823d7d8d3ef45" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParseMultiPointCoordinates</name></member>
+      <member refid="struct_f_yandex_json_conv_1aeed3133c884f65a1c33c087412137a0f" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParseMultiPolygonCoordinates</name></member>
+      <member refid="struct_f_yandex_json_conv_1a255f3db64ff6313f2a52bdb307be9ecd" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParsePointCoordinates</name></member>
+      <member refid="struct_f_yandex_json_conv_1a863f7149c3c0cedbc1c87f0eeb06d41b" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParsePolygonCoordinates</name></member>
+      <member refid="struct_f_yandex_json_conv_1a24e1952ac88307baf436a991a0afd09b" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ParseYandexDataFromJSON</name></member>
+      <member refid="struct_f_yandex_json_conv_1aba3112ad39854f6891fc270e6735fd66" prot="public" virt="non-virtual"><scope>FYandexJsonConv</scope><name>ProcessCoordinatesJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

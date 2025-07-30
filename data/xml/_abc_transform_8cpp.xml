@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_abc_transform_8cpp" kind="file" language="C++">
+    <compoundname>AbcTransform.cpp</compoundname>
+    <includes refid="_abc_transform_8h" local="yes">AbcTransform.h</includes>
+    <includes refid="_abc_import_utilities_8h" local="yes">AbcImportUtilities.h</includes>
+    <includes local="no">Alembic/AbcGeom/Visibility.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>AbcImportUtilities.h</label>
+        <link refid="_abc_import_utilities_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcTransform.cpp</label>
+        <link refid="_abc_transform_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AbcObject.h</label>
+        <link refid="_abc_object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbcTransform.h</label>
+        <link refid="_abc_transform_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Alembic/Abc/All.h</label>
+      </node>
+      <node id="5">
+        <label>Alembic/Abc/IObject.h</label>
+      </node>
+      <node id="9">
+        <label>Alembic/AbcCoreAbstract/TimeSampling.h</label>
+      </node>
+      <node id="6">
+        <label>Alembic/AbcGeom/All.h</label>
+      </node>
+      <node id="11">
+        <label>Alembic/AbcGeom/Visibility.h</label>
+      </node>
+      <node id="4">
+        <label>Math/Matrix.h</label>
+      </node>
+      <node id="8">
+        <label>UObject/ObjectMacros.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_transform_8h" kindref="compound">AbcTransform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abc_import_utilities_8h" kindref="compound">AbcImportUtilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">THIRD_PARTY_INCLUDES_START</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Alembic/AbcGeom/Visibility.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">THIRD_PARTY_INCLUDES_END</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="class_f_abc_transform_1a4cb35e7975d894a77d7ec58bd67dcf41" kindref="member">FAbcTransform::FAbcTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Alembic::AbcGeom::IXform&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTransform</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_file" kindref="compound">FAbcFile</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFile</ref>,<sp/><ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref>*<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InParent</ref><sp/></highlight><highlight class="comment">/*=<sp/>nullptr*/</highlight><highlight class="normal">)<sp/>:<sp/><ref refid="class_i_abc_object" kindref="compound">IAbcObject</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTransform</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFile</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InParent</ref>),<sp/>Transform(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTransform</ref>),<sp/>Schema(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTransform</ref>.<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">getSchema</ref>())</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>NumSamples<sp/>=<sp/>Schema.getNumSamples();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>bConstant<sp/>=<sp/>Schema.isConstant();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>bConstantIdentity<sp/>=<sp/>Schema.isConstantIdentity();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>InitialValue<sp/>=<sp/>FMatrix::Identity;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Index<sp/>=<sp/>0;<sp/>Index<sp/>&lt;<sp/><ref refid="_abc_object_8h_1a5b04eed4f5d3d57c73a29c3573663679" kindref="member">MaxNumberOfResidentSamples</ref>;<sp/>++Index)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResidentMatrices[Index]<sp/>=<sp/>InitialValue;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Retrieve<sp/>min<sp/>and<sp/>max<sp/>time/frames<sp/>information<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_abc_importer_utilities_1afa0189ca9694034e0c924b451a815ade" kindref="member">AbcImporterUtilities::GetMinAndMaxTime</ref>(Schema,<sp/>MinTime,<sp/>MaxTime);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_abc_importer_utilities_1a30774e2b708c3fd46453c9a8678bea14" kindref="member">AbcImporterUtilities::GetStartTimeAndFrame</ref>(Schema,<sp/>MinTime,<sp/>StartFrameIndex);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_transform_1a2d46a9d7a0ecdf5f293c17b2f070a315" kindref="member">FAbcTransform::ReadFirstFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>matrix<sp/>sample<sp/>for<sp/>sample<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Time<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref><sp/>&lt;<sp/><ref refid="class_i_abc_object_1ac977525c10582e8bd41b50fc1add161c" kindref="member">MinTime</ref><sp/>?<sp/><ref refid="class_i_abc_object_1ac977525c10582e8bd41b50fc1add161c" kindref="member">MinTime</ref><sp/>:<sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref><sp/>&gt;<sp/><ref refid="class_i_abc_object_1ac977525c10582e8bd41b50fc1add161c" kindref="member">MinTime</ref><sp/>?<sp/><ref refid="class_i_abc_object_1ac977525c10582e8bd41b50fc1add161c" kindref="member">MinTime</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>Alembic::Abc::ISampleSelector<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleSelector</ref><sp/>=<sp/>AbcImporterUtilities::GenerateAlembicSampleSelector&lt;double&gt;(Time);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Alembic::AbcGeom::XformSample<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_f_abc_transform_1a0c7c4ebee97310108b9ebd35ad9e0e11" kindref="member">Schema</ref>.get(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleSelector</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" kindref="member">InitialValue</ref><sp/>=<sp/><ref refid="namespace_abc_importer_utilities_1a845f7ef27e890e0613adf4a99b42c626" kindref="member">AbcImporterUtilities::ConvertAlembicMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>.getMatrix());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_transform_1a3aed18be14ba8a5893dd419b19f2aafb" kindref="member">FAbcTransform::SetFrameAndTime</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_abc_file_8h_1a15f9115e5b9abcc496ea4065f26df803" kindref="member">EFrameReadFlags</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InFlags</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref><sp/></highlight><highlight class="comment">/*=<sp/>INDEX_NONE*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref><sp/>!=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INDEX_NONE</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_abc_object_1a6a9d205d8dfd1a22544c1cfc5a1cc08c" kindref="member">InUseSamples</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref>]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_abc_object_1a5b1d7e746638ade94780eb77474adb4b" kindref="member">ResidentSampleIndices</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref>]<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_abc_object_1a2d9061ed464146a63f88363be57f9656" kindref="member">FrameTimes</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref>]<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_f_abc_transform_1a5f287b4ffee3ffca5b3208a6aea44b06" kindref="member">bConstantIdentity</ref><sp/>&amp;&amp;<sp/>!<ref refid="class_i_abc_object_1a12ff4f4b40e3e557b1b4ab410f317e80" kindref="member">bConstant</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alembic::Abc::ISampleSelector<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleSelector</ref><sp/>=<sp/>AbcImporterUtilities::GenerateAlembicSampleSelector&lt;double&gt;(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InTime</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alembic::AbcGeom::XformSample<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_f_abc_transform_1a0c7c4ebee97310108b9ebd35ad9e0e11" kindref="member">Schema</ref>.get(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleSelector</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_f_abc_transform_1afc4bc35dd78f2fa86fc33345ad01ff02" kindref="member">ResidentMatrices</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TargetIndex</ref>]<sp/>=<sp/><ref refid="namespace_abc_importer_utilities_1a845f7ef27e890e0613adf4a99b42c626" kindref="member">AbcImporterUtilities::ConvertAlembicMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MatrixSample</ref>.getMatrix());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMatrix</ref><sp/><ref refid="class_f_abc_transform_1a70812607280a322693c5bc95bbd8ea43" kindref="member">FAbcTransform::GetMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_f_abc_transform_1a5f287b4ffee3ffca5b3208a6aea44b06" kindref="member">bConstantIdentity</ref><sp/>||<sp/><ref refid="class_i_abc_object_1a12ff4f4b40e3e557b1b4ab410f317e80" kindref="member">bConstant</ref>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref><sp/>?<sp/><ref refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" kindref="member">InitialValue</ref><sp/>*<sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref>-&gt;<ref refid="class_i_abc_object_1a70bf5422f8178cf199796280a9547e6a" kindref="member">GetMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/>:<sp/><ref refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" kindref="member">InitialValue</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>matrix<sp/>within<sp/>resident<sp/>samples</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Index<sp/>=<sp/>0;<sp/>Index<sp/>&lt;<sp/><ref refid="_abc_object_8h_1a5b04eed4f5d3d57c73a29c3573663679" kindref="member">MaxNumberOfResidentSamples</ref>;<sp/>++Index)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_i_abc_object_1a5b1d7e746638ade94780eb77474adb4b" kindref="member">ResidentSampleIndices</ref>[Index]<sp/>==<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref><sp/>?<sp/><ref refid="class_f_abc_transform_1afc4bc35dd78f2fa86fc33345ad01ff02" kindref="member">ResidentMatrices</ref>[Index]<sp/>*<sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref>-&gt;<ref refid="class_i_abc_object_1a70bf5422f8178cf199796280a9547e6a" kindref="member">GetMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/>:<sp/><ref refid="class_f_abc_transform_1afc4bc35dd78f2fa86fc33345ad01ff02" kindref="member">ResidentMatrices</ref>[Index];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref><sp/>?<sp/><ref refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" kindref="member">InitialValue</ref><sp/>*<sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref>-&gt;<ref refid="class_i_abc_object_1a70bf5422f8178cf199796280a9547e6a" kindref="member">GetMatrix</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)<sp/>:<sp/><ref refid="class_f_abc_transform_1ab3a201bbe36e9dfdf9a7f6a644d04455" kindref="member">InitialValue</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_transform_1ac3b7e2bd16dd4f65875bfb6d27252971" kindref="member">FAbcTransform::HasConstantTransform</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="78"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_i_abc_object_1a12ff4f4b40e3e557b1b4ab410f317e80" kindref="member">bConstant</ref><sp/>&amp;&amp;<sp/>(<ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref><sp/>?<sp/><ref refid="class_i_abc_object_1ad6eac5c04a27d82f49bd868c75eabd66" kindref="member">Parent</ref>-&gt;<ref refid="class_i_abc_object_1a46efefd4fb0ebdd342882e34d2a4cc5b" kindref="member">HasConstantTransform</ref>()<sp/>:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_f_abc_transform_1ac9e31c1366239c4a4d9e33c19d330336" kindref="member">FAbcTransform::PurgeFrameData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">checkf</ref>(<ref refid="class_i_abc_object_1a6a9d205d8dfd1a22544c1cfc5a1cc08c" kindref="member">InUseSamples</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>],<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>purge<sp/>a<sp/>sample<sp/>which<sp/>isn&apos;t<sp/>in<sp/>use&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_i_abc_object_1a6a9d205d8dfd1a22544c1cfc5a1cc08c" kindref="member">InUseSamples</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_i_abc_object_1a5b1d7e746638ade94780eb77474adb4b" kindref="member">ResidentSampleIndices</ref>[<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FrameIndex</ref>]<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">INDEX_NONE</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcTransform.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_server_base_8cpp" kind="file" language="C++">
+    <compoundname>ServerBase.cpp</compoundname>
+    <includes refid="_server_base_8h" local="yes">ServerBase.h</includes>
+    <includes refid="ervers_2_private_2_logging_8h" local="yes">Logging.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>Logging.h</label>
+        <link refid="ervers_2_private_2_logging_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp</label>
+        <link refid="_server_base_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ServerBase.h</label>
+        <link refid="_server_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PixelStreaming2Servers.h</label>
+        <link refid="_pixel_streaming2_servers_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Containers/Map.h</label>
+      </node>
+      <node id="7">
+        <label>Engine/EngineBaseTypes.h</label>
+      </node>
+      <node id="5">
+        <label>GenericPlatform/GenericPlatformMisc.h</label>
+      </node>
+      <node id="12">
+        <label>HAL/IConsoleManager.h</label>
+      </node>
+      <node id="8">
+        <label>HAL/ThreadSafeBool.h</label>
+      </node>
+      <node id="13">
+        <label>Logging/LogMacros.h</label>
+      </node>
+      <node id="9">
+        <label>Misc/MonitoredProcess.h</label>
+      </node>
+      <node id="4">
+        <label>Templates/SharedPointer.h</label>
+      </node>
+      <node id="10">
+        <label>Tickable.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_u_e">UE</innernamespace>
+    <innernamespace refid="namespace_u_e_1_1_pixel_streaming2_servers">UE::PixelStreaming2Servers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_server_base_8h" kindref="compound">ServerBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ervers_2_private_2_logging_8h" kindref="compound">Logging.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_u_e_1_1_pixel_streaming2_servers" kindref="compound">UE::PixelStreaming2Servers</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1af113117c873bbe9d4dd14e88fcea03e4" kindref="member">FServerBase::Launch</ref>(FLaunchArgs&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" kindref="member">bPollUntilReady</ref><sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>.<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args_1a4134680c33cc5cee706e18e75bb7ac54" kindref="member">bPollUntilReady</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" kindref="member">bHasLaunched</ref><sp/>=<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a0c6c453a260eaa21aa27947de8a92e12" kindref="member">LaunchImpl</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">InLaunchArgs</ref>,<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" kindref="member">Endpoints</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" kindref="member">PollingStartedSeconds</ref><sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" kindref="member">bHasLaunched</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4f581dacbfef44ed03e52e53b8ce20be" kindref="member">FServerBase::IsReady</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" kindref="member">bIsReady</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a9040246635d5ed1f61bb1f657ab352f5" kindref="member">FServerBase::IsTickableWhenPaused</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="25"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a275977b6160d1bf1bc0b1419ef28ae8c" kindref="member">FServerBase::IsTickableInEditor</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1e2befbef2858c62ccbc8f6f3b0e4c73" kindref="member">FServerBase::IsAllowedToTick</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" kindref="member">bAllowedToTick</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8d4c844d394f285576fa44b1aedf3df1" kindref="member">FServerBase::Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>need<sp/>to<sp/>do<sp/>polling<sp/>if<sp/>polling<sp/>is<sp/>turned<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ac8b2096cc251b09bd481baaa6e31551b" kindref="member">bPollUntilReady</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>need<sp/>to<sp/>start<sp/>polling<sp/>if<sp/>we<sp/>have<sp/>not<sp/>launched<sp/>or<sp/>we<sp/>have<sp/>already<sp/>concluded<sp/>the<sp/>server<sp/>is<sp/>ready.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" kindref="member">bHasLaunched</ref><sp/>||<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" kindref="member">bIsReady</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SecondsElapsedPolling</ref><sp/>=<sp/>FPlatformTime::Seconds()<sp/>-<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a61378c0637824deaad78872f8e03d427" kindref="member">PollingStartedSeconds</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SecondsSinceReconnect</ref><sp/>=<sp/>FPlatformTime::Seconds()<sp/>-<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" kindref="member">LastReconnectionTimeSeconds</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SecondsElapsedPolling</ref><sp/>&lt;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref>.<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args_1aa3633954eef83c193526f933d60ea2c3" kindref="member">ReconnectionTimeoutSeconds</ref>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SecondsSinceReconnect</ref><sp/>&lt;<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref>.<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args_1a7fe541969dda92adb0183f7a13caceed" kindref="member">ReconnectionIntervalSeconds</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1acd87fae56bd2a8a4cdf82e8769584658" kindref="member">TestConnection</ref>())</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_LOG</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogPixelStreaming2Servers</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Connected<sp/>to<sp/>the<sp/>server.<sp/>Server<sp/>is<sp/>now<sp/>ready.<sp/><sp/>-<sp/>Broadcasting<sp/>OnReady<sp/>event...&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1ae599a205d4298d49e491b031fd126403" kindref="member">OnReady</ref>.Broadcast(<ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ae1a6652a975c2d8e5654956f768a59cb" kindref="member">Endpoints</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>need<sp/>to<sp/>poll<sp/>anymore<sp/>we<sp/>are<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" kindref="member">bAllowedToTick</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a4e373a197051e299a58e7ad266425296" kindref="member">bIsReady</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_LOG</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogPixelStreaming2Servers</ref>,<sp/>Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Polling<sp/>again<sp/>in<sp/>another<sp/>%.f<sp/>seconds<sp/>for<sp/>server<sp/>to<sp/>become<sp/>ready...&quot;</highlight><highlight class="normal">),<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref>.<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args_1a7fe541969dda92adb0183f7a13caceed" kindref="member">ReconnectionIntervalSeconds</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a742b1be39c1bf6dae48b72ccf329d52d" kindref="member">LastReconnectionTimeSeconds</ref><sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>need<sp/>to<sp/>poll<sp/>anymore<sp/>we<sp/>timed<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UE_LOG</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogPixelStreaming2Servers</ref>,<sp/>Error,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Server<sp/>was<sp/>not<sp/>ready<sp/>after<sp/>%.f<sp/>seconds,<sp/>polling<sp/>timed<sp/>out.&quot;</highlight><highlight class="normal">),<sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1ad2f8d8adad4eb9b980ba94f0297a692c" kindref="member">LaunchArgs</ref>.<ref refid="struct_u_e_1_1_pixel_streaming2_servers_1_1_f_launch_args_1aa3633954eef83c193526f933d60ea2c3" kindref="member">ReconnectionTimeoutSeconds</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1aa3d3696f49b887786a6b6f078c935b41" kindref="member">bAllowedToTick</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" kindref="member">bTimedOut</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server_1aa84bbaf9b736ee6405ec58b4a85f32c6" kindref="member">OnFailedToReady</ref>.Broadcast();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a753845c72f480b0bbb383c34612cd12f" kindref="member">FServerBase::HasLaunched</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a1f08e1eb65bdedbd7ed7b1adc821d9e3" kindref="member">bHasLaunched</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a596f4d84fe12a20eb2c5b782a6a27ba7" kindref="member">FServerBase::IsTimedOut</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_f_server_base_1a8f408ea528914a3fad10e92e0b71db9b" kindref="member">bTimedOut</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Servers/Private/ServerBase.cpp"/>
+  </compounddef>
+</doxygen>

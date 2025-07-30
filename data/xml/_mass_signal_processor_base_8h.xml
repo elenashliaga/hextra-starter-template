@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_mass_signal_processor_base_8h" kind="file" language="C++">
+    <compoundname>MassSignalProcessorBase.h</compoundname>
+    <includes local="yes">MassProcessor.h</includes>
+    <includes local="yes">MassEntityManager.h</includes>
+    <includes refid="_mass_signal_types_8h" local="yes">MassSignalTypes.h</includes>
+    <includes local="yes">Containers/StaticArray.h</includes>
+    <includes local="yes">Misc/SpinLock.h</includes>
+    <includes local="yes">MassSignalProcessorBase.generated.h</includes>
+    <includedby refid="_mass_signal_processor_base_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp</includedby>
+    <includedby refid="_mass_smart_object_registration_8h" local="yes">/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectRegistration.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h</label>
+        <link refid="_mass_signal_processor_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MassSignalTypes.h</label>
+        <link refid="_mass_signal_types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Containers/StaticArray.h</label>
+      </node>
+      <node id="5">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="6">
+        <label>Logging/LogMacros.h</label>
+      </node>
+      <node id="3">
+        <label>MassEntityManager.h</label>
+      </node>
+      <node id="2">
+        <label>MassProcessor.h</label>
+      </node>
+      <node id="9">
+        <label>MassSignalProcessorBase.generated.h</label>
+      </node>
+      <node id="8">
+        <label>Misc/SpinLock.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Private/MassSignalProcessorBase.cpp</label>
+        <link refid="_mass_signal_processor_base_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h</label>
+        <link refid="_mass_signal_processor_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Private/MassSmartObjectRegistration.cpp</label>
+        <link refid="_mass_smart_object_registration_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSmartObjects/Public/MassSmartObjectRegistration.h</label>
+        <link refid="_mass_smart_object_registration_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_mass_signal_processor_base" prot="public">UMassSignalProcessorBase</innerclass>
+    <innerclass refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range" prot="private">UMassSignalProcessorBase::FEntitySignalRange</innerclass>
+    <innerclass refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals" prot="private">UMassSignalProcessorBase::FFrameReceivedSignals</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>Epic<sp/>Games,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MassProcessor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MassEntityManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mass_signal_types_8h" kindref="compound">MassSignalTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/StaticArray.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/SpinLock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MassSignalProcessorBase.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCLASS</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">abstract</ref>)</highlight></codeline>
+<codeline lineno="19" refid="class_u_mass_signal_processor_base" refkind="compound"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MASSSIGNALS_API</ref><sp/><ref refid="class_u_mass_signal_processor_base" kindref="compound">UMassSignalProcessorBase</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">public</ref><sp/>UMassProcessor</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_mass_signal_processor_base" kindref="compound">UMassSignalProcessorBase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FObjectInitializer</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ObjectInitializer</ref><sp/>=<sp/>FObjectInitializer::Get());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BeginDestroy()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_u_mass_signal_processor_base_1ac0c1844395d291b738ee099e484c6383" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_processor_base_1ac0c1844395d291b738ee099e484c6383" kindref="member">ConfigureQueries</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_subsystem_1a99a3079a0a766ab1598e4bc9be3e6175" kindref="member">SignalEntities</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref>&amp;<sp/>EntityManager,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>,<sp/><ref refid="struct_f_mass_signal_name_lookup" kindref="compound">FMassSignalNameLookup</ref>&amp;<sp/>EntitySignals)<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PURE_VIRTUAL</ref>(UMassSignalProcessorBase::SignalEntities,<sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_u_mass_signal_processor_base_1ad2d448af13db9dfed156499fd4fd6a17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_processor_base_1ad2d448af13db9dfed156499fd4fd6a17" kindref="member">OnSignalReceived</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TConstArrayView&lt;FMassEntityHandle&gt;</ref><sp/>Entities);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Execute(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityManager</ref>&amp;<sp/>EntityManager,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassExecutionContext</ref>&amp;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Context</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_u_mass_signal_processor_base_1ada4eee7f992868e1a872e5172a146bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_mass_signal_processor_base_1ada4eee7f992868e1a872e5172a146bc6" kindref="member">ShouldAllowQueryBasedPruning</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">bRuntimeMode</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SubscribeToSignal(<ref refid="class_u_mass_signal_subsystem" kindref="compound">UMassSignalSubsystem</ref>&amp;<sp/>SignalSubsystem,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/>SignalName);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_u_mass_signal_processor_base_1acecc7e6600b82a57f42aaced8e3abb43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityQuery</ref><sp/><ref refid="class_u_mass_signal_processor_base_1acecc7e6600b82a57f42aaced8e3abb43" kindref="member">EntityQuery</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range" kindref="compound">FEntitySignalRange</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range_1afa8fd2b4c708073548c719978bf7b917" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref><sp/><ref refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range_1afa8fd2b4c708073548c719978bf7b917" kindref="member">SignalName</ref>;</highlight></codeline>
+<codeline lineno="75" refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range_1a8fff40449cbc00bc1990c94650e8b4a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>Begin<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76" refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range_1a7bb970a9fb6432d6ed0e6409d8ca62c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/><ref refid="_library_8h_1a3984936eef37a8ac0ba1cd004d546a4d" kindref="member">End</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77" refid="struct_u_mass_signal_processor_base_1_1_f_entity_signal_range_1a687ae6c86a5301b5e77a1ee87fc348bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bProcessed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals" kindref="compound">FFrameReceivedSignals</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83" refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals_1a4a44d71cc5f0ef2d3c5e7039203adeac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FEntitySignalRange&gt;</ref><sp/><ref refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals_1a4a44d71cc5f0ef2d3c5e7039203adeac" kindref="member">ReceivedSignalRanges</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals_1a1272deec07e8a546a8f2a6491d7eaf80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FMassEntityHandle&gt;</ref><sp/><ref refid="struct_u_mass_signal_processor_base_1_1_f_frame_received_signals_1a1272deec07e8a546a8f2a6491d7eaf80" kindref="member">SignaledEntities</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_u_mass_signal_processor_base_1a3e7f738bd49a3e80f0584ff54f52a6d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BuffersCount<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_u_mass_signal_processor_base_1a14348c4ad61acce3671234a6e4547840" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TStaticArray&lt;FFrameReceivedSignals, BuffersCount&gt;</ref><sp/><ref refid="class_u_mass_signal_processor_base_1a14348c4ad61acce3671234a6e4547840" kindref="member">FrameReceivedSignals</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="class_u_mass_signal_processor_base_1a611655d8791efe2f6ae0d71c939ffea6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref><sp/>CurrentFrameBufferIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_u_mass_signal_processor_base_1aba7b7a42baa6400cd4b9676c135ec9ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_mass_signal_name_lookup" kindref="compound">FMassSignalNameLookup</ref><sp/><ref refid="class_u_mass_signal_processor_base_1aba7b7a42baa6400cd4b9676c135ec9ef" kindref="member">SignalNameLookup</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_u_mass_signal_processor_base_1a228512d2e58672d656994f4cdd466ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray&lt;FName&gt;</ref><sp/><ref refid="class_u_mass_signal_processor_base_1a228512d2e58672d656994f4cdd466ee2" kindref="member">RegisteredSignals</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_u_mass_signal_processor_base_1a97933213c01f017c81fef8e8f1c3095a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>UE::FSpinLock<sp/><ref refid="class_u_mass_signal_processor_base_1a97933213c01f017c81fef8e8f1c3095a" kindref="member">ReceivedSignalLock</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassSignals/Public/MassSignalProcessorBase.h"/>
+  </compounddef>
+</doxygen>

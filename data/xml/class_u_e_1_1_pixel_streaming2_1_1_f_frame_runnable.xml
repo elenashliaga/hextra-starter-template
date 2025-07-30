@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable" kind="class" language="C++" prot="public">
+    <compoundname>UE::PixelStreaming2::FFrameRunnable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FRunnable</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">FSingleThreadRunnable</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a4c8442d3daf109b7cf7361761870ee3d" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; UE::PixelStreaming2::FFrameRunnable::bEnabled</definition>
+        <argsstring></argsstring>
+        <name>bEnabled</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::bEnabled</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="133" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ad4ca6bc304f2cc9ccd71bc0e0ea5f3d3" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; UE::PixelStreaming2::FFrameRunnable::bIsRunning</definition>
+        <argsstring></argsstring>
+        <name>bIsRunning</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::bIsRunning</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="134" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ac4e81ee993a0ab6e194a631e521ca6b7" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_source_group" kindref="compound">FVideoSourceGroup</ref> &gt;</type>
+        <definition>TWeakPtr&lt;FVideoSourceGroup&gt; UE::PixelStreaming2::FFrameRunnable::OuterVideoSourceGroup</definition>
+        <argsstring></argsstring>
+        <name>OuterVideoSourceGroup</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::OuterVideoSourceGroup</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="135" column="10" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a039110c494f540de7c72886ef3f5cecd" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+        <definition>uint64 UE::PixelStreaming2::FFrameRunnable::LastSubmitCycles</definition>
+        <argsstring></argsstring>
+        <name>LastSubmitCycles</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::LastSubmitCycles</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="136" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a1f3ad119001db01e58df9903051a46b2" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FEventRef</ref></type>
+        <definition>FEventRef UE::PixelStreaming2::FFrameRunnable::FrameEvent</definition>
+        <argsstring></argsstring>
+        <name>FrameEvent</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::FrameEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="139" column="11" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ad00d6965b90a9c77e7d5909a8c160a66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UE::PixelStreaming2::FFrameRunnable::FFrameRunnable</definition>
+        <argsstring>(TWeakPtr&lt; FVideoSourceGroup &gt; VideoSourceGroup, bool bEnabled)</argsstring>
+        <name>FFrameRunnable</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::FFrameRunnable</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_source_group" kindref="compound">FVideoSourceGroup</ref> &gt;</type>
+          <declname>VideoSourceGroup</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ae1c8e37f1b0112d9fa1a89fe57521776" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual UE::PixelStreaming2::FFrameRunnable::~FFrameRunnable</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FFrameRunnable</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::~FFrameRunnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="22" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a73804c2c9fb7aa52173a24026bf7f319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FFrameRunnable::SetEnabled</definition>
+        <argsstring>(bool bInEnabled)</argsstring>
+        <name>SetEnabled</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::SetEnabled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bInEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="24" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aa4c507ad8665b56b25b1fc8f991cbb78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool UE::PixelStreaming2::FFrameRunnable::Init</definition>
+        <argsstring>() override</argsstring>
+        <name>Init</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="35" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a727918d1eb1d52deeb3bb1b8c0ef5b99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>virtual uint32 UE::PixelStreaming2::FFrameRunnable::Run</definition>
+        <argsstring>() override</argsstring>
+        <name>Run</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::Run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="40" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="40" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a573297f04f40cc5856a6527d71767400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2::FFrameRunnable::Stop</definition>
+        <argsstring>() override</argsstring>
+        <name>Stop</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::Stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="91" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a0fb99820873b4765f3d0a410f0ae26e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2::FFrameRunnable::Exit</definition>
+        <argsstring>() override</argsstring>
+        <name>Exit</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::Exit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="98" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a430238936af63e23fa68d74daeb49861" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>FSingleThreadRunnable *</type>
+        <definition>virtual FSingleThreadRunnable * UE::PixelStreaming2::FFrameRunnable::GetSingleThreadInterface</definition>
+        <argsstring>() override</argsstring>
+        <name>GetSingleThreadInterface</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::GetSingleThreadInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="103" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aeaba4592bbe00eefe241dc98fa752004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void UE::PixelStreaming2::FFrameRunnable::Tick</definition>
+        <argsstring>() override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::Tick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note this function is required as part of <computeroutput>FSingleThreadRunnable</computeroutput> and only gets called when engine is run in single-threaded mode, so the logic is much less complex as this is not a case we particularly optimize for, a simple tick on an interval will be acceptable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="113" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="113" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aeb60bce208e487bc0bd32897a8d24988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UE::PixelStreaming2::FFrameRunnable::PushFrame</definition>
+        <argsstring>(TSharedPtr&lt; FVideoSourceGroup &gt; VideoSourceGroup)</argsstring>
+        <name>PushFrame</name>
+        <qualifiedname>UE::PixelStreaming2::FFrameRunnable::PushFrame</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_source_group" kindref="compound">FVideoSourceGroup</ref> &gt;</type>
+          <declname>VideoSourceGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="127" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="127" bodyend="131"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+      <node id="3">
+        <label>FSingleThreadRunnable</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FFrameRunnable</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+      <node id="3">
+        <label>FSingleThreadRunnable</label>
+      </node>
+      <node id="1">
+        <label>UE::PixelStreaming2::FFrameRunnable</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" line="13" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/VideoSourceGroup.cpp" bodystart="14" bodyend="140"/>
+    <listofallmembers>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a4c8442d3daf109b7cf7361761870ee3d" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>bEnabled</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ad4ca6bc304f2cc9ccd71bc0e0ea5f3d3" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>bIsRunning</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a0fb99820873b4765f3d0a410f0ae26e1" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>Exit</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ad00d6965b90a9c77e7d5909a8c160a66" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>FFrameRunnable</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a1f3ad119001db01e58df9903051a46b2" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>FrameEvent</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a430238936af63e23fa68d74daeb49861" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>GetSingleThreadInterface</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aa4c507ad8665b56b25b1fc8f991cbb78" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>Init</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a039110c494f540de7c72886ef3f5cecd" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>LastSubmitCycles</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ac4e81ee993a0ab6e194a631e521ca6b7" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>OuterVideoSourceGroup</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aeb60bce208e487bc0bd32897a8d24988" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>PushFrame</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a727918d1eb1d52deeb3bb1b8c0ef5b99" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>Run</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a73804c2c9fb7aa52173a24026bf7f319" prot="public" virt="non-virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>SetEnabled</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1a573297f04f40cc5856a6527d71767400" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>Stop</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1aeaba4592bbe00eefe241dc98fa752004" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>Tick</name></member>
+      <member refid="class_u_e_1_1_pixel_streaming2_1_1_f_frame_runnable_1ae1c8e37f1b0112d9fa1a89fe57521776" prot="public" virt="virtual"><scope>UE::PixelStreaming2::FFrameRunnable</scope><name>~FFrameRunnable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

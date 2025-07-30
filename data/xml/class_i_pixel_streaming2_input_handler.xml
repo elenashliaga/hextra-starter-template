@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_input_handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2InputHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IInputDevice</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler" prot="public" virt="non-virtual">UE::PixelStreaming2Input::FPixelStreaming2InputHandler</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_input_handler_8h" local="no">IPixelStreaming2InputHandler.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_i_pixel_streaming2_input_handler_1ac240c5df1b2633b8012d814a9293cb8e" prot="public" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> SourceId, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMemoryReader</ref> Message)&gt;</type>
+        <definition>using IPixelStreaming2InputHandler::MessageHandlerFn =  TFunction&lt;void(FString SourceId, FMemoryReader Message)&gt;</definition>
+        <argsstring></argsstring>
+        <name>MessageHandlerFn</name>
+        <qualifiedname>IPixelStreaming2InputHandler::MessageHandlerFn</qualifiedname>
+        <briefdescription>
+<para>The callback signature for handling a command sent to the data channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SourceId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source id of the sender of this message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full message in the form of a FMemoryReader. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="79" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_i_pixel_streaming2_input_handler_1afb52343d4d449d8341b62beafff2e751" prot="public" static="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> SourceId, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Descriptor</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CommandString</ref>)&gt;</type>
+        <definition>using IPixelStreaming2InputHandler::CommandHandlerFn =  TFunction&lt;void(FString SourceId, FString Descriptor, FString CommandString)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CommandHandlerFn</name>
+        <qualifiedname>IPixelStreaming2InputHandler::CommandHandlerFn</qualifiedname>
+        <briefdescription>
+<para>The callback signature for handling a command sent to the data channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SourceId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source id of the sender of this message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Descriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full descriptor of the commaand. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CommandString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relevant string parameters for the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="96" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_i_pixel_streaming2_input_handler_1a9861be2895e86803227c7728c33e2872" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnSendMessage</ref></type>
+        <definition>FOnSendMessage IPixelStreaming2InputHandler::OnSendMessage</definition>
+        <argsstring></argsstring>
+        <name>OnSendMessage</name>
+        <qualifiedname>IPixelStreaming2InputHandler::OnSendMessage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="149" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1ae1a64ce51764546972d20cb2005c93d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::OnMessage</definition>
+        <argsstring>(FString SourceId, TArray&lt; uint8 &gt; Buffer)=0</argsstring>
+        <name>OnMessage</name>
+        <qualifiedname>IPixelStreaming2InputHandler::OnMessage</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a67eb5876444c628c5457b058bc0d8a26">OnMessage</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>SourceId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref> &gt;</type>
+          <declname>Buffer</declname>
+        </param>
+        <briefdescription>
+<para>Handle the message from the WebRTC data channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SourceId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A source ID for this message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data channel message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="27" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a0ca98b6283ad7130329a7d28d56e55d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetTargetViewport</definition>
+        <argsstring>(TWeakPtr&lt; SViewport &gt; InTargetViewport)=0</argsstring>
+        <name>SetTargetViewport</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetTargetViewport</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a463ffc7dcd44e6d78afa808cf17af8fa">SetTargetViewport</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SViewport</ref> &gt;</type>
+          <declname>InTargetViewport</declname>
+        </param>
+        <briefdescription>
+<para>Set the viewport this input device is associated with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InTargetViewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The viewport to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a1cd2ee17b8da0aac3c1325897f8b94a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SViewport</ref> &gt;</type>
+        <definition>virtual TWeakPtr&lt; SViewport &gt; IPixelStreaming2InputHandler::GetTargetViewport</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTargetViewport</name>
+        <qualifiedname>IPixelStreaming2InputHandler::GetTargetViewport</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a9c9a6946e242008faadbc8a598cdcc21">GetTargetViewport</reimplementedby>
+        <briefdescription>
+<para>Get the viewport this input device is associated with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The viewport this input device is associated with </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a83eef62a9928ff89da3be2d30ad9dc42" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetTargetWindow</definition>
+        <argsstring>(TWeakPtr&lt; SWindow &gt; InTargetWindow)=0</argsstring>
+        <name>SetTargetWindow</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetTargetWindow</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1aac479082899de67d2fd86c7aa184f59f">SetTargetWindow</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SWindow</ref> &gt;</type>
+          <declname>InTargetWindow</declname>
+        </param>
+        <briefdescription>
+<para>Set the viewport this input device is associated with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InTargetWindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The viewport to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="45" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a56afae81b651126a56dad1cf18cebfaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SWindow</ref> &gt;</type>
+        <definition>virtual TWeakPtr&lt; SWindow &gt; IPixelStreaming2InputHandler::GetTargetWindow</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTargetWindow</name>
+        <qualifiedname>IPixelStreaming2InputHandler::GetTargetWindow</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1ae71c7ad3766676a768c1a1547a674b5c">GetTargetWindow</reimplementedby>
+        <briefdescription>
+<para>Get the viewport this input device is associated with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The viewport this input device is associated with </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a62d402c6a60e54d0d1976dd3220b6ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetTargetScreenRect</definition>
+        <argsstring>(TWeakPtr&lt; FIntRect &gt; InTargetScreenRect)=0</argsstring>
+        <name>SetTargetScreenRect</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetTargetScreenRect</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1ab514b6f79b855038025936aece0c030c">SetTargetScreenRect</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntRect</ref> &gt;</type>
+          <declname>InTargetScreenRect</declname>
+        </param>
+        <briefdescription>
+<para>Set the target screen rectangle for this streamer. This is used to when the streamer doesn&apos;t have a singular target window / viewport and as such we just use the manual scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InTargetScreenRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target screen rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="58" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a528e728a42419f838f39d34bafeebfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntRect</ref> &gt;</type>
+        <definition>virtual TWeakPtr&lt; FIntRect &gt; IPixelStreaming2InputHandler::GetTargetScreenRect</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTargetScreenRect</name>
+        <qualifiedname>IPixelStreaming2InputHandler::GetTargetScreenRect</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1ab2a6617e4329e153c3865f1d46848843">GetTargetScreenRect</reimplementedby>
+        <briefdescription>
+<para>Get the target screen rectangle for this streamer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The target screen rectangle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="64" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a807da2e61d4b63aa5876d578b949f1f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IPixelStreaming2InputHandler::IsFakingTouchEvents</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsFakingTouchEvents</name>
+        <qualifiedname>IPixelStreaming2InputHandler::IsFakingTouchEvents</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a7c852d8b0182ce4300401654830fcfe8">IsFakingTouchEvents</reimplementedby>
+        <briefdescription>
+<para>Set whether the input devices is faking touch events using keyboard and mouse this can be useful for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a87bedf0ba816c3afa0f545036f0112e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::RegisterMessageHandler</definition>
+        <argsstring>(const FString &amp;MessageType, const MessageHandlerFn &amp;Handler)=0</argsstring>
+        <name>RegisterMessageHandler</name>
+        <qualifiedname>IPixelStreaming2InputHandler::RegisterMessageHandler</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1aca185eb2b05b7537b37bbefa74aaed95">RegisterMessageHandler</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>MessageType</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_i_pixel_streaming2_input_handler_1ac240c5df1b2633b8012d814a9293cb8e" kindref="member">MessageHandlerFn</ref> &amp;</type>
+          <declname>Handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a function to be called whenever the specified message type is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MessageType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The human readable identifier for the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function called when this message type is received. This handler must take a single parameter (an FMemoryReader) and have a return type of void </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="87" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a73d1b349a591d0271df3e0cb0c2b357c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetCommandHandler</definition>
+        <argsstring>(const FString &amp;CommandName, const CommandHandlerFn &amp;Handler)=0</argsstring>
+        <name>SetCommandHandler</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetCommandHandler</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1aa03a08f7b6d7d9bab326fbd4f53e0b7e">SetCommandHandler</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>CommandName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_i_pixel_streaming2_input_handler_1afb52343d4d449d8341b62beafff2e751" kindref="member">CommandHandlerFn</ref> &amp;</type>
+          <declname>Handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a custom function to execute when command JSON is received over the data channel: &quot;{ type: &quot;Command&quot;, YourCommand: YourCommandValue }&quot;. Note: You can also override the default Pixel Streaming command handlers by setting handlers with the same name as those already used, e.g. &quot;Stat.FPS&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CommandName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the command to handle. This corresponds to the key in the JSON message and is used to identify the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function that will be executed when the command is received. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="104" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a983ddd1492e6c2582455f88ab3441b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetElevatedCheck</definition>
+        <argsstring>(const TFunction&lt; bool(FString)&gt; &amp;CheckFn)=0</argsstring>
+        <name>SetElevatedCheck</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetElevatedCheck</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1aaff4e831de4cda50663137999da03b25">SetElevatedCheck</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TFunction</ref>&lt; bool(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>)&gt; &amp;</type>
+          <declname>CheckFn</declname>
+        </param>
+        <briefdescription>
+<para>Some behaviours might want to be limited to a specific source or group of sources. This method sets a check function to test of a given source id is &quot;elevated&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CheckFn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that takes a SourceId and returns true if the source id is an elevated user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="111" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a6443642b18a62c1294f9cc6c8fd5129a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IPixelStreaming2InputHandler::IsElevated</definition>
+        <argsstring>(const FString &amp;Id)=0</argsstring>
+        <name>IsElevated</name>
+        <qualifiedname>IPixelStreaming2InputHandler::IsElevated</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a1a542b4d0b9a832857d97f5ee5124e70">IsElevated</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the given id has elevated priviledges. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if id is elevated and false is not elevated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="118" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1ad1dd154463e66da2c403782c175243a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_i_pixel_streaming2_input_handler_1ac240c5df1b2633b8012d814a9293cb8e" kindref="member">MessageHandlerFn</ref></type>
+        <definition>virtual MessageHandlerFn IPixelStreaming2InputHandler::FindMessageHandler</definition>
+        <argsstring>(const FString &amp;MessageType)=0</argsstring>
+        <name>FindMessageHandler</name>
+        <qualifiedname>IPixelStreaming2InputHandler::FindMessageHandler</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a241c92f8805c3b8ec963222bb5a1ca2d">FindMessageHandler</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>MessageType</declname>
+        </param>
+        <briefdescription>
+<para>Find the function to be called whenever the specified message type is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MessageType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The human readable identifier for the message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TFunction&lt;void(FString, FMemoryReader)&gt; The function called when this message type is received. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="126" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1abd2b923127e24132b5707bbe850d99a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_data_protocol" kindref="compound">IPixelStreaming2DataProtocol</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2DataProtocol &gt; IPixelStreaming2InputHandler::GetToStreamerProtocol</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetToStreamerProtocol</name>
+        <qualifiedname>IPixelStreaming2InputHandler::GetToStreamerProtocol</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a1e7ad0c1b205e1a3906d4bc857173d24">GetToStreamerProtocol</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The &quot;ToStreamer&quot; data protocol. This can be used to modify the protocol with custom data channel messages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="131" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a805bc650fceaa26b4c08c302c16267e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_data_protocol" kindref="compound">IPixelStreaming2DataProtocol</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2DataProtocol &gt; IPixelStreaming2InputHandler::GetFromStreamerProtocol</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetFromStreamerProtocol</name>
+        <qualifiedname>IPixelStreaming2InputHandler::GetFromStreamerProtocol</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1a1c748a6a816d2b1e9cfb931d31022782">GetFromStreamerProtocol</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The &quot;FromStreamer&quot; data protocol. This can be used to modify the protocol with custom data channel messages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="136" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1ac6a9bab0944f3d5e35c7896609b4e8c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2InputHandler::SetInputType</definition>
+        <argsstring>(EPixelStreaming2InputType InputType)=0</argsstring>
+        <name>SetInputType</name>
+        <qualifiedname>IPixelStreaming2InputHandler::SetInputType</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1aa819302fffa7f3781d2e12facbccf771">SetInputType</reimplementedby>
+        <param>
+          <type><ref refid="_pixel_streaming2_input_enums_8h_1a40ea225ff912cf2257bcf789de073287" kindref="member">EPixelStreaming2InputType</ref></type>
+          <declname>InputType</declname>
+        </param>
+        <briefdescription>
+<para>Set the input handlers type. This controls whether input is routed to widgets or windows. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InputType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input routing type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="142" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_handler_1a07e3601b15271b8e2c884d6f0a734b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IPixelStreaming2InputHandler::DECLARE_EVENT_TwoParams</definition>
+        <argsstring>(IPixelStreaming2InputHandler, FOnSendMessage, FString, FMemoryReader)</argsstring>
+        <name>DECLARE_EVENT_TwoParams</name>
+        <qualifiedname>IPixelStreaming2InputHandler::DECLARE_EVENT_TwoParams</qualifiedname>
+        <param>
+          <type><ref refid="class_i_pixel_streaming2_input_handler" kindref="compound">IPixelStreaming2InputHandler</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnSendMessage</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMemoryReader</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="144" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_i_pixel_streaming2_input_handler" kindref="compound">IPixelStreaming2InputHandler</ref>, used to handle input from a remote peer and pass it to <ref refid="namespace_u_e" kindref="compound">UE</ref> accordingly. Setting the target viewport allows for scaling of input from browser to application, and setting the target window ensure that if windows are tiled (eg editor) that the streamed input only affect the target window. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputDevice</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2InputHandler</label>
+        <link refid="class_i_pixel_streaming2_input_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UE::PixelStreaming2Input::FPixelStreaming2InputHandler</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputDevice</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2InputHandler</label>
+        <link refid="class_i_pixel_streaming2_input_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputHandler.h" bodystart="20" bodyend="150"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_input_handler_1afb52343d4d449d8341b62beafff2e751" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputHandler</scope><name>CommandHandlerFn</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a07e3601b15271b8e2c884d6f0a734b57" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputHandler</scope><name>DECLARE_EVENT_TwoParams</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1ad1dd154463e66da2c403782c175243a0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>FindMessageHandler</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a805bc650fceaa26b4c08c302c16267e6" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>GetFromStreamerProtocol</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a528e728a42419f838f39d34bafeebfa3" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>GetTargetScreenRect</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a1cd2ee17b8da0aac3c1325897f8b94a0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>GetTargetViewport</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a56afae81b651126a56dad1cf18cebfaf" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>GetTargetWindow</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1abd2b923127e24132b5707bbe850d99a0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>GetToStreamerProtocol</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a6443642b18a62c1294f9cc6c8fd5129a" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>IsElevated</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a807da2e61d4b63aa5876d578b949f1f4" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>IsFakingTouchEvents</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1ac240c5df1b2633b8012d814a9293cb8e" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputHandler</scope><name>MessageHandlerFn</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1ae1a64ce51764546972d20cb2005c93d1" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>OnMessage</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a9861be2895e86803227c7728c33e2872" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputHandler</scope><name>OnSendMessage</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a87bedf0ba816c3afa0f545036f0112e5" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>RegisterMessageHandler</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a73d1b349a591d0271df3e0cb0c2b357c" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetCommandHandler</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a983ddd1492e6c2582455f88ab3441b45" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetElevatedCheck</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1ac6a9bab0944f3d5e35c7896609b4e8c6" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetInputType</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a62d402c6a60e54d0d1976dd3220b6ed0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetTargetScreenRect</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a0ca98b6283ad7130329a7d28d56e55d9" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetTargetViewport</name></member>
+      <member refid="class_i_pixel_streaming2_input_handler_1a83eef62a9928ff89da3be2d30ad9dc42" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputHandler</scope><name>SetTargetWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

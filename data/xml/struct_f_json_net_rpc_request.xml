@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_json_net_rpc_request" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>FJsonNetRpcRequest</compoundname>
+    <basecompoundref refid="struct_t_json_net_rpc_message" prot="public" virt="non-virtual">TJsonNetRpcMessage&lt; FJsonNetRpcRequest &gt;</basecompoundref>
+    <includes refid="_json_net_rpc_request_8h" local="no">JsonNetRpcRequest.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="struct_f_json_net_rpc_request_1a232a174f232068843d0abc274cfea297" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString FJsonNetRpcRequest::MethodFieldName</definition>
+        <argsstring></argsstring>
+        <name>MethodFieldName</name>
+        <qualifiedname>FJsonNetRpcRequest::MethodFieldName</qualifiedname>
+        <initializer>{ TEXT(&quot;method&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="118" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_json_net_rpc_request_1ae107d27a4f9d1870794085681ca84a66" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString FJsonNetRpcRequest::ParamsFieldName</definition>
+        <argsstring></argsstring>
+        <name>ParamsFieldName</name>
+        <qualifiedname>FJsonNetRpcRequest::ParamsFieldName</qualifiedname>
+        <initializer>{ TEXT(&quot;params&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="119" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_json_net_rpc_request_1a71e56a072e66e7421f1a2355b1d9ff08" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>const FString FJsonNetRpcRequest::ParamPrefix</definition>
+        <argsstring></argsstring>
+        <name>ParamPrefix</name>
+        <qualifiedname>FJsonNetRpcRequest::ParamPrefix</qualifiedname>
+        <initializer>{ <ref refid="struct_f_json_net_rpc_request_1ae107d27a4f9d1870794085681ca84a66" kindref="member">ParamsFieldName</ref> + <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NestingSeparator</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="120" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a25d1bbf63b2d708bacb35542007fd578" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FJsonNetRpcRequest::FJsonNetRpcRequest</definition>
+        <argsstring>(FString Method={}, TSharedPtr&lt; IJsonNetRpcTransport &gt; Recipient=nullptr, FGuid Id=FGuid::NewGuid())</argsstring>
+        <name>FJsonNetRpcRequest</name>
+        <qualifiedname>FJsonNetRpcRequest::FJsonNetRpcRequest</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Method</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+          <declname>Recipient</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+          <declname>Id</declname>
+          <defval>FGuid::NewGuid()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор запроса от метода, получателя и идентификатора. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="33" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1abf92085b1aa2fc94a7684f11a5b09443" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_json_net_rpc_object_8h_1abeec7783b4fa0957538f65a319b489a6" kindref="member">TJsonNetRpcExpectedField</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TJsonNetRpcExpectedField&lt; FString &gt; FJsonNetRpcRequest::GetMethod</definition>
+        <argsstring>() const noexcept UE_LIFETIMEBOUND</argsstring>
+        <name>GetMethod</name>
+        <qualifiedname>FJsonNetRpcRequest::GetMethod</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название метода, если оно установлено. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="39" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a30ba0c17425aaea99ae751b10d8dc763" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcRequest::SetMethod</definition>
+        <argsstring>(FString Method) &amp;noexcept</argsstring>
+        <name>SetMethod</name>
+        <qualifiedname>FJsonNetRpcRequest::SetMethod</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название метода. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="44" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1aea57763dbf1d9347f48b3f0e980e915e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref></type>
+        <definition>FJsonNetRpcRequest FJsonNetRpcRequest::WithMethod</definition>
+        <argsstring>(FString Method) noexcept</argsstring>
+        <name>WithMethod</name>
+        <qualifiedname>FJsonNetRpcRequest::WithMethod</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает новый запрос с заданным названием метода.</para>
+<para><simplesect kind="note"><para>Предыдущий запрос инвалидируется. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="52" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a07c793d1d47eea6207d30ed2545710b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_json_net_rpc_object_8h_1abeec7783b4fa0957538f65a319b489a6" kindref="member">TJsonNetRpcExpectedField</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &gt;</type>
+        <definition>TJsonNetRpcExpectedField&lt; T &gt; FJsonNetRpcRequest::GetParam</definition>
+        <argsstring>(FStringView Name) const</argsstring>
+        <name>GetParam</name>
+        <qualifiedname>FJsonNetRpcRequest::GetParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStringView</ref></type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает значение параметра, если оно установлено и корректно. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="59" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a0a376c970a1f8e242247d112b4be24d9" prot="public" static="no" const="no" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcRequest::SetParam</definition>
+        <argsstring>(FString Name, T &amp;&amp;Value) &amp;</argsstring>
+        <name>SetParam</name>
+        <qualifiedname>FJsonNetRpcRequest::SetParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &amp;&amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает значение параметра.</para>
+<para>Если значение параметра было установлено ранее, перезаписывает его.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип значения параметра</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название параметра </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение параметра </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="73" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1af27ab6d64f68b29b86972c7064aa76eb" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcRequest::UnsetParam</definition>
+        <argsstring>(FStringView Name) &amp;</argsstring>
+        <name>UnsetParam</name>
+        <qualifiedname>FJsonNetRpcRequest::UnsetParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStringView</ref></type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет значение параметра. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="78" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a931e12329a566d39943b6a59efe26c28" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FJsonNetRpcRequest::UnsetParams</definition>
+        <argsstring>() &amp;</argsstring>
+        <name>UnsetParams</name>
+        <qualifiedname>FJsonNetRpcRequest::UnsetParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет параметры. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="83" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref></type>
+        <definition>FJsonNetRpcRequest FJsonNetRpcRequest::WithParam</definition>
+        <argsstring>(FString Name, T &amp;&amp;Value)</argsstring>
+        <name>WithParam</name>
+        <qualifiedname>FJsonNetRpcRequest::WithParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">T</ref> &amp;&amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает новый запрос с заданным значением параметра.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип значения параметра</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название параметра </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение параметра</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Предыдущий запрос инвалидируется. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="97" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a9c216dd0dd35b9b58e0562476882acf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref></type>
+        <definition>FJsonNetRpcRequest FJsonNetRpcRequest::WithoutParam</definition>
+        <argsstring>(FStringView Name)</argsstring>
+        <name>WithoutParam</name>
+        <qualifiedname>FJsonNetRpcRequest::WithoutParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FStringView</ref></type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает новый запрос без данного параметра.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название параметра</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Предыдущий запрос инвалидируется. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="107" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a05be0cb3b616677c8e0ab64c589bc06f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref></type>
+        <definition>FJsonNetRpcRequest FJsonNetRpcRequest::WithoutParams</definition>
+        <argsstring>()</argsstring>
+        <name>WithoutParams</name>
+        <qualifiedname>FJsonNetRpcRequest::WithoutParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает новый запрос без параметров.</para>
+<para><simplesect kind="note"><para>Предыдущий запрос инвалидируется. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="115" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.inl" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_json_net_rpc_request_1a5909cf0d0776c2ba96218121cb0a49d3" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>TJsonNetRpcMessage&lt; M &gt;::TJsonNetRpcMessage</definition>
+        <argsstring>(TSharedPtr&lt; IJsonNetRpcTransport &gt; Recipient=nullptr, FGuid Id=FGuid::NewGuid()) noexcept</argsstring>
+        <name>TJsonNetRpcMessage</name>
+        <qualifiedname>FJsonNetRpcRequest::TJsonNetRpcMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="struct_i_json_net_rpc_transport" kindref="compound">IJsonNetRpcTransport</ref> &gt;</type>
+          <declname>Recipient</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGuid</ref></type>
+          <declname>Id</declname>
+          <defval>FGuid::NewGuid()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор сообщения от получателя и идентификатора. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="27" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcMessage.inl" bodystart="6" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Запрос JSON-RPC.</para>
+<para>Корректный запрос должен содержать в себе метод и получателя. Запрос также может содержать параметры.</para>
+<sect1 id="struct_f_json_net_rpc_round_tripper_1Примеры">
+<title>Примеры</title>
+<para>Запрос с параметрами:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref>{<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;rollDice&quot;</highlight><highlight class="normal">)<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="struct_t_json_net_rpc_message_1aa0c159beb53ca5a51359859e6b31bd01" kindref="member">To</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Recipient</ref>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" kindref="member">WithParam</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;isLucky&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" kindref="member">WithParam</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;numDices&quot;</highlight><highlight class="normal">),<sp/>2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" kindref="member">WithParam</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;messageOnWin&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Congratulations!&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" kindref="member">WithParam</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;messageOnDefeat&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Too<sp/>bad.&quot;</highlight><highlight class="normal">))</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>FJsonNetRpcObject</label>
+      </node>
+      <node id="1">
+        <label>FJsonNetRpcRequest</label>
+        <link refid="struct_f_json_net_rpc_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TJsonNetRpcMessage&lt; FJsonNetRpcRequest &gt;</label>
+        <link refid="struct_t_json_net_rpc_message"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FJsonNetRpcObject</label>
+      </node>
+      <node id="1">
+        <label>FJsonNetRpcRequest</label>
+        <link refid="struct_f_json_net_rpc_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TJsonNetRpcMessage&lt; FJsonNetRpcRequest &gt;</label>
+        <link refid="struct_t_json_net_rpc_message"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" line="25" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcRequest.h" bodystart="26" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_f_json_net_rpc_request_1a25d1bbf63b2d708bacb35542007fd578" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>FJsonNetRpcRequest</name></member>
+      <member refid="struct_f_json_net_rpc_request_1abf92085b1aa2fc94a7684f11a5b09443" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>GetMethod</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a07c793d1d47eea6207d30ed2545710b4" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>GetParam</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a478e305caab51586f14605ce7c39da44" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>GetRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1ae2b4acac17c26ebcc5c1a7e1b94880fd" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>GetRecipient</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a839bfa6ceed1956712b75effb785157f" prot="protected" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>MessageRecipient</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a232a174f232068843d0abc274cfea297" prot="private" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>MethodFieldName</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a71e56a072e66e7421f1a2355b1d9ff08" prot="private" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>ParamPrefix</name></member>
+      <member refid="struct_f_json_net_rpc_request_1ae107d27a4f9d1870794085681ca84a66" prot="private" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>ParamsFieldName</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a341afd1cd8ecad5033b9ad313a55d76d" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>Send</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a30ba0c17425aaea99ae751b10d8dc763" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>SetMethod</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a0a376c970a1f8e242247d112b4be24d9" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>SetParam</name></member>
+      <member refid="struct_t_json_net_rpc_message_1aac7af172fcf7351dd5bea2af76430e64" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>SetRecipient</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a5909cf0d0776c2ba96218121cb0a49d3" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>TJsonNetRpcMessage</name></member>
+      <member refid="struct_t_json_net_rpc_message_1aa0c159beb53ca5a51359859e6b31bd01" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>To</name></member>
+      <member refid="struct_f_json_net_rpc_request_1af27ab6d64f68b29b86972c7064aa76eb" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>UnsetParam</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a931e12329a566d39943b6a59efe26c28" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>UnsetParams</name></member>
+      <member refid="struct_t_json_net_rpc_message_1a5618b98f7884c8294eb6a505e2872bd9" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>UnsetRecipient</name></member>
+      <member refid="struct_f_json_net_rpc_request_1aea57763dbf1d9347f48b3f0e980e915e" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>WithMethod</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a9c216dd0dd35b9b58e0562476882acf1" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>WithoutParam</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a05be0cb3b616677c8e0ab64c589bc06f" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>WithoutParams</name></member>
+      <member refid="struct_f_json_net_rpc_request_1a3a8864a5d1fd0398f944ca7b99b532c2" prot="public" virt="non-virtual"><scope>FJsonNetRpcRequest</scope><name>WithParam</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

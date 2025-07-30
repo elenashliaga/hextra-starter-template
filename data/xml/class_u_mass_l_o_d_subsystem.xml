@@ -1,0 +1,755 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_mass_l_o_d_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>UMassLODSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UMassSubsystemBase</basecompoundref>
+    <includes refid="_mass_l_o_d_subsystem_8h" local="no">MassLODSubsystem.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a264b587e311ff57153b0978652262568" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UMassLODSubsystem::bGatherPlayerControllers</definition>
+        <argsstring></argsstring>
+        <name>bGatherPlayerControllers</name>
+        <qualifiedname>UMassLODSubsystem::bGatherPlayerControllers</qualifiedname>
+        <bitfield> 1 = true</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, all PlayerControllers will be gathered as viewers for LOD calculations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="163" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a5f04e7d62086d16eb50bf09e59e3afcd" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UMassLODSubsystem::bGatherStreamingSources</definition>
+        <argsstring></argsstring>
+        <name>bGatherStreamingSources</name>
+        <qualifiedname>UMassLODSubsystem::bGatherStreamingSources</qualifiedname>
+        <bitfield> 1 = true</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, all streaming sources will be gathered as viewers for LOD calculations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="167" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a28eed291752812c9746d4c23df1a6b79" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UMassLODSubsystem::bAllowNonPlayerViwerActors</definition>
+        <argsstring></argsstring>
+        <name>bAllowNonPlayerViwerActors</name>
+        <qualifiedname>UMassLODSubsystem::bAllowNonPlayerViwerActors</qualifiedname>
+        <bitfield> 1 = true</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether using non-player actors as LOD Viewers is supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="171" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1ac97a25b6cc06703525d11ef95a806e95" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref></type>
+        <definition>uint8 UMassLODSubsystem::bUsePlayerPawnLocationInsteadOfCamera</definition>
+        <argsstring></argsstring>
+        <name>bUsePlayerPawnLocationInsteadOfCamera</name>
+        <qualifiedname>UMassLODSubsystem::bUsePlayerPawnLocationInsteadOfCamera</qualifiedname>
+        <bitfield> 1 = false</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to true will prefer to use Player-owned Pawn&apos;s location and rotation over Player&apos;s camera as the viewer&apos;s location and rotation. Note that this works best with distance-only LOD and can introduce subtle inaccuracies if Frustum-based LOD is being used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="179" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1ae073be0481a667fb8e466e34b57e2e05" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt;</type>
+        <definition>TArray&lt;FViewerInfo&gt; UMassLODSubsystem::Viewers</definition>
+        <argsstring></argsstring>
+        <name>Viewers</name>
+        <qualifiedname>UMassLODSubsystem::Viewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual array of viewer&apos;s information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="187" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a2bfd2ab9acf1e966ced4eb5b78387c8d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref>, <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &gt;</type>
+        <definition>TMap&lt;uint32, FMassViewerHandle&gt; UMassLODSubsystem::ViewerMap</definition>
+        <argsstring></argsstring>
+        <name>ViewerMap</name>
+        <qualifiedname>UMassLODSubsystem::ViewerMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The map that do reverse look up to get ViewerHandle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="191" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a2fa77652d1cf7afeb6bac893043b1bdd" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; AActor &gt; &gt;</type>
+        <definition>TArray&lt;TObjectPtr&lt;AActor&gt; &gt; UMassLODSubsystem::RegisteredActorViewers</definition>
+        <argsstring></argsstring>
+        <name>RegisteredActorViewers</name>
+        <qualifiedname>UMassLODSubsystem::RegisteredActorViewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="194" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a25387a4cb047b5b7bf4360edca139e02" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint64</ref></type>
+        <definition>uint64 UMassLODSubsystem::LastSynchronizedFrame</definition>
+        <argsstring></argsstring>
+        <name>LastSynchronizedFrame</name>
+        <qualifiedname>UMassLODSubsystem::LastSynchronizedFrame</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="196" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a9f31b1729d8b3ecaf1c66c3a1707358a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 UMassLODSubsystem::ViewerSerialNumberCounter</definition>
+        <argsstring></argsstring>
+        <name>ViewerSerialNumberCounter</name>
+        <qualifiedname>UMassLODSubsystem::ViewerSerialNumberCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Viewer serial number counter </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="199" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a7a3b07b4686f648b1ba1fe35730fc729" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TArray&lt;int32&gt; UMassLODSubsystem::ViewerFreeIndices</definition>
+        <argsstring></argsstring>
+        <name>ViewerFreeIndices</name>
+        <qualifiedname>UMassLODSubsystem::ViewerFreeIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free list of indices in the sparse viewer array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="207" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a427087b0ad04badcba1b876955267845" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerAdded</ref></type>
+        <definition>FOnViewerAdded UMassLODSubsystem::OnViewerAddedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnViewerAddedDelegate</name>
+        <qualifiedname>UMassLODSubsystem::OnViewerAddedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegates to notify anyone who needs to know about viewer changes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="210" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_mass_l_o_d_subsystem_1a8f0fa105c01dfb6e07de34b3385eea45" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerRemoved</ref></type>
+        <definition>FOnViewerRemoved UMassLODSubsystem::OnViewerRemovedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnViewerRemovedDelegate</name>
+        <qualifiedname>UMassLODSubsystem::OnViewerRemovedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="211" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a45ccc20214cb5afc877efe82d87b7d4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassLODSubsystem::DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FOnViewerAdded, const FViewerInfo &amp;ViewerInfo)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <qualifiedname>UMassLODSubsystem::DECLARE_MULTICAST_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerAdded</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &amp;</type>
+          <declname>ViewerInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1aae87aba29fc7714cdef9f6c27143e66d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UMassLODSubsystem::DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FOnViewerRemoved, const FViewerInfo &amp;ViewerInfo)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <qualifiedname>UMassLODSubsystem::DECLARE_MULTICAST_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerRemoved</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &amp;</type>
+          <declname>ViewerInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a6218beef40f642c6449908c89d9d832e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::RemoveViewerInternal</definition>
+        <argsstring>(const FMassViewerHandle &amp;ViewerHandle)</argsstring>
+        <name>RemoveViewerInternal</name>
+        <qualifiedname>UMassLODSubsystem::RemoveViewerInternal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &amp;</type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a viewer to the list and send notification about removal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="183" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="584" bodyend="601"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1aa71e8deb6f01b3fec049f4ded6ffb173" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassLODSubsystem::IsValidViewer</definition>
+        <argsstring>(const FMassViewerHandle &amp;ViewerHandle) const</argsstring>
+        <name>IsValidViewer</name>
+        <qualifiedname>UMassLODSubsystem::IsValidViewer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &amp;</type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks the validity of a viewer handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="85" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a3e601f67420abc196765614ef9c18237" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 UMassLODSubsystem::GetValidViewerIdx</definition>
+        <argsstring>(const FMassViewerHandle &amp;ViewerHandle) const</argsstring>
+        <name>GetValidViewerIdx</name>
+        <qualifiedname>UMassLODSubsystem::GetValidViewerIdx</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &amp;</type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the index of the viewer if valid, otherwise INDEX_NONE is return </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="88" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="156" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a0a6768ac209e6126960ef30b9acd3f8c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; FViewerInfo &gt; &amp; UMassLODSubsystem::GetViewers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewers</name>
+        <qualifiedname>UMassLODSubsystem::GetViewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the array of viewers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="91" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a503b0a6f8d320cd9005ef4dad65cfbe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_viewer_info" kindref="compound">FViewerInfo</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; FViewerInfo &gt; &amp; UMassLODSubsystem::GetSynchronizedViewers</definition>
+        <argsstring>()</argsstring>
+        <name>GetSynchronizedViewers</name>
+        <qualifiedname>UMassLODSubsystem::GetSynchronizedViewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronize the viewers if not done this frame and returns the updated array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="94" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1ae30768039d5d28b56c65875fc3af0e4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref></type>
+        <definition>FMassViewerHandle UMassLODSubsystem::GetViewerHandleFromActor</definition>
+        <argsstring>(const AActor &amp;Actor) const</argsstring>
+        <name>GetViewerHandleFromActor</name>
+        <qualifiedname>UMassLODSubsystem::GetViewerHandleFromActor</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor &amp;</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns viewer handle from the PlayerController pointer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="97" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="181" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1aaa3f409406a03b6ecb0cbf760e109450" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref></type>
+        <definition>FMassViewerHandle UMassLODSubsystem::GetViewerHandleFromStreamingSource</definition>
+        <argsstring>(const FName StreamingSourceName) const</argsstring>
+        <name>GetViewerHandleFromStreamingSource</name>
+        <qualifiedname>UMassLODSubsystem::GetViewerHandleFromStreamingSource</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StreamingSourceName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns viewer handle from the streaming source name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="100" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a42e1b1cf76a297ae757ec5ad3411023a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>APlayerController *</type>
+        <definition>APlayerController * UMassLODSubsystem::GetPlayerControllerFromViewerHandle</definition>
+        <argsstring>(const FMassViewerHandle &amp;ViewerHandle) const</argsstring>
+        <name>GetPlayerControllerFromViewerHandle</name>
+        <qualifiedname>UMassLODSubsystem::GetPlayerControllerFromViewerHandle</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &amp;</type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns PlayerController pointer from the viewer handle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="103" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="194" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a8f4f6b5436a90903dd30031cedf9bd6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerAdded</ref> &amp;</type>
+        <definition>FOnViewerAdded &amp; UMassLODSubsystem::GetOnViewerAddedDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>GetOnViewerAddedDelegate</name>
+        <qualifiedname>UMassLODSubsystem::GetOnViewerAddedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the delegate called when new viewer are added to the list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="106" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a529c931431b41d1bc6babb3f1e0c4da4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FOnViewerRemoved</ref> &amp;</type>
+        <definition>FOnViewerRemoved &amp; UMassLODSubsystem::GetOnViewerRemovedDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>GetOnViewerRemovedDelegate</name>
+        <qualifiedname>UMassLODSubsystem::GetOnViewerRemovedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the delegate called when viewer are removed from the list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="109" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a968d95dcd2cb9c3dc847e4302dd10ecc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::RegisterActorViewer</definition>
+        <argsstring>(AActor &amp;ActorViewer)</argsstring>
+        <name>RegisterActorViewer</name>
+        <qualifiedname>UMassLODSubsystem::RegisterActorViewer</qualifiedname>
+        <param>
+          <type>AActor &amp;</type>
+          <declname>ActorViewer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="111" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="616" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1aa65ccc186d0de8934a9c539c64f2768c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::UnregisterActorViewer</definition>
+        <argsstring>(AActor &amp;ActorViewer)</argsstring>
+        <name>UnregisterActorViewer</name>
+        <qualifiedname>UMassLODSubsystem::UnregisterActorViewer</qualifiedname>
+        <param>
+          <type>AActor &amp;</type>
+          <declname>ActorViewer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="112" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="621" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1ada26576357f4ca267cfde2b3b6136f28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMassLODSubsystem::IsUsingPlayerPawnLocationInsteadOfCamera</definition>
+        <argsstring>() const</argsstring>
+        <name>IsUsingPlayerPawnLocationInsteadOfCamera</name>
+        <qualifiedname>UMassLODSubsystem::IsUsingPlayerPawnLocationInsteadOfCamera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="114" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a1f9e8eeea117ac768eb6de640d898108" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref></type>
+        <definition>FMassViewerHandle UMassLODSubsystem::GetViewerHandleFromPlayerController</definition>
+        <argsstring>(const APlayerController *PlayerController) const</argsstring>
+        <name>GetViewerHandleFromPlayerController</name>
+        <qualifiedname>UMassLODSubsystem::GetViewerHandleFromPlayerController</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> APlayerController *</type>
+          <declname>PlayerController</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="215" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="633" bodyend="638"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1ac70e9a9518f89459e8cf4db61cc3b1be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMassLODSubsystem::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSubsystemCollectionBase</ref> &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="124" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="108" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1af44aafa9378971607e4953ee6042a713" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMassLODSubsystem::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="125" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="133" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a2ac3fc5379b63f883965ed8c5eaa2c8a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::OnPrePhysicsPhaseStarted</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>OnPrePhysicsPhaseStarted</name>
+        <qualifiedname>UMassLODSubsystem::OnPrePhysicsPhaseStarted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called at the start of the PrePhysics mass processing phase and calls SynchronizeViewers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="129" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a0de1ff5c82958d4dc3c49b926098d2de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::SynchronizeViewers</definition>
+        <argsstring>()</argsstring>
+        <name>SynchronizeViewers</name>
+        <qualifiedname>UMassLODSubsystem::SynchronizeViewers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronizes the viewers from the engine PlayerController list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="132" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="200" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a485c04e1e54f133cd54d329f88049702" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::AddViewer</definition>
+        <argsstring>(APlayerController *PlayerController, FName StreamingSourceName=NAME_None)</argsstring>
+        <name>AddViewer</name>
+        <qualifiedname>UMassLODSubsystem::AddViewer</qualifiedname>
+        <param>
+          <type>APlayerController *</type>
+          <declname>PlayerController</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StreamingSourceName</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">NAME_None</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="135" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="410" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a613e4a31a3744478b5d1bcdacd830f30" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::AddPlayerViewer</definition>
+        <argsstring>(APlayerController &amp;PlayerController)</argsstring>
+        <name>AddPlayerViewer</name>
+        <qualifiedname>UMassLODSubsystem::AddPlayerViewer</qualifiedname>
+        <param>
+          <type>APlayerController &amp;</type>
+          <declname>PlayerController</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds the given player as a viewer to the list and sends notification about addition </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="138" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="422" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1ac62c8e3bcaa3a9da3df477b25d974195" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::AddStreamingSourceViewer</definition>
+        <argsstring>(const FName StreamingSourceName)</argsstring>
+        <name>AddStreamingSourceViewer</name>
+        <qualifiedname>UMassLODSubsystem::AddStreamingSourceViewer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FName</ref></type>
+          <declname>StreamingSourceName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds the given streaming source as a viewer to the list and sends notification about addition </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="141" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="480" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a1d9ebe6af4ce8c9db7183ebae635aefa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::AddActorViewer</definition>
+        <argsstring>(AActor &amp;ActorViewer)</argsstring>
+        <name>AddActorViewer</name>
+        <qualifiedname>UMassLODSubsystem::AddActorViewer</qualifiedname>
+        <param>
+          <type>AActor &amp;</type>
+          <declname>ActorViewer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="143" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="502" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a4928c835fd42e9792f068555fce085a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::RemoveViewer</definition>
+        <argsstring>(const FMassViewerHandle &amp;ViewerHandle)</argsstring>
+        <name>RemoveViewer</name>
+        <qualifiedname>UMassLODSubsystem::RemoveViewer</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_viewer_handle" kindref="compound">FMassViewerHandle</ref> &amp;</type>
+          <declname>ViewerHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a viewer to the list and send notification about removal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="151" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="559" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1ac78d2144ac353fd848d7ffd58bd9f2b5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 UMassLODSubsystem::GetNextViewerSerialNumber</definition>
+        <argsstring>()</argsstring>
+        <name>GetNextViewerSerialNumber</name>
+        <qualifiedname>UMassLODSubsystem::GetNextViewerSerialNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the next new viewer serial number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="154" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_mass_l_o_d_subsystem_1a7e46600461f40d4353541f5bab92b27c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UMassLODSubsystem::OnPlayerControllerEndPlay</definition>
+        <argsstring>(AActor *Actor, EEndPlayReason::Type EndPlayReason)</argsstring>
+        <name>OnPlayerControllerEndPlay</name>
+        <qualifiedname>UMassLODSubsystem::OnPlayerControllerEndPlay</qualifiedname>
+        <param>
+          <type>AActor *</type>
+          <declname>Actor</declname>
+        </param>
+        <param>
+          <type>EEndPlayReason::Type</type>
+          <declname>EndPlayReason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Player controller EndPlay callback, removing viewers from the list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="158" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Private/MassLODSubsystem.cpp" bodystart="603" bodyend="614"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UMassLODSubsystem</label>
+        <link refid="class_u_mass_l_o_d_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UMassLODSubsystem</label>
+        <link refid="class_u_mass_l_o_d_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UMassSubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" line="76" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassLOD/Public/MassLODSubsystem.h" bodystart="77" bodyend="216"/>
+    <listofallmembers>
+      <member refid="class_u_mass_l_o_d_subsystem_1a1d9ebe6af4ce8c9db7183ebae635aefa" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>AddActorViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a613e4a31a3744478b5d1bcdacd830f30" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>AddPlayerViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ac62c8e3bcaa3a9da3df477b25d974195" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>AddStreamingSourceViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a485c04e1e54f133cd54d329f88049702" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>AddViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a28eed291752812c9746d4c23df1a6b79" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>bAllowNonPlayerViwerActors</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a264b587e311ff57153b0978652262568" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>bGatherPlayerControllers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a5f04e7d62086d16eb50bf09e59e3afcd" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>bGatherStreamingSources</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ac97a25b6cc06703525d11ef95a806e95" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>bUsePlayerPawnLocationInsteadOfCamera</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a45ccc20214cb5afc877efe82d87b7d4f" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1aae87aba29fc7714cdef9f6c27143e66d" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1af44aafa9378971607e4953ee6042a713" prot="protected" virt="virtual"><scope>UMassLODSubsystem</scope><name>Deinitialize</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ac78d2144ac353fd848d7ffd58bd9f2b5" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetNextViewerSerialNumber</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a8f4f6b5436a90903dd30031cedf9bd6f" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetOnViewerAddedDelegate</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a529c931431b41d1bc6babb3f1e0c4da4" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetOnViewerRemovedDelegate</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a42e1b1cf76a297ae757ec5ad3411023a" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetPlayerControllerFromViewerHandle</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a503b0a6f8d320cd9005ef4dad65cfbe1" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetSynchronizedViewers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a3e601f67420abc196765614ef9c18237" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetValidViewerIdx</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ae30768039d5d28b56c65875fc3af0e4a" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetViewerHandleFromActor</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a1f9e8eeea117ac768eb6de640d898108" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetViewerHandleFromPlayerController</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1aaa3f409406a03b6ecb0cbf760e109450" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetViewerHandleFromStreamingSource</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a0a6768ac209e6126960ef30b9acd3f8c" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>GetViewers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ac70e9a9518f89459e8cf4db61cc3b1be" prot="protected" virt="virtual"><scope>UMassLODSubsystem</scope><name>Initialize</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ada26576357f4ca267cfde2b3b6136f28" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>IsUsingPlayerPawnLocationInsteadOfCamera</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1aa71e8deb6f01b3fec049f4ded6ffb173" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>IsValidViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a25387a4cb047b5b7bf4360edca139e02" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>LastSynchronizedFrame</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a7e46600461f40d4353541f5bab92b27c" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>OnPlayerControllerEndPlay</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a2ac3fc5379b63f883965ed8c5eaa2c8a" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>OnPrePhysicsPhaseStarted</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a427087b0ad04badcba1b876955267845" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>OnViewerAddedDelegate</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a8f0fa105c01dfb6e07de34b3385eea45" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>OnViewerRemovedDelegate</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a968d95dcd2cb9c3dc847e4302dd10ecc" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>RegisterActorViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a2fa77652d1cf7afeb6bac893043b1bdd" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>RegisteredActorViewers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a4928c835fd42e9792f068555fce085a9" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>RemoveViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a6218beef40f642c6449908c89d9d832e" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>RemoveViewerInternal</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a0de1ff5c82958d4dc3c49b926098d2de" prot="protected" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>SynchronizeViewers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1aa65ccc186d0de8934a9c539c64f2768c" prot="public" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>UnregisterActorViewer</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a7a3b07b4686f648b1ba1fe35730fc729" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>ViewerFreeIndices</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a2bfd2ab9acf1e966ced4eb5b78387c8d" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>ViewerMap</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1ae073be0481a667fb8e466e34b57e2e05" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>Viewers</name></member>
+      <member refid="class_u_mass_l_o_d_subsystem_1a9f31b1729d8b3ecaf1c66c3a1707358a" prot="private" virt="non-virtual"><scope>UMassLODSubsystem</scope><name>ViewerSerialNumberCounter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

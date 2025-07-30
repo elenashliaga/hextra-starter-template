@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_f_abc_import_logger" kind="class" language="C++" prot="public">
+    <compoundname>FAbcImportLogger</compoundname>
+    <includes refid="_abc_import_logger_8h" local="no">AbcImportLogger.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_f_abc_import_logger_1a63cafd6ed914d56c53c2ca1486eb4335" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTokenizedMessage</ref> &gt; &gt;</type>
+        <definition>TArray&lt; TSharedRef&lt; FTokenizedMessage &gt; &gt; FAbcImportLogger::TokenizedErrorMessages</definition>
+        <argsstring></argsstring>
+        <name>TokenizedErrorMessages</name>
+        <qualifiedname>FAbcImportLogger::TokenizedErrorMessages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="22" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_abc_import_logger_1af657dd3535a679eb097bf51de0682cd2" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection FAbcImportLogger::MessageLock</definition>
+        <argsstring></argsstring>
+        <name>MessageLock</name>
+        <qualifiedname>FAbcImportLogger::MessageLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="23" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_f_abc_import_logger_1aadada3c2b992a8953f69f4bf4afa8d08" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAbcImportLogger::FAbcImportLogger</definition>
+        <argsstring>()</argsstring>
+        <name>FAbcImportLogger</name>
+        <qualifiedname>FAbcImportLogger::FAbcImportLogger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="12" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_f_abc_import_logger_1ac26c3fe56f3f59521e520d0da84e92df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImportLogger::AddImportMessage</definition>
+        <argsstring>(const TSharedRef&lt; FTokenizedMessage &gt; Message)</argsstring>
+        <name>AddImportMessage</name>
+        <qualifiedname>FAbcImportLogger::AddImportMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTokenizedMessage</ref> &gt;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds an import message to the stored array for later output </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="15" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImportLogger.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_import_logger_1a94f89f20b2ce894579786204aa020695" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ALEMBICLIBRARY_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FAbcImportLogger::OutputMessages</definition>
+        <argsstring>(const FString &amp;PageName)</argsstring>
+        <name>OutputMessages</name>
+        <qualifiedname>FAbcImportLogger::OutputMessages</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PageName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Outputs the messages to a new named page in the message log </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="17" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImportLogger.cpp" bodystart="16" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_abc_import_logger_1a2b7bc9d4fe536587094a5c318a67fe93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ALEMBICLIBRARY_API</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTokenizedMessage</ref> &gt; &gt;</type>
+        <definition>TArray&lt; TSharedRef&lt; FTokenizedMessage &gt; &gt; FAbcImportLogger::RetrieveMessages</definition>
+        <argsstring>()</argsstring>
+        <name>RetrieveMessages</name>
+        <qualifiedname>FAbcImportLogger::RetrieveMessages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the messages and flushes them from the logger </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="19" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Private/AbcImportLogger.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" line="9" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/AlembicImporter/Source/AlembicLibrary/Public/AbcImportLogger.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_f_abc_import_logger_1ac26c3fe56f3f59521e520d0da84e92df" prot="public" virt="non-virtual"><scope>FAbcImportLogger</scope><name>AddImportMessage</name></member>
+      <member refid="class_f_abc_import_logger_1aadada3c2b992a8953f69f4bf4afa8d08" prot="protected" virt="non-virtual"><scope>FAbcImportLogger</scope><name>FAbcImportLogger</name></member>
+      <member refid="class_f_abc_import_logger_1af657dd3535a679eb097bf51de0682cd2" prot="private" virt="non-virtual"><scope>FAbcImportLogger</scope><name>MessageLock</name></member>
+      <member refid="class_f_abc_import_logger_1a94f89f20b2ce894579786204aa020695" prot="public" virt="non-virtual"><scope>FAbcImportLogger</scope><name>OutputMessages</name></member>
+      <member refid="class_f_abc_import_logger_1a2b7bc9d4fe536587094a5c318a67fe93" prot="public" virt="non-virtual"><scope>FAbcImportLogger</scope><name>RetrieveMessages</name></member>
+      <member refid="class_f_abc_import_logger_1a63cafd6ed914d56c53c2ca1486eb4335" prot="private" virt="non-virtual"><scope>FAbcImportLogger</scope><name>TokenizedErrorMessages</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

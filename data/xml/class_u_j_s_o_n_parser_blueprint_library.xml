@@ -1,0 +1,1105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_j_s_o_n_parser_blueprint_library" kind="class" language="C++" prot="public">
+    <compoundname>UJSONParserBlueprintLibrary</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <derivedcompoundref refid="class_u_j_s_o_n_parser_blueprint_library_ex" prot="public" virt="non-virtual">UJSONParserBlueprintLibraryEx</derivedcompoundref>
+    <includes refid="_j_s_o_n_parser_blueprint_library_8h" local="no">JSONParserBlueprintLibrary.h</includes>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" prot="protected" static="no">
+        <type><ref refid="struct_f_meta_json_wrapper" kindref="compound">FMetaJsonWrapper</ref></type>
+        <definition>using UJSONParserBlueprintLibrary::json =  FMetaJsonWrapper</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="103" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ad047a427bda2b19f104a30be38aec536" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UJSONParserBlueprintLibrary::FStringToStdString</definition>
+        <argsstring>(FString Text)</argsstring>
+        <name>FStringToStdString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::FStringToStdString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Text</declname>
+        </param>
+        <briefdescription>
+<para>Конвертирует FString в std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает FString и конвертирует его в std::string. Для этого используется вспомогательная функция FStringToStdString класса <ref refid="struct_f_meta_str_utils" kindref="compound">FMetaStrUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FString для конвертации в std::string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Сконвертированный std::string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="119" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a964f5f5da6c09e60ae165a18b3127be0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::StdStringToFString</definition>
+        <argsstring>(std::string Text)</argsstring>
+        <name>StdStringToFString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::StdStringToFString</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>Text</declname>
+        </param>
+        <briefdescription>
+<para>Конвертирует std::string в FString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::string для конвертации</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Сконвертированный FString </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="127" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a5ca3602e97c9cb0b1bb9a2c39944e1c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UJSONParserBlueprintLibrary::GetFloatFromString</definition>
+        <argsstring>(std::string Text)</argsstring>
+        <name>GetFloatFromString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::GetFloatFromString</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>Text</declname>
+        </param>
+        <briefdescription>
+<para>Конвертирует строку в число с плавающей точкой. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строковое значение в качестве входных данных и преобразует его в число с плавающей точкой.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строковое значение для преобразования в число с плавающей точкой.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованное число с плавающей точкой. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="137" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ae0779175e60cf20dfa16c5ba96b0e8be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+        <definition>float UJSONParserBlueprintLibrary::GetFloat</definition>
+        <argsstring>(const json &amp;jsonValue, float defaultValue)</argsstring>
+        <name>GetFloat</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::GetFloat</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>jsonValue</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает значение типа float из объекта JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает объект json в качестве входных данных и извлекает из него значение типа float. Если значение не найдено или не может быть преобразовано в float, возвращается defaultValue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект json, из которого нужно извлечь значение типа float. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение по умолчанию, которое вернется, если значение типа float не найдено или недействительно.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Извлеченное значение типа float или значение defaultValue, если его не найдено или оно недействительно. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="149" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a5a8b8f075a225388a2d9a4d9f813e89d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UJSONParserBlueprintLibrary::IsNull</definition>
+        <argsstring>(const json &amp;jsonValue)</argsstring>
+        <name>IsNull</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::IsNull</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>jsonValue</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, является ли данное значение json null. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает значение json и проверяет, является ли оно null. Для этого используется вспомогательная функция IsNull класса <ref refid="struct_f_meta_json_utils" kindref="compound">FMetaJsonUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение json для проверки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если значение json является null, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="160" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1abcf24abef2a225e4be3118f7199d4396" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UJSONParserBlueprintLibrary::ParseMultiPolygonCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, TArray&lt; FMultiPolygonCoordinates &gt; &amp;outCoordinates)</argsstring>
+        <name>ParseMultiPolygonCoordinates</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParseMultiPolygonCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_multi_polygon_coordinates" kindref="compound">FMultiPolygonCoordinates</ref> &gt; &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Разбирает координаты MultiPolygon из массива json. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив json координат и преобразует их в TArray <ref refid="struct_f_multi_polygon_coordinates" kindref="compound">FMultiPolygonCoordinates</ref>. Он проходит по массиву json и преобразует каждый набор координат в <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>, <ref refid="struct_f_polygon_coordinates" kindref="compound">FPolygonCoordinates</ref>, и <ref refid="struct_f_multi_polygon_coordinates" kindref="compound">FMultiPolygonCoordinates</ref> с использованием вспомогательной функции <ref refid="struct_f_yandex_json_conv_1aeed3133c884f65a1c33c087412137a0f" kindref="member">FYandexJsonConv::ParseMultiPolygonCoordinates</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив json координат для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TArray <ref refid="struct_f_multi_polygon_coordinates" kindref="compound">FMultiPolygonCoordinates</ref> для сохранения разобранных координат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="173" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a7785ec73ccd473d2ec881ef1788524b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UJSONParserBlueprintLibrary::ParsePolygonCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, TArray&lt; FPolygonCoordinates &gt; &amp;outCoordinates)</argsstring>
+        <name>ParsePolygonCoordinates</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParsePolygonCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_polygon_coordinates" kindref="compound">FPolygonCoordinates</ref> &gt; &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует координаты полигона из массива JSON и сохраняет результат в TArray. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и преобразует его в TArray <ref refid="struct_f_polygon_coordinates" kindref="compound">FPolygonCoordinates</ref>. Каждый элемент в массиве JSON представляет собой полигон, а каждый полигон - это массив координат. Метод проходит по каждому полигону и каждой координате для заполнения TArray <ref refid="struct_f_polygon_coordinates" kindref="compound">FPolygonCoordinates</ref>. Логика разбора реализована в методе <ref refid="struct_f_yandex_json_conv_1a863f7149c3c0cedbc1c87f0eeb06d41b" kindref="member">FYandexJsonConv::ParsePolygonCoordinates</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON координат для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TArray для сохранения разобранных координат полигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="185" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a9aacc4c642e2a89b72420447aeb370f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UJSONParserBlueprintLibrary::ParsePointCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, FPointCoordinates &amp;outCoordinates)</argsstring>
+        <name>ParsePointCoordinates</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParsePointCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует координаты из массива JSON и сохраняет их в заданной структуре <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат и ссылку на структуру <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. Он разбирает каждую координату из массива JSON и сохраняет их в соответствующем поле структуры <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON, содержащий координаты для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> для сохранения разобранных координат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="195" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a8fb12cba0496106f8d05305d89829b4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UJSONParserBlueprintLibrary::ParseMultiPointCoordinates</definition>
+        <argsstring>(const json &amp;coordinatesArray, FPointCoordinates &amp;outCoordinates)</argsstring>
+        <name>ParseMultiPointCoordinates</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParseMultiPointCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" kindref="member">json</ref> &amp;</type>
+          <declname>coordinatesArray</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> &amp;</type>
+          <declname>outCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует массив JSON координат множественных точек в объект <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив JSON координат множественных точек и преобразует его в объект <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref>. Он использует вспомогательную функцию <ref refid="struct_f_yandex_json_conv_1a580951ab1534a56db4e823d7d8d3ef45" kindref="member">FYandexJsonConv::ParseMultiPointCoordinates</ref> для проведения операции.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinatesArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив JSON координации множественных точек для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_point_coordinates" kindref="compound">FPointCoordinates</ref> для сохранения разобранных координат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="205" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a6545f1fe593a7a484ede9ba4e9a6cfda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::ReadJsonFromPath</definition>
+        <argsstring>(const FString Path, int32 Dump=0)</argsstring>
+        <name>ReadJsonFromPath</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ReadJsonFromPath</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Path</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Dump</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Читает файл JSON по указанному пути и возвращает его содержимое в виде строки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method takes your json file and makes it a string Value &quot;Path&quot; should come like &quot;D:/Projects/MetaMoscow/BuidingData/MGU.json&quot; </para>
+<para>Этот метод читает файл JSON из указанного пути и возвращает его содержимое в виде строки. Он использует вспомогательную функцию ReadJsonFromPath класса <ref refid="struct_f_meta_json_utils" kindref="compound">FMetaJsonUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу JSON. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dump</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Этот параметр не используется.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Содержимое файла JSON в виде строки. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="222" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a7f1816790af4353b434bd6d0ad8d0d7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UJSONParserBlueprintLibrary::GetFileIdFromJSON</definition>
+        <argsstring>(const FString JsonString, FString &amp;Id)</argsstring>
+        <name>GetFileIdFromJSON</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::GetFileIdFromJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>JsonString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+<para>This method converts json from string to structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Извлекает идентификатор файла из строки JSON.</para>
+<para>Этот метод берет строку JSON и извлекает из нее идентификатор файла. Он использует вспомогательную функцию GetFileIdFromJSON класса <ref refid="struct_f_meta_json_utils" kindref="compound">FMetaJsonUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, из которой нужно извлечь идентификатор файла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Извлеченный идентификатор файла будет присвоен этому параметру FString. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="234" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a0c778d31da8f1f88cf73af7855bf51cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::UpdateBuildingUnrealDemoViewModeInfo</definition>
+        <argsstring>(const UDemoViewMetaCameraComponent *MetaDemoViewBuildingComponent, int32 Idx)</argsstring>
+        <name>UpdateBuildingUnrealDemoViewModeInfo</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::UpdateBuildingUnrealDemoViewModeInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="class_u_demo_view_meta_camera_component" kindref="compound">UDemoViewMetaCameraComponent</ref> *</type>
+          <declname>MetaDemoViewBuildingComponent</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Idx</declname>
+        </param>
+        <briefdescription>
+<para>UpdateBuildingUnrealDemoViewModeInfo - Этот метод обновляет информацию о режиме просмотра демо здания Unreal в формате JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MetaDemoViewBuildingComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Компонент камеры мета-вида. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Индекс камеры.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FString - Обновленная строка в формате JSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="245" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a0f6b0da4d60c34ca27c9dfb32448af0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UJSONParserBlueprintLibrary::ReplaceJsonFileContents</definition>
+        <argsstring>(const FString &amp;FilePath, const FString &amp;NewJsonContent)</argsstring>
+        <name>ReplaceJsonFileContents</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ReplaceJsonFileContents</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>FilePath</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>NewJsonContent</declname>
+        </param>
+        <briefdescription>
+<para>AddBuildingUnrealMetaDataInfo - Этот метод добавляет информацию о метаданных Unreal к данной строке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CurrentString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Текущая строка, к которой будет добавлена информация о метаданных. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NewDataString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Строка, содержащая новую информацию о метаданных, которая будет добавлена.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FString - Обновленная строка с добавленной информацией о метаданных. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="258" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ac804b594c4208d2048141a66d1a94237" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UJSONParserBlueprintLibrary::ParseAnswerFromSearchJSON</definition>
+        <argsstring>(const FString &amp;jsonStr, FAnswerFromSearch &amp;answer)</argsstring>
+        <name>ParseAnswerFromSearchJSON</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParseAnswerFromSearchJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>jsonStr</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref> &amp;</type>
+          <declname>answer</declname>
+        </param>
+        <briefdescription>
+<para>Разбирает ответ из строки поиска в формате JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку в формате JSON и разбирает ее, чтобы извлечь ответ на поисковый запрос. Он заполняет предоставленный объект <ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref> разобранными данными.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для разбора. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>answer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_answer_from_search" kindref="compound">FAnswerFromSearch</ref> для заполнения разобранными данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если разбор прошел успешно, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="272" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a9a1a69fb1ea9954bc8d6eb559f4fdb0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UJSONParserBlueprintLibrary::ParseYandexDataFromJSON</definition>
+        <argsstring>(const FString &amp;JSONString, FAddressData &amp;OutAddressData)</argsstring>
+        <name>ParseYandexDataFromJSON</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParseYandexDataFromJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JSONString</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_address_data" kindref="compound">FAddressData</ref> &amp;</type>
+          <declname>OutAddressData</declname>
+        </param>
+        <briefdescription>
+<para>Разбирает данные Yandex из строки JSON и заполняет предоставленную структуру <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и извлекает соответствующие данные для заполнения предоставленной структуры <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JSONString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для анализа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutAddressData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура <ref refid="struct_f_address_data" kindref="compound">FAddressData</ref>, которая должна быть заполнена разобранными данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если разбор произошел успешно, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="285" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a0a835c088b1c91a9fc5199075a9d1798" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref></type>
+        <definition>FSearchDocumentCoordinates UJSONParserBlueprintLibrary::ProcessCoordinatesJSON</definition>
+        <argsstring>(const FString &amp;jsonStr)</argsstring>
+        <name>ProcessCoordinatesJSON</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ProcessCoordinatesJSON</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>jsonStr</declname>
+        </param>
+        <briefdescription>
+<para>Обрабатывает входную строку JSON и извлекает координаты поискового документа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и обрабатывает ее, чтобы извлечь координаты поискового документа. Внутренне метод использует метод ProcessCoordinatesJSON класса <ref refid="struct_f_yandex_json_conv" kindref="compound">FYandexJsonConv</ref> для обработки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON для обработки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Извлеченные координаты поискового документа в виде экземпляра структуры <ref refid="struct_f_search_document_coordinates" kindref="compound">FSearchDocumentCoordinates</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="298" column="43" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ac7e0448c14f2c7a232c38434ad6cee1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_search_types_8h_1afe7db13a48215b9b6c2a02f091590913" kindref="member">ESearchDocumentCoordinatesTypes</ref></type>
+        <definition>ESearchDocumentCoordinatesTypes UJSONParserBlueprintLibrary::GetEnumFromString</definition>
+        <argsstring>(const FString &amp;StringValue)</argsstring>
+        <name>GetEnumFromString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::GetEnumFromString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StringValue</declname>
+        </param>
+        <briefdescription>
+<para>Извлекает значение перечисления из данного строкового представления. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строковое значение и извлекает соответствующее значение перечисления из ESearchDocumentCoordinatesTypes enum. Он использует утилитарную функцию GetEnumFromString из класса <ref refid="struct_f_yandex_json_conv" kindref="compound">FYandexJsonConv</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StringValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строковое представление значения перечисления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение перечисления, соответствующее строковому представлению. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="311" column="48" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a4fcb6154a9fa5171eacc84696628dab0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::DeleteSpaceFromString</definition>
+        <argsstring>(FString String)</argsstring>
+        <name>DeleteSpaceFromString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::DeleteSpaceFromString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>String</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет все пробелы из данного FString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод берет FString и удаляет из него все пробелы.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FString, из которого будут удалены пробелы.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Измененный FString без пробелов. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="323" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a3542d3786c930b04ea6dca013d985a80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TArray&lt; FString &gt; UJSONParserBlueprintLibrary::SeparateStringToStringArray</definition>
+        <argsstring>(FString String, FString Separator=&quot; &quot;)</argsstring>
+        <name>SeparateStringToStringArray</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::SeparateStringToStringArray</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Separator</declname>
+          <defval>&quot; &quot;</defval>
+        </param>
+        <briefdescription>
+<para>Разделяет данный FString на массив подстрок на основе указанного разделителя. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает FString и разделитель в качестве входных данных, а затем использует утилиту <ref refid="struct_f_meta_str_utils_1a365dcf84d0cda67f3cf498d963ff24fb" kindref="member">FMetaStrUtils::SeparateStringToStringArray</ref>, чтобы разделить строку на массив подстрок, основанный на данном разделителе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FString, который будет разделен на подстроки. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Separator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель, используемый для разделения FString на подстроки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив подстрок, полученных после разделения данного FString на основе указанного разделителя. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="337" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a22200b218b7deb72d74c6b1e2f9d0e35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::FormatString</definition>
+        <argsstring>(FString FindString, FString SymbolDelete=&quot;!@#$%^&amp;*()_+{}[]:;\&quot;&lt;&gt;?*/-+№.,&apos;&quot;)</argsstring>
+        <name>FormatString</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::FormatString</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>FindString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>SymbolDelete</declname>
+          <defval>&quot;!@#$%^&amp;*()_+{}[]:;\&quot;&lt;&gt;?*/-+№.,&apos;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Форматирует строку, удаляя символы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает две входные строки, <computeroutput>FindString</computeroutput> и <computeroutput>SymbolDelete</computeroutput>, и форматирует <computeroutput>FindString</computeroutput> путем удаления всех вхождений символов, указанных в <computeroutput>SymbolDelete</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FindString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка для форматирования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SymbolDelete</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Символы, которые нужно удалить из <computeroutput>FindString</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Отформатированная строка с удаленными символами. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="351" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ac6b9a25de22ba57a42e67a7d79bd8292" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::FormatRussianStringToCase</definition>
+        <argsstring>(FString String, bool LowerCase=true)</argsstring>
+        <name>FormatRussianStringToCase</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::FormatRussianStringToCase</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>String</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>LowerCase</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></defval>
+        </param>
+        <briefdescription>
+<para>Форматирует русскую строку к указанному регистру. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает русскую строку и форматирует ее в нижний или верхний регистр в зависимости от значения параметра &apos;LowerCase&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>String</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Русская строка для форматирования. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LowerCase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если истина, строка будет преобразована в нижний регистр; если ложь, строка будет преобразована в верхний регистр.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Отформатированная русская строка в указанном регистре. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="364" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ae092dbd8886d1b75f374c0457583b768" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+        <definition>TArray&lt; FString &gt; UJSONParserBlueprintLibrary::DeleteDublicateFromStringArr</definition>
+        <argsstring>(const TArray&lt; FString &gt; Array)</argsstring>
+        <name>DeleteDublicateFromStringArr</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::DeleteDublicateFromStringArr</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+          <declname>Array</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет дублирующиеся строки из массива строк. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает массив строк и удаляет все дублирующиеся строки. Внутри он вызывает утилиту DeleteDublicateFromStringArr из класса <ref refid="struct_f_meta_str_utils" kindref="compound">FMetaStrUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив строк, из которых будут удалены дубликаты.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Результирующий массив строк после удаления дубликатов. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="377" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a08839339735c887e7d168c1e57e32235" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UJSONParserBlueprintLibrary::ConvertRelativePathToGlobal</definition>
+        <argsstring>(const FString FilePath)</argsstring>
+        <name>ConvertRelativePathToGlobal</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ConvertRelativePathToGlobal</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>FilePath</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует относительный путь файла в глобальный путь файла. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает относительный путь файла в качестве входных данных и преобразует его в глобальный путь файла. Он использует утилиту ConvertRelativePathToGlobal из класса <ref refid="struct_f_meta_files_utils" kindref="compound">FMetaFilesUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Относительный путь к файлу, который нужно преобразовать в глобальный путь к файлу.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Преобразованный глобальный путь к файлу в виде FString. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="390" column="24" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a064b5cf0ca4452e94a915270fc2ed602" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UJSONParserBlueprintLibrary::CheckKeyExistsInJson</definition>
+        <argsstring>(const FString &amp;JsonString, const FString &amp;Key)</argsstring>
+        <name>CheckKeyExistsInJson</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::CheckKeyExistsInJson</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>JsonString</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, существует ли заданный ключ в строке JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод принимает строку JSON и ключ в качестве входных параметров и проверяет, существует ли ключ в строке JSON. Он использует утилиту CheckKeyExistsInJson из класса <ref refid="struct_f_meta_json_utils" kindref="compound">FMetaJsonUtils</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>JsonString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка JSON, в которой проверяется наличие ключа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ, наличие которого проверяется в строке JSON.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если ключ существует в строке JSON, в противном случае - false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="403" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1ad0fe71db351451b32f62277927f08cfb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref> &gt;</type>
+        <definition>TArray&lt; FDemoViewModeInfo &gt; UJSONParserBlueprintLibrary::ParseDemoViewModeInfo</definition>
+        <argsstring>(const FBuildingDataInfo &amp;DataInfo, ADemoViewMetaBuilding *const SpawnedActor)</argsstring>
+        <name>ParseDemoViewModeInfo</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::ParseDemoViewModeInfo</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_building_data_info" kindref="compound">FBuildingDataInfo</ref> &amp;</type>
+          <declname>DataInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_demo_view_meta_building" kindref="compound">ADemoViewMetaBuilding</ref> *<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref></type>
+          <declname>SpawnedActor</declname>
+        </param>
+        <briefdescription>
+<para>Анализирует информацию о режиме просмотра демо из заданной информации о данных здания и создает актера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод анализирует информацию о режиме просмотра демо из предоставленной информации о данных здания. Он принимает информацию о данных, которая содержит путь к файлу JSON здания и преобразует его в глобальный путь с использованием функции ConvertRelativePathToGlobal. Затем он читает JSON из заданного пути с помощью функции ReadJsonFromPath и преобразует его в std::string. Затем JSON анализируется с помощью json::parse и сохраняется в объекте json. Информация о режиме просмотра демо здания получается из проанализированного JSON и сохраняется в массиве структур <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref>. В конце метод возвращает множество структур информации о режиме просмотра демо.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DataInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Информация о данных здания, содержащая путь к файлу JSON здания. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnedActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на созданного актера. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Массив структур <ref refid="struct_f_demo_view_mode_info" kindref="compound">FDemoViewModeInfo</ref>, представляющий проанализированную информацию о режиме просмотра демо. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="419" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_j_s_o_n_parser_blueprint_library_1a010d32d47bb7eb7ba49290b51c86dbdc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_meta_custom_cesium_sun_8h_1a1a1043c227d1d43b3e2f3337f6a1fca4" kindref="member">ELightActivationType</ref></type>
+        <definition>ELightActivationType UJSONParserBlueprintLibrary::SetLightActivationType</definition>
+        <argsstring>(FString Value)</argsstring>
+        <name>SetLightActivationType</name>
+        <qualifiedname>UJSONParserBlueprintLibrary::SetLightActivationType</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>SetLightActivationType - Этот метод устанавливает тип активации света на основе данного значения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Значение, представляющее тип активации света. Допустимые значения - 0, 1 и 2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ELightActivationType - Тип активации света, соответствующий данному значению. Если значение не найдено в карте, возвращается NoLight. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="427" column="37" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/JSON/JSONParserBlueprintLibrary.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UJSONParserBlueprintLibrary</label>
+        <link refid="class_u_j_s_o_n_parser_blueprint_library"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UJSONParserBlueprintLibraryEx</label>
+        <link refid="class_u_j_s_o_n_parser_blueprint_library_ex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UJSONParserBlueprintLibrary</label>
+        <link refid="class_u_j_s_o_n_parser_blueprint_library"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" line="98" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/JSON/JSONParserBlueprintLibrary.h" bodystart="99" bodyend="435"/>
+    <listofallmembers>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a064b5cf0ca4452e94a915270fc2ed602" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>CheckKeyExistsInJson</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a08839339735c887e7d168c1e57e32235" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ConvertRelativePathToGlobal</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ae092dbd8886d1b75f374c0457583b768" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>DeleteDublicateFromStringArr</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a4fcb6154a9fa5171eacc84696628dab0" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>DeleteSpaceFromString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ac6b9a25de22ba57a42e67a7d79bd8292" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>FormatRussianStringToCase</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a22200b218b7deb72d74c6b1e2f9d0e35" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>FormatString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ad047a427bda2b19f104a30be38aec536" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>FStringToStdString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ac7e0448c14f2c7a232c38434ad6cee1e" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>GetEnumFromString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a7f1816790af4353b434bd6d0ad8d0d7b" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>GetFileIdFromJSON</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ae0779175e60cf20dfa16c5ba96b0e8be" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>GetFloat</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a5ca3602e97c9cb0b1bb9a2c39944e1c4" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>GetFloatFromString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a5a8b8f075a225388a2d9a4d9f813e89d" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>IsNull</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a5f920712004fa28dfc4a6011c37cd63e" prot="protected" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>json</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ac804b594c4208d2048141a66d1a94237" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParseAnswerFromSearchJSON</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1ad0fe71db351451b32f62277927f08cfb" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParseDemoViewModeInfo</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a8fb12cba0496106f8d05305d89829b4f" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParseMultiPointCoordinates</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1abcf24abef2a225e4be3118f7199d4396" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParseMultiPolygonCoordinates</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a9aacc4c642e2a89b72420447aeb370f5" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParsePointCoordinates</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a7785ec73ccd473d2ec881ef1788524b4" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParsePolygonCoordinates</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a9a1a69fb1ea9954bc8d6eb559f4fdb0b" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ParseYandexDataFromJSON</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a0a835c088b1c91a9fc5199075a9d1798" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ProcessCoordinatesJSON</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a6545f1fe593a7a484ede9ba4e9a6cfda" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ReadJsonFromPath</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a0f6b0da4d60c34ca27c9dfb32448af0b" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>ReplaceJsonFileContents</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a3542d3786c930b04ea6dca013d985a80" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>SeparateStringToStringArray</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a010d32d47bb7eb7ba49290b51c86dbdc" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>SetLightActivationType</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a964f5f5da6c09e60ae165a18b3127be0" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>StdStringToFString</name></member>
+      <member refid="class_u_j_s_o_n_parser_blueprint_library_1a0c778d31da8f1f88cf73af7855bf51cf" prot="public" virt="non-virtual"><scope>UJSONParserBlueprintLibrary</scope><name>UpdateBuildingUnrealDemoViewModeInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_actor_placement_zone" kind="class" language="C++" prot="public">
+    <compoundname>AActorPlacementZone</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_actor_placement_zone_8h" local="no">ActorPlacementZone.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_actor_placement_zone_1a37aa1aa17608779d96e36e289a1fae71" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UBoxComponent</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UBoxComponent&gt; AActorPlacementZone::Box</definition>
+        <argsstring></argsstring>
+        <name>Box</name>
+        <qualifiedname>AActorPlacementZone::Box</qualifiedname>
+        <briefdescription>
+<para>Переменная Box представляет собой видимый компонент в форме коробки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Макрос UPROPERTY используется для указания того, что эта переменная видна везде и относится к категории &quot;Components&quot;.</para>
+<para>Переменная Box является указателем на объект (TObjectPtr) UBoxComponent.</para>
+<para>UBoxComponent - это класс Unreal Engine, который представляет собой компонент коллизии в форме коробки в 3D-пространстве. UBoxComponent позволяет выполнять простую детекцию и ответ на коллизии в форме коробки.</para>
+<para>Пример использования: Box-&gt;SetBoxExtent(FVector(100.f)); Box-&gt;SetCollisionProfileName(TEXT(&quot;BlockAll&quot;)); Box-&gt;SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics); Box-&gt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SetHiddenInGame(false)</ref>; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="41" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_actor_placement_zone_1a6447e430e79ed8d51fe7f4994ab48f32" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCapsuleComponent</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UCapsuleComponent&gt; AActorPlacementZone::Capsule</definition>
+        <argsstring></argsstring>
+        <name>Capsule</name>
+        <qualifiedname>AActorPlacementZone::Capsule</qualifiedname>
+        <briefdescription>
+<para>Компонент Capsule объекта ActorPlacementZone. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот компонент представляет собой капсульную форму ActorPlacementZone. Это форма коллизии, используемая для перекрытия и взаимодействия с другими актерами.</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCapsuleComponent</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="51" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_actor_placement_zone_1aefdc2d804dfd00786bb9ea88e49b3893" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UArrowComponent</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UArrowComponent&gt; AActorPlacementZone::Arrow</definition>
+        <argsstring></argsstring>
+        <name>Arrow</name>
+        <qualifiedname>AActorPlacementZone::Arrow</qualifiedname>
+        <briefdescription>
+<para>Переменная Arrow представляет указатель на экземпляр класса UArrowComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Класс UArrowComponent обеспечивает визуальное представление стрелки в 3D-пространстве. Эта переменная объявлена как член класса <ref refid="class_a_actor_placement_zone" kindref="compound">AActorPlacementZone</ref>. Она помечена как VisibleAnywhere, что означает, что к ней можно получить доступ и она может быть изменена в редакторе. Также она размещена в категории &quot;Components&quot; для удобства организации. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="62" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_actor_placement_zone_1ad48b85c680d78ba8b6fe473ceb736db2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FText</ref></type>
+        <definition>FText AActorPlacementZone::ZoneName</definition>
+        <argsstring></argsstring>
+        <name>ZoneName</name>
+        <qualifiedname>AActorPlacementZone::ZoneName</qualifiedname>
+        <briefdescription>
+<para>Имя зоны. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="68" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_actor_placement_zone_1a03b4af852bac4b83e1c598231a2e407b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool AActorPlacementZone::TryInitializeActorPlacementParameters</definition>
+        <argsstring>(AActor *TargetActor, const TOptional&lt; FTransform &gt; &amp;TransformOverride, const FText &amp;SpawnLocationName, ESlateVisibility MessageWidgetVisibility)</argsstring>
+        <name>TryInitializeActorPlacementParameters</name>
+        <qualifiedname>AActorPlacementZone::TryInitializeActorPlacementParameters</qualifiedname>
+        <param>
+          <type>AActor *</type>
+          <declname>TargetActor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &gt; &amp;</type>
+          <declname>TransformOverride</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FText</ref> &amp;</type>
+          <declname>SpawnLocationName</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ESlateVisibility</ref></type>
+          <declname>MessageWidgetVisibility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Попробуйте инициализировать параметры размещения актера для указанного целевого актера.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TargetActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Актер, для которого должны быть инициализированы параметры размещения актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TransformOverride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Опциональное переопределение трансформации для актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SpawnLocationName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя места спавна. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MessageWidgetVisibility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Видимость виджета сообщения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если параметры размещения актера были успешно инициализированы, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="80" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/ActorPlacement/ActorPlacementZone.cpp" bodystart="38" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_actor_placement_zone_1a5b85f051aa734e88f5fa89f9470c7e77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::ZoneBeginOverlap</definition>
+        <argsstring>(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &amp;SweepResult)</argsstring>
+        <name>ZoneBeginOverlap</name>
+        <qualifiedname>AActorPlacementZone::ZoneBeginOverlap</qualifiedname>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OverlappedComponent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>OtherActor</declname>
+        </param>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OtherComp</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>OtherBodyIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFromSweep</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHitResult</ref> &amp;</type>
+          <declname>SweepResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод ZoneBeginOverlap вызывается, когда эта зона перекрывается с другим актером.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OverlappedComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Примитивный компонент, который перекрывает другого актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Другой актер, с которым перекрывается эта зона. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherComp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Примитивный компонент другого актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherBodyIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс тела другого актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFromSweep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Истина, если перекрытие происходит из sweep, иначе ложь. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SweepResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Результат хита из sweep перекрытия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_actor_placement_zone_1a1a84edc5a462ad2f2287d283eddf5b2d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::ZoneBeginOverlap_Implementation</definition>
+        <argsstring>(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &amp;SweepResult)</argsstring>
+        <name>ZoneBeginOverlap_Implementation</name>
+        <qualifiedname>AActorPlacementZone::ZoneBeginOverlap_Implementation</qualifiedname>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OverlappedComponent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>OtherActor</declname>
+        </param>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OtherComp</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>OtherBodyIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bFromSweep</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHitResult</ref> &amp;</type>
+          <declname>SweepResult</declname>
+        </param>
+        <briefdescription>
+<para>Вызывается, когда актер перекрывается с зоной. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OverlappedComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Перекрывающийся примитивный компонент. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Актер, который перекрывается с зоной. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherComp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Перекрывающийся примитивный компонент другого актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherBodyIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс перекрывающегося тела другого актера. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bFromSweep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Истина, если перекрытие было инициировано в результате sweep. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SweepResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Результат sweep перекрытия.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Этот метод вызывается, когда актер перекрывается с зоной. Это виртуальный метод, который может быть переопределен в производных классах для реализации пользовательского поведения.</para>
+<para><simplesect kind="note"><para>Этот метод обычно реализуется в родительском классе и может быть переопределен в дочерних классах, чтобы обеспечить конкретное поведение для различных типов зон. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="120" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/ActorPlacement/ActorPlacementZone.cpp" bodystart="79" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_actor_placement_zone_1aa429bf153a000d03637681fcc752908e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::ZoneEndOverlap</definition>
+        <argsstring>(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp, int32 OtherBodyIndex)</argsstring>
+        <name>ZoneEndOverlap</name>
+        <qualifiedname>AActorPlacementZone::ZoneEndOverlap</qualifiedname>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OverlappedComponent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>OtherActor</declname>
+        </param>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OtherComp</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>OtherBodyIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вызывается, когда актер прекращает перекрываться с Зоной.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OverlappedComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Компонент, с которым актер прекратил перекрываться. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Актер, который прекратил перекрываться с Зоной. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherComp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Компонент OtherActor, с которым OverlappedComponent прекратил перекрываться. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherBodyIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс тела OtherComp. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_actor_placement_zone_1aa8b691c7819be80e636f6971718bfe68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::ZoneEndOverlap_Implementation</definition>
+        <argsstring>(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp, int32 OtherBodyIndex)</argsstring>
+        <name>ZoneEndOverlap_Implementation</name>
+        <qualifiedname>AActorPlacementZone::ZoneEndOverlap_Implementation</qualifiedname>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OverlappedComponent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>OtherActor</declname>
+        </param>
+        <param>
+          <type>UPrimitiveComponent *</type>
+          <declname>OtherComp</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>OtherBodyIndex</declname>
+        </param>
+        <briefdescription>
+<para>Вызывается, когда актер прекращает перекрытие с зоной. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OverlappedComponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Компонент, который инициировал событие перекрытия. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Актер, который прекратил перекрытие с зоной. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherComp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Компонент другого актера, который прекратил перекрытие с зоной. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherBodyIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс тела другого актера, который прекратил перекрытие с зоной. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="150" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/ActorPlacement/ActorPlacementZone.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_actor_placement_zone_1af4f5e736ac766341bd883d287d95249c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::PreActorPlacementParametersUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>PreActorPlacementParametersUpdate</name>
+        <qualifiedname>AActorPlacementZone::PreActorPlacementParametersUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод является событием, которое вызывается перед обновлением параметров размещения актера. Он реализован в Blueprint и принадлежит категории &quot;ActorPlacement|Zone&quot;. Этот метод не возвращает никакого значения. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="162" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_actor_placement_zone_1a1df7795f11ccfa33aad88099e437e2fe" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AActorPlacementZone::PostActorPlacementParametersUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>PostActorPlacementParametersUpdate</name>
+        <qualifiedname>AActorPlacementZone::PostActorPlacementParametersUpdate</qualifiedname>
+        <briefdescription>
+<para>Эта функция является событием, которое активируется после обновления параметров размещения актера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Это событие вызывается, когда обновляются параметры, связанные с размещением актера в зоне. Предполагается, что его должны реализовать подклассы blueprint для выполнения пользовательских действий или логики после обновления.</para>
+<para><simplesect kind="note"><para>Эта функция не имеет возвращаемого значения. </para>
+</simplesect>
+<simplesect kind="note"><para>Эта функция помечена как BlueprintImplementableEvent, что позволяет переопределять ее в подклассах blueprint. </para>
+</simplesect>
+<simplesect kind="note"><para>Эта функция относится к категории &quot;ActorPlacement|Zone&quot;.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ActorPlacementParametersUpdate</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Zone</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="178" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_actor_placement_zone_1a545e504eab3f4e5b358f6bc51f05ebdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AActorPlacementZone::AActorPlacementZone</definition>
+        <argsstring>()</argsstring>
+        <name>AActorPlacementZone</name>
+        <qualifiedname>AActorPlacementZone::AActorPlacementZone</qualifiedname>
+        <briefdescription>
+<para>Конструктор <ref refid="class_a_actor_placement_zone" kindref="compound">AActorPlacementZone</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот конструктор инициализирует класс <ref refid="class_a_actor_placement_zone" kindref="compound">AActorPlacementZone</ref>. Он создает подобъекты по умолчанию для RootComponent, Box, Capsule и Arrow. Он настраивает вложения, свойства столкновения и делегаты событий для Box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="188" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/ActorPlacement/ActorPlacementZone.cpp" bodystart="16" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AActorPlacementZone</label>
+        <link refid="class_a_actor_placement_zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AActorPlacementZone</label>
+        <link refid="class_a_actor_placement_zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" line="19" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/ActorPlacement/ActorPlacementZone.h" bodystart="20" bodyend="189"/>
+    <listofallmembers>
+      <member refid="class_a_actor_placement_zone_1a545e504eab3f4e5b358f6bc51f05ebdd" prot="public" virt="non-virtual"><scope>AActorPlacementZone</scope><name>AActorPlacementZone</name></member>
+      <member refid="class_a_actor_placement_zone_1aefdc2d804dfd00786bb9ea88e49b3893" prot="private" virt="non-virtual"><scope>AActorPlacementZone</scope><name>Arrow</name></member>
+      <member refid="class_a_actor_placement_zone_1a37aa1aa17608779d96e36e289a1fae71" prot="private" virt="non-virtual"><scope>AActorPlacementZone</scope><name>Box</name></member>
+      <member refid="class_a_actor_placement_zone_1a6447e430e79ed8d51fe7f4994ab48f32" prot="private" virt="non-virtual"><scope>AActorPlacementZone</scope><name>Capsule</name></member>
+      <member refid="class_a_actor_placement_zone_1a1df7795f11ccfa33aad88099e437e2fe" prot="protected" virt="non-virtual"><scope>AActorPlacementZone</scope><name>PostActorPlacementParametersUpdate</name></member>
+      <member refid="class_a_actor_placement_zone_1af4f5e736ac766341bd883d287d95249c" prot="protected" virt="non-virtual"><scope>AActorPlacementZone</scope><name>PreActorPlacementParametersUpdate</name></member>
+      <member refid="class_a_actor_placement_zone_1a03b4af852bac4b83e1c598231a2e407b" prot="private" virt="virtual"><scope>AActorPlacementZone</scope><name>TryInitializeActorPlacementParameters</name></member>
+      <member refid="class_a_actor_placement_zone_1a5b85f051aa734e88f5fa89f9470c7e77" prot="protected" virt="non-virtual"><scope>AActorPlacementZone</scope><name>ZoneBeginOverlap</name></member>
+      <member refid="class_a_actor_placement_zone_1a1a84edc5a462ad2f2287d283eddf5b2d" prot="protected" virt="virtual"><scope>AActorPlacementZone</scope><name>ZoneBeginOverlap_Implementation</name></member>
+      <member refid="class_a_actor_placement_zone_1aa429bf153a000d03637681fcc752908e" prot="protected" virt="non-virtual"><scope>AActorPlacementZone</scope><name>ZoneEndOverlap</name></member>
+      <member refid="class_a_actor_placement_zone_1aa8b691c7819be80e636f6971718bfe68" prot="protected" virt="virtual"><scope>AActorPlacementZone</scope><name>ZoneEndOverlap_Implementation</name></member>
+      <member refid="class_a_actor_placement_zone_1ad48b85c680d78ba8b6fe473ceb736db2" prot="private" virt="non-virtual"><scope>AActorPlacementZone</scope><name>ZoneName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

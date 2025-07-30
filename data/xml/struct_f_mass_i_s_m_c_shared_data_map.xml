@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_i_s_m_c_shared_data_map" kind="struct" language="C++" prot="public">
+    <compoundname>FMassISMCSharedDataMap</compoundname>
+    <includes refid="_mass_representation_types_8h" local="no">MassRepresentationTypes.h</includes>
+    <innerclass refid="struct_f_mass_i_s_m_c_shared_data_map_1_1_f_dirty_iterator" prot="public">FMassISMCSharedDataMap::FDirtyIterator</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_f_mass_i_s_m_c_shared_data_map_1aeac94baaefaa336cc105e425df442e4a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &gt;</type>
+        <definition>TArray&lt;FMassISMCSharedData&gt; FMassISMCSharedDataMap::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>FMassISMCSharedDataMap::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="509" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_i_s_m_c_shared_data_map_1af69b0b9373814d94b50696bcd58d2185" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TMap&lt;FISMCSharedDataKey, int32&gt; FMassISMCSharedDataMap::Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>FMassISMCSharedDataMap::Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping from Owner (as FObjectKey) of data represented by <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> to an index to Data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="511" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_i_s_m_c_shared_data_map_1a13247a8082923722af92095055874a59" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TBitArray</ref></type>
+        <definition>TBitArray FMassISMCSharedDataMap::DirtyData</definition>
+        <argsstring></argsstring>
+        <name>DirtyData</name>
+        <qualifiedname>FMassISMCSharedDataMap::DirtyData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether corresponding Data entry has any instance work assigned to it (instance addition or removal) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="513" column="2" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_i_s_m_c_shared_data_map_1aefceefe44b4f98e4cf245ef705a0b12a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>TArray&lt;int32&gt; FMassISMCSharedDataMap::FreeIndices</definition>
+        <argsstring></argsstring>
+        <name>FreeIndices</name>
+        <qualifiedname>FMassISMCSharedDataMap::FreeIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indices to Data that are available for reuse </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="515" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a738394c3ad921f792d8b76bd2557aa3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::GetAndMarkDirtyChecked</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey)</argsstring>
+        <name>GetAndMarkDirtyChecked</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetAndMarkDirtyChecked</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="391" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="391" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a0c3b90a5a3592b24aff1895231989200" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>FMassISMCSharedData * FMassISMCSharedDataMap::GetAndMarkDirty</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey)</argsstring>
+        <name>GetAndMarkDirty</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetAndMarkDirty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="398" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="398" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a7e9e78c0b23e4a3fab1feee8aa834027" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>TArgs</declname>
+            <defname>TArgs</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::FindOrAdd</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey, TArgs &amp;&amp;... InNewInstanceArgs)</argsstring>
+        <name>FindOrAdd</name>
+        <qualifiedname>FMassISMCSharedDataMap::FindOrAdd</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArgs</ref> &amp;&amp;...</type>
+          <declname>InNewInstanceArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="410" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="410" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1afeceffa836738db26130b9cc2df8f973" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>FMassISMCSharedData * FMassISMCSharedDataMap::Find</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey)</argsstring>
+        <name>Find</name>
+        <qualifiedname>FMassISMCSharedDataMap::Find</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="421" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="421" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1ae3c3e8e9cf9e950c6e21c51937350ae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>TArgs</declname>
+            <defname>TArgs</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::Add</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey, TArgs &amp;&amp;... InNewInstanceArgs)</argsstring>
+        <name>Add</name>
+        <qualifiedname>FMassISMCSharedDataMap::Add</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArgs</ref> &amp;&amp;...</type>
+          <declname>InNewInstanceArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="428" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="428" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a63fa2265690c2127a8a35905c3ba0a11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassISMCSharedDataMap::Remove</definition>
+        <argsstring>(const FISMCSharedDataKey OwnerKey)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>FMassISMCSharedDataMap::Remove</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>OwnerKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="447" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="447" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a7ee0d0d3bf2094f6a06b1cc857e35450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::GetAtIndex</definition>
+        <argsstring>(const int32 DataIndex)</argsstring>
+        <name>GetAtIndex</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetAtIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>DataIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="458" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a2a279ac329e10f6b347359077a681963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TBitArray</ref> &amp;</type>
+        <definition>TBitArray &amp; FMassISMCSharedDataMap::GetDirtyArray</definition>
+        <argsstring>()</argsstring>
+        <name>GetDirtyArray</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetDirtyArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="463" column="2" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="463" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a27f3ab9ecb3846b36f95db9691a26c00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 FMassISMCSharedDataMap::Num</definition>
+        <argsstring>() const</argsstring>
+        <name>Num</name>
+        <qualifiedname>FMassISMCSharedDataMap::Num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>total number of entries in Data array. Note that some or all entries could be empty (i.e. already freed) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="469" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="469" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a06e9d66922082d935986811a9f937a4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 FMassISMCSharedDataMap::NumValid</definition>
+        <argsstring>() const</argsstring>
+        <name>NumValid</name>
+        <qualifiedname>FMassISMCSharedDataMap::NumValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of non-empty entries in Data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="475" column="7" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="475" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a339d08bd98a3353cba2c568460e8ebab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FMassISMCSharedDataMap::IsDirty</definition>
+        <argsstring>(const int32 DataIndex) const</argsstring>
+        <name>IsDirty</name>
+        <qualifiedname>FMassISMCSharedDataMap::IsDirty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>DataIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="480" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a27f630a3d55bd1683154d3e8809b745b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FMassISMCSharedDataMap::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>FMassISMCSharedDataMap::IsEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="485" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="485" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a5cf087b1ab91d4132dcd8f0589bd6902" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassISMCSharedDataMap::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <qualifiedname>FMassISMCSharedDataMap::Reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="490" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="490" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a8c65dae283c3d613dc7e56a29db764ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * FMassISMCSharedDataMap::GetDataForIndex</definition>
+        <argsstring>(const int32 Index) const</argsstring>
+        <name>GetDataForIndex</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetDataForIndex</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="495" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="495" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a9c3445967d212b728cca5dc0f0c2a30e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>const FMassISMCSharedData * FMassISMCSharedDataMap::GetDataForKey</definition>
+        <argsstring>(const FISMCSharedDataKey Key) const</argsstring>
+        <name>GetDataForKey</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetDataForKey</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_representation_types_8h_1acc3bcd2061c542a8dc417c5680e19f90" kindref="member">FISMCSharedDataKey</ref></type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="500" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="500" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1aa015c81274cb5e4afd21a42a39353caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::GetAndMarkDirtyChecked</definition>
+        <argsstring>(const uint32 Hash)</argsstring>
+        <name>GetAndMarkDirtyChecked</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetAndMarkDirtyChecked</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="519" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationTypes.cpp" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a1f616b10561b7df19e676f9b0623ea76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>FMassISMCSharedData * FMassISMCSharedDataMap::GetAndMarkDirty</definition>
+        <argsstring>(const uint32 Hash)</argsstring>
+        <name>GetAndMarkDirty</name>
+        <qualifiedname>FMassISMCSharedDataMap::GetAndMarkDirty</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="521" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationTypes.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a5516a3fade41c31d7570ce34699f31ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>TArgs</declname>
+            <defname>TArgs</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::FindOrAdd</definition>
+        <argsstring>(const uint32 Hash, TArgs &amp;&amp;... InNewInstanceArgs)</argsstring>
+        <name>FindOrAdd</name>
+        <qualifiedname>FMassISMCSharedDataMap::FindOrAdd</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArgs</ref> &amp;&amp;...</type>
+          <declname>InNewInstanceArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="524" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="817" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1a9366690ec01f3d21d4cd08c675ff1607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> *</type>
+        <definition>FMassISMCSharedData * FMassISMCSharedDataMap::Find</definition>
+        <argsstring>(const uint32 Hash)</argsstring>
+        <name>Find</name>
+        <qualifiedname>FMassISMCSharedDataMap::Find</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="526" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationTypes.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1adc028693c44bf949127d5f699666b8b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>TArgs</declname>
+            <defname>TArgs</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> &amp;</type>
+        <definition>FMassISMCSharedData &amp; FMassISMCSharedDataMap::Add</definition>
+        <argsstring>(const uint32 Hash, TArgs &amp;&amp;... InNewInstanceArgs)</argsstring>
+        <name>Add</name>
+        <qualifiedname>FMassISMCSharedDataMap::Add</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArgs</ref> &amp;&amp;...</type>
+          <declname>InNewInstanceArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="529" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="824" bodyend="828"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_i_s_m_c_shared_data_map_1ac9bdce4de25a993bc0b9f0b0f0f3414b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassISMCSharedDataMap::Remove</definition>
+        <argsstring>(const uint32 Hash)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>FMassISMCSharedDataMap::Remove</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+          <declname>Hash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="531" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Private/MassRepresentationTypes.cpp" bodystart="144" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The container type hosting <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> instances and supplying functionality of marking entries that require instance-related operations (adding, removing).</para>
+<para>To get a <ref refid="struct_f_mass_i_s_m_c_shared_data" kindref="compound">FMassISMCSharedData</ref> instance to add operations to it call GetAndMarkDirty.</para>
+<para>Use <ref refid="struct_f_mass_i_s_m_c_shared_data_map_1_1_f_dirty_iterator" kindref="compound">FDirtyIterator</ref> to iterate over just the data that needs processing.</para>
+<para><simplesect kind="see"><para><ref refid="class_u_mass_visualization_component_1a7103022e651d42079220a45724ccca71" kindref="member">UMassVisualizationComponent::EndVisualChanges</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">for</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">iteration</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_f_mass_l_o_d_significance_range" kindref="compound">FMassLODSignificanceRange</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">methods</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">for</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">performing</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">dirtying</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">operations</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" line="346" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassRepresentation/Public/MassRepresentationTypes.h" bodystart="347" bodyend="532"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1ae3c3e8e9cf9e950c6e21c51937350ae1" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Add</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1adc028693c44bf949127d5f699666b8b1" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Add</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1aeac94baaefaa336cc105e425df442e4a" prot="protected" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Data</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a13247a8082923722af92095055874a59" prot="protected" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>DirtyData</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1afeceffa836738db26130b9cc2df8f973" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Find</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a9366690ec01f3d21d4cd08c675ff1607" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Find</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a7e9e78c0b23e4a3fab1feee8aa834027" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>FindOrAdd</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a5516a3fade41c31d7570ce34699f31ee" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>FindOrAdd</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1aefceefe44b4f98e4cf245ef705a0b12a" prot="protected" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>FreeIndices</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a0c3b90a5a3592b24aff1895231989200" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetAndMarkDirty</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a1f616b10561b7df19e676f9b0623ea76" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetAndMarkDirty</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a738394c3ad921f792d8b76bd2557aa3a" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetAndMarkDirtyChecked</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1aa015c81274cb5e4afd21a42a39353caf" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetAndMarkDirtyChecked</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a7ee0d0d3bf2094f6a06b1cc857e35450" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetAtIndex</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a8c65dae283c3d613dc7e56a29db764ab" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetDataForIndex</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a9c3445967d212b728cca5dc0f0c2a30e" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetDataForKey</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a2a279ac329e10f6b347359077a681963" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>GetDirtyArray</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a339d08bd98a3353cba2c568460e8ebab" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>IsDirty</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a27f630a3d55bd1683154d3e8809b745b" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>IsEmpty</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1af69b0b9373814d94b50696bcd58d2185" prot="protected" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Map</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a27f3ab9ecb3846b36f95db9691a26c00" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Num</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a06e9d66922082d935986811a9f937a4c" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>NumValid</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a63fa2265690c2127a8a35905c3ba0a11" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Remove</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1ac9bdce4de25a993bc0b9f0b0f0f3414b" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Remove</name></member>
+      <member refid="struct_f_mass_i_s_m_c_shared_data_map_1a5cf087b1ab91d4132dcd8f0589bd6902" prot="public" virt="non-virtual"><scope>FMassISMCSharedDataMap</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

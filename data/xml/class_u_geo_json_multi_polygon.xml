@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_geo_json_multi_polygon" kind="class" language="C++" prot="public">
+    <compoundname>UGeoJsonMultiPolygon</compoundname>
+    <basecompoundref refid="class_u_geo_json_object" prot="public" virt="non-virtual">UGeoJsonObject</basecompoundref>
+    <includes refid="_geo_json_multi_polygon_8h" local="no">GeoJsonMultiPolygon.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_geo_json_multi_polygon_1a8959364545d2318ff796c80222282d52" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref></type>
+        <definition>FJsonMultiPolygon UGeoJsonMultiPolygon::Coordinates</definition>
+        <argsstring></argsstring>
+        <name>Coordinates</name>
+        <qualifiedname>UGeoJsonMultiPolygon::Coordinates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="62" column="27" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_geo_json_multi_polygon_1a1df13152386166a6547d423b1f5bbc7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_geo_json_wrapper_types_8h_1abe0c1594da7eaae696f40d7abd5cb36d" kindref="member">EGeoJsonType</ref></type>
+        <definition>EGeoJsonType UGeoJsonMultiPolygon::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>UGeoJsonMultiPolygon::GetType</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a82937b186d7b5e303ed0663b8d15f3c9">GetType</reimplements>
+        <briefdescription>
+<para>Возвращает тип объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод возвращает тип объекта GeoJSON в виде значения перечисления EGeoJsonType.</para>
+<para><simplesect kind="return"><para>Тип объекта GeoJSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="28" column="30" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPolygon.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_polygon_1a733adceee0edfc6be1408b2946a3e409" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonMultiPolygon::TryGetMultiPolygon</definition>
+        <argsstring>(FJsonMultiPolygon &amp;MultiPolygon) const override</argsstring>
+        <name>TryGetMultiPolygon</name>
+        <qualifiedname>UGeoJsonMultiPolygon::TryGetMultiPolygon</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a13e8bed5f81c961289aecec034dbaebd">TryGetMultiPolygon</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+          <declname>MultiPolygon</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить представление мультиполигона объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MultiPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр, в котором будет сохранена извлеченная геометрия мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, если объект GeoJSON может быть преобразован в мультиполигон, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="36" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPolygon.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_polygon_1a78dcba1ea57935f0368f66245c650649" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool UGeoJsonMultiPolygon::TryGetGeometry</definition>
+        <argsstring>(FJsonGeometry &amp;Geometry) const override</argsstring>
+        <name>TryGetGeometry</name>
+        <qualifiedname>UGeoJsonMultiPolygon::TryGetGeometry</qualifiedname>
+        <reimplements refid="class_u_geo_json_object_1a6c4ab73d18535e4b2826a7f2abc95360">TryGetGeometry</reimplements>
+        <param>
+          <type><ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref> &amp;</type>
+          <declname>Geometry</declname>
+        </param>
+        <briefdescription>
+<para>Пытается получить геометрию объекта GeoJSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод пытается получить геометрию объекта GeoJSON и сохранить ее в предоставленном объекте <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект <ref refid="struct_f_json_geometry" kindref="compound">FJsonGeometry</ref>, в котором будет сохранена полученная геометрия. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает true, если геометрия была успешно получена, false в противном случае. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="46" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPolygon.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_polygon_1a071f72ddd7154cbd80b54fcca92f737a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonMultiPolygon::SetCoordinates</definition>
+        <argsstring>(FJsonMultiPolygon &amp;&amp;NewCoordinates)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonMultiPolygon::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;&amp;</type>
+          <declname>NewCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта MultiPolygon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="53" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPolygon.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_geo_json_multi_polygon_1a426e1130152f7266c20ae91f951c9a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UGeoJsonMultiPolygon::SetCoordinates</definition>
+        <argsstring>(const FJsonMultiPolygon &amp;NewCoordinates)</argsstring>
+        <name>SetCoordinates</name>
+        <qualifiedname>UGeoJsonMultiPolygon::SetCoordinates</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_json_multi_polygon" kindref="compound">FJsonMultiPolygon</ref> &amp;</type>
+          <declname>NewCoordinates</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает координаты объекта MultiPolygon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новые координаты мультиполигона. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="59" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Private/GeoJsonDataStructures/GeoJsonMultiPolygon.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Представляет объект геометрии MultiPolygon формата GeoJSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Объект MultiPolygon представляет последовательность нескольких объектов Polygon </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UGeoJsonMultiPolygon</label>
+        <link refid="class_u_geo_json_multi_polygon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>FJsonMultiPolygon</label>
+        <link refid="struct_f_json_multi_polygon"/>
+      </node>
+      <node id="1">
+        <label>UGeoJsonMultiPolygon</label>
+        <link refid="class_u_geo_json_multi_polygon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Coordinates</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UGeoJsonObject</label>
+        <link refid="class_u_geo_json_object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" line="16" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/GeoJsonWrapper/Source/GeoJsonWrapper/Public/GeoJsonDataStructures/GeoJsonMultiPolygon.h" bodystart="17" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_u_geo_json_multi_polygon_1a8959364545d2318ff796c80222282d52" prot="private" virt="non-virtual"><scope>UGeoJsonMultiPolygon</scope><name>Coordinates</name></member>
+      <member refid="class_u_geo_json_multi_polygon_1a1df13152386166a6547d423b1f5bbc7d" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>GetType</name></member>
+      <member refid="class_u_geo_json_multi_polygon_1a071f72ddd7154cbd80b54fcca92f737a" prot="public" virt="non-virtual"><scope>UGeoJsonMultiPolygon</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_multi_polygon_1a426e1130152f7266c20ae91f951c9a3d" prot="public" virt="non-virtual"><scope>UGeoJsonMultiPolygon</scope><name>SetCoordinates</name></member>
+      <member refid="class_u_geo_json_multi_polygon_1a78dcba1ea57935f0368f66245c650649" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetGeometry</name></member>
+      <member refid="class_u_geo_json_object_1a4316bd3265b8793d1391102bb7a7eb98" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetLineString</name></member>
+      <member refid="class_u_geo_json_object_1aad6055d4d35b9ea879e69e7d4a1584fc" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetMultiLineString</name></member>
+      <member refid="class_u_geo_json_object_1a9297c60b38f5e492f7087c99c5119d6a" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetMultiPoint</name></member>
+      <member refid="class_u_geo_json_multi_polygon_1a733adceee0edfc6be1408b2946a3e409" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetMultiPolygon</name></member>
+      <member refid="class_u_geo_json_object_1acfdcb408339f0b37d63467acab27b15d" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetPoint</name></member>
+      <member refid="class_u_geo_json_object_1abd9090f29be459182922972e71669a21" prot="public" virt="virtual"><scope>UGeoJsonMultiPolygon</scope><name>TryGetPolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

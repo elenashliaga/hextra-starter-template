@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_t_json_net_rpc_scoped_message_sender" kind="struct" language="C++" prot="public">
+    <compoundname>TJsonNetRpcScopedMessageSender</compoundname>
+    <includes refid="_json_net_rpc_scoped_message_sender_8h" local="no">JsonNetRpcScopedMessageSender.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">typename</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">M</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_t_json_net_rpc_scoped_message_sender_1a4daf914f0255b703554872c43568b2a2" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_t_json_net_rpc_message" kindref="compound">TJsonNetRpcMessage</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">M</ref> &gt; &amp;</type>
+        <definition>TJsonNetRpcMessage&lt;M&gt;&amp; TJsonNetRpcScopedMessageSender&lt; M &gt;::Message</definition>
+        <argsstring></argsstring>
+        <name>Message</name>
+        <qualifiedname>TJsonNetRpcScopedMessageSender::Message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" line="77" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_t_json_net_rpc_scoped_message_sender_1ae3cf0ede507aad518437129285e30507" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>TJsonNetRpcScopedMessageSender&lt; M &gt;::TJsonNetRpcScopedMessageSender</definition>
+        <argsstring>(TJsonNetRpcMessage&lt; M &gt; &amp;Message) noexcept</argsstring>
+        <name>TJsonNetRpcScopedMessageSender</name>
+        <qualifiedname>TJsonNetRpcScopedMessageSender::TJsonNetRpcScopedMessageSender</qualifiedname>
+        <param>
+          <type><ref refid="struct_t_json_net_rpc_message" kindref="compound">TJsonNetRpcMessage</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">M</ref> &gt; &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор отправителя от сообщения. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" line="67" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.inl" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_t_json_net_rpc_scoped_message_sender_1a8b9e4f0a70c04f692e8aaeef1e3e3750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TJsonNetRpcScopedMessageSender&lt; M &gt;::~TJsonNetRpcScopedMessageSender</definition>
+        <argsstring>()</argsstring>
+        <name>~TJsonNetRpcScopedMessageSender</name>
+        <qualifiedname>TJsonNetRpcScopedMessageSender::~TJsonNetRpcScopedMessageSender</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Деструктор отправителя.</para>
+<para>Его вызов эквивалентен <computeroutput>Message.Send()</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" line="74" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.inl" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RAII-отправитель сообщений.</para>
+<para>Автоматически отправляет связанное сообщение при выходе из зоны видимости.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип сообщения</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<sect1 id="struct_t_json_net_rpc_scoped_message_sender_1Пример">
+<title>Пример</title>
+<sect2 id="struct_t_json_net_rpc_scoped_message_sender_1Автоматическая">
+<title>отправка сообщения при выходе из функции</title>
+<para>В данном примере ответ <computeroutput>Res</computeroutput> отправится сам при выходе из функции.</para>
+<para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleMethod</ref>(<ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Req</ref>,<sp/><ref refid="struct_f_json_net_rpc_response" kindref="compound">FJsonNetRpcResponse</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_json_net_rpc_scoped_message_sender" kindref="compound">TJsonNetRpcScopedMessageSender</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">_</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_t_expected" kindref="compound">TJsonNetRpcExpectedField&lt;FString&gt;</ref><sp/>Name<sp/>=<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Req</ref>.GetParam&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!Name.<ref refid="struct_t_expected_1a863c0d2b9b3e263f82373921542757b0" kindref="member">HasValue</ref>())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>.SetError(EJsonNetRpcErrorType::InvalidParams,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>resolve<sp/>`name`<sp/>parameter.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>.SetEntry(TEXT(</highlight><highlight class="stringliteral">&quot;isLucky&quot;</highlight><highlight class="normal">),<sp/>Name.<ref refid="struct_t_expected_1aa6ccee022698b5c3b94c5aee67f908d3" kindref="member">Value</ref>()<sp/>==<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Jane&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="struct_t_json_net_rpc_scoped_message_sender_1Потенциально">
+<title>ошибочное использование</title>
+<para>В данном примере ответ не будет отправлен ввиду того, что методы-строители инвалидируют изначальное сообщение.</para>
+<para>При выполнении данного кода будет получена ошибка из-за попытки отправить невалидное сообщение.</para>
+<para><programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SampleErroneousMethod</ref>(<ref refid="struct_f_json_net_rpc_request" kindref="compound">FJsonNetRpcRequest</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Req</ref>,<sp/><ref refid="struct_f_json_net_rpc_response" kindref="compound">FJsonNetRpcResponse</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_json_net_rpc_scoped_message_sender" kindref="compound">TJsonNetRpcScopedMessageSender</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SendGuard</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>below<sp/>creates<sp/>a<sp/>new<sp/>FJsonNetRpcResponse,<sp/>because<sp/>FJsonNetRpcResponse::WithEntry</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>returns<sp/>a<sp/>new<sp/>response<sp/>after<sp/>invalidating<sp/>the<sp/>original<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>will<sp/>result<sp/>in<sp/>a<sp/>runtime<sp/>assertion<sp/>on<sp/>function<sp/>scope<sp/>exit,<sp/>because<sp/>SendGuard<sp/>is<sp/>still</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bound<sp/>to<sp/>the<sp/>original<sp/>response;<sp/>it<sp/>will<sp/>attempt<sp/>to<sp/>send<sp/>it<sp/>and<sp/>hit<sp/>one<sp/>of<sp/>the<sp/>validity<sp/>checks</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>TJsonNetRpcMessage::Send.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Res</ref>.WithEntry(TEXT(</highlight><highlight class="stringliteral">&quot;isLucky&quot;</highlight><highlight class="normal">),<sp/>Name.<ref refid="struct_t_expected_1aa6ccee022698b5c3b94c5aee67f908d3" kindref="member">Value</ref>()<sp/>==<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Jane&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para><ref refid="struct_t_json_net_rpc_message" kindref="compound">TJsonNetRpcMessage</ref> </para>
+</simplesect>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" line="61" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/JsonNetRpc/Source/JsonNetRpc/Public/JsonNetRpcScopedMessageSender.h" bodystart="62" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_t_json_net_rpc_scoped_message_sender_1a4daf914f0255b703554872c43568b2a2" prot="private" virt="non-virtual"><scope>TJsonNetRpcScopedMessageSender</scope><name>Message</name></member>
+      <member refid="struct_t_json_net_rpc_scoped_message_sender_1ae3cf0ede507aad518437129285e30507" prot="public" virt="non-virtual"><scope>TJsonNetRpcScopedMessageSender</scope><name>TJsonNetRpcScopedMessageSender</name></member>
+      <member refid="struct_t_json_net_rpc_scoped_message_sender_1a8b9e4f0a70c04f692e8aaeef1e3e3750" prot="public" virt="non-virtual"><scope>TJsonNetRpcScopedMessageSender</scope><name>~TJsonNetRpcScopedMessageSender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_invisible_wall_controller" kind="class" language="C++" prot="public">
+    <compoundname>AInvisibleWallController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_invisible_wall_controller_8h" local="no">InvisibleWallController.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_invisible_wall_controller_1a228be3410cee797b845fccdeca7b6d15" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSplinePoint</ref> &gt;</type>
+        <definition>TArray&lt;FSplinePoint&gt; AInvisibleWallController::SplinePoints</definition>
+        <argsstring></argsstring>
+        <name>SplinePoints</name>
+        <qualifiedname>AInvisibleWallController::SplinePoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="67" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_invisible_wall_controller_1a95c874bd3a79203928940330713bd55b" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> * &gt;</type>
+        <definition>TSet&lt;ACustomCesium3DTileset*&gt; AInvisibleWallController::HitTilesets</definition>
+        <argsstring></argsstring>
+        <name>HitTilesets</name>
+        <qualifiedname>AInvisibleWallController::HitTilesets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="70" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1abb221c0dbd97c8ebec1d7688de4e6159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AInvisibleWallController::GenerateWall</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateWall</name>
+        <qualifiedname>AInvisibleWallController::GenerateWall</qualifiedname>
+        <briefdescription>
+<para>Создает невидимую стену по имеющимся точкам. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1ae62eaa9522327f07fc6f7e7d9070c7b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AInvisibleWallController::SetSplinePoints</definition>
+        <argsstring>(TArray&lt; FSplinePoint &gt; NewPoints)</argsstring>
+        <name>SetSplinePoints</name>
+        <qualifiedname>AInvisibleWallController::SetSplinePoints</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSplinePoint</ref> &gt;</type>
+          <declname>NewPoints</declname>
+        </param>
+        <briefdescription>
+<para>Задает точки для создания невидимой стены. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Массив точек сплайна. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="28" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1ac865233ca6284ac3f7a99fa6b190534e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSplinePoint</ref> &gt; &amp;</type>
+        <definition>const TArray&lt; FSplinePoint &gt; &amp; AInvisibleWallController::GetSplinePoints</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSplinePoints</name>
+        <qualifiedname>AInvisibleWallController::GetSplinePoints</qualifiedname>
+        <briefdescription>
+<para>Возвращает точки для создания невидимой стены. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Массив точек сплайна. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="35" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1a470f489ef0cc0b3f5316cbe45bbf19f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AInvisibleWallController::SetHitTilesets</definition>
+        <argsstring>(TSet&lt; ACustomCesium3DTileset * &gt; NewTilesets)</argsstring>
+        <name>SetHitTilesets</name>
+        <qualifiedname>AInvisibleWallController::SetHitTilesets</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> * &gt;</type>
+          <declname>NewTilesets</declname>
+        </param>
+        <briefdescription>
+<para>Задает набор тайлсетов, у которых убрана коллизия. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewTilesets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый набор тайлсетов. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="42" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1a0a38fa45d25181a73a62fa58e32802d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> * &gt; &amp;</type>
+        <definition>const TSet&lt; ACustomCesium3DTileset * &gt; &amp; AInvisibleWallController::GetHitTilesets</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHitTilesets</name>
+        <qualifiedname>AInvisibleWallController::GetHitTilesets</qualifiedname>
+        <briefdescription>
+<para>Возвращает набор тайлсетов, у которых убрана коллизия. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Набор тайлсетов, у которых убрана коллизия. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="49" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1a893a7f092c018ecbc0c9bef5a7c8957c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AInvisibleWallController::SetBuildingOptionMeshes</definition>
+        <argsstring>(TArray&lt; UInstancedStaticMeshComponent * &gt; NewMeshes)</argsstring>
+        <name>SetBuildingOptionMeshes</name>
+        <qualifiedname>AInvisibleWallController::SetBuildingOptionMeshes</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> * &gt;</type>
+          <declname>NewMeshes</declname>
+        </param>
+        <briefdescription>
+<para>Задает набор сеток опций здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewMeshes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый набор сеток. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="56" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1a1f180457ee1675c0afc0fd25d3e7abc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UInstancedStaticMeshComponent</ref> * &gt; &amp;</type>
+        <definition>const TArray&lt; UInstancedStaticMeshComponent * &gt; &amp; AInvisibleWallController::GetBuildingOptionMeshes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBuildingOptionMeshes</name>
+        <qualifiedname>AInvisibleWallController::GetBuildingOptionMeshes</qualifiedname>
+        <briefdescription>
+<para>Возвращает набор сеток опций здания. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Набор сеток. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="63" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Buildings/InvisibleWall/InvisibleWallController.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_invisible_wall_controller_1ac9946331e9357a19fdd71ae122b4739e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AInvisibleWallController::UPROPERTY</definition>
+        <argsstring>(VisibleAnywhere, BlueprintReadWrite, Category=&quot;InvisibleWall&quot;, BlueprintSetter=SetBuildingOptionMeshes, BlueprintGetter=GetBuildingOptionMeshes) TArray&lt; UInstancedStaticMeshComponent * &gt; BuildingOptionMeshes</argsstring>
+        <name>UPROPERTY</name>
+        <qualifiedname>AInvisibleWallController::UPROPERTY</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">VisibleAnywhere</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintReadWrite</ref></type>
+        </param>
+        <param>
+          <type>Category</type>
+          <defval>&quot;InvisibleWall&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintSetter</ref></type>
+          <defval><ref refid="class_a_invisible_wall_controller_1a893a7f092c018ecbc0c9bef5a7c8957c" kindref="member">SetBuildingOptionMeshes</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintGetter</ref></type>
+          <defval><ref refid="class_a_invisible_wall_controller_1a1f180457ee1675c0afc0fd25d3e7abc2" kindref="member">GetBuildingOptionMeshes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="72" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AInvisibleWallController</label>
+        <link refid="class_a_invisible_wall_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AInvisibleWallController</label>
+        <link refid="class_a_invisible_wall_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" line="13" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Buildings/InvisibleWall/InvisibleWallController.h" bodystart="14" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_a_invisible_wall_controller_1abb221c0dbd97c8ebec1d7688de4e6159" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>GenerateWall</name></member>
+      <member refid="class_a_invisible_wall_controller_1a1f180457ee1675c0afc0fd25d3e7abc2" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>GetBuildingOptionMeshes</name></member>
+      <member refid="class_a_invisible_wall_controller_1a0a38fa45d25181a73a62fa58e32802d9" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>GetHitTilesets</name></member>
+      <member refid="class_a_invisible_wall_controller_1ac865233ca6284ac3f7a99fa6b190534e" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>GetSplinePoints</name></member>
+      <member refid="class_a_invisible_wall_controller_1a95c874bd3a79203928940330713bd55b" prot="protected" virt="non-virtual"><scope>AInvisibleWallController</scope><name>HitTilesets</name></member>
+      <member refid="class_a_invisible_wall_controller_1a893a7f092c018ecbc0c9bef5a7c8957c" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>SetBuildingOptionMeshes</name></member>
+      <member refid="class_a_invisible_wall_controller_1a470f489ef0cc0b3f5316cbe45bbf19f2" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>SetHitTilesets</name></member>
+      <member refid="class_a_invisible_wall_controller_1ae62eaa9522327f07fc6f7e7d9070c7b3" prot="public" virt="non-virtual"><scope>AInvisibleWallController</scope><name>SetSplinePoints</name></member>
+      <member refid="class_a_invisible_wall_controller_1a228be3410cee797b845fccdeca7b6d15" prot="protected" virt="non-virtual"><scope>AInvisibleWallController</scope><name>SplinePoints</name></member>
+      <member refid="class_a_invisible_wall_controller_1ac9946331e9357a19fdd71ae122b4739e" prot="protected" virt="non-virtual"><scope>AInvisibleWallController</scope><name>UPROPERTY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

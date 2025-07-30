@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_pixel_streaming2_peer" kind="class" language="C++" prot="public">
+    <compoundname>UPixelStreaming2Peer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">USynthComponent</basecompoundref>
+    <basecompoundref refid="class_i_pixel_streaming2_audio_consumer" prot="public" virt="non-virtual">IPixelStreaming2AudioConsumer</basecompoundref>
+    <includes refid="_pixel_streaming2_peer_8h" local="no">PixelStreaming2Peer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a185974b73fb9c35e0eb45faeec60991c" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FPixelStreamingStreamerList</ref></type>
+        <definition>FPixelStreamingStreamerList UPixelStreaming2Peer::OnStreamerList</definition>
+        <argsstring></argsstring>
+        <name>OnStreamerList</name>
+        <qualifiedname>UPixelStreaming2Peer::OnStreamerList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fired when the connection the list of available streams from the server. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="71" column="29" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a0be1b44d8d2b7aedacef3116f75d3dad" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UPixelStreaming2MediaTexture</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UPixelStreaming2MediaTexture&gt; UPixelStreaming2Peer::VideoConsumer</definition>
+        <argsstring></argsstring>
+        <name>VideoConsumer</name>
+        <qualifiedname>UPixelStreaming2Peer::VideoConsumer</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A sink for the video data received once this connection has finished negotiating. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="77" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a60f2013c4390863284793280c53dee40" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FUtf8String</ref></type>
+        <definition>FUtf8String UPixelStreaming2Peer::SubscribedStream</definition>
+        <argsstring></argsstring>
+        <name>SubscribedStream</name>
+        <qualifiedname>UPixelStreaming2Peer::SubscribedStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="80" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a5d6156657a5764e212c59edf8f405c26" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FUtf8String</ref></type>
+        <definition>FUtf8String UPixelStreaming2Peer::PlayerName</definition>
+        <argsstring></argsstring>
+        <name>PlayerName</name>
+        <qualifiedname>UPixelStreaming2Peer::PlayerName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="81" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a9f708725a8957430fee87553fed33a63" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_audio_sink" kindref="compound">UE::PixelStreaming2::FAudioSink</ref> &gt;</type>
+        <definition>TSharedPtr&lt;UE::PixelStreaming2::FAudioSink&gt; UPixelStreaming2Peer::AudioSink</definition>
+        <argsstring></argsstring>
+        <name>AudioSink</name>
+        <qualifiedname>UPixelStreaming2Peer::AudioSink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="84" column="13" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a3da923698c8af6f747f77e140e20fd29" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_sound_generator" kindref="compound">UE::PixelStreaming2::FSoundGenerator</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedPtr&lt;UE::PixelStreaming2::FSoundGenerator, ESPMode::ThreadSafe&gt; UPixelStreaming2Peer::SoundGenerator</definition>
+        <argsstring></argsstring>
+        <name>SoundGenerator</name>
+        <qualifiedname>UPixelStreaming2Peer::SoundGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="85" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1af8281dfd5c2ead45144d946add297e9f" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_video_sink" kindref="compound">UE::PixelStreaming2::FVideoSink</ref> &gt;</type>
+        <definition>TSharedPtr&lt;UE::PixelStreaming2::FVideoSink&gt; UPixelStreaming2Peer::VideoSink</definition>
+        <argsstring></argsstring>
+        <name>VideoSink</name>
+        <qualifiedname>UPixelStreaming2Peer::VideoSink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="87" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a2b00e8d692861226e8e45f6f7c8f99c4" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_epic_rtc_manager" kindref="compound">UE::PixelStreaming2::FEpicRtcManager</ref> &gt;</type>
+        <definition>TSharedPtr&lt;UE::PixelStreaming2::FEpicRtcManager&gt; UPixelStreaming2Peer::EpicRtcManager</definition>
+        <argsstring></argsstring>
+        <name>EpicRtcManager</name>
+        <qualifiedname>UPixelStreaming2Peer::EpicRtcManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="89" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1acf44b544d92469cb37cbfbd23fbf75cd" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_1_1_f_r_t_c_stats_collector" kindref="compound">UE::PixelStreaming2::FRTCStatsCollector</ref> &gt;</type>
+        <definition>TSharedPtr&lt;UE::PixelStreaming2::FRTCStatsCollector&gt; UPixelStreaming2Peer::StatsCollector</definition>
+        <argsstring></argsstring>
+        <name>StatsCollector</name>
+        <qualifiedname>UPixelStreaming2Peer::StatsCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="91" column="12" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1a89e6404fa865d8de462838eb880648ce" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSessionState</ref></type>
+        <definition>EpicRtcSessionState UPixelStreaming2Peer::SessionState</definition>
+        <argsstring></argsstring>
+        <name>SessionState</name>
+        <qualifiedname>UPixelStreaming2Peer::SessionState</qualifiedname>
+        <initializer>= EpicRtcSessionState::Disconnected</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="135" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_pixel_streaming2_peer_1ae9c22e51100b5cd6df9c33f5d82fcea1" prot="private" static="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t UPixelStreaming2Peer::PlayerId</definition>
+        <argsstring></argsstring>
+        <name>PlayerId</name>
+        <qualifiedname>UPixelStreaming2Peer::PlayerId</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="82" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a916845cd7229f1de452950c28d84cb67" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>UPixelStreaming2Peer::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="34" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="28" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a1902a7f459e250445c9e4236a85dfc2c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::BeginDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginDestroy</name>
+        <qualifiedname>UPixelStreaming2Peer::BeginDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="35" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a7781a6cca86feb0e63ca3ca5368eb13a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::EndPlay</definition>
+        <argsstring>(const EEndPlayReason::Type EndPlayReason) override</argsstring>
+        <name>EndPlay</name>
+        <qualifiedname>UPixelStreaming2Peer::EndPlay</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> EEndPlayReason::Type</type>
+          <declname>EndPlayReason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="36" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a0d36431256b6ee8b758e6a65b9867a89" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnBeginGenerate</definition>
+        <argsstring>() override</argsstring>
+        <name>OnBeginGenerate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnBeginGenerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="39" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1aad48843dec7ce5b4786f862d15113ce3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnEndGenerate</definition>
+        <argsstring>() override</argsstring>
+        <name>OnEndGenerate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnEndGenerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="40" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a0fc5c2a36902f739f2b695dd33c60c1a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ISoundGeneratorPtr</ref></type>
+        <definition>ISoundGeneratorPtr UPixelStreaming2Peer::CreateSoundGenerator</definition>
+        <argsstring>(const FSoundGeneratorInitParams &amp;InParams) override</argsstring>
+        <name>CreateSoundGenerator</name>
+        <qualifiedname>UPixelStreaming2Peer::CreateSoundGenerator</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FSoundGeneratorInitParams</ref> &amp;</type>
+          <declname>InParams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="41" column="28" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="226" bodyend="232"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a828f7c0963009e10dafae305b319a430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPixelStreaming2Peer::Connect</definition>
+        <argsstring>(const FString &amp;Url)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>UPixelStreaming2Peer::Connect</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempt to connect to a specified signalling server. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url of the signalling server. Ignored if this component has a MediaSource. In that case the URL on the media source will be used instead. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns false if Connect fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="50" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="88" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a7724c33ac008ba84c0a01eaf91ed1a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPixelStreaming2Peer::Disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>Disconnect</name>
+        <qualifiedname>UPixelStreaming2Peer::Disconnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disconnect from the signalling server. No action if no connection exists. <simplesect kind="return"><para>Returns false if Disconnect fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="57" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a88743c0e712711388b1cadec776fa16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPixelStreaming2Peer::Subscribe</definition>
+        <argsstring>(const FString &amp;StreamerId)</argsstring>
+        <name>Subscribe</name>
+        <qualifiedname>UPixelStreaming2Peer::Subscribe</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>StreamerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subscribe this peer to the streams provided by the specified streamer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StreamerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the streamer to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns false if Subscribe fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="65" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="178" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a8771c4659cd23a5e8b0104e1b1b19f03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::ConsumeRawPCM</definition>
+        <argsstring>(const int16_t *AudioData, int InSampleRate, size_t NChannels, size_t NFrames) override</argsstring>
+        <name>ConsumeRawPCM</name>
+        <qualifiedname>UPixelStreaming2Peer::ConsumeRawPCM</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_audio_consumer_1a97fa6ec7f06254f49bd892626a3f2d1c">ConsumeRawPCM</reimplements>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int16_t</ref> *</type>
+          <declname>AudioData</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>InSampleRate</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NChannels</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">size_t</ref></type>
+          <declname>NFrames</declname>
+        </param>
+        <briefdescription>
+<para>Consume raw audio data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>AudioData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the audio data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InSampleRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audio sample rate in samples per second. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NChannels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of audio channels. For example 2 for stero audio. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NFrames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of Audio frames in a single channel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="97" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="244" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a37d78192ad6fae311b0c9c1c467e7509" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnConsumerAdded</definition>
+        <argsstring>() override</argsstring>
+        <name>OnConsumerAdded</name>
+        <qualifiedname>UPixelStreaming2Peer::OnConsumerAdded</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_audio_consumer_1ae89b487779a7b186d25546b13c253fc6">OnConsumerAdded</reimplements>
+        <briefdescription>
+<para>Called when a audio consumer is added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="98" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1affc29a0377a3fda19f7fb3dbefde3f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnConsumerRemoved</definition>
+        <argsstring>() override</argsstring>
+        <name>OnConsumerRemoved</name>
+        <qualifiedname>UPixelStreaming2Peer::OnConsumerRemoved</qualifiedname>
+        <reimplements refid="class_i_pixel_streaming2_audio_consumer_1a6e32e06a4a60a28fbc36af5109cbacf2">OnConsumerRemoved</reimplements>
+        <briefdescription>
+<para>Called when a audio consumer is removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="99" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="276" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1abfc93234c0073bd951f125704e7be283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnSessionStateUpdate</definition>
+        <argsstring>(const EpicRtcSessionState StateUpdate)</argsstring>
+        <name>OnSessionStateUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnSessionStateUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSessionState</ref></type>
+          <declname>StateUpdate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="103" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="285" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ac58ca6579bf0f557b81a66f1f364a077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnSessionErrorUpdate</definition>
+        <argsstring>(const EpicRtcErrorCode ErrorUpdate)</argsstring>
+        <name>OnSessionErrorUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnSessionErrorUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcErrorCode</ref></type>
+          <declname>ErrorUpdate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="104" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="316" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ae34e4882fca1970037e92cb745937934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnSessionRoomsAvailableUpdate</definition>
+        <argsstring>(EpicRtcStringArrayInterface *RoomsList)</argsstring>
+        <name>OnSessionRoomsAvailableUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnSessionRoomsAvailableUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcStringArrayInterface</ref> *</type>
+          <declname>RoomsList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="105" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="303" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a009b923fb9c574ad1e831685d16e803e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnRoomStateUpdate</definition>
+        <argsstring>(const EpicRtcRoomState State)</argsstring>
+        <name>OnRoomStateUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnRoomStateUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcRoomState</ref></type>
+          <declname>State</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="107" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="320" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ab8bbe00dc2b64a489d22e2cd833008d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnRoomJoinedUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant)</argsstring>
+        <name>OnRoomJoinedUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnRoomJoinedUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="108" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="324" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a01683324e06a39cff23e6c8a3a0abcfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnRoomLeftUpdate</definition>
+        <argsstring>(const EpicRtcStringView ParticipantId)</argsstring>
+        <name>OnRoomLeftUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnRoomLeftUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcStringView</ref></type>
+          <declname>ParticipantId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="109" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="330" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1acf11a15795ba78065945fce425745922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnAudioTrackUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant, EpicRtcAudioTrackInterface *AudioTrack)</argsstring>
+        <name>OnAudioTrackUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnAudioTrackUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref> *</type>
+          <declname>AudioTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="110" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="334" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a65da73fc2eb87d4dba89cc97106fa6e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnVideoTrackUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant, EpicRtcVideoTrackInterface *VideoTrack)</argsstring>
+        <name>OnVideoTrackUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnVideoTrackUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref> *</type>
+          <declname>VideoTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="111" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="348" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1aae9d30e0600387f2482012f30dcb90ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnDataTrackUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant, EpicRtcDataTrackInterface *DataTrack)</argsstring>
+        <name>OnDataTrackUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnDataTrackUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref> *</type>
+          <declname>DataTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="112" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="365" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a42d6237dc1eb07cb684c4ed44aa5cdaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnLocalSdpUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant, EpicRtcSdpInterface *Sdp)</argsstring>
+        <name>OnLocalSdpUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnLocalSdpUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSdpInterface</ref> *</type>
+          <declname>Sdp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="113" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="369" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a81905a4c15add17144f6138d81634e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnRemoteSdpUpdate</definition>
+        <argsstring>(EpicRtcParticipantInterface *Participant, EpicRtcSdpInterface *Sdp)</argsstring>
+        <name>OnRemoteSdpUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnRemoteSdpUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcParticipantInterface</ref> *</type>
+          <declname>Participant</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcSdpInterface</ref> *</type>
+          <declname>Sdp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="114" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="373" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a757150a02630e8c325679b07e5841d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnRoomErrorUpdate</definition>
+        <argsstring>(const EpicRtcErrorCode Error)</argsstring>
+        <name>OnRoomErrorUpdate</name>
+        <qualifiedname>UPixelStreaming2Peer::OnRoomErrorUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcErrorCode</ref></type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="115" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="377" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a1a4932a6c128dca44982022de2f94057" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnAudioTrackMuted</definition>
+        <argsstring>(EpicRtcAudioTrackInterface *AudioTrack, EpicRtcBool bIsMuted)</argsstring>
+        <name>OnAudioTrackMuted</name>
+        <qualifiedname>UPixelStreaming2Peer::OnAudioTrackMuted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref> *</type>
+          <declname>AudioTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcBool</ref></type>
+          <declname>bIsMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="117" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="381" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a413276c5cdac946810ccae3f633ae95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnAudioTrackFrame</definition>
+        <argsstring>(EpicRtcAudioTrackInterface *AudioTrack, const EpicRtcAudioFrame &amp;Frame)</argsstring>
+        <name>OnAudioTrackFrame</name>
+        <qualifiedname>UPixelStreaming2Peer::OnAudioTrackFrame</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref> *</type>
+          <declname>AudioTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioFrame</ref> &amp;</type>
+          <declname>Frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="118" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="391" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ab6c7fbe185fe8212f4e18b1bad45d573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnAudioTrackRemoved</definition>
+        <argsstring>(EpicRtcAudioTrackInterface *AudioTrack)</argsstring>
+        <name>OnAudioTrackRemoved</name>
+        <qualifiedname>UPixelStreaming2Peer::OnAudioTrackRemoved</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref> *</type>
+          <declname>AudioTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="119" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="401" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a95c6cd08dad7a250068f5536d9cdac91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnAudioTrackState</definition>
+        <argsstring>(EpicRtcAudioTrackInterface *AudioTrack, const EpicRtcTrackState State)</argsstring>
+        <name>OnAudioTrackState</name>
+        <qualifiedname>UPixelStreaming2Peer::OnAudioTrackState</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcAudioTrackInterface</ref> *</type>
+          <declname>AudioTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref></type>
+          <declname>State</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="120" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="405" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ae488191170d3c42002271b5105522d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnVideoTrackMuted</definition>
+        <argsstring>(EpicRtcVideoTrackInterface *VideoTrack, EpicRtcBool bIsMuted)</argsstring>
+        <name>OnVideoTrackMuted</name>
+        <qualifiedname>UPixelStreaming2Peer::OnVideoTrackMuted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref> *</type>
+          <declname>VideoTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcBool</ref></type>
+          <declname>bIsMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="122" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="409" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1aa30da63c71e7b2fc07ec25b3f5c0f08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnVideoTrackFrame</definition>
+        <argsstring>(EpicRtcVideoTrackInterface *VideoTrack, const EpicRtcVideoFrame &amp;Frame)</argsstring>
+        <name>OnVideoTrackFrame</name>
+        <qualifiedname>UPixelStreaming2Peer::OnVideoTrackFrame</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref> *</type>
+          <declname>VideoTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoFrame</ref> &amp;</type>
+          <declname>Frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="123" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="419" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1af4cf3d675c6744a02bb6dc852ee84089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnVideoTrackRemoved</definition>
+        <argsstring>(EpicRtcVideoTrackInterface *VideoTrack)</argsstring>
+        <name>OnVideoTrackRemoved</name>
+        <qualifiedname>UPixelStreaming2Peer::OnVideoTrackRemoved</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref> *</type>
+          <declname>VideoTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="124" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="429" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1ac8e3671b2ae16b9f5024093875d313ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnVideoTrackState</definition>
+        <argsstring>(EpicRtcVideoTrackInterface *VideoTrack, const EpicRtcTrackState State)</argsstring>
+        <name>OnVideoTrackState</name>
+        <qualifiedname>UPixelStreaming2Peer::OnVideoTrackState</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcVideoTrackInterface</ref> *</type>
+          <declname>VideoTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref></type>
+          <declname>State</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="125" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="433" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1aa0f801f88caf29e628d06a42451f7353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnDataTrackRemoved</definition>
+        <argsstring>(EpicRtcDataTrackInterface *DataTrack)</argsstring>
+        <name>OnDataTrackRemoved</name>
+        <qualifiedname>UPixelStreaming2Peer::OnDataTrackRemoved</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref> *</type>
+          <declname>DataTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="127" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="437" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a8dbe9ef629efe159204f49750c3e2b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnDataTrackState</definition>
+        <argsstring>(EpicRtcDataTrackInterface *DataTrack, const EpicRtcTrackState State)</argsstring>
+        <name>OnDataTrackState</name>
+        <qualifiedname>UPixelStreaming2Peer::OnDataTrackState</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref> *</type>
+          <declname>DataTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcTrackState</ref></type>
+          <declname>State</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="128" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="441" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a03f3be176d7c9c30e75db64cb85b0fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnDataTrackMessage</definition>
+        <argsstring>(EpicRtcDataTrackInterface *DataTrack)</argsstring>
+        <name>OnDataTrackMessage</name>
+        <qualifiedname>UPixelStreaming2Peer::OnDataTrackMessage</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcDataTrackInterface</ref> *</type>
+          <declname>DataTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="129" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="445" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1aa6aa03d01f403d01a4b0a5d7aee412df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UPixelStreaming2Peer::OnStatsReady</definition>
+        <argsstring>(const FString &amp;PeerId, const EpicRtcConnectionStats &amp;ConnectionStats)</argsstring>
+        <name>OnStatsReady</name>
+        <qualifiedname>UPixelStreaming2Peer::OnStatsReady</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>PeerId</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">EpicRtcConnectionStats</ref> &amp;</type>
+          <declname>ConnectionStats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="132" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="449" bodyend="463"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_pixel_streaming2_peer_1a0cc63f31c3f201eaef53eb86dd9fe296" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UPixelStreaming2Peer::Disconnect</definition>
+        <argsstring>(const FString &amp;OptionalReason)</argsstring>
+        <name>Disconnect</name>
+        <qualifiedname>UPixelStreaming2Peer::Disconnect</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>OptionalReason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="93" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.cpp" bodystart="126" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A blueprint representation of a Pixel Streaming Peer Connection. Will accept video sinks to receive video data. NOTE: This class is not a peer of a streamer. This class represents a peer in its own right (akin to the browser) and will subscribe to a stream </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IPixelStreaming2AudioConsumer</label>
+        <link refid="class_i_pixel_streaming2_audio_consumer"/>
+      </node>
+      <node id="1">
+        <label>UPixelStreaming2Peer</label>
+        <link refid="class_u_pixel_streaming2_peer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>USynthComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IPixelStreaming2AudioConsumer</label>
+        <link refid="class_i_pixel_streaming2_audio_consumer"/>
+      </node>
+      <node id="1">
+        <label>UPixelStreaming2Peer</label>
+        <link refid="class_u_pixel_streaming2_peer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>USynthComponent</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" line="29" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2/Private/Blueprints/PixelStreaming2Peer.h" bodystart="30" bodyend="136"/>
+    <listofallmembers>
+      <member refid="class_u_pixel_streaming2_peer_1a9f708725a8957430fee87553fed33a63" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>AudioSink</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a1902a7f459e250445c9e4236a85dfc2c" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>BeginDestroy</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a916845cd7229f1de452950c28d84cb67" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>BeginPlay</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a828f7c0963009e10dafae305b319a430" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>Connect</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a8771c4659cd23a5e8b0104e1b1b19f03" prot="public" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>ConsumeRawPCM</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a0fc5c2a36902f739f2b695dd33c60c1a" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>CreateSoundGenerator</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a7724c33ac008ba84c0a01eaf91ed1a13" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>Disconnect</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a0cc63f31c3f201eaef53eb86dd9fe296" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>Disconnect</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a7781a6cca86feb0e63ca3ca5368eb13a" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>EndPlay</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a2b00e8d692861226e8e45f6f7c8f99c4" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>EpicRtcManager</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a413276c5cdac946810ccae3f633ae95c" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnAudioTrackFrame</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a1a4932a6c128dca44982022de2f94057" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnAudioTrackMuted</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ab6c7fbe185fe8212f4e18b1bad45d573" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnAudioTrackRemoved</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a95c6cd08dad7a250068f5536d9cdac91" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnAudioTrackState</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1acf11a15795ba78065945fce425745922" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnAudioTrackUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a0d36431256b6ee8b758e6a65b9867a89" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>OnBeginGenerate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a37d78192ad6fae311b0c9c1c467e7509" prot="public" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>OnConsumerAdded</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1affc29a0377a3fda19f7fb3dbefde3f7d" prot="public" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>OnConsumerRemoved</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a03f3be176d7c9c30e75db64cb85b0fd2" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnDataTrackMessage</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1aa0f801f88caf29e628d06a42451f7353" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnDataTrackRemoved</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a8dbe9ef629efe159204f49750c3e2b97" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnDataTrackState</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1aae9d30e0600387f2482012f30dcb90ed" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnDataTrackUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1aad48843dec7ce5b4786f862d15113ce3" prot="protected" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>OnEndGenerate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a42d6237dc1eb07cb684c4ed44aa5cdaa" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnLocalSdpUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a81905a4c15add17144f6138d81634e16" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnRemoteSdpUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a757150a02630e8c325679b07e5841d4b" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnRoomErrorUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ab8bbe00dc2b64a489d22e2cd833008d5" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnRoomJoinedUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a01683324e06a39cff23e6c8a3a0abcfe" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnRoomLeftUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a009b923fb9c574ad1e831685d16e803e" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnRoomStateUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ac58ca6579bf0f557b81a66f1f364a077" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnSessionErrorUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ae34e4882fca1970037e92cb745937934" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnSessionRoomsAvailableUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1abfc93234c0073bd951f125704e7be283" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnSessionStateUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1aa6aa03d01f403d01a4b0a5d7aee412df" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnStatsReady</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a185974b73fb9c35e0eb45faeec60991c" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnStreamerList</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1aa30da63c71e7b2fc07ec25b3f5c0f08f" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnVideoTrackFrame</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ae488191170d3c42002271b5105522d9e" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnVideoTrackMuted</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1af4cf3d675c6744a02bb6dc852ee84089" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnVideoTrackRemoved</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ac8e3671b2ae16b9f5024093875d313ba" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnVideoTrackState</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a65da73fc2eb87d4dba89cc97106fa6e7" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>OnVideoTrackUpdate</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1ae9c22e51100b5cd6df9c33f5d82fcea1" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>PlayerId</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a5d6156657a5764e212c59edf8f405c26" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>PlayerName</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a89e6404fa865d8de462838eb880648ce" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>SessionState</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a3da923698c8af6f747f77e140e20fd29" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>SoundGenerator</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1acf44b544d92469cb37cbfbd23fbf75cd" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>StatsCollector</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a88743c0e712711388b1cadec776fa16d" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>Subscribe</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a60f2013c4390863284793280c53dee40" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>SubscribedStream</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1a0be1b44d8d2b7aedacef3116f75d3dad" prot="public" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>VideoConsumer</name></member>
+      <member refid="class_u_pixel_streaming2_peer_1af8281dfd5c2ead45144d946add297e9f" prot="private" virt="non-virtual"><scope>UPixelStreaming2Peer</scope><name>VideoSink</name></member>
+      <member refid="class_i_pixel_streaming2_audio_consumer_1aa5ad952a235af66304ca84cbc7ecfe72" prot="public" virt="virtual"><scope>UPixelStreaming2Peer</scope><name>~IPixelStreaming2AudioConsumer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

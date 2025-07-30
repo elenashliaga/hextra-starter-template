@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_u_tiles_loader" kind="class" language="C++" prot="public">
+    <compoundname>UTilesLoader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <derivedcompoundref refid="class_u_tiles_loader_icons" prot="public" virt="non-virtual">UTilesLoaderIcons</derivedcompoundref>
+    <includes refid="_tiles_loader_8h" local="no">TilesLoader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_tiles_loader_1ac8076305bac7d1377c91b4eb3952926e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_communication_metadata" kindref="compound">FCommunicationMetadata</ref></type>
+        <definition>FCommunicationMetadata UTilesLoader::CommunicationMetadata</definition>
+        <argsstring></argsstring>
+        <name>CommunicationMetadata</name>
+        <qualifiedname>UTilesLoader::CommunicationMetadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="50" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1afc2cfa1af8dfef59584de36c69ad71c2" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTilesParsed</ref></type>
+        <definition>FTilesParsed UTilesLoader::OnTilesParsed</definition>
+        <argsstring></argsstring>
+        <name>OnTilesParsed</name>
+        <qualifiedname>UTilesLoader::OnTilesParsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="63" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1af30b089191d6adc29c4383a259b82918" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="class_u_server_communications_subsystem" kindref="compound">UServerCommunicationsSubsystem</ref> &gt;</type>
+        <definition>TObjectPtr&lt;UServerCommunicationsSubsystem&gt; UTilesLoader::ServerCommunicationsSubsystem</definition>
+        <argsstring></argsstring>
+        <name>ServerCommunicationsSubsystem</name>
+        <qualifiedname>UTilesLoader::ServerCommunicationsSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="93" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_u_tiles_loader_1ac83e13236298dfbed1eea430ce84be5e" prot="protected" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref> &gt;</type>
+        <definition>std::atomic&lt;int32&gt; UTilesLoader::NumPendingRequests</definition>
+        <argsstring></argsstring>
+        <name>NumPendingRequests</name>
+        <qualifiedname>UTilesLoader::NumPendingRequests</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Кол-во запросов находящихся в ожидании </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="133" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a470a4a62d8ee997ad7074dac79ca9fae" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_parsed_tiles" kindref="compound">FParsedTiles</ref></type>
+        <definition>FParsedTiles UTilesLoader::ParsedTiles</definition>
+        <argsstring></argsstring>
+        <name>ParsedTiles</name>
+        <qualifiedname>UTilesLoader::ParsedTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="135" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a316bb1bf8311623cf615782375a94ca8" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection UTilesLoader::ParseTileMutex</definition>
+        <argsstring></argsstring>
+        <name>ParseTileMutex</name>
+        <qualifiedname>UTilesLoader::ParseTileMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="137" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a800022aeaa8bc854c17c4c4905155be4" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FLoadedLayerDataHandle</ref></type>
+        <definition>FLoadedLayerDataHandle UTilesLoader::OnLoadedLayerResponse</definition>
+        <argsstring></argsstring>
+        <name>OnLoadedLayerResponse</name>
+        <qualifiedname>UTilesLoader::OnLoadedLayerResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="140" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1adf5fa7deaba9722c436ca881d44a39cf" prot="protected" static="no" mutable="no">
+        <type><ref refid="_tiles_loader_8h_1a31e07f5726c14b19fa8a79f056465d1e" kindref="member">TDiscardableLoadingUrlsCache</ref></type>
+        <definition>TDiscardableLoadingUrlsCache UTilesLoader::LoadingUrls</definition>
+        <argsstring></argsstring>
+        <name>LoadingUrls</name>
+        <qualifiedname>UTilesLoader::LoadingUrls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="142" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1afcb3924f4aaad7265e4529964b1e7697" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">IHttpRequest</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FIntVector, TSharedPtr&lt;IHttpRequest&gt; &gt; UTilesLoader::LoadingRequests</definition>
+        <argsstring></argsstring>
+        <name>LoadingRequests</name>
+        <qualifiedname>UTilesLoader::LoadingRequests</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="144" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a76bf775c70b906bd68931b04f563037f" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_f_limited_cache" kindref="compound">FLimitedCache</ref></type>
+        <definition>FLimitedCache UTilesLoader::ParsedTilesCache</definition>
+        <argsstring></argsstring>
+        <name>ParsedTilesCache</name>
+        <qualifiedname>UTilesLoader::ParsedTilesCache</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="146" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a3446ab8f7a0442a1d43cbe01097bec1c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+        <definition>TSet&lt;FIntVector&gt; UTilesLoader::ActuallyViewedTiles</definition>
+        <argsstring></argsstring>
+        <name>ActuallyViewedTiles</name>
+        <qualifiedname>UTilesLoader::ActuallyViewedTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="148" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1a7c6405e3a5eaf6b4b445ea0b0d813596" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UTilesLoader::ServiceUrl</definition>
+        <argsstring></argsstring>
+        <name>ServiceUrl</name>
+        <qualifiedname>UTilesLoader::ServiceUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="150" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_tiles_loader_1a88b71d6fbc4dc69ddafd520aee8ec812" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+        <definition>TSet&lt;FIntVector&gt; UTilesLoader::EmptyTiles</definition>
+        <argsstring></argsstring>
+        <name>EmptyTiles</name>
+        <qualifiedname>UTilesLoader::EmptyTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="195" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_tiles_loader_1acc39915bb04e26682829da2060f4f25c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt;</type>
+        <definition>TSet&lt;FIntVector&gt; UTilesLoader::ErrorTiles</definition>
+        <argsstring></argsstring>
+        <name>ErrorTiles</name>
+        <qualifiedname>UTilesLoader::ErrorTiles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="198" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_tiles_loader_1af2532c29702e8546642323f92b07997f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::Init</definition>
+        <argsstring>(const FCommunicationMetadata &amp;CommunicationMetadataIn, const FString &amp;InServiceUrl)</argsstring>
+        <name>Init</name>
+        <qualifiedname>UTilesLoader::Init</qualifiedname>
+        <reimplementedby refid="class_u_tiles_loader_icons_1a9e658a6e9adf864276b869498dbc40bf">Init</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="struct_f_communication_metadata" kindref="compound">FCommunicationMetadata</ref> &amp;</type>
+          <declname>CommunicationMetadataIn</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>InServiceUrl</declname>
+        </param>
+        <briefdescription>
+<para>Задаёт базовые параметры для <ref refid="class_u_tiles_loader" kindref="compound">UTilesLoader</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CommunicationMetadataIn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные о том, как загрузчик коммуницирует с тайловым сервисом </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InServiceUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на тайловый сервис</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="60" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="14" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a55abcd3f1f51f69308c01c7f58d04f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::DownloadParametrizedUrl</definition>
+        <argsstring>(const TSet&lt; FIntVector &gt; &amp;Tiles)</argsstring>
+        <name>DownloadParametrizedUrl</name>
+        <qualifiedname>UTilesLoader::DownloadParametrizedUrl</qualifiedname>
+        <reimplementedby refid="class_u_tiles_loader_icons_1a84ddb07475bd2fb6cf9acd27a0bbf4e6">DownloadParametrizedUrl</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt; &amp;</type>
+          <declname>Tiles</declname>
+        </param>
+        <briefdescription>
+<para>Загружает параметризованный URL для указанного набора плиток </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Tiles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор плиток для загрузки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="72" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="31" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a14e9af3b3b84e059864b5a4bb73f2466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::SetActuallyViewedTiles</definition>
+        <argsstring>(const TSet&lt; FIntVector &gt; &amp;Value)</argsstring>
+        <name>SetActuallyViewedTiles</name>
+        <qualifiedname>UTilesLoader::SetActuallyViewedTiles</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &gt; &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает набор плиток, которые реально просматриваются. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор плиток, которые фактически просматриваются.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="82" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="78" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a4aa592fd0e558602a822915b3ccee157" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::ClearLoader</definition>
+        <argsstring>()</argsstring>
+        <name>ClearLoader</name>
+        <qualifiedname>UTilesLoader::ClearLoader</qualifiedname>
+        <reimplementedby refid="class_u_tiles_loader_icons_1a0d149bd44d7ab8fd1cd435081e9a38fb">ClearLoader</reimplementedby>
+        <briefdescription>
+<para>Очищает различные контейнеры и флаги внутри Loader&apos;а </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="90" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="91" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a85ae7d83ebe62c3e665f90e406b2b1be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UTilesLoader::IsRequestRunning</definition>
+        <argsstring>(const FIntVector &amp;Key) const</argsstring>
+        <name>IsRequestRunning</name>
+        <qualifiedname>UTilesLoader::IsRequestRunning</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет нужнается ли тайл в загрузке </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ тайла</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="102" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_tiles_loader_1a89229495e30edc562bc014bc233145bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::BeginDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginDestroy</name>
+        <qualifiedname>UTilesLoader::BeginDestroy</qualifiedname>
+        <briefdescription>
+<para>Начинает процесс уничтожения объекта <ref refid="class_u_tiles_loader" kindref="compound">UTilesLoader</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод отменяет все активные HTTP-запросы, отвязывает обработчики событий и очищает внутренние кэши. Его следует вызывать, когда объект больше не нужен, чтобы очистить все ресурсы.</para>
+<para><simplesect kind="note"><para>Этот метод автоматически вызывается при уничтожении объекта.</para>
+</simplesect>
+<simplesect kind="remark"><para>Потокобезопасный: Нет</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_tiles_loader_1a55abcd3f1f51f69308c01c7f58d04f74" kindref="member">UTilesLoader::DownloadParametrizedUrl</ref>, <ref refid="class_u_tiles_loader_1a14e9af3b3b84e059864b5a4bb73f2466" kindref="member">UTilesLoader::SetActuallyViewedTiles</ref></para>
+</simplesect>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="119" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="289" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a1696edab63ca5cbda433ce91ec8e3193" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString UTilesLoader::GetTileSourcePathFromZoom</definition>
+        <argsstring>(int ZoomLevel)</argsstring>
+        <name>GetTileSourcePathFromZoom</name>
+        <qualifiedname>UTilesLoader::GetTileSourcePathFromZoom</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int</ref></type>
+          <declname>ZoomLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает путь источника плитки для данного уровня увеличения.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ZoomLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уровень увеличения, для которого нужно получить путь источника плитки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Путь источника плитки для указанного уровня увеличения. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="128" column="25" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="273" bodyend="287"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_tiles_loader_1a414a647d77a36b68a77981730485af25" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::DownloadAndParsePbfFile</definition>
+        <argsstring>(const FString &amp;Url, const FIntVector &amp;TileCoords)</argsstring>
+        <name>DownloadAndParsePbfFile</name>
+        <qualifiedname>UTilesLoader::DownloadAndParsePbfFile</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FIntVector</ref> &amp;</type>
+          <declname>TileCoords</declname>
+        </param>
+        <briefdescription>
+<para>Загружает и анализирует файл Protocol Buffer (PBF) с указанным URL и координатами плиток. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL-адрес файла PBF для загрузки и анализа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TileCoords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Координаты (X, Y, Z) плитки, для которой загружается и анализируется файл PBF.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Этот метод создает HTTP-запрос для загрузки файла PBF по указанному URL и обрабатывает ответ для анализа файла. Загруженные и проанализированные данные затем хранятся внутри для доступа приложением.</para>
+</simplesect>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="164" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="111" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a941bad2b1f7354fffb69887d2294aa74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::OnResponseReceived</definition>
+        <argsstring>(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bSuccess)</argsstring>
+        <name>OnResponseReceived</name>
+        <qualifiedname>UTilesLoader::OnResponseReceived</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestPtr</ref></type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpResponsePtr</ref></type>
+          <declname>Response</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bSuccess</declname>
+        </param>
+        <briefdescription>
+<para>Вызывается при получении HTTP-ответа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект HTTP-запроса. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект HTTP-ответа. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Был ли HTTP-запрос успешным.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Этот метод автоматически вызывается процессом HTTP-запроса и не должен вызываться напрямую.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_tiles_loader_1a414a647d77a36b68a77981730485af25" kindref="member">UTilesLoader::DownloadAndParsePbfFile</ref></para>
+</simplesect>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="179" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="189" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_tiles_loader_1a3246f7054fa0f7e4f53b70ab42ba11bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void UTilesLoader::CancelActiveHttpRequests</definition>
+        <argsstring>()</argsstring>
+        <name>CancelActiveHttpRequests</name>
+        <qualifiedname>UTilesLoader::CancelActiveHttpRequests</qualifiedname>
+        <briefdescription>
+<para>Отменяет все активные HTTP-запросы, которые в настоящее время делает TilesLoader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Этот метод итерирует по активной карте LoadingRequests и отменяет любые запросы, которые не находятся в наборе ActuallyViewedTiles. Он отменяет запрос, отвязывает обработчик событий OnProcessRequestComplete и удаляет запись из карты. Это обеспечивает активность только запросов для плиток, которые на самом деле просматриваются.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_u_tiles_loader_1a14e9af3b3b84e059864b5a4bb73f2466" kindref="member">UTilesLoader::SetActuallyViewedTiles</ref></para>
+</simplesect>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="192" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Private/TilesLoader.cpp" bodystart="143" bodyend="187"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>UTilesLoader</label>
+        <link refid="class_u_tiles_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UTilesLoaderIcons</label>
+        <link refid="class_u_tiles_loader_icons"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FCommunicationMetadata</label>
+        <link refid="struct_f_communication_metadata"/>
+      </node>
+      <node id="5">
+        <label>FLimitedCache</label>
+        <link refid="struct_f_limited_cache"/>
+      </node>
+      <node id="4">
+        <label>FParsedTiles</label>
+        <link refid="struct_f_parsed_tiles"/>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+      <node id="1">
+        <label>UTilesLoader</label>
+        <link refid="class_u_tiles_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CommunicationMetadata</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ParsedTiles</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ParsedTilesCache</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" line="44" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/META/Code/LayersCreator/Source/ServerCommunications/Public/TilesLoader.h" bodystart="45" bodyend="199"/>
+    <listofallmembers>
+      <member refid="class_u_tiles_loader_1a3446ab8f7a0442a1d43cbe01097bec1c" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>ActuallyViewedTiles</name></member>
+      <member refid="class_u_tiles_loader_1a89229495e30edc562bc014bc233145bb" prot="protected" virt="virtual"><scope>UTilesLoader</scope><name>BeginDestroy</name></member>
+      <member refid="class_u_tiles_loader_1a3246f7054fa0f7e4f53b70ab42ba11bc" prot="private" virt="non-virtual"><scope>UTilesLoader</scope><name>CancelActiveHttpRequests</name></member>
+      <member refid="class_u_tiles_loader_1a4aa592fd0e558602a822915b3ccee157" prot="public" virt="virtual"><scope>UTilesLoader</scope><name>ClearLoader</name></member>
+      <member refid="class_u_tiles_loader_1ac8076305bac7d1377c91b4eb3952926e" prot="public" virt="non-virtual"><scope>UTilesLoader</scope><name>CommunicationMetadata</name></member>
+      <member refid="class_u_tiles_loader_1a414a647d77a36b68a77981730485af25" prot="private" virt="non-virtual"><scope>UTilesLoader</scope><name>DownloadAndParsePbfFile</name></member>
+      <member refid="class_u_tiles_loader_1a55abcd3f1f51f69308c01c7f58d04f74" prot="public" virt="virtual"><scope>UTilesLoader</scope><name>DownloadParametrizedUrl</name></member>
+      <member refid="class_u_tiles_loader_1a88b71d6fbc4dc69ddafd520aee8ec812" prot="private" virt="non-virtual"><scope>UTilesLoader</scope><name>EmptyTiles</name></member>
+      <member refid="class_u_tiles_loader_1acc39915bb04e26682829da2060f4f25c" prot="private" virt="non-virtual"><scope>UTilesLoader</scope><name>ErrorTiles</name></member>
+      <member refid="class_u_tiles_loader_1a1696edab63ca5cbda433ce91ec8e3193" prot="protected" virt="virtual"><scope>UTilesLoader</scope><name>GetTileSourcePathFromZoom</name></member>
+      <member refid="class_u_tiles_loader_1af2532c29702e8546642323f92b07997f" prot="public" virt="virtual"><scope>UTilesLoader</scope><name>Init</name></member>
+      <member refid="class_u_tiles_loader_1a85ae7d83ebe62c3e665f90e406b2b1be" prot="public" virt="non-virtual"><scope>UTilesLoader</scope><name>IsRequestRunning</name></member>
+      <member refid="class_u_tiles_loader_1afcb3924f4aaad7265e4529964b1e7697" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>LoadingRequests</name></member>
+      <member refid="class_u_tiles_loader_1adf5fa7deaba9722c436ca881d44a39cf" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>LoadingUrls</name></member>
+      <member refid="class_u_tiles_loader_1ac83e13236298dfbed1eea430ce84be5e" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>NumPendingRequests</name></member>
+      <member refid="class_u_tiles_loader_1a800022aeaa8bc854c17c4c4905155be4" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>OnLoadedLayerResponse</name></member>
+      <member refid="class_u_tiles_loader_1a941bad2b1f7354fffb69887d2294aa74" prot="private" virt="non-virtual"><scope>UTilesLoader</scope><name>OnResponseReceived</name></member>
+      <member refid="class_u_tiles_loader_1afc2cfa1af8dfef59584de36c69ad71c2" prot="public" virt="non-virtual"><scope>UTilesLoader</scope><name>OnTilesParsed</name></member>
+      <member refid="class_u_tiles_loader_1a470a4a62d8ee997ad7074dac79ca9fae" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>ParsedTiles</name></member>
+      <member refid="class_u_tiles_loader_1a76bf775c70b906bd68931b04f563037f" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>ParsedTilesCache</name></member>
+      <member refid="class_u_tiles_loader_1a316bb1bf8311623cf615782375a94ca8" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>ParseTileMutex</name></member>
+      <member refid="class_u_tiles_loader_1af30b089191d6adc29c4383a259b82918" prot="public" virt="non-virtual"><scope>UTilesLoader</scope><name>ServerCommunicationsSubsystem</name></member>
+      <member refid="class_u_tiles_loader_1a7c6405e3a5eaf6b4b445ea0b0d813596" prot="protected" virt="non-virtual"><scope>UTilesLoader</scope><name>ServiceUrl</name></member>
+      <member refid="class_u_tiles_loader_1a14e9af3b3b84e059864b5a4bb73f2466" prot="public" virt="non-virtual"><scope>UTilesLoader</scope><name>SetActuallyViewedTiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_editor_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2EditorModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IModuleInterface</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module" prot="public" virt="non-virtual">UE::EditorPixelStreaming2::FPixelStreaming2EditorModule</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_editor_module_8h" local="no">IPixelStreaming2EditorModule.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a36e1a6ac2ee9a1620b288b849cdd10b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_i_pixel_streaming2_editor_module" kindref="compound">IPixelStreaming2EditorModule</ref> &amp;</type>
+        <definition>static IPixelStreaming2EditorModule &amp; IPixelStreaming2EditorModule::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>IPixelStreaming2EditorModule::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton-like access to this module&apos;s interface. Beware of calling this during the shutdown phase, though. Your module might have been unloaded already.</para>
+<para><simplesect kind="return"><para>Returns singleton instance, loading the module on demand if needed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="24" column="44" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a0aadcf29fe53719a544668e8773f96b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IPixelStreaming2EditorModule::IsAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsAvailable</name>
+        <qualifiedname>IPixelStreaming2EditorModule::IsAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks to see if this module is loaded.</para>
+<para><simplesect kind="return"><para>True if the module is loaded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="34" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1aad062461dc002a9c38858bde0da34642" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::StartStreaming</definition>
+        <argsstring>(EPixelStreaming2EditorStreamTypes InStreamType)=0</argsstring>
+        <name>StartStreaming</name>
+        <qualifiedname>IPixelStreaming2EditorModule::StartStreaming</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a4562355b8a8f9a03540544a3e7bb791e">StartStreaming</reimplementedby>
+        <param>
+          <type><ref refid="_pixel_streaming2_core_enums_8h_1aae4f347d75d28b057eb3737f0135571b" kindref="member">EPixelStreaming2EditorStreamTypes</ref></type>
+          <declname>InStreamType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the editor specific streamer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InStreamType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream type for this streamer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1ac7d63768e37a5d044a04dc8b2df7fe6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::StopStreaming</definition>
+        <argsstring>()=0</argsstring>
+        <name>StopStreaming</name>
+        <qualifiedname>IPixelStreaming2EditorModule::StopStreaming</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a707ded3948b0657a536dbb4bdafd1dff">StopStreaming</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the editor specific streamer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a3e55f9c34eae3b34fbc8c41538c5e7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::StartSignalling</definition>
+        <argsstring>()=0</argsstring>
+        <name>StartSignalling</name>
+        <qualifiedname>IPixelStreaming2EditorModule::StartSignalling</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1ad9e0e82156c8e467c02e213d48c382a4">StartSignalling</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the inbuilt C++ signalling server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="53" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a8e33016664f8aa17e6f3a2766c2af500" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::StopSignalling</definition>
+        <argsstring>()=0</argsstring>
+        <name>StopSignalling</name>
+        <qualifiedname>IPixelStreaming2EditorModule::StopSignalling</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a570b6316b2dac25a812f5c3a272a3861">StopSignalling</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the inbuilt C++ signalling server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1ac69e83349cf62cf65f48b063df17cedc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_u_e_1_1_pixel_streaming2_servers_1_1_i_server" kindref="compound">UE::PixelStreaming2Servers::IServer</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; UE::PixelStreaming2Servers::IServer &gt; IPixelStreaming2EditorModule::GetSignallingServer</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetSignallingServer</name>
+        <qualifiedname>IPixelStreaming2EditorModule::GetSignallingServer</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a038ac85fc73ed5bf076235990ca79989">GetSignallingServer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the inbuilt C++ signalling server</para>
+<para><simplesect kind="return"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr&lt;UE::PixelStreaming2Servers::IServer&gt;</ref> The signalling server </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="66" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1ae017002bc2a7e014387347c6410786eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::SetSignallingDomain</definition>
+        <argsstring>(const FString &amp;InSignallingDomain)=0</argsstring>
+        <name>SetSignallingDomain</name>
+        <qualifiedname>IPixelStreaming2EditorModule::SetSignallingDomain</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a66dd5df4dcc96dd74958b4e86df83749">SetSignallingDomain</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>InSignallingDomain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the domain for the inbuilt c++ signalling server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InSignallingDomain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain for the inbuilt c++ signalling server </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="73" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1ac7b066ffa395c8e6139d7730b4ecceba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>virtual FString IPixelStreaming2EditorModule::GetSignallingDomain</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetSignallingDomain</name>
+        <qualifiedname>IPixelStreaming2EditorModule::GetSignallingDomain</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1ad77dfcd1197fdf6cf8e9b987ec337d60">GetSignallingDomain</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the domain for the inbuilt c++ signalling server</para>
+<para><simplesect kind="return"><para>FString The inbuilt c++ signalling server&apos;s domain </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="80" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a85c856555fdadc9c3f5222aacd01909f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::SetStreamerPort</definition>
+        <argsstring>(int32 InStreamerPort)=0</argsstring>
+        <name>SetStreamerPort</name>
+        <qualifiedname>IPixelStreaming2EditorModule::SetStreamerPort</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a75ba04807e188fe1de036d02c39772a7">SetStreamerPort</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InStreamerPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the port streamers connect to for the inbuilt c++ signalling server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InStreamerPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port streamers connect to for the inbuilt c++ signalling server </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="87" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1af8e06394f70eaab81a06a9bc4d9e53e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>virtual int32 IPixelStreaming2EditorModule::GetStreamerPort</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetStreamerPort</name>
+        <qualifiedname>IPixelStreaming2EditorModule::GetStreamerPort</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a81d484b9d6303ab7e7a04255a09df5fa">GetStreamerPort</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the port streamers connect to for the inbuilt c++ signalling server</para>
+<para><simplesect kind="return"><para>int32 The inbuilt c++ signalling server&apos;s port for streamers connect to </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="94" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a0641c6ced3bda837aafa2af7d9e117ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>virtual void IPixelStreaming2EditorModule::SetViewerPort</definition>
+        <argsstring>(int32 InViewerPort)=0</argsstring>
+        <name>SetViewerPort</name>
+        <qualifiedname>IPixelStreaming2EditorModule::SetViewerPort</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1af34a76bcb8ccc664c17671212f9b78e1">SetViewerPort</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+          <declname>InViewerPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the port viewers connect to for the inbuilt c++ signalling server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InViewerPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port viewers connect to for the inbuilt c++ signalling server </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="101" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_editor_module_1a19e74e9143eb01d346efe3e1c0e2681e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>virtual int32 IPixelStreaming2EditorModule::GetViewerPort</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetViewerPort</name>
+        <qualifiedname>IPixelStreaming2EditorModule::GetViewerPort</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module_1a041526e20a5d2d4de107158de628f4ec">GetViewerPort</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the port viewers connect to for the inbuilt c++ signalling server</para>
+<para><simplesect kind="return"><para>int32 The inbuilt c++ signalling server&apos;s port for viewers connect to </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="108" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Public interface that manages Pixel Streaming specific functionality within the Unreal Editor. Provides various features for controlling Pixel Streaming, such as starting and stopping the streamer. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2EditorModule</label>
+        <link refid="class_i_pixel_streaming2_editor_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UE::EditorPixelStreaming2::FPixelStreaming2EditorModule</label>
+        <link refid="class_u_e_1_1_editor_pixel_streaming2_1_1_f_pixel_streaming2_editor_module"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IModuleInterface</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2EditorModule</label>
+        <link refid="class_i_pixel_streaming2_editor_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" line="15" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Editor/Public/IPixelStreaming2EditorModule.h" bodystart="16" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_editor_module_1a36e1a6ac2ee9a1620b288b849cdd10b3" prot="public" virt="non-virtual"><scope>IPixelStreaming2EditorModule</scope><name>Get</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1ac7b066ffa395c8e6139d7730b4ecceba" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>GetSignallingDomain</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1ac69e83349cf62cf65f48b063df17cedc" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>GetSignallingServer</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1af8e06394f70eaab81a06a9bc4d9e53e0" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>GetStreamerPort</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a19e74e9143eb01d346efe3e1c0e2681e" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>GetViewerPort</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a0aadcf29fe53719a544668e8773f96b2" prot="public" virt="non-virtual"><scope>IPixelStreaming2EditorModule</scope><name>IsAvailable</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1ae017002bc2a7e014387347c6410786eb" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>SetSignallingDomain</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a85c856555fdadc9c3f5222aacd01909f" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>SetStreamerPort</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a0641c6ced3bda837aafa2af7d9e117ed" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>SetViewerPort</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a3e55f9c34eae3b34fbc8c41538c5e7f6" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>StartSignalling</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1aad062461dc002a9c38858bde0da34642" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>StartStreaming</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1a8e33016664f8aa17e6f3a2766c2af500" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>StopSignalling</name></member>
+      <member refid="class_i_pixel_streaming2_editor_module_1ac7d63768e37a5d044a04dc8b2df7fe6b" prot="public" virt="pure-virtual"><scope>IPixelStreaming2EditorModule</scope><name>StopStreaming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

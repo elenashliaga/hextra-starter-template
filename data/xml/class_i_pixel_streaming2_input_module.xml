@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_i_pixel_streaming2_input_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IPixelStreaming2InputModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IInputDeviceModule</basecompoundref>
+    <derivedcompoundref refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_module" prot="public" virt="non-virtual">UE::PixelStreaming2Input::FPixelStreaming2InputModule</derivedcompoundref>
+    <includes refid="_i_pixel_streaming2_input_module_8h" local="no">IPixelStreaming2InputModule.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_module_1a887b00c01ecd982867eafb9d22e16649" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_i_pixel_streaming2_input_module" kindref="compound">IPixelStreaming2InputModule</ref> &amp;</type>
+        <definition>static IPixelStreaming2InputModule &amp; IPixelStreaming2InputModule::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>IPixelStreaming2InputModule::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton-like access to this module&apos;s interface. Beware of calling this during the shutdown phase, though. Your module might have been unloaded already.</para>
+<para><simplesect kind="return"><para>Returns singleton instance, loading the module on demand if needed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" line="21" column="43" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_module_1a9ed86fb2110206f045e8ef1d112dc9b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IPixelStreaming2InputModule::IsAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsAvailable</name>
+        <qualifiedname>IPixelStreaming2InputModule::IsAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks to see if this module is loaded.</para>
+<para><simplesect kind="return"><para>True if the module is loaded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" line="31" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_module_1a7f60de71b68a30d04c0f82168e116cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="class_i_pixel_streaming2_input_handler" kindref="compound">IPixelStreaming2InputHandler</ref> &gt;</type>
+        <definition>virtual TSharedPtr&lt; IPixelStreaming2InputHandler &gt; IPixelStreaming2InputModule::CreateInputHandler</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateInputHandler</name>
+        <qualifiedname>IPixelStreaming2InputModule::CreateInputHandler</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_module_1a10e8540a9d86d0c46b4e479bfd2dd019">CreateInputHandler</reimplementedby>
+        <briefdescription>
+<para>Create a Input Handler object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TSharedPtr&lt;IPixelStreaming2InputHandler&gt; the input handler for this streamer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" line="38" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_pixel_streaming2_input_module_1a1a57932443d8e6c3e9f380cc4c4e86dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref> IInputDevice &gt;</type>
+        <definition>virtual TSharedPtr&lt; class IInputDevice &gt; IPixelStreaming2InputModule::CreateInputDevice</definition>
+        <argsstring>(const TSharedRef&lt; FGenericApplicationMessageHandler &gt; &amp;InMessageHandler) override=0</argsstring>
+        <name>CreateInputDevice</name>
+        <qualifiedname>IPixelStreaming2InputModule::CreateInputDevice</qualifiedname>
+        <reimplementedby refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_module_1af23cae30374c3544646ed46e2e265d0f">CreateInputDevice</reimplementedby>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedRef</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FGenericApplicationMessageHandler</ref> &gt; &amp;</type>
+          <declname>InMessageHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempts to create a new input device interface <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InMessageHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the message handler that will process input events from the device. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Interface to the new input device, if we were able to successfully create one. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" line="45" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides mechanism for managing input handlers and devices in Pixel Streaming. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputDeviceModule</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2InputModule</label>
+        <link refid="class_i_pixel_streaming2_input_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UE::PixelStreaming2Input::FPixelStreaming2InputModule</label>
+        <link refid="class_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_module"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputDeviceModule</label>
+      </node>
+      <node id="1">
+        <label>IPixelStreaming2InputModule</label>
+        <link refid="class_i_pixel_streaming2_input_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" line="12" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/PixelStreaming2/Source/PixelStreaming2Input/Public/IPixelStreaming2InputModule.h" bodystart="13" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_i_pixel_streaming2_input_module_1a1a57932443d8e6c3e9f380cc4c4e86dd" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputModule</scope><name>CreateInputDevice</name></member>
+      <member refid="class_i_pixel_streaming2_input_module_1a7f60de71b68a30d04c0f82168e116cfb" prot="public" virt="pure-virtual"><scope>IPixelStreaming2InputModule</scope><name>CreateInputHandler</name></member>
+      <member refid="class_i_pixel_streaming2_input_module_1a887b00c01ecd982867eafb9d22e16649" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputModule</scope><name>Get</name></member>
+      <member refid="class_i_pixel_streaming2_input_module_1a9ed86fb2110206f045e8ef1d112dc9b2" prot="public" virt="non-virtual"><scope>IPixelStreaming2InputModule</scope><name>IsAvailable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

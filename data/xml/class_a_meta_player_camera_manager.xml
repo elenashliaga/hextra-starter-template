@@ -1,0 +1,978 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_meta_player_camera_manager" kind="class" language="C++" prot="public">
+    <compoundname>AMetaPlayerCameraManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">APlayerCameraManager</basecompoundref>
+    <includes refid="_meta_player_camera_manager_8h" local="no">MetaPlayerCameraManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1a1021b3e28e48d2856acda236b2072e0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::bUseControlRotationAsViewRotation</definition>
+        <argsstring></argsstring>
+        <name>bUseControlRotationAsViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::bUseControlRotationAsViewRotation</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяется, следует ли использовать управление вращением как вид вращения.</para>
+<para>Если установлено значение true, управление вращением будет использоваться как вид вращения. Это означает, что любые изменения, произведенные с управлением вращения, будут влиять на вид вращения. Если установлено значение false, вращение вида будет независимым от управления вращением.</para>
+<para>Подробности о свойстве: Категория: Control EditAnywhere: Да </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="36" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1a7ec8f1c09d290a9b9246a14353b6cb07" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APawn</ref> &gt;</type>
+        <definition>TObjectPtr&lt;APawn&gt; AMetaPlayerCameraManager::ControlledPawn</definition>
+        <argsstring></argsstring>
+        <name>ControlledPawn</name>
+        <qualifiedname>AMetaPlayerCameraManager::ControlledPawn</qualifiedname>
+        <briefdescription>
+<para>Управляемый пешка, используемая игроком. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Это свойство представляет объект пешки, которым в данный момент управляет игрок. Это указатель на экземпляр класса APawn.</para>
+<para><simplesect kind="note"><para>Видимость этого свойства установлена на &quot;VisibleAnywhere&quot; и оно относится к категории &quot;Control&quot;. К нему можно получить доступ и изменить его из любого класса или блок-схемы.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APawn</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="50" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1ac8b75425b5f701939f0092ddb145d135" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::ViewRotation</definition>
+        <argsstring></argsstring>
+        <name>ViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::ViewRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет вращение вида.</para>
+<para>Переменная ViewRotation представляет вращение вида в терминах FRotator. Он используется для определения направления, в котором смотрит камера. Изменения, внесенные в эту переменную, повлияют на ориентацию камеры.</para>
+<para>Подробности о свойстве:<itemizedlist>
+<listitem><para>Категория: Camera|Transform</para>
+</listitem><listitem><para>EditAnywhere: Да</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="66" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1abe87594dff986a6000ac2cbe881d7e7c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::PreviousViewRotation</definition>
+        <argsstring></argsstring>
+        <name>PreviousViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::PreviousViewRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Переменная FRotator, представляющая предыдущее вращение вида камеры.</para>
+<para>Эта переменная используется в компоненте ведения камеры для хранения предыдущего вращения вида камеры. Он предназначен для редактирования в редакторе и размещения в категории &quot;Camera|Transform&quot;.</para>
+<para><simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1a646e899aed6ad6f8e0e8f25f855065a2" kindref="member">CameraBehavior</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="77" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1aa6c149348a9c5d740fc2a9cac16a6fd6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::bOrientCameraRelativeToGlobe</definition>
+        <argsstring></argsstring>
+        <name>bOrientCameraRelativeToGlobe</name>
+        <qualifiedname>AMetaPlayerCameraManager::bOrientCameraRelativeToGlobe</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+<para>Определяет, должна ли камера ориентироваться относительно глобуса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если установлено значение true, камера будет ориентироваться относительно глобуса. Если установлено значение false, камера не будет ориентироваться относительно глобуса.</para>
+<para><simplesect kind="note"><para>Это свойство можно редактировать в любом месте и оно находится в категории &quot;Camera|Orientation&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="89" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1a646e899aed6ad6f8e0e8f25f855065a2" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TObjectPtr</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USkeletalMeshComponent</ref> &gt;</type>
+        <definition>TObjectPtr&lt;USkeletalMeshComponent&gt; AMetaPlayerCameraManager::CameraBehavior</definition>
+        <argsstring></argsstring>
+        <name>CameraBehavior</name>
+        <qualifiedname>AMetaPlayerCameraManager::CameraBehavior</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет поведение камеры.</para>
+<para>Переменная CameraBehavior представляет поведение камеры. Это указатель на объект USkeletalMeshComponent. Эта переменная помечена как видимая в любом месте и относится к категории &quot;Camera|Behavior&quot;.</para>
+<para>Переменная CameraBehavior позволяет камере иметь пользовательское поведение с использованием компонента скелетной сетки. Это позволяет реализовать более продвинутую функциональность камеры, такую как плавные переходы и анимации.</para>
+<para>Используйте эту переменную для назначения компонента скелетной сетки камере для пользовательского поведения. Это может быть использовано для контроля позиции, вращения и других свойств камеры.</para>
+<para>Подробности о свойстве:<itemizedlist>
+<listitem><para>Категория: Camera|Behavior</para>
+</listitem><listitem><para>VisibleAnywhere: Да </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="106" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1af49594e90ab53671465e53317d2b6c08" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TOptional</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &gt;</type>
+        <definition>TOptional&lt;FVector&gt; AMetaPlayerCameraManager::CartographicPivotPoint</definition>
+        <argsstring></argsstring>
+        <name>CartographicPivotPoint</name>
+        <qualifiedname>AMetaPlayerCameraManager::CartographicPivotPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет картографическую точку поворота, используемую для манипуляций с камерой.</para>
+<para>Картографическая точка поворота - это необязательный вектор, который представляет точку поворота, вокруг которой камера вращается и переводится в картографической системе координат. Если для этой переменной установлено значение, камера будет вращаться и переводиться относительно этой точки поворота. Если значение не установлено, камера будет вращаться и переводиться относительно начала координат (0,0,0) системы координат.</para>
+<para>Подробности о свойстве: Категория: Camera EditAnywhere: Да </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="119" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1a5f56ed38cad68cf3077a21d17327fc2e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">double</ref></type>
+        <definition>double AMetaPlayerCameraManager::RotationModeMinAbsHeightAboveSurfaceChange</definition>
+        <argsstring></argsstring>
+        <name>RotationModeMinAbsHeightAboveSurfaceChange</name>
+        <qualifiedname>AMetaPlayerCameraManager::RotationModeMinAbsHeightAboveSurfaceChange</qualifiedname>
+        <initializer>= 100.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Минимальная абсолютная высота над поверхностью, требуемая для изменения режима вращения.</para>
+<para>Эта переменная представляет минимальную абсолютную высоту в метрах над поверхностью, требуемую для изменения режима вращения. Режим вращения определяет, как камера вращается вокруг мира или объекта фокусировки.</para>
+<para>Значение этой переменной по умолчанию - 100.0, что указывает на необходимость минимальной абсолютной высоты 100.0 метра над поверхностью для изменения режима вращения.</para>
+<para>Подробности о свойстве:<itemizedlist>
+<listitem><para>EditDefaultsOnly: Да</para>
+</listitem><listitem><para>BlueprintReadOnly: Да</para>
+</listitem><listitem><para>Категория: Cartographic Mode|Rotation </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="135" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1a6aa2c379f22432feb3efc369cdc474cf" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">constexpr</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">auto</ref></type>
+        <definition>constexpr auto AMetaPlayerCameraManager::CartographicRotationModeTraceChannel</definition>
+        <argsstring></argsstring>
+        <name>CartographicRotationModeTraceChannel</name>
+        <qualifiedname>AMetaPlayerCameraManager::CartographicRotationModeTraceChannel</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ECC_GameTraceChannel4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет трассировочный канал для картографического режима вращения.</para>
+<para>Эта переменная представляет трассировочный канал, используемый для картографического режима вращения. Это статическая константная переменная типа <computeroutput>ECollisionChannel</computeroutput> и ей присвоено значение <computeroutput>ECC_GameTraceChannel4</computeroutput>.</para>
+<para>Для получения дополнительной информации о трассировочных каналах и каналах столкновений обратитесь к документации Unreal Engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="158" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1ae9d4aa7bde60e06f509f16d01cd25224" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::UpwardOrientation</definition>
+        <argsstring></argsstring>
+        <name>UpwardOrientation</name>
+        <qualifiedname>AMetaPlayerCameraManager::UpwardOrientation</qualifiedname>
+        <initializer>= FRotator::ZeroRotator</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="172" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_player_camera_manager_1ac2158d689880417cbcee1b28d48daf91" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::bDynamicallyOrientCamera</definition>
+        <argsstring></argsstring>
+        <name>bDynamicallyOrientCamera</name>
+        <qualifiedname>AMetaPlayerCameraManager::bDynamicallyOrientCamera</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="175" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ac27cdf3b9cd13940043f042c43ab7c95" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>AMetaPlayerCameraManager::Tick</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">float</ref></type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Виртуальная функция, вызываемая каждый кадр.</para>
+<para>Эта функция вызывается один раз за кадр и отвечает за обновление менеджера камеры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DeltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Время в секундах с момента последнего кадра.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Super::Tick() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="147" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="159" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a98023dfe909fe20b7c05c11d75a66236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AMetaPlayerCameraManager::AMetaPlayerCameraManager</definition>
+        <argsstring>()</argsstring>
+        <name>AMetaPlayerCameraManager</name>
+        <qualifiedname>AMetaPlayerCameraManager::AMetaPlayerCameraManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор для класса <ref refid="class_a_meta_player_camera_manager" kindref="compound">AMetaPlayerCameraManager</ref>.</para>
+<para>Инициализирует объект <ref refid="class_a_meta_player_camera_manager" kindref="compound">AMetaPlayerCameraManager</ref>. Настраивает главный тик актора и создает компонент CameraBehavior.</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">PrimaryActorTick</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CreateDefaultSubobject</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="169" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a9feac72205aa3038a9483cb2e2053c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::InitializeCartographicPivotFromCurrentMousePosition</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeCartographicPivotFromCurrentMousePosition</name>
+        <qualifiedname>AMetaPlayerCameraManager::InitializeCartographicPivotFromCurrentMousePosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Инициализирует картографическую точку поворота на основе текущего положения мыши.</para>
+<para>Этот метод используется для расчета картографической точки поворота на основе текущего положения мыши на экране. Он выполняет трассировку линии от текущего положения мыши на экране игрока и обновляет член CartographicPivotPoint с помощью точки воздействия трассировки.</para>
+<para>Если трассировка линии успешна и происходит попадание в объект, CartographicPivotPoint обновляется точкой воздействия. Если трассировка линий не удается или отсутствует действительный MetaPlayerController, CartographicPivotPoint очищается.</para>
+<para>Этот метод не возвращает никакого значения.</para>
+<para><simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1a04f58457bb45596210b28d714c587762" kindref="member">ClearCartographicPivot()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="192" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="76" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a04f58457bb45596210b28d714c587762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::ClearCartographicPivot</definition>
+        <argsstring>()</argsstring>
+        <name>ClearCartographicPivot</name>
+        <qualifiedname>AMetaPlayerCameraManager::ClearCartographicPivot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Очищает картографическую точку поворота.</para>
+<para>Этот метод сбрасывает картографическую точку поворота в ее состояние по умолчанию.</para>
+<para>Этот метод не возвращает никакого значения.</para>
+<para><simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">SetCartographicPivot</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="204" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a7f93e3479cf725f9a15a7a1ae2fc27f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::ResetUpwardOrientation</definition>
+        <argsstring>()</argsstring>
+        <name>ResetUpwardOrientation</name>
+        <qualifiedname>AMetaPlayerCameraManager::ResetUpwardOrientation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="207" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ab3d080ca9726ac15df9367354a45ba8a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref></type>
+        <definition>FVector AMetaPlayerCameraManager::GetCartographicPivotLocation</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetCartographicPivotLocation</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetCartographicPivotLocation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает местоположение картографической точки поворота.</para>
+<para>Картографическая точка поворота используется в качестве опорной точки для любых картографических движений или расчетов в менеджере камеры.</para>
+<para><simplesect kind="return"><para>Местоположение картографической точки поворота.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1af49594e90ab53671465e53317d2b6c08" kindref="member">CartographicPivotPoint</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="219" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a5ed4e5d299f8a3a01d5d8ac6c8426303" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetCartographicPivotLocation</definition>
+        <argsstring>(const FVector &amp;Location) noexcept</argsstring>
+        <name>SetCartographicPivotLocation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetCartographicPivotLocation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Location</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает местоположение картографической точки поворота. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод устанавливает местоположение картографической точки поворота для MetaPlayerCameraManager. Местоположение картографической точки поворота используется в качестве опорной точки для расчетов движения и вращения камеры.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое местоположение картографической точки поворота, которое следует установить.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Этот метод не запускает никаких обновлений или расчетов. Он просто обновляет член класса непосредственно. Чтобы обновить позицию и вращение камеры на основе нового местоположения точки поворота, вызовите метод <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UpdateCamera()</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UpdateCamera()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="235" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a52577357c8cadbbeb57ffd5877b0aa00" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::IsCartographicPivotLocationSet</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsCartographicPivotLocationSet</name>
+        <qualifiedname>AMetaPlayerCameraManager::IsCartographicPivotLocationSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, установлено ли местоположение картографической точки поворота.</para>
+<para>Возвращает true, если местоположение картографической точки поворота установлено, иначе false.</para>
+<para><simplesect kind="return"><para>True, если местоположение картографической точки поворота установлено, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="245" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a610ef91ab3113b22e0d9d426d648222e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform AMetaPlayerCameraManager::GetCameraTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCameraTransform</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetCameraTransform</qualifiedname>
+        <briefdescription>
+<para>Получает преобразование камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эта функция возвращает преобразование камеры в виде объекта <computeroutput>FTransform</computeroutput>. Преобразование камеры представляет вращение и местоположение камеры.</para>
+<para><simplesect kind="return"><para>Объект <computeroutput>FTransform</computeroutput>, представляющий преобразование камеры.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetCameraRotation()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>GetCameraLocation()</para>
+</simplesect>
+Пример использования:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">CameraTransform</ref><sp/>=<sp/><ref refid="class_a_meta_player_camera_manager_1a610ef91ab3113b22e0d9d426d648222e" kindref="member">GetCameraTransform</ref>();</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="266" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a8b956eab05c0fe6b64b0e91b3b3985e4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetCameraTransform</definition>
+        <argsstring>(const FTransform &amp;Transform) noexcept</argsstring>
+        <name>SetCameraTransform</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetCameraTransform</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>Transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает преобразование камеры.</para>
+<para>Этот метод устанавливает преобразование камеры. Преобразование задается заданным параметром <computeroutput>Transform</computeroutput>, который предоставляет информацию о вращении и местоположении. Вращение обзора камеры будет обновлено на основе контрольного вращения, если свойство <computeroutput>bUseControlRotationAsViewRotation</computeroutput> установлено в значение true.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Преобразование, которое описывает новую позицию и ориентацию камеры. Вращение задается с использованием кватерниона <computeroutput>FQuat</computeroutput>, а местоположение задается с использованием <computeroutput>FVector</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="278" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="109" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1aa1cbcff03233ba9fa5767c001837e12f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetCameraRotation</definition>
+        <argsstring>(const FRotator &amp;Rotation) noexcept</argsstring>
+        <name>SetCameraRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetCameraRotation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> &amp;</type>
+          <declname>Rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает вращение камеры.</para>
+<para>Этот метод устанавливает вращение камеры на указанное вращение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вращение, которое нужно установить для камеры. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Вращение камеры будет обновлено, чтобы соответствовать указанному вращению. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GetCameraRotation()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="290" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a1d34484c18d881541c36b9e2f8130cad" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetCameraLocation</definition>
+        <argsstring>(const FVector &amp;Location) noexcept</argsstring>
+        <name>SetCameraLocation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetCameraLocation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FVector</ref> &amp;</type>
+          <declname>Location</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает местоположение камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод устанавливает местоположение камеры. Это обновляет преобразование камеры с указанным расположением, сохраняя существующее вращение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое местоположение камеры.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Этот метод является noexcept, что означает, что он не вызывает исключений.</para>
+</simplesect>
+<simplesect kind="return"><para>Этот метод не возвращает значение. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="304" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a4e11cdef15ee3dce63d1b8235d16776c" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::GetViewRotation</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetViewRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает вращение обзора MetaPlayerCameraManager.</para>
+<para>Вращение обзора - это вращение камеры в мире. Он представляет направление, куда направлена камера.</para>
+<para>Детали метода: Модификатор доступа: const Тип возвращаемого значения: const FRotator&amp; Noexcept: Да</para>
+<para><simplesect kind="return"><para>Вращение обзора MetaPlayerCameraManager как const ссылка на FRotator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="320" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a285801024e5490d2133b2bfcccd3bcb2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetViewRotation</definition>
+        <argsstring>(const FRotator &amp;Rotation) noexcept</argsstring>
+        <name>SetViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetViewRotation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> &amp;</type>
+          <declname>Rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает вращение обзора MetaPlayerCameraManager.</para>
+<para>Этот метод устанавливает вращение обзора MetaPlayerCameraManager на указанное вращение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Вращение, которое нужно установить в качестве вращения обзора.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Вращение обзора используется для определения ориентации камеры в игровом мире.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1a4e11cdef15ee3dce63d1b8235d16776c" kindref="member">GetViewRotation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="334" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a72476a0eea5e264b07d3a9299a05d88e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::GetPreviousViewRotation</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetPreviousViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetPreviousViewRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает предыдущее вращение обзора.</para>
+<para>Этот метод возвращает предыдущее вращение обзора, которое хранится в переменной члена PreviousViewRotation.</para>
+<para><simplesect kind="return"><para>Предыдущее вращение обзора.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1abe87594dff986a6000ac2cbe881d7e7c" kindref="member">PreviousViewRotation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="346" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ad9f77d887f1209f05f713bce91469c54" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetPreviousViewRotation</definition>
+        <argsstring>(const FRotator &amp;Rotation) noexcept</argsstring>
+        <name>SetPreviousViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetPreviousViewRotation</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> &amp;</type>
+          <declname>Rotation</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает предыдущее вращение обзора менеджера камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод устанавливает предыдущее вращение обзора менеджера камеры на указанное вращение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вращение, которое нужно установить как предыдущее вращение обзора. Это должна быть постоянная ссылка на объект FRotator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="359" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a77e8ab0051f35ed7ecd97ec0b468477a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FRotator</ref></type>
+        <definition>FRotator AMetaPlayerCameraManager::GetAngularVelocity</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetAngularVelocity</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetAngularVelocity</qualifiedname>
+        <briefdescription>
+<para>Получает угловую скорость камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Этот метод вычисляет разницу между текущим вращением обзора и предыдущим вращением обзора и возвращает его в виде FRotatorа, представляющего угловую скорость камеры.</para>
+<para><simplesect kind="note"><para>Этот метод const и noexcept, что означает, что он не изменяет данные класса и не выбрасывает исключений.</para>
+</simplesect>
+<simplesect kind="return"><para>FRotator - Угловая скорость камеры. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="373" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ab22a7e258350e91182f569894e62a171" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::ConsumeAngularVelocity</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ConsumeAngularVelocity</name>
+        <qualifiedname>AMetaPlayerCameraManager::ConsumeAngularVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Метод ConsumeAngularVelocity.</para>
+<para>Этот метод используется для обновления вращения обзора менеджера камеры с использованием текущей угловой скорости. Он обновляет предыдущее вращение обзора на текущее значение вращения обзора.</para>
+<para><simplesect kind="remark"><para>Этот метод помечен как noexcept, что указывает на то, что он не выбрасывает никаких исключений.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1ad9f77d887f1209f05f713bce91469c54" kindref="member">AMetaPlayerCameraManager::SetPreviousViewRotation()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="386" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a288ed3774154d4e03f3452d12df8a38f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::IsOrientingCameraRelativeToGlobe</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsOrientingCameraRelativeToGlobe</name>
+        <qualifiedname>AMetaPlayerCameraManager::IsOrientingCameraRelativeToGlobe</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, происходит ли ориентирование камеры относительно глобуса.</para>
+<para>Этот метод возвращает булевое значение, указывающее, происходит ли в данный момент ориентирование камеры относительно глобуса. Если камера ориентируется относительно глобуса, это означает, что любое вращение, применяемое к камере, будет также применяться к глобусу.</para>
+<para><simplesect kind="return"><para>True, если камера ориентируется относительно глобуса, иначе false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="398" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ac0fa1748d955970196d23e78a8e69436" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetOrientCameraRelativeToGlobe</definition>
+        <argsstring>(bool bInOrientCameraRelativeToGlobe) noexcept</argsstring>
+        <name>SetOrientCameraRelativeToGlobe</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetOrientCameraRelativeToGlobe</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bInOrientCameraRelativeToGlobe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает, должна ли камера ориентироваться относительно глобуса.</para>
+<para>Если установлено значение true, камера будет ориентироваться по отношению к глобусу. Это означает, что любые изменения вращения или ориентации глобуса повлияют также и на ориентацию камеры. Если установлено значение false, ориентация камеры будет независима от вращения глобуса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bInOrientCameraRelativeToGlobe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Булевое значение, указывающее, должна ли камера ориентироваться относительно глобуса.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Значение по умолчанию для bOrientCameraRelativeToGlobe - это false.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1aa6c149348a9c5d740fc2a9cac16a6fd6" kindref="member">bOrientCameraRelativeToGlobe</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="413" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a9a2e4c171839d1f038fc1ceca92ecf91" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">USkeletalMeshComponent</ref> *</type>
+        <definition>USkeletalMeshComponent * AMetaPlayerCameraManager::GetCameraBehavior</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetCameraBehavior</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetCameraBehavior</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает поведение камеры MetaPlayerCameraManager.</para>
+<para>Поведение камеры определяет, как камера движется и реагирует на действия игрока.</para>
+<para><simplesect kind="return"><para>Поведение камеры MetaPlayerCameraManager. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="424" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1ae59b440454f40763fdd7e92f1af66a74" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APawn</ref> *</type>
+        <definition>APawn * AMetaPlayerCameraManager::GetControlledPawn</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetControlledPawn</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetControlledPawn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает пешку, которой в данный момент управляет менеджер камеры.</para>
+<para>Этот метод возвращает пешку, которой в данный момент управляет менеджер камеры.</para>
+<para><simplesect kind="return"><para>Пешка, которой в данный момент управляет менеджер камеры. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="435" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a7fdedfea87bebd7588cf49371e2daa93" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetControlledPawn</definition>
+        <argsstring>(APawn *Pawn) noexcept</argsstring>
+        <name>SetControlledPawn</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetControlledPawn</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">APawn</ref> *</type>
+          <declname>Pawn</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает контролируемую пешку для менеджера камеры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pawn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Пешка, которой будет управлять менеджер камеры.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Этот метод устанавливает пешку, которой будет управлять менеджер камеры. Контролируемая пешка определяет цель камеры. Пешка должна быть типа APawn*.</para>
+<para><simplesect kind="note"><para>Этот метод помечен как BlueprintCallable, что означает его доступность для вызова из Blueprints. </para>
+</simplesect>
+<simplesect kind="note"><para>Этот метод относится к категории &quot;Control&quot;.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager" kindref="compound">AMetaPlayerCameraManager</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="452" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a085a76824567c69a7d323fea40e07d13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_control_mode" kindref="compound">FControlMode</ref></type>
+        <definition>FControlMode AMetaPlayerCameraManager::GetControlMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetControlMode</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetControlMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает режим управления.</para>
+<para>Этот метод используется для получения текущего режима управления MetaPlayerCameraManager.</para>
+<para><simplesect kind="return"><para>Текущий режим управления.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_f_control_mode" kindref="compound">FControlMode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="465" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1af92fa402e06d44fe6f710b3ca1ec44d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_meta_player_controller" kindref="compound">AMetaPlayerController</ref> *</type>
+        <definition>AMetaPlayerController * AMetaPlayerCameraManager::GetOwningMetaPlayerController</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOwningMetaPlayerController</name>
+        <qualifiedname>AMetaPlayerCameraManager::GetOwningMetaPlayerController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает MetaPlayerController, которому принадлежит этот MetaPlayerCameraManager.</para>
+<para><simplesect kind="return"><para>Указатель на владеющий MetaPlayerController, или nullptr, если владеющий MetaPlayerController отсутствует. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="473" column="31" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1aa9f5a95414628b6014b35bb03a513883" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMetaPlayerCameraManager::IsUsingControlRotationAsViewRotation</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsUsingControlRotationAsViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::IsUsingControlRotationAsViewRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Указывает, используется ли управляющая ротация в качестве вьюпорта ротации.</para>
+<para><simplesect kind="return"><para>Истина, если управляющая ротация используется в качестве вьюпорта ротации.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1a1021b3e28e48d2856acda236b2072e0e" kindref="member">bUseControlRotationAsViewRotation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="484" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_player_camera_manager_1a07f263a4d7294ce9baf116c37590aff2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaPlayerCameraManager::SetUseControlRotationAsViewRotation</definition>
+        <argsstring>(bool bInUseControlRotationAsViewRotation) noexcept</argsstring>
+        <name>SetUseControlRotationAsViewRotation</name>
+        <qualifiedname>AMetaPlayerCameraManager::SetUseControlRotationAsViewRotation</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bInUseControlRotationAsViewRotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает, следует ли использовать управляющую ротацию в качестве вьюпорта ротации.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bInUseControlRotationAsViewRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указывает, следует ли использовать управляющую ротацию в качестве вьюпорта ротации.<itemizedlist>
+<listitem><para>Если установлено значение true, управляющая ротация будет использоваться в качестве вьюпорта ротации.</para>
+</listitem><listitem><para>Если установлено значение false, вьюпорт ротации будет независимым от управляющей ротации.</para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_a_meta_player_camera_manager_1a1021b3e28e48d2856acda236b2072e0e" kindref="member">bUseControlRotationAsViewRotation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="496" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Camera/MetaPlayerCameraManager.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Базовый менеджер камер.</para>
+<para>Этот менеджер камер содержит необходимую функциональность для автоматической ориентации камеры вокруг земного шара и режима картографического вращения. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AMetaPlayerCameraManager</label>
+        <link refid="class_a_meta_player_camera_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>APlayerCameraManager</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AMetaPlayerCameraManager</label>
+        <link refid="class_a_meta_player_camera_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>APlayerCameraManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" line="21" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Camera/MetaPlayerCameraManager.h" bodystart="22" bodyend="497"/>
+    <listofallmembers>
+      <member refid="class_a_meta_player_camera_manager_1a98023dfe909fe20b7c05c11d75a66236" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>AMetaPlayerCameraManager</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ac2158d689880417cbcee1b28d48daf91" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>bDynamicallyOrientCamera</name></member>
+      <member refid="class_a_meta_player_camera_manager_1aa6c149348a9c5d740fc2a9cac16a6fd6" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>bOrientCameraRelativeToGlobe</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a1021b3e28e48d2856acda236b2072e0e" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>bUseControlRotationAsViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a646e899aed6ad6f8e0e8f25f855065a2" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>CameraBehavior</name></member>
+      <member refid="class_a_meta_player_camera_manager_1af49594e90ab53671465e53317d2b6c08" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>CartographicPivotPoint</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a6aa2c379f22432feb3efc369cdc474cf" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>CartographicRotationModeTraceChannel</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a04f58457bb45596210b28d714c587762" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>ClearCartographicPivot</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ab22a7e258350e91182f569894e62a171" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>ConsumeAngularVelocity</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a7ec8f1c09d290a9b9246a14353b6cb07" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>ControlledPawn</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a77e8ab0051f35ed7ecd97ec0b468477a" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetAngularVelocity</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a9a2e4c171839d1f038fc1ceca92ecf91" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetCameraBehavior</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a610ef91ab3113b22e0d9d426d648222e" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetCameraTransform</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ab3d080ca9726ac15df9367354a45ba8a" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetCartographicPivotLocation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ae59b440454f40763fdd7e92f1af66a74" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetControlledPawn</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a085a76824567c69a7d323fea40e07d13" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetControlMode</name></member>
+      <member refid="class_a_meta_player_camera_manager_1af92fa402e06d44fe6f710b3ca1ec44d2" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetOwningMetaPlayerController</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a72476a0eea5e264b07d3a9299a05d88e" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetPreviousViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a4e11cdef15ee3dce63d1b8235d16776c" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>GetViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a9feac72205aa3038a9483cb2e2053c38" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>InitializeCartographicPivotFromCurrentMousePosition</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a52577357c8cadbbeb57ffd5877b0aa00" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>IsCartographicPivotLocationSet</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a288ed3774154d4e03f3452d12df8a38f" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>IsOrientingCameraRelativeToGlobe</name></member>
+      <member refid="class_a_meta_player_camera_manager_1aa9f5a95414628b6014b35bb03a513883" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>IsUsingControlRotationAsViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1abe87594dff986a6000ac2cbe881d7e7c" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>PreviousViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a7f93e3479cf725f9a15a7a1ae2fc27f2" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>ResetUpwardOrientation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a5f56ed38cad68cf3077a21d17327fc2e" prot="protected" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>RotationModeMinAbsHeightAboveSurfaceChange</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a1d34484c18d881541c36b9e2f8130cad" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetCameraLocation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1aa1cbcff03233ba9fa5767c001837e12f" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetCameraRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a8b956eab05c0fe6b64b0e91b3b3985e4" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetCameraTransform</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a5ed4e5d299f8a3a01d5d8ac6c8426303" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetCartographicPivotLocation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a7fdedfea87bebd7588cf49371e2daa93" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetControlledPawn</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ac0fa1748d955970196d23e78a8e69436" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetOrientCameraRelativeToGlobe</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ad9f77d887f1209f05f713bce91469c54" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetPreviousViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a07f263a4d7294ce9baf116c37590aff2" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetUseControlRotationAsViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1a285801024e5490d2133b2bfcccd3bcb2" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>SetViewRotation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ac27cdf3b9cd13940043f042c43ab7c95" prot="protected" virt="virtual"><scope>AMetaPlayerCameraManager</scope><name>Tick</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ae9d4aa7bde60e06f509f16d01cd25224" prot="public" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>UpwardOrientation</name></member>
+      <member refid="class_a_meta_player_camera_manager_1ac8b75425b5f701939f0092ddb145d135" prot="private" virt="non-virtual"><scope>AMetaPlayerCameraManager</scope><name>ViewRotation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

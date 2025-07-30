@@ -1,0 +1,996 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="class_a_meta_cesium_tile_controller" kind="class" language="C++" prot="public">
+    <compoundname>AMetaCesiumTileController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <includes refid="_meta_cesium_tile_controller_8h" local="no">MetaCesiumTileController.h</includes>
+    <innerclass refid="struct_a_meta_cesium_tile_controller_1_1_f_meta_cesium_tileset_poll_thread" prot="public">AMetaCesiumTileController::FMetaCesiumTilesetPollThread</innerclass>
+    <innerclass refid="struct_a_meta_cesium_tile_controller_1_1_f_tileset_fetch_status" prot="private">AMetaCesiumTileController::FTilesetFetchStatus</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_a_meta_cesium_tile_controller_1a6c9521a3a06d8fb81146c6c3998c6954" prot="private" static="no" strong="yes">
+        <type>bool</type>
+        <name>ETilesetRetainmentPolicy</name>
+        <qualifiedname>AMetaCesiumTileController::ETilesetRetainmentPolicy</qualifiedname>
+        <enumvalue id="class_a_meta_cesium_tile_controller_1a6c9521a3a06d8fb81146c6c3998c6954aafece4245269582cb2f1009d4fb52047" prot="private">
+          <name>Retain</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_meta_cesium_tile_controller_1a6c9521a3a06d8fb81146c6c3998c6954a1063e38cb53d94d386f21227fcd84717" prot="private">
+          <name>Remove</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="44" column="9" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a0a518e90a84a35137b378f81abe3f086" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AMetaCesiumTileController::bPolling</definition>
+        <argsstring></argsstring>
+        <name>bPolling</name>
+        <qualifiedname>AMetaCesiumTileController::bPolling</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="54" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a777ab5460572be9fc3828fa8086cfbcd" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_a_meta_cesium_tile_controller_1_1_f_meta_cesium_tileset_poll_thread" kindref="compound">FMetaCesiumTilesetPollThread</ref> *</type>
+        <definition>FMetaCesiumTilesetPollThread* AMetaCesiumTileController::PollThread</definition>
+        <argsstring></argsstring>
+        <name>PollThread</name>
+        <qualifiedname>AMetaCesiumTileController::PollThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="57" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1aa21aece47381dc3580f15c14a8197e75" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimerHandle</ref></type>
+        <definition>FTimerHandle AMetaCesiumTileController::DeferredBatchUpdateTimer</definition>
+        <argsstring></argsstring>
+        <name>DeferredBatchUpdateTimer</name>
+        <qualifiedname>AMetaCesiumTileController::DeferredBatchUpdateTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="60" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a7c7a225f3340949fc565ed9bf1f2d56c" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> * &gt;</type>
+        <definition>TMap&lt;FString, ACustomCesium3DTileset*&gt; AMetaCesiumTileController::TrackedTilesets</definition>
+        <argsstring></argsstring>
+        <name>TrackedTilesets</name>
+        <qualifiedname>AMetaCesiumTileController::TrackedTilesets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отслеживаемые данным контроллером тайлсеты.</para>
+<para>При корректном использовании класса значениями данной таблицы будут указатели на объекты класса <computeroutput>TilesetClass</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="68" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1ace3e3a9a8bb57717337aab7d0354d5cc" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection AMetaCesiumTileController::TrackedTilesetsMutex</definition>
+        <argsstring></argsstring>
+        <name>TrackedTilesetsMutex</name>
+        <qualifiedname>AMetaCesiumTileController::TrackedTilesetsMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="71" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a1e94f63755a0864502c50af03540824a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString AMetaCesiumTileController::SourceUrl</definition>
+        <argsstring></argsstring>
+        <name>SourceUrl</name>
+        <qualifiedname>AMetaCesiumTileController::SourceUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="75" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a9842df1f0baea3444840e28ea5ce938d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint32</ref></type>
+        <definition>uint32 AMetaCesiumTileController::LastRootJsonHash</definition>
+        <argsstring></argsstring>
+        <name>LastRootJsonHash</name>
+        <qualifiedname>AMetaCesiumTileController::LastRootJsonHash</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="79" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a7fb4ede8069050059081cf41dc13fe5a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::TilesetPollInterval</definition>
+        <argsstring></argsstring>
+        <name>TilesetPollInterval</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetPollInterval</qualifiedname>
+        <initializer>= FTimespan::FromMinutes(30.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="83" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1acd4c4aa9bce6e1064ee830225a9ec1bf" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::TilesetFetchTimeout</definition>
+        <argsstring></argsstring>
+        <name>TilesetFetchTimeout</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetFetchTimeout</qualifiedname>
+        <initializer>= FTimespan::FromSeconds(10.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="87" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a5c43b4e6e8cbb1136a952cbba889250e" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::TilesetFetchAwaitTimeout</definition>
+        <argsstring></argsstring>
+        <name>TilesetFetchAwaitTimeout</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetFetchAwaitTimeout</qualifiedname>
+        <initializer>= FTimespan::FromSeconds(15.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="91" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a01a78960accc9672d8c485b0d00e7576" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::TilesetFetchRetryInterval</definition>
+        <argsstring></argsstring>
+        <name>TilesetFetchRetryInterval</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetFetchRetryInterval</qualifiedname>
+        <initializer>= FTimespan::FromSeconds(3.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="95" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1ae5295577d3be74154ac2ffa56d50b232" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::TilesetBatchRefreshInterval</definition>
+        <argsstring></argsstring>
+        <name>TilesetBatchRefreshInterval</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetBatchRefreshInterval</qualifiedname>
+        <initializer>= FTimespan::FromMilliseconds(200.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="99" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a7309e65915475f99b9e05044fa998e3a" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMetaCesiumTileController::MaxSimultaneousTilesetSpawns</definition>
+        <argsstring></argsstring>
+        <name>MaxSimultaneousTilesetSpawns</name>
+        <qualifiedname>AMetaCesiumTileController::MaxSimultaneousTilesetSpawns</qualifiedname>
+        <initializer>= 128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="103" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1ac11bbeb6732f37277b1c266723f34402" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> * &gt;</type>
+        <definition>TArray&lt;ACustomCesium3DTileset*&gt; AMetaCesiumTileController::DeferredTilesetSpawns</definition>
+        <argsstring></argsstring>
+        <name>DeferredTilesetSpawns</name>
+        <qualifiedname>AMetaCesiumTileController::DeferredTilesetSpawns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="107" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1ac987f1fb08ac35cc5edf63d2165c4761" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection AMetaCesiumTileController::DeferredTilesetUpdateMutex</definition>
+        <argsstring></argsstring>
+        <name>DeferredTilesetUpdateMutex</name>
+        <qualifiedname>AMetaCesiumTileController::DeferredTilesetUpdateMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="110" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1af1871cbe86f8a61a096d381bdb820938" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &gt;</type>
+        <definition>TSubclassOf&lt;ACustomCesium3DTileset&gt; AMetaCesiumTileController::TilesetClass</definition>
+        <argsstring></argsstring>
+        <name>TilesetClass</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetClass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="114" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1ad5bb20c33b451a27a4ac5e1359bd72e7" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform AMetaCesiumTileController::TilesetSpawnTransform</definition>
+        <argsstring></argsstring>
+        <name>TilesetSpawnTransform</name>
+        <qualifiedname>AMetaCesiumTileController::TilesetSpawnTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="118" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a1736ae60e9052ed2e3be27a8ceb4945d" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPromise</ref>&lt; <ref refid="struct_a_meta_cesium_tile_controller_1_1_f_tileset_fetch_status" kindref="compound">FTilesetFetchStatus</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FString, TPromise&lt;FTilesetFetchStatus&gt; &gt; AMetaCesiumTileController::PendingTilesets</definition>
+        <argsstring></argsstring>
+        <name>PendingTilesets</name>
+        <qualifiedname>AMetaCesiumTileController::PendingTilesets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="121" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a9308ea544e7e0b32df82f66e52eb2532" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TMap</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref>, <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedFuture</ref>&lt; <ref refid="struct_a_meta_cesium_tile_controller_1_1_f_tileset_fetch_status" kindref="compound">FTilesetFetchStatus</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FString, TSharedFuture&lt;FTilesetFetchStatus&gt; &gt; AMetaCesiumTileController::PendingTilesetStatuses</definition>
+        <argsstring></argsstring>
+        <name>PendingTilesetStatuses</name>
+        <qualifiedname>AMetaCesiumTileController::PendingTilesetStatuses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="124" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a16e8e70e0047c0a695f63f5c0d134ea8" prot="private" static="no" mutable="yes">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FCriticalSection</ref></type>
+        <definition>FCriticalSection AMetaCesiumTileController::PendingTilesetsMutex</definition>
+        <argsstring></argsstring>
+        <name>PendingTilesetsMutex</name>
+        <qualifiedname>AMetaCesiumTileController::PendingTilesetsMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="127" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a01ddd62e31dd1e3b8b550743f19d69ef" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMetaCesiumOnTilesetsFetched</ref></type>
+        <definition>FMetaCesiumOnTilesetsFetched AMetaCesiumTileController::OnTilesetsFetched</definition>
+        <argsstring></argsstring>
+        <name>OnTilesetsFetched</name>
+        <qualifiedname>AMetaCesiumTileController::OnTilesetsFetched</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Событие скачивания тайлсетов.</para>
+<para>Вызывается после успешного скачивания тайлсетов и перед началом их обновления. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="163" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1a720774eedce196ede92286c31e3d3346" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMetaCesiumOnTilesetsUpdated</ref></type>
+        <definition>FMetaCesiumOnTilesetsUpdated AMetaCesiumTileController::OnTilesetsUpdated</definition>
+        <argsstring></argsstring>
+        <name>OnTilesetsUpdated</name>
+        <qualifiedname>AMetaCesiumTileController::OnTilesetsUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Событие обновления тайлсетов.</para>
+<para>Вызывается после успешного обновления тайлсетов актуальными из корневого JSON. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="171" column="38" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_meta_cesium_tile_controller_1adfe75d18cff7be1fa13569d10148dbd1" prot="public" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMetaCesiumOnTilesetLoaded</ref></type>
+        <definition>FMetaCesiumOnTilesetLoaded AMetaCesiumTileController::OnTilesetLoaded</definition>
+        <argsstring></argsstring>
+        <name>OnTilesetLoaded</name>
+        <qualifiedname>AMetaCesiumTileController::OnTilesetLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Событие загрузки тайлсета.</para>
+<para>Вызывается после окончания загрузки геометрии тайлсета. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="179" column="36" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1af4c489447f8bc423983dff3225bb141e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::OnFetchTilesetsRequestCompleted</definition>
+        <argsstring>(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bConnectedSuccessfully)</argsstring>
+        <name>OnFetchTilesetsRequestCompleted</name>
+        <qualifiedname>AMetaCesiumTileController::OnFetchTilesetsRequestCompleted</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpRequestPtr</ref></type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FHttpResponsePtr</ref></type>
+          <declname>Response</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bConnectedSuccessfully</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="130" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="382" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a278b4a331e9e639c720e6b7636f1825c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_meta_cesium_tile_controller_1a6c9521a3a06d8fb81146c6c3998c6954" kindref="member">ETilesetRetainmentPolicy</ref></type>
+        <definition>AMetaCesiumTileController::ETilesetRetainmentPolicy AMetaCesiumTileController::TryUpdateRootJson</definition>
+        <argsstring>(FString RootJson, TPromise&lt; FTilesetFetchStatus &gt; Status)</argsstring>
+        <name>TryUpdateRootJson</name>
+        <qualifiedname>AMetaCesiumTileController::TryUpdateRootJson</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+          <declname>RootJson</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TPromise</ref>&lt; <ref refid="struct_a_meta_cesium_tile_controller_1_1_f_tileset_fetch_status" kindref="compound">FTilesetFetchStatus</ref> &gt;</type>
+          <declname>Status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="133" column="34" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="447" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aa21f1980edf09a2e32bccb3faa1df2be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::UpdateTilesets</definition>
+        <argsstring>(TSet&lt; FString &gt; Urls)</argsstring>
+        <name>UpdateTilesets</name>
+        <qualifiedname>AMetaCesiumTileController::UpdateTilesets</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSet</ref>&lt; <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &gt;</type>
+          <declname>Urls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="136" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="487" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a27a6c3051722430b64d26f14c658185b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::OnTrackedTilesetLoaded</definition>
+        <argsstring>(ACustomCesium3DTileset *Tileset) const</argsstring>
+        <name>OnTrackedTilesetLoaded</name>
+        <qualifiedname>AMetaCesiumTileController::OnTrackedTilesetLoaded</qualifiedname>
+        <param>
+          <type><ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> *</type>
+          <declname>Tileset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="139" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="575" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a9a5668963f1c3b612ba9f9c17238b738" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SubscribeToTileset</definition>
+        <argsstring>(TNonNullPtr&lt; ACustomCesium3DTileset &gt; Tileset) const</argsstring>
+        <name>SubscribeToTileset</name>
+        <qualifiedname>AMetaCesiumTileController::SubscribeToTileset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &gt;</type>
+          <declname>Tileset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="142" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="588" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a250975d8621e2ed7b2a681f5268f699e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::UnsubscribeFromTileset</definition>
+        <argsstring>(TNonNullPtr&lt; ACustomCesium3DTileset &gt; Tileset) const</argsstring>
+        <name>UnsubscribeFromTileset</name>
+        <qualifiedname>AMetaCesiumTileController::UnsubscribeFromTileset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TNonNullPtr</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &gt;</type>
+          <declname>Tileset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="145" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="594" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aa9ef330ca051b5ba97fa0ce57ba86a9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::UpdateDeferredTilesetBatch</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateDeferredTilesetBatch</name>
+        <qualifiedname>AMetaCesiumTileController::UpdateDeferredTilesetBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="148" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="600" bodyend="622"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1adb96692743d2144663e6bd9b71ceb5b0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::EndPlay</definition>
+        <argsstring>(EEndPlayReason::Type EndPlayReason) override</argsstring>
+        <name>EndPlay</name>
+        <qualifiedname>AMetaCesiumTileController::EndPlay</qualifiedname>
+        <param>
+          <type>EEndPlayReason::Type</type>
+          <declname>EndPlayReason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="151" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="342" bodyend="359"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a22ac14848f4890db8d6684132f410db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>AMetaCesiumTileController::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="154" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a6629c86af4b85b5ee02fecd5b43163bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::BeginDestroy</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginDestroy</name>
+        <qualifiedname>AMetaCesiumTileController::BeginDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="155" column="22" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="369" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aea8cc50ebe9a7a7cfe65b7b62a7784c2" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AMetaCesiumTileController::IsPolling</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsPolling</name>
+        <qualifiedname>AMetaCesiumTileController::IsPolling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="183" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="624" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aeaa203895379e162c6e81abaab39db69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::BeginPoll</definition>
+        <argsstring>()</argsstring>
+        <name>BeginPoll</name>
+        <qualifiedname>AMetaCesiumTileController::BeginPoll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="187" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="629" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aa650cd05144d93995c928a704f144d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::EndPoll</definition>
+        <argsstring>()</argsstring>
+        <name>EndPoll</name>
+        <qualifiedname>AMetaCesiumTileController::EndPoll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="191" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="644" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aa1793c103b6aef8f84ec92c0ad4c17fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSharedFuture</ref>&lt; <ref refid="struct_a_meta_cesium_tile_controller_1_1_f_tileset_fetch_status" kindref="compound">FTilesetFetchStatus</ref> &gt;</type>
+        <definition>TSharedFuture&lt; AMetaCesiumTileController::FTilesetFetchStatus &gt; AMetaCesiumTileController::FetchTilesetsFromSource</definition>
+        <argsstring>() UE_LIFETIMEBOUND</argsstring>
+        <name>FetchTilesetsFromSource</name>
+        <qualifiedname>AMetaCesiumTileController::FetchTilesetsFromSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Запрашивает и загружает тайлсеты из корневого JSON.</para>
+<para><simplesect kind="return"><para>будущий статус обновления тайлсетов. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="198" column="23" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="284" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a0d8457377c9c22fec4d9839079b271f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMetaCesiumTileController::ResyncTrackedTilesets</definition>
+        <argsstring>()</argsstring>
+        <name>ResyncTrackedTilesets</name>
+        <qualifiedname>AMetaCesiumTileController::ResyncTrackedTilesets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет отслеживаемые тайлсеты теми, что выставлены на карту в данный момент.</para>
+<para>Имеет смысл вызывать только перед началом обновления в качестве синхронизации.</para>
+<para><simplesect kind="return"><para>число тайлсетов после их обновления. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="207" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="214" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a10bef08c7b07af9d80388fa2ac5c16ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">int32</ref></type>
+        <definition>int32 AMetaCesiumTileController::RemoveTrackedTilesets</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveTrackedTilesets</name>
+        <qualifiedname>AMetaCesiumTileController::RemoveTrackedTilesets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет все отслеживаемые тайлсеты с карты.</para>
+<para><simplesect kind="return"><para>число удаленных тайлсетов. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="214" column="15" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="238" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a33f15c4cadd4e258bef94ddc17c735d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::invocable&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &amp; &gt;</type>
+            <declname>F</declname>
+            <defname>F</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::ForEachTrackedTileset</definition>
+        <argsstring>(F &amp;&amp;UnaryOperation)</argsstring>
+        <name>ForEachTrackedTileset</name>
+        <qualifiedname>AMetaCesiumTileController::ForEachTrackedTileset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">F</ref> &amp;&amp;</type>
+          <declname>UnaryOperation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет действие для всех тайлсетов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="220" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="276" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a4225da186ac93dace3f3d7d2be636e5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> *</type>
+        <definition>ACustomCesium3DTileset * AMetaCesiumTileController::FindTrackedTileset</definition>
+        <argsstring>(const FString &amp;Url) const</argsstring>
+        <name>FindTrackedTileset</name>
+        <qualifiedname>AMetaCesiumTileController::FindTrackedTileset</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="224" column="32" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="278" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1ac67a29744fc860830c52b1c627b59f7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref></type>
+        <definition>FString AMetaCesiumTileController::GetSourceUrl</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSourceUrl</name>
+        <qualifiedname>AMetaCesiumTileController::GetSourceUrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="228" column="17" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="687" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a524c1ae508d56fc51ef9f8fb048390f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetSourceUrl</definition>
+        <argsstring>(const FString &amp;InSourceUrl)</argsstring>
+        <name>SetSourceUrl</name>
+        <qualifiedname>AMetaCesiumTileController::SetSourceUrl</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref> &amp;</type>
+          <declname>InSourceUrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="232" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="692" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a1bb5f270725e690c304ba4f8c7664c8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &gt;</type>
+        <definition>TSubclassOf&lt; ACustomCesium3DTileset &gt; AMetaCesiumTileController::GetTilesetClass</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTilesetClass</name>
+        <qualifiedname>AMetaCesiumTileController::GetTilesetClass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="236" column="21" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="698" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a4ac70d0d3208fb2d7229ded8d4ab4f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetTilesetClass</definition>
+        <argsstring>(TSubclassOf&lt; ACustomCesium3DTileset &gt; InTilesetClass)</argsstring>
+        <name>SetTilesetClass</name>
+        <qualifiedname>AMetaCesiumTileController::SetTilesetClass</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TSubclassOf</ref>&lt; <ref refid="class_a_custom_cesium3_d_tileset" kindref="compound">ACustomCesium3DTileset</ref> &gt;</type>
+          <declname>InTilesetClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="240" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="703" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1afd395ff11102674410c0b13fdd5d6793" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref></type>
+        <definition>FTransform AMetaCesiumTileController::GetTilesetSpawnTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTilesetSpawnTransform</name>
+        <qualifiedname>AMetaCesiumTileController::GetTilesetSpawnTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="244" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="708" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1ad5e83d01d289cffabb3bbf2140d35605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetTilesetSpawnTransform</definition>
+        <argsstring>(const FTransform &amp;InTilesetSpawnTransform)</argsstring>
+        <name>SetTilesetSpawnTransform</name>
+        <qualifiedname>AMetaCesiumTileController::SetTilesetSpawnTransform</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTransform</ref> &amp;</type>
+          <declname>InTilesetSpawnTransform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="248" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="713" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a0f771c0e787b03747cd87c7117e94f95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::GetTilesetPollInterval</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTilesetPollInterval</name>
+        <qualifiedname>AMetaCesiumTileController::GetTilesetPollInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="252" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="657" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a5f524fa18084b68ebce4e250cb1db09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetTilesetPollInterval</definition>
+        <argsstring>(const FTimespan &amp;Interval)</argsstring>
+        <name>SetTilesetPollInterval</name>
+        <qualifiedname>AMetaCesiumTileController::SetTilesetPollInterval</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref> &amp;</type>
+          <declname>Interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="256" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="662" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a47877b29696eb5873f4cb1f83ff3d6f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::GetTilesetFetchTimeout</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTilesetFetchTimeout</name>
+        <qualifiedname>AMetaCesiumTileController::GetTilesetFetchTimeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="260" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="667" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a155eb9f2dd62161849e8e3e1068bbaff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetTilesetFetchTimeout</definition>
+        <argsstring>(const FTimespan &amp;Timeout)</argsstring>
+        <name>SetTilesetFetchTimeout</name>
+        <qualifiedname>AMetaCesiumTileController::SetTilesetFetchTimeout</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref> &amp;</type>
+          <declname>Timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="264" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="672" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1a42aba4e064123175b55750c4860c0252" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref></type>
+        <definition>FTimespan AMetaCesiumTileController::GetTilesetFetchRetryInterval</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTilesetFetchRetryInterval</name>
+        <qualifiedname>AMetaCesiumTileController::GetTilesetFetchRetryInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="268" column="19" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="677" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_meta_cesium_tile_controller_1aa1dc56688f5f82367f90da3800e8ba59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void AMetaCesiumTileController::SetTilesetFetchRetryInterval</definition>
+        <argsstring>(const FTimespan &amp;Interval)</argsstring>
+        <name>SetTilesetFetchRetryInterval</name>
+        <qualifiedname>AMetaCesiumTileController::SetTilesetFetchRetryInterval</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FTimespan</ref> &amp;</type>
+          <declname>Interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="272" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/MetaCesium/MetaCesiumTileController.cpp" bodystart="682" bodyend="685"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер тайлов.</para>
+<para>Периодически запрашивает корневой JSON с данными о тайлсетах и при необходимости обновляет текущие тайлсеты более актуальными. Если во время периодического обновления не удается получить JSON, то с заданным интервалом делает запросы, пока не получит ответ. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMetaCesiumTileController</label>
+        <link refid="class_a_meta_cesium_tile_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AMetaCesiumTileController</label>
+        <link refid="class_a_meta_cesium_tile_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PollThread</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AMetaCesiumTileController::FMetaCesiumTilesetPollThread</label>
+        <link refid="struct_a_meta_cesium_tile_controller_1_1_f_meta_cesium_tileset_poll_thread"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FRunnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" line="33" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/MetaCesium/MetaCesiumTileController.h" bodystart="34" bodyend="273"/>
+    <listofallmembers>
+      <member refid="class_a_meta_cesium_tile_controller_1a6629c86af4b85b5ee02fecd5b43163bf" prot="public" virt="virtual"><scope>AMetaCesiumTileController</scope><name>BeginDestroy</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a22ac14848f4890db8d6684132f410db3" prot="public" virt="virtual"><scope>AMetaCesiumTileController</scope><name>BeginPlay</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aeaa203895379e162c6e81abaab39db69" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>BeginPoll</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a0a518e90a84a35137b378f81abe3f086" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>bPolling</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa21aece47381dc3580f15c14a8197e75" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>DeferredBatchUpdateTimer</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ac11bbeb6732f37277b1c266723f34402" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>DeferredTilesetSpawns</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ac987f1fb08ac35cc5edf63d2165c4761" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>DeferredTilesetUpdateMutex</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1adb96692743d2144663e6bd9b71ceb5b0" prot="protected" virt="virtual"><scope>AMetaCesiumTileController</scope><name>EndPlay</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa650cd05144d93995c928a704f144d84" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>EndPoll</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a6c9521a3a06d8fb81146c6c3998c6954" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>ETilesetRetainmentPolicy</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa1793c103b6aef8f84ec92c0ad4c17fe" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>FetchTilesetsFromSource</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a4225da186ac93dace3f3d7d2be636e5e" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>FindTrackedTileset</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a33f15c4cadd4e258bef94ddc17c735d7" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>ForEachTrackedTileset</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ac67a29744fc860830c52b1c627b59f7e" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetSourceUrl</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a1bb5f270725e690c304ba4f8c7664c8a" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetTilesetClass</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a42aba4e064123175b55750c4860c0252" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetTilesetFetchRetryInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a47877b29696eb5873f4cb1f83ff3d6f2" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetTilesetFetchTimeout</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a0f771c0e787b03747cd87c7117e94f95" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetTilesetPollInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1afd395ff11102674410c0b13fdd5d6793" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>GetTilesetSpawnTransform</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aea8cc50ebe9a7a7cfe65b7b62a7784c2" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>IsPolling</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a9842df1f0baea3444840e28ea5ce938d" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>LastRootJsonHash</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a7309e65915475f99b9e05044fa998e3a" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>MaxSimultaneousTilesetSpawns</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1af4c489447f8bc423983dff3225bb141e" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>OnFetchTilesetsRequestCompleted</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1adfe75d18cff7be1fa13569d10148dbd1" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>OnTilesetLoaded</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a01ddd62e31dd1e3b8b550743f19d69ef" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>OnTilesetsFetched</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a720774eedce196ede92286c31e3d3346" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>OnTilesetsUpdated</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a27a6c3051722430b64d26f14c658185b" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>OnTrackedTilesetLoaded</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a1736ae60e9052ed2e3be27a8ceb4945d" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>PendingTilesets</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a16e8e70e0047c0a695f63f5c0d134ea8" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>PendingTilesetsMutex</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a9308ea544e7e0b32df82f66e52eb2532" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>PendingTilesetStatuses</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a777ab5460572be9fc3828fa8086cfbcd" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>PollThread</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a10bef08c7b07af9d80388fa2ac5c16ec" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>RemoveTrackedTilesets</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a0d8457377c9c22fec4d9839079b271f8" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>ResyncTrackedTilesets</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a524c1ae508d56fc51ef9f8fb048390f5" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetSourceUrl</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a4ac70d0d3208fb2d7229ded8d4ab4f1a" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetTilesetClass</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa1dc56688f5f82367f90da3800e8ba59" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetTilesetFetchRetryInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a155eb9f2dd62161849e8e3e1068bbaff" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetTilesetFetchTimeout</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a5f524fa18084b68ebce4e250cb1db09f" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetTilesetPollInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ad5e83d01d289cffabb3bbf2140d35605" prot="public" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SetTilesetSpawnTransform</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a1e94f63755a0864502c50af03540824a" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SourceUrl</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a9a5668963f1c3b612ba9f9c17238b738" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>SubscribeToTileset</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ae5295577d3be74154ac2ffa56d50b232" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetBatchRefreshInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1af1871cbe86f8a61a096d381bdb820938" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetClass</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a5c43b4e6e8cbb1136a952cbba889250e" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetFetchAwaitTimeout</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a01a78960accc9672d8c485b0d00e7576" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetFetchRetryInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1acd4c4aa9bce6e1064ee830225a9ec1bf" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetFetchTimeout</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a7fb4ede8069050059081cf41dc13fe5a" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetPollInterval</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ad5bb20c33b451a27a4ac5e1359bd72e7" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TilesetSpawnTransform</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a7c7a225f3340949fc565ed9bf1f2d56c" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TrackedTilesets</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1ace3e3a9a8bb57717337aab7d0354d5cc" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TrackedTilesetsMutex</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a278b4a331e9e639c720e6b7636f1825c" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>TryUpdateRootJson</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1a250975d8621e2ed7b2a681f5268f699e" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>UnsubscribeFromTileset</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa9ef330ca051b5ba97fa0ce57ba86a9f" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>UpdateDeferredTilesetBatch</name></member>
+      <member refid="class_a_meta_cesium_tile_controller_1aa21f1980edf09a2e32bccb3faa1df2be" prot="private" virt="non-virtual"><scope>AMetaCesiumTileController</scope><name>UpdateTilesets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

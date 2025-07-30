@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="_texture_b_p_library_8h" kind="file" language="C++">
+    <compoundname>TextureBPLibrary.h</compoundname>
+    <includes local="yes">ImageUtils.h</includes>
+    <includes local="yes">Engine/Texture2D.h</includes>
+    <includes local="yes">Kismet/BlueprintFunctionLibrary.h</includes>
+    <includes local="yes">TextureBPLibrary.generated.h</includes>
+    <includedby refid="_texture_b_p_library_8cpp" local="yes">/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/Texture/TextureBPLibrary.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/Texture/TextureBPLibrary.h</label>
+        <link refid="_texture_b_p_library_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Engine/Texture2D.h</label>
+      </node>
+      <node id="2">
+        <label>ImageUtils.h</label>
+      </node>
+      <node id="4">
+        <label>Kismet/BlueprintFunctionLibrary.h</label>
+      </node>
+      <node id="5">
+        <label>TextureBPLibrary.generated.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Private/Core/Utilities/Texture/TextureBPLibrary.cpp</label>
+        <link refid="_texture_b_p_library_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/Texture/TextureBPLibrary.h</label>
+        <link refid="_texture_b_p_library_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_texture_b_p_library" prot="public">UTextureBPLibrary</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//TODO[linkfly]!<sp/>Заменить<sp/>ф-ии<sp/>на<sp/>использование<sp/>утилит<sp/>из<sp/>MetaTextureUtils,<sp/>потом<sp/>возможно<sp/>избавиться<sp/>от<sp/>файла<sp/>переходники<sp/>для<sp/>BP<sp/>описывать<sp/>отдельно</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//(возможно<sp/>в<sp/>Core/Utilities/BaseUtils/BaseUtilsExpose.h<sp/>и<sp/>аналогичном)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ImageUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/Texture2D.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Kismet/BlueprintFunctionLibrary.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TextureBPLibrary.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="_building_subsystem_information_storage_manager_8cpp_1a2a2c6189e7a1f62b91d057bf4d8d18ae" kindref="member">DEFINE_LOG_CATEGORY_STATIC</ref>(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">LogTextureBPLibraty</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">All</ref>,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">All</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*<sp/><sp/><sp/>Класс<sp/>библиотеки<sp/>функций.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*<sp/><sp/><sp/>От<sp/>каждой<sp/>функции<sp/>в<sp/>нем<sp/>ожидается,<sp/>что<sp/>она<sp/>будет<sp/>статической<sp/>и<sp/>представляет<sp/>узел<sp/>чертежа,<sp/>который<sp/>может<sp/>быть<sp/>вызван<sp/>в<sp/>любом<sp/>чертеже.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*<sp/><sp/><sp/>При<sp/>объявлении<sp/>функции<sp/>вы<sp/>можете<sp/>определить<sp/>метаданные<sp/>для<sp/>узла.<sp/>Ключевые<sp/>спецификаторы<sp/>функций<sp/>будут<sp/>BlueprintPure<sp/>и<sp/>BlueprintCallable.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/><sp/><sp/>BlueprintPure<sp/>-<sp/>означает,<sp/>что<sp/>функция<sp/>никак<sp/>не<sp/>влияет<sp/>на<sp/>владеющий<sp/>объект<sp/>и,<sp/>таким<sp/>образом,<sp/>создает<sp/>узел<sp/>без<sp/>штырей<sp/>Exec.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*<sp/><sp/><sp/>BlueprintCallable<sp/>-<sp/>делает<sp/>функцию,<sp/>которая<sp/>может<sp/>быть<sp/>выполнена<sp/>в<sp/>Blueprints<sp/>-<sp/>поэтому<sp/>у<sp/>него<sp/>есть<sp/>штыри<sp/>Exec.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*<sp/><sp/><sp/>DisplayName<sp/>-<sp/>полное<sp/>имя<sp/>узла,<sp/>отображаемое<sp/>при<sp/>наведении<sp/>мыши<sp/>на<sp/>узел<sp/>и<sp/>в<sp/>выпадающем<sp/>меню<sp/>чертежа.<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Он<sp/>позволяет<sp/>вам<sp/>называть<sp/>узел<sp/>с<sp/>использованием<sp/>символов,<sp/>не<sp/>разрешенных<sp/>в<sp/>именах<sp/>функций<sp/>C++.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*<sp/><sp/><sp/>CompactNodeTitle<sp/>-<sp/>слово(а),<sp/>которые<sp/>появляются<sp/>на<sp/>узле.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">*<sp/><sp/><sp/>Keywords<sp/>-<sp/>список<sp/>ключевых<sp/>слов,<sp/>который<sp/>помогает<sp/>вам<sp/>найти<sp/>узел,<sp/>когда<sp/>вы<sp/>ищете<sp/>его<sp/>с<sp/>помощью<sp/>выпадающего<sp/>меню<sp/>Blueprint.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Хорошим<sp/>примером<sp/>является<sp/>узел<sp/>&quot;Print<sp/>String&quot;,<sp/>который<sp/>вы<sp/>также<sp/>можете<sp/>найти,<sp/>используя<sp/>ключевое<sp/>слово<sp/>&quot;log&quot;.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*<sp/><sp/><sp/>Category<sp/>-<sp/>категория,<sp/>в<sp/>которой<sp/>ваш<sp/>узел<sp/>будет<sp/>находиться<sp/>в<sp/>выпадающем<sp/>меню<sp/>Blueprint.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*<sp/><sp/><sp/>Для<sp/>получения<sp/>дополнительной<sp/>информации<sp/>о<sp/>настраиваемых<sp/>узлах<sp/>чертежей<sp/>посетите<sp/>документацию:</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">*<sp/><sp/><sp/>https://wiki.unrealengine.com/Custom_Blueprint_Node_Creation</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UCLASS</ref>()</highlight></codeline>
+<codeline lineno="36" refid="class_u_texture_b_p_library" refkind="compound"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">class</ref><sp/><ref refid="class_u_texture_b_p_library" kindref="compound">UTextureBPLibrary</ref><sp/>:<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">public</ref><sp/>UBlueprintFunctionLibrary</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">GENERATED_UCLASS_BODY</ref>()</highlight></codeline>
+<codeline lineno="52" refid="class_u_texture_b_p_library_1a67a4e622dbeaeb7e2a99074731e0c1e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UFUNCTION(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintCallable</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">meta</ref><sp/>=<sp/>(DisplayName<sp/>=<sp/>&quot;Get<sp/>Textures<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">array</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">from</ref><sp/>Material&quot;,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Keywords</ref><sp/>=<sp/>&quot;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Materials</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">texture</ref>&quot;),</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Category<sp/>=<sp/>&quot;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MetaMoscow</ref>|<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Utilities</ref>|Texture&quot;)</highlight></codeline>
+<codeline lineno="55" refid="class_u_texture_b_p_library_1aa2b0673854c45e745602152b29ebea93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">static</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetMaterialTexture(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UMaterialInterface</ref>*<sp/>Material,<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture</ref>*&gt;&amp;<sp/>OutTextures,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAllQualityLevels,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAllFeatureLevels);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UFUNCTION(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintCallable</ref>,<sp/>Category<sp/>=<sp/>&quot;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MetaMoscow</ref>|<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Utilities</ref>|Texture&quot;)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">static</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref>*<sp/>Base64_ToImage(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FString</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Source</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UFUNCTION(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BlueprintCallable</ref>,<sp/>Category<sp/>=<sp/>&quot;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">MetaMoscow</ref>|<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">Utilities</ref>|Texture&quot;)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">static</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref>*<sp/>ByteArrayToTexture2D(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref>&gt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">ByteArray</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">private</ref>:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">static</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">UTexture2D</ref>*<sp/>CreateBitTextureAtRuntime(<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref><sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TArray</ref>&lt;<ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">uint8</ref>&gt;<sp/><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">BGRA8PixelData</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/agnessa/Desktop/work/meta_core/Source/MetaMoscow/Public/Core/Utilities/Texture/TextureBPLibrary.h"/>
+  </compounddef>
+</doxygen>

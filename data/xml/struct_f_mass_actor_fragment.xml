@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="struct_f_mass_actor_fragment" kind="struct" language="C++" prot="public">
+    <compoundname>FMassActorFragment</compoundname>
+    <basecompoundref refid="struct_f_object_wrapper_fragment" prot="public" virt="non-virtual">FObjectWrapperFragment</basecompoundref>
+    <includes refid="_mass_actor_subsystem_8h" local="no">MassActorSubsystem.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EActorAccess</name>
+        <qualifiedname>FMassActorFragment::EActorAccess</qualifiedname>
+        <enumvalue id="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8a60972feb645ea6980b21e5a354af5e66" prot="public">
+          <name>OnlyWhenAlive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8a900ba7efcb0e603ede7b30d6074c6339" prot="public">
+          <name>IncludePendingKill</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8ae3320b2027ad35bb6015c80805ecc36f" prot="public">
+          <name>IncludeUnreachable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="58" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="59" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_mass_actor_fragment_1a60b54a16648ef65b7a902d37a0e1c009" prot="private" static="no" mutable="no">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">TWeakObjectPtr</ref>&lt; AActor &gt;</type>
+        <definition>TWeakObjectPtr&lt;AActor&gt; FMassActorFragment::Actor</definition>
+        <argsstring></argsstring>
+        <name>Actor</name>
+        <qualifiedname>FMassActorFragment::Actor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="117" column="16" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_mass_actor_fragment_1adb40ecadb1f47c8de97f446f3fc9593c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FMassActorFragment::bIsOwnedByMass</definition>
+        <argsstring></argsstring>
+        <name>bIsOwnedByMass</name>
+        <qualifiedname>FMassActorFragment::bIsOwnedByMass</qualifiedname>
+        <initializer>= <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">false</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ownership of the actor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="120" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1af4a11146533a18a2e3b45f7199c1b7ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassActorFragment::SetAndUpdateHandleMap</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, AActor *InActor, const bool bInIsOwnedByMass)</argsstring>
+        <name>SetAndUpdateHandleMap</name>
+        <qualifiedname>FMassActorFragment::SetAndUpdateHandleMap</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>InActor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bInIsOwnedByMass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the actor associated to a mass agent, will also keep the map back in MassActorSubsystem up to date. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to associated with the actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actor associated with the mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bInIsOwnedByMass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell whether the actors was spawned by <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">mass(MassVisualization)</ref> or <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">externally(ReplicatedActors)</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="71" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="16" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1ad0d469fee134445d097f8f052f34a7c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassActorFragment::ResetAndUpdateHandleMap</definition>
+        <argsstring>(UMassActorSubsystem *CachedActorSubsystem=nullptr)</argsstring>
+        <name>ResetAndUpdateHandleMap</name>
+        <qualifiedname>FMassActorFragment::ResetAndUpdateHandleMap</qualifiedname>
+        <param>
+          <type><ref refid="class_u_mass_actor_subsystem" kindref="compound">UMassActorSubsystem</ref> *</type>
+          <declname>CachedActorSubsystem</declname>
+          <defval><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">nullptr</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the actor pointed by this fragment, will also keep the map back in <ref refid="class_u_mass_actor_subsystem" kindref="compound">UMassActorSubsystem</ref> up to date <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CachedActorSubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if provided will be used directly, otherwise an instance of <ref refid="class_u_mass_actor_subsystem" kindref="compound">UMassActorSubsystem</ref> will be deduced from Actor&apos;s world (at additional runtime cost) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="78" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="31" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1aa115369de7e3e8a2170964d49d1fea5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassActorFragment::SetNoHandleMapUpdate</definition>
+        <argsstring>(const FMassEntityHandle MassAgent, AActor *InActor, const bool bInIsOwnedByMass)</argsstring>
+        <name>SetNoHandleMapUpdate</name>
+        <qualifiedname>FMassActorFragment::SetNoHandleMapUpdate</qualifiedname>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FMassEntityHandle</ref></type>
+          <declname>MassAgent</declname>
+        </param>
+        <param>
+          <type>AActor *</type>
+          <declname>InActor</declname>
+        </param>
+        <param>
+          <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> bool</type>
+          <declname>bInIsOwnedByMass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the actor associated to a mass agent, will NOT keep map back in MassActorSubsystem up to date. The user needs to do the map update by hand. Useful in multithreaded environment, to queue the update of the map inside a deferred command <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MassAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to associated with the actor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InActor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actor associated with the mass agent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bInIsOwnedByMass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell whether the actors was spawned by <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">mass(MassVisualization)</ref> or <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">externally(ReplicatedActors)</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="88" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1a497fb10a0811e479fbfe8dc27bbc29d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">void</ref></type>
+        <definition>void FMassActorFragment::ResetNoHandleMapUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>ResetNoHandleMapUpdate</name>
+        <qualifiedname>FMassActorFragment::ResetNoHandleMapUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the actor pointed by this fragment, will NOT keep map back in MassActorSubsystem up to date. The user needs to do the map update by hand. Useful in multithreaded environment, to queue the update of the map inside a deferred command </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="94" column="6" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1aec630ac1e08597122d37adc39940b311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> AActor *</type>
+        <definition>FORCEINLINE AActor * FMassActorFragment::GetMutable</definition>
+        <argsstring>()</argsstring>
+        <name>GetMutable</name>
+        <qualifiedname>FMassActorFragment::GetMutable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>none const pointer to the actor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="98" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1a13e299a3a29b3295c211afa99446feb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AActor *</type>
+        <definition>AActor * FMassActorFragment::GetMutable</definition>
+        <argsstring>(EActorAccess Access)</argsstring>
+        <name>GetMutable</name>
+        <qualifiedname>FMassActorFragment::GetMutable</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8" kindref="member">EActorAccess</ref></type>
+          <declname>Access</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="99" column="8" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="67" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1a8c6467481179706a5db87f6db23745f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> AActor *</type>
+        <definition>FORCEINLINE AActor * FMassActorFragment::GetOwnedByMassMutable</definition>
+        <argsstring>()</argsstring>
+        <name>GetOwnedByMassMutable</name>
+        <qualifiedname>FMassActorFragment::GetOwnedByMassMutable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>none const pointer to the actor only if owned by mass </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="102" column="20" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1af1b2439b730ab5193543da73cde5cdc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> <ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+        <definition>FORCEINLINE const AActor * FMassActorFragment::Get</definition>
+        <argsstring>() const</argsstring>
+        <name>Get</name>
+        <qualifiedname>FMassActorFragment::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>none const pointer to the actor only if owned by mass </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="105" column="26" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1ad39da82e48881a65a30687334a466b68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">const</ref> AActor *</type>
+        <definition>const AActor * FMassActorFragment::Get</definition>
+        <argsstring>(EActorAccess Access) const</argsstring>
+        <name>Get</name>
+        <qualifiedname>FMassActorFragment::Get</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8" kindref="member">EActorAccess</ref></type>
+          <declname>Access</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="106" column="14" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Private/MassActorSubsystem.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1a99c06d779a4b1dd3f72f55cd412db23e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> bool</type>
+        <definition>FORCEINLINE bool FMassActorFragment::IsOwnedByMass</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOwnedByMass</name>
+        <qualifiedname>FMassActorFragment::IsOwnedByMass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>if the actor is owned by mass </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="109" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_mass_actor_fragment_1abfe6d08c4acf50749b1d8c2d62e84509" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_mass_l_o_d_types_8h_1a640a07441330729796f6bdaba973e7a8a6a061313d22e51e0f25b7cd4dc065233" kindref="member">FORCEINLINE</ref> bool</type>
+        <definition>FORCEINLINE bool FMassActorFragment::IsValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>FMassActorFragment::IsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>if the actor is a valid pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="112" column="18" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Fragment to save the actor pointer of a mass entity if it exists </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FMassActorFragment</label>
+        <link refid="struct_f_mass_actor_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FMassFragment</label>
+      </node>
+      <node id="2">
+        <label>FObjectWrapperFragment</label>
+        <link refid="struct_f_object_wrapper_fragment"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FMassActorFragment</label>
+        <link refid="struct_f_mass_actor_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FMassFragment</label>
+      </node>
+      <node id="2">
+        <label>FObjectWrapperFragment</label>
+        <link refid="struct_f_object_wrapper_fragment"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" line="54" column="1" bodyfile="/home/agnessa/Desktop/work/meta_core/Plugins/Engine/MassGameplay/Source/MassActors/Public/MassActorSubsystem.h" bodystart="55" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_f_mass_actor_fragment_1a60b54a16648ef65b7a902d37a0e1c009" prot="private" virt="non-virtual"><scope>FMassActorFragment</scope><name>Actor</name></member>
+      <member refid="struct_f_mass_actor_fragment_1adb40ecadb1f47c8de97f446f3fc9593c" prot="private" virt="non-virtual"><scope>FMassActorFragment</scope><name>bIsOwnedByMass</name></member>
+      <member refid="struct_f_mass_actor_fragment_1a14654359ebac1e5dd835740c705e0fc8" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>EActorAccess</name></member>
+      <member refid="struct_f_mass_actor_fragment_1af1b2439b730ab5193543da73cde5cdc7" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>Get</name></member>
+      <member refid="struct_f_mass_actor_fragment_1ad39da82e48881a65a30687334a466b68" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>Get</name></member>
+      <member refid="struct_f_mass_actor_fragment_1aec630ac1e08597122d37adc39940b311" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>GetMutable</name></member>
+      <member refid="struct_f_mass_actor_fragment_1a13e299a3a29b3295c211afa99446feb1" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>GetMutable</name></member>
+      <member refid="struct_f_mass_actor_fragment_1a8c6467481179706a5db87f6db23745f9" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>GetOwnedByMassMutable</name></member>
+      <member refid="struct_f_mass_actor_fragment_1a99c06d779a4b1dd3f72f55cd412db23e" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>IsOwnedByMass</name></member>
+      <member refid="struct_f_mass_actor_fragment_1abfe6d08c4acf50749b1d8c2d62e84509" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>IsValid</name></member>
+      <member refid="struct_f_mass_actor_fragment_1ad0d469fee134445d097f8f052f34a7c7" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>ResetAndUpdateHandleMap</name></member>
+      <member refid="struct_f_mass_actor_fragment_1a497fb10a0811e479fbfe8dc27bbc29d7" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>ResetNoHandleMapUpdate</name></member>
+      <member refid="struct_f_mass_actor_fragment_1af4a11146533a18a2e3b45f7199c1b7ec" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>SetAndUpdateHandleMap</name></member>
+      <member refid="struct_f_mass_actor_fragment_1aa115369de7e3e8a2170964d49d1fea5c" prot="public" virt="non-virtual"><scope>FMassActorFragment</scope><name>SetNoHandleMapUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
