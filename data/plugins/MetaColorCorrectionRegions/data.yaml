@@ -1,5 +1,16 @@
 name: MetaColorCorrectionRegions
-description: Модуль для изменения палитры сцены.
-modules:
-  nameModule:
-    description: тест
+description: Плагин для частичного окрашивания сцены. Получает зоны и окрашивает их согласно полученным настройкам.
+dependencies:
+  plugins:
+    MetaLogging:
+      description: Логирование событий MetaColorCorrectionRegions в Sentry.
+    GeographicalMath:
+      description: Плагин используется для пересчета координат, чтобы правильно наложить цветокоррекцию на земной шар.
+usage:
+  manager:
+    description: Выделение цветом большого количества 10к полигонов (так и малого) отдельных зон, представленных линиями или полигонами. Позволяющие гибкую настройку параметров визуализации (цвет, прозрачность и тд). Также можно кликать. 
+  developer:
+    description: ABaseMetaCCRActor GetOrCreateObject(const FIntVector& TileKey) - заводит по ключу отдельный обработчик, который можно использовать и настраивать.
+    API: UMetaColorCorrectRegionsSubsystem -> ABaseMetaCCRActor GetOrCreateObject(const FIntVector& TileKey)
+evolution: Точки, (сейчас только для тайлов) возможность расширить для выделения кликами (любыми контурами без привязки к тайловой сетки), добавление анимаций, расширение возможностей визуализации (сетки). 
+flaws: Ресурсозатратная система (100 слоев — все зависнет).
