@@ -19,3 +19,7 @@ func main() {
 ## Модули
 
 {{< plugins-code >}}
+
+## Код
+
+{{< xml >}}
