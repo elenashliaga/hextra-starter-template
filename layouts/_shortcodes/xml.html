@@ -1,8 +1,3 @@
-xml - {{ .Site.Data.xml.struct_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1_1_f_analog_value }}.
-{{ range .Site.Data.xml }}
-    <strong>{{ .name | plainify | htmlUnescape }}</strong><br/>
-    <p>{{ .description | plainify | htmlUnescape }}</p>
-    {{ $link := .link | plainify | htmlUnescape }}
-    <a href="{{ $link }}">{{ $link }}</a><br />
-    <hr>
+{{ range .Site.Data.xml.struct_u_e_1_1_pixel_streaming2_input_1_1_f_pixel_streaming2_input_handler_1_1_f_analog_value}}
+{{ . }}
 {{ end }}
