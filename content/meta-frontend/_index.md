@@ -4,6 +4,8 @@ type: docs
 weight: 1
 ---
 
+<!-- cделать страницу с общим описанием сервиса -->
+
 This is a demo of the theme's documentation layout.
 
 ## Hello, World!
